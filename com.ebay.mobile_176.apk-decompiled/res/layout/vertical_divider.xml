@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:background="@color/style_guide_light_gray" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

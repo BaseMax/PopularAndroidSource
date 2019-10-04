@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start" android:orientation="horizontal" android:tag="layout/item_appdetail_report_0" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Bazaar.Button.Flat"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" app:srcCompat="@drawable/ic_round_flag_24px" />
+    <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/report_this_app" android:layout_marginStart="@dimen/default_margin" style="@style/Bazaar.Text.Caption.Dark" />
+</LinearLayout>

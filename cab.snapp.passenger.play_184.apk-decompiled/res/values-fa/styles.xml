@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EditText.Bold.LocaleNumerals" parent="@style/EditText.Bold">
+        <item name="android:fontFamily">@font/iran_sans_mobile_bold_fa</item>
+        <item name="fontFamily">@font/iran_sans_mobile_bold_fa</item>
+    </style>
+    <style name="EditText_Charge" parent="@style/AppTheme">
+        <item name="android:fontFamily">@font/iran_sans_mobile_bold_fa</item>
+        <item name="colorAccent">@color/charge_primary_color</item>
+        <item name="colorControlActivated">@color/charge_primary_color</item>
+        <item name="colorControlHighlight">@color/charge_primary_color</item>
+        <item name="colorControlNormal">@color/brown_grey</item>
+        <item name="fontFamily">@font/iran_sans_mobile_bold_fa</item>
+    </style>
+    <style name="TextView.Bold.LocaleNumerals" parent="@style/TextView.Bold">
+        <item name="android:fontFamily">@font/iran_sans_mobile_bold_fa</item>
+        <item name="fontFamily">@font/iran_sans_mobile_bold_fa</item>
+    </style>
+    <style name="TextView.Default.LocaleNumerals" parent="@style/TextView.Default">
+        <item name="android:fontFamily">@font/iran_sans_mobile_medium_fa</item>
+        <item name="fontFamily">@font/iran_sans_mobile_medium_fa</item>
+    </style>
+    <style name="TextView.Light.LocaleNumerals" parent="@style/TextView.Light">
+        <item name="android:fontFamily">@font/iran_sans_mobile_light_fa</item>
+        <item name="fontFamily">@font/iran_sans_mobile_light_fa</item>
+    </style>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_edit" android:id="@id/menu_item_edit_photos" android:title="@string/edit" app:iconTint="?iconTintColor" app:showAsAction="always" />
+    <item android:icon="?actionBarSelectAll" android:id="@id/menu_item_select_all" android:title="@string/select_all" app:iconTint="?iconTintColor" app:showAsAction="always" />
+    <item android:icon="?actionBarSelectNone" android:id="@id/menu_item_select_none" android:title="@string/select_none" app:iconTint="?iconTintColor" app:showAsAction="always" />
+    <item android:icon="?photoDeleteIcon" android:id="@id/menu_item_delete" android:title="@string/delete" app:iconTint="?iconTintColor" app:showAsAction="always" />
+</menu>

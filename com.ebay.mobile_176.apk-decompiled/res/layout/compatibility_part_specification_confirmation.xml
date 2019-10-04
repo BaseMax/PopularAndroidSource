@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/compatibility_part_specification_confirmation_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_1" android:paddingLeft="@dimen/ebayContentSideMargin" android:paddingTop="@dimen/baseline_unit_2x" android:paddingRight="@dimen/ebayContentSideMargin" android:paddingBottom="@dimen/baseline_unit" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceSubhead" android:ellipsize="end" android:gravity="center_vertical" android:tag="binding_2" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMarginHalf" android:maxLines="2" android:drawableLeft="@drawable/icon_alert_success" android:drawablePadding="@dimen/ebayPadding" android:layout_weight="1.0" />
+        <Button android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_lower_case" style="@style/EbayButton.Flat" />
+    </LinearLayout>
+    <LinearLayout android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/common_horizontal_list_items" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FLinearLayout android:orientation="vertical" android:background="?selectableItemBackgroundBase" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" ebay:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayStaticMargin">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/merch_image" android:layout_width="@dimen/intent_hub_viewed_item_gallery_image_height" android:layout_height="@dimen/intent_hub_viewed_item_gallery_image_height" android:scaleType="fitCenter" ebay:averageBackgroundColor="true" ebay:fadeInDuration="@integer/search_image_fade_in_duration" ebay:maxHeightPixels="@integer/intent_rvi_item_image_size" ebay:maxWidthPixels="@integer/intent_rvi_item_image_size" />
+    </FrameLayout>
+    <include layout="@layout/merchandise_item_common" />
+</com.ebay.mobile.widget.FLinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/details_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/ebayPadding5x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/listing_form_details_shipping_recommendation" />
+        <androidx.cardview.widget.CardView android:id="@id/shipping_details_card" android:layout_marginTop="@dimen/ebayMargin15" style="@style/Sell.Card.ListingForm">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/ship_your_item_toggle" style="@style/Sell.Switch" />
+                <LinearLayout android:orientation="vertical" android:id="@id/shipping_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/package_details_row" android:layout_marginBottom="@dimen/ebayMargin" style="@style/Sell.ShippingDetails.PackageRow">
+                        <TextView android:id="@id/package_details_label" android:layout_marginLeft="@dimen/shipping_compensate_margin" android:text="@string/calculated_package_details_label" style="@style/Sell.ShippingDetails.Title" />
+                        <TextView android:id="@id/package_details_text" android:layout_marginLeft="@dimen/shipping_compensate_margin" style="@style/Sell.ShippingDetails.Link.WithNoMargin" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/shipping_service_row" android:visibility="gone" style="@style/Sell.ShippingDetails.DataRow">
+                        <TextView android:id="@id/shipping_service_label" style="@style/Sell.ShippingDetails.Title" />
+                        <TextView android:id="@id/shipping_service_text" style="@style/Sell.ShippingDetails.Link.WithNoMargin" />
+                        <TextView android:id="@id/shipping_service_delivery_time_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                        <TextView android:id="@id/shipping_service_package_limits_weight_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                        <TextView android:id="@id/shipping_service_package_limits_dimen_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                        <TextView android:id="@id/shipping_service_tracking_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                        <TextView android:id="@id/shipping_service_insurance_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                    </LinearLayout>
+                    <View android:id="@id/shipping_service_divider" style="@style/Sell.Divider" />
+                    <LinearLayout android:id="@id/shipping_cost_row" android:visibility="gone" style="@style/Sell.ShippingDetails.DataRow">
+                        <TextView android:id="@id/shipping_cost_label" style="@style/Sell.ShippingDetails.Title" />
+                        <TextView android:id="@id/shipping_cost_text" style="@style/Sell.ShippingDetails.Link.WithNoMargin" />
+                        <TextView android:id="@id/shipping_cost_details_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                    </LinearLayout>
+                    <View style="@style/Sell.Divider" />
+                    <Button android:id="@id/additional_domestic_shipping_service_button" android:text="@string/add_additional_domestic_service" style="@style/EbayButton.Flat.ListingForm.Centered" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/second_shipping_service_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:id="@id/second_service_header_container" style="@style/Sell.ShippingDetails.ToggleHeaderContainer">
+                            <ImageButton android:id="@id/second_service_off_button" android:src="@drawable/ic_clear" android:layout_alignParentTop="true" android:contentDescription="@string/remove_additional_domestic_shipping_service_accessibility" android:layout_alignParentEnd="true" style="@style/Sell.Toggle" />
+                            <TextView android:id="@id/second_service_label" android:layout_toLeftOf="@id/second_service_off_button" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/Sell.ShippingDetails.Bolt.Title" />
+                            <TextView android:id="@id/second_service_description_label" android:text="@string/additional_domestic_service" android:layout_toLeftOf="@id/second_service_off_button" android:layout_below="@id/second_service_label" android:layout_alignParentLeft="true" style="@style/Sell.ShippingDetails.Label" />
+                        </RelativeLayout>
+                        <LinearLayout android:id="@id/second_package_details_row" android:focusable="true" android:visibility="gone" style="@style/Sell.ShippingDetails.PackageRow">
+                            <TextView android:id="@id/second_package_details_label" android:layout_marginLeft="@dimen/shipping_compensate_margin" android:text="@string/calculated_package_details_label" style="@style/Sell.ShippingDetails.Title" />
+                            <TextView android:id="@id/second_package_details_text" android:layout_marginLeft="@dimen/shipping_compensate_margin" android:text="@string/shipping_package_sublabel" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/second_shipping_service_row" android:visibility="gone" style="@style/Sell.ShippingDetails.DataRow">
+                            <TextView android:id="@id/second_shipping_service_label" style="@style/Sell.ShippingDetails.Title" />
+                            <TextView android:id="@id/second_shipping_service_text" style="@style/Sell.ShippingDetails.Link.WithNoMargin" />
+                            <TextView android:id="@id/second_shipping_service_delivery_time_text" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                            <TextView android:id="@id/second_shipping_service_package_weight_limits_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                            <TextView android:id="@id/second_shipping_service_package_dimen_limits_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                            <TextView android:id="@id/second_shipping_service_tracking_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                            <TextView android:id="@id/second_shipping_service_insurance_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                        </LinearLayout>
+                        <View android:id="@id/second_shipping_service_divider" style="@style/Sell.Divider" />
+                        <LinearLayout android:id="@id/second_shipping_cost_row" android:visibility="gone" style="@style/Sell.ShippingDetails.DataRow">
+                            <TextView android:id="@id/second_shipping_cost_label" style="@style/Sell.ShippingDetails.Title" />
+                            <TextView android:id="@id/second_shipping_cost_text" style="@style/Sell.ShippingDetails.Link.WithNoMargin" />
+                            <TextView android:id="@id/second_shipping_cost_details_text" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                        </LinearLayout>
+                        <View style="@style/Sell.Divider.CompensateSideMargins" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <include layout="@layout/listing_form_details_shipping_intl" />
+        <androidx.cardview.widget.CardView android:id="@id/local_pickup_details_card" style="@style/Sell.Card.ListingForm">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/local_pickup_toggle" style="@style/Sell.Switch" />
+                <LinearLayout android:orientation="vertical" android:id="@id/local_pickup_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.DynamicCardContainer.ListingForm">
+                    <LinearLayout android:orientation="vertical" android:id="@id/item_location_tap_target" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayPadding2x" android:foreground="?android:selectableItemBackground">
+                        <TextView android:id="@id/item_location_label" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.TextView.Medium" />
+                        <TextView android:id="@id/item_location_details_value" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.ShippingDetails.Link" />
+                    </LinearLayout>
+                    <View android:id="@id/local_pickup_divider" style="@style/CommonDivider" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/badgeLayout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/notificationsBadge" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="@dimen/default_margin" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_double" app:srcCompat="@drawable/bottom_navigation_item_badge_background" />
+</FrameLayout>

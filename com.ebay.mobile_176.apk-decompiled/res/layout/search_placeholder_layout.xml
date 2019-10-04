@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/search_box" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/ebayPadding15" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:drawablePadding="@dimen/aux_searchbar_text_margin" android:layout_weight="1.0" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/search_voice_btn" android:background="?selectableItemBackground" android:focusable="true" android:visibility="gone" android:layout_width="@dimen/min_touch_target_unit" android:layout_height="@dimen/min_touch_target_unit" android:src="?actionBarMic" android:scaleType="centerInside" android:tint="?iconTintColor" android:contentDescription="@string/abc_searchview_description_voice" />
+    <ImageButton android:layout_gravity="center|left" android:id="@id/search_image_btn" android:background="?android:actionBarItemBackground" android:paddingLeft="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="?actionBarCamera" android:tint="?iconTintColor" android:layout_alignParentTop="true" android:contentDescription="@string/image_search_entry_point_accessibility" android:layout_toStartOf="@id/button_scan" />
+</merge>

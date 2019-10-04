@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar" android:id="@id/pageToolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.farsitel.bazaar.widget.RTLImageView android:id="@id/backButton" app:srcCompat="@drawable/ic_round_arrow_back_24px" app:tint="@color/c_icon_toolbar" style="@style/Bazaar.Image.Toolbar.Back" />
+                <com.farsitel.bazaar.widget.LocalAwareTextView android:gravity="center_vertical" android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_one_half" style="@style/Bazaar.Text.Body1.Dark" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.farsitel.bazaar.ui.base.page.PageRecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include layout="@layout/layout_page_non_data" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

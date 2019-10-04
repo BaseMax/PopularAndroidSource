@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet android:transitionOrdering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <targets>
+        <target android:excludeId="@id/fixed_appbar" />
+        <target android:excludeId="@id/scrolling_appbar" />
+        <target android:excludeId="@android:id/statusBarBackground" />
+        <target android:excludeId="@android:id/navigationBarBackground" />
+    </targets>
+    <slide android:duration="@android:integer/config_mediumAnimTime" android:slideEdge="bottom" />
+    <fade android:duration="@android:integer/config_shortAnimTime" android:fadingMode="fade_out" />
+</transitionSet>

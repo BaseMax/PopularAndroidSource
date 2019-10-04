@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/added_to_cart_scrollview" android:tag="layout/added_to_cart_bottomsheet_dialog_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ebay.nautilus.shell.uxcomponents.widget.SingleItemContainerView android:id="@id/added_to_cart_card_container" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/baseline_unit" android:layout_marginRight="@dimen/baseline_unit" style="@style/AddedToCartSingleItemCardStyle" />
+        <Button android:id="@id/call_to_action_button" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/baseline_unit" android:layout_marginTop="@dimen/baseline_unit_2x" android:layout_marginRight="@dimen/baseline_unit" style="@style/EbayButton" />
+        <include android:id="@id/placement_100936" layout="@layout/added_to_cart_bottomsheet_complementary_placement" />
+        <com.ebay.nautilus.shell.uxcomponents.widget.ScrollingContainerView android:id="@id/placement_100941" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddedToCartBottomsheetHorizontalListItemsCardStyle" />
+        <com.ebay.nautilus.shell.uxcomponents.widget.ScrollingContainerView android:id="@id/placement_100950" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddedToCartBottomsheetHorizontalListItemsCardStyle" />
+        <include android:id="@id/placement_100951" layout="@layout/added_to_cart_bottomsheet_complementary_placement" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

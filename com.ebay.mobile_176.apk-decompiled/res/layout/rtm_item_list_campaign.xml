@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container_layout" android:background="?listContainerOutsideBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@android:id/list" android:paddingLeft="@dimen/ebayContentSideMargin" android:paddingRight="@dimen/ebayContentSideMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:fastScrollEnabled="true" />
+        <ScrollView android:scrollbarStyle="outsideOverlay" android:id="@android:id/empty" android:paddingLeft="@dimen/checkoutTabletPadding" android:paddingRight="@dimen/checkoutTabletPadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/emptyText" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/spinner" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" style="?android:progressBarStyle" />
+</merge>

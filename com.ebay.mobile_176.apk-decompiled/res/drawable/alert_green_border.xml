@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <padding android:left="@dimen/ebayMargin2x" android:top="@dimen/ebayMargin2x" android:right="@dimen/ebayMargin2x" android:bottom="@dimen/ebayMargin2x" />
+    <stroke android:width="@dimen/borderSize" android:color="?colorConfirm" />
+</shape>

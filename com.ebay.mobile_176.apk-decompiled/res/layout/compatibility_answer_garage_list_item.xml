@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/compatibility_answer_garage_list_item_0" android:background="@drawable/answers_pill_background" android:clickable="true" android:layout_width="@dimen/answers_pill_width" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/answers_pill_background_mask" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/srp_fitment_tile_height">
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/garage_type" android:tag="binding_1" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:id="@id/garage_title" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="@dimen/ebayPaddingHalf" />
+    </LinearLayout>
+</FrameLayout>

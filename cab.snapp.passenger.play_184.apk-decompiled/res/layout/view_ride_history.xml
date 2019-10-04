@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.passenger.units.ride_history.RideHistoryView android:background="@color/alabaster" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/view_toolbar_primary" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/ride_history_recycler_view" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_gravity="top" android:id="@id/ride_history_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/brown_grey" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ride_history_title" style="@style/TextView.Default.Medium" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:src="@drawable/empty_ride_history" android:scaleType="centerInside" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/brown_grey" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/no_ride_history_label" style="@style/TextView.Default.Medium" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <cab.snapp.snappuikit.SnappLoading android:layout_gravity="center" android:id="@id/ride_history_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:snappLoadingTheme="accent" />
+</cab.snapp.passenger.units.ride_history.RideHistoryView>

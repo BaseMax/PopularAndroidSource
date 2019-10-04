@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/offer_card_layout_0" android:background="@color/listContainerLightOutsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.nautilus.shell.uxcomponents.widget.VerticalContainerView android:tag="binding_1" android:background="@color/listContainerLightInsideBackground" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" app:decorations="none" app:verticalCellPadding="@dimen/baseline_unit" style="?verticalListItemsNoPaddingStyle" />
+</FrameLayout>

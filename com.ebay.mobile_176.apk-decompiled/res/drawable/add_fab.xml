@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector android:constantSize="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:id="@id/selected_state" android:drawable="@drawable/ic_fab_open_icon" />
+    <item android:id="@id/normal_state" android:drawable="@drawable/ic_fab_closed_icon" />
+    <transition android:drawable="@drawable/photo_fab_open_to_close" android:toId="@id/selected_state" android:fromId="@id/normal_state" />
+    <transition android:drawable="@drawable/photo_fab_close_to_open" android:toId="@id/normal_state" android:fromId="@id/selected_state" />
+</animated-selector>

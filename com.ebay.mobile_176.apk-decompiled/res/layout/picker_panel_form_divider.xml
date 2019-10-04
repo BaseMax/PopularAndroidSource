@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/picker_panel_form_divider_0" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_vertical" android:background="?listDividerHorizontal" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:layout_gravity="center_horizontal" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin15" android:layout_marginRight="@dimen/ebayMargin15" />
+    <View android:layout_gravity="center_vertical" android:background="?listDividerHorizontal" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+</LinearLayout>

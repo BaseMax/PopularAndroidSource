@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/view_item_ux_volume_pricing_selection_pill_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/selection_capsule" android:tag="binding_1" android:focusable="true" android:clickable="true" style="?ViewItemSelectionCapsule" />
+    <View android:id="@id/disabled_diagonal_line" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/selection_capsule" android:layout_alignTop="@id/selection_capsule" android:layout_alignRight="@id/selection_capsule" android:layout_alignBottom="@id/selection_capsule" style="@style/diagonalStyle" />
+</RelativeLayout>

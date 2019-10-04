@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/domestic_shipping_options" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/label" android:paddingLeft="0.0dip" android:text="@string/label_short_domestic_shipping" style="@style/Sell.Layout.Text.Vertical.Label" />
+        <LinearLayout android:orientation="vertical" android:id="@id/domestic_service" android:clickable="false" style="@style/Sell.FakeSpinner">
+            <TextView android:gravity="left" android:id="@id/service" android:layout_width="fill_parent" android:layout_marginLeft="0.0dip" style="@style/Sell.InlineLabel.Blue" />
+            <TextView android:id="@id/value" android:layout_marginLeft="0.0dip" style="@style/Sell.InlineLabel.Blue" />
+            <TextView android:id="@id/paid_by" android:layout_marginLeft="0.0dip" android:text="@string/label_buyer_pays" style="@style/Sell.InlineLabel" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/guidance_display" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:text="@string/label_suggested_shipping" style="@style/Sell.InlineLabel.Guidance.LeftArrowUp" />
+    <androidx.appcompat.widget.SwitchCompat android:layout_gravity="right" android:id="@id/free_shipping" android:visibility="gone" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="6.0dip" android:text="@string/label_offer_free_shipping" style="@style/Sell.Layout.Row.Switch" />
+</LinearLayout>

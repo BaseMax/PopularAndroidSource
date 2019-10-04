@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/summary_module_header" android:tag="layout/listing_form_container_header_legacy_0" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/header_recommendation_status" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" />
+    <TextView android:textAppearance="?textAppearanceTitle2" android:gravity="center_vertical" android:id="@id/textview_header_title" android:tag="binding_2" android:paddingTop="@dimen/component_header_padding" android:paddingBottom="@dimen/component_header_padding" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/min_touch_target_unit" android:scrollHorizontally="false" android:layout_toLeftOf="@id/header_recommendation_status" android:layout_alignParentLeft="true" android:importantForAccessibility="no" />
+</RelativeLayout>

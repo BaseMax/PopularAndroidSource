@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/peg" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/img_sign_in_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sign_in_google_info" android:layout_above="@id/peg" android:layout_centerHorizontal="true" android:contentDescription="@string/sign_in_thumbnail_of_sign_in_with_google" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="16.0dip" android:layout_marginTop="@dimen/ebayMargin3x" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/sign_in_google_linked_info_1" android:layout_above="@id/img_sign_in_view" />
+    <Button android:id="@id/button_google_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/sign_in_google_continue" android:layout_alignParentBottom="true" style="@style/EbayButton.Blue" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="16.0dip" android:layout_marginTop="@dimen/ebayMargin3x" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/sign_in_google_linked_info_2" android:layout_above="@id/button_google_continue" android:layout_below="@id/img_sign_in_view" />
+</RelativeLayout>

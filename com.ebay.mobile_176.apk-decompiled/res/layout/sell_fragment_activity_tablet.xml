@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/charity_banner" />
+    <LinearLayout android:orientation="horizontal" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="100.0">
+        <include layout="@layout/progress_container" />
+        <FrameLayout android:id="@id/listing_fragment" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="35.0" />
+        <FrameLayout android:id="@id/sellc2c_fragment" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="65.0" />
+        <include layout="@layout/common_error" />
+    </LinearLayout>
+</LinearLayout>

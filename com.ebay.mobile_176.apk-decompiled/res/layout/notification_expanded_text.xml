@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/notification_material_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/notification_icon" android:layout_width="@android:dimen/notification_large_icon_width" android:layout_height="@android:dimen/notification_large_icon_height" android:scaleType="center" android:contentDescription="@string/app_name" />
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/notification_icon_content_spacing" android:layout_marginRight="@dimen/notification_icon_content_spacing">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/NotificationTitle" android:ellipsize="end" android:id="@id/notification_title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <DateTimeView android:textAppearance="@style/NotificationTime" android:gravity="center" android:layout_gravity="center" android:id="@id/notification_updated_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/notification_icon_content_spacing" android:singleLine="true" android:layout_weight="0.0" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/NotificationText" android:ellipsize="end" android:id="@id/notification_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/notification_icon_content_spacing" />
+    </LinearLayout>
+</LinearLayout>

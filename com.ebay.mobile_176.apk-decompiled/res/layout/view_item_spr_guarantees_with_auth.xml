@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/ebp_key" android:paddingTop="@dimen/ebayPadding15" android:layout_marginRight="0.0dip" style="@style/StyleGuideViewItemStatKey" />
+    <LinearLayout android:orientation="vertical" android:layout_marginRight="0.0dip" style="@style/StyleGuideViewItemStatValue">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/auth_container" android:background="?android:listChoiceBackgroundIndicator" android:paddingTop="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding15" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/view_item_chevron" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:gravity="left" android:id="@id/auth_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_toLeftOf="@id/chevron_icon" />
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="left" android:id="@id/auth_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?viewItemTopMarginTextView" android:includeFontPadding="false" android:layout_toLeftOf="@id/chevron_icon" android:layout_below="@id/auth_title" />
+        </RelativeLayout>
+        <View android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginRight="@dimen/ebayMargin" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ebp_click_container" android:background="?android:listChoiceBackgroundIndicator" android:paddingTop="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center|left" android:id="@id/ebp_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <include layout="@layout/view_item_chevron" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

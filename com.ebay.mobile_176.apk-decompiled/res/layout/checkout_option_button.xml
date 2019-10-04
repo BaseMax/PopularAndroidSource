@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:textSize="@dimen/ebayTextSizeMedium" android:gravity="center" android:id="@id/payment_option_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMedium" android:layout_marginTop="@dimen/xoMarginSmall" android:layout_marginRight="@dimen/xoMarginMedium" android:layout_marginBottom="@dimen/xoMarginSmall" android:fontFamily="sans-serif-light" style="@style/EbayButton.White"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

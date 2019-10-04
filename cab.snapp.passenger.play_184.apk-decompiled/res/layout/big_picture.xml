@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/big_picture_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/big_view_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/big_picture_image" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/push_content_margin" android:layout_marginRight="@dimen/push_content_margin" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_weight="1.0" android:layout_marginStart="@dimen/push_content_margin" android:layout_marginEnd="@dimen/push_content_margin" />
+        <include android:id="@id/action_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/push_action_list" />
+    </LinearLayout>
+</FrameLayout>

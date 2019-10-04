@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.common.SelectableContainerLayout android:orientation="horizontal" android:background="?selectableItemBackgroundBase" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" res_auto:selectionBackground="?listItemSelectedBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/item_container" android:paddingLeft="@dimen/ebayScalingPadding2x" android:paddingTop="@dimen/ebayScalingPadding" android:paddingRight="@dimen/ebayScalingPadding2x" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/item_image" android:layout_width="@dimen/homescreen_card_imagesize" android:layout_height="@dimen/homescreen_card_imagesize" android:layout_marginRight="@dimen/ebayMargin2x" android:scaleType="fitCenter" android:layout_centerVertical="true" res_auto:averageBackgroundColor="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/item_image" android:layout_centerVertical="true">
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/item_eek_rating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:id="@id/item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin">
+                <TextView android:textAppearance="?textAppearanceBody2" android:gravity="start" android:id="@id/item_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="end" android:id="@id/item_bids" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="start" android:id="@id/item_ship_cost" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="end" android:id="@id/item_time_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/applicable_tax_rate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.ebay.mobile.common.SelectableContainerLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.passenger.units.splash.SplashView android:background="@color/colorAccent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/splash_center_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_snapp_logo_vector" android:scaleType="fitXY" android:minWidth="120.0dip" android:minHeight="38.0dip" android:layout_centerInParent="true" />
+    <cab.snapp.snappuikit.SnappButton android:id="@id/splash_try_again_button" android:visibility="gone" android:layout_marginBottom="-8.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:btnHasShadow="false" app:btnText="@string/try_again" app:btnTextColor="@color/colorAccent" style="@style/SnappButton.SecondaryNoBorder.Large" />
+    <FrameLayout android:id="@id/splash_footer_container" android:layout_width="fill_parent" android:layout_height="@dimen/splash_bottom_space_height" android:layout_alignParentBottom="true" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/splash_version_name_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:autoSizeMaxTextSize="@dimen/font_size_extra_large" app:autoSizeMinTextSize="@dimen/font_size_tiny" style="@style/TextView.Light.Large" />
+</cab.snapp.passenger.units.splash.SplashView>

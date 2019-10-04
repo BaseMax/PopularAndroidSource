@@ -1,0 +1,80 @@
+.class Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment$7;
+.super Ljava/lang/Object;
+.source "MessageCenterFragment.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment;->onComposingViewCreated(Lcom/apptentive/android/sdk/module/messagecenter/view/holder/MessageComposerHolder;Landroid/widget/EditText;Lcom/apptentive/android/sdk/util/image/ApptentiveImageGridView;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment;
+
+.field final synthetic val$composerEditText:Landroid/widget/EditText;
+
+
+# direct methods
+.method constructor <init>(Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment;Landroid/widget/EditText;)V
+    .locals 0
+
+    .line 878
+    iput-object p1, p0, Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment$7;->this$0:Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment;
+
+    iput-object p2, p0, Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment$7;->val$composerEditText:Landroid/widget/EditText;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 2
+
+    .line 881
+    iget-object v0, p0, Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment$7;->this$0:Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment;
+
+    invoke-static {v0}, Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment;->access$400(Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 882
+    iget-object v0, p0, Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment$7;->this$0:Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment;
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment;->access$402(Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment;Z)Z
+
+    .line 883
+    iget-object v0, p0, Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment$7;->this$0:Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment;
+
+    invoke-static {v0}, Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment;->access$500(Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment;)Ljava/lang/ref/WeakReference;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/Activity;
+
+    iget-object v1, p0, Lcom/apptentive/android/sdk/module/engagement/interaction/fragment/MessageCenterFragment$7;->val$composerEditText:Landroid/widget/EditText;
+
+    invoke-static {v0, v1}, Lcom/apptentive/android/sdk/util/Util;->showSoftKeyboard(Landroid/app/Activity;Landroid/view/View;)V
+
+    :cond_0
+    return-void
+.end method

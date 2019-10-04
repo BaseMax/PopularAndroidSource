@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:tag="layout/uxcomp_item_card_carousel_details_0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" app:layout_constraintEnd_toEndOf="@id/image" app:layout_constraintStart_toStartOf="@id/image" app:layout_constraintTop_toBottomOf="@id/before_details"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_caption_0" android:tag="binding_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:id="@id/textview_header_0" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayStaticMarginHalf" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:gravity="center_vertical" android:id="@id/textview_primary_0" android:tag="binding_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/baseline_unit_3x" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_primary_1" android:tag="binding_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_primary_2" android:tag="binding_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_primary_3" android:tag="binding_6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_primary_4" android:tag="binding_7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

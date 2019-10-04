@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/stat_layout" android:focusable="true" style="@style/StyleGuideViewItemStatCell"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/stat_key" style="@style/StyleGuideViewItemStatKey" />
+    <LinearLayout android:orientation="vertical" android:id="@id/stat_value_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/min_touch_target_unit" android:layout_weight="6.0" style="@style/StyleGuideViewItemStatValue">
+        <TextView android:id="@id/stat_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/ebay_text_color_link" android:id="@id/stat_sub_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

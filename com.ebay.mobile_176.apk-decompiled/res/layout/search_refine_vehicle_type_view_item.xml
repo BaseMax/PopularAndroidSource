@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceSubhead" android:gravity="center_vertical" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/search_refine_vehicle_detail_row"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

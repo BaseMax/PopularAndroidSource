@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/item_header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_thumbnail" android:background="?cardColor" android:layout_width="@dimen/ItemViewThumbnailHeight" android:layout_height="@dimen/ItemViewThumbnailHeight" android:scaleType="fitCenter" android:contentDescription="@null" />
+    <TextView android:textStyle="normal" android:layout_gravity="center_vertical" android:id="@id/item_title" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" />
+</LinearLayout>

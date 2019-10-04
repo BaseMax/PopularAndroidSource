@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_item_plus_v2_spoke_upsell_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/plus_divider" android:tag="binding_1" android:background="@drawable/divider_horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/plus_container" android:tag="binding_2" android:background="?android:listChoiceBackgroundIndicator" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding" android:paddingRight="0.0dip" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:importantForAccessibility="no">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ebay_plus_logo_container" android:layout_width="@dimen/plus_logo_spoke_width" android:layout_height="wrap_content" android:layout_alignTop="@id/plus_text">
+            <ImageView android:id="@id/ebay_plus_logo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ebay_plus_logo" android:scaleType="fitStart" android:adjustViewBounds="true" android:importantForAccessibility="no" />
+        </LinearLayout>
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/plus_text" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:includeFontPadding="false" android:layout_toLeftOf="@id/chevron_icon" android:layout_toRightOf="@id/ebay_plus_logo_container" />
+        <ImageView android:id="@id/chevron_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMargin" android:src="?spokeChevronDrawable" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" />
+    </RelativeLayout>
+</LinearLayout>

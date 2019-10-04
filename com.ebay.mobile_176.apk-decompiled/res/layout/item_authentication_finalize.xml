@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/Prelist.Card.AuthenticateFinalize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/finalize_publish_content" android:paddingBottom="@dimen/ebayMargin2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/Sell.DynamicCardContainer.ListingForm">
+        <com.ebay.mobile.listingform.helper.CustomStyleTextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/sell_legal_fees_agreement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/sell_legal_fees_apply" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" android:text="@string/LEGAL_US_sell_ebay_authenticate_fee_apply" />
+        <LinearLayout style="@style/Sell.FinalizeButtonLayout">
+            <Button android:id="@id/publish_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sell_ebay_authenticate_submit_order" style="@style/EbayButton" />
+        </LinearLayout>
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/sell_legal_price_range" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" android:text="@string/LEGAL_sell_pricing_guidance" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

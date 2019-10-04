@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/product_card_info_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:ellipsize="end" android:id="@id/textview_item_title" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="?itemTitleStyle" />
+    <FrameLayout android:id="@id/view_stars_layout" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_below="@id/textview_item_title">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/uxcomp_star_rating_small" />
+    </FrameLayout>
+    <ProgressBar android:id="@id/review_progress" android:tag="binding_3" android:layout_width="116.0dip" android:layout_height="8.0dip" android:layout_marginTop="@dimen/ebayMargin" android:progressDrawable="@drawable/product_rating_bar" android:layout_below="@id/view_stars_layout" style="?android:progressBarStyleHorizontal" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:ellipsize="end" android:id="@id/textview_review_description" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:maxLines="2" android:layout_below="@id/review_progress" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:ellipsize="end" android:id="@id/textview_item_label" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayStaticMargin15" android:maxLines="2" android:layout_below="@id/textview_review_description" />
+    <TextView android:orientation="horizontal" android:id="@id/textview_price_new" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textview_item_label" style="?itemPriceStyle" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:orientation="horizontal" android:id="@id/textview_price_used" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textview_price_new" android:lineSpacingMultiplier="1.1" />
+</RelativeLayout>

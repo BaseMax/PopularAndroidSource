@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:layout="@layout/view_preference_category" android:title="@string/general" android:key="general" app:iconSpaceReserved="false">
+        <ListPreference android:entries="@array/settings_locales_title" android:title="@string/settings_language" android:key="locale" android:defaultValue="fa" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/settings_locales_values" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/clear_search_history" android:key="clear_search_history" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/see_bazaar_in_system_settings" android:key="see_bazaar_in_system_setting" app:iconSpaceReserved="false" />
+        <CheckBoxPreference android:title="@string/location_permission_dialog_title" android:key="location_base_offer" android:summary="@string/location_permission_setting_message" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/view_preference_category" android:title="@string/update" android:key="update" app:iconSpaceReserved="false">
+        <ListPreference android:entries="@array/settings_check_apps_update_title" android:title="@string/settings_check_apps_update" android:key="update_network_type" android:defaultValue="@string/wifi_and_network_key" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/settings_check_apps_update_values" app:iconSpaceReserved="false" />
+        <CheckBoxPreference android:title="@string/settings_update_notification_title" android:key="updates_notification" android:summary="@string/settings_update_notification_summary" android:defaultValue="true" app:iconSpaceReserved="false" />
+        <com.farsitel.bazaar.ui.settings.scheduleupdate.ScheduleUpdatePreference android:title="@string/settings_update_scheduling_title" android:key="update_scheduling" android:summaryOn="@string/schedule_update_clarification__" android:summaryOff="@string/settings_update_scheduling_summary" app:iconSpaceReserved="false" />
+        <CheckBoxPreference android:title="@string/settings_faster_update_downloading_title" android:key="patch_enable" android:summary="@string/settings_faster_update_downloading_summary" android:defaultValue="true" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/view_preference_category" android:title="@string/setting_download_title" android:key="download" app:iconSpaceReserved="false">
+        <CheckBoxPreference android:title="@string/settings_keep_backups_of_apps_title" android:key="keep_backup_of_apps" android:summary="@string/settings_keep_backups_of_apps_summary" app:iconSpaceReserved="false" />
+        <CheckBoxPreference android:title="@string/bandwidth_optimization_setting_title" android:key="bandwidth_optimization" android:summary="@string/bandwidth_optimization_setting_desc" android:defaultValue="true" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/view_preference_category" android:title="@string/other" android:key="other" app:iconSpaceReserved="false">
+        <Preference android:title="@string/suggest_to_friends" android:key="suggest" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/terms_of_service_title" android:key="terms_of_service" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/privacy_title" android:key="privacy" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/copyright_title" android:key="copyright" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/release_notes_title" android:key="release_notes" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/about_bazaar_title" android:key="about_bazaar" app:iconSpaceReserved="false" />
+        <Preference android:key="client_id" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

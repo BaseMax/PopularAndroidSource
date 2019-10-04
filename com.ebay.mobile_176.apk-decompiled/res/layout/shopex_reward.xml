@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/shopExItemVerticalMargin" android:layout_marginTop="@dimen/shopExRewardTopBottomPadding" android:layout_marginRight="@dimen/shopExItemVerticalMargin" android:layout_marginBottom="@dimen/shopExRewardTopBottomPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/shopex_reward_icon" android:background="?listContainerOutsideBackground" ebay:fadeInDuration="@integer/checkoutImageFadeInDuration" style="@style/ShopEx.Rewards.Icon" />
+    <TextView android:gravity="center_horizontal" android:id="@id/shopex_reward_message" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ShopEx.Rewards.Text" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/listContainerDropShadowThickness">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/listContainerLightDropShadow" />
+        </shape>
+    </item>
+    <item android:bottom="@dimen/listContainerDropShadowThickness">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/listContainerLightInsideBackground" />
+            <padding android:bottom="@dimen/listContainerDropShadowThickness" />
+        </shape>
+    </item>
+</layer-list>

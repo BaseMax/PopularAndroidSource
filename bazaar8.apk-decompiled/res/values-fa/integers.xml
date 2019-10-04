@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="gift_card_terms_length">13</integer>
+    <integer name="privacy_login_count">9</integer>
+    <integer name="term_login_count">22</integer>
+</resources>

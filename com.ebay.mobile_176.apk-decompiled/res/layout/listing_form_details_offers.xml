@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/card_offers_radio_group" style="@style/Sell.Card.ListingForm"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioGroup android:id="@id/offers_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:textAppearance="?textAppearanceBody2" android:id="@id/allow_offers_radio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:text="@string/sell_with_offers" />
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/allow_offers_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin6x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/allow_offers_description" />
+                <RelativeLayout android:id="@id/auto_decline_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin8x" android:layout_marginRight="@dimen/ebayMargin2x">
+                    <com.ebay.mobile.widget.PriceView android:id="@id/auto_decline_amount" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:showCurrencySymbolAlways="true" style="@style/Sell.Bolt.PriceView" />
+                </RelativeLayout>
+                <View android:layout_marginTop="@dimen/ebayMargin2x" style="@style/CommonDivider" />
+                <RadioButton android:textAppearance="?textAppearanceBody2" android:id="@id/no_offers_radio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:text="@string/sell_without_offers" />
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/no_offers_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin6x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/pricing_no_offers_description" />
+            </RadioGroup>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

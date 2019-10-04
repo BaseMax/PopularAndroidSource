@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?listContainerOutsideBackground" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/void_reason_title" android:text="@string/psl_void_reason" android:layout_alignParentTop="true" style="@style/Sell.Spoke.Title.Top" />
+    <androidx.cardview.widget.CardView android:id="@id/void_reason_container" android:layout_below="@id/void_reason_title" style="@style/Sell.Layout.CardView">
+        <com.ebay.android.widget.ContainerLayout android:padding="10.0dip" style="@style/Sell.Layout.Container">
+            <Spinner android:id="@id/void_label_reason" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.ebay.android.widget.ContainerLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/psl_void_small_text" android:layout_below="@id/void_reason_container" style="@style/EbayTextAppearanceSmall" />
+    <Button android:id="@id/void_label_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/psl_void_label" android:layout_alignParentBottom="true" style="@style/EbayButton.Blue" />
+</RelativeLayout>

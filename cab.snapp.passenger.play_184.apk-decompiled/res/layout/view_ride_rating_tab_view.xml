@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/bluish_grey" android:gravity="center" android:id="@id/view_ride_rating_tab_badge" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="@dimen/margin_very_small" android:layout_marginRight="@dimen/margin_very_small" android:layout_marginBottom="@dimen/margin_tiny" style="@style/TextView.Default.Small" />
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/bluish_grey" android:id="@id/view_ride_rating_tab_text" style="@style/TextView.Default.Medium" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_ebay_address_clickable" android:paddingTop="@dimen/ebayMargin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/shipping_from_selector" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <FrameLayout android:orientation="horizontal" android:layout_width="@dimen/sell_selector_content_width" android:layout_height="fill_parent">
+            <RadioButton android:layout_gravity="center" android:id="@id/shipping_from_radio" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <include android:id="@id/shipping_from_address" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/view_ebay_address" />
+        <FrameLayout android:id="@id/shipping_from_menu_container" android:layout_width="@dimen/sell_accessibility_target_size" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center|right" android:id="@id/shipping_from_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_vert_24dp" android:tint="?iconTintColor" android:contentDescription="@string/accessibility_address_options" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/dividerHeight" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMarginHalf" />
+</LinearLayout>

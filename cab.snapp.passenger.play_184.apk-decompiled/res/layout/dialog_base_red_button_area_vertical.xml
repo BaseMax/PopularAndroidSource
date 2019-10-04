@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="104.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/dialog_button_negative" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Button 1" android:layout_weight="1.0" style="@style/DialogWhiteButton" />
+    <Button android:id="@id/dialog_button_positive" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Button 2" android:layout_weight="1.0" style="@style/DialogDarkButton" />
+</LinearLayout>

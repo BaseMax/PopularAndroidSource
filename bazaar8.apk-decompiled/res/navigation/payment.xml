@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/paymentGraph" app:startDestination="@id/paymentStarter"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="StartPaymentFragment" android:name="com.farsitel.bazaar.ui.payment.starter.StartPaymentFragment" android:id="@id/paymentStarter">
+        <action android:id="@id/openCreditOptions" app:destination="@id/creditOptions" app:enterAnim="@anim/slide_up" app:exitAnim="@anim/slide_down" app:popUpTo="@id/paymentGraph" />
+        <action android:id="@id/openPaymentOptions" app:destination="@id/paymentOptions" app:enterAnim="@anim/slide_up" app:exitAnim="@anim/slide_down" app:popUpTo="@id/paymentGraph" />
+    </fragment>
+    <fragment android:name="com.farsitel.bazaar.ui.payment.payment.options.PaymentOptionsFragment" android:id="@id/paymentOptions">
+        <argument android:name="buyProductArgs" app:argType="com.farsitel.bazaar.ui.payment.payment.options.BuyProductArgs" />
+        <action android:id="@id/openCreditOptions" app:destination="@id/creditOptions" app:enterAnim="@anim/slide_up" app:exitAnim="@anim/slide_down" />
+        <action android:id="@id/openGatewayPayment" app:destination="@id/gatewayPayment" />
+        <action android:id="@id/openThankYouPage" app:destination="@id/thankYouPage" app:enterAnim="@anim/slide_up" app:exitAnim="@anim/slide_down" />
+    </fragment>
+    <fragment android:name="com.farsitel.bazaar.ui.payment.credit.options.CreditOptionsFragment" android:id="@id/creditOptions">
+        <argument android:name="minimumNeededCredit" android:defaultValue="0L" app:argType="long" />
+        <argument android:name="buyProductArgs" android:defaultValue="@null" app:argType="com.farsitel.bazaar.ui.payment.payment.options.BuyProductArgs" app:nullable="true" />
+        <action android:id="@id/openGatewayPayment" app:destination="@id/gatewayPayment" />
+    </fragment>
+    <fragment android:name="com.farsitel.bazaar.ui.payment.gateway.GatewayPaymentFragment" android:id="@id/gatewayPayment">
+        <argument android:name="dealer" app:argType="string" />
+        <argument android:name="sku" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="developerPayload" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="amount" app:argType="long" />
+        <argument android:name="paymentType" app:argType="string" />
+        <argument android:name="paymentGatewayType" app:argType="string" />
+        <argument android:name="gatewayCode" app:argType="string" />
+        <argument android:name="navigateToPaymentOptionsAfter" app:argType="boolean" />
+        <argument android:name="buyProductArgs" android:defaultValue="@null" app:argType="com.farsitel.bazaar.ui.payment.payment.options.BuyProductArgs" app:nullable="true" />
+        <action android:id="@id/openPaymentWebView" app:destination="@id/paymentWebView" app:enterAnim="@anim/slide_up" app:exitAnim="@anim/slide_down" />
+        <action android:id="@id/openPaymentOptions" app:destination="@id/paymentOptions" app:enterAnim="@anim/slide_up" app:exitAnim="@anim/slide_down" app:popUpTo="@id/paymentGraph" />
+        <action android:id="@id/openThankYouPage" app:destination="@id/thankYouPage" app:enterAnim="@anim/slide_up" app:exitAnim="@anim/slide_down" app:popUpTo="@id/gatewayPayment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="paymentWebView" android:name="com.farsitel.bazaar.ui.payment.web.PaymentWebViewFragment" android:id="@id/paymentWebView">
+        <argument android:name="url" app:argType="string" />
+        <argument android:name="fallbackId" android:defaultValue="-1" app:argType="integer" />
+        <argument android:name="fallbackBundle" android:defaultValue="@null" app:argType="android.os.Bundle" app:nullable="true" />
+        <argument android:name="cacheMode" android:defaultValue="-1" app:argType="integer" />
+        <argument android:name="finishRedirectUrl" app:argType="string" />
+    </fragment>
+    <fragment android:label="thankYouPage" android:name="com.farsitel.bazaar.ui.payment.thanks.PaymentThankYouPageFragment" android:id="@id/thankYouPage">
+        <argument android:name="isSuccess" app:argType="boolean" />
+        <argument android:name="errorModel" android:defaultValue="@null" app:argType="com.farsitel.bazaar.data.entity.ErrorModel" app:nullable="true" />
+        <argument android:name="message" app:argType="string" />
+        <argument android:name="paymentData" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="sign" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+</navigation>

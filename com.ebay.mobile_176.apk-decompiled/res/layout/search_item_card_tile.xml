@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cell_collection_item" android:tag="layout/search_item_card_tile_0" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/srp_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/image_frame" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="@dimen/srp_tile_image_height" android:layout_marginBottom="@dimen/srp_tile_text_spacing" android:foreground="?android:selectableItemBackground">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/image" android:tag="binding_2" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@null" app:averageBackgroundColor="true" app:fadeInDuration="@integer/search_image_fade_in_duration" app:maxHeightPixels="@integer/search_tile_image_size" app:maxWidthPixels="@integer/search_tile_image_size" />
+    </FrameLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/image_frame" layout="@layout/search_item_card_details" />
+</RelativeLayout>

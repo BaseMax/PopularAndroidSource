@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="homescreen_card_deals_carousel_layout">@layout/homescreen_list_card</item>
+    <item type="layout" name="homescreen_card_deals_item_layout">@layout/homescreen_card_deals_item_wide</item>
+    <item type="layout" name="homescreen_card_error">@layout/homescreen_card_error_shim_card</item>
+    <item type="layout" name="homescreen_card_events_carousel_layout">@layout/homescreen_list_card</item>
+    <item type="layout" name="search_refinement_bar_fragment">@layout/search_refinement_bar_fragment_large</item>
+    <item type="layout" name="selling_drafts_layout">@layout/homescreen_list_card</item>
+</resources>

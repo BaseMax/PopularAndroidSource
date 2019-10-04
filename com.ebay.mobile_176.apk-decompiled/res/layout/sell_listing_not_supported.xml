@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tag_image" android:layout_width="@dimen/homescreen_card_error_iconsize" android:layout_height="@dimen/homescreen_card_error_iconsize" android:layout_marginBottom="@dimen/ebayMargin3x" android:src="@drawable/ic_tag" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin5x" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin5x" android:layout_marginBottom="@dimen/ebayMargin4x" android:text="@string/sell_landing_listing_not_supported_1" android:layout_below="@id/tag_image" android:layout_centerHorizontal="true" style="?textAppearanceSubheadSecondary" />
+    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin5x" android:layout_marginRight="@dimen/ebayMargin5x" android:text="@string/sell_landing_listing_not_supported_2" android:layout_below="@id/text" android:layout_centerHorizontal="true" style="?textAppearanceSubheadSecondary" />
+</RelativeLayout>

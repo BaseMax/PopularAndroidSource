@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/picker_panel_info_title_0" android:paddingLeft="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2" android:layout_gravity="center_vertical" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" android:layout_weight="1.0" />
+    <ImageButton android:tag="binding_2" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?iconTintColor" android:minWidth="@dimen/min_touch_target_unit" android:minHeight="@dimen/min_touch_target_unit" />
+</LinearLayout>

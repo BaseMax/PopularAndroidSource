@@ -1,0 +1,42 @@
+package cab.snapp.passenger;
+
+public final class c {
+    public static final String APPLICATION_ID = "cab.snapp.passenger.play";
+    public static final String BUILD_TYPE = "release";
+    public static final boolean DEBUG = false;
+    public static final String FLAVOR = "ProdGooglePlay";
+    public static final String HOSTNAME = "snapp.site";
+    public static final String OAuth = "https://oauth-passenger.snapp.site/v1/auth/";
+    public static final String OAuth2 = "https://oauth-passenger.snapp.site/v1/auth/";
+    public static final String OAuth3 = "https://oauth-passenger.snapp.site/v1/auth/";
+    public static final String OAuthCloud = "https://oauth-passenger.snapp.site/v1/auth/";
+    public static final String OAuthCloud2 = "https://oauth-passenger.snapp.site/v1/auth/";
+    public static final String OAuthCloud3 = "https://oauth-passenger.snapp.site/v1/auth/";
+    public static final String OAuthCloud5 = "https://oauth-passenger.snapp.site/v1/auth/";
+    public static final String OAuthCloudQA = "https://passenger-oauth-snapp-ode-%s.apps.private.teh-1.snappcloud.io/v1/auth/";
+    public static final String OAuth_Master_Rep = "https://oauth-passenger.snapp.site/v1/auth/";
+    public static final Boolean SEND_ANALYTICS_DATA = Boolean.TRUE;
+    public static final Boolean SEND_STAGING_ANALYTICS_DATA = Boolean.FALSE;
+    public static final int VERSION_CODE = 184;
+    public static final String VERSION_NAME = "4.7.0";
+    public static final String baseApi = "https://api.snapp.site/v2/passenger/";
+    public static final String baseApi2 = "https://api.snapp.site/v2/passenger/";
+    public static final String baseApi3 = "https://api.snapp.site/v2/passenger/";
+    public static final String baseApiCloud = "https://api.snapp.site/v2/passenger/";
+    public static final String baseApiCloud2 = "https://api.snapp.site/v2/passenger/";
+    public static final String baseApiCloud3 = "https://api.snapp.site/v2/passenger/";
+    public static final String baseApiCloud5 = "https://api.snapp.site/v2/passenger/";
+    public static final String baseApiCloudQA = "https://base-api-snapp-ode-%s.apps.private.teh-1.snappcloud.io/v2/passenger/";
+    public static final String baseApi_Master_Rep = "https://api.snapp.site/v2/passenger/";
+    public static final String chargeBaseApi = "https://super-finance.snapp.site/api/v1/charge/";
+    public static final String locationsBase = "https://locations.snapp.site/v1/passenger/";
+    public static final String locationsBase2 = "https://locations.snapp.site/v1/passenger/";
+    public static final String locationsBase3 = "https://locations.snapp.site/v1/passenger/";
+    public static final String locationsBaseCloud = "https://locations.snapp.site/v1/passenger/";
+    public static final String locationsBaseCloud2 = "https://locations.snapp.site/v1/passenger/";
+    public static final String locationsBaseCloud3 = "https://locations.snapp.site/v1/passenger/";
+    public static final String locationsBaseCloud5 = "https://locations.snapp.site/v1/passenger/";
+    public static final String locationsBaseCloudQA = "https://locations-snapp-ode-%s.apps.private.teh-1.snappcloud.io/v1/passenger/";
+    public static final String locationsBase_Master_Rep = "https://locations.snapp.site/v1/passenger/";
+    public static final String smappBaseApi = "https://gmaps.snapp.site/maps/api/place/";
+}

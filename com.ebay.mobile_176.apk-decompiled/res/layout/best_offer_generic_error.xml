@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/offer_error_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_null_error" android:contentDescription="@null" />
+    <TextView android:textAppearance="?textAppearanceSubhead" android:gravity="center" android:id="@id/offer_error_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin5x" android:layout_marginTop="@dimen/ebayStaticMargin2x" android:layout_marginRight="@dimen/ebayMargin5x" android:text="@string/best_offer_generic_error" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/bestoffer_error_retry_btn" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/reload" style="@style/EbayButton.Flat" />
+    </LinearLayout>
+</LinearLayout>

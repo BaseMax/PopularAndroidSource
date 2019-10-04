@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/photos_container" android:tag="layout/listing_form_summary_photos_three_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="3.0" style="@style/Sell.DynamicCardContainer.ListingForm">
+        <FrameLayout android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/borderSize" android:layout_marginBottom="@dimen/borderSize" android:foreground="@drawable/sell_image_border" android:layout_weight="1.0" app:layout_columnWeight="1.0">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/photomanager2_cell" />
+        </FrameLayout>
+        <FrameLayout android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/borderSize" android:layout_marginBottom="@dimen/borderSize" android:foreground="@drawable/sell_image_border" android:layout_weight="1.0" app:layout_columnWeight="1.0">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/photomanager2_cell" />
+        </FrameLayout>
+        <FrameLayout android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/borderSize" android:layout_marginBottom="@dimen/borderSize" android:foreground="@drawable/sell_image_border" android:layout_weight="1.0" app:layout_columnWeight="1.0">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/photomanager2_cell" />
+        </FrameLayout>
+    </LinearLayout>
+</merge>

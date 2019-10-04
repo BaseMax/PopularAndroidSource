@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_item_text" android:tag="layout/search_item_text_body_0" android:paddingBottom="@dimen/srp_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayContentSideMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/product_review_layout" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/srp_list_text_row_alignment">
+        <RatingBar android:id="@id/view_stars" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:importantForAccessibility="no" style="@style/EbayProductRating.Small" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/reviews_count" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_toRightOf="@id/view_stars" android:layout_centerVertical="true" android:importantForAccessibility="no" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/srp_tile_text_spacing">
+        <TextView android:id="@id/textview_item_price" android:tag="binding_4" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="?itemPriceStyle" />
+        <TextView android:id="@id/textview_item_price_range" android:tag="binding_5" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="?itemPriceStyle" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/strikethrough_text" android:tag="binding_6" android:paddingLeft="@dimen/srp_list_text_row_alignment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/textview_item_price" android:layout_alignBaseline="@id/textview_item_price" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/unit_text" android:tag="binding_7" android:paddingLeft="@dimen/srp_list_text_row_alignment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/textview_item_price" android:layout_alignBaseline="@id/textview_item_price" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="vertical" android:id="@id/secondary_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.9">
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/details_label" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/format_indicator_text" android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/obo_label" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/or_best_offer" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/bin_label" android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/or_buy_it_now" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/trending_price_label" android:tag="binding_12" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/shipping_text" android:tag="binding_13" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/estimated_delivery_text" android:tag="binding_14" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/ebay_plus_badge" android:tag="binding_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ebay_plus_logo" android:contentDescription="@string/ebay_plus" />
+                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/hotness_text" android:tag="binding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/distance_text" android:tag="binding_17" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <Button android:textSize="@dimen/text_size_caption_material" android:gravity="center|left" android:id="@id/button_more_buying_options" android:tag="binding_18" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/EbayButton.Flat" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:textColor="?buttonFlatAccentTextColor" android:gravity="center" android:id="@id/default_watch" android:tag="binding_19" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/ebayPaddingHalf" android:textAllCaps="true" />
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:tag="binding_20" android:layout_width="16.0dip" android:layout_height="wrap_content" android:layout_weight="0.02" />
+    </LinearLayout>
+</LinearLayout>

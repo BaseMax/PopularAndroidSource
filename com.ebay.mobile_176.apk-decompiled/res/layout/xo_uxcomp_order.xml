@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/order_container" android:tag="layout/xo_uxcomp_order_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:accessibilityLiveRegion="polite"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/order_titles" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xoMarginMediumLarge" android:layout_marginBottom="@dimen/xoMarginSmall" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/order_icons" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/order_items" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/progress_container" />
+    <FrameLayout android:orientation="vertical" android:id="@id/xo_content" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/donations_paypal_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="128.0dip" android:src="@drawable/icon_alert_caution" android:scaleType="fitXY" android:contentDescription="@string/alert" />
+            <TextView android:textColor="@color/style_guide_darker_gray" android:gravity="center" android:id="@id/paypal_disabled_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginTop="@dimen/xoMarginLarge" android:layout_marginRight="@dimen/xoMarginMediumLarge" android:text="@string/xo_cart_login_to_paypal_to_redeem" style="@style/Xo.Text.Medium.Larger" />
+        </LinearLayout>
+        <FrameLayout android:orientation="vertical" android:id="@id/donations_content" android:background="?listContainerOutsideBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Xo.Row">
+                    <TextView android:textStyle="bold" android:id="@id/charity_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin" style="@style/Xo.Text.Medium.Larger" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/charities_list_layout" android:background="?listContainerBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:id="@id/charity_info_card" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Row">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x">
+                            <TextView android:id="@id/charity_title" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" style="@style/Xo.Text" />
+                            <TextView android:ellipsize="end" android:id="@id/charity_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/Xo.Text.Light" />
+                            <TextView android:id="@id/see_more_charity_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cards_see_more" android:onClick="seeMore" style="@style/Xo.Link" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textStyle="bold" android:id="@id/donation_amount_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin" style="@style/Xo.Text.Medium.Larger" />
+                    <LinearLayout android:id="@id/donation_amount_card" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Row">
+                        <RadioGroup android:orientation="vertical" android:id="@id/donation_amount_radio_group" android:paddingLeft="@dimen/ebayStaticMargin4x" android:paddingTop="@dimen/ebayMargin2x" android:paddingBottom="@dimen/ebayMargin2x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Row" />
+                    </LinearLayout>
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/ebayMargin4x" style="@style/Xo" />
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+    </FrameLayout>
+</merge>

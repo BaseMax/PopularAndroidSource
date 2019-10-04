@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="top" android:orientation="horizontal" android:tag="layout/xo_uxcomp_payment_icon_and_text_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/image" android:tag="binding_1" android:layout_marginRight="@dimen/ebayMargin15" style="@style/Xo.Image.Payment.FundingSource" />
+    <TextView android:id="@id/text" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin15" />
+</LinearLayout>

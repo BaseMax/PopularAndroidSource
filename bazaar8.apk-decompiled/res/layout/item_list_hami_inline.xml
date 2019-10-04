@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_list_hami_inline_0" android:paddingBottom="@dimen/default_margin_half" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/hamiCard" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_half" android:layout_marginBottom="@dimen/default_margin_half" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_double" app:cardCornerRadius="@dimen/default_margin" app:cardElevation="@dimen/default_margin_half" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Bazaar.ForegroundContainerRipple">
+        <FrameLayout android:id="@id/hamiInline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_alignParentTop="true" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

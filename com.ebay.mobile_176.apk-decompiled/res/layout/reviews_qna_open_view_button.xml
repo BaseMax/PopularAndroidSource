@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:id="@id/qna_open_view_button" android:tag="layout/reviews_qna_open_view_button_0" android:layout_marginLeft="@dimen/ebayStaticMargin2x" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayStaticMargin2x" android:layout_marginBottom="@dimen/ebayStaticMargin2x" style="@style/EbayButton.Dynamic"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

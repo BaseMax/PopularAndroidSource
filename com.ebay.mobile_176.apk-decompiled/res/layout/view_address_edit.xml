@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/address_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayContentSideMargin">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/et_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/addresses_name" android:maxLines="1" android:inputType="textCapWords|textNoSuggestions" android:imeOptions="actionNext" android:contentDescription="@string/addresses_name" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/et_address_line_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/addresses_address_line_1" android:maxLines="1" android:inputType="textCapWords|textNoSuggestions" android:imeOptions="actionNext" android:contentDescription="@string/addresses_address_line_1" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/et_address_line_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/addresses_address_line_2" android:maxLines="1" android:inputType="textCapWords|textNoSuggestions" android:imeOptions="actionNext" android:contentDescription="@string/addresses_address_line_2" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/et_city" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/addresses_city" android:maxLines="1" android:inputType="textCapWords|textNoSuggestions" android:imeOptions="actionNext" android:contentDescription="@string/addresses_city" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/til_state_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" app:errorEnabled="true">
+                <com.ebay.mobile.connection.address.view.TextInputAutoCompleteTextView android:id="@id/et_state" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/addresses_state_or_province" android:maxLines="1" android:inputType="textCapWords|textNoSuggestions" android:imeOptions="actionNext" android:contentDescription="@string/addresses_state_or_province" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/et_postal_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/addresses_addresses_postal_code" android:maxLines="1" android:inputType="textCapCharacters|textNoSuggestions" android:imeOptions="actionNext" android:contentDescription="@string/addresses_addresses_postal_code" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/til_country_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" app:errorEnabled="true">
+                <com.ebay.mobile.connection.address.view.TextInputAutoCompleteTextView android:id="@id/actv_country" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/addresses_country" android:maxLines="1" android:inputType="textCapWords|textNoSuggestions" android:imeOptions="actionNext" android:contentDescription="@string/addresses_country" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/et_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/addresses_phone" android:maxLines="1" android:inputType="phone" android:imeOptions="actionNext" android:contentDescription="@string/addresses_phone" android:nextFocusForward="@id/cb_is_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <CheckBox android:textAppearance="?textAppearanceBody1" android:layout_gravity="center_vertical" android:id="@id/cb_is_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" android:text="@string/addresses_set_as_primary" android:contentDescription="@string/addresses_set_as_primary" android:nextFocusForward="@id/bt_done" />
+            <Button android:id="@id/bt_done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/addresses_done" android:contentDescription="@string/addresses_done" style="@style/EbayButton.Blue" />
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/ebayMargin3x" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/progress_loading" android:background="@color/registration_dimmed_black" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+    </RelativeLayout>
+</FrameLayout>

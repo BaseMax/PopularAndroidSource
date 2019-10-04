@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/no_items_view" android:background="@color/listContainerLightInsideBackground" android:padding="@dimen/ebayPadding15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2" android:textColor="@color/style_guide_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/prelist_no_items_match" />
+    <TextView android:textAppearance="?textAppearanceBody2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin4x" android:text="@string/prelist_start_listing_header" />
+    <Button android:id="@id/no_items_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prelist_create_listing" android:textAllCaps="false" style="@style/EbayButton.Flat" />
+</LinearLayout>

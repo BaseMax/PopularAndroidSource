@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/black_5pct"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_checked="true" android:drawable="@color/black_5pct" />
+            <item android:drawable="@android:color/white" />
+        </selector>
+    </item>
+</ripple>

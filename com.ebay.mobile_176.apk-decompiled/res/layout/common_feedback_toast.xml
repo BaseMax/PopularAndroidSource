@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.nautilus.shell.quicktips.widget.BubbleLayout android:id="@id/feedback_toast_bubble_layout" android:tag="layout/common_feedback_toast_0" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FeedbackToastBubbleLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/baseline_unit_2x" android:paddingTop="@dimen/baseline_unit_2x" android:paddingRight="@dimen/baseline_unit_2x" android:paddingBottom="@dimen/baseline_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceSubheadInverse" android:textColor="@android:color/white" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/FeedbackToastMessage" />
+    </LinearLayout>
+</com.ebay.nautilus.shell.quicktips.widget.BubbleLayout>

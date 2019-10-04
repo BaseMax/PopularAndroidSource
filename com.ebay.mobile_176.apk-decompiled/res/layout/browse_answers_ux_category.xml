@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/browse_answers_ux_category_0" android:layout_width="fill_parent" android:layout_height="@dimen/answers_category_row_height" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:gravity="center|left" android:id="@id/textview_item_title" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" />
+</FrameLayout>

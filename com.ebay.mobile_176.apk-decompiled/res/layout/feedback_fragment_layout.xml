@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/spinnerLayout" android:paddingLeft="@dimen/ebayContentSideMargin" android:paddingRight="@dimen/ebayContentSideMargin" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightSmall" style="?android:listSeparatorTextViewStyle">
+            <Spinner android:id="@id/listSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="false" android:contentDescription="@string/accessibility_identity_profile_feedback_filter_description" />
+        </RelativeLayout>
+        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="55.0dip" android:drawSelectorOnTop="false" android:divider="@null" />
+        <RelativeLayout android:id="@id/no_items_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/no_items_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_emptystate_allfeedback" android:layout_above="@id/no_items" android:layout_centerHorizontal="true" />
+            <TextView android:textColor="?android:textColorSecondary" android:id="@id/no_items" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="No feedback" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/common_progress" />
+    <include layout="@layout/common_error" />
+    <include layout="@layout/common_translucent_progress" />
+</FrameLayout>

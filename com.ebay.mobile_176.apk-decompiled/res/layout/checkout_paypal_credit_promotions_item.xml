@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/paypal_credit_promotion_link" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ppc_promotion_select" android:layout_width="@dimen/xoMarginHuge" android:layout_height="fill_parent" style="@style/Xo.Row">
+        <RadioButton android:layout_gravity="center|left" android:id="@id/ppc_promotion_select_button" android:paddingLeft="0.0dip" android:paddingRight="@dimen/xoMarginLarge" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ppc_promotion_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/ppc_promotion_divider_top" android:visibility="gone" style="@style/CommonDivider" />
+        <TextView android:id="@id/ppc_promotion_message" android:paddingTop="@dimen/xoMarginMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Xo.Text" />
+        <TextView android:id="@id/ppc_promotion_amount_message" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Xo.Text" />
+        <TextView android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/ppc_promotion_submessage" android:paddingBottom="@dimen/xoMarginMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Xo.Text.Smaller.Light" />
+        <View android:id="@id/ppc_promotion_divider_bottom" android:visibility="gone" style="@style/CommonDivider" />
+    </LinearLayout>
+</LinearLayout>

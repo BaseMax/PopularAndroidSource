@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/garage_banner_my_vehicles_0" android:background="?containerBackgroundColor" android:focusable="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" style="?cardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <requestFocus />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ebay.android.widget.RemoteImageView android:id="@id/imageview_banner_image" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="@dimen/uxcomp_banner_promotional_image_height" android:layout_margin="@dimen/ebayMargin2x" android:src="@drawable/ic_missing_image" android:layout_centerHorizontal="true" app:fadeInDuration="@integer/answers_image_fade_in_duration" />
+            <ImageButton android:id="@id/overflow_menu" android:tag="binding_2" android:background="?android:selectableItemBackground" android:focusable="true" android:visibility="gone" android:layout_width="@dimen/min_touch_target_unit" android:layout_height="@dimen/min_touch_target_unit" android:src="@drawable/ic_more_vert_24dp" android:tint="?iconTintColor" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/uxcomp_banner_promotional_textbox_height">
+            <TextView android:textAppearance="?textAppearanceTitle2" android:ellipsize="end" android:id="@id/textview_banner_title" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:id="@id/textview_banner_subtitle" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:maxLines="2" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:id="@id/textview_banner_subtitle_2" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:maxLines="2" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x">
+                <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/garage_cta1_secondary" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:freezesText="true" style="@style/EbayButton.Secondary" />
+                <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/garage_cta1_primary" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:freezesText="true" style="@style/EbayButton.Blue" />
+                <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/garage_cta2_secondary" android:tag="binding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:freezesText="true" style="@style/EbayButton.Secondary" />
+                <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/garage_cta2_primary" android:tag="binding_9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:freezesText="true" style="@style/EbayButton.Blue" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

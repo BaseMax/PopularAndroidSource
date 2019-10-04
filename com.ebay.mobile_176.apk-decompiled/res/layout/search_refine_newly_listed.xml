@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Switch android:textAppearance="?textAppearanceSubhead" android:textColor="?textColorPrimaryCheckable" android:id="@id/newly_listed_filter" android:tag="layout/search_refine_newly_listed_0" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?android:selectableItemBackground" android:minHeight="@dimen/filter_list_item_min_height" android:text="@string/label_newly_listed" android:paddingStart="@dimen/ebayPadding2x" android:paddingEnd="?android:scrollbarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

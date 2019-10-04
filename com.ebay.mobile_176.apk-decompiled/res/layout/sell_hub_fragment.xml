@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="false" style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_bar_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/ButtonBar.Floating">
+        <Button android:id="@id/button_save" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/sell_save_for_later" android:layout_weight="1.0" style="@style/EbayButton.Blue" />
+        <Button android:id="@id/button_continue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/sell_review" android:layout_weight="1.0" style="@style/EbayButton.Blue" />
+    </LinearLayout>
+    <com.ebay.mobile.sell.widget.CustomScrollView android:id="@id/parent_layout" android:layout_above="@id/button_bar_frame" style="@style/Sell.Layout.Scroll">
+        <LinearLayout style="@style/Sell.Layout.ScrollChild">
+            <RelativeLayout android:id="@id/listing_header" style="@style/Sell.Hub.TopLayout">
+                <FrameLayout android:id="@id/listing_hub_image_frame" android:background="@android:color/transparent" android:focusable="false" android:layout_width="88.0dip" android:layout_height="88.0dip" android:foreground="?android:selectableItemBackground" android:layout_alignParentLeft="true" android:importantForAccessibility="no">
+                    <com.ebay.android.widget.RemoteImageView android:id="@id/listing_hub_top_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+                <TextView android:id="@id/listing_hub_top_header" android:background="?android:listChoiceBackgroundIndicator" android:focusable="true" android:clickable="true" android:layout_toRightOf="@id/listing_hub_image_frame" android:layout_centerVertical="true" style="@style/Sell.Hub.TopLabel" />
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView android:layout_marginBottom="@dimen/ebayPadding2x" style="@style/Sell.Layout.CardView">
+                <com.ebay.mobile.widget.CardLayout android:id="@id/container" style="@style/Sell.Layout.CardLayout">
+                    <include layout="@layout/sell_spokes" />
+                </com.ebay.mobile.widget.CardLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </com.ebay.mobile.sell.widget.CustomScrollView>
+</RelativeLayout>

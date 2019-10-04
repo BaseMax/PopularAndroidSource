@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/photomanager_edit_done" android:title="@string/photomanager_edit_save" app:showAsAction="always" />
+    <item android:id="@id/photomanager_crop_done" android:title="@string/photomanager_crop_apply" app:showAsAction="always" />
+    <item android:id="@id/photomanager_search" android:title="@string/photomanager_search" app:showAsAction="always" />
+</menu>

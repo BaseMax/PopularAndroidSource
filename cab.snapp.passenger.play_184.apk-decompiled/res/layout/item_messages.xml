@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/card_view_message_container" android:background="@drawable/shape_rectangle_alabaster_border_alto" android:padding="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/pure_white" android:ellipsize="end" android:gravity="end|center" android:id="@id/cell_messages_date" android:background="@color/green_blue_two" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Default.Small" />
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:gravity="start|center" android:id="@id/cell_messages_desc" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Default.Medium" />
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:layout_gravity="end|center" android:id="@id/cell_messages_more_btn" android:padding="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/more" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Light.Small" />
+    </LinearLayout>
+</FrameLayout>

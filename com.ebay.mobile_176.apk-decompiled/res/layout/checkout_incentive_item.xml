@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginTop="@dimen/xoMarginMedium" android:layout_marginRight="@dimen/xoMarginMediumLarge" android:layout_marginBottom="@dimen/xoMarginMedium">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/incentive_item_checkbox" android:saveEnabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/xoMarginSmall" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/incentive_display_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/incentive_info_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/xoMarginMedium" android:layout_toLeftOf="@id/incentive_amount_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:id="@id/incentive_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="eBay Bucks" style="@style/Xo.Text.Bold" />
+                <TextView android:id="@id/incentive_info" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Xo.Text.Smaller.Light" />
+            </LinearLayout>
+            <ImageView android:id="@id/xo_cart_incentive_item_label_bucks" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ebay_bucks" android:layout_centerVertical="true" android:contentDescription="@string/xo_cart_ebay_bucks" />
+            <LinearLayout android:orientation="vertical" android:id="@id/incentive_amount_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/incentive_available" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:layout_gravity="right" android:id="@id/incentive_available_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Available: " style="@style/Xo.Text" />
+                    <TextView android:textSize="12.0sp" android:layout_gravity="right" android:id="@id/incentive_available_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$1.00" style="@style/Xo.Text" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/incentive_remaining" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xoDividerHeight">
+                    <TextView android:textSize="11.0sp" android:layout_gravity="right" android:id="@id/incentive_remaining_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Remaining: " style="@style/Xo.Text.Smaller.Light" />
+                    <TextView android:textSize="11.0sp" android:layout_gravity="right" android:id="@id/incentive_remaining_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$1.00" style="@style/Xo.Text.Smaller.Light" />
+                </LinearLayout>
+                <TextView android:textSize="11.0sp" android:layout_gravity="right" android:id="@id/incentive_expiration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xoDividerHeight" android:text="Exp. 12/31/2015" style="@style/Xo.Text.Smaller.Light" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/incentive_divider" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginRight="@dimen/xoMarginMediumLarge" style="@style/CommonDivider" />
+</LinearLayout>

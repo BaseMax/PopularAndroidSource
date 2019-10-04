@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding3x" android:paddingRight="@dimen/ebayPadding3x" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/error_message" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/module_error_message" style="@style/EbayTextAppearance.Subhead.Secondary" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textAppearance="?textAppearanceTitle1" android:id="@id/error_modules" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <View android:id="@id/divider" android:layout_marginTop="@dimen/ebayMargin2x" style="@style/CommonDivider" />
+</LinearLayout>

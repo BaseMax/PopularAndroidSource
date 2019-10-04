@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?cardColor" android:paddingTop="@dimen/ebayScalingPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/intent_footer_separator" android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_card_divider_height" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_alignParentTop="true" layout="@layout/homescreen_card_horizontal_divider" />
+    <Button android:id="@id/footer_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin" android:drawableRight="@drawable/icon_arrowslidedown" android:drawablePadding="@dimen/ebayPadding" android:layout_alignParentRight="true" style="@style/EbayButton.Flat" />
+</RelativeLayout>

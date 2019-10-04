@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:tag="layout/manage_offer_item_cta_secondary_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" style="@style/EbayButton.SecondaryAlt"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

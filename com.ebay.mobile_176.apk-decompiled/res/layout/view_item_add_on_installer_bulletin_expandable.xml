@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/view_item_add_on_installer_bulletin_expandable_0" android:padding="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubheadInverse" android:tag="binding_1" android:layout_width="@dimen/huge_bulletin_dot_dimension" android:layout_height="@dimen/huge_bulletin_dot_dimension" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin3x" />
+    <com.ebay.nautilus.shell.widget.ExpandableLayout android:layout_gravity="center_vertical" android:id="@id/expandable_container" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/ebayPaddingHalf" />
+        <TextView android:id="@id/expandable_view" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/ebayPaddingHalf" />
+    </com.ebay.nautilus.shell.widget.ExpandableLayout>
+    <ImageView android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?iconTintColor" />
+</LinearLayout>

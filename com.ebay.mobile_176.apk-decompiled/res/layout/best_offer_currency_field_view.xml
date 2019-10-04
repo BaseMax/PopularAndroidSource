@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/offer_settings_title_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:labelFor="@id/offer_settings_switch" />
+            <Switch android:id="@id/offer_settings_switch" android:saveEnabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/offer_settings_subtitle_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:labelFor="@id/offer_settings_price" />
+        <com.ebay.mobile.widget.PriceView android:textAppearance="?textAppearanceSubhead" android:id="@id/offer_settings_price" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:selectAllOnFocus="false" android:inputType="numberDecimal" android:backgroundTint="?android:textColorPrimary" app:showCurrencySymbolAlways="true" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:textColor="?colorAlert" android:id="@id/offer_settings_error_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

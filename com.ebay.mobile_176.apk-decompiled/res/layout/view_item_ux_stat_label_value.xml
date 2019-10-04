@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/stat_layout" android:tag="layout/view_item_ux_stat_label_value_0" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/stat_key" android:tag="binding_1" style="@style/StyleGuideViewItemStatKey" />
+    <TextView android:id="@id/stat_value" android:tag="binding_2" android:layout_marginRight="0.0dip" style="@style/StyleGuideViewItemStatValue" />
+</LinearLayout>

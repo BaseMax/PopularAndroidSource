@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.passenger.units.jek_header.JekHeaderView android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/height_toolbar" android:paddingStart="4.0dip" android:paddingEnd="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_jek_header_add_credit_layout" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/button_height_standard" android:weightSum="1.0" android:layout_alignParentEnd="true">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/view_jek_header_credit_holder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/carbon_gray" android:gravity="center" android:id="@id/view_jek_header_credit_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="2.0dip" android:paddingEnd="2.0dip" style="@style/TextView.Bold.Medium" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/carbon_gray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rial" style="@style/TextView.Light.Small" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/carbon_gray" android:gravity="center" android:id="@id/view_jek_header_add_credit_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_credit" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" style="@style/TextView.Default.Medium" />
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_add_credit_accent_24dp" android:scaleType="centerInside" />
+    </LinearLayout>
+</cab.snapp.passenger.units.jek_header.JekHeaderView>

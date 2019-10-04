@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bidding_history_layout" android:tag="layout/view_item_ux_bidding_history_fragment_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/container_header" android:text="@string/label_bidding" style="@style/StyleGuideViewItemCardTitle" />
+    <androidx.cardview.widget.CardView android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard">
+        <RelativeLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/parent_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/time_left_layout" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/bid_count_layout" android:focusable="true" style="@style/StyleGuideViewItemStatCell">
+                    <TextView android:text="@string/item_view_bids" style="@style/StyleGuideViewItemStatKey" />
+                    <TextView android:id="@id/bid_count_textview" style="@style/StyleGuideViewItemStatValue" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/bidders_layout" android:focusable="true" style="@style/StyleGuideViewItemStatCell">
+                    <TextView android:text="@string/item_view_bidders" style="@style/StyleGuideViewItemStatKey" />
+                    <TextView android:id="@id/bidders_count_textview" style="@style/StyleGuideViewItemStatValue" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/view_item_chevron" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

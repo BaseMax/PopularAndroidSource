@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/snapp_jek_frame_stroke_width" android:color="@color/white" />
+            <corners android:radius="@dimen/snapp_jek_frame_corner_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/snapp_jek_frame_stroke_width" android:color="@color/white" />
+        </shape>
+    </item>
+</layer-list>

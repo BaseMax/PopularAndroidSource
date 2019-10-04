@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/offer_error_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2" android:textColor="?colorAlert" android:gravity="center_vertical" android:tag="binding_1" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding3x" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/ebayPadding" />
+</FrameLayout>

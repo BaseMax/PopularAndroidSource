@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cta_button" android:tag="layout/view_item_ux_watch_button_0" android:background="@drawable/btn_secondary" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="?buttonSecondaryStateListAnimator"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cta_button_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMarginHalf" android:contentDescription="@null" />
+    <TextView android:textAppearance="?buttonSecondaryAccentTextAppearance" android:gravity="center_horizontal" android:tag="binding_1" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMarginHalf" />
+</LinearLayout>

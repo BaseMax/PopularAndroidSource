@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/reviews_qna_see_all_questions_0" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ReviewsQnaCardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/questions_container" android:tag="binding_1" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip">
+        <TextView android:textAppearance="?textAppearanceTitle2" android:id="@id/total_answered" android:tag="binding_2" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayMargin" />
+        <com.ebay.nautilus.shell.uxcomponents.widget.ScrollingContainerView android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:decorations="item_divider_horizontal" style="@style/VerticalListItemsNoPaddingStyle" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

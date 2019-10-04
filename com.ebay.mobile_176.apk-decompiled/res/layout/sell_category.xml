@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/parent_layout" style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.mobile.sell.widget.CustomScrollView style="@style/Sell.Layout.Scroll">
+        <LinearLayout style="@style/Sell.Layout.ScrollChild.WithHelp">
+            <LinearLayout android:layout_marginBottom="@dimen/ebayMargin15" style="@style/Sell.Layout.ScrollChild.Content">
+                <TextView android:text="@string/category" style="@style/Sell.Spoke.Title.Top" />
+                <androidx.cardview.widget.CardView style="@style/Sell.Layout.CardView">
+                    <Button android:id="@id/edit_category" style="@style/Sell.FakeSpinner.MaterialButton" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/shopping_cart_dashed_line" />
+            <LinearLayout android:layout_marginTop="@dimen/ebayMargin15" style="@style/Sell.Layout.ScrollChild.Content">
+                <TextView android:text="@string/sell_help_category" style="@style/Sell.Layout.Help.Content" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.ebay.mobile.sell.widget.CustomScrollView>
+</FrameLayout>

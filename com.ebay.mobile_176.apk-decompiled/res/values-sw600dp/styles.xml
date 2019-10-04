@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AccordionContainerStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingRight">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingTop">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">0.0dip</item>
+        <item name="decorations">card_background</item>
+        <item name="horizontalCellPadding">0.0dip</item>
+        <item name="verticalCellPadding">0.0dip</item>
+    </style>
+    <style name="AccordionContainerStyle.Ds6" parent="@style/AccordionContainerStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentInsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_4x</item>
+        <item name="componentOutsidePaddingLeft">0.0dip</item>
+        <item name="componentOutsidePaddingRight">0.0dip</item>
+        <item name="componentOutsidePaddingTop">0.0dip</item>
+        <item name="decorations">none</item>
+        <item name="horizontalCellPadding">0.0dip</item>
+        <item name="verticalCellPadding">0.0dip</item>
+    </style>
+    <style name="AlertSingleItemContainerStyle" parent="@style/SingleItemContainerStyle">
+        <item name="componentOutsidePaddingBottom">0.0dip</item>
+        <item name="componentOutsidePaddingTop">0.0dip</item>
+    </style>
+    <style name="CategoryBrowser.TileScrollerStyle" parent="@style/CategoryBrowser">
+        <item name="android:scrollbarStyle">insideInset</item>
+    </style>
+    <style name="CollectionsCardStyle" parent="@style/EbayCardStyle.Dynamic">
+        <item name="android:layout_marginTop">@dimen/ebayStaticMargin2x</item>
+    </style>
+    <style name="ComponentHeaderStyle">
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentHeaderLeftMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentHeaderLeftMargin</item>
+    </style>
+    <style name="ComponentHeaderStyle.Ds6" parent="@style/ComponentHeaderStyle">
+        <item name="componentOutsidePaddingBottom">0.0dip</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentHeaderLeftMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentHeaderLeftMargin</item>
+        <item name="componentOutsidePaddingTop">0.0dip</item>
+        <item name="headerLayout">@layout/uxcomp_container_title_ds6</item>
+    </style>
+    <style name="ContainerBrowseCategories">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit</item>
+        <item name="componentInsidePaddingLeft">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingRight">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingTop">@dimen/baseline_unit</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">@dimen/card_elevation</item>
+        <item name="decorations">card_background|item_divider_horizontal</item>
+        <item name="horizontalCellPadding">0.0dip</item>
+        <item name="scrollOrientation">vertical</item>
+        <item name="verticalCellPadding">@dimen/baseline_unit_2x</item>
+    </style>
+    <style name="Deals.ItemEEKRating" parent="@style/EbayTextAppearance.Body2" />
+    <style name="Deals.ItemHotness" parent="@style/EbayTextAppearanceStrong.Title1" />
+    <style name="Deals.ItemPriceDetails" parent="@style/EbayTextAppearance.Body2" />
+    <style name="Deals.ItemTitle" parent="@style/EbayTextAppearance.Body2" />
+    <style name="EbayButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">360.0dip</item>
+        <item name="buttonType">primary</item>
+    </style>
+    <style name="GalleryImageFrameStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/ebayStaticMarginHalf</item>
+    </style>
+    <style name="GalleryImageStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="dynamicHeight">square</item>
+    </style>
+    <style name="HomeHorizontalListItemsCardStyle" parent="@style/HorizontalListItemsCardStyle">
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingLeft">10.0dip</item>
+    </style>
+    <style name="HorizontalListItemsCardStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingRight">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingTop">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">0.0dip</item>
+        <item name="decorations">card_background|item_divider_vertical</item>
+        <item name="horizontalCellPadding">@dimen/baseline_unit_3x</item>
+        <item name="scrollOrientation">horizontal</item>
+        <item name="verticalCellPadding">0.0dip</item>
+    </style>
+    <style name="HorizontalListItemsCardStyle.Ds6" parent="@style/HorizontalListItemsCardStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_4x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">@dimen/baseline_unit_half</item>
+        <item name="decorations">none</item>
+        <item name="horizontalCellPadding">@dimen/baseline_unit_2x</item>
+        <item name="scrollOrientation">horizontal</item>
+        <item name="verticalCellPadding">0.0dip</item>
+    </style>
+    <style name="HorizontalListItemsDividedStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">0.0dip</item>
+        <item name="decorations">item_divider_vertical</item>
+        <item name="horizontalCellPadding">@dimen/baseline_unit_3x</item>
+        <item name="scrollOrientation">horizontal</item>
+        <item name="verticalCellPadding">0.0dip</item>
+    </style>
+    <style name="HorizontalListItemsDividedStyle.Ds6" parent="@style/HorizontalListItemsDividedStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_4x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">@dimen/baseline_unit_half</item>
+        <item name="decorations">item_divider_vertical</item>
+        <item name="horizontalCellPadding">@dimen/baseline_unit_2x</item>
+        <item name="scrollOrientation">horizontal</item>
+        <item name="verticalCellPadding">0.0dip</item>
+    </style>
+    <style name="HorizontalListItemsStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">0.0dip</item>
+        <item name="decorations">none</item>
+        <item name="horizontalCellPadding">@dimen/baseline_unit</item>
+        <item name="scrollOrientation">horizontal</item>
+        <item name="verticalCellPadding">0.0dip</item>
+    </style>
+    <style name="HorizontalListItemsStyle.Ds6" parent="@style/HorizontalListItemsStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_4x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">@dimen/baseline_unit_half</item>
+        <item name="decorations">none</item>
+        <item name="horizontalCellPadding">@dimen/baseline_unit_2x</item>
+        <item name="scrollOrientation">horizontal</item>
+        <item name="verticalCellPadding">0.0dip</item>
+    </style>
+    <style name="HorizontalPagedListItemsCardStyle.Ds6" parent="@style/HorizontalPagedListItemsCardStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_4x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">@dimen/baseline_unit_half</item>
+        <item name="decorations">none</item>
+        <item name="horizontalCellPadding">0.0dip</item>
+        <item name="scrollOrientation">horizontal</item>
+        <item name="verticalCellPadding">0.0dip</item>
+    </style>
+    <style name="LeaveFeedbackCardStyle" parent="@style/EbayCardStyle.Dynamic">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="contentPadding">@dimen/ebayPadding2x</item>
+    </style>
+    <style name="ListingFormOverviewPhotosGuidanceModuleMessage" parent="@style/ListingFormGuidanceMessage">
+        <item name="android:paddingTop">@dimen/ebayPadding2x</item>
+        <item name="android:paddingBottom">@dimen/ebayPadding2x</item>
+    </style>
+    <style name="MerchBundleCardStyle" parent="@style/SingleItemCardStyle">
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+    </style>
+    <style name="MerchComplementaryHeaderStyle">
+        <item name="android:textAppearance">?textAppearanceSubheadSecondary</item>
+        <item name="android:layout_marginLeft">@dimen/ebayContentHeaderLeftMargin</item>
+        <item name="android:layout_marginRight">@dimen/ebayContentHeaderLeftMargin</item>
+        <item name="android:layout_marginBottom">@dimen/baseline_unit</item>
+    </style>
+    <style name="PostListingFormBlueFullWidthButtonStyle" parent="@style/EbayButton.Blue">
+        <item name="android:layout_width">@dimen/selling_slim_button_fixed_width</item>
+    </style>
+    <style name="PostListingFormSecondaryAltFullWidthButtonStyle" parent="@style/EbayButton.SecondaryAlt">
+        <item name="android:layout_width">@dimen/selling_slim_button_fixed_width</item>
+    </style>
+    <style name="PostListingFormSecondaryAltHalfWidthButtonStyle" parent="@style/EbayButton.SecondaryAlt">
+        <item name="android:layout_gravity">fill_vertical</item>
+        <item name="android:paddingLeft">@dimen/ebayPadding4x</item>
+        <item name="android:paddingRight">@dimen/ebayPadding4x</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/half_button_width</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintHorizontal_chainStyle">packed</item>
+    </style>
+    <style name="PostListingFormSecondaryFullWidthButtonStyle" parent="@style/EbayButton.Secondary">
+        <item name="android:layout_width">@dimen/selling_slim_button_fixed_width</item>
+    </style>
+    <style name="Prelist.ProductsList" parent="@style/Prelist">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">@dimen/ebayContentSideMargin</item>
+        <item name="android:layout_marginRight">@dimen/ebayContentSideMargin</item>
+    </style>
+    <style name="SearchBarTextAppearance" parent="@style/EbayTextAppearance.Title1">
+        <item name="android:textColor">@color/searchview_hint_light</item>
+    </style>
+    <style name="SearchLandingPageTabStyle">
+        <item name="tabIndicatorColor">?colorAccent</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabSelectedTextColor">?colorAccent</item>
+        <item name="tabTextAppearance">@style/SearchTabTextAppearance</item>
+    </style>
+    <style name="SearchViewTextAppearance" parent="@style/EbayTextAppearance.Title1" />
+    <style name="Sell.Card" parent="@style/EbayCardStyle.Dynamic">
+        <item name="android:layout_marginLeft">@dimen/ebayContentSideMargin</item>
+        <item name="android:layout_marginRight">@dimen/ebayContentSideMargin</item>
+    </style>
+    <style name="Sell.Card.ListAnItem" parent="@style/Sell.Card">
+        <item name="android:layout_marginLeft">@dimen/full_bleed</item>
+        <item name="android:layout_marginTop">@dimen/full_bleed</item>
+        <item name="android:layout_marginRight">@dimen/full_bleed</item>
+    </style>
+    <style name="Sell.Card.ListingForm.Summary.Content" parent="@style/Sell.Card.ListingForm.Summary">
+        <item name="android:layout_marginLeft">@dimen/listing_form_summary_content_margin_zero</item>
+        <item name="android:layout_marginTop">@dimen/ebayMargin2x</item>
+        <item name="android:layout_marginRight">@dimen/listing_form_summary_content_margin_zero</item>
+        <item name="android:layout_marginBottom">@dimen/ebayMargin2x</item>
+    </style>
+    <style name="Sell.Card.ListingForm.Summary.Content.Ds6" parent="@style/Sell.Card.ListingForm.Summary.Content">
+        <item name="android:layout_margin">@dimen/listing_form_summary_content_margin_zero</item>
+    </style>
+    <style name="Sell.Card.SellingOverview" parent="@style/Sell.Card">
+        <item name="android:layout_marginTop">@dimen/ebayMargin2x</item>
+    </style>
+    <style name="Sell.DynamicCardContainer.ListingForm.Preferences" parent="@style/Sell.DynamicCardContainer.ListingForm">
+        <item name="android:paddingLeft">@dimen/listing_form_summary_content_margin_zero</item>
+        <item name="android:paddingRight">@dimen/listing_form_summary_content_margin_zero</item>
+    </style>
+    <style name="Sell.EmptyStateIcon" parent="@style/Sell">
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="Sell.FinalizeButtonLayout" parent="@style/Sell">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">@dimen/selling_slim_button_fixed_width</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Sell.ListAnItemButton" parent="@style/EbayButton.Blue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:layout_marginRight">0.0dip</item>
+        <item name="android:minWidth">@dimen/card_more_button_width</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="Sell.SlimListAnItemButton" parent="@style/EbayButton.Blue">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">@dimen/selling_slim_button_fixed_width</item>
+        <item name="android:layout_marginTop">@dimen/selling_slim_button_top_margin_tablet</item>
+        <item name="android:layout_marginBottom">@dimen/selling_slim_button_bottom_margin_tablet</item>
+    </style>
+    <style name="Sell.TextView.LegalText" parent="@style/Sell.TextView">
+        <item name="android:textAppearance">?textAppearanceCaption1</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_marginBottom">@dimen/ebayMargin</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:layout_marginStart">@dimen/ebayMargin2x</item>
+        <item name="android:layout_marginEnd">@dimen/ebayMargin2x</item>
+    </style>
+    <style name="SellInsightsToolTipStyle" parent="@style/QuickTipMessage">
+        <item name="android:background">@color/quick_tip_background</item>
+        <item name="android:paddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="android:paddingTop">@dimen/baseline_unit_2x</item>
+        <item name="android:paddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="android:paddingBottom">@dimen/baseline_unit_2x</item>
+    </style>
+    <style name="SellLandingListItemButtonStyle" parent="@style/EbayButton.Blue">
+        <item name="android:layout_width">@dimen/selling_slim_button_fixed_width</item>
+    </style>
+    <style name="SellLandingSignInButtonStyle" parent="@style/EbayButton.White">
+        <item name="android:layout_gravity">fill_vertical</item>
+        <item name="android:paddingLeft">@dimen/ebayPadding4x</item>
+        <item name="android:paddingRight">@dimen/ebayPadding4x</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/half_button_width</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintHorizontal_chainStyle">packed</item>
+    </style>
+    <style name="SellPriceRecommendVerticalGridListItemsStyle" parent="@style/VerticalGridListItemsCardStyle">
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+    </style>
+    <style name="SingleItemCardNoPaddingStyle">
+        <item name="componentInsidePaddingBottom">0.0dip</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">0.0dip</item>
+        <item name="decorations">card_background</item>
+    </style>
+    <style name="SingleItemCardStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingRight">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingTop">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">@dimen/card_elevation</item>
+        <item name="decorations">card_background</item>
+        <item name="horizontalCellPadding">0.0dip</item>
+        <item name="verticalCellPadding">0.0dip</item>
+    </style>
+    <style name="SingleItemCardStyle.Ds6" parent="@style/SingleItemCardStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_4x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">@dimen/baseline_unit_half</item>
+        <item name="decorations">none</item>
+        <item name="horizontalCellPadding">0.0dip</item>
+        <item name="verticalCellPadding">0.0dip</item>
+    </style>
+    <style name="SingleItemContainerNoPaddingStyle">
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+    </style>
+    <style name="SingleItemContainerStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingRight">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingTop">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">0.0dip</item>
+        <item name="decorations">none</item>
+        <item name="horizontalCellPadding">0.0dip</item>
+        <item name="verticalCellPadding">0.0dip</item>
+    </style>
+    <style name="SingleItemContainerStyle.Ds6" parent="@style/SingleItemContainerStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_4x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">@dimen/baseline_unit_half</item>
+        <item name="decorations">none</item>
+        <item name="horizontalCellPadding">0.0dip</item>
+        <item name="verticalCellPadding">0.0dip</item>
+    </style>
+    <style name="UserDetailsCard" parent="@style/EbayCardStyle.Dynamic">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="contentPadding">@dimen/ebayPadding2x</item>
+    </style>
+    <style name="VerticalGridListItemsCardNoDividersStyle" parent="@style/VerticalGridListItemsCardStyle">
+        <item name="componentInsidePaddingLeft">@dimen/baseline_unit_4x</item>
+        <item name="componentInsidePaddingRight">@dimen/baseline_unit_4x</item>
+        <item name="componentInsidePaddingTop">@dimen/baseline_unit_half</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit</item>
+        <item name="componentOutsidePaddingTop">@dimen/baseline_unit</item>
+        <item name="decorations">card_background</item>
+    </style>
+    <style name="VerticalGridListItemsCardNoDividersStyle.Ds6" parent="@style/VerticalGridListItemsCardStyle.Ds6">
+        <item name="componentInsidePaddingLeft">@dimen/baseline_unit_4x</item>
+        <item name="componentInsidePaddingRight">@dimen/baseline_unit_4x</item>
+        <item name="componentInsidePaddingTop">@dimen/baseline_unit_half</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_5x</item>
+        <item name="decorations">card_background</item>
+    </style>
+    <style name="VerticalGridListItemsCardStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingRight">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingTop">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">@dimen/card_elevation</item>
+        <item name="decorations">card_background|item_divider_horizontal</item>
+        <item name="horizontalCellPadding">@dimen/baseline_unit_3x</item>
+        <item name="scrollOrientation">vertical</item>
+        <item name="verticalCellPadding">@dimen/baseline_unit_3x</item>
+    </style>
+    <style name="VerticalGridListItemsCardStyle.Ds6" parent="@style/VerticalGridListItemsCardStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_4x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">@dimen/baseline_unit_half</item>
+        <item name="decorations">item_divider_horizontal</item>
+        <item name="horizontalCellPadding">@dimen/baseline_unit_3x</item>
+        <item name="scrollOrientation">vertical</item>
+        <item name="verticalCellPadding">@dimen/baseline_unit_2x</item>
+    </style>
+    <style name="VerticalGridListItemsCardStyleNoLeftRightPadding">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">@dimen/card_elevation</item>
+        <item name="decorations">card_background|item_divider_horizontal</item>
+        <item name="horizontalCellPadding">@dimen/baseline_unit_3x</item>
+        <item name="scrollOrientation">vertical</item>
+        <item name="verticalCellPadding">@dimen/baseline_unit_3x</item>
+    </style>
+    <style name="VerticalGridListItemsDividedStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">0.0dip</item>
+        <item name="decorations">item_divider_horizontal</item>
+        <item name="horizontalCellPadding">@dimen/baseline_unit_2x</item>
+        <item name="scrollOrientation">vertical</item>
+        <item name="verticalCellPadding">@dimen/baseline_unit_2x</item>
+    </style>
+    <style name="VerticalGridListItemsDividedStyle.Ds6" parent="@style/VerticalGridListItemsDividedStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_4x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">@dimen/baseline_unit_half</item>
+        <item name="decorations">item_divider_horizontal</item>
+        <item name="horizontalCellPadding">@dimen/baseline_unit_3x</item>
+        <item name="scrollOrientation">vertical</item>
+        <item name="verticalCellPadding">@dimen/baseline_unit_2x</item>
+    </style>
+    <style name="VerticalGridListItemsStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">0.0dip</item>
+        <item name="decorations">none</item>
+        <item name="horizontalCellPadding">@dimen/baseline_unit_2x</item>
+        <item name="scrollOrientation">vertical</item>
+        <item name="verticalCellPadding">@dimen/baseline_unit_2x</item>
+    </style>
+    <style name="VerticalGridListItemsStyle.Ds6" parent="@style/VerticalGridListItemsStyle">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">0.0dip</item>
+        <item name="componentInsidePaddingRight">0.0dip</item>
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingBottom">@dimen/baseline_unit_4x</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">@dimen/baseline_unit_half</item>
+        <item name="decorations">none</item>
+        <item name="horizontalCellPadding">@dimen/baseline_unit_3x</item>
+        <item name="scrollOrientation">vertical</item>
+        <item name="verticalCellPadding">@dimen/baseline_unit_2x</item>
+    </style>
+    <style name="VerticalNavigationGrid">
+        <item name="componentInsidePaddingBottom">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingLeft">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingRight">@dimen/baseline_unit_2x</item>
+        <item name="componentInsidePaddingTop">0.0dip</item>
+        <item name="componentOutsidePaddingBottom">0.0dip</item>
+        <item name="componentOutsidePaddingLeft">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingRight">@dimen/ebayContentSideMargin</item>
+        <item name="componentOutsidePaddingTop">0.0dip</item>
+        <item name="decorations">card_background</item>
+        <item name="horizontalCellPadding">0.0dip</item>
+        <item name="scrollOrientation">vertical</item>
+        <item name="verticalCellPadding">0.0dip</item>
+    </style>
+    <style name="ViewItemHeadingInAppBarStyle" />
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+    <style name="XoSuccessAdCardStyle">
+        <item name="android:layout_marginLeft">@dimen/ebayMargin2x</item>
+        <item name="android:layout_marginRight">@dimen/ebayMargin2x</item>
+    </style>
+</resources>

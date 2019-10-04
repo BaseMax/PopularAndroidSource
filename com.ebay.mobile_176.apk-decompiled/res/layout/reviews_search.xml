@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white_66pct" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayStaticMargin" android:weightSum="1.0">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:importantForAccessibility="no" app:errorEnabled="false">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/search_field" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search_reviews" android:lines="1" android:drawableLeft="@drawable/reviews_search" android:inputType="text" android:imeOptions="actionSearch" />
+                <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:contentDescription="@string/search_reviews" android:alpha="0.0" android:labelFor="@id/search_field" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/clear_search_button" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_x_holo_light" android:scaleType="center" android:layout_weight="0.0" android:contentDescription="@string/accessibility_review_clear_search" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/review_search_result_apology" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reviews_no_reviews_apology" android:importantForAccessibility="yes" style="@style/EbayTextAppearance.Subhead" />
+        <TextView android:id="@id/review_search_result_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin2x" android:layout_marginTop="@dimen/ebayStaticMargin" android:layout_marginRight="@dimen/ebayStaticMargin2x" android:layout_marginBottom="@dimen/ebayStaticMargin2x" android:importantForAccessibility="yes" />
+    </LinearLayout>
+    <View android:id="@id/no_results_deadspace" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+</LinearLayout>

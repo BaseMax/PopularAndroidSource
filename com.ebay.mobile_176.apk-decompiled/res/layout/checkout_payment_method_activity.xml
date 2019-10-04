@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:orientation="vertical" android:id="@id/xo_content" android:background="?listContainerOutsideBackground" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/checkout_error_container" />
+            <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/payments_list" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" ebay:dividerColor="@color/style_guide_divider" />
+        </LinearLayout>
+    </ScrollView>
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/search_box_layout" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/location_button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/location_voice_search_button" android:paddingRight="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_voice_black_24dp" android:tint="?iconTintColor" android:onClick="onClick" android:contentDescription="@string/store_picker_voice_search_prompt" />
+        <ImageView android:id="@id/location_text_delete_button" android:paddingRight="@dimen/ebayPadding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_x_holo_light" android:onClick="onClick" android:contentDescription="@string/delete" />
+    </FrameLayout>
+    <com.ebay.payments.widget.DelayedAutoCompleteTextView android:textAppearance="?android:textAppearanceSmall" android:textColorHint="@color/home_search_hint" android:gravity="center|left" android:id="@id/location_entry_box" android:background="@android:color/transparent" android:paddingLeft="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightSmall" android:hint="@string/store_picker_location_entry_prompt" android:drawableLeft="@drawable/ic_mglass_home" android:drawablePadding="@dimen/ebayPadding" android:layout_toLeftOf="@id/location_button_layout" android:dropDownWidth="fill_parent" android:imeOptions="actionSearch|flagNoExtractUi" />
+</RelativeLayout>

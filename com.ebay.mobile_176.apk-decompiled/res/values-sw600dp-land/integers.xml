@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="apptentive_image_grid_default_column_number">5</integer>
+    <integer name="browse_categories_tiled_column_count">5</integer>
+    <integer name="browse_category_nav_column_count">3</integer>
+    <integer name="browse_item_listing_column_count">2</integer>
+    <integer name="browse_top_product_span_count">4</integer>
+    <integer name="events_hub_columns">3</integer>
+    <integer name="gallery_image_span_count">6</integer>
+    <integer name="merchandise_grid_columns">2</integer>
+    <integer name="prelist_aspects_columns">3</integer>
+    <integer name="prp_item_listing_column_count">2</integer>
+    <integer name="trending_topic_listings_max_shown">5</integer>
+    <integer name="trending_topic_listings_span_count">5</integer>
+    <integer name="view_item_gallery_columns">5</integer>
+</resources>

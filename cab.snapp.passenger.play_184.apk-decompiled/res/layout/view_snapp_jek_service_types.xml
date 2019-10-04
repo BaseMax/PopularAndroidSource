@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/snapp_jek_service_types_control_holder_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.cardview.widget.CardView android:id="@id/view_snapp_jek_service_types_card" android:layout_width="fill_parent" android:layout_height="@dimen/snapp_jek_service_types_control_height" app:cardBackgroundColor="@color/white" app:cardCornerRadius="0.0dip" app:cardElevation="2.0dip" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/view_snapp_jek_service_types_holder_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/snapp_jek_service_types_control_height" android:layout_marginStart="@dimen/snapp_jek_service_types_control_side_margin" android:layout_marginEnd="@dimen/snapp_jek_service_types_control_side_margin">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_snapp_jek_service_types_first_item" android:layout_width="0.0dip" android:layout_height="@dimen/snapp_jek_services_item_height" android:layout_weight="1.0" android:layout_marginStart="@dimen/snapp_jek_services_item_sides_margin" android:layout_marginEnd="@dimen/snapp_jek_services_item_sides_margin">
+                <ImageView android:id="@id/view_snapp_jek_service_types_first_item_imageview" android:layout_width="@dimen/snapp_jek_services_item_image_size" android:layout_height="@dimen/snapp_jek_services_item_image_size" android:scaleType="centerInside" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/carbon_gray" android:gravity="center|top" android:id="@id/view_snapp_jek_service_types_first_item_textview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-2.0dip" style="@style/TextView.Default.Small" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_snapp_jek_service_types_sec_item" android:layout_width="0.0dip" android:layout_height="@dimen/snapp_jek_services_item_height" android:layout_weight="1.0" android:layout_marginStart="@dimen/snapp_jek_services_item_sides_margin" android:layout_marginEnd="@dimen/snapp_jek_services_item_sides_margin">
+                <ImageView android:id="@id/view_snapp_jek_service_types_sec_item_imageview" android:layout_width="@dimen/snapp_jek_services_item_image_size" android:layout_height="@dimen/snapp_jek_services_item_image_size" android:scaleType="centerInside" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/carbon_gray" android:gravity="center|top" android:id="@id/view_snapp_jek_service_types_sec_item_textview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-2.0dip" style="@style/TextView.Default.Small" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_snapp_jek_service_types_third_item" android:layout_width="0.0dip" android:layout_height="@dimen/snapp_jek_services_item_height" android:layout_weight="1.0" android:layout_marginStart="@dimen/snapp_jek_services_item_sides_margin" android:layout_marginEnd="@dimen/snapp_jek_services_item_sides_margin">
+                <ImageView android:id="@id/view_snapp_jek_service_types_third_item_imageview" android:layout_width="@dimen/snapp_jek_services_item_image_size" android:layout_height="@dimen/snapp_jek_services_item_image_size" android:scaleType="centerInside" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/carbon_gray" android:gravity="center|top" android:id="@id/view_snapp_jek_service_types_third_item_textview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-2.0dip" style="@style/TextView.Default.Small" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

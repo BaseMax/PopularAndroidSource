@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:id="@id/terms_and_conditions_container" android:padding="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <com.ebay.android.widget.ButtonBar android:layout_gravity="bottom" android:id="@id/button_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" ebay:positiveButtonId="@id/button_continue" ebay:positiveButtonText="@string/ok" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/details_layout" android:paddingLeft="@dimen/ebayPaddingHalf" android:paddingRight="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/following_listing_details_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/following_details_text_size" android:ellipsize="end" android:id="@id/text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:fontFamily="sans-serif" />
+    <TextView android:textSize="@dimen/following_details_text_size" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/text" android:layout_alignParentLeft="true" android:fontFamily="sans-serif" />
+    <TextView android:textSize="@dimen/following_details_text_size" android:gravity="end" android:id="@id/bid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/price" android:layout_below="@id/text" android:layout_alignParentRight="true" />
+</RelativeLayout>

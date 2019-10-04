@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/text_entry_container" android:tag="layout/reviews_qna_text_entry_0" android:padding="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="center" android:id="@id/text_entry_caption" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/text_entry_input_container" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" app:counterEnabled="true" app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText android:gravity="center|left|top" android:id="@id/text_entry_input" android:tag="binding_3" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" android:imeOptions="actionDone" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView android:textAppearance="?textAppearanceCaption1" android:gravity="center_horizontal" android:id="@id/community_guidelines" android:tag="binding_4" android:background="?containerBackgroundColorGray" android:padding="@dimen/ebayMargin" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:gravity="center_horizontal" android:id="@id/terms_and_conditions" android:tag="binding_5" android:padding="@dimen/ebayPadding" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" />
+    <Button android:id="@id/text_entry_submit" android:tag="binding_6" android:layout_marginTop="@dimen/ebayMargin" style="@style/EbayButton.Dynamic" />
+</LinearLayout>

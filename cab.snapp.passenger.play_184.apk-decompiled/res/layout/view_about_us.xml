@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.passenger.units.about_us.AboutUsView android:orientation="vertical" android:background="@color/pure_white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_toolbar_primary" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:padding="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="40.0dip" android:src="@drawable/ic_snapp_logo_vector" android:scaleType="fitXY" android:tint="@color/green_blue_two" android:minWidth="150.0dip" android:minHeight="48.0dip" />
+            <View android:paddingLeft="@dimen/padding_medium" android:paddingRight="@dimen/padding_medium" android:layout_marginTop="@dimen/margin_medium" style="@style/Divider.Horizontal" />
+            <cab.snapp.snappuikit.SnappLoading android:layout_gravity="center_horizontal" android:id="@id/view_about_us_snapp_loading_about_snapp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" app:snappLoadingSize="small" app:snappLoadingTheme="accent" />
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/scorpion" android:gravity="center" android:id="@id/view_about_us_tv_about_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" style="@style/TextView.Light.Medium" />
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/view_about_us_term_condition_link_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/snapp_terms_and_condition" style="@style/TextView.Default.Medium" />
+            <View android:paddingLeft="@dimen/padding_medium" android:paddingRight="@dimen/padding_medium" android:layout_marginTop="@dimen/margin_medium" style="@style/Divider.Horizontal" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/brown_grey" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/version" android:layout_marginEnd="@dimen/margin_small" style="@style/TextView.Light.Medium" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/brown_grey" android:id="@id/view_about_us_version_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextView.Light.Medium" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/scorpion" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/view_about_us_api_server_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextView.Default.Medium" />
+        </LinearLayout>
+    </ScrollView>
+</cab.snapp.passenger.units.about_us.AboutUsView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.passenger.units.over_the_map_empty.OverTheMapEmptyView android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/over_the_map_back_layout" android:background="@color/color_accent" android:visibility="gone" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/splash_center_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_snapp_logo_vector" android:scaleType="fitXY" android:minWidth="120.0dip" android:minHeight="38.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</cab.snapp.passenger.units.over_the_map_empty.OverTheMapEmptyView>

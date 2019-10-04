@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="vertical" android:id="@android:id/empty" android:paddingTop="@dimen/searchlanding_null_top_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin15">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/searchlanding_null_icon_size" android:layout_height="@dimen/searchlanding_null_icon_size" android:src="@drawable/search_for" android:scaleType="fitXY" android:tint="?iconTintColor" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/searchlanding_null_icon_size" android:layout_height="@dimen/searchlanding_null_icon_size" android:src="@drawable/member" android:scaleType="fitXY" android:tint="?iconTintColor" android:contentDescription="@null" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/followNullTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/search_landing_follow_null_title" style="?textAppearanceTitle2" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/followNullMessage" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin8x" android:layout_marginRight="@dimen/ebayMargin8x" android:text="@string/search_landing_follow_null_message" style="?textAppearanceBody1Secondary" />
+    <Button android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/button_login" android:padding="@dimen/ebayPadding" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_landing_follow_null_call_to_action" style="@style/EbayButton.Flat" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Notification.Carousel" parent="@style/Theme.AppCompat.DayNight">
+        <item name="android:textColorPrimary">@color/notification_ds6_header</item>
+        <item name="android:textColorSecondary">@color/notification_ds6_secondary_text</item>
+        <item name="android:textSize">@dimen/ebayTextSize</item>
+        <item name="buttonPrimaryBackground">@color/btn_background_selector_ds6</item>
+        <item name="buttonPrimaryRippleColor">@color/btn_ripple_color_ds6</item>
+        <item name="buttonPrimaryStateListAnimator">@animator/btn_unelevated_state_list_anim</item>
+        <item name="buttonPrimaryTextAppearance">?textAppearanceButton</item>
+        <item name="buttonPrimaryTextColor">@color/btn_text_color_selector</item>
+        <item name="buttonSecondaryAccentTextAppearance">@style/EbayTextAppearance.Button.Secondary</item>
+        <item name="buttonSecondaryAccentTextColor">@color/btn_text_accent</item>
+        <item name="buttonSecondaryBackground">@color/btn_secondary_background_selector</item>
+        <item name="buttonSecondaryRippleColor">@color/btn_secondary_ripple_color</item>
+        <item name="buttonSecondaryStateListAnimator">@animator/btn_state_list_animator</item>
+        <item name="buttonSecondaryStrokeColor">@color/style_guide_p002_blue_ds6</item>
+        <item name="buttonSecondaryStrokeWidth">1.0dip</item>
+        <item name="iconTintColor">@color/style_guide_tint_dark</item>
+        <item name="textAppearanceButton">@style/EbayTextAppearance.Ds6.Button</item>
+    </style>
+    <style name="AppTheme.Notification.NonDs6" parent="@style/Theme.AppCompat.DayNight">
+        <item name="android:textColorPrimary">@color/notification_ds6_header</item>
+        <item name="android:textColorSecondary">@color/notification_ds6_secondary_text</item>
+        <item name="android:textSize">@dimen/ebayTextSize</item>
+        <item name="android:background">@drawable/notification_material_bg</item>
+        <item name="buttonPrimaryBackground">@color/btn_background_selector</item>
+        <item name="buttonPrimaryRippleColor">@color/btn_ripple_color</item>
+        <item name="buttonPrimaryStateListAnimator">@animator/btn_state_list_animator</item>
+        <item name="buttonPrimaryTextAppearance">?textAppearanceButton</item>
+        <item name="buttonPrimaryTextColor">@color/notification_action_text_light</item>
+        <item name="buttonSecondaryAccentTextAppearance">@style/EbayTextAppearance.Ds6.Button.Secondary</item>
+        <item name="buttonSecondaryAccentTextColor">@color/notification_ds6_secondary_button_text</item>
+        <item name="buttonSecondaryBackground">@color/button_secondary_normal</item>
+        <item name="buttonSecondaryRippleColor">@color/btn_secondary_ripple_color</item>
+        <item name="buttonSecondaryStateListAnimator">@animator/btn_unelevated_state_list_anim</item>
+        <item name="buttonSecondaryStrokeColor">@color/notification_secondary_button_color</item>
+        <item name="buttonSecondaryStrokeWidth">@dimen/button_stroke_width</item>
+        <item name="containerBackgroundColor">@color/white_0pct</item>
+        <item name="listDividerHorizontal">@color/white_30pct</item>
+        <item name="textAppearanceButton">@style/EbayButton</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert" />
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth" />
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge" />
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+</resources>

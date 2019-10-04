@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckedTextView android:textColor="?android:textColorPrimary" android:gravity="center_vertical" android:id="@android:id/text1" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" android:checkMark="?android:listChoiceIndicatorSingle" style="@style/Sell.Layout.Row.Label" />
+    <TextView android:id="@id/listing_format_guidance" android:visibility="gone" style="@style/Sell.InlineLabel.Guidance.LeftArrowUp" />
+</LinearLayout>

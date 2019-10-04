@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/style_guide_text_primary" android:id="@id/spinnerTarget" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:textAppearance"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

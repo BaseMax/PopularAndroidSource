@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center_horizontal" android:tag="layout/picker_panel_stepper_0" android:background="?selectableItemBackground" android:paddingTop="@dimen/picker_stepper_top_extra" android:paddingBottom="@dimen/ebayMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayPadding2x" android:layout_marginBottom="@dimen/ebayMargin" android:minWidth="@dimen/picker_stepper_icon_height" android:textAlignment="center"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

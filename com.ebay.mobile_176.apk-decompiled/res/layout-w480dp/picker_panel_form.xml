@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:tag="layout-w480dp/picker_panel_form_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.nautilus.shell.uxcomponents.widget.ScrollingContainerView android:orientation="vertical" android:id="@id/picker_entity_entry_form" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMarginHalf" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.5" style="@style/VerticalListItemsNoPaddingStyle" />
+    <FrameLayout android:layout_gravity="bottom" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/picker_entity_entry_form" app:layout_constraintLeft_toRightOf="@id/picker_entity_entry_form" app:layout_constraintWidth_percent="0.5">
+        <include layout="@layout/picker_panel_call_to_action" />
+    </FrameLayout>
+    <FrameLayout android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/picker_entity_entry_form" app:layout_constraintWidth_percent="0.5">
+        <include layout="@layout/picker_panel_form_field_error" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

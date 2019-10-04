@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="?android:listChoiceBackgroundIndicator" android:paddingTop="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ebp_content_layout" android:background="@null" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="0.0dip" style="@style/StyleGuideViewItemStatCell">
+        <TextView android:layout_gravity="top" android:id="@id/ebp_key" style="@style/StyleGuideViewItemStatKey" />
+        <TextView android:id="@id/ebp_value" style="@style/StyleGuideViewItemStatValue" />
+    </LinearLayout>
+    <ImageView android:id="@id/chevron_icon" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMargin" android:src="?spokeChevronDrawable" android:layout_alignTop="@id/ebp_content_layout" android:layout_alignBottom="@id/ebp_content_layout" android:layout_alignParentRight="true" android:contentDescription="@null" android:importantForAccessibility="no" />
+</RelativeLayout>

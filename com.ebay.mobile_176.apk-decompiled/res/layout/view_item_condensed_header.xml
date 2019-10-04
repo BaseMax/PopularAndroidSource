@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/thumbnail_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ebay.android.widget.RemoteImageView android:id="@id/thumbnail" android:layout_width="@dimen/view_item_condensed_image_size" android:layout_height="@dimen/view_item_condensed_image_size" android:src="@drawable/ic_missing_image" android:scaleType="fitCenter" ebay:averageBackgroundColor="true" />
+            <TextView android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/banner" android:background="@color/opacity_80_percent_style_guide_text_primary" android:layout_width="@dimen/view_item_condensed_image_size" android:layout_height="wrap_content" android:layout_alignBottom="@id/thumbnail" />
+        </RelativeLayout>
+        <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginBottom="@dimen/ebayStaticMargin" android:layout_toRightOf="@id/thumbnail_layout" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:layout_below="@id/title" android:layout_alignLeft="@id/title" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/descriptor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/price" android:layout_alignLeft="@id/title" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMargin4x" android:layout_alignRight="@id/title" android:layout_alignBottom="@id/descriptor" />
+        <include layout="@layout/view_item_chevron" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

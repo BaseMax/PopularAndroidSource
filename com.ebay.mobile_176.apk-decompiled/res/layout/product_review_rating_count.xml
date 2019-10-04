@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:tag="layout/product_review_rating_count_0" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="@dimen/ebayMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/rating_category" android:tag="binding_1" android:layout_width="92.0dip" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/rating_count_text" android:tag="binding_2" android:layout_width="48.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ProgressBar android:id="@id/rating_count_progress" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginRight="@dimen/ebayMargin" android:progressDrawable="@drawable/product_review_rating_count_bar" android:layout_toLeftOf="@id/rating_count_text" android:layout_toRightOf="@id/rating_category" android:layout_centerVertical="true" style="?android:progressBarStyleHorizontal" />
+</RelativeLayout>

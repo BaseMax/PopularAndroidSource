@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_transaction_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:tag="binding_1" android:padding="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/Bazaar.Text.FlatRipple.TransactionItem" />
+        <androidx.appcompat.widget.AppCompatTextView android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/Bazaar.Text.FlatRipple.TransactionItem" />
+        <androidx.appcompat.widget.AppCompatTextView android:tag="binding_4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" style="@style/Bazaar.Text.FlatRipple.TransactionItem" />
+        <androidx.appcompat.widget.AppCompatTextView android:tag="binding_5" android:longClickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" style="@style/Bazaar.Text.FlatRipple.TransactionItem" />
+    </LinearLayout>
+    <View android:layout_gravity="center" android:tag="binding_6" android:background="@color/c_text_caption_info" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/default_margin_double" />
+</FrameLayout>

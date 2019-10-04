@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_item_buybox_fragment_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceTitle2" android:id="@id/textview_item_name" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/item_subtitle_textview" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/product_review_layout" android:paddingTop="@dimen/ebayPaddingHalf" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RatingBar android:layout_gravity="center_vertical" android:id="@id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/EbayProductRating.Small" />
+        <TextView android:textColor="?android:textColorTertiary" android:gravity="center_vertical" android:id="@id/reviews_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" />
+    </LinearLayout>
+    <TextView android:textColor="?android:textColorTertiary" android:id="@id/product_qna_summary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/price_layout_one" layout="@layout/view_item_buybox_prices" />
+    <LinearLayout android:orientation="vertical" android:id="@id/price_layout_two" android:tag="binding_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/item_card_abin_vertical_separator" android:background="?dividerHorizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/ebayMargin15" android:layout_marginBottom="@dimen/ebayMarginHalf" />
+        <include layout="@layout/view_item_buybox_prices" />
+    </LinearLayout>
+    <include android:id="@id/classified_vehicle_seller_phone" layout="@layout/view_item_classified_vehicle_seller_phone" />
+    <LinearLayout android:orientation="vertical" android:id="@id/vehicle_or_local_pickup_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin">
+        <View android:id="@id/abin_divider" android:background="?dividerHorizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/type_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vehicle_pickup_or_shipping" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/item_location_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/guaranteed_delivery_container" android:tag="binding_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin">
+        <include android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="@dimen/fast_and_free_pic_height_highlights" layout="@layout/view_item_egd_fast_and_free" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/guaranteed_by_textview" android:paddingBottom="@dimen/ebayPaddingHalf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/need_it_by_textview" android:paddingBottom="@dimen/ebayPaddingHalf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/need_it_by_guaranteed_delivery_available" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/plus_upsell_frame_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/style_guide_darker_gray" android:id="@id/paypal_not_available_textview" android:paddingTop="@dimen/ebayPaddingHalf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paypal_not_available_verbiage" />
+    <View android:id="@id/coupons_layout_divider" android:background="?dividerHorizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/ebayMargin2x" />
+    <FrameLayout android:id="@id/coupons_layout" android:paddingTop="@dimen/ebayPadding15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/highlights_layout" android:tag="binding_3" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin15">
+        <View android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/ebayMargin" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin">
+            <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center" android:id="@id/highlight1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <View android:id="@id/highlights_vertical_separator1" android:background="?dividerVertical" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center" android:id="@id/highlight2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <View android:id="@id/highlights_vertical_separator2" android:background="?dividerHorizontal" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center" android:id="@id/highlight3" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <include android:id="@id/volume_pricing_layout" layout="@layout/view_item_volume_pricing_content" />
+    </LinearLayout>
+</LinearLayout>

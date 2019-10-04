@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/compatibility_confirmation_message_0" android:paddingLeft="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubhead" android:ellipsize="end" android:gravity="center_vertical" android:tag="binding_1" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMarginHalf" android:maxLines="3" android:drawableLeft="@drawable/icon_alert_success" android:drawablePadding="@dimen/ebayPadding" android:layout_weight="1.0" />
+    <Button android:id="@id/confirmation_message_user_options_btn" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/EbayButton.Flat" />
+</LinearLayout>

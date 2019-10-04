@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_home_black_24dp_ds6" android:id="@id/nav_home" android:title="@string/home" />
+        <item android:icon="@drawable/ic_notifications_black_24dp_ds6" android:id="@id/nav_notifications" android:title="@string/Notifications" app:actionLayout="@layout/alert_menu_with_count_ds6" />
+        <item android:icon="@drawable/ic_messages_black_24dp_ds6" android:id="@id/nav_messages" android:title="@string/messages" app:actionLayout="@layout/navigation_menu_with_count" />
+    </group>
+    <item android:title="@string/my_ebay">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:icon="@drawable/ic_watching_black_24dp_ds6" android:id="@id/nav_watching" android:title="@string/LOCKED_my_ebay_tab_watching" />
+                <item android:icon="@drawable/ic_save_outline_black_24dp_ds6" android:id="@id/nav_saved" android:title="@string/saved" />
+                <item android:icon="@drawable/ic_purchases_black_24dp_ds6" android:id="@id/nav_purchases" android:title="@string/my_ebay_label_purchases" />
+                <item android:icon="@drawable/ic_bids_black_24dp_ds6" android:id="@id/nav_bids_offers" android:title="@string/my_ebay_bids_offers" />
+                <item android:icon="@drawable/ic_selling_black_24dp_ds6" android:id="@id/nav_selling" android:title="@string/LOCKED_my_ebay_tab_selling" />
+                <item android:icon="@drawable/ic_save_black_24dp_ds6" android:id="@id/nav_following" android:title="@string/following" />
+            </group>
+        </menu>
+    </item>
+    <group android:id="@id/workaround1" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_categories_black_24dp_ds6" android:id="@id/nav_categories" android:title="@string/categories" />
+        <item android:icon="@drawable/ic_interests_black_24dp" android:id="@id/nav_interests" android:visible="false" android:title="@string/interests" />
+        <item android:icon="@drawable/ic_deals_black_24dp_ds6" android:id="@id/nav_deals" android:visible="false" android:title="@string/channel_title_deals" />
+        <item android:icon="@drawable/ic_plus_menu_logo_24dp" android:id="@id/nav_ebayplus" android:title="@string/ebay_plus_nav" />
+        <item android:icon="@drawable/ic_payment_options_icon_tint_color_24dp_ds6" android:id="@id/nav_payment_options" android:title="@string/payment_options" />
+        <item android:icon="@drawable/ic_settings_black_24dp_ds6" android:id="@id/settings" android:title="@string/settings" />
+        <item android:icon="@drawable/ic_help_black_24dp_ds6" android:id="@id/help_contact" android:title="@string/customer_support_help" />
+    </group>
+</menu>

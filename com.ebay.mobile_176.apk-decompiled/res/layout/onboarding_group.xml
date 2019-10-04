@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.interests.uxcomponent.RecyclerExpandableLayout android:tag="layout/onboarding_group_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.nautilus.shell.uxcomponents.widget.FlowContainerView android:id="@id/expandable_view" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:importantForAccessibility="no" app:alignment="left" style="@style/OnboardingItemsStyle" />
+</com.ebay.mobile.interests.uxcomponent.RecyclerExpandableLayout>

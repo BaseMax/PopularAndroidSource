@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/item_credit_container" android:background="@drawable/shape_rectangle_alabaster_border_alto" android:padding="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/pure_white" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/pure_white" android:ellipsize="end" android:gravity="end|center" android:id="@id/item_credit_date_tv" android:background="@drawable/bg_top_title_round_primary" android:padding="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Default.Medium" />
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/brown_grey" android:gravity="start|center" android:id="@id/item_credit_action_tv" android:padding="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Default.Medium" />
+        <View android:background="@color/very_light_pink" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <androidx.appcompat.widget.AppCompatTextView android:gravity="end|center" android:id="@id/item_credit_desc_tv" android:padding="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Default.Medium" />
+    </LinearLayout>
+</FrameLayout>

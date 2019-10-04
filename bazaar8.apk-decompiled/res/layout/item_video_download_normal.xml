@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_video_download_normal_0" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:tag="binding_2" android:background="@color/button_secondary" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_width="fill_parent" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_double" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Bazaar.Divider" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_item_video_download_label" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_double" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Bazaar.Text.Body2.Dark" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_item_video_download_size" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_double" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Bazaar.Text.Body2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

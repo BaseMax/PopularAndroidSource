@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/feedback_recycler_fragment_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_large1" android:textStyle="bold" android:tag="binding_1" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginRight="@dimen/ebayContentSideMargin" android:text="@string/past_transaction_feedback_header" />
+    <LinearLayout android:orientation="horizontal" android:tag="binding_2" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginRight="@dimen/ebayContentSideMargin" android:minHeight="?android:listPreferredItemHeightSmall">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/feedback_spinner_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_filter" />
+        <Spinner android:layout_gravity="center_vertical" android:id="@id/listSpinner" android:tag="binding_3" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.ebay.nautilus.shell.widget.EbaySwipeRefreshLayout android:id="@id/swipe_to_refresh_main" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view_main" android:tag="binding_5" android:background="@color/listContainerLightInsideBackground" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="LinearLayoutManager" />
+    </com.ebay.nautilus.shell.widget.EbaySwipeRefreshLayout>
+</LinearLayout>

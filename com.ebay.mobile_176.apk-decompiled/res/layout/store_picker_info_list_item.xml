@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/picker_list_title_area" android:background="?listContainerOutsideBackground" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/store_picker_list_title" android:layout_alignParentLeft="true" />
+    <ImageView android:id="@id/info_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_viewitem_info" android:layout_alignParentRight="true" android:onClick="onClick" android:contentDescription="@string/store_picker_more_information" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/homescreen_card_title_layout" />
+    <androidx.cardview.widget.CardView style="@style/HomeScreenCardStyle">
+        <include android:id="@id/card_item_1" android:padding="@dimen/ebayScalingPadding2x" android:paddingLeft="@dimen/homescreen_card_caterpillar_padding" android:paddingRight="@dimen/homescreen_card_caterpillar_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/homescreen_card_deals_item_wide_large" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:tag="layout/item_vitrin_video_0" android:background="@drawable/selector" android:paddingTop="@dimen/default_margin_double" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.farsitel.bazaar.core.widget.AspectRatioRoundImageView android:id="@id/video_cover" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerCrop" app:layout_constraintBottom_toTopOf="@id/video_title" app:ratio="1.33" />
+        <androidx.appcompat.widget.AppCompatTextView android:gravity="end|bottom|center" android:layout_gravity="end|bottom|center" android:id="@id/video_free_badge" android:tag="binding_2" android:background="@drawable/bg_free_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin_half" android:text="@string/free" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" app:layout_constraintBottom_toBottomOf="@id/video_cover" app:layout_constraintEnd_toEndOf="@id/video_cover" style="@style/Bazaar.Text.Body2.White.Small" />
+    </FrameLayout>
+    <com.farsitel.bazaar.widget.LocalAwareTextView android:gravity="start" android:id="@id/video_title" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_half" style="@style/Bazaar.Text.Caption.PrimaryVitrin" />
+    <com.farsitel.bazaar.widget.AutosizingTextView android:id="@id/video_info" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_half" android:layout_marginBottom="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin" style="@style/Bazaar.Text.Caption.SecondaryVitrin" />
+</LinearLayout>

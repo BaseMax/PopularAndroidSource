@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ToggleButton android:id="@id/bold_btn" android:drawableTop="@drawable/ic_format_bold_white_24dp" style="@style/Sell.EditorToggleButton.Toolbar" />
+    <ToggleButton android:id="@id/italic_btn" android:drawableTop="@drawable/ic_format_italic_white_24dp" style="@style/Sell.EditorToggleButton.Toolbar" />
+    <ToggleButton android:id="@id/underline_btn" android:drawableTop="@drawable/ic_format_underlined_white_24dp" style="@style/Sell.EditorToggleButton.Toolbar" />
+</LinearLayout>

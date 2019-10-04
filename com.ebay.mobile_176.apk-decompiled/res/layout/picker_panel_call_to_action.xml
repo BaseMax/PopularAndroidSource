@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/picker_panel_call_to_action_0" android:paddingLeft="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayButton" />
+    <Button android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayButton.SecondaryAlt" />
+    <TextView android:textAppearance="?textAppearanceCaption3" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

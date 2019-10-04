@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/trending_empty_card_0" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayCardStyle.Dynamic"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x">
+        <TextView android:textAppearance="?textAppearanceSubheadSecondary" android:gravity="center" android:layout_gravity="center" android:id="@id/trend_empty_text" android:tag="binding_1" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:gravity="center" android:id="@id/trend_empty_image" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayMargin2x" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

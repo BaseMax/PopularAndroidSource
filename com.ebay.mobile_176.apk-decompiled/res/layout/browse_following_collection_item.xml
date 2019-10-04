@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.common.SelectableContainerLayout android:id="@id/container" android:background="?cardColor" android:layout_width="fill_parent" android:layout_height="wrap_content" res_auto:selectionBackground="?listItemSelectedBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/selectable" android:paddingLeft="@dimen/ebayScalingPadding15" android:paddingTop="@dimen/ebayScalingPadding2x" android:paddingRight="@dimen/ebayScalingPadding15" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" res_auto:foreground="?android:selectableItemBackground">
+        <LinearLayout android:orientation="horizontal" android:id="@id/images_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <com.ebay.android.widget.RemoteImageView android:id="@id/coverImage" android:background="@drawable/image_border" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ebayMarginHalf" android:scaleType="centerCrop" android:cropToPadding="true" android:layout_weight="2.0" android:contentDescription="@null" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.ebay.android.widget.RemoteImageView android:id="@id/image0" android:background="@drawable/image_border" android:layout_width="fill_parent" android:layout_height="@dimen/card_collection_small_image_height" android:layout_marginLeft="@dimen/ebayMarginHalf" android:scaleType="centerCrop" android:cropToPadding="true" android:contentDescription="@null" />
+                <com.ebay.android.widget.RemoteImageView android:id="@id/image1" android:background="@drawable/image_border" android:layout_width="fill_parent" android:layout_height="@dimen/card_collection_small_image_height" android:layout_marginLeft="@dimen/ebayMarginHalf" android:scaleType="centerCrop" android:cropToPadding="true" android:contentDescription="@null" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/images_layout">
+            <include android:id="@id/collection_title_subtitle" layout="@layout/card_title_and_subtitle" />
+            <include android:id="@id/collection_owner_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/card_title_and_icon" />
+        </FrameLayout>
+    </RelativeLayout>
+</com.ebay.mobile.common.SelectableContainerLayout>

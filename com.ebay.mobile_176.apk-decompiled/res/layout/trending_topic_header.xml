@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:tag="layout/trending_topic_header_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceCaption2" android:textColor="@color/style_guide_green" android:layout_gravity="center_horizontal" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            <TextView android:textAppearance="?textAppearanceHeadline" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/trend_topic_position" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:includeFontPadding="false" android:drawablePadding="@dimen/ebayPadding" />
+        </LinearLayout>
+        <TextView android:textAppearance="?textAppearanceTitle1" android:id="@id/trend_topic_title" android:tag="binding_3" android:paddingTop="@dimen/trend_title_top_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:maxLines="2" />
+    </LinearLayout>
+    <include layout="@layout/homescreen_card_horizontal_divider" />
+    <include layout="@layout/trending_topic_header_details" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/listing_form_summary_photos_0" android:paddingBottom="@dimen/ebayPadding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/photos_module_header_tap_target" layout="@layout/listing_form_summary_header" />
+    <androidx.cardview.widget.CardView style="@style/Sell.Card.ListingForm">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="?listingFormSummaryContentStyle">
+            <LinearLayout android:orientation="vertical" android:id="@id/photos_tap_target" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+                <include layout="@layout/listing_form_summary_error" />
+                <TextView android:id="@id/photos_tool_tip" android:visibility="gone" android:layout_marginBottom="@dimen/compensate_overview_tool_tip_margin" android:text="@string/photos_incomplete_tooltip_message" style="?listingFormSummaryGuidanceModuleTextStyle" />
+                <com.ebay.nautilus.shell.uxcomponents.widget.ScrollingContainerView android:id="@id/photos_carousel" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?listingPhotosCarouselStyle" />
+                <ImageButton android:id="@id/photos_button" android:visibility="gone" android:contentDescription="@string/add_photos" style="@style/EbayButton.Icon.Bolt" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

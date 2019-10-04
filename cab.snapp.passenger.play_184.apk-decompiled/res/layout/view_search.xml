@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.passenger.units.search.SearchView android:orientation="vertical" android:background="@color/pure_white" android:focusable="true" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/view_search_toolbar" android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetEnd="0.0dip" app:contentInsetStart="0.0dip">
+        <RelativeLayout android:id="@id/view_search_toolbar_base_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+            <ImageView android:id="@id/view_search_toolbar_back_iv" android:background="@drawable/selector_rectangle_white" android:layout_width="@dimen/minimum_touchable_width" android:layout_height="@dimen/minimum_touchable_height" android:src="@drawable/ic_arrow_back_dark_24dp" android:scaleType="centerInside" android:layout_centerVertical="true" android:contentDescription="@string/back_button_desc" android:layout_alignParentStart="true" style="@style/MirroredImage" />
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/view_search_toolbar_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/where_are_you" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/TextView.Bold.Large" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout android:background="@color/white_seven" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@color/very_light_pink" android:layout_width="fill_parent" android:layout_height="@dimen/height_divider_horizontal" />
+            <FrameLayout android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                <androidx.appcompat.widget.AppCompatEditText android:theme="@style/EditText_TrueBlue" android:textSize="@dimen/font_size_extra_large" android:textColor="@color/colorPrimary" android:textColorHint="@color/very_light_pink" android:ellipsize="end" android:gravity="start" android:id="@id/view_search_geocode_et" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_default_height" android:hint="@string/hint_geocode_search" android:maxLines="1" android:maxLength="100" android:inputType="text" android:imeOptions="actionDone" android:textCursorDrawable="@null" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_extra_large" style="@style/EditText" />
+                <ImageView android:layout_gravity="end|center" android:id="@id/view_search_voice_search_iv" android:layout_width="@dimen/minimum_touchable_width" android:layout_height="fill_parent" android:src="@drawable/ic_microphone_green_24dp" android:scaleType="centerInside" android:contentDescription="@string/voice_search_button_desc" />
+                <ImageView android:layout_gravity="end|center" android:id="@id/view_search_delete_input_text_iv" android:visibility="gone" android:layout_width="@dimen/minimum_touchable_width" android:layout_height="fill_parent" android:src="@drawable/ic_delete_dark_24dp" android:scaleType="centerInside" />
+            </FrameLayout>
+            <FrameLayout android:background="@color/white_seven" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/view_search_recycler" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/view_search_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <cab.snapp.snappuikit.SnappLoading android:layout_gravity="center_horizontal" android:id="@id/view_search_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" app:snappLoadingSize="small" app:snappLoadingTheme="accent" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/brown_grey" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/searching_your_input_location" style="@style/TextView.Default.Large" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/view_search_empty_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_not_found_new" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/brown_grey" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/search_geocode_not_found" style="@style/TextView.Default.Large" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</cab.snapp.passenger.units.search.SearchView>

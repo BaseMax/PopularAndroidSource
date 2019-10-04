@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.passenger.units.messages.MessagesView android:orientation="vertical" android:background="@color/pure_white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_toolbar_primary" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/view_messages_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_empty_inbox" android:scaleType="centerInside" android:contentDescription="@string/empty" />
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/brown_grey" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/no_messages_label" style="@style/TextView.Default.Medium" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/view_messages_recyclerView" android:background="@color/pure_white" android:padding="8.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:dividerHeight="16.0dip" />
+    </FrameLayout>
+</cab.snapp.passenger.units.messages.MessagesView>

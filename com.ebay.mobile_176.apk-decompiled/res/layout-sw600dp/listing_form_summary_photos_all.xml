@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/photos_container" android:tag="layout-sw600dp/listing_form_summary_photos_all_0" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="5.0" style="@style/Sell.DynamicCardContainer.ListingForm"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/borderSize" android:layout_marginBottom="@dimen/borderSize" android:foreground="@drawable/sell_image_border" android:layout_weight="1.0">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/photomanager2_cell" />
+    </FrameLayout>
+    <FrameLayout android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/borderSize" android:layout_marginBottom="@dimen/borderSize" android:foreground="@drawable/sell_image_border" android:layout_weight="1.0">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/photomanager2_cell" />
+    </FrameLayout>
+    <FrameLayout android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/borderSize" android:layout_marginBottom="@dimen/borderSize" android:foreground="@drawable/sell_image_border" android:layout_weight="1.0">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/photomanager2_cell" />
+    </FrameLayout>
+    <FrameLayout android:tag="binding_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/borderSize" android:layout_marginBottom="@dimen/borderSize" android:foreground="@drawable/sell_image_border" android:layout_weight="1.0">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/photomanager2_cell" />
+    </FrameLayout>
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/photo_guidance" android:background="@color/guidance_module_background_listing_form" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/borderSize" android:layout_marginRight="@dimen/borderSize" android:layout_weight="1.0">
+        <ImageView android:id="@id/photo_guidance_camera" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_photo_camera_black_48dp" android:tint="?iconTintColor" android:cropToPadding="true" />
+        <TextView android:gravity="center" android:id="@id/photo_guidance_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/photos_description_short" android:layout_below="@id/photo_guidance_camera" android:layout_centerInParent="true" style="@style/ListingFormGuidanceMessage" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/borderSize" android:layout_weight="1.0">
+        <RelativeLayout android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/sell_image_border">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/photomanager2_cell" />
+        </RelativeLayout>
+        <TextView android:textAppearance="?textAppearanceDisplay1" android:textColor="@color/apptentive_material_white" android:gravity="center" android:id="@id/more_photos_overlay" android:background="#8c000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

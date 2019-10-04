@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceTitle2" android:gravity="center_vertical" android:id="@id/reviews" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="20.0dip" android:layout_marginBottom="@dimen/ebayMargin15" android:text="@string/reviews" android:layout_alignParentLeft="true" />
+    <TextView android:textAppearance="?textAppearanceBody2Accent" android:id="@id/button_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/product_review_sort_offset" android:text="@string/sort" android:layout_alignBottom="@id/reviews" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/image_drop_down" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/product_review_sort_icon_offset" android:src="@drawable/ic_arrow_drop_down" android:scaleType="center" android:layout_alignTop="@id/button_sort" android:layout_alignBottom="@id/button_sort" android:layout_alignParentRight="true" android:contentDescription="@null" android:importantForAccessibility="no" />
+</RelativeLayout>

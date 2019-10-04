@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/selling_list_search_app_bar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar android:id="@id/selling_list_search_toolbar" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentInsetEnd="0.0dip" app:contentInsetStart="0.0dip" app:elevation="@dimen/toolbar_elevation">
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="?containerBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageButton android:id="@id/button_navigate_up" android:background="?android:actionBarItemBackground" android:paddingLeft="@dimen/searchlanding_header_icon_padding" android:paddingRight="@dimen/ebayPadding15" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow_back_white_24dp" android:tint="@color/black_54pct" android:contentDescription="@string/navigate_up_accessibility" app:layout_constraintStart_toStartOf="parent" />
+                <androidx.appcompat.widget.SearchView android:id="@id/selling_list_search_view" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:imeOptions="actionSearch|flagNoExtractUi" app:iconifiedByDefault="false" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/button_navigate_up" app:queryBackground="@null" app:queryHint="@string/selling_list_find_items" app:searchIcon="@null" app:submitBackground="@null" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/selling_list_search_results_fragment" android:background="?containerBackgroundColorGray" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/selling_list_search_app_bar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

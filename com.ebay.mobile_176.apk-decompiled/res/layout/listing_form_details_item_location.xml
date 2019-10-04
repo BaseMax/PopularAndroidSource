@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:id="@id/shipping_details_card" android:layout_marginBottom="@dimen/baseline_unit_zero" style="@style/Sell.Card.ListingForm">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <TextView android:id="@id/item_location_intro_text" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/item_location_intro_label" style="@style/Sell.TextView.Secondary" />
+            <LinearLayout android:orientation="vertical" android:id="@id/country_tap_target" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayPadding2x" android:foreground="?android:selectableItemBackground">
+                <TextView android:id="@id/country_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_country" style="@style/Sell.TextView.Medium" />
+                <TextView android:id="@id/country_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin15" android:text="@string/intl_shipping_region_us" style="@style/Sell.ShippingDetails.Link" />
+                <View android:id="@id/country_divider" style="@style/CommonDivider" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/postal_city_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/postal_code_view_parent" android:paddingTop="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/zip_code" android:labelFor="@id/postal_code_input">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@id/postal_code_input" style="@style/Sell.ItemLocation" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/city_state_view_parent" android:paddingTop="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/sell_preferences_item_location_city_US" android:labelFor="@id/city_state_input">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@id/city_state_input" style="@style/Sell.ItemLocation" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

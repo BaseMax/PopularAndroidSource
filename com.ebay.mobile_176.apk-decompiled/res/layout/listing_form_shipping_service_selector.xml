@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Sell.DynamicContainer.NoBottomMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Spinner android:layout_gravity="center_vertical" android:id="@id/services_group_filter_spinner" android:background="?spinnerBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin" />
+    <View android:id="@id/shipping_filter_divider" style="@style/CommonDivider" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/service_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/no_shipping_services_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/no_shipping_services_available_error_text" android:text="@string/shipping_service_selector_no_shipping_services_available" style="@style/Sell.ShippingDetails.Bolt.EmptyStateMessage" />
+            <Button android:id="@id/update_package_details_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shipping_service_selector_update_package_details" style="@style/Sell.UniversalMainActionButton" />
+            <Button android:id="@id/use_local_pickup_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shipping_service_selector_use_local_pickup_only" style="@style/Sell.UniversalSecondaryActionButton" />
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_spinner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+</LinearLayout>

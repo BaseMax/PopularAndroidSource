@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/vehicle_history_report_unavailable_reason" />
+    <LinearLayout android:orientation="vertical" android:id="@id/vhr_unavailable_reason_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

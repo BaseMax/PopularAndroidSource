@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/xo_uxcomp_user_agreement_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/terms_and_conditions_current" android:tag="binding_1" android:paddingTop="@dimen/ebayStaticMarginHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ebayContentSideMargin" android:paddingEnd="@dimen/ebayContentSideMargin" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/terms_and_conditions_alternate" android:tag="binding_2" android:paddingTop="@dimen/ebayStaticMarginHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ebayContentSideMargin" android:paddingEnd="@dimen/ebayContentSideMargin" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

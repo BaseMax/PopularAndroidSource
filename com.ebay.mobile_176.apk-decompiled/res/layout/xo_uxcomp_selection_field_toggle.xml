@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/xo_uxcomp_selection_field_toggle_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.payments.widget.SingleLineSwitchCompat android:textAppearance="?textAppearanceSubhead" android:id="@id/selection_field_toggle" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:showText="false" app:switchTextAppearance="?textAppearanceSubhead" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:textColor="@color/alert_color" android:id="@id/error_text" android:tag="binding_2" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/selection_field_toggle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

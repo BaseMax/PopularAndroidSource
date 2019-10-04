@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/sio_recycler" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/common_translucent_progress" />
+    <include layout="@layout/best_offer_generic_error" />
+</merge>

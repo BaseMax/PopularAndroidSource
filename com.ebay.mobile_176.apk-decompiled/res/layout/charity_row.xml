@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/givingworks_result_row" android:background="?android:selectableItemBackground" android:padding="@dimen/ebayPadding2x" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/remove_fav_charity_button" android:padding="@dimen/ebayPadding2x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cancel_circular" android:tint="?iconTintColor" android:contentDescription="@string/delete_saved_search" style="?android:borderlessButtonStyle" />
+    <FrameLayout android:background="?selectableItemBackgroundBase" android:layout_width="@dimen/givingworksThumbnail" android:layout_height="@dimen/givingworksThumbnail" android:layout_marginRight="@dimen/ebayMargin">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/givingworks_icon" android:layout_width="@dimen/givingworksThumbnail" android:layout_height="@dimen/givingworksThumbnail" android:scaleType="centerInside" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/givingworks_icon_progress" android:layout_width="@dimen/givingworksProgressBar" android:layout_height="@dimen/givingworksProgressBar" />
+    </FrameLayout>
+    <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/givingworks_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMarginHalf" android:maxLines="2" android:layout_weight="1.0" style="@style/Checkout.Text" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/givingworks_selection_check" android:padding="@dimen/ebayPadding" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:src="@drawable/checkmark_accent" android:contentDescription="@string/select_this_charity" />
+</LinearLayout>

@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="DHMS_accessibility_day_hour">
+        <item quantity="other">%1$ddagen %2$duur resterend</item>
+        <item quantity="one">%1$ddag %2$duur resterend</item>
+    </plurals>
+    <plurals name="DHMS_accessibility_days">
+        <item quantity="other">%1$ddagen resterend</item>
+        <item quantity="one">%1$ddag resterend</item>
+    </plurals>
+    <plurals name="DHMS_accessibility_hour_minute">
+        <item quantity="other">%1$duur %2$dminuten resterend</item>
+        <item quantity="one">%1$duur %2$dminuten resterend</item>
+    </plurals>
+    <plurals name="DHMS_accessibility_hours">
+        <item quantity="other">%1$duur resterend</item>
+        <item quantity="one">%1$duur resterend</item>
+    </plurals>
+    <plurals name="DHMS_accessibility_minute_second">
+        <item quantity="other">%1$dminuten %2$dseconden resterend</item>
+        <item quantity="one">%1$dminuut %2$dseconden resterend</item>
+    </plurals>
+    <plurals name="DHMS_accessibility_minutes">
+        <item quantity="other">%1$dminuten resterend</item>
+        <item quantity="one">%1$dminuut resterend</item>
+    </plurals>
+    <plurals name="DHMS_accessibility_seconds">
+        <item quantity="other">%1$dseconden resterend</item>
+        <item quantity="one">%1$dseconde resterend</item>
+    </plurals>
+    <plurals name="LEGAL_auto_relist_option_fees">
+        <item quantity="other">Bied dit object tot %d keer automatisch opnieuw aan als het niet wordt verkocht.</item>
+        <item quantity="one">Bied dit object %d keer automatisch opnieuw aan als het niet wordt verkocht.</item>
+    </plurals>
+    <plurals name="LEGAL_auto_relist_option_free">
+        <item quantity="other">Bied dit object automatisch tot %d keer opnieuw aan als het niet wordt verkocht. Opnieuw aanbieden is gratis.</item>
+        <item quantity="one">Bied dit object automatisch %d keer opnieuw aan als het niet wordt verkocht. Opnieuw aanbieden is gratis.</item>
+    </plurals>
+    <plurals name="LEGAL_auto_relist_text">
+        <item quantity="other">Als je object niet wordt verkocht, bieden we het automatisch tot %1$d keer opnieuw voor je aan.</item>
+        <item quantity="one">Als je object niet wordt verkocht, bieden we het automatisch %1$d keer opnieuw voor je aan.</item>
+    </plurals>
+    <plurals name="accepted_within_business_days">
+        <item quantity="other">Geaccepteerd binnen %d werkdagen</item>
+        <item quantity="one">Geaccepteerd binnen %d werkdag</item>
+    </plurals>
+    <plurals name="accepted_within_days">
+        <item quantity="other">Geaccepteerd binnen %d dagen</item>
+        <item quantity="one">Geaccepteerd binnen %d dag</item>
+    </plurals>
+    <plurals name="accessibility_active_item_count">
+        <item quantity="other">%d actieve objecten, knop</item>
+        <item quantity="one">%d actief object, knop</item>
+    </plurals>
+    <plurals name="accessibility_approx_zero_x_and_x_cents">
+        <item quantity="other">(Ongeveer %1$s0 en %2$d cent)</item>
+        <item quantity="one">(Ongeveer %1$s0 en %2$d cent)</item>
+    </plurals>
+    <plurals name="accessibility_aspect_summary">
+        <item quantity="other">%1$s van de recensenten zijn het ermee eens %2$s</item>
+        <item quantity="one">%1$s recensent is het ermee eens %2$s</item>
+    </plurals>
+    <plurals name="accessibility_day_hours">
+        <item quantity="other">%1$ddag %2$duur resterend</item>
+        <item quantity="one">%1$ddag %2$duur resterend</item>
+    </plurals>
+    <plurals name="accessibility_days">
+        <item quantity="other">%ddagen resterend</item>
+        <item quantity="one">%ddag resterend</item>
+    </plurals>
+    <plurals name="accessibility_days_hours">
+        <item quantity="other">%1$ddagen %2$duur resterend</item>
+        <item quantity="one">%1$ddagen %2$duur resterend</item>
+    </plurals>
+    <plurals name="accessibility_delete_x_selected">
+        <item quantity="other">%d geselecteerde objecten verwijderen</item>
+        <item quantity="one">%d geselecteerde objecten verwijderen</item>
+    </plurals>
+    <plurals name="accessibility_hour_minutes">
+        <item quantity="other">%1$duur %2$dminuten resterend</item>
+        <item quantity="one">%1$duur %2$dminuut resterend</item>
+    </plurals>
+    <plurals name="accessibility_hours">
+        <item quantity="other">%duur resterend</item>
+        <item quantity="one">%duur resterend</item>
+    </plurals>
+    <plurals name="accessibility_hours_minutes">
+        <item quantity="other">%1$duur %2$dminuten resterend</item>
+        <item quantity="one">%1$duur %2$dminuut resterend</item>
+    </plurals>
+    <plurals name="accessibility_item_removed_count">
+        <item quantity="other">%1$d objecten verwijderd</item>
+        <item quantity="one">%1$d object verwijderd</item>
+    </plurals>
+    <plurals name="accessibility_minute_seconds">
+        <item quantity="other">%1$dminuut %2$dseconden resterend</item>
+        <item quantity="one">%1$dminuut %2$dseconde resterend</item>
+    </plurals>
+    <plurals name="accessibility_minutes">
+        <item quantity="other">%dminuten resterend</item>
+        <item quantity="one">%dminuut resterend</item>
+    </plurals>
+    <plurals name="accessibility_minutes_seconds">
+        <item quantity="other">%1$dminuten %2$dseconden resterend</item>
+        <item quantity="one">%1$dminuten %2$dseconde resterend</item>
+    </plurals>
+    <plurals name="accessibility_my_ebay_items_found">
+        <item quantity="other">%1$d objecten gevonden.</item>
+        <item quantity="one">%1$d object gevonden.</item>
+    </plurals>
+    <plurals name="accessibility_onboarding_count">
+        <item quantity="other">%d interesses zijn geselecteerd</item>
+        <item quantity="one">%d interesse is geselecteerd</item>
+    </plurals>
+    <plurals name="accessibility_photos_count_content_description">
+        <item quantity="other">"Je hebt %d foto's."</item>
+        <item quantity="one">"Je hebt %d foto. Voeg zo veel mogelijk foto's toe"</item>
+    </plurals>
+    <plurals name="accessibility_quantity_x_selected">
+        <item quantity="other">Aantal %d geselecteerd</item>
+        <item quantity="one">Aantal %d geselecteerd</item>
+    </plurals>
+    <plurals name="accessibility_rating_star_summary">
+        <item quantity="other">%1$d van de %2$d sterren</item>
+        <item quantity="one">%1$d van de %2$d sterren</item>
+    </plurals>
+    <plurals name="accessibility_rating_star_summary_precise">
+        <item quantity="other">%1$s %2$.1f van de %3$d sterren</item>
+        <item quantity="one">%1$s %2$.1f van de %3$d sterren</item>
+    </plurals>
+    <plurals name="accessibility_rating_stars">
+        <item quantity="other">%1$d van de %2$d sterren</item>
+        <item quantity="one">%1$d van de %2$d sterren</item>
+    </plurals>
+    <plurals name="accessibility_ratings_count">
+        <item quantity="other">%1$s %2$d beoordelingen</item>
+        <item quantity="one">%1$s %2$d beoordeling</item>
+    </plurals>
+    <plurals name="accessibility_ratings_total_count">
+        <item quantity="other">%1$d beoordelingen</item>
+        <item quantity="one">%1$d beoordeling</item>
+    </plurals>
+    <plurals name="accessibility_recent_feedback_rating_month">
+        <item quantity="other">%d maanden</item>
+        <item quantity="one">%d maand</item>
+    </plurals>
+    <plurals name="accessibility_review_summary">
+        <item quantity="other">Op %1$s heeft %2$s een recensie met %3$d sterren met de titel %4$s geschreven. %5$s %6$s.</item>
+        <item quantity="one">Op %1$s heeft %2$s een recensie met %3$d ster met de titel %4$s geschreven. %5$s %6$s.</item>
+    </plurals>
+    <plurals name="accessibility_reviews_buybox">
+        <item quantity="other">%1$d beoordelingen. Gemiddelde beoordeling %2$s van vijf</item>
+        <item quantity="one">%1$d recensie. Gemiddelde beoordeling %2$s van vijf</item>
+    </plurals>
+    <plurals name="accessibility_reviews_count">
+        <item quantity="other">%d recensies</item>
+        <item quantity="one">%d recensie</item>
+    </plurals>
+    <plurals name="accessibility_saved_interests_found">
+        <item quantity="other">%1$d interesses gevonden.</item>
+        <item quantity="one">%1$d interesse gevonden.</item>
+    </plurals>
+    <plurals name="accessibility_saved_search_found">
+        <item quantity="other">%1$d zoekopdrachten gevonden.</item>
+        <item quantity="one">%1$d zoekopdracht gevonden.</item>
+    </plurals>
+    <plurals name="accessibility_saved_seller_found">
+        <item quantity="other">%1$d verkopers gevonden.</item>
+        <item quantity="one">%1$d verkoper gevonden.</item>
+    </plurals>
+    <plurals name="accessibility_seconds">
+        <item quantity="other">%dseconden resterend</item>
+        <item quantity="one">%dseconde resterend</item>
+    </plurals>
+    <plurals name="accessibility_sell_aspects_progress_meter">
+        <item quantity="other">%1$d van %2$d specificaties zijn ingevuld</item>
+        <item quantity="one">%1$d van %2$d specificatie is ingevuld</item>
+    </plurals>
+    <plurals name="accessibility_sell_landing_promo_offers_remaining">
+        <item quantity="other">%s speciale acties resterend</item>
+        <item quantity="one">%s speciale actie resterend</item>
+    </plurals>
+    <plurals name="accessibility_sold_item_count">
+        <item quantity="other">%d verkochte objecten, knop</item>
+        <item quantity="one">%d verkocht object, knop</item>
+    </plurals>
+    <plurals name="accessibility_unsold_item_count">
+        <item quantity="other">%d onverkochte objecten, knop</item>
+        <item quantity="one">%d onverkocht object, knop</item>
+    </plurals>
+    <plurals name="accessibility_zero_x_and_x_cents">
+        <item quantity="other">(%1$s0 en %2$d cent)</item>
+        <item quantity="one">(%1$s0 en %2$d cent)</item>
+    </plurals>
+    <plurals name="active_list_label">
+        <item quantity="other">Actief</item>
+        <item quantity="one">Actief</item>
+    </plurals>
+    <plurals name="auto_relist_sublabel_with_duration">
+        <item quantity="other">Als je object niet wordt verkocht, bieden we het tot %1$d keer gratis opnieuw aan (telkens %2$s lang).</item>
+        <item quantity="one">Als je object niet wordt verkocht, bieden we het tot %1$d keer gratis opnieuw aan (telkens %2$s lang).</item>
+    </plurals>
+    <plurals name="auto_relist_sublabel_without_duration">
+        <item quantity="other">Als je object niet wordt verkocht, bieden we het tot %1$d keer gratis opnieuw aan.</item>
+        <item quantity="one">Als je object niet wordt verkocht, bieden we het tot %1$d keer gratis opnieuw aan.</item>
+    </plurals>
+    <plurals name="available_at_n_locations">
+        <item quantity="other">Beschikbaar bij %1$d locaties in de buurt</item>
+        <item quantity="one">Beschikbaar bij %1$d locatie in de buurt</item>
+    </plurals>
+    <plurals name="bid_count_label">
+        <item quantity="other">Biedingen</item>
+        <item quantity="one">Bod</item>
+    </plurals>
+    <plurals name="card_followingoverview_listingsformat">
+        <item quantity="other">%d objecten te koop</item>
+        <item quantity="one">%d object te koop</item>
+    </plurals>
+    <plurals name="card_sellingoverview_activecount">
+        <item quantity="other">Actief</item>
+        <item quantity="one">Actief</item>
+    </plurals>
+    <plurals name="card_sellingoverview_soldcount">
+        <item quantity="other">Verkocht</item>
+        <item quantity="one">Verkocht</item>
+    </plurals>
+    <plurals name="card_sellingoverview_summarystring">
+        <item quantity="other">Totaal van %d dagen</item>
+        <item quantity="one">Totaal van %d dagen</item>
+    </plurals>
+    <plurals name="card_sellingoverview_unsoldcount">
+        <item quantity="other">Onverkocht</item>
+        <item quantity="one">Onverkocht</item>
+    </plurals>
+    <plurals name="characters_left">
+        <item quantity="other">%d tekens resterend</item>
+        <item quantity="one">%d teken resterend</item>
+    </plurals>
+    <plurals name="common_number_bids">
+        <item quantity="other">%d biedingen</item>
+        <item quantity="one">%d bod</item>
+    </plurals>
+    <plurals name="common_number_items">
+        <item quantity="other">%d objecten</item>
+        <item quantity="one">%d object</item>
+    </plurals>
+    <plurals name="common_number_results_found">
+        <item quantity="other">%s resultaten</item>
+        <item quantity="one">%s resultaat</item>
+    </plurals>
+    <plurals name="confirm_delete">
+        <item quantity="other">Weet je zeker dat je %d objecten uit deze lijst wilt verwijderen?</item>
+        <item quantity="one">Weet je zeker dat je %d object uit deze lijst wilt verwijderen?</item>
+    </plurals>
+    <plurals name="confirm_following_seller_delete">
+        <item quantity="other">Weet je zeker dat je %d verkopers uit deze lijst wilt verwijderen?</item>
+        <item quantity="one">Weet je zeker dat je %d verkoper uit deze lijst wilt verwijderen?</item>
+    </plurals>
+    <plurals name="delivery_time_precise">
+        <item quantity="other">%s werkdagen</item>
+        <item quantity="one">%s werkdag</item>
+    </plurals>
+    <plurals name="duration_days">
+        <item quantity="other">%s dagen</item>
+        <item quantity="one">%s dag</item>
+    </plurals>
+    <plurals name="error_message_low_resolution">
+        <item quantity="other">"De langste zijde van foto's moet ten minste %d pixels lang zijn."</item>
+        <item quantity="one">"De langste zijde van foto's moet ten minste %d pixels lang zijn."</item>
+    </plurals>
+    <plurals name="feed_collection_items">
+        <item quantity="other">%1$d objecten zijn toegevoegd aan %2$s</item>
+        <item quantity="one">%1$d object is toegevoegd aan %2$s</item>
+    </plurals>
+    <plurals name="filter_applied_accessibility">
+        <item quantity="other">Filteren (%d toegepast)</item>
+        <item quantity="one">Filteren (%d toegepast)</item>
+    </plurals>
+    <plurals name="following_collection_count">
+        <item quantity="other">%d collecties</item>
+        <item quantity="one">%d collectie</item>
+    </plurals>
+    <plurals name="following_interest_count">
+        <item quantity="other">%d interesses</item>
+        <item quantity="one">%d interesse</item>
+    </plurals>
+    <plurals name="following_member_count">
+        <item quantity="other">%d leden</item>
+        <item quantity="one">%d lid</item>
+    </plurals>
+    <plurals name="following_search_count">
+        <item quantity="other">%d zoekopdrachten</item>
+        <item quantity="one">%d zoekopdracht</item>
+    </plurals>
+    <plurals name="following_seller_count">
+        <item quantity="other">%d verkopers</item>
+        <item quantity="one">%d verkoper</item>
+    </plurals>
+    <plurals name="gallery_picker_accessibility_selection_status">
+        <item quantity="other">"%1$d foto's geselecteerd voor upload. Selecteer %2$d"</item>
+        <item quantity="one">1 foto geselecteerd voor upload. Selecteer tot %2$d in totaal</item>
+    </plurals>
+    <plurals name="gallery_picker_count">
+        <item quantity="other">%1$d van %2$d</item>
+        <item quantity="one">%1$d van %2$d</item>
+    </plurals>
+    <plurals name="handling_time">
+        <item quantity="other">%s werkdagen</item>
+        <item quantity="one">%s werkdag</item>
+    </plurals>
+    <plurals name="homescreen_card_accessibility_notification_count">
+        <item quantity="other">%d berichten</item>
+        <item quantity="one">%d melding</item>
+    </plurals>
+    <plurals name="hotness_n_plus_sold">
+        <item quantity="other">%1$d+ verkocht</item>
+        <item quantity="one">%1$d+ verkocht</item>
+    </plurals>
+    <plurals name="hotness_quantity_available">
+        <item quantity="other">Nog maar %1$d over</item>
+        <item quantity="one">Nog maar %1$d over</item>
+    </plurals>
+    <plurals name="hotness_quantity_sold_24_hour">
+        <item quantity="other">%1$d verkocht binnen 24 uur</item>
+        <item quantity="one">%1$d verkocht binnen 24 uur</item>
+    </plurals>
+    <plurals name="hotness_quantity_sold_one_hour">
+        <item quantity="other">%1$d verkocht binnen 1 uur</item>
+        <item quantity="one">%1$d verkocht binnen 1 uur</item>
+    </plurals>
+    <plurals name="hotness_quantity_sold_total">
+        <item quantity="other">%1$d verkocht</item>
+        <item quantity="one">%1$d verkocht</item>
+    </plurals>
+    <plurals name="image_search_number_results_found">
+        <item quantity="other">%s soortgelijke resultaten</item>
+        <item quantity="one">%s soortgelijk resultaat</item>
+    </plurals>
+    <plurals name="installer_map_tire_installation_numbers">
+        <item quantity="other">Montage x %d banden</item>
+        <item quantity="one">Montage x %d band</item>
+    </plurals>
+    <plurals name="installer_map_tire_numbers">
+        <item quantity="other">Banden x %d</item>
+        <item quantity="one">Band x %d</item>
+    </plurals>
+    <plurals name="intent_number_recently_viewed_groups">
+        <item quantity="other">%1$d groepen</item>
+        <item quantity="one">%1$d groep</item>
+    </plurals>
+    <plurals name="intl_shipping_region_selected">
+        <item quantity="other">"%d regio's geselecteerd"</item>
+        <item quantity="one">%d regio geselecteerd</item>
+    </plurals>
+    <plurals name="item_view_more_than_xx_available">
+        <item quantity="other">Meer dan %d beschikbaar</item>
+        <item quantity="one">Meer dan %d beschikbaar</item>
+    </plurals>
+    <plurals name="item_view_num_bids">
+        <item quantity="other">%d biedingen</item>
+        <item quantity="one">%d bod</item>
+    </plurals>
+    <plurals name="item_view_quantity_available">
+        <item quantity="other">%d beschikbaar</item>
+        <item quantity="one">%d beschikbaar</item>
+    </plurals>
+    <plurals name="item_view_quantity_sold">
+        <item quantity="other">%d verkocht</item>
+        <item quantity="one">%d verkocht</item>
+    </plurals>
+    <plurals name="label_see_all_reviews">
+        <item quantity="other">alle %d recensies bekijken</item>
+        <item quantity="one">Bekijk %d beoordeling</item>
+    </plurals>
+    <plurals name="messages_confirm_delete">
+        <item quantity="other">%d berichten verwijderen?</item>
+        <item quantity="one">%d bericht verwijderen?</item>
+    </plurals>
+    <plurals name="messages_deleted">
+        <item quantity="other">%d berichten verwijderd</item>
+        <item quantity="one">%d bericht verwijderd</item>
+    </plurals>
+    <plurals name="messages_flagged">
+        <item quantity="other">%d berichten gemarkeerd</item>
+        <item quantity="one">%d bericht gemarkeerd</item>
+    </plurals>
+    <plurals name="messages_marked_read">
+        <item quantity="other">%d berichten gemarkeerd als gelezen</item>
+        <item quantity="one">%d bericht gemarkeerd als gelezen</item>
+    </plurals>
+    <plurals name="messages_marked_unread">
+        <item quantity="other">%d berichten gemarkeerd als ongelezen</item>
+        <item quantity="one">%d bericht gemarkeerd als ongelezen</item>
+    </plurals>
+    <plurals name="messages_moved">
+        <item quantity="other">%d berichten verplaatst</item>
+        <item quantity="one">%d bericht verplaatst</item>
+    </plurals>
+    <plurals name="messages_restored">
+        <item quantity="other">%d berichten hersteld</item>
+        <item quantity="one">%d bericht hersteld</item>
+    </plurals>
+    <plurals name="messages_selection_count">
+        <item quantity="other">%d geselecteerd</item>
+        <item quantity="one">%d geselecteerd</item>
+    </plurals>
+    <plurals name="messages_unflagged">
+        <item quantity="other">%d berichten ongemarkeerd</item>
+        <item quantity="one">%d bericht ongemarkeerd</item>
+    </plurals>
+    <plurals name="nectar_booster_points">
+        <item quantity="other">+ %d bonuspunten</item>
+        <item quantity="one">+ %d bonuspunt</item>
+    </plurals>
+    <plurals name="nectar_points">
+        <item quantity="other">Verzamel %d punten</item>
+        <item quantity="one">Verzamel %d punt</item>
+    </plurals>
+    <plurals name="negative_feedback_count">
+        <item quantity="other">%d personen hebben deze recensie negatief beoordeeld.</item>
+        <item quantity="one">%d persoon heeft deze recensie negatief beoordeeld.</item>
+    </plurals>
+    <plurals name="offer_shipping_for_multiple_items">
+        <item quantity="other">voor %1$d objecten</item>
+        <item quantity="one">voor %1$d object</item>
+    </plurals>
+    <plurals name="offer_validity_buyer_final_hours">
+        <item quantity="other">"Je hebt een laatste voorstel verzonden dat over minder dan %d uur verloopt. "</item>
+        <item quantity="one">"Je hebt een laatste voorstel verzonden dat over minder dan %d uur verloopt. "</item>
+    </plurals>
+    <plurals name="offer_validity_buyer_final_minutes">
+        <item quantity="other">"Je hebt een laatste voorstel verzonden dat over minder dan %d minuten verloopt. "</item>
+        <item quantity="one">"Je hebt een laatste voorstel verzonden dat over minder dan %d minuut verloopt. "</item>
+    </plurals>
+    <plurals name="offer_validity_buyer_first_offer_hours">
+        <item quantity="other">"Je hebt een voorstel verzonden dat over minder dan %d uur verloopt. "</item>
+        <item quantity="one">"Je hebt een voorstel verzonden dat over minder dan %d uur verloopt. "</item>
+    </plurals>
+    <plurals name="offer_validity_buyer_first_offer_minutes">
+        <item quantity="other">"Je hebt een voorstel verzonden dat over minder dan %d minuten verloopt. "</item>
+        <item quantity="one">"Je hebt een voorstel verzonden dat over minder dan %d minuut verloopt. "</item>
+    </plurals>
+    <plurals name="offer_validity_buyer_received_counter_hours">
+        <item quantity="other">"Je hebt een tegenvoorstel ontvangen dat over minder dan %d uur verloopt. "</item>
+        <item quantity="one">"Je hebt een tegenvoorstel ontvangen dat over minder dan %d uur verloopt. "</item>
+    </plurals>
+    <plurals name="offer_validity_buyer_received_counter_minutes">
+        <item quantity="other">"Je hebt een tegenvoorstel ontvangen dat over minder dan %d minuten verloopt. "</item>
+        <item quantity="one">"Je hebt een tegenvoorstel ontvangen dat over minder dan %d minuut verloopt. "</item>
+    </plurals>
+    <plurals name="offer_validity_counter_hours">
+        <item quantity="other">"Je hebt een tegenvoorstel verzonden dat over minder dan %d uur verloopt. "</item>
+        <item quantity="one">"Je hebt een tegenvoorstel verzonden dat over minder dan %d uur verloopt. "</item>
+    </plurals>
+    <plurals name="offer_validity_counter_minutes">
+        <item quantity="other">"Je hebt een tegenvoorstel verzonden dat over minder dan %d minuten verloopt. "</item>
+        <item quantity="one">"Je hebt een tegenvoorstel verzonden dat over minder dan %d minuut verloopt. "</item>
+    </plurals>
+    <plurals name="offer_validity_received_final_counter_hours">
+        <item quantity="other">"Je hebt een laatste tegenvoorstel ontvangen dat over minder dan %d uur verloopt. "</item>
+        <item quantity="one">"Je hebt een laatste tegenvoorstel ontvangen dat over minder dan %d uur verloopt. "</item>
+    </plurals>
+    <plurals name="offer_validity_received_final_counter_minutes">
+        <item quantity="other">"Je hebt een laatste tegenvoorstel ontvangen dat over minder dan %d minuten verloopt. "</item>
+        <item quantity="one">"Je hebt een laatste tegenvoorstel ontvangen dat over minder dan %d minuut verloopt. "</item>
+    </plurals>
+    <plurals name="offer_validity_seller_offer_hours">
+        <item quantity="other">"Je hebt een voorstel ontvangen dat over minder dan %d uur verloopt. "</item>
+        <item quantity="one">"Je hebt een voorstel ontvangen dat over minder dan %d uur verloopt. "</item>
+    </plurals>
+    <plurals name="offer_validity_seller_offer_minutes">
+        <item quantity="other">"Je hebt een voorstel ontvangen dat over minder dan %d minuten verloopt. "</item>
+        <item quantity="one">"Je hebt een voorstel ontvangen dat over minder dan %d minuut verloopt. "</item>
+    </plurals>
+    <plurals name="offer_validity_seller_received_counter_hours">
+        <item quantity="other">"Je hebt een tegenvoorstel ontvangen dat over minder dan %d uur verloopt. "</item>
+        <item quantity="one">"Je hebt een tegenvoorstel ontvangen dat over minder dan %d uur verloopt. "</item>
+    </plurals>
+    <plurals name="offer_validity_seller_received_counter_minutes">
+        <item quantity="other">"Je hebt een tegenvoorstel ontvangen dat over minder dan %d minuten verloopt. "</item>
+        <item quantity="one">"Je hebt een tegenvoorstel ontvangen dat over minder dan %d minuut verloopt. "</item>
+    </plurals>
+    <plurals name="offer_you_have_x_offers">
+        <item quantity="other">Je hebt %1$s voorstellen</item>
+        <item quantity="one">Je hebt %1$s voorstel</item>
+    </plurals>
+    <plurals name="offers_completed_accept">
+        <item quantity="other">%d voorstellen geaccepteerd</item>
+        <item quantity="one">%d voorstel geaccepteerd</item>
+    </plurals>
+    <plurals name="offers_completed_declined">
+        <item quantity="other">%d voorstellen afgewezen</item>
+        <item quantity="one">%d voorstel afgewezen</item>
+    </plurals>
+    <plurals name="offers_completed_expired">
+        <item quantity="other">%d voorstellen verlopen</item>
+        <item quantity="one">%d voorstel verlopen</item>
+    </plurals>
+    <plurals name="package_weight_major_with_unit_imperial_accessible">
+        <item quantity="other">%s pond</item>
+        <item quantity="one">%s pond</item>
+    </plurals>
+    <plurals name="package_weight_major_with_unit_metric_accessible">
+        <item quantity="other">%s kilo</item>
+        <item quantity="one">%s kilo</item>
+    </plurals>
+    <plurals name="package_weight_minor_with_unit_imperial_accessible">
+        <item quantity="other">%s oz.</item>
+        <item quantity="one">%s oz.</item>
+    </plurals>
+    <plurals name="package_weight_minor_with_unit_metric_accessible">
+        <item quantity="other">%s gram</item>
+        <item quantity="one">%s gram</item>
+    </plurals>
+    <plurals name="payment_reminder_sub_banner_pay_time_days">
+        <item quantity="other">Het kan tot %d dagen duren voordat kopers betalen.</item>
+        <item quantity="one">Het kan tot %d dag duren voordat kopers betalen.</item>
+    </plurals>
+    <plurals name="payment_reminder_sub_banner_pay_time_hours">
+        <item quantity="other">Het kan tot %d uur duren voordat kopers betalen.</item>
+        <item quantity="one">Het kan tot %d uur duren voordat kopers betalen.</item>
+    </plurals>
+    <plurals name="photomanager_photos_deleted">
+        <item quantity="other">"%1$d foto's verwijderd"</item>
+        <item quantity="one">%1$d foto verwijderd</item>
+    </plurals>
+    <plurals name="positive_feedback_count">
+        <item quantity="other">%d personen hebben deze recensie positief beoordeeld.</item>
+        <item quantity="one">%d persoon heeft deze recensie positief beoordeeld.</item>
+    </plurals>
+    <plurals name="product_ratings">
+        <item quantity="other">%d productbeoordelingen</item>
+        <item quantity="one">%d productbeoordeling</item>
+    </plurals>
+    <plurals name="product_ratings_and_reviews">
+        <item quantity="other">%d productbeoordelingen en recensies</item>
+        <item quantity="one">%d productbeoordeling en recensie</item>
+    </plurals>
+    <plurals name="psl_format_days">
+        <item quantity="other">%1$s dagen</item>
+        <item quantity="one">%1$s dag</item>
+    </plurals>
+    <plurals name="quantity_available">
+        <item quantity="other">%d beschikbaar</item>
+        <item quantity="one">%d beschikbaar</item>
+    </plurals>
+    <plurals name="rating_stars">
+        <item quantity="other">%d sterren</item>
+        <item quantity="one">%d ster</item>
+    </plurals>
+    <plurals name="ratings">
+        <item quantity="other">%1$d beoordelingen</item>
+        <item quantity="one">%1$d beoordeling</item>
+    </plurals>
+    <plurals name="reviews_photos_summary">
+        <item quantity="other">"Je hebt %1$d foto's geüpload. Tik op een foto om deze te bewerken."</item>
+        <item quantity="one">Je hebt %1$d foto geüpload. Tik op een foto om deze te bewerken.</item>
+    </plurals>
+    <plurals name="reviews_plural">
+        <item quantity="other">%d recensies</item>
+        <item quantity="one">%d recensie</item>
+    </plurals>
+    <plurals name="search_applied_filters_header_title_format">
+        <item quantity="other">%1$d filters toegepast</item>
+        <item quantity="one">%1$d filter toegepast</item>
+    </plurals>
+    <plurals name="search_applied_filters_pill_title_format">
+        <item quantity="other">%1$d toegepast</item>
+        <item quantity="one">%1$d toegepast</item>
+    </plurals>
+    <plurals name="search_landing_showing_n_suggestions_accessibility">
+        <item quantity="other">%d suggesties weergeven</item>
+        <item quantity="one">%d suggestie weergeven</item>
+    </plurals>
+    <plurals name="search_refinement_guaranteed_delivery_shipping">
+        <item quantity="other">Levering binnen %d dagen</item>
+        <item quantity="one">Levering binnen %d dag</item>
+    </plurals>
+    <plurals name="selected_item_count">
+        <item quantity="other">%d geselecteerde items</item>
+        <item quantity="one">%d geselecteerd item</item>
+    </plurals>
+    <plurals name="sell_photos_added_qty">
+        <item quantity="other">"%d foto's toegevoegd"</item>
+        <item quantity="one">%d foto toegevoegd</item>
+    </plurals>
+    <plurals name="sell_recommendation_interested_buyers">
+        <item quantity="other">%d geïnteresseerde kopers</item>
+        <item quantity="one">%d geïnteresseerde koper</item>
+    </plurals>
+    <plurals name="sell_showing_suggestions_accessibility">
+        <item quantity="other">%d suggesties weergeven</item>
+        <item quantity="one">%d suggestie weergeven</item>
+    </plurals>
+    <plurals name="seller_offer_received_count">
+        <item quantity="other">%d voorstellen ontvangen</item>
+        <item quantity="one">%d voorstel ontvangen</item>
+    </plurals>
+    <plurals name="seller_offer_sent_count">
+        <item quantity="other">%d voorstellen verzonden</item>
+        <item quantity="one">%d voorstel verzonden</item>
+    </plurals>
+    <plurals name="selling_draft_recommendation_day_auction">
+        <item quantity="other">Veiling van %1$s dagen met een startprijs van %2$s</item>
+        <item quantity="one">Veiling van %1$s dag met een startprijs van %2$s</item>
+    </plurals>
+    <plurals name="selling_draft_recommendation_day_auction_de">
+        <item quantity="other">Veiling van %1$s dagen, startprijs: %2$s</item>
+        <item quantity="one">Veiling van %1$s dagen, startprijs: %2$s</item>
+    </plurals>
+    <plurals name="selling_draft_summary_auction_label">
+        <item quantity="other">Veiling van %1$s dagen</item>
+        <item quantity="one">Veiling van %1$s dag</item>
+    </plurals>
+    <plurals name="selling_list_new_offer_with_expiry">
+        <item quantity="other">%1$d nieuwe voorstellen - hoogste voorstel verloopt over %2$s</item>
+        <item quantity="one">%1$d nieuw voorstel - verloopt over %2$s</item>
+    </plurals>
+    <plurals name="selling_list_sold_order_summary_listing_count">
+        <item quantity="other">%d objecten in totaal</item>
+        <item quantity="one">%d object(en) in totaal</item>
+    </plurals>
+    <plurals name="selling_overview_awaiting_payment">
+        <item quantity="other">Objecten die nog niet zijn betaald</item>
+        <item quantity="one">Object dat nog niet is betaald</item>
+    </plurals>
+    <plurals name="selling_overview_did_not_sell">
+        <item quantity="other">Niet verkocht maar kan opnieuw worden aangeboden</item>
+        <item quantity="one">Niet verkocht maar kan opnieuw worden aangeboden</item>
+    </plurals>
+    <plurals name="selling_overview_new_offers">
+        <item quantity="other">Nieuwe voorstellen</item>
+        <item quantity="one">Nieuw voorstel</item>
+    </plurals>
+    <plurals name="selling_overview_paid_ship_now">
+        <item quantity="other">Betaald, nu verzenden</item>
+        <item quantity="one">Betaald, nu verzenden</item>
+    </plurals>
+    <plurals name="selling_overview_scheduled_listings">
+        <item quantity="other">Geplande aanbiedingen</item>
+        <item quantity="one">Geplande aanbieding</item>
+    </plurals>
+    <plurals name="selling_overview_ship_when_paid">
+        <item quantity="other">Verzenden na betaling</item>
+        <item quantity="one">Verzenden na betaling</item>
+    </plurals>
+    <plurals name="selling_overview_will_sell">
+        <item quantity="other">Veilingobjecten die worden verkocht</item>
+        <item quantity="one">Veilingobject dat wordt verkocht</item>
+    </plurals>
+    <plurals name="shopping_cart_accessibility_count">
+        <item quantity="other">Knop Winkelwagentje, %1$s objecten.</item>
+        <item quantity="one">Knop Winkelwagentje, %1$s object.</item>
+    </plurals>
+    <plurals name="sio_seller_sent_offer">
+        <item quantity="other">Je hebt een voorstel naar %d kopers verzonden.</item>
+        <item quantity="one">Je hebt een voorstel naar %d koper verzonden.</item>
+    </plurals>
+    <plurals name="sold_list_label">
+        <item quantity="other">Verkocht</item>
+        <item quantity="one">Verkocht</item>
+    </plurals>
+    <plurals name="srp_miles">
+        <item quantity="other">%,d mijl</item>
+        <item quantity="one">%,d mijl</item>
+    </plurals>
+    <plurals name="srp_ratings_count_accessibility">
+        <item quantity="other">%1$d productbeoordelingen</item>
+        <item quantity="one">%1$d productbeoordeling</item>
+    </plurals>
+    <plurals name="status_bids">
+        <item quantity="other">BIEDINGEN ONTVANGEN</item>
+        <item quantity="one">BOD ONTVANGEN</item>
+    </plurals>
+    <plurals name="status_offer">
+        <item quantity="other">%d NIEUWE VOORSTELLEN</item>
+        <item quantity="one">%d NIEUW VOORSTEL</item>
+    </plurals>
+    <plurals name="store_picker_fulfillment_format_days">
+        <item quantity="other">Klaar over %1$d werkdagen</item>
+        <item quantity="one">Klaar over %1$d werkdag</item>
+    </plurals>
+    <plurals name="store_picker_fulfillment_format_hours">
+        <item quantity="other">Klaar over %1$d kantooruren</item>
+        <item quantity="one">Klaar over %1$d kantooruur</item>
+    </plurals>
+    <plurals name="store_picker_fulfillment_format_minutes">
+        <item quantity="other">Klaar over %1$d minuten</item>
+        <item quantity="one">Klaar over %1$d minuut</item>
+    </plurals>
+    <plurals name="summary_simple_pricing_details">
+        <item quantity="other">Veiling van %1$s dagen, startprijs</item>
+        <item quantity="one">Veiling van %1$s dagen, startprijs</item>
+    </plurals>
+    <plurals name="time_duration_business_days">
+        <item quantity="other">%d werkdagen</item>
+        <item quantity="one">%d werkdag</item>
+    </plurals>
+    <plurals name="time_duration_calendar_days">
+        <item quantity="other">%d dagen</item>
+        <item quantity="one">%d dag</item>
+    </plurals>
+    <plurals name="time_duration_hours">
+        <item quantity="other">%d uur</item>
+        <item quantity="one">%d uur</item>
+    </plurals>
+    <plurals name="time_duration_minutes">
+        <item quantity="other">%d minuten</item>
+        <item quantity="one">%d minuut</item>
+    </plurals>
+    <plurals name="time_duration_months">
+        <item quantity="other">%d maanden</item>
+        <item quantity="one">%d maand</item>
+    </plurals>
+    <plurals name="time_duration_seconds">
+        <item quantity="other">%d seconden</item>
+        <item quantity="one">%d seconde</item>
+    </plurals>
+    <plurals name="time_duration_years">
+        <item quantity="other">%d jaar</item>
+        <item quantity="one">%d jaar</item>
+    </plurals>
+    <plurals name="trending_clicks_count">
+        <item quantity="other">%1$,d kliks</item>
+        <item quantity="one">%1$,d klik</item>
+    </plurals>
+    <plurals name="trending_views_count">
+        <item quantity="other">%1$,d weergaven</item>
+        <item quantity="one">%1$,d weergave</item>
+    </plurals>
+    <plurals name="unsold_list_label">
+        <item quantity="other">Onverkocht</item>
+        <item quantity="one">Onverkocht</item>
+    </plurals>
+    <plurals name="vehicle_history_report_buy_report_caption">
+        <item quantity="other">Er zijn %d bestanden beschikbaar voor dit voertuig</item>
+        <item quantity="one">Er is %d bestand beschikbaar voor dit voertuig</item>
+    </plurals>
+    <plurals name="vehicle_history_report_buyable_price">
+        <item quantity="other">Bundel van %1$d voor %2$s</item>
+        <item quantity="one">Eén rapport voor %2$s</item>
+    </plurals>
+    <plurals name="view_count_label">
+        <item quantity="other">Weergaven</item>
+        <item quantity="one">Weergave</item>
+    </plurals>
+    <plurals name="view_item_offer_message_count_accessibility">
+        <item quantity="other">%1$d van maximaal %2$d tekens ingevoerd</item>
+        <item quantity="one">%1$d van maximaal %2$d tekens ingevoerd</item>
+    </plurals>
+    <plurals name="view_item_offers_left">
+        <item quantity="other">Nog %d voorstellen</item>
+        <item quantity="one">Nog %d voorstel</item>
+    </plurals>
+    <plurals name="watcher_count_label">
+        <item quantity="other">Volgers</item>
+        <item quantity="one">Volger</item>
+    </plurals>
+    <plurals name="watchers">
+        <item quantity="other">%1$d volgers</item>
+        <item quantity="one">%1$d volger</item>
+    </plurals>
+    <plurals name="watching">
+        <item quantity="other">%1$d keer gevolgd</item>
+        <item quantity="one">%1$d keer gevolgd</item>
+    </plurals>
+    <plurals name="watching_category_accessibility_text">
+        <item quantity="other">Rubriek %1$s. %2$d objecten</item>
+        <item quantity="one">Rubriek %1$s. %2$d object</item>
+    </plurals>
+</resources>

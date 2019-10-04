@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/adjusted_pricing_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.DynamicCardContainer.ListingForm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/pricing_recommendation_status_extended_view" android:visibility="gone" android:text="@string/recommended" android:drawablePadding="@dimen/ebayPadding" style="@style/Sell.EbayRecommended" />
+    <TextView android:id="@id/adjusted_auction_text" android:paddingBottom="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayStaticMargin" android:text="@string/format_auction" style="@style/Sell.TextView.Medium" />
+    <LinearLayout android:id="@id/adjusted_starting_bid_container" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/adjusted_starting_bid" android:text="@string/label_starting_bid" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/adjusted_starting_bid_value" style="@style/Sell.Bolt.Value" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/adjusted_duration_container" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/adjusted_duration" android:text="@string/label_duration" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/adjusted_duration_value" style="@style/Sell.Bolt.Value" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/adjusted_auction_easy_pricing_container" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/adjusted_auction_easy_pricing" android:text="@string/easy_pricing_title" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/adjusted_auction_easy_pricing_value" style="@style/Sell.Bolt.Value" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/adjusted_auction_best_offer_container" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/adjusted_auction_best_offer" android:text="@string/label_offers" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/adjusted_auction_best_offer_value" style="@style/Sell.Bolt.Value" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/adjusted_auction_vat_container" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/adjusted_auction_vat_label" android:text="@string/label_vat" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/adjusted_auction_vat_value" style="@style/Sell.Bolt.Value" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/adjusted_reserve_price_container" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/adjusted_reserve_price" android:text="@string/label_reserve_price" style="@style/Sell.Bolt.Label.Autosized" />
+        <TextView android:id="@id/adjusted_reserve_price_value" style="@style/Sell.Bolt.Value" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/adjusted_schedule_container" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/adjusted_bin_schedule" android:text="@string/scheduled" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/adjusted_bin_schedule_value" style="@style/Sell.Bolt.Value" />
+    </LinearLayout>
+    <TextView android:id="@id/adjusted_bin_text" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buy_it_now" style="@style/Sell.TextView.Medium" />
+    <LinearLayout android:id="@id/adjusted_bin_price_container" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/adjusted_price" android:text="@string/price" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/adjusted_price_value" style="@style/Sell.Bolt.Value" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/adjusted_fix_duration_container" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/adjusted_fix_duration" android:text="@string/label_duration" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/adjusted_fix_duration_value" style="@style/Sell.Bolt.Value" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/adjusted_fixed_easy_pricing_container" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/adjusted_fixed_easy_pricing" android:text="@string/easy_pricing_title" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/adjusted_fixed_easy_pricing_value" style="@style/Sell.Bolt.Value" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/adjusted_best_offer_container" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/adjusted_best_offer" android:text="@string/label_offers" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/adjusted_best_offer_value" style="@style/Sell.Bolt.Value" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/adjusted_bin_vat_container" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/adjusted_bin_vat_label" android:text="@string/label_vat" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/adjusted_bin_vat_value" style="@style/Sell.Bolt.Value" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/adjusted_bin_quantity_container" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/adjusted_bin_quantity" android:text="@string/quantity" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/adjusted_bin_quantity_value" style="@style/Sell.Bolt.Value" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/adjusted_fix_schedule_container" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/adjusted_fix_schedule" android:text="@string/scheduled" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/adjusted_fix_schedule_value" style="@style/Sell.Bolt.Value" />
+    </LinearLayout>
+</LinearLayout>

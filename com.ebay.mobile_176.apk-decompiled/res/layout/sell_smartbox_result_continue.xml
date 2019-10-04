@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?listDividerHorizontal" android:showDividers="end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.mobile.widget.FRelativeLayout android:orientation="horizontal" android:id="@id/result_parent" android:background="@color/listContainerLightInsideBackground" android:paddingLeft="@dimen/ebayPadding3x" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="?android:listPreferredItemHeight" res_auto:foreground="?android:selectableItemBackground"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+        <ImageView android:id="@id/continueImage" android:background="@drawable/image_border_white_background" android:padding="@dimen/ebayPadding" android:layout_width="@dimen/sell_smartbox_results_image_size" android:layout_height="@dimen/sell_smartbox_results_image_size" android:layout_marginRight="@dimen/ebayStaticMargin" android:src="@drawable/ic_missing_image" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <RelativeLayout android:id="@id/continueTextParent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayPadding15" android:layout_toRightOf="@id/continueImage" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textAppearance="?textAppearanceSubhead" android:ellipsize="start" android:id="@id/continueText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smartbox_start_with_this" android:maxLines="3" />
+        </RelativeLayout>
+    </com.ebay.mobile.widget.FRelativeLayout>
+</LinearLayout>

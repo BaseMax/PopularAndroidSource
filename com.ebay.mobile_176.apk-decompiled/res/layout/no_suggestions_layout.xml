@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/no_suggestions_view" android:padding="@dimen/ebayPadding15" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMarginHalf" android:text="@string/prelist_no_suggested_keywords" />
+    <Button android:id="@id/show_matching_items_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMarginHalf" android:text="@string/prelist_show_matching_items" android:textAllCaps="false" style="@style/EbayButton.Flat" />
+</LinearLayout>

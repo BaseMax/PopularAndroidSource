@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="ring" android:innerRadiusRatio="@dimen/camera_progressbar_inner_radius_ratio" android:useLevel="true" android:thickness="@dimen/camera_progressbar_thickness"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/style_guide_gray" />
+</shape>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ebay.nautilus.shell.widget.EbaySwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.core.widget.NestedScrollView android:id="@id/top_scrollview" style="@style/ItemView.ScrollWithWeight">
+                <LinearLayout android:orientation="vertical" android:id="@id/top_scrollview_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/view_item_activity_shared_top" />
+                    <FrameLayout android:id="@id/condensed_header" android:paddingBottom="@dimen/ebayPadding" android:visibility="gone" style="@style/ItemView" />
+                    <FrameLayout android:id="@id/images_layout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/ItemViewPhotoGalleryHeight">
+                        <com.ebay.mobile.viewitem.photos.ImageViewPager android:id="@id/imageview_viewpager" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/item_photos" />
+                        <com.ebay.android.widget.RemoteImageView android:id="@id/image_view_single_image" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ebayMargin2x" android:contentDescription="@string/item_photos" res_auto:averageBackgroundColor="true" res_auto:emptyLoadingColor="@android:color/white" />
+                    </FrameLayout>
+                    <include layout="@layout/view_item_activity_shared_bottom" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </com.ebay.nautilus.shell.widget.EbaySwipeRefreshLayout>
+    </LinearLayout>
+    <include layout="@layout/common_progress" />
+    <include layout="@layout/common_error" />
+    <include layout="@layout/common_translucent_progress" />
+</merge>

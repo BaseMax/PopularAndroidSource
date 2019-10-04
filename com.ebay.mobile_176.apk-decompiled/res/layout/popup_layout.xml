@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/popup_container" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/up_arrow" android:layout_width="16.0dip" android:layout_height="8.0dip" android:layout_marginLeft="@dimen/ebayPadding2x" android:src="@drawable/pop_up_arrow_up" android:tint="@color/quick_tip_background" android:contentDescription="@null" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/quick_tip_primary" android:id="@id/text_slot_1" android:background="@color/quick_tip_background" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="@dimen/search_tooltip_max_width" android:textAlignment="viewStart" />
+</LinearLayout>

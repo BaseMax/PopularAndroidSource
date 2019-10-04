@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/inline_selector_dark"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_enabled="false" android:drawable="@drawable/inline_button_primary_disabled_shape" />
+            <item android:state_pressed="true" android:drawable="@drawable/inline_button_primary_pressed_shape" />
+            <item android:drawable="@drawable/inline_button_primary_shape" />
+        </selector>
+    </item>
+</ripple>

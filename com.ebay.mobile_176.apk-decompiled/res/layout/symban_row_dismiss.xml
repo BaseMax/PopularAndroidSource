@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dismiss_row" android:background="@color/style_guide_gray" android:layout_width="fill_parent" android:layout_height="100.0dip" android:importantForAccessibility="noHideDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="10.0dip" android:src="@drawable/horizontal_shadow_down" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="18.0sp" android:textColor="?android:textColorPrimaryInverse" android:ellipsize="end" android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/symban_dismiss" android:maxLines="2" android:layout_weight="1.0" android:importantForAccessibility="no" />
+        <TextView android:textAppearance="?android:textAppearanceSmallInverse" android:textSize="12.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimaryInverse" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="20.0dip" android:text="@string/undo" android:drawableLeft="@drawable/ic_undo_white" android:drawablePadding="10.0dip" android:contentDescription="@string/accessibility_notification_undo_button" android:textAllCaps="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin_quarter" app:cardCornerRadius="@dimen/default_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:gravity="center_vertical" android:id="@id/reportButton" android:layout_width="wrap_content" android:layout_height="56.0dip" android:minWidth="110.0dip" android:text="@string/report_review" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" style="@style/Bazaar.Text.Subtitle2" />
+            <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:id="@id/reportDeveloperButton" android:layout_width="wrap_content" android:layout_height="56.0dip" android:minWidth="110.0dip" android:text="@string/report_review_developer" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" style="@style/Bazaar.Text.Subtitle2" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

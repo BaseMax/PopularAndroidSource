@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/value_label" android:paddingLeft="@dimen/ebayPadding3x" android:paddingTop="@dimen/ebayPadding3x" android:paddingRight="@dimen/ebayPadding3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_postal_code" android:labelFor="@id/textbox_zipcode" style="@style/Refine.Text" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding3x" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/button_use_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_current_location" android:contentDescription="@string/search_refinement_loc_my_location_prompt" style="@style/EbayButton.Flat" />
+        <EditText android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/textbox_zipcode" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:selectAllOnFocus="true" android:maxLength="15" android:freezesText="true" android:inputType="text" android:imeOptions="actionDone" />
+    </LinearLayout>
+    <TextView android:textAppearance="?textAppearanceCaption1" android:textColor="?textColorError" android:id="@id/textview_error" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayPadding3x" android:layout_marginRight="@dimen/ebayPadding3x" />
+</LinearLayout>

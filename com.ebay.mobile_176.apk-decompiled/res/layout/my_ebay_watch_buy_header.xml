@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <TextView android:gravity="center" android:id="@id/my_ebay_conversion_text" android:paddingLeft="@dimen/ebayContentSideMargin" android:paddingRight="@dimen/ebayContentSideMargin" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" android:text="@string/my_ebay_currency_conversion" style="?textAppearanceCaption1" />
+</FrameLayout>

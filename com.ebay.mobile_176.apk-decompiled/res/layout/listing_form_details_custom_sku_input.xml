@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?containerBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="?android:textColorTertiary" android:id="@id/custom_sku_label" android:paddingTop="@dimen/ebayMargin2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/item_details_custom_sku" android:layout_marginStart="@dimen/ebayPadding2x" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.ebay.android.widget.EbayTextInputEditText android:id="@id/custom_sku_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ebayMargin2x" android:layout_marginEnd="@dimen/ebayMargin2x" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/custom_sku_label" />
+</androidx.constraintlayout.widget.ConstraintLayout>

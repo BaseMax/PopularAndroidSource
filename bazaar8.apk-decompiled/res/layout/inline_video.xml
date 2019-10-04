@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:scaleType="fitXY" android:adjustViewBounds="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ir.cafebazaar.inline.ui.inflaters.views.InlineAspectRatioImageView android:id="@id/video_thumbnail" android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    <View android:id="@id/video_thumbnail_overlay" android:background="#20000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/play_button" android:background="@drawable/ic_play_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:layout_gravity="bottom|center|left" android:id="@id/video_duration" android:background="@drawable/inline_video_duration_background" android:paddingLeft="3.5dip" android:paddingTop="2.5dip" android:paddingRight="3.5dip" android:paddingBottom="2.5dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:maxLines="1" />
+</FrameLayout>

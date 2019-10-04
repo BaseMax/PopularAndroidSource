@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/see_all_divider" android:background="?android:dividerHorizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginTop="@dimen/ebayMargin15" />
+    <RelativeLayout android:id="@id/see_all" android:background="?android:listChoiceBackgroundIndicator" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight">
+        <TextView android:textColor="?android:textColorSecondary" android:id="@id/see_all_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:text="@string/view_item_view_all" android:layout_centerVertical="true" />
+        <View android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_alignParentBottom="true" />
+        <include layout="@layout/view_item_chevron" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/show_more_layout" android:background="?android:listChoiceBackgroundIndicator" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-6.0dip" android:minHeight="?android:listPreferredItemHeight">
+        <TextView android:layout_marginLeft="@dimen/ebayMargin" style="@style/StyleGuideViewItemStatKey" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="6.0">
+            <TextView android:textColor="?colorAccent" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/overflow_list_more" android:includeFontPadding="false" android:drawableRight="@drawable/ic_arrow_drop_down" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/show_less_layout" android:background="?android:listChoiceBackgroundIndicator" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-6.0dip" android:minHeight="?android:listPreferredItemHeight">
+        <TextView android:layout_marginLeft="@dimen/ebayMargin" style="@style/StyleGuideViewItemStatKey" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="6.0">
+            <TextView android:textColor="?colorAccent" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/overflow_list_less" android:includeFontPadding="false" android:drawableRight="@drawable/ic_arrow_drop_up" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/stat_action" android:tag="layout/view_item_ux_stat_action_0" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2Accent" android:id="@id/stat_key" android:tag="binding_1" android:paddingTop="@dimen/baseline_unit_half" android:paddingBottom="@dimen/baseline_unit_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:layout_alignParentRight="true" android:textAllCaps="true" style="@style/StyleGuideViewItemStatKey" />
+</RelativeLayout>

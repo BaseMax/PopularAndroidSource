@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-files-path name="apk" path="." />
+    <files-path name="bazaar" path="apk" />
+    <root-path name="external_files" path="/storage/" />
+</paths>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/item_transaction_header_0" android:padding="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/date" android:layout_weight="1.0" style="@style/Bazaar.Text.FlatRipple.TransactionItem.Header" />
+    <androidx.appcompat.widget.AppCompatTextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/amount" android:layout_weight="1.0" style="@style/Bazaar.Text.FlatRipple.TransactionItem.Header" />
+    <androidx.appcompat.widget.AppCompatTextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/description" android:layout_weight="2.0" style="@style/Bazaar.Text.FlatRipple.TransactionItem.Header" />
+    <androidx.appcompat.widget.AppCompatTextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/token" android:layout_weight="2.0" style="@style/Bazaar.Text.FlatRipple.TransactionItem.Header" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.search.refine.SearchRefinementLock android:id="@id/button_filter_lock" android:tag="layout/refine_preference_lock_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_lock_black_24dp" android:tint="?iconTintColorCheckable" android:minWidth="@dimen/min_touch_target_unit" android:minHeight="32.0dip" style="@style/EbayButton.Icon"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

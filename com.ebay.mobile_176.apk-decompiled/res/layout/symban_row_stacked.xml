@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/symban_row_dismiss" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row" android:background="@color/listContainerLightInsideBackground" android:paddingLeft="@dimen/ebayPadding3x" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding3x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+        <TextView android:textAppearance="?textAppearanceDisplay1" android:gravity="center" android:id="@id/stack_count" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginRight="@dimen/ebayStaticMargin" android:text="666" />
+        <TableLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:stretchColumns="0" android:shrinkColumns="0" android:layout_weight="1.0">
+            <TableRow>
+                <TextView android:textAppearance="?textAppearanceBody2" android:ellipsize="end" android:id="@id/title" android:maxLines="1" />
+            </TableRow>
+            <TableRow>
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:ellipsize="end" android:id="@id/body" android:maxLines="1" />
+            </TableRow>
+        </TableLayout>
+        <View android:id="@id/read_status_dot" android:background="@drawable/blue_dot" android:layout_width="@dimen/following_bluedotsize" android:layout_height="@dimen/following_bluedotsize" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginStart="@dimen/ebayMargin" />
+    </LinearLayout>
+    <FrameLayout android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

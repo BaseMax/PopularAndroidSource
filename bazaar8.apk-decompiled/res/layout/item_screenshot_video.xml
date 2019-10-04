@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_screenshot_video_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_margin_half" android:layout_marginBottom="@dimen/default_margin_half" app:cardCornerRadius="@dimen/default_margin">
+        <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivThumbRowScreenshotVideo" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/content_description_screen_shot" />
+            <View android:id="@id/darkShade" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Bazaar.Image.ShadeBackground" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/ivPlayRowScreenshotVideo" android:tag="binding_2" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_play_video" style="@style/Bazaar.Image.Avatar" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

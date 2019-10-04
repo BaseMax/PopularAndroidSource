@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/modal_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStart="0.0dip">
+        <ImageButton android:layout_gravity="center|left" android:id="@id/modal_toolbar_back" android:background="?android:actionBarItemBackground" android:padding="@dimen/ebayPadding2x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_actionbar_back" android:contentDescription="@string/close" />
+        <TextView android:textAppearance="@style/EbayTextAppearanceStrong.Title2" android:layout_gravity="center" android:id="@id/toolbar_centered_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageButton android:layout_gravity="center|right" android:id="@id/modal_toolbar_close" android:background="?android:actionBarItemBackground" android:padding="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_modal_x" android:contentDescription="@string/close" />
+    </androidx.appcompat.widget.Toolbar>
+    <include layout="@layout/list_divider" />
+</merge>

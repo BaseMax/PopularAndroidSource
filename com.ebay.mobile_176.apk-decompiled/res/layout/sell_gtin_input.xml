@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/sell_gtin_input_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/switch_card" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" style="@style/Sell.Card.ListingForm">
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/does_not_apply_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/item_details_does_not_apply" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Sell.Switch" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/switch_card">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/gtin_input_edit_text_parent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayPadding" android:hint="@string/item_details_enter_value" android:layout_weight="1.0" android:labelFor="@id/gtin_input_edit_text">
+            <com.ebay.android.widget.EbayTextInputEditText android:id="@id/gtin_input_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="number" android:layout_marginStart="@dimen/ebayMargin2x" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton android:id="@id/scan_upc_button" android:background="?android:actionBarItemBackground" android:paddingLeft="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding15" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ebayMargin" android:src="?barcodeIcon" android:tint="?iconTintColor" android:contentDescription="@string/scan_barcode_accessibility_text" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

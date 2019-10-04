@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient android:startColor="@color/card_style_shadow_start" android:endColor="@color/card_style_shadow_end" android:angle="270.0" android:centerColor="@color/card_style_shadow_center" />
+            <corners android:topRightRadius="4.0dip" android:bottomRightRadius="4.0dip" />
+        </shape>
+    </item>
+    <item android:top="1.0dip" android:right="1.0dip" android:bottom="2.0dip">
+        <shape>
+            <solid android:color="@color/card_background_dark" />
+            <corners android:topRightRadius="2.0dip" android:bottomRightRadius="2.0dip" />
+        </shape>
+    </item>
+    <item android:top="@dimen/ebayMargin2x" android:right="1.0dip" android:bottom="@dimen/ebayMargin2x">
+        <shape android:shape="rectangle">
+            <solid android:width="1.0dip" android:color="@color/style_guide_list_divider" />
+        </shape>
+    </item>
+    <item android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="2.0dip">
+        <shape>
+            <solid android:color="@color/card_background_dark" />
+            <corners android:topRightRadius="2.0dip" android:bottomRightRadius="2.0dip" />
+        </shape>
+    </item>
+</layer-list>

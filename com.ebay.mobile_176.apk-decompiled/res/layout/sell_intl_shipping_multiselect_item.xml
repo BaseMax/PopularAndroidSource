@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/intl_shipping_region_checkbox" android:paddingLeft="@dimen/ebayPadding15" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding2x" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</RelativeLayout>

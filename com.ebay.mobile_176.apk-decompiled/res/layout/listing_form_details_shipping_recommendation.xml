@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/recommendation_container" android:visibility="gone" style="@style/ListingFormShippingGuidance"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/recommended_tool_tip" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayNoMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListingFormGuidanceMessage" />
+    <Button android:id="@id/recommendation_apply_button" android:text="@string/recommended_shipping_apply" style="?listingFormShippingRecoButtonStyle" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/card_background_light" />
+        </shape>
+    </item>
+    <item android:top="@dimen/ebayMargin2x">
+        <shape android:shape="rectangle">
+            <solid android:width="1.0dip" android:color="@color/style_guide_list_divider" />
+        </shape>
+    </item>
+    <item android:left="1.0dip">
+        <shape>
+            <solid android:color="@color/card_background_light" />
+        </shape>
+    </item>
+</layer-list>

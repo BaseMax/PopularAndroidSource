@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom|center|right" android:id="@id/main_fab" android:clipChildren="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/stop_sharing_image_view" android:background="@drawable/ic_stop_sharing" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMarginHalf" android:contentDescription="@string/overlay_background_accessibility" style="style/@EbayButton.Icon" />
+    <TextView android:textColor="@color/screen_share_overlay_text_color" android:gravity="center|left" android:id="@id/stop_sharing_textView" android:paddingLeft="@dimen/borderSize" android:paddingRight="@dimen/borderSize" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin5x" android:text="@string/display_connecting_state" android:layout_alignTop="@id/stop_sharing_image_view" android:layout_alignRight="@id/stop_sharing_image_view" android:layout_alignBottom="@id/stop_sharing_image_view" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/checkout_field_container" android:paddingLeft="@dimen/xoMarginMediumLarge" android:paddingTop="@dimen/xoMarginSmall" android:paddingRight="@dimen/xoMarginMediumLarge" android:paddingBottom="@dimen/xoMarginSmall" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/checkout_text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-4.0dip" app:errorEnabled="false">
+        <com.google.android.material.textfield.TextInputEditText android:textAppearance="?textAppearanceSubhead" android:id="@id/checkout_text_input_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:inputType="text" android:imeOptions="actionDone" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/checkout_text_input_message" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

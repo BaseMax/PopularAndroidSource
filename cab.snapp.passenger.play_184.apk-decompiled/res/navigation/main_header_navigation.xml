@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/main_header_navigation" app:startDestination="@id/emptyNoHeightPlaceHolderController"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EmptyNoHeightPlaceHolderController" android:name="cab.snapp.passenger.units.footer.empty_no_height_place_holder.EmptyNoHeightPlaceHolderController" android:id="@id/emptyNoHeightPlaceHolderController">
+        <action android:id="@id/action_emptyNoHeightPlaceHolderController_to_rideOptionsController" app:destination="@id/rideOptionsController" app:enterAnim="@anim/fragment_animation_enter_from_up" app:exitAnim="@anim/fragment_animation_exit_to_up" app:popEnterAnim="@anim/fragment_animation_enter_from_up" app:popExitAnim="@anim/fragment_animation_exit_to_up" />
+    </fragment>
+    <fragment android:label="RideOptionsController" android:name="cab.snapp.passenger.units.ride_options.RideOptionsController" android:id="@id/rideOptionsController">
+        <action android:id="@id/action_rideOptionsController_to_emptyNoHeightPlaceHolderController" app:destination="@id/emptyNoHeightPlaceHolderController" app:enterAnim="@anim/fragment_animation_enter_from_up" app:exitAnim="@anim/fragment_animation_exit_to_up" app:popEnterAnim="@anim/fragment_animation_enter_from_up" app:popExitAnim="@anim/fragment_animation_exit_to_up" />
+    </fragment>
+</navigation>

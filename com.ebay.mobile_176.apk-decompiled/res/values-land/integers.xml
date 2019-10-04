@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="apptentive_layout_width_for_weight">0</integer>
+    <item type="integer" name="apptentive_message_center_status_text_gravity">@integer/apptentive_gravity_start</item>
+    <item type="integer" name="apptentive_orientation_fill_length">@integer/apptentive_orientation_horizontal</item>
+    <integer name="browse_categories_tiled_column_count">3</integer>
+    <integer name="events_hub_columns">2</integer>
+    <integer name="merchandise_grid_columns">3</integer>
+    <integer name="prelist_aspects_columns">2</integer>
+    <integer name="view_item_gallery_columns">4</integer>
+</resources>

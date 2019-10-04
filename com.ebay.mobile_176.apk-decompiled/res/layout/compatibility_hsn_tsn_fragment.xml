@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/compatibility_fragment_toolbar" />
+    <ScrollView android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayPadding3x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LetterboxViewItem">
+            <include layout="@layout/compatibility_hsn_tsn_make_model_year" />
+            <TextView android:textAppearance="?textAppearanceSubhead" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin2x" android:layout_marginTop="@dimen/ebayStaticMargin3x" android:layout_marginRight="@dimen/ebayStaticMargin2x" android:layout_marginBottom="@dimen/ebayStaticMargin3x" android:text="@string/motors_or_hint" />
+            <include layout="@layout/compatibility_hsn_tsn_fragment_viewstub" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/compatibility_go_button" />
+</LinearLayout>

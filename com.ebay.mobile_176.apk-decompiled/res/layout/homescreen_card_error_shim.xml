@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin4x" android:layout_marginBottom="@dimen/ebayMargin4x" android:text="@string/homescreen_card_selling_oops_text" android:layout_marginStart="@dimen/ebayMargin2x" android:layout_marginEnd="@dimen/ebayMargin2x"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator android:label="@string/snp_account_label" android:icon="@drawable/snp_account_icon" android:accountType="@string/snp_account_type" android:smallIcon="@drawable/snp_account_icon"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

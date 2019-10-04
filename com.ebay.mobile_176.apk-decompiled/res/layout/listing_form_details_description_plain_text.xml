@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/description_container" android:background="?containerBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentStart="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/description_tool_tip" android:text="@string/description_tool_tip" style="@style/ListingFormDetailGuidanceModuleTextStyle" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:paddingLeft="@dimen/listing_form_text_input_layout_side_margin" android:paddingRight="@dimen/listing_form_text_input_layout_side_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ebay.selling.listingform.widget.PlainTextEditor android:gravity="top" android:id="@id/description_editor" android:focusable="true" android:focusableInTouchMode="true" android:layout_height="fill_parent" android:minHeight="@dimen/min_editor_height" android:hint="@string/description_hint" android:inputType="textLongMessage|textCapSentences|textMultiLine" android:imeOptions="flagNoExtractUi" style="@style/Sell.EditText.ListingForm" />
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

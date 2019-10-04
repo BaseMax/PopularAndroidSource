@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/payment_details_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/payment_details_item_link" android:layout_width="@dimen/xoLeftContentWidth" android:layout_height="fill_parent" style="@style/Xo.Row">
+        <RadioButton android:id="@id/payment_details_item_button" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/payment_details_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/payment_details_divider" android:visibility="gone" style="@style/CommonDivider" />
+        <LinearLayout android:orientation="vertical" android:id="@id/payment_details_info_container" android:paddingLeft="0.0dip" android:paddingTop="@dimen/xoMarginMediumLarge" android:paddingRight="@dimen/xoMarginMediumLarge" android:paddingBottom="@dimen/xoMarginMediumLarge" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

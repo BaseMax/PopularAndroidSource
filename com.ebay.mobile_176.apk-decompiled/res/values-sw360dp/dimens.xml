@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="merchandise_bundle_image_size">96.0dip</dimen>
+    <dimen name="preference_category_padding_start">56.0dip</dimen>
+    <dimen name="search_list_image_width">154.0dip</dimen>
+    <dimen name="social_account_splash_screen_width">300.0dip</dimen>
+</resources>

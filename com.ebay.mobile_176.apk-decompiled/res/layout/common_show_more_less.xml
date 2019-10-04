@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/expand_layout" android:tag="layout/common_show_more_less_0" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center|right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceBody2Accent" android:id="@id/expand_button" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/expand_arrow" android:tag="binding_2" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/baseline_unit_half" android:adjustViewBounds="true" android:tint="?colorAccent" android:layout_toRightOf="@id/expand_button" android:layout_centerVertical="true" android:contentDescription="@null" />
+    </RelativeLayout>
+</FrameLayout>

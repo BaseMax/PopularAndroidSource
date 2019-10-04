@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/listing_form_summary_shipping_content_extended" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.DynamicCardContainer.ListingForm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/listing_form_summary_shipping_extended_domestic" />
+    <TextView android:id="@id/custom_international_shipping" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin" style="@style/Sell.TextView.Subhead" />
+    <LinearLayout android:id="@id/custom_international_service_package_details" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <include layout="@layout/listing_form_summary_shipping_secondary_package_details" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/custom_international_shipping_service" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/custom_international_service_name_label" android:text="@string/label_service" style="@style/Sell.Bolt.Label" />
+        <LinearLayout android:orientation="vertical" style="@style/Sell.Bolt.Value">
+            <TextView android:id="@id/custom_international_service_name_value" style="@style/Sell.TextView" />
+            <TextView android:id="@id/custom_international_delivery_time_value" android:padding="@dimen/form_label_no_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_international_package_weight_details_value" android:padding="@dimen/form_label_no_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_international_package_dimension_details_value" android:padding="@dimen/form_label_no_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_international_tracking_value" android:padding="@dimen/form_label_no_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_international_insurance_value" android:padding="@dimen/form_label_no_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/custom_international_shipping_cost" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/custom_international_cost_label" style="@style/Sell.Bolt.Label" />
+        <LinearLayout android:orientation="vertical" style="@style/Sell.Bolt.Value">
+            <TextView android:id="@id/custom_international_cost_value" style="@style/Sell.TextView" />
+            <TextView android:id="@id/custom_international_shipping_cost_type_value" android:padding="@dimen/form_label_no_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/custom_international_destination" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/custom_international_destination_label" android:text="@string/intl_shipping_region_summary" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/custom_international_destination_value" style="@style/Sell.Bolt.Value.Summary" />
+    </LinearLayout>
+    <TextView android:id="@id/custom_second_international_shipping" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin" style="@style/Sell.TextView.Subhead" />
+    <LinearLayout android:id="@id/custom_second_international_service_package_details" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <include layout="@layout/listing_form_summary_shipping_secondary_package_details" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/custom_second_international_shipping_service" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/custom_second_international_service_name_label" android:text="@string/label_service" style="@style/Sell.Bolt.Label" />
+        <LinearLayout android:orientation="vertical" style="@style/Sell.Bolt.Value">
+            <TextView android:id="@id/custom_second_international_service_name_value" style="@style/Sell.TextView" />
+            <TextView android:id="@id/custom_second_international_delivery_time_value" android:padding="@dimen/form_label_no_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_second_international_package_weight_details_value" android:padding="@dimen/form_label_no_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_second_international_package_dimension_details_value" android:padding="@dimen/form_label_no_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_second_international_tracking_value" android:padding="@dimen/form_label_no_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_second_international_insurance_value" android:padding="@dimen/form_label_no_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/custom_second_international_shipping_cost" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/custom_second_international_cost_label" style="@style/Sell.Bolt.Label" />
+        <LinearLayout android:orientation="vertical" style="@style/Sell.Bolt.Value">
+            <TextView android:id="@id/custom_second_international_cost_value" style="@style/Sell.TextView" />
+            <TextView android:id="@id/custom_second_international_shipping_cost_type_value" android:padding="@dimen/form_label_no_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/custom_second_international_destination" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/custom_second_international_destination_label" android:text="@string/intl_shipping_region_summary" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/custom_second_international_destination_value" style="@style/Sell.Bolt.Value.Summary" />
+    </LinearLayout>
+    <TextView android:id="@id/custom_local_pickup" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selling_list_ship_local" style="@style/Sell.TextView" />
+    <LinearLayout android:id="@id/custom_item_location_container" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/custom_item_location_label" android:text="@string/local_item_location" style="@style/Sell.Bolt.Label" />
+        <LinearLayout android:orientation="vertical" style="@style/Sell.Bolt.Value">
+            <TextView android:id="@id/custom_item_location_value" android:textAllCaps="true" style="@style/Sell.TextView" />
+            <TextView android:id="@id/custom_city_state_value" android:padding="@dimen/form_label_no_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

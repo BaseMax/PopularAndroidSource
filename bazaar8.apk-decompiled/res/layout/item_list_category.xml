@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="layout/item_list_category_0" android:layout_width="fill_parent" android:layout_height="56.0dip" style="@style/Bazaar.ContainerRipple"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:tag="binding_1" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginStart="@dimen/default_margin_double" app:tint="@color/c_icon_primary" />
+    <androidx.appcompat.widget.AppCompatTextView android:gravity="center_vertical" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin_double" style="@style/Bazaar.Text.Body2.Secondary" />
+    <androidx.appcompat.widget.AppCompatTextView android:gravity="center_vertical" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/default_margin_double" style="@style/Bazaar.Text.Body2.Secondary" />
+    <com.farsitel.bazaar.widget.RTLImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginStart="@dimen/default_margin_quarter" android:layout_marginEnd="@dimen/default_margin_double" app:srcCompat="@drawable/ic_round_chevron_right_24px" style="@style/Bazaar.Image.Icon.Secondary" />
+</LinearLayout>

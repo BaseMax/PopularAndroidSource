@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_layout" android:background="?containerBackgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/charity_banner"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/searchview_container" android:background="@drawable/rounded_white_rectangle" android:layout_width="fill_parent" android:layout_height="@dimen/sell_searchbar_height" android:layout_marginLeft="@dimen/sell_side_margin" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/sell_side_margin" android:layout_marginBottom="@dimen/ebayMargin">
+        <androidx.appcompat.widget.SearchView android:id="@id/textbox_search_bar" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/button_scan" android:layout_alignWithParentIfMissing="true" android:inputType="textCapWords" android:imeOptions="actionSearch|flagNoExtractUi" app:iconifiedByDefault="false" app:queryHint="@string/describe_your_item" />
+        <ImageButton android:layout_gravity="center|left" android:id="@id/button_scan" android:background="?android:actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ebayMargin" android:src="?barcodeIcon" android:tint="?iconTintColor" android:layout_alignParentRight="true" android:contentDescription="@string/scan_barcode_accessibility_text" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/category_container" android:paddingLeft="@dimen/sell_side_margin" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/sell_side_margin" android:paddingBottom="@dimen/ebayPadding15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/blue_horizontal_divider" android:background="@color/style_guide_divider" android:layout_width="fill_parent" android:layout_height="@dimen/dividerHeight" />
+        <RelativeLayout android:id="@id/category_aspect_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_below="@id/blue_horizontal_divider">
+            <ImageView android:id="@id/category_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_edit" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+            <RelativeLayout android:id="@id/category_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayPadding15" android:layout_marginRight="@dimen/ebayMargin15" android:layout_toLeftOf="@id/category_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textAppearance="?textAppearanceSubheadSecondary" android:ellipsize="start" android:id="@id/category_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/category" android:maxLines="2" android:textAllCaps="true" />
+                <TextView android:textAppearance="?textAppearanceSubheadSecondary" android:ellipsize="end" android:id="@id/category_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" android:layout_below="@id/category_label" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

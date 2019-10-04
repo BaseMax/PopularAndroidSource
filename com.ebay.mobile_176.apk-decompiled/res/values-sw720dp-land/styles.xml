@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EbayButton.Dynamic" parent="@style/EbayButton">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">@dimen/ebay_button_dynamic_max_width</item>
+    </style>
+    <style name="EbayButton.Secondary.Dynamic" parent="@style/EbayButton.Secondary">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">@dimen/ebay_button_dynamic_max_width</item>
+    </style>
+    <style name="EbayButton.SecondaryAlt.Dynamic" parent="@style/EbayButton.SecondaryAlt">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">@dimen/ebay_button_dynamic_max_width</item>
+    </style>
+</resources>

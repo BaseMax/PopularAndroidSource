@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/ebayContentSideMargin" android:paddingEnd="@dimen/ebayContentSideMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubhead" android:gravity="center_horizontal" android:id="@id/text_empty_selling_list" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/btn_empty_selling_list" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+    <Button android:id="@id/btn_empty_selling_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selling_list_start_listing" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/text_empty_selling_list" app:layout_constraintVertical_chainStyle="packed" style="@style/EbayButton.Flat" />
+</androidx.constraintlayout.widget.ConstraintLayout>

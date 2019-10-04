@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bpp_banner_layout" android:tag="layout/product_ux_best_price_promise_0" android:paddingTop="@dimen/baseline_unit" android:paddingBottom="@dimen/baseline_unit" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:paddingStart="@dimen/ebayContentSideMargin" android:paddingEnd="@dimen/ebayContentSideMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_view_bpp_banner_icon" android:layout_width="@dimen/product_best_price_promise_icon_size" android:layout_height="@dimen/product_best_price_promise_icon_size" android:src="@drawable/ic_best_price_promise_icon" android:importantForAccessibility="no" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/image_view_bpp_banner_icon" android:layout_marginStart="@dimen/baseline_unit">
+        <TextView android:textAppearance="?textAppearanceSubhead2" android:id="@id/textview_bpp_banner" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:id="@id/textview_bpp_title" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseline_unit_half" android:layout_marginBottom="@dimen/baseline_unit_half" android:maxLines="3" />
+        <TextView android:textAppearance="?textAppearanceCaption3" android:id="@id/textview_bpp_subtitle" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

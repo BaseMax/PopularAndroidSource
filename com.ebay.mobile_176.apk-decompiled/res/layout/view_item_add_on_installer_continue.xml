@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/installer_continue_button" android:tag="layout/view_item_add_on_installer_continue_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentPaddingBottom="@dimen/ebayPadding" app:contentPaddingLeft="@dimen/ebayPadding2x" app:contentPaddingRight="@dimen/ebayPadding2x" app:contentPaddingTop="@dimen/ebayPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:id="@id/installation_continue" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/installer_continue_button" style="@style/EbayButton.Blue" />
+</androidx.cardview.widget.CardView>

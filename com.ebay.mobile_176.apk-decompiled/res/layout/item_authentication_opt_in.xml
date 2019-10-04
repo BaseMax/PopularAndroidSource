@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/Prelist.Card.Authenticate"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayMargin3x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <LinearLayout android:orientation="vertical" android:id="@id/authenticate_eligibility_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:src="@drawable/item_auth_opt_in" android:minWidth="150.0dip" android:minHeight="150.0dip" android:importantForAccessibility="no" />
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/sell_ebay_authenticate_let_experts" android:importantForAccessibility="no" style="@style/AuthenticateTitleTextAppearance" />
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginBottom="@dimen/ebayMarginHalf" android:text="@string/sell_ebay_authenticate_with_authenticate" android:importantForAccessibility="no" style="@style/AuthenticateSubHeadTextAppearance" />
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginBottom="@dimen/ebayMarginHalf" android:text="@string/sell_ebay_authenticate_send_your_item" android:importantForAccessibility="no" />
+                <com.ebay.mobile.listingform.helper.CustomStyleTextView android:gravity="center" android:layout_gravity="center" android:id="@id/authenticate_description_learn_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:importantForAccessibility="yes" />
+            </LinearLayout>
+            <View android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" style="@style/CommonDivider" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/authenticate_bullet_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin3x" android:importantForAccessibility="yes">
+                <TextView android:id="@id/authenticate_bullet_one_text_view" android:text="@string/sell_ebay_authenticate_bullet_1" style="@style/Prelist.eBayAuthenticate.AuthenticateBullet" />
+                <TextView android:text="@string/sell_ebay_authenticate_bullet_2" style="@style/Prelist.eBayAuthenticate.AuthenticateBullet" />
+                <TextView android:text="@string/sell_ebay_authenticate_bullet_3" style="@style/Prelist.eBayAuthenticate.AuthenticateBullet" />
+            </LinearLayout>
+            <Button android:id="@id/sell_ebay_authenticate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sell_ebay_authenticate_button" style="@style/EbayButton" />
+            <Button android:id="@id/list_it_yourself" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin3x" android:text="@string/list_it_yourself_button" android:contentDescription="@string/list_it_yourself_button" style="@style/EbayButton.SecondaryAlt" />
+            <View android:id="@id/scroll_to_view" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/authenticate_your_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+                <TextView android:id="@id/authenticate_your_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin3x" android:text="@string/sell_ebay_authenticate_your_item" android:importantForAccessibility="no" />
+                <TextView android:textAppearance="?textAppearanceTitle2" android:id="@id/authenticate_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:importantForAccessibility="no" />
+                <TextView android:textColor="@color/style_guide_green" android:id="@id/authenticate_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin3x" android:importantForAccessibility="no" />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/CommonDivider" />
+        <RadioGroup android:id="@id/authenticate_shipping_options" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/authenticate_shipping_fedex" style="@style/Prelist.eBayAuthenticate.RadioButtons" />
+            <View style="@style/CommonDivider" />
+            <RadioButton android:id="@id/authenticate_shipping_usps" style="@style/Prelist.eBayAuthenticate.RadioButtons" />
+        </RadioGroup>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

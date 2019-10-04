@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/partial_confirmation_container" android:tag="layout/compatibility_partial_confirmation_0" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/baseline_unit" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/partial_token_message_text" android:tag="binding_1" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/ebayPadding" />
+    <Button android:id="@id/call_to_action_btn" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayButton.Blue" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/progress_container" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginRight="@dimen/xoMarginMediumLarge">
+        <LinearLayout android:orientation="horizontal" android:id="@id/logistics_link" android:paddingTop="@dimen/xoMarginSmall" android:paddingBottom="@dimen/xoMarginMediumLarge" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Row">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/logistics_address" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView android:id="@id/logistics_chevron" style="@style/Checkout.Chevron.Right" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/shipping_method_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginRight="@dimen/xoMarginMediumLarge" />
+</LinearLayout>

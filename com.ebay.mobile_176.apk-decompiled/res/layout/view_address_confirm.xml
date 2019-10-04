@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/confirm_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/ebayContentSideMargin" android:layout_above="@id/bt_done">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceBody1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addresses_confirm_address_message" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginRight="@dimen/ebayContentSideMargin">
+                <RadioButton android:id="@id/radio_recommended" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayContentSideMargin">
+                    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/label_recommended" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addresses_label_recommended" />
+                    <com.ebay.mobile.connection.address.view.EbayAddressView android:id="@id/eav_recommended_address" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginRight="@dimen/ebayContentSideMargin">
+                <RadioButton android:id="@id/radio_provided" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayContentSideMargin">
+                    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/label_provided" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addresses_label_provided" />
+                    <com.ebay.mobile.connection.address.view.EbayAddressView android:id="@id/eav_provided_address" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/bt_done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayContentSideMargin" android:text="@string/addresses_continue_button" android:layout_alignParentBottom="true" style="@style/EbayButton.Blue" />
+</RelativeLayout>

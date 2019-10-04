@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin4x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin2x" android:src="@drawable/ic_null_members" android:scaleType="fitCenter" android:contentDescription="@null" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="?listContainerOutsideBackground" android:layout_width="@dimen/following_null_mock_long_line_width" android:layout_height="@dimen/following_null_mock_long_line_height" />
+    </LinearLayout>
+</LinearLayout>

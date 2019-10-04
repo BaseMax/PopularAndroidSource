@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/category_spacer" android:background="?containerBackgroundColorGray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ebayMargin15" />
+    <RadioButton android:layout_gravity="center_vertical" android:id="@id/category_radio" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayPadding15" android:layout_marginRight="@dimen/ebayPadding2x" android:minHeight="?android:listPreferredItemHeight" />
+</LinearLayout>

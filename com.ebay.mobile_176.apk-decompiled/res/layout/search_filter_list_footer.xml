@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/button_resize_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin15" android:text="@string/overflow_list_more" style="@style/EbayButton" />
+    <Button android:id="@id/button_reset_filters" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/reset" style="@style/EbayButton.Flat.Refine" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" ebay:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/merch_image" android:layout_marginBottom="@dimen/ebayStaticMargin" style="?MerchImageCarouselStyle" />
+    <include layout="@layout/merchandise_item_common" />
+</com.ebay.mobile.widget.FLinearLayout>

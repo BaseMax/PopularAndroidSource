@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/progress_container" />
+    <RelativeLayout android:id="@id/listContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:layout_above="@id/list_footer" />
+        <FrameLayout android:id="@id/list_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:id="@id/internalEmpty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.mobile.sell.hubitem.PhotosHubItem android:id="@id/listing_hub_photos" android:paddingLeft="20.0dip" style="@style/Sell.Hub.Layout" />
+    <com.ebay.mobile.sell.hubitem.TitleHubItem android:id="@id/listing_hub_title" style="@style/Sell.Hub.Layout" />
+    <com.ebay.mobile.sell.hubitem.CategoryHubItem android:id="@id/listing_hub_category" style="@style/Sell.Hub.Layout" />
+    <com.ebay.mobile.sell.hubitem.ConditionHubItem android:id="@id/listing_hub_condition" style="@style/Sell.Hub.Layout" />
+    <com.ebay.mobile.sell.hubitem.ItemSpecificsHubItem android:id="@id/listing_hub_item_specifics" style="@style/Sell.Hub.Layout" />
+    <com.ebay.mobile.sell.hubitem.DescriptionHubItem android:id="@id/listing_hub_description" style="@style/Sell.Hub.Layout" />
+    <com.ebay.mobile.sell.hubitem.FormatPriceHubItem android:id="@id/listing_hub_priceformat" style="@style/Sell.Hub.Layout" />
+    <com.ebay.mobile.sell.hubitem.ShippingHubItem android:id="@id/listing_hub_all_shipping" style="@style/Sell.Hub.Layout" />
+    <com.ebay.mobile.sell.hubitem.PreferencesHubItem android:id="@id/listing_hub_preferences" style="@style/Sell.Hub.Layout" />
+</merge>

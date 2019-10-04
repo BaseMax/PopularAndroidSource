@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_corner_radius">22.0dip</dimen>
+    <dimen name="default_text_size">14.0sp</dimen>
+    <dimen name="toast_horizontal_padding">24.0dip</dimen>
+    <dimen name="toast_horizontal_padding_empty_side">21.0dip</dimen>
+    <dimen name="toast_horizontal_padding_icon_side">21.0dip</dimen>
+    <dimen name="toast_vertical_padding">15.0dip</dimen>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vehicle_history_report_unavailable_reason_list">
+        <item>Es gibt noch kein Instandhaltungsprotokoll für das Fahrzeug, da es zu neu ist.</item>
+        <item>Das Fahrzeug wurde vor 1981 hergestellt.</item>
+        <item>Für das Fahrzeug stand keine 17-stellige Fahrzeug-Identifizierungsnummer zur Verfügung.</item>
+        <item>Das Fahrzeug war nicht für den Verkauf auf dem US-amerikanischen Markt bestimmt (beispielsweise Sondermodelle von Fahrzeugen).</item>
+        <item>Der Verkäufer hat die Fahrzeug-Identifizierungsnummer falsch eingegeben.</item>
+    </string-array>
+</resources>

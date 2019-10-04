@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/icon_list" android:tag="layout/xo_cc_header_layout_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/credit_card_cup" android:tag="binding_1" android:src="@drawable/icon_china_union_pay" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/XoCcIconStyle" />
+    <ImageView android:id="@id/credit_card_jcb" android:tag="binding_2" android:src="@drawable/icon_jcb" app:layout_constraintLeft_toRightOf="@id/credit_card_cup" app:layout_constraintTop_toTopOf="parent" style="@style/XoCcIconStyle" />
+    <ImageView android:id="@id/credit_card_visa" android:tag="binding_3" android:src="@drawable/icon_visa" app:layout_constraintLeft_toRightOf="@id/credit_card_jcb" app:layout_constraintTop_toTopOf="parent" style="@style/XoCcIconStyle" />
+    <ImageView android:id="@id/credit_card_mastercard" android:tag="binding_4" android:src="@drawable/icon_mastercard" app:layout_constraintLeft_toRightOf="@id/credit_card_visa" app:layout_constraintTop_toTopOf="parent" style="@style/XoCcIconStyle" />
+    <ImageView android:id="@id/credit_card_postepay" android:tag="binding_5" android:src="@drawable/icon_postepay" app:layout_constraintLeft_toRightOf="@id/credit_card_mastercard" app:layout_constraintTop_toTopOf="parent" style="@style/XoCcIconStyle" />
+    <ImageView android:id="@id/credit_card_amex" android:tag="binding_6" android:src="@drawable/icon_amex" app:layout_constraintLeft_toRightOf="@id/credit_card_postepay" app:layout_constraintTop_toTopOf="parent" style="@style/XoCcIconStyle" />
+    <ImageView android:id="@id/credit_card_discover" android:tag="binding_7" android:src="@drawable/icon_discover" app:layout_constraintLeft_toRightOf="@id/credit_card_amex" app:layout_constraintTop_toTopOf="parent" style="@style/XoCcIconStyle" />
+    <ImageView android:id="@id/credit_card_maestro" android:tag="binding_8" android:src="@drawable/icon_maestro" app:layout_constraintLeft_toRightOf="@id/credit_card_discover" app:layout_constraintTop_toTopOf="parent" style="@style/XoCcIconStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

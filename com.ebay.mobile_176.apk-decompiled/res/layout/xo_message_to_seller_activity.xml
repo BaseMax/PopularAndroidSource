@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?listContainerBackground" android:paddingBottom="@dimen/compose_message_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorPrimary" android:textColorHint="?android:textColorSecondary" android:id="@id/checkout_seller_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="@string/compose_message" android:maxLines="10" android:scrollHorizontally="false" android:singleLine="false" android:inputType="textCapSentences|textMultiLine" android:imeOptions="actionDone" style="@style/ComposeMessage.Margin" />
+    <TextView android:id="@id/remaining_characters" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/checkout_seller_message" style="@style/ComposeMessage.Margin" />
+</RelativeLayout>

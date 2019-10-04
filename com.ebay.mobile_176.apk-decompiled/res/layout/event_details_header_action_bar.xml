@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@android:style/TextAppearance" android:textSize="@dimen/ebayTextSizeMediumSmall" android:layout_gravity="center_vertical" android:id="@id/ends_in_text" android:paddingTop="@dimen/ebayPadding3x" android:paddingBottom="@dimen/ebayPadding3x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin" android:layout_toLeftOf="@id/button_layout" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_layout" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <Button android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/shareButton" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_view_share" style="@style/EbayButton.Flat" />
+        <include layout="@layout/vertical_divider" />
+        <Button android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/refineButton" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refine" style="@style/EbayButton.Flat" />
+    </LinearLayout>
+</RelativeLayout>

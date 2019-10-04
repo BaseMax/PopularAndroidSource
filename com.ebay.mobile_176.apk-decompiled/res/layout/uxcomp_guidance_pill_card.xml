@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/pill_item" android:tag="layout/uxcomp_guidance_pill_card_0" android:background="@drawable/recycler_card_background" android:layout_width="wrap_content" android:layout_height="@dimen/answers_pill_height" android:foreground="?android:selectableItemBackground" android:minWidth="@dimen/answers_pill_width_min" android:elevation="@dimen/card_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:gravity="center" android:id="@id/textview_item_title" android:tag="binding_1" android:padding="@dimen/ebayPadding" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="@dimen/answers_pill_width_max" android:minWidth="@dimen/answers_pill_width_min" android:maxLines="2" android:textAlignment="center" />
+</FrameLayout>

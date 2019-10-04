@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FLinearLayout android:orientation="vertical" android:id="@id/event_item_container" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" res_auto:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/event_item_image" android:layout_width="fill_parent" android:layout_height="@dimen/card_event_item_image_height" android:scaleType="fitCenter" android:contentDescription="@null" />
+    <TextView android:ellipsize="end" android:id="@id/event_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/baseline_unit" android:maxLines="2" style="?itemTitleStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/price_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/event_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" style="?itemPriceStyle" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:ellipsize="end" android:gravity="right" android:id="@id/event_more_options" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:text="@string/srp_more_options_label" android:maxLines="1" android:layout_toRightOf="@id/event_item_price" android:layout_alignBaseline="@id/event_item_price" android:layout_alignParentRight="true" />
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:ellipsize="end" android:id="@id/event_item_bids" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:maxLines="1" android:layout_below="@id/event_more_options" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/event_item_discount_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/event_price_in_cart" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event_price_in_cart" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:ellipsize="end" android:id="@id/event_item_ship_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</com.ebay.mobile.widget.FLinearLayout>

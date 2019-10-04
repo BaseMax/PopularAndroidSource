@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.nautilus.shell.uxcomponents.widget.VerticalContainerView android:tag="layout/sell_landing_card_vertical_list_0" style="@style/SellLandingVerticalGridListItemsStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

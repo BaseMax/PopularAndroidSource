@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:gravity="center_horizontal" android:id="@id/reset_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin3x" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin3x" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/reset" style="@style/EbayButton.Flat"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

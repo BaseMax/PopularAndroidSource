@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/product_ux_product_details_description_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubhead" android:ellipsize="end" android:id="@id/expandable_view" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

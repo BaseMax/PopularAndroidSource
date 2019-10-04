@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/uxcomp_banner_fpda_v2_0" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:minHeight="@dimen/uxcomp_fpa_card_height_v2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayPadding2x" android:minHeight="@dimen/uxcomp_fpa_card_content_height_v2" android:layout_toLeftOf="@id/vp_image" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/uxcomp_fpa_card_logo_height_v2" android:layout_marginBottom="@dimen/ebayPaddingHalf">
+            <com.ebay.android.widget.RemoteImageView android:gravity="center_vertical" android:id="@id/vp_logo" android:tag="binding_1" android:layout_width="72.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ebayPadding" android:scaleType="fitCenter" android:maxWidth="72.0dip" android:contentDescription="@null" app:dynamicHeight="adjust_width" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/promoted_label" android:tag="binding_2" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/vertical_promotion_text" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayPaddingHalf" />
+        <TextView android:textAppearance="?textAppearanceBody2Accent" android:gravity="left" android:id="@id/call_to_action_label" android:tag="binding_4" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <com.ebay.android.widget.RemoteImageView android:id="@id/vp_image" android:tag="binding_5" android:layout_width="138.0dip" android:layout_height="@dimen/uxcomp_fpa_card_content_height_v2" android:src="@drawable/ic_missing_image" android:scaleType="centerCrop" android:maxWidth="138.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:dynamicHeight="adjust_width" app:fadeInDuration="@integer/answers_image_fade_in_duration" />
+</RelativeLayout>

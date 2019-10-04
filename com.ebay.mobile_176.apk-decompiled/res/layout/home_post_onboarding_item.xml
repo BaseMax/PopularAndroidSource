@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/post_onboarding_container" android:tag="layout/home_post_onboarding_item_0" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.ebay.android.widget.RemoteImageView android:layout_gravity="center" android:id="@id/post_onboarding_image" android:tag="binding_1" android:background="@drawable/image_border" android:scaleType="centerCrop" android:cropToPadding="true" android:contentDescription="@null" ebay:averageBackgroundColor="false" ebay:circularImage="true" ebay:imageBorderWidth="0.0dip" ebay:layout_constraintStart_toStartOf="parent" ebay:layout_constraintTop_toTopOf="parent" style="?imageCarouselSmallStyle" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/post_onboarding_title" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:maxLines="3" ebay:layout_constraintEnd_toEndOf="@id/post_onboarding_image" ebay:layout_constraintStart_toStartOf="@id/post_onboarding_image" ebay:layout_constraintTop_toBottomOf="@id/post_onboarding_image" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

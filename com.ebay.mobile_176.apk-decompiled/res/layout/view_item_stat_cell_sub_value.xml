@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/stat_layout" android:focusable="true" style="@style/StyleGuideViewItemStatCell"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/stat_key" android:text="Unset key" android:includeFontPadding="false" style="@style/StyleGuideViewItemStatKey" />
+    <LinearLayout android:orientation="vertical" style="@style/StyleGuideViewItemStatValue">
+        <TextView android:id="@id/stat_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Unset value" android:includeFontPadding="false" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/stat_sub_value" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/stat_sub_sub_value" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

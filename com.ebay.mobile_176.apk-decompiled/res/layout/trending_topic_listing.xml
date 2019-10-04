@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/trend_topic_listing" android:tag="layout/trending_topic_listing_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/trend_item_image" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="@dimen/trend_listing_image_height" android:scaleType="fitCenter" android:contentDescription="@null" app:averageBackgroundColor="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x">
+        <TextView android:ellipsize="end" android:id="@id/trend_item_title" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?itemTitleStyle" />
+        <TextView android:id="@id/trend_item_price" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?itemPriceStyle" />
+    </LinearLayout>
+</LinearLayout>

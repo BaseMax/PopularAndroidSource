@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?cardColor" android:padding="@dimen/ebayPadding2x" android:layout_width="@dimen/errorDialogWidth" android:layout_height="wrap_content" style="@style/AppTheme.Dialog"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/legal_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x" style="@style/EbayTextAppearance.Caption2" />
+    <Button android:id="@id/manage_settings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="false" style="@style/EbayButton.Flat" />
+    <Button android:layout_gravity="center" android:id="@id/gdpr_consent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="false" style="@style/EbayButton.Blue" />
+</LinearLayout>

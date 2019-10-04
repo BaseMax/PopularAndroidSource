@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/product_ratings_and_reviews_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/ratings_reviews_card_title" android:tag="binding_1" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/prp_card_title_margin" style="@style/StyleGuideViewItemCardTitle" />
+    <androidx.cardview.widget.CardView android:id="@id/ratings_reviews_summary_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" style="@style/PrpCardStyle">
+        <LinearLayout android:orientation="vertical" android:tag="binding_2" android:paddingLeft="@dimen/ebayStaticMargin2x" android:paddingRight="@dimen/ebayStaticMargin2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?listDividerHorizontal" android:showDividers="middle">
+            <include layout="@layout/product_ratings_summary" />
+            <LinearLayout android:orientation="vertical" android:id="@id/write_review_button_container" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:gravity="center_horizontal" android:id="@id/aggregatedReviewDisplay" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" />
+                <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/button_write_review" android:tag="binding_5" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/product_review_tablet_bumpers" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/product_review_tablet_bumpers" android:layout_marginBottom="@dimen/ebayMargin15" style="@style/EbayButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/fingerprint_container" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayContentSideMargin">
+            <TextView android:textAppearance="?textAppearanceTitle1" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin5x" android:text="@string/fingerprint_turn_on_question" />
+            <TextView android:textAppearance="?textAppearanceSubhead" android:gravity="center_horizontal" android:id="@id/tv_body_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/fingerprint_turn_on_message" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/fingerprint_icon" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin5x" android:layout_marginBottom="@dimen/ebayMargin5x" android:src="@drawable/ic_fingerprint" />
+            <Button android:id="@id/bt_enroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayContentSideMargin" android:layout_marginBottom="@dimen/ebayContentSideMargin" android:text="@string/fingerprint_yes_turn_on" style="@style/EbayButton.Blue" />
+            <Button android:id="@id/bt_maybe_later" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fingerprint_maybe_later" style="@style/EbayButton.Flat" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/pb_progress" android:background="@color/registration_dimmed_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

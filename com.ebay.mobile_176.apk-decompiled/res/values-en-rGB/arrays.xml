@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vehicle_history_report_unavailable_reason_list">
+        <item>The vehicle is too new to have a history report.</item>
+        <item>The vehicle was manufactured before 1981.</item>
+        <item>"The vehicle didn't have a 17-digit vehicle identification number."</item>
+        <item>"The vehicle wasn't intended for the US market (such as limited production exotics)."</item>
+        <item>"The seller didn't enter the vehicle identification number correctly."</item>
+    </string-array>
+</resources>

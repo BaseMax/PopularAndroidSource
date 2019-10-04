@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/view_item_ux_add_on_min_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/add_on_item_selected" android:tag="binding_1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/add_on_items_min_layout" android:tag="binding_2" android:background="@drawable/theme_list_selector_background" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" style="@style/StyleGuideViewItemStatCell">
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/add_on_item_title" android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:layout_weight="1.0" android:labelFor="@id/add_on_item_selected" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:src="?spokeChevronDrawable" android:contentDescription="@null" />
+    </LinearLayout>
+</LinearLayout>

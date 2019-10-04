@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/bigScreenShotItemCardParent" android:tag="layout/item_video_detail_video_big_screenshot_cover_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/default_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/screenShotItemConstraintLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/screenShotItemImage" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/content_description_screen_shot" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="H,16:9" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

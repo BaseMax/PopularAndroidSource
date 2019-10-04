@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/settings_screen_share_mvvm_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginRight="@dimen/ebayContentSideMargin">
+        <TextView android:linksClickable="true" android:id="@id/share_screen_terms_footer_text_view" android:background="@drawable/screen_share_terms_border" android:paddingLeft="@dimen/ebayStaticMarginHalf" android:paddingTop="@dimen/ebayStaticMarginHalf" android:paddingBottom="@dimen/ebayStaticMarginHalf" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginTop="@dimen/ebayStaticMargin2x" android:layout_marginRight="@dimen/ebayStaticMargin" />
+        <TextView android:id="@id/share_screen_terms_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginTop="@dimen/ebayStaticMargin2x" android:layout_marginRight="@dimen/ebayStaticMargin" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginBottom="@dimen/ebayStaticMargin">
+            <TextView android:id="@id/first_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@id/second_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayPaddingHalf" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginBottom="@dimen/ebayStaticMargin">
+            <TextView android:id="@id/agreement" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/LEGAL_Screen_Share_Term_2_B_link1" />
+            <TextView android:id="@id/privacy" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayPaddingHalf" android:text="@string/LEGAL_Screen_Share_Term_2_C_link2" />
+        </LinearLayout>
+        <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/persistent_buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginTop="@dimen/ebayStaticMargin" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayStaticMargin">
+            <Button android:gravity="center" android:id="@id/share_screen_agree_button" android:padding="@dimen/ebayScalingPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/clickableButtonDimen" android:text="@string/agree_startsharing" style="@style/EbayButton.Blue" />
+            <Button android:gravity="center" android:id="@id/share_screen_decline_button" android:padding="@dimen/ebayScalingPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:minHeight="@dimen/clickableButtonDimen" android:text="@string/decline_button" style="@style/EbayButton.White" />
+            <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/screen_share_agree_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+        </com.ebay.android.widget.ContainerLayout>
+    </LinearLayout>
+</ScrollView>

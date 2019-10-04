@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="start|center" android:background="@drawable/selector_rectangle_pure_white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/side_menu_row_badge_iv" android:visibility="invisible" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/dest_dot" android:scaleType="centerInside" android:tint="@color/colorAccent" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/side_menu_row_icon_iv" android:layout_width="@dimen/width_small_ic_navigation" android:layout_height="@dimen/height_small_ic_navigation" android:layout_marginEnd="@dimen/margin_medium" />
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/grayish_2" android:id="@id/side_menu_row_title_tv" style="@style/TextView.Bold.Medium" />
+    </LinearLayout>
+    <View android:background="@color/very_light_pink" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/margin_large" style="@style/Divider.Horizontal" />
+</RelativeLayout>

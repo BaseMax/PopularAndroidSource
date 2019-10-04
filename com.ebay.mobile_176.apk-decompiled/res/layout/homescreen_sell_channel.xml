@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/homescreen_channel_coordinator" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeToRefresh" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/homescreen_channel_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <include android:id="@id/homescreen_signin" android:visibility="gone" layout="@layout/homescreen_signin" />
+        <include android:id="@id/homescreen_error" android:visibility="gone" layout="@layout/homescreen_error" />
+        <include android:id="@id/sell_listing_not_supported" android:visibility="gone" layout="@layout/sell_listing_not_supported" />
+        <ProgressBar android:id="@id/homescreen_progress_indicator" android:visibility="visible" android:layout_width="@dimen/commonProgressSize" android:layout_height="@dimen/commonProgressSize" android:layout_centerInParent="true" style="@style/Widget.AppCompat.ProgressBar" />
+    </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|center|right" android:id="@id/list_an_item_fab" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x" android:src="@drawable/selling_fab_24dp" android:contentDescription="@string/title_list_an_item" app:elevation="@dimen/design_fab_elevation" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

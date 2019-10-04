@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/search_item_special_caption" android:tag="layout/search_item_card_special_caption_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceCaption2" android:layout_gravity="center_horizontal" android:tag="binding_1" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x" />
+</FrameLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Sell.Layout.Background.Dialog"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/parent_layout" android:layout_height="wrap_content" style="@style/Sell.Layout.Scroll">
+        <LinearLayout android:paddingLeft="@dimen/ebayMargin" android:paddingRight="@dimen/ebayMargin" android:layout_marginTop="6.0dip" style="@style/Sell.Layout.ScrollChild.Content">
+            <TextView android:id="@id/focus" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" android:inputType="none" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/dialogToolbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/label_package_details" android:layout_weight="1.0" style="@style/Sell.Spoke.Title" />
+                <RelativeLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save" style="@style/EbayButton.Blue" />
+                </RelativeLayout>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:id="@id/package_layout" android:layout_marginTop="@dimen/ebayMargin" style="@style/Sell.Layout.CardView">
+                <com.ebay.mobile.widget.CardLayout style="@style/Sell.Layout.CardLayout">
+                    <LinearLayout style="@style/Sell.Layout.Row">
+                        <TextView android:text="@string/label_package_type" style="@style/Sell.Layout.Row.Label" />
+                        <Spinner android:id="@id/spinner_package_type" style="@style/Sell.Spinner.Inline" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/Sell.Layout.Row">
+                        <TextView android:text="@string/label_length" style="@style/Sell.Layout.Row.Label" />
+                        <EditText android:id="@id/package_dim_length" android:nextFocusDown="@id/package_dim_width" android:layout_weight="0.5" android:inputType="number" style="@style/Sell.Layout.Row.EditText" />
+                        <TextView android:id="@id/package_length_unit1" android:layout_marginLeft="0.0dip" android:layout_weight="0.5" style="@style/Sell.Layout.Row.Label" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/Sell.Layout.Row">
+                        <TextView android:text="@string/label_width" style="@style/Sell.Layout.Row.Label" />
+                        <EditText android:id="@id/package_dim_width" android:nextFocusDown="@id/package_dim_depth" android:layout_weight="0.5" android:inputType="number" style="@style/Sell.Layout.Row.EditText" />
+                        <TextView android:id="@id/package_length_unit2" android:layout_marginLeft="0.0dip" android:layout_weight="0.5" style="@style/Sell.Layout.Row.Label" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/Sell.Layout.Row">
+                        <TextView android:text="@string/label_height" style="@style/Sell.Layout.Row.Label" />
+                        <EditText android:id="@id/package_dim_depth" android:layout_weight="0.5" android:inputType="number" style="@style/Sell.Layout.Row.EditText" />
+                        <TextView android:id="@id/package_length_unit3" android:layout_marginLeft="0.0dip" android:layout_weight="0.5" style="@style/Sell.Layout.Row.Label" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/irregular_package_row" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.SwitchCompat android:id="@id/irregular_package_switch" android:text="@string/checkbox_irregular_package" style="@style/Sell.Layout.Row.Switch" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/Sell.Layout.Row">
+                        <TextView android:text="@string/label_package_weight" style="@style/Sell.Layout.Row.Label" />
+                        <Spinner android:id="@id/spinner_package_weight" style="@style/Sell.Spinner.Inline" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/package_custom_weight_layout" style="@style/Sell.Layout.Row">
+                        <EditText android:id="@id/package_weight_major" android:nextFocusDown="@id/package_weight_minor" android:layout_weight="0.5" android:inputType="number" style="@style/Sell.Layout.Row.EditText" />
+                        <TextView android:id="@id/package_weight_unit_major" android:layout_weight="0.5" style="@style/Sell.Layout.Row.Label" />
+                        <EditText android:id="@id/package_weight_minor" android:layout_weight="0.5" android:inputType="number" android:imeOptions="actionDone" style="@style/Sell.Layout.Row.EditText" />
+                        <TextView android:id="@id/package_weight_unit_minor" android:layout_weight="0.5" style="@style/Sell.Layout.Row.Label" />
+                    </LinearLayout>
+                </com.ebay.mobile.widget.CardLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="22.0dip" android:width="22.0dip" android:viewportWidth="22.0" android:viewportHeight="22.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ff000000" android:pathData="M1,2a1,1 0,1 1,0 -2h1a1,1 0,1 1,0 2L1,2zM6,2a1,1 0,1 1,0 -2h1a1,1 0,1 1,0 2L6,2zM10,1a1,1 0,0 1,2 0v1a1,1 0,0 1,-2 0L10,1zM10,6a1,1 0,0 1,2 0v1a1,1 0,0 1,-2 0L10,6zM10,11a1,1 0,0 1,2 0v1a1,1 0,0 1,-2 0v-1zM10,16a1,1 0,0 1,2 0v1a1,1 0,0 1,-2 0v-1zM11,20a1,1 0,0 1,0 2h-1a1,1 0,0 1,0 -2h1zM6,20a1,1 0,0 1,0 2L5,22a1,1 0,0 1,0 -2h1zM2,21a1,1 0,0 1,-2 0v-1a1,1 0,0 1,2 0v1zM2,16a1,1 0,0 1,-2 0v-1a1,1 0,0 1,2 0v1zM2,11a1,1 0,0 1,-2 0v-1a1,1 0,1 1,2 0v1zM2,6a1,1 0,1 1,-2 0L0,5a1,1 0,1 1,2 0v1z" android:fillType="nonZero" />
+    <path android:fillColor="#ff000000" android:pathData="M2,12v8h18v-8L2,12zM1,10h20a1,1 0,0 1,1 1v10a1,1 0,0 1,-1 1L1,22a1,1 0,0 1,-1 -1L0,11a1,1 0,0 1,1 -1z" android:fillType="nonZero" />
+</vector>

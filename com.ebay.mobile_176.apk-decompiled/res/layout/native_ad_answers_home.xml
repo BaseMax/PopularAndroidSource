@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.ads.google.display.view.AnswersGoogleDisplayAdView android:id="@id/answers_home_ad_container" android:tag="layout/native_ad_answers_home_0" style="@style/HomeScreenCardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@id/initial_title_layout" android:visibility="gone" android:layout_marginTop="@dimen/card_full_bleed" app:contentPaddingTop="0.0dip" style="@style/StyleGuideViewItemCard.Top">
+            <TextView android:textAppearance="?textAppearanceTitle2" android:id="@id/initial_title_textview" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@id/item_card_fragment_layout" android:visibility="gone" android:layout_marginTop="@dimen/card_full_bleed" app:contentPaddingTop="0.0dip" style="@style/StyleGuideViewItemCard.Top" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@id/buybox_fragment_layout" android:visibility="gone" android:layout_marginTop="@dimen/card_full_bleed" app:contentPaddingTop="0.0dip" style="@style/StyleGuideViewItemCard.Top.ShortBottom" />
+    </FrameLayout>
+    <androidx.cardview.widget.CardView android:id="@id/variations_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCardMsku" />
+    <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/volume_pricing_msku_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="?containerMarginBottom">
+        <include layout="@layout/view_item_volume_pricing_content" />
+    </com.ebay.android.widget.ContainerLayout>
+    <androidx.cardview.widget.CardView android:id="@id/quantity_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard" />
+    <androidx.cardview.widget.CardView android:id="@id/add_on_items_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard" />
+    <include layout="@layout/view_item_legacy_persistent_buttons" />
+    <FrameLayout android:id="@id/financing_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/shop_with_confidence_new" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_100769_stub" android:layout="@layout/merchandise_complementary_container" android:inflatedId="@id/placement_100769" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_101020_stub" android:layout="@layout/merchandise_vip_discovery" android:inflatedId="@id/placement_101020" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_100665_stub_ep" android:layout="@layout/merchandise_vip_horizontal_card" android:inflatedId="@id/placement_100665_ep" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/view_item_ux_authenticity" />
+    <androidx.cardview.widget.CardView android:gravity="center_vertical" android:id="@id/button_sme_panel" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard">
+        <RelativeLayout android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding" android:paddingRight="0.0dip" android:paddingBottom="@dimen/ebayPadding" android:layout_height="fill_parent" style="@style/StyleGuideViewItemStatCell">
+            <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/seller_offer_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:textColor="@color/style_guide_gray" android:id="@id/seller_offer_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/seller_offer_caption" android:layout_alignLeft="@id/seller_offer_caption" />
+            <include layout="@layout/view_item_chevron" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <ViewStub android:id="@id/placement_101092_stub" android:layout="@layout/merchandise_vip_horizontal_card" android:inflatedId="@id/placement_101092" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_101093_stub" android:layout="@layout/merchandise_vip_horizontal_card" android:inflatedId="@id/placement_101093" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/item_specifics_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/fitment_layout" android:paddingBottom="0.0dip" android:visibility="gone" style="@style/StyleGuideViewItemStatContainer" />
+    <FrameLayout android:id="@id/bidding_history_layout" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/vehicle_summary_report" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/vehicle_pricing_transparency" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.cardview.widget.CardView android:id="@id/ebay_plus_signup_layout" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:minHeight="?android:listPreferredItemHeight" style="@style/StyleGuideViewItemStatCell">
+            <include android:id="@id/chevron_icon" layout="@layout/view_item_chevron" />
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/chevron_icon" android:layout_centerVertical="true">
+                <ImageView android:id="@id/icon_ebayplus" android:paddingBottom="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ebay_plus_logo" android:contentDescription="@string/ebay_plus" />
+                <TextView android:textAppearance="?android:textAppearance" android:id="@id/ebay_plus_signup_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebay_plus_signup_title" android:includeFontPadding="false" android:contentDescription="@string/ebay_plus_signup_title" />
+                <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/style_guide_gray" android:id="@id/ebay_plus_signup_description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <FrameLayout android:id="@id/button_shipping_returns_payments" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/financing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_101094_stub" android:layout="@layout/merchandise_vip_horizontal_card" android:inflatedId="@id/placement_101094" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_101095_stub" android:layout="@layout/merchandise_vip_horizontal_card" android:inflatedId="@id/placement_101095" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/shop_with_confidence_original" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_100665_stub" android:layout="@layout/merchandise_vip_horizontal_card" android:inflatedId="@id/placement_100665" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/button_seller_name" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_100672_stub" android:layout="@layout/merchandise_vip_horizontal_card" android:inflatedId="@id/placement_100672" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_100682_stub" android:layout="@layout/merchandise_vip_horizontal_card" android:inflatedId="@id/placement_100682" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/product_review_summary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/product_reviews_qna_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/product_reviews_qna_title" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCardTitle" />
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard">
+            <LinearLayout android:orientation="vertical" android:id="@id/product_reviews_qna" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:divider="@drawable/divider_horizontal_padded" android:showDividers="middle" android:layout_marginStart="@dimen/ebayMargin15" android:layout_marginEnd="@dimen/ebayMargin15" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/clickable_layouts_container" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" style="@style/StyleGuideViewItemFragmentFrame">
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/button_buy_another_bottom" android:visibility="gone" android:layout_width="fill_parent" android:text="@string/buy_another" style="@style/EbayButton.Secondary" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/view_item_see_more_parts" android:visibility="gone" android:layout_width="fill_parent" android:text="@string/view_item_fitment_see_more_parts_like_this" android:layout_weight="1.0" style="@style/EbayButton.Secondary" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/enter_package_tracking_button" android:visibility="gone" android:layout_width="fill_parent" android:text="@string/item_view_enter_tracking_number" style="@style/EbayButton.Secondary" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/edit_package_tracking_button" android:visibility="gone" android:layout_width="fill_parent" android:text="@string/item_view_edit_tracking_number" style="@style/EbayButton.Secondary" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/button_sell_like_this" android:visibility="gone" android:layout_width="fill_parent" android:text="@string/item_view_sell_like" style="@style/EbayButton.Secondary" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/button_share_item" android:visibility="gone" android:layout_width="fill_parent" android:text="@string/share_this_item" style="@style/EbayButton.Secondary" />
+        <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/button_report_item" android:visibility="gone" android:layout_width="fill_parent" android:text="@string/report_this_item" style="@style/EbayButton.Secondary" />
+    </com.ebay.android.widget.ContainerLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ad_container_100549" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:descendantFocusability="blocksDescendants" style="@style/StyleGuideViewItemAdsContainer" />
+    <ViewStub android:id="@id/placement_100725_stub" android:layout="@layout/merchandise_vip_horizontal_card" android:inflatedId="@id/placement_100725" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_100717_stub" android:layout="@layout/merchandise_vip_discovery" android:inflatedId="@id/placement_100717" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/merch_fragment_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_100720_stub" android:layout="@layout/merchandise_vip_horizontal_card" android:inflatedId="@id/placement_100720" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_100721_stub" android:layout="@layout/merchandise_vip_horizontal_card" android:inflatedId="@id/placement_100721" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ad_container_100628" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:descendantFocusability="blocksDescendants" style="@style/StyleGuideViewItemAdsContainer" />
+    <LinearLayout android:orientation="vertical" android:id="@id/google_text_ad_view" android:paddingLeft="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding15" android:visibility="gone" android:descendantFocusability="blocksDescendants" style="@style/StyleGuideViewItemAdsContainer" />
+</merge>

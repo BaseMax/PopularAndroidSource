@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:id="@id/toolbar_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStart="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:layout_gravity="center|left" android:id="@id/toolbar_close_button" android:paddingLeft="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_modal_x" android:minWidth="0.0dip" android:contentDescription="@string/close" style="?android:borderlessButtonStyle" />
+    <TextView android:textAppearance="?textAppearanceTitle2" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/toolbar_centered_title" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="2" />
+</androidx.appcompat.widget.Toolbar>

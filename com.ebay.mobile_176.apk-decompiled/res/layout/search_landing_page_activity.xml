@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/modal_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_margin="@dimen/baseline_unit" android:elevation="0.0dip" app:contentInsetStart="0.0dip">
+        <RelativeLayout android:background="@drawable/rounded_white_rectangle" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:layout_gravity="center|left" android:id="@id/back_button" android:background="?android:actionBarItemBackground" android:paddingLeft="@dimen/searchlanding_header_icon_padding" android:paddingRight="@dimen/ebayPaddingHalf" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow_back_black_24dp" android:contentDescription="@string/back" />
+            <androidx.appcompat.widget.SearchView android:id="@id/textbox_search_bar" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/button_image_search" android:layout_toRightOf="@id/back_button" android:layout_alignWithParentIfMissing="true" />
+            <ImageButton android:layout_gravity="center|left" android:id="@id/button_image_search" android:background="?android:actionBarItemBackground" android:paddingLeft="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding15" android:layout_width="wrap_content" android:layout_height="fill_parent" android:tint="?iconTintColor" android:layout_alignParentRight="true" android:contentDescription="@string/image_search_entry_point_accessibility" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:orientation="vertical" android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar_tab_layout" android:background="?searchLandingTabsBackground" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation">
+            <com.google.android.material.tabs.TabLayout android:id="@id/tab_header" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/searchlanding_tabs_margin" app:tabGravity="fill" style="?ebayTabLayoutStyle" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+    <ListView android:id="@id/suggestionList" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0dip" android:overScrollMode="never" />
+    <include android:id="@id/error" layout="@layout/error_dialog_fragment_bar" />
+    <include layout="@layout/common_progress" />
+</LinearLayout>

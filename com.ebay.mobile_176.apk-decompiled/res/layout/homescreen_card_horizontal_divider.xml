@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:background="@color/style_guide_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_card_divider_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

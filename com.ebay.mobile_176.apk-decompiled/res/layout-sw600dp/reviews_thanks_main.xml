@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/empty_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayContentSideMargin" layout="@layout/reviews_thanks_header" />
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayContentSideMargin" android:layout_marginBottom="@dimen/ebayMargin">
+            <include layout="@layout/reviews_thanks_body" />
+        </androidx.cardview.widget.CardView>
+        <include layout="@layout/reviews_more_to_review_container" />
+    </LinearLayout>
+</ScrollView>

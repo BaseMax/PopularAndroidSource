@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/seller_offer_layout" android:background="?selectableItemBackgroundBase" android:layout_width="fill_parent" android:layout_height="@dimen/search_seller_offer_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/seller_offer_info" android:background="?android:listChoiceBackgroundIndicator" android:padding="10.0dip" android:focusable="true" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/info_holo" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/label_offer_details" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding15" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/seller_offer_info" android:layout_centerVertical="true">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="end" android:id="@id/seller_offer_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/seller_offer_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <View android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dividerHeight" android:layout_alignParentBottom="true" />
+</RelativeLayout>

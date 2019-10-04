@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/view_item_add_on_installer_confirm_activity_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/installer_confirm_view" layout="@layout/view_item_add_on_installer_confirm_view" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/installer_checkout_progress" android:visibility="gone" android:layout_width="@dimen/commonProgressSize" android:layout_height="@dimen/commonProgressSize" style="@style/Widget.AppCompat.ProgressBar" />
+</FrameLayout>

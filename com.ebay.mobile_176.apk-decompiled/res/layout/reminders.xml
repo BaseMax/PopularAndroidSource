@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/reminders_scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/coupons_title" android:visibility="gone" android:text="@string/label_reminders_coupon_title" style="?android:listSeparatorTextViewStyle" />
+            <com.ebay.shared.ui.TableView android:orientation="vertical" android:id="@id/list_coupons" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" ebay:dividerDrawable="@layout/tableview_divider" />
+            <TextView android:id="@id/recent_activities_title" android:text="@string/label_recent_activities" style="?android:listSeparatorTextViewStyle" />
+            <com.ebay.shared.ui.TableView android:orientation="vertical" android:id="@id/list_recent_activities" android:layout_width="fill_parent" android:layout_height="wrap_content" ebay:dividerDrawable="@layout/tableview_divider" />
+            <TextView android:id="@id/buying_reminders_title" android:text="@string/label_buying_reminders" style="?android:listSeparatorTextViewStyle" />
+            <com.ebay.shared.ui.TableView android:orientation="vertical" android:id="@id/list_buying_reminders" android:layout_width="fill_parent" android:layout_height="wrap_content" ebay:dividerDrawable="@layout/tableview_divider" />
+            <TextView android:id="@id/selling_reminders_title" android:text="@string/label_selling_reminders" style="?android:listSeparatorTextViewStyle" />
+            <com.ebay.shared.ui.TableView android:orientation="vertical" android:id="@id/list_selling_reminders" android:layout_width="fill_parent" android:layout_height="wrap_content" ebay:dividerDrawable="@layout/tableview_divider" />
+            <View android:gravity="center" style="@style/TableViewDivider" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/progress_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/spinner" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:id="@id/aspects_details_parent" android:scrollbars="vertical" style="@style/Sell.Layout.Scroll">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayMargin15" android:paddingBottom="@dimen/ebayMargin" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:id="@id/required_aspects_card" style="@style/Sell.Card.ListingForm">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/required_aspects_title" android:text="@string/required_item_details_title" style="@style/Sell.Details.Header.WithGuidance" />
+                    <TextView android:id="@id/required_aspects_subtitle" android:text="@string/required_item_details_subtitle" style="@style/Sell.Details.Subheader" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/required_aspects_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@id/recommended_aspects_card" style="@style/Sell.Card.ListingForm">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/recommended_aspects_title" android:text="@string/recommended_item_details_title" style="@style/Sell.Details.Header.WithGuidance" />
+                    <TextView android:id="@id/recommended_aspects_subtitle" android:text="@string/recommended_item_details_subtitle" style="@style/Sell.Details.Subheader" />
+                    <include android:id="@id/aspects_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" layout="@layout/listing_form_aspects_progress_layout" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recommended_aspects_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@id/additional_details_card" style="@style/Sell.Card.ListingForm">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/additional_details_title" android:text="@string/additional_item_details_title" style="@style/Sell.Details.Header.WithGuidance" />
+                    <TextView android:id="@id/additional_details_subtitle" android:text="@string/additional_item_details_subtitle" style="@style/Sell.Details.Subheader" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/additional_details_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout android:id="@id/progress_spinner" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+</FrameLayout>

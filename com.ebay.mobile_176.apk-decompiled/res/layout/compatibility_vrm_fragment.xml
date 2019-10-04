@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/compatibility_fragment_toolbar" />
+    <ScrollView android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/vrm_layout" android:paddingTop="@dimen/ebayPadding3x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LetterboxViewItem">
+            <include layout="@layout/compatibility_vrm_fragment_viewstub" />
+            <TextView android:textColor="?colorAlert" android:gravity="center_vertical" android:id="@id/hsn_tsn_alert_text" android:background="?cardColor" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayStaticMargin" android:text="@string/motors_vrm_error" android:drawableRight="@drawable/ic_error" android:drawablePadding="@dimen/ebayScalingPadding15" />
+            <include layout="@layout/compatibility_vrm_enter_vehicle" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/compatibility_go_button" />
+</LinearLayout>

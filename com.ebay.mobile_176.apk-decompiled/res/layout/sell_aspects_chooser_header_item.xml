@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/aspect_group_header" android:paddingLeft="@dimen/ebayNoMargin" android:paddingRight="@dimen/ebayNoMargin" android:layout_width="wrap_content" android:layout_marginLeft="@dimen/compensate_card_view_full_bleed_padding_radio" android:freezesText="true" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Sell.Details.Header" />
+    <TextView android:id="@id/clear_selected" android:paddingLeft="@dimen/ebayContentSideMargin" android:paddingRight="@dimen/ebayContentSideMargin" android:visibility="gone" android:layout_width="wrap_content" android:text="@string/sell_aspects_selector_clear_selected" app:layout_constraintBaseline_toBaselineOf="@id/aspect_group_header" app:layout_constraintEnd_toEndOf="parent" style="@style/Sell.InlineLabel.Blue" />
+</androidx.constraintlayout.widget.ConstraintLayout>

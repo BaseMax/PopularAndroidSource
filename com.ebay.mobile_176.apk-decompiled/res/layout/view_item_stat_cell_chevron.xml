@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/stat_layout" android:focusable="true" style="@style/StyleGuideViewItemStatCell">
+        <View style="@style/StyleGuideViewItemStatKey" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="6.0">
+            <View android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/ebayMargin" />
+            <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/stat_value" android:paddingRight="@dimen/ebayPadding15" android:layout_width="wrap_content" android:minHeight="@dimen/min_touch_target_unit" android:text="Unset value" style="@style/StyleGuideViewItemStatValue" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/view_item_chevron" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMargin" android:src="?spokeChevronDrawable" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" />
+</RelativeLayout>

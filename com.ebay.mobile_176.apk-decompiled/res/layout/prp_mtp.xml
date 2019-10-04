@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/prp_mtp_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" style="@style/PrpCardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.nautilus.shell.uxcomponents.widget.TabbedContainerView android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</androidx.cardview.widget.CardView>

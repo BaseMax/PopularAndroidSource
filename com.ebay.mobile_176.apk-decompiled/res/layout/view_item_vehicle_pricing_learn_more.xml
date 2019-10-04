@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/listContainerLightOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="@dimen/ebayPadding3x" android:paddingTop="@dimen/ebayPadding4x" android:paddingRight="@dimen/ebayPadding3x" android:paddingBottom="@dimen/ebayPadding4x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/vehicle_pricing_learn_more_p1" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/vehicle_pricing_learn_more_p2" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_learn_more_l1" android:drawablePadding="@dimen/ebayPaddingHalf" android:drawableStart="@drawable/ic_viewitem_dot" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_learn_more_l2" android:drawablePadding="@dimen/ebayPaddingHalf" android:drawableStart="@drawable/ic_viewitem_dot" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_learn_more_l3" android:drawablePadding="@dimen/ebayPaddingHalf" android:drawableStart="@drawable/ic_viewitem_dot" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin4x" android:layout_marginBottom="@dimen/ebayMargin6x">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin5x" android:src="@drawable/vehicle_distribution" android:scaleType="fitXY" android:importantForAccessibility="no" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                    <View android:background="?colorPrimary" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="0.5" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:importantForAccessibility="noHideDescendants">
+                    <View android:background="?colorPrimary" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:textColor="?colorPrimary" android:padding="@dimen/ebayPaddingHalf" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/vehicle_pricing_great_price" android:layout_weight="0.25" />
+                    <View android:background="?colorPrimary" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ebayMarginHalf" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:textColor="?colorPrimary" android:padding="@dimen/ebayPaddingHalf" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_good_price" android:layout_weight="0.25" />
+                    <View android:background="?colorPrimary" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ebayMarginHalf" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:importantForAccessibility="noHideDescendants">
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.125" />
+                <TextView android:textAppearance="?textAppearanceCaption2" android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_low_price" android:layout_weight="0.25" />
+                <TextView android:textAppearance="?textAppearanceCaption2" android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_market_price" android:layout_weight="0.25" />
+                <TextView android:textAppearance="?textAppearanceCaption2" android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_high_price" android:layout_weight="0.25" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.125" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textAppearance="?textAppearanceBody2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_good_price_question" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin3x" android:text="@string/vehicle_pricing_good_price_answer" />
+        <TextView android:textAppearance="?textAppearanceBody2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_great_price_question" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin3x" android:text="@string/vehicle_pricing_great_price_answer" />
+        <TextView android:textAppearance="?textAppearanceBody2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_no_price_question" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin3x" android:text="@string/vehicle_pricing_no_price_answer_p1" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_foot_note" />
+    </LinearLayout>
+</ScrollView>

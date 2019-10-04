@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/address_cell" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/address_row" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/address_select_link" android:layout_width="@dimen/xoLeftContentWidth" android:layout_height="fill_parent" style="@style/Xo.Row">
+            <RadioButton android:id="@id/address_radio_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/address_edit_link" android:paddingTop="@dimen/xoMarginMedium" android:paddingRight="@dimen/xoMarginMedium" android:paddingBottom="@dimen/xoMarginMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" style="@style/Xo.Row">
+                <include layout="@layout/checkout_error_container" />
+                <TextView android:id="@id/primary_address" android:background="@drawable/checkout_rounded_bg_light" android:padding="@dimen/xoMarginTiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/xoMarginSmall" android:text="@string/xo_primary_shipping_address" android:importantForAccessibility="no" style="@style/Xo.Text" />
+                <TextView android:id="@id/address_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/primary_address" android:importantForAccessibility="no" style="@style/Xo.Text" />
+                <ImageButton android:id="@id/address_overflow_menu" android:background="?selectableItemBackgroundBorderless" android:paddingRight="@dimen/xoMarginMedium" android:visibility="gone" android:layout_width="@dimen/min_touch_target_unit" android:layout_height="@dimen/min_touch_target_unit" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Xo.Overflow" />
+                <ImageView android:id="@id/address_chevron" android:paddingRight="@dimen/xoMarginMedium" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Checkout.Chevron.Right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/address_divider" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginRight="@dimen/xoMarginMediumLarge" style="@style/CommonDivider" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/reviews_qna_embedded_ask_question_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="center_horizontal" android:id="@id/label_ask_question" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/button_ask_question" android:tag="binding_2" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" style="?android:editTextStyle" />
+</LinearLayout>

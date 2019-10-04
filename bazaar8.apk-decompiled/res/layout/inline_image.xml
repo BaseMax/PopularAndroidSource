@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ir.cafebazaar.inline.ui.inflaters.views.InlineAspectRatioImageView android:layout_gravity="center" android:background="#ffcacaca" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

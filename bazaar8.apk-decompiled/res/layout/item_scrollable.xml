@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/item_scrollable_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/scrollableTitleContainer" android:paddingTop="@dimen/default_margin_one_half" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.farsitel.bazaar.widget.LocalAwareTextView android:id="@id/scrollableLabel" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_double" style="@style/Bazaar.Text.Subtitle2" />
+        <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:id="@id/scrollableAction" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" style="@style/Bazaar.Text.Subtitle2" />
+        <com.farsitel.bazaar.widget.RTLImageView android:id="@id/scrollableArrow" android:tag="binding_3" android:layout_marginEnd="@dimen/default_margin_one_half" app:srcCompat="@drawable/ic_round_chevron_right_24px" style="@style/Bazaar.Image.Icon.WithBoundary" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/scrollableRecyclerView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin_double" android:paddingEnd="@dimen/default_margin_double" />
+</LinearLayout>

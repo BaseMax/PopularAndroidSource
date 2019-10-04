@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LetterboxViewItem">
+            <androidx.cardview.widget.CardView android:id="@id/email_delivery_card" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard">
+                <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/email_delivery_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@id/email_message_card" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard">
+                <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/email_message_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip">
+                    <com.ebay.android.widget.RemoteImageView android:id="@id/gift_image_view_single_image" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/ItemViewPhotoGalleryHeight" android:contentDescription="@string/item_photos" res_auto:averageBackgroundColor="true" res_auto:emptyLoadingColor="@android:color/white" />
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/top_scrollview_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View android:background="?dividerHorizontal" android:layout_width="@dimen/gifting_horizontal_divider_view" android:layout_height="1.0dip" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" />
+                        <TextView android:textAppearance="?textAppearanceTitle1" android:layout_gravity="center_horizontal" android:id="@id/gift_variation_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                        <TextView android:textAppearance="?textAppearanceDisplay1" android:layout_gravity="center_horizontal" android:id="@id/gift_variation_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                        <View android:background="?dividerHorizontal" android:layout_width="@dimen/gifting_horizontal_divider_view" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin2x" />
+                    </LinearLayout>
+                    <TextView android:textAppearance="?textAppearanceBody1" android:layout_gravity="center_vertical" android:id="@id/gift_message" android:paddingLeft="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </com.ebay.android.widget.ContainerLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <include android:visibility="gone" layout="@layout/common_translucent_progress" />
+        <RelativeLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/buy_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/gifting_button_details" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

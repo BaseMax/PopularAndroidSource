@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ButtonBar.Floating"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/ebayTextSizeMedium" android:gravity="center" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/clickableButtonDimen" android:layout_margin="@dimen/ebayMargin" />
+</LinearLayout>

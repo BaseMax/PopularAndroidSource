@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/view_item_ux_plusv1_signup_0" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:tag="binding_1" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" style="@style/StyleGuideViewItemStatCell">
+        <include android:id="@id/chevron_icon" layout="@layout/view_item_chevron" />
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/chevron_icon" android:layout_centerVertical="true">
+            <ImageView android:id="@id/icon_ebayplus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ebay_plus_logo" android:contentDescription="@string/ebay_plus" />
+            <View android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" />
+            <TextView android:textAppearance="?android:textAppearance" android:id="@id/ebay_plus_signup_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebay_plus_signup_title" android:includeFontPadding="false" android:contentDescription="@string/ebay_plus_signup_title" />
+            <TextView android:textAppearance="?android:textAppearance" android:textColor="@color/style_guide_gray" android:id="@id/ebay_plus_signup_description" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

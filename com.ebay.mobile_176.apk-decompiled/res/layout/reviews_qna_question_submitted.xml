@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/reviews_qna_question_submitted_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" style="@style/ReviewsQnaCardStyle">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/product_review_feedback_icon_dimensions" android:layout_height="@dimen/product_review_feedback_icon_dimensions" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" android:src="@drawable/ic_check_success" android:tint="@color/style_guide_green" android:contentDescription="@null" />
+            <TextView android:textAppearance="?textAppearanceSubhead" android:gravity="center_horizontal" android:id="@id/thank_you_body1" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" />
+            <TextView android:textAppearance="?textAppearanceSubhead" android:gravity="center_horizontal" android:id="@id/thank_you_body2" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/thank_you_submission_heading" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin3x" />
+            <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/thank_you_submission" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginBottom="@dimen/ebayMargin" />
+            <LinearLayout android:orientation="horizontal" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin">
+                <Button android:id="@id/button_edit_question" android:tag="binding_6" android:padding="0.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="0.0dip" style="@style/EbayButton.Flat" />
+                <TextView android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:id="@id/button_delete_question" android:tag="binding_8" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/EbayButton.Flat" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button android:id="@id/dismiss_button" android:tag="binding_9" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" style="@style/EbayButton.Dynamic" />
+</LinearLayout>

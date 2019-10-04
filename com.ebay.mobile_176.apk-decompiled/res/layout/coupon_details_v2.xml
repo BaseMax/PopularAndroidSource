@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/coupon_details_v2_0" android:background="@color/coupon_background_color_v2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressContainer" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+    <ScrollView android:id="@id/coupon_details_container" android:tag="binding_2" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/baseline_unit_3x" android:layout_marginRight="@dimen/baseline_unit_3x">
+            <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/coupon_top_layout" android:paddingBottom="@dimen/ebayPadding4x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseline_unit_2x">
+                    <ImageView android:layout_gravity="start" android:id="@id/logo" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_logo_white" android:adjustViewBounds="true" android:contentDescription="@null" android:importantForAccessibility="no" style="?android:borderlessButtonStyle" />
+                    <ImageButton android:id="@id/close" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:tint="@color/coupon_text_color_v2" android:contentDescription="@string/close" android:rotation="90.0" android:layout_alignParentEnd="true" style="?android:borderlessButtonStyle" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/text_size_coupon_title" android:textColor="@color/coupon_text_color_v2" android:id="@id/coupon_title" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseline_unit_2x" android:layout_marginBottom="@dimen/baseline_unit_2x" style="?textAppearanceHeadline2" />
+                <LinearLayout android:tag="binding_6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/baseline_unit_5x">
+                    <include layout="@layout/coupon_banner_timer" />
+                </LinearLayout>
+                <TextView android:textAppearance="?textAppearanceSubhead2" android:gravity="center" android:id="@id/coupon_code" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseline_unit_2x" android:layout_marginBottom="@dimen/baseline_unit" android:height="@dimen/signInButtonHeight" />
+                <TextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/coupon_text_color_v2" android:id="@id/coupon_code_hint" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/baseline_unit" android:drawablePadding="@dimen/baseline_unit_half" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:tag="binding_9" android:paddingBottom="@dimen/ebayPadding3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/coupon_top_layout" android:layout_alignParentBottom="true">
+                <TextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/coupon_text_color_v2" android:id="@id/coupon_code_description" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?textAppearanceBody2" android:textStyle="bold" android:textColor="@color/coupon_text_color_v2" android:id="@id/coupon_code_see_details" android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseline_unit" android:foreground="?android:selectableItemBackground" />
+                <Button android:textColor="@color/coupon_text_color_v2" android:layout_gravity="bottom|center" android:id="@id/coupon_dismiss" android:tag="binding_12" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/EbayButton.Flat" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

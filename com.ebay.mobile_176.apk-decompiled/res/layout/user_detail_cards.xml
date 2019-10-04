@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/other_items_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <androidx.cardview.widget.CardView android:layout_marginTop="@dimen/baseline_unit" style="@style/UserDetailsCard">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?dividerHorizontal" android:showDividers="middle">
+                <TextView android:id="@id/other_items_cell" android:text="@string/view_sellers_other_items" style="@style/UserDetailsClickableTextStyle" />
+                <TextView android:id="@id/recent_feedback_cell" android:text="@string/recent_feedback" android:drawableEnd="?spokeChevronDrawable" style="@style/UserDetailsClickableTextStyle" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/dsr_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/detail_header" android:text="@string/detailed_seller_ratings" style="@style/UserDetailsHeader" />
+        <androidx.cardview.widget.CardView android:id="@id/detail_layout" style="@style/UserDetailsCard">
+            <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0" android:paddingStart="@dimen/baseline_unit" android:paddingEnd="@dimen/baseline_unit">
+                <include android:id="@id/as_described_layout" layout="@layout/rating_bar" />
+                <include android:id="@id/seller_communication_layout" layout="@layout/rating_bar" />
+                <include android:id="@id/seller_shipping_time_layout" layout="@layout/rating_bar" />
+                <include android:id="@id/seller_shipping_charges_layout" layout="@layout/rating_bar" />
+            </TableLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/recent_feedback_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/feedback_header" android:text="@string/recent_feedback_ratings" style="@style/UserDetailsHeader" />
+        <androidx.cardview.widget.CardView android:id="@id/feedback_layout" style="@style/UserDetailsCard">
+            <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:shrinkColumns="1,2,3">
+                <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_column="1" android:text="@string/recent_feedback_1_month" android:contentDescription="@string/accessibility_recent_feedback_1_month" style="@style/UserDetailsTableCell.Month" />
+                    <TextView android:layout_column="2" android:text="@string/recent_feedback_6_month" android:contentDescription="@string/accessibility_recent_feedback_6_month" style="@style/UserDetailsTableCell.Month" />
+                    <TextView android:layout_column="3" android:text="@string/recent_feedback_12_month" android:contentDescription="@string/accessibility_recent_feedback_12_month" style="@style/UserDetailsTableCell.Month" />
+                </TableRow>
+                <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ebay.android.widget.EbayButton android:textColor="?android:textColorPrimary" android:id="@id/positive_table_row" android:text="@string/positive" app:icon="@drawable/ic_positivefeedback" style="@style/UserDetailsTableCell.Button" />
+                    <TextView android:id="@id/seller_positive_1mo_textview" android:text="0" style="@style/UserDetailsTableCell.Positive" />
+                    <TextView android:id="@id/seller_positive_6mo_textview" android:text="0" style="@style/UserDetailsTableCell.Positive" />
+                    <TextView android:id="@id/seller_positive_12mo_textview" android:text="0" style="@style/UserDetailsTableCell.Positive" />
+                </TableRow>
+                <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ebay.android.widget.EbayButton android:textColor="?android:textColorPrimary" android:id="@id/neutral_table_row" android:text="@string/neutral" app:icon="@drawable/ic_neutralfeedback" style="@style/UserDetailsTableCell.Button" />
+                    <TextView android:id="@id/seller_neutral_1mo_textview" android:text="0" style="@style/UserDetailsTableCell.Neutral" />
+                    <TextView android:id="@id/seller_neutral_6mo_textview" android:text="0" style="@style/UserDetailsTableCell.Neutral" />
+                    <TextView android:id="@id/seller_neutral_12mo_textview" android:text="0" style="@style/UserDetailsTableCell.Neutral" />
+                </TableRow>
+                <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ebay.android.widget.EbayButton android:textColor="?android:textColorPrimary" android:id="@id/negative_table_row" android:text="@string/negative" app:icon="@drawable/ic_negativefeedback" style="@style/UserDetailsTableCell.Button" />
+                    <TextView android:id="@id/seller_negative_1mo_textview" android:text="0" style="@style/UserDetailsTableCell.Negative" />
+                    <TextView android:id="@id/seller_negative_6mo_textview" android:text="0" style="@style/UserDetailsTableCell.Negative" />
+                    <TextView android:id="@id/seller_negative_12mo_textview" android:text="0" style="@style/UserDetailsTableCell.Negative" />
+                </TableRow>
+            </TableLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/charity_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/charity_header" android:text="@string/item_view_charity_ebay_giving_works" style="@style/UserDetailsHeader" />
+        <androidx.cardview.widget.CardView style="@style/UserDetailsCard">
+            <LinearLayout android:orientation="horizontal" android:id="@id/charity_button" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/ebayPaddingHalf" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/charity_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_profile_charity" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/checkoutSmallMargin" android:paddingRight="@dimen/checkoutSmallMargin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/charity_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/givingworks_title" />
+                    <TextView android:textColor="?android:textColorSecondary" android:id="@id/charity_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/givingworks_subtitle" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <Button android:id="@id/legal_info_btn" android:layout_width="fill_parent" android:layout_marginTop="@dimen/ebayStaticMargin2x" android:layout_marginBottom="@dimen/ebayStaticMargin2x" android:text="@string/legal_information" style="@style/EbayButton.White" />
+</merge>

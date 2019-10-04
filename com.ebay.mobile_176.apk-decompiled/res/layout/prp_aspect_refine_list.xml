@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/prp_aspect_refine_list_0" android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_refine_header_layout" android:paddingLeft="@dimen/filter_header_alignment" android:paddingRight="@dimen/filter_header_alignment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/common_toolbar_height">
+        <ImageButton android:id="@id/button_back_all_filters" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_back_black_24dp" android:tint="@color/black_54pct" style="@style/EbayButton.Flat" />
+        <View android:tag="binding_2" android:layout_width="@dimen/ebayPadding2x" android:layout_height="fill_parent" />
+        <TextView android:textAppearance="?textAppearanceTitle2" android:ellipsize="end" android:id="@id/textview_filter_title" android:tag="binding_3" android:clickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" />
+        <Button android:id="@id/button_done" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ebayMargin" style="@style/EbayButton.Flat.Refine" />
+    </LinearLayout>
+    <ListView android:id="@id/list" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

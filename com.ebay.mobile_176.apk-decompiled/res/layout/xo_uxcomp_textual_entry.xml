@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/xo_textual_entry_container" android:tag="layout/xo_uxcomp_textual_entry_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/xo_textual_entry_wrapper" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.textfield.TextInputLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoCompensateFormElementMarginTiny" app:hintAnimationEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText android:id="@id/textual_entry" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/xo_textual_entry_icons" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/xo_textual_entry_wrapper" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/xo_textual_entry_wrapper">
+        <ImageButton android:id="@id/scan_card" android:tag="binding_3" android:background="@null" android:paddingLeft="@dimen/xoMarginSmall" android:paddingRight="@dimen/xoMarginSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_camera_black_24dp_ds6" android:contentDescription="@string/accessibility_xo_scan_credit_debit_card" />
+        <ImageButton android:gravity="center" android:id="@id/bubble_icon" android:tag="binding_4" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/xo_accessory_label" android:tag="binding_5" android:focusable="false" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/xo_textual_entry_wrapper" />
+</androidx.constraintlayout.widget.ConstraintLayout>

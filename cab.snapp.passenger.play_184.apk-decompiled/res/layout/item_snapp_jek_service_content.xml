@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/snapp_jek_services_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/item_snapp_jek_service_content_imageview" android:paddingTop="4.0dip" android:layout_width="@dimen/snapp_jek_services_item_image_size" android:layout_height="@dimen/snapp_jek_services_item_image_size" android:layout_marginTop="4.0dip" android:layout_marginStart="@dimen/snapp_jek_services_item_image_side_margin" android:layout_marginEnd="@dimen/snapp_jek_services_item_image_side_margin" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/carbon_gray" android:gravity="bottom|center" android:id="@id/item_snapp_jek_service_content_textview" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" app:autoSizeMaxTextSize="@dimen/font_size_medium" app:autoSizeMinTextSize="1.0sp" app:autoSizeTextType="uniform" style="@style/TextView.Default.Medium" />
+</LinearLayout>

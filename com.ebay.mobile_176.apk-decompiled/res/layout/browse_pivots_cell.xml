@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.nautilus.shell.uxcomponents.widget.FlowContainerView android:id="@id/expandable_view" android:tag="layout/browse_pivots_cell_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" app:alignment="left" style="@style/OnboardingItemsStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

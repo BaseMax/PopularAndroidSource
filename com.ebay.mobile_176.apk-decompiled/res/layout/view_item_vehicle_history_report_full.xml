@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin">
+        <LinearLayout style="@style/StyleGuideViewItemStatCell">
+            <TextView android:text="@string/vehicle_history_report_run_date" style="@style/StyleGuideViewItemStatKey" />
+            <TextView android:id="@id/vhr_report_run_date" style="@style/StyleGuideViewItemStatValue" />
+        </LinearLayout>
+        <LinearLayout style="@style/StyleGuideViewItemStatCell">
+            <TextView android:text="@string/vehicle_history_report_accident" style="@style/StyleGuideViewItemStatKey" />
+            <TextView android:id="@id/vhr_accidents" style="@style/StyleGuideViewItemStatValue" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/vehicle_history_report_owners_layout" style="@style/StyleGuideViewItemStatCell">
+            <TextView android:text="@string/vehicle_history_report_owners" style="@style/StyleGuideViewItemStatKey" />
+            <TextView android:id="@id/vhr_owners" style="@style/StyleGuideViewItemStatValue" />
+        </LinearLayout>
+        <LinearLayout style="@style/StyleGuideViewItemStatCell">
+            <TextView android:text="@string/vehicle_history_report_title_check" style="@style/StyleGuideViewItemStatKey" />
+            <TextView android:id="@id/vhr_title_check" style="@style/StyleGuideViewItemStatValue" />
+        </LinearLayout>
+        <LinearLayout style="@style/StyleGuideViewItemStatCell">
+            <TextView android:text="@string/vehicle_history_report_odometer_check" style="@style/StyleGuideViewItemStatKey" />
+            <TextView android:id="@id/vhr_odometer_check" style="@style/StyleGuideViewItemStatValue" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/vhr_full_report_button_container" layout="@layout/view_item_vehicle_history_report_footer" />
+</LinearLayout>

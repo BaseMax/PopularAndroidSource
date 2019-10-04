@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/item_specifics_loading" layout="@layout/common_progress" />
+    <com.ebay.mobile.sell.widget.CustomScrollView android:id="@id/parent_layout" style="@style/Sell.Layout.Scroll">
+        <LinearLayout style="@style/Sell.Layout.ScrollChild.WithHelp">
+            <LinearLayout android:id="@id/specifics_groups_parent" android:paddingTop="10.0dip" android:layout_marginBottom="10.0dip" style="@style/Sell.Layout.ScrollChild.Content">
+                <TextView android:id="@id/required_specifics_label" android:visibility="gone" android:text="@string/label_required_item_specifics" style="@style/Sell.Spoke.Title" />
+                <androidx.cardview.widget.CardView android:id="@id/required_specifics_card" android:visibility="gone" style="@style/Sell.Layout.CardView">
+                    <com.ebay.mobile.widget.CardLayout android:id="@id/required_specifics_container" android:visibility="gone" style="@style/Sell.Layout.CardLayout" />
+                </androidx.cardview.widget.CardView>
+                <TextView android:id="@id/product_specifics_label" android:visibility="gone" android:text="@string/label_product_specifics" style="@style/Sell.Spoke.Title" />
+                <androidx.cardview.widget.CardView android:id="@id/product_specifics_card" android:visibility="gone" style="@style/Sell.Layout.CardView">
+                    <com.ebay.mobile.widget.CardLayout android:id="@id/product_specifics_container" android:visibility="gone" style="@style/Sell.Layout.CardLayout" />
+                </androidx.cardview.widget.CardView>
+                <TextView android:id="@id/recommended_specifics_label" android:visibility="gone" android:text="@string/label_recommended_item_specifics" style="@style/Sell.Spoke.Title" />
+                <androidx.cardview.widget.CardView android:id="@id/recommended_specifics_card" android:visibility="gone" android:layout_height="wrap_content" style="@style/Sell.Layout.CardView">
+                    <com.ebay.mobile.widget.CardLayout android:id="@id/recommended_specifics_container" android:visibility="gone" style="@style/Sell.Layout.CardLayout" />
+                </androidx.cardview.widget.CardView>
+                <TextView android:textSize="16.0sp" android:gravity="center" android:id="@android:id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_item_specifics" />
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/shopping_cart_dashed_line" />
+            <LinearLayout android:layout_marginTop="10.0dip" style="@style/Sell.Layout.ScrollChild.Content">
+                <TextView android:text="@string/sell_help_item_specifics" style="@style/Sell.Layout.Help.Content" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.ebay.mobile.sell.widget.CustomScrollView>
+</FrameLayout>

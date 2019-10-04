@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vehicle_history_report_unavailable_reason_list">
+        <item>O veículo é muito novo e ainda não tem histórico.</item>
+        <item>O veículo foi fabricado antes de 1981.</item>
+        <item>O veículo não tem o número de identificação exclusivo de 17 dígitos.</item>
+        <item>O veículo não se destina ao mercado dos EUA (ex.: carros exóticos de produção limitada).</item>
+        <item>O vendedor não digitou o número de identificação exclusivo corretamente.</item>
+    </string-array>
+</resources>

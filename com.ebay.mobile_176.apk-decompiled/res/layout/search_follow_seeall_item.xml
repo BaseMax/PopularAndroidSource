@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ebayStaticMargin6x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2Accent" android:layout_gravity="center_vertical" android:id="@id/button_see_all_followed_searches" android:paddingLeft="@dimen/searchlanding_no_icon_list_margin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/see_all" android:contentDescription="@string/see_all_searches_accessibility" />
+    <TextView android:textAppearance="?textAppearanceBody2Accent" android:layout_gravity="center_vertical" android:id="@id/button_see_all_followed_members" android:paddingLeft="@dimen/searchlanding_no_icon_list_margin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/see_all" android:contentDescription="@string/see_all_members_accessibility" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/page" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/header" android:inflatedId="@id/header" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+    <FrameLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <requestFocus />
+        <androidx.core.widget.NestedScrollView android:layout_gravity="center" android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:isScrollContainer="false">
+            <LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+    <ViewStub android:id="@id/footer" android:inflatedId="@id/footer" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+</LinearLayout>

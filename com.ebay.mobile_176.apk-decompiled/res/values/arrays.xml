@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="AU_province_codes">
+        <item>--</item>
+        <item>Australian Capital Territory</item>
+        <item>New South Wales</item>
+        <item>Northern Territory</item>
+        <item>Queensland</item>
+        <item>South Australia</item>
+        <item>Tasmania</item>
+        <item>Victoria</item>
+        <item>Western Australia</item>
+    </string-array>
+    <string-array name="CA_province_codes">
+        <item>--</item>
+        <item>AB</item>
+        <item>BC</item>
+        <item>MB</item>
+        <item>NB</item>
+        <item>NL</item>
+        <item>NT</item>
+        <item>NS</item>
+        <item>NU</item>
+        <item>ON</item>
+        <item>PE</item>
+        <item>QC</item>
+        <item>SK</item>
+        <item>YT</item>
+    </string-array>
+    <string-array name="IN_state_codes">
+        <item>--</item>
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Puducherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Wakayama</item>
+        <item>Tamil Nadu</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+    </string-array>
+    <string-array name="IT_province_codes">
+        <item>--</item>
+        <item>AG</item>
+        <item>AL</item>
+        <item>AN</item>
+        <item>AO</item>
+        <item>AP</item>
+        <item>AQ</item>
+        <item>AR</item>
+        <item>AT</item>
+        <item>AV</item>
+        <item>BA</item>
+        <item>BG</item>
+        <item>BI</item>
+        <item>BL</item>
+        <item>BN</item>
+        <item>BO</item>
+        <item>BR</item>
+        <item>BS</item>
+        <item>BT</item>
+        <item>BZ</item>
+        <item>CA</item>
+        <item>CB</item>
+        <item>CE</item>
+        <item>CH</item>
+        <item>CI</item>
+        <item>CL</item>
+        <item>CN</item>
+        <item>CO</item>
+        <item>CR</item>
+        <item>CS</item>
+        <item>CT</item>
+        <item>CZ</item>
+        <item>EN</item>
+        <item>FC</item>
+        <item>FE</item>
+        <item>FG</item>
+        <item>FI</item>
+        <item>FM</item>
+        <item>FR</item>
+        <item>GE</item>
+        <item>GO</item>
+        <item>GR</item>
+        <item>IM</item>
+        <item>IS</item>
+        <item>KR</item>
+        <item>LC</item>
+        <item>LE</item>
+        <item>LI</item>
+        <item>LO</item>
+        <item>LT</item>
+        <item>LU</item>
+        <item>MB</item>
+        <item>MC</item>
+        <item>ME</item>
+        <item>MI</item>
+        <item>MN</item>
+        <item>MO</item>
+        <item>MS</item>
+        <item>MT</item>
+        <item>NA</item>
+        <item>NO</item>
+        <item>NU</item>
+        <item>OG</item>
+        <item>OR</item>
+        <item>OT</item>
+        <item>PA</item>
+        <item>PC</item>
+        <item>PD</item>
+        <item>PE</item>
+        <item>PG</item>
+        <item>PI</item>
+        <item>PN</item>
+        <item>PO</item>
+        <item>PR</item>
+        <item>PT</item>
+        <item>PU</item>
+        <item>PV</item>
+        <item>PZ</item>
+        <item>RA</item>
+        <item>RC</item>
+        <item>RE</item>
+        <item>RG</item>
+        <item>RI</item>
+        <item>RM</item>
+        <item>RN</item>
+        <item>RO</item>
+        <item>SA</item>
+        <item>SI</item>
+        <item>SO</item>
+        <item>SP</item>
+        <item>SR</item>
+        <item>SS</item>
+        <item>SV</item>
+        <item>TA</item>
+        <item>TE</item>
+        <item>TN</item>
+        <item>TO</item>
+        <item>TP</item>
+        <item>TR</item>
+        <item>TS</item>
+        <item>TV</item>
+        <item>UD</item>
+        <item>VA</item>
+        <item>VB</item>
+        <item>VC</item>
+        <item>VE</item>
+        <item>VI</item>
+        <item>VR</item>
+        <item>VS</item>
+        <item>VT</item>
+        <item>VV</item>
+    </string-array>
+    <string-array name="JP_prefecture_codes">
+        <item>--</item>
+        <item>Hokkaido</item>
+        <item>Aomori</item>
+        <item>Iwate</item>
+        <item>Miyagi</item>
+        <item>Akita</item>
+        <item>Yamagata</item>
+        <item>Fukushima</item>
+        <item>Ibaraki</item>
+        <item>Tochigi</item>
+        <item>Gunma</item>
+        <item>Saitama</item>
+        <item>Chiba</item>
+        <item>Tokyo</item>
+        <item>Kanagawa</item>
+        <item>Niigata</item>
+        <item>Toyama</item>
+        <item>Ishikawa</item>
+        <item>Fukui</item>
+        <item>Yamanashi</item>
+        <item>Nagano</item>
+        <item>Gifu</item>
+        <item>Shizuoka</item>
+        <item>Aichi</item>
+        <item>Mie</item>
+        <item>Shiga</item>
+        <item>Kyoto</item>
+        <item>Osaka</item>
+        <item>Hyogo</item>
+        <item>Nara</item>
+        <item>Wakayama</item>
+        <item>Tottori</item>
+        <item>Shimane</item>
+        <item>Okayama</item>
+        <item>Hiroshima</item>
+        <item>Yamaguchi</item>
+        <item>Tokushima</item>
+        <item>Kagawa</item>
+        <item>Ehime</item>
+        <item>Kochi</item>
+        <item>Fukuoka</item>
+        <item>Saga</item>
+        <item>>Nagasaki</item>
+        <item>Kumamoto</item>
+        <item>Oita</item>
+        <item>Miyazaki</item>
+        <item>Kagoshima</item>
+        <item>Okinawa</item>
+    </string-array>
+    <string-array name="US_country">
+        <item>United States</item>
+    </string-array>
+    <string-array name="US_state_codes">
+        <item>--</item>
+        <item>AL</item>
+        <item>AK</item>
+        <item>AZ</item>
+        <item>AR</item>
+        <item>CA</item>
+        <item>CO</item>
+        <item>CT</item>
+        <item>DE</item>
+        <item>DC</item>
+        <item>FL</item>
+        <item>GA</item>
+        <item>HI</item>
+        <item>ID</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>IA</item>
+        <item>KS</item>
+        <item>KY</item>
+        <item>LA</item>
+        <item>ME</item>
+        <item>MD</item>
+        <item>MA</item>
+        <item>MI</item>
+        <item>MN</item>
+        <item>MS</item>
+        <item>MO</item>
+        <item>MT</item>
+        <item>NE</item>
+        <item>NV</item>
+        <item>NH</item>
+        <item>NJ</item>
+        <item>NM</item>
+        <item>NY</item>
+        <item>NC</item>
+        <item>ND</item>
+        <item>OH</item>
+        <item>OK</item>
+        <item>OR</item>
+        <item>PA</item>
+        <item>RI</item>
+        <item>SC</item>
+        <item>SD</item>
+        <item>TN</item>
+        <item>TX</item>
+        <item>UT</item>
+        <item>VT</item>
+        <item>VA</item>
+        <item>WA</item>
+        <item>WV</item>
+        <item>WI</item>
+        <item>WY</item>
+    </string-array>
+    <string-array name="ad_unit_id_labels">
+        <item>Default</item>
+        <item>Native Content Direct</item>
+        <item>Native Backfill</item>
+        <item>Native App Install Direct</item>
+        <item>Native Adhoc</item>
+        <item>Native One2One Aspect Ratio</item>
+        <item>Native One2Four Aspect Ratio</item>
+        <item>Native Four2One Aspect Ratio</item>
+    </string-array>
+    <string-array name="ad_unit_ids">
+        <item></item>
+        <item>/6245/ebay.6245.test/mobile_test_native_content_direct</item>
+        <item>/6245/ebay.6245.test/mobile_test_native_backfill</item>
+        <item>/6245/ebay.6245.test/mobile_test_native_appinstall_direct_android</item>
+        <item>/6245/ebay.6245.test/mobile_test_native_adhoc</item>
+        <item>/6245/ebay.6245.test/mobile_test_native_aspectratio_onetoone</item>
+        <item>/6245/ebay.6245.test/mobile_test_native_aspectratio_onetofour</item>
+        <item>/6245/ebay.6245.test/mobile_test_native_aspectratio_fourtoone</item>
+    </string-array>
+    <string-array name="compose_message_subject">
+        <item>@string/message_subject_general</item>
+        <item>@string/message_subject_ship_multi_items</item>
+        <item>@string/message_subject_payment</item>
+        <item>@string/message_subject_ship_this_item</item>
+    </string-array>
+    <string-array name="condition_list_entries">
+        <item>@string/condition_any</item>
+        <item>@string/condition_new</item>
+        <item>@string/condition_used</item>
+        <item>@string/condition_unknown</item>
+    </string-array>
+    <string-array name="condition_list_entry_values">
+        <item>Any</item>
+        <item>New</item>
+        <item>Used</item>
+        <item>Unspecified</item>
+    </string-array>
+    <string-array name="dcs_boolean_values">
+        <item>@string/preferences_dcs_as_configured</item>
+        <item>@string/preferences_dcs_disabled</item>
+        <item>@string/preferences_dcs_enabled</item>
+    </string-array>
+    <string-array name="etrs10">
+        <item>@string/spr_top_rated_plus_sellers</item>
+        <item>@string/spr_top_rated_plus_money</item>
+        <item>@string/spr_top_rated_plus_ships</item>
+    </string-array>
+    <string-array name="etrsAU">
+        <item>@string/spr_etrs_AU_excellent_service</item>
+        <item>@string/spr_etrs_AU_free_postage_and_fast_handling</item>
+        <item>@string/spr_etrs_AU_money_back_returns</item>
+        <item>@string/spr_etrs_AU_express_postage_option</item>
+    </string-array>
+    <string-array name="etrsCHAndAT">
+        <item>@string/LOCKED_spr_etrs_CH_and_AT_one_month_return</item>
+        <item>@string/LOCKED_spr_etrs_CH_and_AT_only_ebay_certified</item>
+        <item>@string/LOCKED_spr_etrs_CH_and_AT_free_shipping</item>
+    </string-array>
+    <string-array name="etrsDE">
+        <item>@string/LOCKED_spr_etrs_DE_one_month_return</item>
+        <item>@string/LOCKED_spr_etrs_DE_money_back</item>
+        <item>@string/LOCKED_spr_etrs_DE_only_ebay_certified</item>
+    </string-array>
+    <string-array name="etrsUKAndIE">
+        <item>@string/spr_etrs_UK_and_IE_excellent_customer_service</item>
+        <item>@string/spr_etrs_UK_and_IE_minimum_fourteen_day_return</item>
+        <item>@string/spr_etrs_UK_and_IE_delivery_option</item>
+        <item>@string/spr_etrs_UK_and_IE_fast_delivery_option</item>
+    </string-array>
+    <string-array name="etrsUS">
+        <item>@string/spr_etrs_US_top_rated_plus_sellers</item>
+        <item>@string/spr_etrs_US_top_rated_plus_money</item>
+        <item>@string/spr_etrs_US_top_rated_plus_ships</item>
+    </string-array>
+    <string-array name="messages_filter_array">
+        <item>@string/messages_filter_all</item>
+        <item>@string/messages_filter_unread</item>
+        <item>@string/messages_filter_flagged</item>
+        <item>@string/messages_filter_from_ebay</item>
+        <item>@string/messages_filter_from_members</item>
+        <item>@string/messages_filter_high_priority</item>
+    </string-array>
+    <string-array name="messages_filter_array_sent">
+        <item>@string/messages_filter_all</item>
+        <item>@string/messages_filter_unread</item>
+        <item>@string/messages_filter_flagged</item>
+    </string-array>
+    <string-array name="product_review_sort_order">
+        <item>@string/sort_most_relevant</item>
+        <item>@string/sort_newest</item>
+        <item>@string/most_positive</item>
+        <item>@string/most_negative</item>
+    </string-array>
+    <string-array name="schedule_listings_entries">
+        <item>@string/button_start_listing_immediately</item>
+        <item>@string/button_schedule_start_time</item>
+    </string-array>
+    <string-array name="sort_list_entries">
+        <item>@string/sort_best_match</item>
+        <item>@string/sort_price_plus_shipping_ascending</item>
+        <item>@string/sort_price_plus_shipping_descending</item>
+        <item>@string/sort_time_ending_ascending</item>
+        <item>@string/sort_time_listed_descending</item>
+        <item>@string/sort_distance_ascending</item>
+    </string-array>
+    <string-array name="sort_list_entries_alternative">
+        <item>@string/sort_best_match</item>
+        <item>@string/sort_price_plus_shipping_ascending</item>
+        <item>@string/sort_price_plus_shipping_descending</item>
+        <item>@string/sort_recent_first</item>
+        <item>@string/sort_oldest_first</item>
+        <item>@string/sort_distance_ascending</item>
+    </string-array>
+    <string-array name="sort_list_entry_values">
+        <item>BestMatch</item>
+        <item>PricePlusShippingLowest</item>
+        <item>PricePlusShippingHighest</item>
+        <item>EndTimeSoonest</item>
+        <item>StartTimeNewest</item>
+        <item>DistanceNearest</item>
+    </string-array>
+    <string-array name="sort_list_entry_values_alternative">
+        <item>BestMatch</item>
+        <item>PricePlusShippingLowest</item>
+        <item>PricePlusShippingHighest</item>
+        <item>EndDateRecent</item>
+        <item>DateListedOldestFirst</item>
+        <item>DistanceNearest</item>
+    </string-array>
+    <string-array name="star_rating_meaning">
+        <item>@string/rating_terrible</item>
+        <item>@string/rating_unsatisfactory</item>
+        <item>@string/rating_okay</item>
+        <item>@string/rating_good</item>
+        <item>@string/rating_excellent</item>
+    </string-array>
+    <string-array name="vehicle_history_report_unavailable_reason_list">
+        <item>The vehicle is too new to have a history report.</item>
+        <item>The vehicle was manufactured prior to 1981.</item>
+        <item>"The vehicle didn't have a 17-digit vehicle identification number."</item>
+        <item>"The vehicle wasn't intended for the US market (such as limited production exotics)."</item>
+        <item>"The seller didn't enter the vehicle identification number correctly."</item>
+    </string-array>
+</resources>

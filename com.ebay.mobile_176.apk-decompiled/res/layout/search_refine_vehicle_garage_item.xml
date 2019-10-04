@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/search_refine_vehicle_detail_row"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:enabled="false" android:id="@id/garage_vehicle_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Refine.Caption" />
+        <CheckedTextView android:textAppearance="?textAppearanceSubhead" android:textColor="?textColorSecondaryCheckable" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/garage_vehicle_item_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/garage_vehicle_check_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/checkmark_accent" android:contentDescription="@null" />
+</LinearLayout>

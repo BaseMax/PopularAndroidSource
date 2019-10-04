@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/wallet_uxcomp_toggle_field_0" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Row"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/title" android:tag="binding_1" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ebay.payments.widget.SingleLineSwitchCompat android:id="@id/field_toggle" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:switchTextAppearance="?textAppearanceBody2" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubhead" android:gravity="center|left" android:id="@id/textview_category_parent" android:background="?selectableItemBackground" android:paddingLeft="@dimen/ebayScalingPadding2x" android:paddingRight="@dimen/ebayScalingPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/filter_list_item_min_height" />
+    <include layout="@layout/list_content" />
+</LinearLayout>

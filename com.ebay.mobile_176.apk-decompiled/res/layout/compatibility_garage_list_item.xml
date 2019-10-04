@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?cardColor" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding2x" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/compatibility_select_vehicle_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/garage_type" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceSubhead" android:ellipsize="end" android:id="@id/garage_title" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    <View android:id="@id/garage_item_divider" style="@style/CommonDivider" />
+</LinearLayout>

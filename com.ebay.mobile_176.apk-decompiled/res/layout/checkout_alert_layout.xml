@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/alert_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/alert_banner" android:background="?colorAlert" android:layout_width="fill_parent" android:layout_height="@dimen/xoDividerHeight" />
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/alert_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xoMarginMedium">
+        <ImageView android:id="@id/alert_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="@dimen/xoMarginSmall" android:src="@drawable/icon_alert_error" android:scaleType="fitXY" android:contentDescription="@null" />
+        <TextView android:layout_gravity="top" android:id="@id/alert_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Text.Error" />
+    </LinearLayout>
+    <View android:id="@id/alert_divider" android:background="@color/style_guide_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/xoDividerHeight" />
+</LinearLayout>

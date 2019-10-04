@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/listing_form_summary_shipping_extended_domestic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/shipping_recommendation_status_extended_view" android:paddingBottom="@dimen/ebayPadding" android:visibility="gone" android:text="@string/recommended" android:drawablePadding="@dimen/ebayPadding" style="@style/Sell.EbayRecommended" />
+    <TextView android:id="@id/custom_main_service_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" style="@style/Sell.TextView.Subhead" />
+    <LinearLayout android:id="@id/custom_primary_service_package_details" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/custom_primary_service_package_details_label" android:text="@string/label_package_details" style="@style/Sell.Bolt.Label" />
+        <TextView android:id="@id/custom_primary_service_package_details_value" style="@style/Sell.Bolt.Value.Summary" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/custom_main_shipping_service" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/custom_main_shipping_service_label" android:text="@string/label_service" style="@style/Sell.Bolt.Label" />
+        <LinearLayout android:orientation="vertical" style="@style/Sell.Bolt.Value">
+            <TextView android:id="@id/custom_main_shipping_service_value" style="@style/Sell.TextView" />
+            <TextView android:id="@id/custom_main_shipping_delivery_time" android:padding="@dimen/form_label_no_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_main_service_package_weight_details_value" android:padding="@dimen/form_label_no_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_main_service_package_dimension_details_value" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_main_service_tracking_value" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_main_service_insurance_value" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/custom_main_service_shipping_cost" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/custom_main_service_shipping_cost_label" style="@style/Sell.Bolt.Label" />
+        <LinearLayout android:orientation="vertical" style="@style/Sell.Bolt.Value">
+            <TextView android:id="@id/custom_main_service_shipping_cost_value" style="@style/Sell.TextView" />
+            <TextView android:id="@id/custom_main_shipping_cost_type_value" android:padding="@dimen/form_label_no_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/custom_second_service_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin" style="@style/Sell.TextView.Subhead" />
+    <LinearLayout android:id="@id/custom_second_service_package_details" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <include layout="@layout/listing_form_summary_shipping_secondary_package_details" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/custom_second_shipping_service" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/custom_second_shipping_service_label" android:text="@string/label_service" style="@style/Sell.Bolt.Label" />
+        <LinearLayout android:orientation="vertical" style="@style/Sell.Bolt.Value">
+            <TextView android:id="@id/custom_second_shipping_service_value" style="@style/Sell.TextView" />
+            <TextView android:id="@id/custom_second_shipping_delivery_time" android:padding="@dimen/form_label_no_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_second_service_package_weight_details_value" android:padding="@dimen/form_label_no_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_second_service_package_dimension_details_value" android:padding="@dimen/form_label_no_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_second_service_tracking_value" android:padding="@dimen/form_label_no_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+            <TextView android:id="@id/custom_second_service_insurance_value" android:padding="@dimen/form_label_no_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/custom_second_service_shipping_cost" android:visibility="gone" style="@style/Sell.Bolt.Container">
+        <TextView android:id="@id/custom_second_service_cost_label" style="@style/Sell.Bolt.Label" />
+        <LinearLayout android:orientation="vertical" style="@style/Sell.Bolt.Value">
+            <TextView android:id="@id/custom_second_service_cost_value" style="@style/Sell.TextView" />
+            <TextView android:id="@id/custom_second_shipping_cost_type_value" android:padding="@dimen/form_label_no_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

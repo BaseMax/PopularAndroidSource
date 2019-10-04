@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:tag="layout/view_item_ux_alert_custom_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/single_status" android:tag="binding_1" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ebayContentSideMargin" android:paddingEnd="@dimen/ebayContentSideMargin" />
+    <LinearLayout android:orientation="vertical" android:id="@id/multi_status" android:tag="binding_2" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ebayContentSideMargin" android:paddingEnd="@dimen/ebayContentSideMargin">
+        <TextView android:textAppearance="?textAppearanceTitle2" android:id="@id/multi_status_main" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@id/multi_status_additional" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

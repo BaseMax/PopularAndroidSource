@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="?actionBarMenu" />
+    <item android:gravity="center|right|top">
+        <shape android:shape="oval">
+            <size android:height="@dimen/alert_indicator_size" android:width="@dimen/alert_indicator_size" />
+            <solid android:color="?colorAlert" />
+        </shape>
+    </item>
+</layer-list>

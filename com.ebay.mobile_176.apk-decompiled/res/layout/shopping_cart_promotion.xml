@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/shopping_cart_promotion" android:background="@color/listContainerLightInsideBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/EbayTextAppearanceStrong.Body1" android:id="@id/promotion_text" android:paddingLeft="@dimen/ebayMargin" android:paddingTop="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    <TextView android:textAppearance="@style/EbayTextAppearanceStrong.Body1" android:id="@id/promotion_discount" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayMargin" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="?android:textAppearance" />
+    <View android:id="@id/cart_item_divider" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:layout_alignParentBottom="true" style="@style/CommonDivider" />
+</RelativeLayout>

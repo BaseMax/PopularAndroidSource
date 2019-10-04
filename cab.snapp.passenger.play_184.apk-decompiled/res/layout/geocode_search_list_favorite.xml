@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start|center" android:orientation="horizontal" android:background="@drawable/selector_rectangle_pure_white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_default_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center|top" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_very_small" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+        <ImageView android:id="@id/geocode_search_list_favorite_star_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_star_gray_24dp" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/geocode_search_list_favorite_divider_view" android:background="@color/very_light_pink" android:layout_width="fill_parent" android:layout_height="@dimen/height_divider_horizontal" android:layout_alignParentBottom="true" />
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/brown_grey" android:id="@id/geocode_search_list_favorite_address_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_above="@id/geocode_search_list_favorite_divider_view" android:layout_marginEnd="@dimen/margin_medium" style="@style/TextView.Default.Small" />
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:id="@id/geocode_search_list_favorite_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_above="@id/geocode_search_list_favorite_address_tv" android:layout_marginEnd="@dimen/margin_medium" style="@style/TextView.Default.Medium" />
+    </RelativeLayout>
+</LinearLayout>

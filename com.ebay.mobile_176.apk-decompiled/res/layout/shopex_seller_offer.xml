@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/shopex_offer_layout" android:background="?android:listChoiceBackgroundIndicator" android:paddingLeft="@dimen/shopExOffersItemLeftRightPadding" android:paddingTop="@dimen/shopExOffersItemTopBottomPadding" android:paddingRight="@dimen/shopExOffersItemLeftRightPadding" android:paddingBottom="@dimen/shopExOffersItemTopBottomPadding" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/shopex_offer_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/shopExOffersCheckmarkPadding" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/shopex_sme_content_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/shopex_offer_icon" android:layout_alignParentTop="true">
+            <TextView android:id="@id/shopex_offer_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This is the SME title" style="@style/ShopEx.Offers.Title" />
+            <LinearLayout android:orientation="vertical" android:id="@id/shopex_offer_messages" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:id="@id/shopex_offer_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-$5.00" android:layout_toLeftOf="@id/shopex_sme_content_layout" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ShopEx.Offers.Title" />
+        <ImageView android:id="@id/shopex_offer_chevron" android:layout_toLeftOf="@id/shopex_sme_content_layout" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Checkout.Chevron.Right" />
+    </RelativeLayout>
+</FrameLayout>

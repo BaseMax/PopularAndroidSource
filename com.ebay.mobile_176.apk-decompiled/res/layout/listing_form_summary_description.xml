@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/listing_form_summary_description_0" android:paddingBottom="@dimen/ebayPadding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/description_module_header_tap_target" layout="@layout/listing_form_summary_header" />
+    <androidx.cardview.widget.CardView style="@style/Sell.Card.ListingForm">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="?listingFormSummaryContentStyle">
+            <LinearLayout android:orientation="vertical" android:id="@id/description_tap_target" android:tag="binding_1" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:importantForAccessibility="no">
+                <include layout="@layout/listing_form_summary_error" />
+                <TextView android:id="@id/description_tool_tip" android:layout_marginBottom="@dimen/compensate_overview_tool_tip_margin" style="?listingFormSummaryGuidanceModuleTextStyle" />
+                <RelativeLayout android:id="@id/description_content" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.DynamicCardContainer.ListingForm">
+                    <ImageView android:id="@id/description_lock_icon" android:background="@null" android:visibility="visible" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/description_locked" style="@style/Sell.LockIcon" />
+                    <TextView android:id="@id/description_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="5" android:maxLength="201" android:layout_toLeftOf="@id/description_lock_icon" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/add_to_description_tap_target" android:background="?android:selectableItemBackground" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/description_tap_target">
+                <View android:id="@id/add_to_description_divider" style="@style/Sell.Divider" />
+                <FrameLayout android:id="@id/add_to_description_content" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.DynamicCardContainer.ListingForm">
+                    <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/add_to_description_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="5" android:maxLength="201" />
+                </FrameLayout>
+            </LinearLayout>
+            <ImageButton android:id="@id/description_button" android:visibility="gone" android:layout_below="@id/add_to_description_tap_target" android:contentDescription="@string/change_description" style="@style/EbayButton.Icon.Bolt" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ItemViewLayoutHeight">50.0dip</dimen>
+    <dimen name="ItemViewPhotoGalleryHeight">280.0dip</dimen>
+    <dimen name="ItemViewRatingHeight">35.0dip</dimen>
+    <dimen name="ItemViewRatingWidth">150.0dip</dimen>
+    <dimen name="ItemViewStatHeaderWidth">180.0dip</dimen>
+    <dimen name="ItemViewThumbnailHeight">120.0dip</dimen>
+    <dimen name="MessageLayoutMargin">40.0dip</dimen>
+    <dimen name="MessagesDetailsComposePadding">32.0dip</dimen>
+    <dimen name="MessagesFolderListItemMargin">40.0dip</dimen>
+    <dimen name="ProgressSpinnerSize">72.0dip</dimen>
+    <dimen name="UserDetailAvatarSize">96.0dip</dimen>
+    <dimen name="abc_action_bar_content_inset_material">24.0dip</dimen>
+    <dimen name="abc_action_bar_content_inset_with_nav">80.0dip</dimen>
+    <dimen name="abc_action_bar_default_height_material">64.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_end_material">8.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_start_material">8.0dip</dimen>
+    <dimen name="abc_config_prefDialogWidth">580.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">16.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">20.0dip</dimen>
+    <dimen name="added_to_cart_dialog_scroller_height">456.0dip</dimen>
+    <dimen name="answers_category_cell_vertical_padding">16.0dip</dimen>
+    <dimen name="apptentive_image_file_extension_default_text_size">24.0sp</dimen>
+    <dimen name="apptentive_image_file_extension_layout_top">40.0dip</dimen>
+    <dimen name="apptentive_interaction_card_list_width">568.0dip</dimen>
+    <item type="dimen" name="apptentive_interaction_extended_toolbar_width">@integer/wrap_content</item>
+    <dimen name="apptentive_message_center_avatar_image_diameter">56.0dip</dimen>
+    <dimen name="aux_searchbar_bottom_margin">12.0dip</dimen>
+    <dimen name="aux_searchbar_side_margin">24.0dip</dimen>
+    <dimen name="aux_searchbar_text_margin">24.0dip</dimen>
+    <dimen name="browse_categories_cell_padding">16.0dip</dimen>
+    <dimen name="browse_categories_header_image_height">312.0dip</dimen>
+    <dimen name="browse_categories_inside_padding">16.0dip</dimen>
+    <dimen name="browse_categories_inside_padding_top">8.0dip</dimen>
+    <dimen name="browse_categories_list_outside_padding_top">155.0dip</dimen>
+    <dimen name="browse_categories_outside_margin_horizontal">32.0dip</dimen>
+    <dimen name="browse_categories_outside_padding_vertical">48.0dip</dimen>
+    <dimen name="browse_top_products_image_size">188.0dip</dimen>
+    <dimen name="browse_top_products_label_min_size">60.0dip</dimen>
+    <dimen name="browse_visual_navigation_image_size">180.0dip</dimen>
+    <dimen name="card_collection_item_small_image_height">208.0dip</dimen>
+    <item type="dimen" name="card_content_padding_left">@dimen/baseline_unit</item>
+    <dimen name="card_content_padding_left_ds6">0.0dip</dimen>
+    <item type="dimen" name="card_content_padding_right">@dimen/baseline_unit</item>
+    <dimen name="card_content_padding_right_ds6">0.0dip</dimen>
+    <item type="dimen" name="card_margin_left">@dimen/ebayContentSideMargin</item>
+    <dimen name="card_margin_left_ds6">16.0dip</dimen>
+    <item type="dimen" name="card_margin_right">@dimen/ebayContentSideMargin</item>
+    <dimen name="card_margin_right_ds6">16.0dip</dimen>
+    <dimen name="card_title_min_height">48.0dip</dimen>
+    <dimen name="checkoutHeaderBottomMargin">10.0dip</dimen>
+    <dimen name="checkoutHugeMargin">50.0dip</dimen>
+    <dimen name="checkoutLargeMargin">28.0dip</dimen>
+    <dimen name="checkoutListContainerMargin">20.0dip</dimen>
+    <dimen name="checkoutListContainerMarginDouble">40.0dip</dimen>
+    <dimen name="checkoutMediumMargin">20.0dip</dimen>
+    <dimen name="checkoutMicroMargin">4.0dip</dimen>
+    <dimen name="checkoutSmallMargin">12.0dip</dimen>
+    <dimen name="checkoutTabletPadding">0.0dip</dimen>
+    <dimen name="checkoutTinyMargin">6.0dip</dimen>
+    <dimen name="clickableButtonDimen">64.0dip</dimen>
+    <dimen name="collection_details_banner_image_height">256.0dip</dimen>
+    <item type="dimen" name="collection_item_side_margin">@dimen/ebayPadding6x</item>
+    <dimen name="common_drawer_max_width">320.0dip</dimen>
+    <dimen name="common_title_inset_left">84.0dip</dimen>
+    <dimen name="common_toolbar_height">64.0dip</dimen>
+    <item type="dimen" name="compatibility_detail_card_side_margin">@dimen/ebayMargin2x</item>
+    <dimen name="compose_message_attach_photo_layout_height">56.0dip</dimen>
+    <dimen name="compose_message_send_cancel_btn_layout_height">56.0dip</dimen>
+    <dimen name="deals_searchbar_bottom_margin">12.0dip</dimen>
+    <dimen name="deals_searchbar_height">52.0dip</dimen>
+    <item type="dimen" name="deals_searchbar_side_margin">@dimen/ebayContentSideMargin</item>
+    <dimen name="design_navigation_max_width">320.0dip</dimen>
+    <dimen name="design_snackbar_action_inline_max_width">0.0dip</dimen>
+    <dimen name="design_snackbar_background_corner_radius">2.0dip</dimen>
+    <dimen name="design_snackbar_extra_spacing_horizontal">24.0dip</dimen>
+    <dimen name="design_snackbar_max_width">576.0dip</dimen>
+    <dimen name="design_snackbar_min_width">320.0dip</dimen>
+    <item type="dimen" name="design_snackbar_padding_vertical_2lines">@dimen/design_snackbar_padding_vertical</item>
+    <dimen name="design_tab_scrollable_min_width">160.0dip</dimen>
+    <dimen name="destinationImageSize">104.0dip</dimen>
+    <dimen name="dividerHeight">2.0dip</dimen>
+    <dimen name="ebayBarButtonSideMargin">64.0dip</dimen>
+    <dimen name="ebayBarButtonText">20.0sp</dimen>
+    <dimen name="ebayBarButtonTopMargin">16.0dip</dimen>
+    <dimen name="ebayContentHeaderLeftMargin">24.0dip</dimen>
+    <dimen name="ebayContentHeaderRightMargin">12.0dip</dimen>
+    <dimen name="ebayContentSideMargin">24.0dip</dimen>
+    <dimen name="ebayEditToolbarSideMargin">14.0dip</dimen>
+    <dimen name="ebayLetterboxSideMargin">30.0dip</dimen>
+    <item type="dimen" name="ebayLetterboxSideMarginViewItem">@dimen/ebayContentSideMargin</item>
+    <dimen name="ebayMargin">12.0dip</dimen>
+    <dimen name="ebayMargin10x">120.0dip</dimen>
+    <dimen name="ebayMargin15">18.0dip</dimen>
+    <dimen name="ebayMargin2x">24.0dip</dimen>
+    <dimen name="ebayMargin3x">32.0dip</dimen>
+    <dimen name="ebayMargin4x">48.0dip</dimen>
+    <dimen name="ebayMargin5x">60.0dip</dimen>
+    <dimen name="ebayMargin6x">72.0dip</dimen>
+    <dimen name="ebayMargin8x">96.0dip</dimen>
+    <dimen name="ebayScalingPadding">12.0dip</dimen>
+    <dimen name="ebayScalingPadding15">18.0dip</dimen>
+    <dimen name="ebayScalingPadding2x">24.0dip</dimen>
+    <dimen name="errorDialogHeightHtml">360.0dip</dimen>
+    <dimen name="errorDialogHeightText">100.0dip</dimen>
+    <dimen name="errorDialogWidth">414.0dip</dimen>
+    <item type="dimen" name="filter_header_alignment">@dimen/ebayScalingPadding</item>
+    <dimen name="followingTitleTextSize">28.0sp</dimen>
+    <dimen name="following_bluedotLeftMargin">24.0dip</dimen>
+    <dimen name="following_bluedotRightMargin">16.0dip</dimen>
+    <dimen name="following_details_text_size">18.0sp</dimen>
+    <dimen name="following_item_padding">20.0dip</dimen>
+    <dimen name="following_listing_details_height">33.0dip</dimen>
+    <dimen name="following_null_layout_width">434.0dip</dimen>
+    <dimen name="following_null_mock_long_line_height">20.0dip</dimen>
+    <dimen name="following_null_mock_long_line_width">350.0dip</dimen>
+    <dimen name="following_searches_height">60.0dip</dimen>
+    <dimen name="formFieldFixedWidth">212.0dip</dimen>
+    <dimen name="full_bleed_content_side_padding">27.0dip</dimen>
+    <dimen name="givingworksProgressBar">45.0dip</dimen>
+    <dimen name="givingworksThumbnail">90.0dip</dimen>
+    <item type="dimen" name="homescreen_card_caterpillar_margin">@dimen/ebayContentSideMargin</item>
+    <dimen name="homescreen_card_caterpillar_padding">0.0dip</dimen>
+    <dimen name="homescreen_card_deals_image_height_wide">128.0dip</dimen>
+    <dimen name="homescreen_card_deals_image_height_wide_large">248.0dip</dimen>
+    <dimen name="homescreen_card_inspiration_step_padding">32.0dip</dimen>
+    <dimen name="homescreen_card_titleheight">72.0dip</dimen>
+    <dimen name="homescreen_card_titlesize">24.0sp</dimen>
+    <dimen name="homescreen_loyalty_module_height">200.0dip</dimen>
+    <dimen name="homescreen_rtm_image_width">176.0dip</dimen>
+    <dimen name="homescreen_trend_image_tab_height">164.0dip</dimen>
+    <dimen name="homescreen_trend_image_tab_width">246.0dip</dimen>
+    <dimen name="hub_side_margin">44.0dip</dimen>
+    <dimen name="intent_hub_item_thumb_image_height">144.0dip</dimen>
+    <dimen name="listing_form_detail_quick_tip_horizontal_padding">24.0dip</dimen>
+    <dimen name="listing_form_text_input_layout_side_margin">20.0dip</dimen>
+    <dimen name="member_info_padding">96.0dip</dimen>
+    <dimen name="merchandise_bundle_image_size">120.0dip</dimen>
+    <dimen name="merchandise_bundle_plus_image_margin">24.0dip</dimen>
+    <dimen name="merchandise_complementary_group_header_padding">24.0dip</dimen>
+    <dimen name="merchandise_image_height_vip_horizontal_card">136.0dip</dimen>
+    <dimen name="merchandise_image_width_vip_horizontal_card">136.0dip</dimen>
+    <item type="dimen" name="messages_gutter_width">@dimen/ebayContentSideMargin</item>
+    <dimen name="my_ebay_image_dimen">120.0dip</dimen>
+    <dimen name="notification_layout_margin_bottom">0.0dip</dimen>
+    <item type="dimen" name="notification_layout_margin_left">@dimen/ebayMargin3x</item>
+    <item type="dimen" name="notification_layout_margin_right">@dimen/ebayMargin3x</item>
+    <item type="dimen" name="notification_layout_margin_top">@dimen/ebayMargin2x</item>
+    <item type="dimen" name="notification_layout_padding_bottom">@dimen/ebayPadding2x</item>
+    <item type="dimen" name="notification_layout_padding_top">@dimen/ebayPadding2x</item>
+    <dimen name="product_review_sort_icon_offset">24.0dip</dimen>
+    <dimen name="product_review_sort_offset">48.0dip</dimen>
+    <dimen name="product_review_tablet_bumpers">80.0dip</dimen>
+    <dimen name="product_top_products_image_size">128.0dip</dimen>
+    <dimen name="product_top_products_label_min_size">64.0dip</dimen>
+    <dimen name="prp_mtp_image_height">410.0dip</dimen>
+    <item type="dimen" name="review_dialog_side_margin">@dimen/ebayPadding2x</item>
+    <dimen name="search_tooltip_left_margin">16.0dip</dimen>
+    <dimen name="search_tooltip_y_offset">20.0dip</dimen>
+    <dimen name="searchlanding_header_icon_padding">24.0dip</dimen>
+    <dimen name="searchlanding_icon_list_margin">36.0dip</dimen>
+    <dimen name="searchlanding_no_icon_list_margin">84.0dip</dimen>
+    <dimen name="searchlanding_null_top_margin">144.0dip</dimen>
+    <dimen name="searchlanding_tabs_margin">30.0dip</dimen>
+    <dimen name="sell_card_top_margin">24.0dip</dimen>
+    <dimen name="sell_ebay_content_header_right_margin">24.0dip</dimen>
+    <dimen name="sell_fontsize_large">18.0sp</dimen>
+    <dimen name="sell_fontsize_medium">16.0sp</dimen>
+    <dimen name="sell_fontsize_small">14.0sp</dimen>
+    <dimen name="sell_search_suggestion_padding">16.0dip</dimen>
+    <dimen name="sell_searchbar_height">52.0dip</dimen>
+    <dimen name="sell_searchbar_start_padding">16.0dip</dimen>
+    <dimen name="sell_side_margin">24.0dip</dimen>
+    <dimen name="sell_summary_horizontal_padding">16.0dip</dimen>
+    <dimen name="selling_condensed_card_items_text_size">46.0sp</dimen>
+    <dimen name="signInMargin2x">24.0dip</dimen>
+    <dimen name="signInTextSizeLarge">28.0sp</dimen>
+    <dimen name="simple_refine_fragment_width">384.0dip</dimen>
+    <dimen name="srp_list_image_height">156.0dip</dimen>
+    <dimen name="srp_list_item_height">172.0dip</dimen>
+    <dimen name="tab_badge_top_margin">16.0dip</dimen>
+    <dimen name="tab_layout_scrolling_start_offset">72.0dip</dimen>
+    <dimen name="tab_layout_tab_padding">24.0dip</dimen>
+    <dimen name="thumbnailBorderWidth">0.5dip</dimen>
+    <dimen name="trend_listing_image_height">144.0dip</dimen>
+    <dimen name="uxcomp_banner_event_multi_width">568.0dip</dimen>
+    <dimen name="view_item_container_side_margins">24.0dip</dimen>
+    <dimen name="view_item_gallery_image_dimension">168.0dip</dimen>
+    <dimen name="view_item_manager_offer_card_margin">18.0dip</dimen>
+    <dimen name="viewpager_page_margin">24.0dip</dimen>
+    <dimen name="vip_fontsize_small">16.0sp</dimen>
+    <dimen name="apptentive_header_height">64.0dip</dimen>
+    <dimen name="apptentive_header_padding_bottom">8.0dip</dimen>
+    <dimen name="apptentive_header_padding_left">12.0dip</dimen>
+    <dimen name="apptentive_header_padding_right">12.0dip</dimen>
+    <dimen name="apptentive_header_padding_top">8.0dip</dimen>
+</resources>

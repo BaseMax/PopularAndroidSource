@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.NativeAppInstallAdView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayStaticMargin2x" android:layout_marginRight="@dimen/ebayStaticMargin2x" android:layout_marginBottom="@dimen/ebayStaticMargin3x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/native_ad_header" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin2x" android:layout_marginTop="@dimen/ebayStaticMargin2x">
+            <com.google.android.gms.ads.formats.MediaView android:id="@id/ad_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:importantForAccessibility="no" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin">
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/ad_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin2x" />
+                <Button android:id="@id/ad_call_to_action" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayStaticMargin2x" style="@style/EbayButton.Flat" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.gms.ads.formats.NativeAppInstallAdView>

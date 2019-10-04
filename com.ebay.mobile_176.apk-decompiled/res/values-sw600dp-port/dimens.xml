@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="apptentive_activity_side_padding">48.0dip</dimen>
+    <dimen name="apptentive_dialog_side_padding">96.0dip</dimen>
+    <dimen name="apptentive_message_center_card_view_composing_margin_side">40.0dip</dimen>
+    <dimen name="apptentive_message_center_error_side_margin">72.0dip</dimen>
+    <dimen name="apptentive_message_center_fab_margin_bottom">60.0dip</dimen>
+    <dimen name="apptentive_message_center_fab_margin_side">12.0dip</dimen>
+    <dimen name="apptentive_message_center_footer_height">96.0dip</dimen>
+    <dimen name="apptentive_message_center_greeting_side_margin">104.0dip</dimen>
+    <dimen name="apptentive_message_center_header_height">64.0dip</dimen>
+    <dimen name="apptentive_message_center_message_list_margin_side">40.0dip</dimen>
+    <dimen name="apptentive_message_center_message_list_side_border">1.0dip</dimen>
+    <dimen name="uxcomp_banner_garage_vehicle_image_height">200.0dip</dimen>
+    <dimen name="uxcomp_banner_garage_vehicle_image_width">276.0dip</dimen>
+    <item type="dimen" name="view_item_card_margin_left">@dimen/ebayContentSideMargin</item>
+    <item type="dimen" name="view_item_card_margin_left_ds6">@dimen/ebayStaticMargin2x</item>
+    <item type="dimen" name="view_item_card_margin_right">@dimen/ebayContentSideMargin</item>
+    <item type="dimen" name="view_item_card_margin_right_ds6">@dimen/ebayStaticMargin2x</item>
+    <item type="dimen" name="view_item_content_padding_left">@dimen/ebayPadding</item>
+    <dimen name="view_item_content_padding_left_ds6">0.0dip</dimen>
+    <item type="dimen" name="view_item_content_padding_right">@dimen/ebayPadding</item>
+    <dimen name="view_item_content_padding_right_ds6">0.0dip</dimen>
+</resources>

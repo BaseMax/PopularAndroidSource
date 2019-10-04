@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/view_item_ux_label_list_divider_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseline_unit" android:layout_marginBottom="@dimen/baseline_unit" android:layout_marginStart="@dimen/baseline_unit" android:layout_marginEnd="@dimen/baseline_unit"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2" android:layout_gravity="center_horizontal" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

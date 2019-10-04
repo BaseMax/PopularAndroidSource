@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomSheetStyle" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="behavior_hideable">false</item>
+        <item name="behavior_peekHeight">600.0dip</item>
+        <item name="behavior_skipCollapsed">true</item>
+    </style>
+    <style name="GalleryImagePickerContainerStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="decorations">none</item>
+        <item name="scrollOrientation">vertical</item>
+    </style>
+    <style name="StyleGuideViewItemAdsContainer">
+        <item name="android:background">?containerBackgroundColor</item>
+        <item name="android:paddingTop">@dimen/ebayPadding</item>
+        <item name="android:paddingBottom">@dimen/ebayPadding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/ebayContentSideMargin</item>
+        <item name="android:layout_marginTop">@dimen/ebayStaticMargin2x</item>
+        <item name="android:layout_marginRight">@dimen/ebayContentSideMargin</item>
+        <item name="android:layout_marginBottom">@dimen/ebayStaticMargin2x</item>
+    </style>
+    <style name="StyleGuideViewItemCard.Top" parent="@style/EbayCardStyle.FullBleed">
+        <item name="contentPaddingBottom">?containerContentPaddingBottom</item>
+        <item name="contentPaddingLeft">@dimen/full_bleed_content_side_padding</item>
+        <item name="contentPaddingRight">@dimen/full_bleed_content_side_padding</item>
+        <item name="contentPaddingTop">@dimen/ebayPadding2x</item>
+    </style>
+</resources>

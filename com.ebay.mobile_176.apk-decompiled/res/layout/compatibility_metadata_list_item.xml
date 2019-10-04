@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/metadata_text_container" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/metadata_text_initial" layout="@layout/compatibility_metadata_list_initial" />
+    <TextView android:textAppearance="?textAppearanceSubheadSecondary" android:id="@id/metadata_matched_text" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+    <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/metadata_text" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

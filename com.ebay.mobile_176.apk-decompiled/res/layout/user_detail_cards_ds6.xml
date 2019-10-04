@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/other_items_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/other_items_cell" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/dsr_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/RichUserProfile.Container">
+            <TextView android:textAppearance="?textAppearanceTitle2" android:ellipsize="end" android:id="@id/detail_header" android:paddingTop="@dimen/component_header_padding" android:paddingBottom="@dimen/component_header_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detailed_seller_ratings" android:maxLines="1" android:scrollHorizontally="false" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="*" app:layout_constraintTop_toBottomOf="@id/detail_header">
+                <include android:id="@id/as_described_layout" layout="@layout/rating_bar_ds6" />
+                <include android:id="@id/seller_communication_layout" layout="@layout/rating_bar_ds6" />
+                <include android:id="@id/seller_shipping_time_layout" layout="@layout/rating_bar_ds6" />
+                <include android:id="@id/seller_shipping_charges_layout" layout="@layout/rating_bar_ds6" />
+            </TableLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/recent_feedback_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/RichUserProfile.Container">
+            <FrameLayout android:id="@id/feedback_header" android:paddingTop="@dimen/component_header_padding" android:paddingBottom="@dimen/component_header_padding" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" android:layout_marginEnd="@dimen/baseline_unit">
+                <TextView android:textAppearance="?textAppearanceTitle2" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recent_feedback_ratings" android:maxLines="1" android:scrollHorizontally="false" android:drawableRight="@drawable/ic_arrow_right_black_24dp_ds6" android:drawablePadding="@dimen/baseline_unit" />
+            </FrameLayout>
+            <TableLayout android:paddingTop="@dimen/ebayMarginHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="2,3,4" android:shrinkColumns="0,1">
+                <TableRow>
+                    <TextView android:textAppearance="?textAppearanceBody1" android:layout_gravity="center|right" android:paddingBottom="@dimen/baseline_unit_half" android:layout_column="2" android:text="@string/recent_feedback_1_month" android:contentDescription="@string/accessibility_recent_feedback_1_month" />
+                    <TextView android:textAppearance="?textAppearanceBody1" android:layout_gravity="center|right" android:paddingBottom="@dimen/baseline_unit_half" android:layout_column="3" android:text="@string/recent_feedback_6_month" android:contentDescription="@string/accessibility_recent_feedback_6_month" />
+                    <TextView android:textAppearance="?textAppearanceBody1" android:layout_gravity="center|right" android:paddingBottom="@dimen/baseline_unit_half" android:layout_column="4" android:text="@string/recent_feedback_12_month" android:contentDescription="@string/accessibility_recent_feedback_12_month" />
+                </TableRow>
+                <TableRow style="@style/RichUserProfile.TableCellRatings.TableRow">
+                    <ImageView android:src="@drawable/ic_positivefeedback" style="@style/RichUserProfile.TableCellRatings.ImageView" />
+                    <Button android:id="@id/positive_table_row" android:text="@string/positive" style="@style/RichUserProfile.UnstyledButton" />
+                    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/seller_positive_1mo_textview" android:layout_height="wrap_content" android:text="0" style="@style/RichUserProfile.TableCellRatings.Green" />
+                    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/seller_positive_6mo_textview" android:text="0" style="@style/RichUserProfile.TableCellRatings.Green" />
+                    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/seller_positive_12mo_textview" android:text="0" style="@style/RichUserProfile.TableCellRatings.Green" />
+                </TableRow>
+                <TableRow style="@style/RichUserProfile.TableCellRatings.TableRow">
+                    <ImageView android:src="@drawable/ic_neutralfeedback" style="@style/RichUserProfile.TableCellRatings.ImageView" />
+                    <Button android:id="@id/neutral_table_row" android:text="@string/neutral" style="@style/RichUserProfile.UnstyledButton" />
+                    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/seller_neutral_1mo_textview" android:text="0" style="@style/RichUserProfile.TableCellRatings.Neutral" />
+                    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/seller_neutral_6mo_textview" android:text="0" style="@style/RichUserProfile.TableCellRatings.Neutral" />
+                    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/seller_neutral_12mo_textview" android:text="0" style="@style/RichUserProfile.TableCellRatings.Neutral" />
+                </TableRow>
+                <TableRow android:shrinkColumns="1,2,3" style="@style/RichUserProfile.TableCellRatings.TableRow">
+                    <ImageView android:src="@drawable/ic_negativefeedback" style="@style/RichUserProfile.TableCellRatings.ImageView" />
+                    <Button android:id="@id/negative_table_row" android:text="@string/negative" style="@style/RichUserProfile.UnstyledButton" />
+                    <TextView android:id="@id/seller_negative_1mo_textview" android:text="0" style="@style/RichUserProfile.TableCellRatings.Red" />
+                    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/seller_negative_6mo_textview" android:text="0" style="@style/RichUserProfile.TableCellRatings.Red" />
+                    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/seller_negative_12mo_textview" android:text="0" style="@style/RichUserProfile.TableCellRatings.Red" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/charity_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/RichUserProfile.Container">
+            <FrameLayout android:paddingTop="@dimen/component_header_padding" android:paddingBottom="@dimen/component_header_padding" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" android:layout_marginEnd="@dimen/baseline_unit">
+                <TextView android:textAppearance="?textAppearanceTitle2" android:ellipsize="end" android:id="@id/charity_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_view_charity_ebay_giving_works" android:maxLines="1" android:scrollHorizontally="false" android:drawableRight="@drawable/ic_arrow_right_black_24dp_ds6" android:drawablePadding="@dimen/baseline_unit" />
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/charity_button" android:background="?android:selectableItemBackground" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+                <FrameLayout android:layout_width="63.0dip" android:layout_height="63.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/charity_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_profile_charity" />
+                </FrameLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/RichUserProfile.WithSidePadding">
+                    <TextView android:textAppearance="?textAppearanceSubhead2" android:id="@id/charity_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/givingworks_title" />
+                    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/charity_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/givingworks_subtitle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/RichUserProfile.Container">
+            <Button android:id="@id/legal_info_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/legal_information" style="@style/EbayButton.Secondary" />
+        </FrameLayout>
+    </LinearLayout>
+</merge>

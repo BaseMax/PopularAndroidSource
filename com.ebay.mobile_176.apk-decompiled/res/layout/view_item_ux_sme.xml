@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/button_sme_panel" android:tag="layout/view_item_ux_sme_0" android:paddingTop="@dimen/ebayPadding" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/seller_offer_caption" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <TextView android:id="@id/seller_offer_detail" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/seller_offer_caption" android:layout_alignLeft="@id/seller_offer_caption" />
+    <include layout="@layout/view_item_chevron" />
+</RelativeLayout>

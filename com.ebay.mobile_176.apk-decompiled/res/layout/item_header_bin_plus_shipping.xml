@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/item_header_layout" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/item_thumbnail" android:focusable="false" android:layout_width="@dimen/ItemViewThumbnailHeight" android:layout_height="@dimen/ItemViewThumbnailHeight" android:scaleType="fitCenter" android:contentDescription="@null" android:importantForAccessibility="no" ebay:averageBackgroundColor="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/item_title" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" />
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/value_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/textview_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:id="@id/includes_vat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:text="@string/including_VAT_standalone" android:includeFontPadding="false" />
+                </LinearLayout>
+                <TextView android:id="@id/converted_price_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/shipping_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <include layout="@layout/item_view_fast_and_free" />
+                <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/converted_shipping_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

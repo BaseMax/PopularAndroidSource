@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/charity_banner" android:background="@color/style_guide_dark_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:id="@id/charity_donation_percent" android:padding="@dimen/ebayMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentStart="false" style="@style/EbayTextAppearance.Inverse" />
+    <View android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="@dimen/dividerHeight" android:layout_below="@id/charity_donation_percent" style="?listDividerHorizontal" />
+</RelativeLayout>

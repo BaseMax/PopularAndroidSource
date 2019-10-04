@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/photo_cell" android:tag="layout/photomanager2_cell_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/photo_manager_photo_image" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:dynamicHeight="square" app:missingImage="@drawable/ic_missing_image" app:use565Decode="false" />
+    <View android:tag="binding_2" android:background="@color/photomanager_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/photo_manager_photo_lock" android:tag="binding_3" android:background="@color/black_20pct" android:padding="2.0dip" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="@dimen/ebayStaticMarginHalf" android:src="@drawable/ic_lock_closed_black_24dp" android:tint="@android:color/white" />
+        <ImageView android:id="@id/photo_manager_photo_error" android:tag="binding_4" android:background="@color/black_20pct" android:padding="2.0dip" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/error_icon" />
+    </LinearLayout>
+    <View android:tag="binding_5" android:background="@color/photomanager_selection_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ebay.mobile.common.CheckableImageView android:layout_gravity="center|right|top" android:id="@id/multiselect_checkbox" android:tag="binding_6" android:padding="@dimen/photomanager_cell_selection_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:src="?android:listChoiceIndicatorMultiple" android:scaleType="center" android:importantForAccessibility="yes" />
+    <TextView android:textAppearance="?textAppearanceCaption1Inverse" android:gravity="center" android:layout_gravity="bottom" android:tag="binding_7" android:background="@color/black_40pct" android:padding="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

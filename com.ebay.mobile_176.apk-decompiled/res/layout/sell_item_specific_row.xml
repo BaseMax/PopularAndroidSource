@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/Sell.FakeSpinner"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:gravity="left" android:id="@id/label" android:layout_marginLeft="0.0dip" style="@style/Sell.InlineLabel" />
+    <TextView android:textSize="12.0sp" android:gravity="left" android:id="@id/text1" android:layout_marginLeft="0.0dip" style="@style/Sell.InlineLabel.Blue" />
+</LinearLayout>

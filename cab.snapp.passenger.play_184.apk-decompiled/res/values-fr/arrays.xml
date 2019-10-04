@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ride_rating_star">
+        <item>Terrible</item>
+        <item>Mal</item>
+        <item>Normal</item>
+        <item>Bien</item>
+        <item>Génial</item>
+    </string-array>
+</resources>

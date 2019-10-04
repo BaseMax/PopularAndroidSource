@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/inline_edittext_background" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="center|right" android:id="@id/title" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/normal_text_size" android:gravity="center|right" android:id="@id/raw_address" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

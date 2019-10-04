@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="?containerBackgroundColorGray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/alert_register_to_sell_message" android:drawableTop="@drawable/seller_profile_verification" android:drawablePadding="20.0dip" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/seller_reg_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/button_continue" style="@style/EbayButton.Blue" />
+    </LinearLayout>
+</ScrollView>

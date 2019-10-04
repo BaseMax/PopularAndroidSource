@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/following_unsigned_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/ebayMargin8x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/following_null_layout" />
+        <TextView android:textAppearance="?textAppearanceTitle2" android:textColor="?textColorSecondaryAlt" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/following_signin_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin5x" android:layout_marginBottom="@dimen/ebayMargin3x" android:text="@string/following_null_cta" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/following_signin" android:layout_width="@dimen/homescreen_signin_buttonwidth" android:layout_height="wrap_content" android:text="@string/sign_in" style="@style/EbayButton.White" />
+    </LinearLayout>
+</ScrollView>

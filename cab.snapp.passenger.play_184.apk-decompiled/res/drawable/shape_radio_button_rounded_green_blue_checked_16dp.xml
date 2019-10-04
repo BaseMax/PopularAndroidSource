@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="@dimen/radio_button_stroke_width_16dp" android:color="@color/color_accent" />
+            <size android:height="@dimen/radio_button_height_16dp" android:width="@dimen/radio_button_width_16dp" />
+        </shape>
+    </item>
+    <item android:left="@dimen/radio_button_padding_medium_16dp" android:top="@dimen/radio_button_padding_medium_16dp" android:right="@dimen/radio_button_padding_medium_16dp" android:bottom="@dimen/radio_button_padding_medium_16dp">
+        <shape android:shape="oval">
+            <solid android:width="@dimen/radio_button_inner_stroke_width_16dp" android:color="@color/color_accent" />
+            <size android:height="@dimen/radio_button_inner_height_16dp" android:width="@dimen/radio_button_inner_width_16dp" />
+        </shape>
+    </item>
+</layer-list>

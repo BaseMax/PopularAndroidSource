@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/pageContainer" android:paddingTop="?actionBarSize" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.cardview.widget.CardView android:id="@id/tabBarCard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr" app:tabIndicatorColor="@color/green" app:tabInlineLabel="true" app:tabMode="fixed" app:tabSelectedTextColor="@color/green" app:tabTextColor="@color/text_secondary" />
+        </androidx.cardview.widget.CardView>
+        <androidx.viewpager.widget.ViewPager android:id="@id/pageTabViewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <include layout="@layout/layout_page_non_data" />
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.farsitel.bazaar.widget.RTLImageView android:id="@id/toolbarBack" app:srcCompat="@drawable/ic_round_arrow_back_24px" style="@style/Bazaar.Image.Toolbar.Back" />
+                <com.farsitel.bazaar.widget.LocalAwareTextView android:gravity="start" android:layout_gravity="center" android:id="@id/toolbarTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin" style="@style/Bazaar.Text.Body1" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

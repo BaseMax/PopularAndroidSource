@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2" android:textColor="@color/style_guide_gray" android:gravity="center" android:layout_gravity="center" android:id="@id/no_items" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin4x" android:text="@string/intent_tab_null_text_by_time" android:drawableTop="@drawable/ic_null_recents" android:drawablePadding="@dimen/ebayPadding" />
+    <include layout="@layout/progress_container" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@android:id/list" android:paddingTop="?actionBarSize" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include android:id="@id/intent_edit_bar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" layout="@layout/intent_edit_header" />
+</FrameLayout>

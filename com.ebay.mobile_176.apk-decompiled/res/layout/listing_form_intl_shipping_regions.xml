@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/parent_layout" android:scrollbars="vertical" style="@style/Sell.Layout.Scroll"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:id="@id/select_worldwide_card" style="@style/Sell.Card.ListingForm">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/expand_your_customer_base" style="@style/Sell.TextView.Secondary" />
+                <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioButton android:id="@id/worldwide_radio_button" android:layout_marginLeft="@null" android:layout_marginTop="@dimen/ebayMargin4x" android:layout_marginRight="@null" android:text="@string/intl_shipping_region_worldwide" style="@style/Sell.Shipping.RadioButton" />
+                    <RadioButton android:id="@id/choose_custom_locations_radio_button" android:layout_marginLeft="@null" android:layout_marginRight="@null" android:text="@string/choose_custom_locations" style="@style/Sell.Shipping.RadioButton" />
+                </RadioGroup>
+            </LinearLayout>
+            <View android:id="@id/custom_locations_divider" style="@style/CommonDivider" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/shipping_regions_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin4x" android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.core.widget.NestedScrollView>

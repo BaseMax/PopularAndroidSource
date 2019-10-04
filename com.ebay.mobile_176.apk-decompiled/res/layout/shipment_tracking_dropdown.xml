@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/shipment_tracking_dropdown_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMarginHalf" android:layout_marginBottom="@dimen/ebayMargin2x"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceCaption1" android:layout_gravity="center_vertical" android:id="@id/label_tracking" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Spinner android:layout_gravity="center_horizontal" android:id="@id/tracking_number_spinner" android:tag="binding_2" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:tag="layout/fragment_more_article_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentScrim="?colorPrimary" app:layout_scrollFlags="enterAlways">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways">
+                <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.farsitel.bazaar.widget.RTLImageView android:id="@id/toolbarBackButton" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_round_arrow_back_24px" app:tint="@color/c_icon_toolbar" style="@style/Bazaar.Image.Toolbar.Back" />
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@id/appIcon" android:tag="binding_1" android:layout_marginStart="@dimen/default_margin" app:layout_constraintBottom_toBottomOf="@id/toolbarBackButton" app:layout_constraintStart_toEndOf="@id/toolbarBackButton" app:layout_constraintTop_toTopOf="@id/toolbarBackButton" style="@style/Bazaar.Image.Toolbar.ClearTint.Icon" />
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@id/pageDesc" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="@dimen/default_margin_one_half" app:layout_constraintBottom_toTopOf="@id/appName" app:layout_constraintStart_toEndOf="@id/appIcon" app:layout_constraintTop_toTopOf="@id/appIcon" app:layout_constraintVertical_chainStyle="packed" style="@style/Bazaar.Text.Body2.Dark" />
+                    <androidx.appcompat.widget.AppCompatTextView android:id="@id/appName" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="@dimen/default_margin_one_half" app:layout_constraintBottom_toBottomOf="@id/appIcon" app:layout_constraintStart_toEndOf="@id/appIcon" app:layout_constraintTop_toBottomOf="@id/pageDesc" app:layout_constraintVertical_chainStyle="packed" style="@style/Bazaar.Text.Caption.Info" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+    <include layout="@layout/layout_page_non_data" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="enter_phone_title_height">42.0dip</dimen>
+    <dimen name="height_jek_tutorial">165.0dip</dimen>
+    <dimen name="item_tour_tour_options_height">300.0dip</dimen>
+    <dimen name="skippable_phone_verification_header_height">172.0dip</dimen>
+    <dimen name="skippable_phone_verification_header_image_size">76.0dip</dimen>
+</resources>

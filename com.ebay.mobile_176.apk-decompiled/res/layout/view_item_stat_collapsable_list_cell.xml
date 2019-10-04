@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/stat_layout" style="@style/StyleGuideViewItemStatCell">
+        <TextView android:id="@id/stat_key" android:text="Unset key" style="@style/StyleGuideViewItemStatKey" />
+        <LinearLayout android:orientation="vertical" android:id="@id/stat_value" style="@style/StyleGuideViewItemStatValue" />
+        <LinearLayout android:orientation="vertical" android:id="@id/stat_values" android:visibility="gone" style="@style/StyleGuideViewItemStatValue" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/see_all" android:tag="0" android:focusable="true" android:visibility="gone" style="@style/StyleGuideViewItemStatCell">
+        <TextView android:text="" style="@style/StyleGuideViewItemStatKey" />
+        <LinearLayout android:orientation="vertical" style="@style/StyleGuideViewItemStatValue">
+            <TextView android:textColor="?colorAccent" android:gravity="center_vertical" android:id="@id/show_more_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/overflow_list_more" android:includeFontPadding="false" android:drawableRight="@drawable/ic_arrow_drop_down" />
+            <TextView android:textColor="?colorAccent" android:gravity="center_vertical" android:id="@id/show_less_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/overflow_list_less" android:includeFontPadding="false" android:drawableRight="@drawable/ic_arrow_drop_up" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

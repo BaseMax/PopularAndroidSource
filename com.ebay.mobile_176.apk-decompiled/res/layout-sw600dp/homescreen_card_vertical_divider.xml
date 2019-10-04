@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:background="?listContainerOutsideBackground" android:layout_width="@dimen/borderSizeThin" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayPadding2x" android:layout_marginRight="@dimen/ebayPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/inflow_seek_survey_edit_text_parent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/inflow_seek_survey_ratings_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayContentHeaderLeftMargin" android:layout_marginStart="@dimen/ebayContentHeaderLeftMargin" android:layout_marginEnd="@dimen/ebayContentHeaderLeftMargin" android:labelFor="@id/inflow_seek_survey_edit_text" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView android:id="@id/inflow_seek_scroll_contentss" android:paddingTop="@dimen/baseline_unit_3x" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingTop="@dimen/baseline_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayContentHeaderRightMargin" android:layout_marginStart="@dimen/ebayContentHeaderRightMargin" android:layout_marginEnd="@dimen/ebayContentHeaderRightMargin" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/inflow_seek_survey_ratings_title" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

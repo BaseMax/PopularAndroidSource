@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left|top" android:orientation="horizontal" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding15" android:focusable="true" android:minHeight="?android:listPreferredItemHeight" style="@style/StyleGuideViewItemStatCell">
+        <TextView android:id="@id/ebp_key" style="@style/StyleGuideViewItemStatKey" />
+        <LinearLayout android:orientation="vertical" style="@style/StyleGuideViewItemStatValue">
+            <TextView android:textAppearance="?textAppearanceBody1" android:gravity="left" android:id="@id/auth_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="left" android:id="@id/auth_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/view_item_chevron" />
+</RelativeLayout>

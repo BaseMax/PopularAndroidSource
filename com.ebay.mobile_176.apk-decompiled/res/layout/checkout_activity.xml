@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ebay="http://schemas.android.com/apk/res-auto" xmlns:shimmer="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/progress_container" />
+    <RelativeLayout android:id="@id/xo_content" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:orientation="vertical" android:id="@id/xo_scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/checkout_footer" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/checkout_banner_container" />
+                <include layout="@layout/checkout_error_container" />
+                <LinearLayout android:orientation="vertical" android:id="@id/seller_buckets" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CheckoutCard">
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/xoMarginMediumLarge" android:paddingRight="@dimen/xoMarginMediumLarge" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ship_to_link" android:paddingTop="@dimen/xoMarginMedium" android:paddingBottom="@dimen/xoMarginMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Row">
+                            <TextView android:textAppearance="?textAppearanceBody1" android:layout_gravity="top" android:id="@id/ship_to_label" android:layout_width="@dimen/xoLeftContentWidth" android:layout_height="wrap_content" android:layout_marginRight="@dimen/xoMarginSmall" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textAppearance="?textAppearanceCaption1" android:layout_gravity="left" android:id="@id/ship_to_local_pickup" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xo_cart_local_pickup_shipping" />
+                                <TextView android:textAppearance="?textAppearanceCaption1" android:layout_gravity="left" android:id="@id/ship_to_local_pickup_location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutListContainerMargin" />
+                                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/ship_to_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                                <include android:id="@id/ship_to_error_container" layout="@layout/checkout_inline_alert" />
+                            </LinearLayout>
+                            <ImageView android:id="@id/ship_to_chevron" android:importantForAccessibility="no" style="@style/Checkout.Chevron.Right" />
+                        </LinearLayout>
+                        <View android:id="@id/after_ship_to_divider" android:visibility="gone" style="@style/CommonDivider" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/documents_link" android:paddingTop="@dimen/xoMarginMedium" android:paddingBottom="@dimen/xoMarginMedium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Row">
+                            <TextView android:textAppearance="?textAppearanceBody1" android:layout_gravity="top" android:id="@id/documents_label" android:layout_width="@dimen/xoLeftContentWidth" android:layout_height="wrap_content" android:layout_marginRight="@dimen/xoMarginSmall" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textAppearance="?textAppearanceCaption1" android:layout_gravity="left" android:id="@id/documents_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <include android:id="@id/documents_error" layout="@layout/checkout_inline_alert" />
+                            </LinearLayout>
+                            <ImageView style="@style/Checkout.Chevron.Right" />
+                        </LinearLayout>
+                        <View android:id="@id/documents_divider" style="@style/CommonDivider" />
+                        <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/checkout_payment_cell_shimmer_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" shimmer:shimmer_auto_start="false" shimmer:shimmer_repeat_delay="@integer/checkout_shimmer_delay" shimmer:shimmer_tilt="@integer/checkout_shimmer_tilt">
+                            <include layout="@layout/checkout_pay_with_placeholder" />
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/payment_link" android:paddingTop="@dimen/xoMarginMedium" android:paddingBottom="@dimen/xoMarginMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Row">
+                            <RelativeLayout android:id="@id/payment_image_container" android:layout_width="@dimen/xoLeftContentWidth" android:layout_height="wrap_content" android:layout_marginRight="@dimen/xoMarginSmall" shimmer:layout_constraintLeft_toLeftOf="parent" shimmer:layout_constraintTop_toTopOf="parent">
+                                <com.ebay.android.widget.RemoteImageView android:id="@id/payment_image" android:layout_width="@dimen/xoPaymentDetailsImageWidth" android:layout_height="@dimen/xoPaymentDetailsImageHeight" android:layout_marginTop="@dimen/xoMarginSmall" android:layout_marginRight="@dimen/xoMarginSmall" android:scaleType="fitStart" android:layout_alignParentTop="true" android:contentDescription="@null" shimmer:fadeInDuration="@integer/checkoutImageFadeInDuration" />
+                                <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/payment_label" android:visibility="visible" android:layout_width="@dimen/xoLeftContentWidth" android:layout_height="wrap_content" android:layout_marginRight="@dimen/xoMarginSmall" android:layout_alignParentTop="true" />
+                            </RelativeLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@id/payment_info_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginSmall" shimmer:layout_constraintLeft_toRightOf="@id/payment_image_container" shimmer:layout_constraintRight_toLeftOf="@id/payment_chevron" shimmer:layout_constraintTop_toTopOf="parent">
+                                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/payment_main_text" android:paddingLeft="0.0dip" android:paddingRight="@dimen/xoMarginMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/payment_method_promotion" android:paddingLeft="0.0dip" android:paddingRight="@dimen/xoMarginMedium" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <TextView android:textAppearance="?textAppearanceCaption1" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/payment_method_sub_promotion" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <LinearLayout android:orientation="vertical" android:id="@id/payment_funding_sources" android:paddingLeft="0.0dip" android:paddingRight="@dimen/xoMarginMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                                <TextView android:textAppearance="?textAppearanceCaption1" android:orientation="vertical" android:id="@id/payment_method_display_text" android:paddingLeft="0.0dip" android:paddingRight="@dimen/xoMarginMedium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                                <TextView android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/payment_method_weblink" android:paddingLeft="0.0dip" android:paddingRight="@dimen/xoMarginMedium" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Xo.Link" />
+                            </LinearLayout>
+                            <ImageView android:id="@id/payment_chevron" android:visibility="visible" shimmer:layout_constraintBottom_toBottomOf="@id/payment_info_container" shimmer:layout_constraintRight_toRightOf="parent" shimmer:layout_constraintTop_toTopOf="parent" style="@style/Checkout.Chevron.Right" />
+                            <include android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xoMarginSmall" shimmer:layout_constraintEnd_toEndOf="@id/payment_chevron" shimmer:layout_constraintStart_toStartOf="@id/payment_info_container" shimmer:layout_constraintTop_toBottomOf="@id/payment_info_container" layout="@layout/checkout_payment_exchange_rate" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/payment_remember_instrument_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" style="@style/Xo.Row">
+                            <FrameLayout android:layout_width="@dimen/xoLeftContentWidth" android:layout_height="wrap_content" android:layout_marginRight="@dimen/xoMarginSmall" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <View style="@style/CommonDivider" />
+                                <androidx.appcompat.widget.SwitchCompat android:textAppearance="?textAppearanceCaption1" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/payment_remember_instrument_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xoMarginSmall" android:layout_marginBottom="@dimen/xoMarginSmall" android:text="@string/prox_remember_instrument_label" shimmer:switchTextAppearance="?textAppearanceCaption1" />
+                                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/payment_remember_instrument_info" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xoMarginSmall" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:id="@id/points_redemption_divider" style="@style/CommonDivider" />
+                        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/rewards_link" android:paddingTop="@dimen/xoMarginMedium" android:paddingBottom="@dimen/xoMarginMedium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Row">
+                            <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/rewards_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:drawableRight="?spokeChevronDrawable" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <View android:id="@id/payment_divider" style="@style/CommonDivider" />
+                        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/incentive_link" android:paddingTop="@dimen/xoMarginMedium" android:paddingBottom="@dimen/xoMarginMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Row">
+                            <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/incentive_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:drawableRight="?spokeChevronDrawable" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <View android:id="@id/donation_divider" style="@style/CommonDivider" />
+                        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/donation_link" android:paddingTop="@dimen/xoMarginMedium" android:paddingBottom="@dimen/xoMarginMedium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Row">
+                            <TextView android:textAppearance="?textAppearanceBody1" android:layout_gravity="top" android:id="@id/donate_to_label" android:layout_width="@dimen/xoLeftContentWidth" android:layout_height="wrap_content" android:layout_marginRight="@dimen/xoMarginSmall" />
+                            <TextView android:textAppearance="?textAppearanceCaption1" android:gravity="center_vertical" android:layout_gravity="center|top" android:id="@id/donation_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:drawableRight="?spokeChevronDrawable" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <View android:id="@id/ship_to_card_divider_ds6" style="@style/Xo.Divider.Ds6" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <LinearLayout android:orientation="vertical" android:id="@id/checkout_summary_items" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginTop="@dimen/xoMarginLarge" android:layout_marginRight="@dimen/xoMarginMediumLarge" android:layout_marginBottom="@dimen/xoMarginSmall" />
+                <View android:id="@id/checkout_summary_divider" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginRight="@dimen/xoMarginMediumLarge" style="@style/CommonDivider.Dark" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginTop="@dimen/xoMarginSmall" android:layout_marginRight="@dimen/xoMarginMediumLarge" android:layout_marginBottom="@dimen/xoMarginSmall">
+                    <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/checkout_total_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+                    <TextView android:textAppearance="?textAppearanceTitle2" android:gravity="right" android:layout_gravity="bottom" android:id="@id/checkout_total_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/checkout_total_label" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/checkout_order_price_messages_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginRight="@dimen/xoMarginMediumLarge" />
+                <LinearLayout android:orientation="vertical" android:id="@id/paypal_credit_message_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginRight="@dimen/xoMarginMediumLarge" android:layout_marginBottom="@dimen/xoMarginLarge" />
+                <LinearLayout android:orientation="vertical" android:id="@id/loyalty_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/user_agreements" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:layout_gravity="center" android:id="@id/survey_module_title" android:paddingBottom="@dimen/xoMarginSmall" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="?survey_link_selected" android:layout_gravity="center" android:id="@id/survey_link" android:paddingBottom="@dimen/ebayPadding3x" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/checkout_footer" android:background="@drawable/bottom_action_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:enabled="false" android:textSize="@dimen/ebayTextSize" android:gravity="center" android:id="@id/purchase_link" android:layout_width="fill_parent" android:layout_height="@dimen/clickableButtonDimen" android:layout_margin="@dimen/xoMarginSmall" android:text="@string/LEGAL_xo_cart_place_order" android:drawableLeft="@drawable/ic_lock_closed_white_24dp" style="@style/EbayButton.Blue.Letterboxed.Modal" />
+            <include layout="@layout/buy_with_googlepay_button" />
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

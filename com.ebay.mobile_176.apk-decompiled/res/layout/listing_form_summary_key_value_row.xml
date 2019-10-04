@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/listingFormOverviewKey" android:layout_width="0.0dip" android:layout_weight="0.4" style="@style/Sell.FormValue.Label" />
+    <TextView android:id="@id/listingFormOverviewValue" android:layout_width="0.0dip" android:layout_weight="0.6" style="@style/Sell.FormValue" />
+</LinearLayout>

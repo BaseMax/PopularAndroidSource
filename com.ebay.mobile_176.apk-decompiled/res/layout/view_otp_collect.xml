@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/bt_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/otp_next" android:layout_alignParentBottom="true" android:contentDescription="@string/otp_next" style="@style/EbayButton.Blue" />
+    <RelativeLayout android:id="@id/view_progress" android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bt_continue">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+            <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center_vertical" android:id="@id/otp_collect_message" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayPadding2x" android:text="@string/otp_collect_message" />
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/view_text_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayPadding2x">
+                <com.google.android.material.textfield.TextInputEditText android:textAppearance="?textAppearanceSubhead" android:textSize="@dimen/ebayTextSize" android:textColorHint="?android:textColorHint" android:id="@id/et_email_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/sign_in_username_hint2" android:maxLines="1" android:inputType="textEmailAddress" android:imeOptions="actionGo" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

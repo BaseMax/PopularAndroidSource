@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/radio_button_stroke_width_24dp" android:color="@color/color_accent" />
+    <size android:height="@dimen/radio_button_height_24dp" android:width="@dimen/radio_button_width_24dp" />
+</shape>

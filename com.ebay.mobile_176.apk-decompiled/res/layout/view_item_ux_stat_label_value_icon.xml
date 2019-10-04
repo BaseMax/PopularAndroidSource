@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/stat_layout" android:tag="layout/view_item_ux_stat_label_value_icon_0" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/stat_key" android:tag="binding_1" style="@style/StyleGuideViewItemStatKey" />
+    <RelativeLayout android:layout_marginRight="0.0dip" style="@style/StyleGuideViewItemStatValue">
+        <TextView android:id="@id/stat_value" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <ImageButton android:id="@id/button_header_info" android:tag="binding_3" android:background="?android:selectableItemBackground" android:layout_width="@dimen/min_touch_target_unit" android:layout_height="@dimen/min_touch_target_unit" android:tint="?iconTintColor" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

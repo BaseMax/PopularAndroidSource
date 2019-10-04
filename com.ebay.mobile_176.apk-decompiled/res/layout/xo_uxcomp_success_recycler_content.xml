@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/xo_uxcomp_success_recycler_content_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scrolling_container" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/go_to_cart_footer" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/main_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:tag="binding_1" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view_main" android:focusable="false" android:scrollbars="vertical" android:clipToPadding="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+                <ViewStub android:id="@id/container_empty" android:layout="@layout/common_load_content_error" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ViewStub android:id="@id/container_error" android:layout="@layout/common_load_content_error" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <include layout="@layout/progress_container" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ad_fragment_layout" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/merch_fragment_layout" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/go_to_cart_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/scrolling_container" layout="@layout/xo_uxcomp_go_to_cart_guidance_module" />
+</androidx.constraintlayout.widget.ConstraintLayout>

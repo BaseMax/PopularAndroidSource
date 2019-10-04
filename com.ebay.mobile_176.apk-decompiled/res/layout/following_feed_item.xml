@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FLinearLayout android:orientation="vertical" android:background="?cardColor" android:layout_width="fill_parent" android:layout_height="fill_parent" app:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/image1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" android:contentDescription="@null" app:averageBackgroundColor="true" />
+    <include layout="@layout/feed_row_price" />
+</com.ebay.mobile.widget.FLinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/buybox_container" android:tag="layout/view_item_ux_title_and_price_0" android:background="?containerBackgroundColor" android:paddingTop="0.0dip" android:paddingBottom="?containerContentPaddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="?containerMarginBottom" android:paddingStart="@dimen/ebayContentSideMargin" android:paddingEnd="@dimen/ebayContentSideMargin" contentPaddingTop="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_item_title_and_price_fragment" />
+</LinearLayout>

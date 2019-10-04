@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/map_controller_navigation" app:startDestination="@id/googlemap_controller"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="cab.snapp.mapmodule.units.googlemap.GoogleMapController" android:id="@id/googlemap_controller" />
+</navigation>

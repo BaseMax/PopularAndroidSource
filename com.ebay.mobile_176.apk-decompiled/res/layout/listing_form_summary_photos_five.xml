@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/photos_container" android:tag="layout/listing_form_summary_photos_five_0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="1.0" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <FrameLayout android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/borderSize" android:foreground="@drawable/sell_image_border" android:layout_weight="0.5">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/photomanager2_cell" />
+            </FrameLayout>
+            <RelativeLayout android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/borderSize" android:foreground="@drawable/sell_image_border" android:layout_weight="0.5">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/photomanager2_cell" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/borderSize" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="3.0" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <RelativeLayout android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/borderSize" android:foreground="@drawable/sell_image_border" android:layout_weight="1.0">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/photomanager2_cell" />
+            </RelativeLayout>
+            <RelativeLayout android:tag="binding_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/borderSize" android:layout_marginRight="@dimen/borderSize" android:foreground="@drawable/sell_image_border" android:layout_weight="1.0">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/photomanager2_cell" />
+            </RelativeLayout>
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/borderSize" android:layout_weight="1.0">
+                <RelativeLayout android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/sell_image_border">
+                    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/photomanager2_cell" />
+                </RelativeLayout>
+                <TextView android:textAppearance="?textAppearanceDisplay1" android:textColor="@color/apptentive_material_white" android:gravity="center" android:id="@id/more_photos_overlay" android:background="#8c000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

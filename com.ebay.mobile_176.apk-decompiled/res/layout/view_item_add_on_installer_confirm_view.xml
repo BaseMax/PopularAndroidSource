@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_item_add_on_installer_confirm_view_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/view_item_add_on_installer_confirm_body" />
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/continue_with_installation" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/installer_confirmation_with_install" style="@style/EbayButton" />
+        <Button android:id="@id/continue_without_installation" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/installer_confirmation_without_install" style="@style/EbayButton.Flat" />
+    </LinearLayout>
+</LinearLayout>

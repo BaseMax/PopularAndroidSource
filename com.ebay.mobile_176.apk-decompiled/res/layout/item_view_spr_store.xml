@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textColor="?colorConfirm" android:id="@id/availability" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/address" />
+    <TextView android:textColor="?android:textColorSecondary" android:id="@id/fulfillment_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/availability" />
+</RelativeLayout>

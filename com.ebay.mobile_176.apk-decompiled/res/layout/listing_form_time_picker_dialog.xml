@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TimePicker android:id="@id/start_time_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="200.0dip" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/cancel_button" android:text="@string/cancel" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/ok_button" app:layout_constraintTop_toTopOf="parent" style="@style/EbayButton.Flat" />
+            <Button android:id="@id/ok_button" android:text="@string/ok" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/EbayButton.Flat" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

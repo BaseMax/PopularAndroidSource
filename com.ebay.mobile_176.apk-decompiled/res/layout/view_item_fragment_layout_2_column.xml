@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:tag="layout/view_item_fragment_layout_2_column_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/view_item_ux_gallery_container" android:tag="binding_1" android:scrollbars="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" app:layoutManager="LinearLayoutManager" />
+    <include android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" layout="@layout/view_item_fragment_layout_simple" />
+</LinearLayout>

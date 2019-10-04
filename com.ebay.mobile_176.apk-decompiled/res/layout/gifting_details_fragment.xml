@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/ebayPadding" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Switch android:id="@id/giftSwitch" android:paddingLeft="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/this_gift" android:contentDescription="@string/gift_details_switch_turn_off" android:switchTextAppearance="?textAppearanceTitle1" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?textColorSecondaryAlt" android:layout_gravity="center_vertical" android:id="@id/giftEmailText" android:paddingLeft="@dimen/ebayPaddingHalf" android:paddingTop="@dimen/ebayPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gift_details_email_message" />
+    <LinearLayout android:orientation="vertical" android:id="@id/giftDetailsLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:layout_gravity="center" android:id="@id/reEmail" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/gift_details_edit_email" android:alpha="0.0" android:labelFor="@id/recipient_email_edit_text" />
+            <com.google.android.material.textfield.TextInputEditText android:layout_gravity="center" android:id="@id/recipient_email_edit_text" android:paddingRight="@dimen/ebayPadding5x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/gift_details_edit_email" android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/seName" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/gift_details_edit_sender_name" android:alpha="0.0" android:labelFor="@id/sender_name_edit_text" />
+            <com.google.android.material.textfield.TextInputEditText android:id="@id/sender_name_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/gift_details_edit_sender_name" android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" app:counterEnabled="true" app:counterMaxLength="@integer/gifting_max_message_length" app:counterOverflowTextAppearance="@style/GiftingEditTextCountError" app:counterTextAppearance="@style/GiftingEditTextCount">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/gift_details_edit_message" android:alpha="0.0" android:labelFor="@id/message_edit_text" />
+            <com.google.android.material.textfield.TextInputEditText android:id="@id/message_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/gift_details_edit_message" android:maxLines="1" android:maxLength="@integer/gifting_max_message_length" android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</LinearLayout>

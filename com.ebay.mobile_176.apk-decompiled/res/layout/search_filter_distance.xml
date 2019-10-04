@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_filter_distance_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?android:listDivider" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/filter_list_item_min_height">
+        <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/loc_zipcode_label" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_postal_code" android:layout_toLeftOf="@id/button_use_location" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:labelFor="@id/textbox_zipcode" />
+        <EditText android:ellipsize="end" android:id="@id/textbox_zipcode" android:duplicateParentState="true" android:layout_width="120.0dip" android:layout_height="wrap_content" android:maxLines="1" android:selectAllOnFocus="true" android:maxLength="15" android:freezesText="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionDone" />
+        <ImageButton android:id="@id/button_use_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_current_location" android:layout_toLeftOf="@id/textbox_zipcode" android:layout_centerVertical="true" android:contentDescription="@string/search_refinement_loc_my_location_prompt" style="@style/EbayButton.Flat" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/tag_search_filter_lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/EbayButton.CompoundButton.CheckBox.Lock" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/button_max_distance" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/filter_list_item_min_height">
+            <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/textview_distance_displayname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_refinement_loc_distance" />
+            <TextView android:enabled="false" android:ellipsize="end" android:id="@id/textview_distance_secondaryname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Refine.Caption" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

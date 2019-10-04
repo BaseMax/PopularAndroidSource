@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.passenger.units.credit.CreditView android:orientation="vertical" android:background="@color/pure_white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_toolbar_primary" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/view_credit_empty" android:padding="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/ic_empty_credits" android:scaleType="centerInside" android:contentDescription="@string/add_credit_label" />
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/brown_grey" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/add_credit_label" style="@style/TextView.Default.Medium" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/view_credit_rv" android:background="@color/pure_white" android:padding="8.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <cab.snapp.snappuikit.SnappFloatingActionButton android:layout_gravity="start|bottom|center" android:id="@id/view_credit_add_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:src="@drawable/fab_add_rebr" android:contentDescription="@string/add_favorite" app:fabColorNormal="@color/colorAccent" app:fabColorPressed="@color/colorPrimary" app:fabColorRipple="@color/colorPrimaryDark" app:fabMode="normal" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</cab.snapp.passenger.units.credit.CreditView>

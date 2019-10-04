@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vehicle_history_report_unavailable_reason_list">
+        <item>Il veicolo è troppo recente per avere un report sulla sua storia.</item>
+        <item>Il veicolo è antecedente al 1981.</item>
+        <item>Il veicolo non ha il VIN a 17 cifre.</item>
+        <item>Il veicolo non è stato prodotto per il mercato americano (ad esempio, è una serie limitata di un Paese straniero).</item>
+        <item>Il venditore non ha inserito il numero VIN corretto.</item>
+    </string-array>
+</resources>

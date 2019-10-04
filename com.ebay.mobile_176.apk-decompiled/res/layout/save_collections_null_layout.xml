@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/collections_null_layout" android:background="?cardColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="?cardColor" android:paddingTop="@dimen/ebayPadding3x" android:paddingBottom="@dimen/ebayPadding5x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/followingTitleTextSize" android:textColor="@color/style_guide_primary" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_collections_null_title" />
+        <TextView android:textAppearance="?textAppearanceBody2" android:textColor="?textColorSecondaryAlt" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin4x" android:text="@string/save_collections_null_message" />
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="275.0dip" android:layout_height="165.0dip" android:layout_marginBottom="@dimen/ebayMargin5x" android:src="@drawable/null_state_collections" android:contentDescription="@null" />
+    </LinearLayout>
+</ScrollView>

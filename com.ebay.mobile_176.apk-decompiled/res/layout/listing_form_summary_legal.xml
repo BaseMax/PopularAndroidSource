@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/listing_form_legal_container" android:tag="layout/listing_form_summary_legal_0" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.Card.ListingForm.Summary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/finalize_legal_text_parent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin15">
+        <TextView android:id="@id/finalize_legal_text_pricing_guidance" android:visibility="gone" android:text="@string/LEGAL_sell_pricing_guidance" style="?listingFormSummaryLegalTextStyle" />
+        <TextView android:id="@id/finalize_legal_text_postage_guidance" android:visibility="gone" android:text="@string/LEGAL_AU_sell_postage_charge" style="?listingFormSummaryLegalTextStyle" />
+        <com.ebay.mobile.listingform.helper.CustomStyleTextView android:id="@id/finalize_legal_text_pending_payments" android:visibility="gone" android:text="@string/LEGAL_sell_pending_paypal_payments" style="?listingFormSummaryLegalTextStyle" />
+        <TextView android:id="@id/finalize_legal_text_gtc" android:visibility="gone" android:text="@string/LEGAL_sell_gtc" style="?listingFormSummaryLegalTextStyle" />
+        <TextView android:id="@id/final_value_fee_legal_gtc" android:visibility="gone" android:text="@string/LEGAL_UK_sell_final_value_fee_gtc" style="?listingFormSummaryLegalTextStyle" />
+        <TextView android:id="@id/finalize_legal_text_trending_price" android:visibility="gone" android:text="@string/LEGAL_sell_trending_price" style="?listingFormSummaryLegalTextStyle" />
+        <TextView android:id="@id/finalize_auto_relist_legal" android:visibility="gone" style="?listingFormSummaryLegalTextStyle" />
+    </LinearLayout>
+</RelativeLayout>

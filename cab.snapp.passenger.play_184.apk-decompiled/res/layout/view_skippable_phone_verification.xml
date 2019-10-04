@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.passenger.units.skippable_mobile_verification.SkippablePhoneVerificationView android:orientation="vertical" android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/skippable_phone_verification_header_height" android:animateLayoutChanges="true">
+        <ImageButton android:id="@id/view_skippable_toolbar_back_ib" android:background="@color/transparent" android:padding="@dimen/padding_medium" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_arrow_back_teal_24dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:gravity="center_vertical" android:id="@id/view_skippable_toolbar_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_phone_number" android:layout_toRightOf="@id/view_skippable_toolbar_back_ib" android:layout_alignTop="@id/view_skippable_toolbar_back_ib" android:layout_alignBottom="@id/view_skippable_toolbar_back_ib" style="@style/TextView.Default.Medium" />
+        <ImageView android:id="@id/view_skippable_big_icon" android:layout_width="@dimen/skippable_phone_verification_header_image_size" android:layout_height="@dimen/skippable_phone_verification_header_image_size" android:src="@drawable/ic_phone_dial_90dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+        <RelativeLayout android:id="@id/view_skippable_phone_number_entry_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_skippable_phone_number_skip_layout">
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/brown_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:text="@string/fill_phone" style="@style/TextView.Default.Medium" />
+                    <cab.snapp.snappuikit.SnappEditText android:id="@id/view_skippable_phone_number_et" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:textDirection="rtl" app:etHint="@string/mobile_phone_number_hint" app:etInputType="phone" app:etMaxLength="11" app:etTextIcon="@drawable/v_ic_phone_diactive_24_dp" app:etTextIconActivated="@drawable/v_ic_phone_active_24_dp" style="@style/SnappEditText" />
+                    <cab.snapp.snappuikit.SnappLoading android:layout_gravity="center" android:id="@id/view_skippable_code_loading_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" app:snappLoadingTheme="accent" />
+                    <androidx.appcompat.widget.AppCompatButton android:textColor="@color/pure_white" android:id="@id/view_skippable_phone_number_continue" android:background="@drawable/shape_rounded_gray" android:layout_width="fill_parent" android:layout_marginTop="24.0dip" android:text="@string/next" style="@style/SnappButton.Accent" />
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout android:orientation="vertical" android:id="@id/view_skippable_phone_number_skip_layout" android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_alignParentBottom="true">
+                <View android:background="@color/white_eight" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/skip_sign_up_phone_number" style="@style/TextView.Default.Medium" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/view_skippable_phone_number_verification_layout" android:padding="@dimen/padding_medium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:id="@id/view_skippable_phone_number_tv" style="@style/TextView.Bold.ExtraLarge" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/bluish_grey" android:layout_marginTop="@dimen/margin_small" android:text="@string/enter_verification_code" style="@style/TextView.Default.Medium" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+                        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/cherry" android:id="@id/view_skippable_code_error_tv" android:padding="@dimen/padding_very_small" style="@style/TextView.Default.Medium" />
+                        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorAccent" android:id="@id/view_skippable_retry_code_tv" android:padding="@dimen/padding_very_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/verification_code_retry" style="@style/TextView.Default.Medium" />
+                    </LinearLayout>
+                    <com.alimuzaffar.lib.pin.PinEntryEditText android:textSize="24.0sp" android:textColor="@color/colorPrimaryDark" android:id="@id/view_skippable_phone_number_pin_input_view" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:cursorVisible="false" android:maxLength="6" android:digits="\ 1234567890" android:layout_centerInParent="true" android:inputType="number" android:textIsSelectable="false" android:layoutDirection="ltr" app:pinBackgroundDrawable="@drawable/selector_pin_line" app:pinBackgroundIsSquare="false" app:pinCharacterSpacing="16.0dip" app:pinTextBottomPadding="6.0dip" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip">
+                        <androidx.appcompat.widget.AppCompatButton android:enabled="false" android:textSize="16.0sp" android:id="@id/view_skippable_code_sms_resend_btn" android:background="@drawable/selector_rounded_transparent_accent_border" android:paddingLeft="@dimen/padding_medium" android:paddingRight="@dimen/padding_medium" android:text="@string/sms_resend_count_down" android:layout_centerInParent="true" style="@style/Button" />
+                        <cab.snapp.snappuikit.SnappLoading android:id="@id/view_skippable_code_loading_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:snappLoadingTheme="accent" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+</cab.snapp.passenger.units.skippable_mobile_verification.SkippablePhoneVerificationView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/vehicle_refine_input_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeightQuantized">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/vehicle_refine_input_icon" android:background="@drawable/ic_textfield_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?iconTintColor" />
+            <EditText android:textAppearance="?textAppearanceSubhead" android:textColorHint="?android:textColorSecondary" android:ellipsize="end" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/vehicle_refine_input_search" android:background="@android:color/transparent" android:paddingLeft="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapWords" android:imeOptions="flagNoFullscreen" />
+        </LinearLayout>
+        <View style="@style/CommonDivider" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/listContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/vehicle_refine_input_container">
+        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="true" android:textFilterEnabled="true" android:divider="@null" style="@style/Refine.List" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:id="@id/internalEmpty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <include layout="@layout/progress_container" />
+</RelativeLayout>

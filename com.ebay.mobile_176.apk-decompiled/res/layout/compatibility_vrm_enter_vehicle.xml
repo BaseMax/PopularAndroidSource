@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/enter_vehicle_text_view" android:background="?cardColor" android:paddingTop="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginTop="@dimen/borderSize" android:layout_toLeftOf="@id/right_arrow_icon" android:layout_alignParentLeft="true">
+            <TextView android:textAppearance="?textAppearanceSubhead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/motors_help_text_reg_number" />
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/motors_enter_vehicle_mmy" />
+        </LinearLayout>
+        <ImageView android:id="@id/right_arrow_icon" android:paddingRight="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin2x" android:layout_marginTop="@dimen/borderSize" android:layout_marginRight="@dimen/borderSize" android:src="?spokeChevronDrawable" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/motors_enter_vehicle_mmy" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

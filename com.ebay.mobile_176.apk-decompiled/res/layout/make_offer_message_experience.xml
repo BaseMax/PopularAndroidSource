@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/make_offer_base_layout" android:tag="layout/make_offer_message_experience_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/offer_message_toolbar" android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation" ebay:contentInsetStart="0.0dip">
+        <ImageButton android:layout_gravity="center|left" android:id="@id/offer_button_close" android:tag="binding_1" android:background="?android:listChoiceBackgroundIndicator" android:padding="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_modal_x" android:layout_alignParentLeft="true" android:contentDescription="@string/close" />
+        <TextView android:textAppearance="?textAppearanceTitle2" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/offer_button_close" android:layout_centerVertical="true" />
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView android:id="@id/add_message_scroll_content" android:background="?listContainerBackground" style="@style/ItemView.TopScrollView">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/offer_message_scroll_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <EditText android:textAppearance="?textAppearanceBody1" android:textColorHint="?android:textColorSecondary" android:id="@id/offer_message_text" android:tag="binding_3" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x" android:inputType="textCapSentences|textMultiLine" />
+            <View android:layout_width="1.0dip" android:layout_height="0.0dip" android:minHeight="1.0dip" android:layout_weight="1.0" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/clickableButtonDimen">
+                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/offer_message_count" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <Button android:id="@id/offer_message_save" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/EbayButton.Flat" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

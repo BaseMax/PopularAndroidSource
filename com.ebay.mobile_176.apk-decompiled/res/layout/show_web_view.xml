@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/scroll_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.android.widget.MaxSizeLinearLayout android:id="@id/webview_container" style="@style/WebViewContainer">
+        <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.ebay.android.widget.ButtonBar android:layout_gravity="bottom" android:id="@id/button_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" ebay:positiveButtonId="@id/button_continue" ebay:positiveButtonText="@string/button_continue" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+    </com.ebay.android.widget.MaxSizeLinearLayout>
+    <include layout="@layout/common_progress" />
+</FrameLayout>

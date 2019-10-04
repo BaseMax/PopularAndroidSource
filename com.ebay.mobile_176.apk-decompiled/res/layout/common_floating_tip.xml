@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.nautilus.shell.quicktips.widget.BubbleLayout android:id="@id/quicktip_bubble_layout" android:tag="layout/common_floating_tip_0" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FloatingQuickTipBubbleLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/baseline_unit_2x" android:paddingTop="@dimen/baseline_unit_2x" android:paddingBottom="@dimen/baseline_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/quicktip_bubble_title" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/QuickTipTitle" />
+        <TextView android:id="@id/quicktip_bubble_message" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/QuickTipMessage" />
+    </LinearLayout>
+    <ImageButton android:layout_gravity="center|right|top" android:id="@id/quicktip_bubble_close" android:tag="binding_3" android:background="?android:selectableItemBackground" android:layout_width="@dimen/min_touch_target_unit" android:layout_height="@dimen/min_touch_target_unit" android:src="@drawable/ic_close_white_24dp" android:tint="@color/quick_tip_primary" />
+</com.ebay.nautilus.shell.quicktips.widget.BubbleLayout>

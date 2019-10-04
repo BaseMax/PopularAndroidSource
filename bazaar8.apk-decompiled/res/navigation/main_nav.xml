@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/main_nav" app:startDestination="@id/emptyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EmptyFragment" android:name="com.farsitel.bazaar.ui.base.EmptyFragment" android:id="@id/emptyFragment" />
+    <fragment android:label="HomeFragment" android:name="com.farsitel.bazaar.ui.home.HomeFragment" android:id="@id/homeFragment">
+        <action android:id="@id/actionHomeToAppdetail" app:destination="@id/appDetailFragment" />
+        <action android:id="@id/actionHomeToVideodetail" app:destination="@id/videoDetailFragment" />
+        <action android:id="@id/actionHomeToSeriesdetail" app:destination="@id/seriesDetailFragment" />
+    </fragment>
+    <action android:id="@id/action_global_homeFragment" app:destination="@id/homeFragment" />
+    <fragment android:label="AppFragment" android:name="com.farsitel.bazaar.ui.app.AppFragment" android:id="@id/appFragment">
+        <action android:id="@id/actionHomeToAppdetail" app:destination="@id/appDetailFragment" />
+        <action android:id="@id/actionHomeToVideodetail" app:destination="@id/videoDetailFragment" />
+        <action android:id="@id/actionHomeToSeriesdetail" app:destination="@id/seriesDetailFragment" />
+    </fragment>
+    <action android:id="@id/action_global_appFragment" app:destination="@id/appFragment" />
+    <fragment android:label="GameFragment" android:name="com.farsitel.bazaar.ui.game.GameFragment" android:id="@id/gameFragment">
+        <action android:id="@id/actionHomeToAppdetail" app:destination="@id/appDetailFragment" />
+        <action android:id="@id/actionHomeToVideodetail" app:destination="@id/videoDetailFragment" />
+        <action android:id="@id/actionHomeToSeriesdetail" app:destination="@id/seriesDetailFragment" />
+    </fragment>
+    <action android:id="@id/action_global_gameFragment" app:destination="@id/gameFragment" />
+    <fragment android:label="VideosFragment" android:name="com.farsitel.bazaar.ui.cinema.VideoFragment" android:id="@id/videosFragment">
+        <action android:id="@id/actionVideosToAppdetail" app:destination="@id/appDetailFragment" />
+        <action android:id="@id/actionVideosToVideodetail" app:destination="@id/videoDetailFragment" />
+        <action android:id="@id/actionHomeToSeriesdetail" app:destination="@id/seriesDetailFragment" />
+    </fragment>
+    <action android:id="@id/action_global_videosFragment" app:destination="@id/videosFragment" />
+    <fragment android:label="SearchFragment" android:name="com.farsitel.bazaar.ui.search.SearchFragment" android:id="@id/searchFragment">
+        <argument android:name="query" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="searchToken" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <action android:id="@id/action_searchFragment_to_searchChildFragmentChild" app:destination="@id/searchFragmentChild" />
+    </fragment>
+    <action android:id="@id/action_global_searchFragment" app:destination="@id/searchFragment" />
+    <fragment android:label="SearchFragmentChild" android:name="com.farsitel.bazaar.ui.search.SearchFragment" android:id="@id/searchFragmentChild">
+        <argument android:name="query" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="searchToken" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="referrer" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+    <action android:id="@id/action_global_searchChildFragment" app:destination="@id/searchFragmentChild" />
+    <fragment android:label="CategoriesFragment" android:name="com.farsitel.bazaar.ui.category.CategoriesFragment" android:id="@id/categoriesFragment" />
+    <fragment android:label="MyBazaarFragment" android:name="com.farsitel.bazaar.ui.mybazaar.MyBazaarFragment" android:id="@id/myBazaarFragment">
+        <action android:id="@id/action_myBazaar_to_profile_fragment" app:destination="@id/profileFragment" />
+    </fragment>
+    <action android:id="@id/action_global_MyBazaarFragment" app:destination="@id/myBazaarFragment" />
+    <fragment android:label="AppDetailFragment" android:name="com.farsitel.bazaar.ui.appdetail.AppDetailFragment" android:id="@id/appDetailFragment">
+        <argument android:name="packageName" app:argType="string" />
+        <argument android:name="referrer" app:argType="string" />
+        <argument android:name="shouldStartDownload" android:defaultValue="false" app:argType="boolean" />
+        <action android:id="@id/actionAppDetailToMoreDescription" app:destination="@id/moreDescriptionFragment" />
+        <action android:id="@id/actionAppDetailToAllReviews" app:destination="@id/reviewFragment" />
+        <action android:id="@id/actionAppDetailToScreenshotFragment" app:destination="@id/screenshotFragment" />
+        <action android:id="@id/actionAppDetailToPostComment" app:destination="@id/postAppCommentFragment" />
+        <action android:id="@id/actionAppDetailToReport" app:destination="@id/reportFragment" />
+        <action android:id="@id/actionAppDetailToMoreArticle" app:destination="@id/moreArticleFragment" />
+        <action android:id="@id/actionAppDetailToCategory" app:destination="@id/fehrestFragmentContainer" />
+        <action android:id="@id/actionAppDetailToAuthor" app:destination="@id/fehrestFragmentContainer" />
+        <action android:id="@id/actionAppDetailToMoreDescriptionDetail" app:destination="@id/moreDescriptionDetailFragment" />
+        <action android:id="@id/actionAppDetailToEditorChoiceFragment" app:destination="@id/editorChoiceFragment" />
+    </fragment>
+    <action android:id="@id/action_global_appDetailFragment" app:destination="@id/appDetailFragment" />
+    <fragment android:label="ReportAppFragment" android:name="com.farsitel.bazaar.ui.appdetail.report.ReportFragment" android:id="@id/reportFragment">
+        <argument android:name="toolbarInfo" app:argType="com.farsitel.bazaar.ui.appdetail.ToolbarInfoModel" />
+        <argument android:name="packageName" app:argType="string" />
+    </fragment>
+    <fragment android:label="AppMoreArticleFragment" android:name="com.farsitel.bazaar.ui.appdetail.article.MoreArticleFragment" android:id="@id/moreArticleFragment">
+        <argument android:name="moreArticleItem" app:argType="com.farsitel.bazaar.common.model.appdetail.MoreArticleItem" />
+        <argument android:name="toolbarInfo" app:argType="com.farsitel.bazaar.ui.appdetail.ToolbarInfoModel" />
+    </fragment>
+    <fragment android:label="AppMoreDescriptionFragment" android:name="com.farsitel.bazaar.ui.appdetail.MoreDescriptionFragment" android:id="@id/moreDescriptionFragment">
+        <argument android:name="appMoreDescription" app:argType="com.farsitel.bazaar.common.model.appdetail.AppMoreDescriptionItem" />
+        <action android:id="@id/actionMoreDescriptionToMoreDescriptionDetail" app:destination="@id/moreDescriptionDetailFragment" />
+    </fragment>
+    <fragment android:label="AppMoreDescriptionDetailFragment" android:name="com.farsitel.bazaar.ui.appdetail.MoreDescriptionDetailFragment" android:id="@id/moreDescriptionDetailFragment">
+        <argument android:name="toolbarInfo" app:argType="com.farsitel.bazaar.ui.appdetail.ToolbarInfoModel" />
+        <argument android:name="pageDesc" app:argType="string" />
+    </fragment>
+    <fragment android:label="ScreenshotFragment" android:name="com.farsitel.bazaar.ui.screenshot.ScreenshotFragment" android:id="@id/screenshotFragment">
+        <argument android:name="data" app:argType="com.farsitel.bazaar.ui.appdetail.ScreenShotPagerItem" />
+    </fragment>
+    <fragment android:label="AppReviewsFragment" android:name="com.farsitel.bazaar.ui.reviews.ReviewsFragment" android:id="@id/reviewFragment">
+        <argument android:name="reviewItem" app:argType="com.farsitel.bazaar.common.model.appdetail.ReviewActionItem" />
+        <argument android:name="toolbarInfo" app:argType="com.farsitel.bazaar.ui.appdetail.ToolbarInfoModel" />
+        <argument android:name="canPostComment" app:argType="boolean" />
+        <argument android:name="myRate" app:argType="integer" />
+    </fragment>
+    <fragment android:label="AppPostCommentFragment" android:name="com.farsitel.bazaar.ui.appdetail.comment.PostAppCommentFragment" android:id="@id/postAppCommentFragment">
+        <argument android:name="packageName" app:argType="string" />
+        <argument android:name="appVersionCode" app:argType="string" />
+        <argument android:name="defaultRateBar" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="toolbarInfo" app:argType="com.farsitel.bazaar.ui.appdetail.ToolbarInfoModel" />
+    </fragment>
+    <fragment android:label="VideoDetailFragment" android:name="com.farsitel.bazaar.ui.cinema.video.VideoDetailFragment" android:id="@id/videoDetailFragment">
+        <argument android:name="videoId" app:argType="string" />
+        <argument android:name="referrer" app:argType="string" />
+        <action android:id="@id/action_videoDetailFragment_to_videoDownloadFragment" app:destination="@id/videoDownloadFragment" />
+        <action android:id="@id/actionVideoDetailToAllReviews" app:destination="@id/videoReviewFragment" />
+        <action android:id="@id/action_videoDetailFragment_to_screenshotFragment" app:destination="@id/screenshotFragment" />
+    </fragment>
+    <fragment android:label="VideoDownloadFragment" android:name="com.farsitel.bazaar.ui.cinema.download.VideoDownloadFragment" android:id="@id/videoDownloadFragment">
+        <argument android:name="videoId" app:argType="string" />
+        <argument android:name="videoName" app:argType="string" />
+        <argument android:name="description" app:argType="string" app:nullable="true" />
+        <argument android:name="shareLink" app:argType="string" app:nullable="true" />
+        <argument android:name="referrer" app:argType="string" />
+    </fragment>
+    <action android:id="@id/action_global_videoDetailFragment" app:destination="@id/videoDetailFragment" />
+    <fragment android:label="videoReviewsFragment" android:name="com.farsitel.bazaar.ui.cinema.reviews.VideoReviewsFragment" android:id="@id/videoReviewFragment">
+        <argument android:name="referrer" app:argType="string" />
+        <argument android:name="videoId" app:argType="string" />
+        <argument android:name="toolbarInfo" app:argType="com.farsitel.bazaar.ui.appdetail.ToolbarInfoModel" />
+    </fragment>
+    <fragment android:label="PostVideoReviewFragment" android:name="com.farsitel.bazaar.ui.cinema.reviews.post.PostVideoCommentFragment" android:id="@id/postVideoReviewFragment">
+        <argument android:name="referrer" app:argType="string" />
+        <argument android:name="videoId" app:argType="string" />
+        <argument android:name="toolbarInfo" app:argType="com.farsitel.bazaar.ui.appdetail.ToolbarInfoModel" />
+    </fragment>
+    <fragment android:label="SeriesDetailFragment" android:name="com.farsitel.bazaar.ui.cinema.series.SeriesDetailFragment" android:id="@id/seriesDetailFragment">
+        <argument android:name="seriesId" app:argType="string" />
+        <argument android:name="seasonIndex" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="referrer" app:argType="string" />
+        <action android:id="@id/action_seriesDetailFragment_to_videoDownloadFragment" app:destination="@id/videoDownloadFragment" />
+        <action android:id="@id/action_seriesDetailFragment_to_screenshotFragment" app:destination="@id/screenshotFragment" />
+        <action android:id="@id/action_seriesDetailFragment_to_episodeDetailFragment" app:destination="@id/episodeDetailFragment" />
+    </fragment>
+    <action android:id="@id/action_global_seriesDetailFragment" app:destination="@id/seriesDetailFragment" />
+    <action android:id="@id/action_global_castPageFragment" app:destination="@id/castPageFragment" />
+    <fragment android:label="CastPageFragment" android:name="com.farsitel.bazaar.ui.cinema.cast.CastPageFragment" android:id="@id/castPageFragment">
+        <argument android:name="castId" app:argType="string" />
+        <argument android:name="titleName" app:argType="string" />
+        <argument android:name="referrer" app:argType="string" />
+    </fragment>
+    <fragment android:label="SeasonEpisodesFragment" android:name="com.farsitel.bazaar.ui.cinema.seasons.SeasonEpisodesFragment" android:id="@id/seasonsEpisodesFragment">
+        <argument android:name="seasonId" app:argType="string" />
+        <argument android:name="seasonIndex" app:argType="integer" />
+        <argument android:name="referrer" app:argType="string" />
+    </fragment>
+    <action android:id="@id/action_global_seasonEpisodeFragment" app:destination="@id/seasonsEpisodesFragment" />
+    <fragment android:label="EpisodeDetailFragment" android:name="com.farsitel.bazaar.ui.cinema.episode.EpisodeDetailFragment" android:id="@id/episodeDetailFragment">
+        <argument android:name="episodeId" app:argType="string" />
+        <argument android:name="seasonIndex" app:argType="integer" app:defaultValue="0" />
+        <argument android:name="referrer" app:argType="string" />
+        <action android:id="@id/actionEpisodeDetailToEpisodeDetail" app:destination="@id/episodeDetailFragment" />
+        <action android:id="@id/actionEpisodeDetailToAllReviews" app:destination="@id/videoReviewFragment" />
+    </fragment>
+    <action android:id="@id/action_global_episodeDetailFragment" app:destination="@id/episodeDetailFragment" />
+    <fragment android:label="FehrestFragmentContainer" android:name="com.farsitel.bazaar.ui.fehrest.FehrestFragmentContainer" android:id="@id/fehrestFragmentContainer">
+        <argument android:name="slug" android:defaultValue="home" app:argType="string" />
+        <argument android:name="showBackButton" android:defaultValue="true" app:argType="boolean" />
+        <argument android:name="toolbarName" app:argType="string" />
+        <argument android:name="referrer" app:argType="string" />
+    </fragment>
+    <fragment android:label="FehrestFragment" android:name="com.farsitel.bazaar.ui.fehrest.FehrestFragment" android:id="@id/fehrestFragment">
+        <argument android:name="fehrestParams" app:argType="com.farsitel.bazaar.ui.fehrest.FehrestParams" />
+        <argument android:name="referrer" app:argType="string" />
+    </fragment>
+    <action android:id="@id/action_global_fehrestFragment" app:destination="@id/fehrestFragmentContainer" />
+    <fragment android:label="PaymentWebViewFragment" android:name="com.farsitel.bazaar.ui.payment.web.PaymentWebViewFragment" android:id="@id/paymentWebViewFragment">
+        <argument android:name="url" app:argType="string" />
+        <argument android:name="fallbackId" android:defaultValue="-1" app:argType="integer" />
+        <argument android:name="fallbackBundle" android:defaultValue="@null" app:argType="android.os.Bundle" app:nullable="true" />
+        <argument android:name="cacheMode" android:defaultValue="-1" app:argType="integer" />
+        <argument android:name="finishRedirectUrl" app:argType="string" />
+    </fragment>
+    <action android:id="@id/action_global_paymentWebViewFragment" app:destination="@id/paymentWebViewFragment" />
+    <fragment android:label="ProfileFragment" android:name="com.farsitel.bazaar.ui.profile.ProfileFragment" android:id="@id/profileFragment">
+        <action android:id="@id/open_edit_nick_name_fragment" app:destination="@id/editNickNameFragment" app:enterAnim="@anim/slide_up_login" app:popExitAnim="@anim/slide_down" />
+        <action android:id="@id/open_gift_card_fragment" app:destination="@id/giftCardFragment" app:enterAnim="@anim/slide_up_login" app:popExitAnim="@anim/slide_down" />
+        <action android:id="@id/open_transactions_fragment" app:destination="@id/transactionFragment" />
+    </fragment>
+    <action android:id="@id/action_global_edit_nick_name_fragment" app:destination="@id/editNickNameFragment" app:enterAnim="@anim/slide_up_login" app:popExitAnim="@anim/slide_down" />
+    <fragment android:label="EditNickNameFragment" android:name="com.farsitel.bazaar.ui.profile.nickname.EditNickNameFragment" android:id="@id/editNickNameFragment" />
+    <fragment android:label="GiftCardFragment" android:name="com.farsitel.bazaar.ui.payment.giftcard.GiftCardFragment" android:id="@id/giftCardFragment" />
+    <fragment android:label="TransactionsFragment" android:name="com.farsitel.bazaar.ui.profile.transactions.TransactionsFragment" android:id="@id/transactionFragment" />
+    <fragment android:label="WebViewFragment" android:name="com.farsitel.bazaar.ui.webview.WebViewFragment" android:id="@id/webViewFragment">
+        <argument android:name="url" app:argType="string" />
+        <argument android:name="fallbackId" android:defaultValue="-1" app:argType="integer" />
+        <argument android:name="fallbackBundle" android:defaultValue="@null" app:argType="android.os.Bundle" app:nullable="true" />
+        <argument android:name="cacheMode" android:defaultValue="-1" app:argType="integer" />
+    </fragment>
+    <fragment android:label="SettingsFragment" android:name="com.farsitel.bazaar.ui.settings.SettingsFragment" android:id="@id/settingsFragment" />
+    <action android:id="@id/action_global_setting" app:destination="@id/settingsFragment" />
+    <fragment android:label="LatestDownloadedAppFragment" android:name="com.farsitel.bazaar.ui.latestdownloads.LatestDownloadedAppFragment" android:id="@id/latestDownloadFragment" />
+    <action android:id="@id/action_global_latestDownloadFragment" app:destination="@id/latestDownloadFragment" />
+    <fragment android:label="UpgradableAppsFragment" android:name="com.farsitel.bazaar.ui.upgradableapps.UpgradableAppsFragment" android:id="@id/upgradableAppsFragment" />
+    <action android:id="@id/action_global_upgradableAppsFragment" app:destination="@id/upgradableAppsFragment" />
+    <fragment android:label="VideoDownloadListFragment" android:name="com.farsitel.bazaar.ui.cinema.download.VideoDownloadListFragment" android:id="@id/videoDownloadListFragment" />
+    <action android:id="@id/action_global_videoDownloadListFragment" app:destination="@id/videoDownloadListFragment" />
+    <fragment android:label="BookmarkFragment" android:name="com.farsitel.bazaar.ui.bookmark.BookmarkFragment" android:id="@id/bookmarkFragment" />
+    <action android:id="@id/action_global_bookmarkFragment" app:destination="@id/bookmarkFragment" />
+    <fragment android:label="InstalledApps" android:name="com.farsitel.bazaar.ui.installedapp.InstalledAppsFragment" android:id="@id/installedAppsFragment" />
+    <action android:id="@id/action_global_installedAppsFragment" app:destination="@id/installedAppsFragment" />
+    <fragment android:label="ReleaseNoteFragment" android:name="com.farsitel.bazaar.ui.changelog.ReleaseNoteFragment" android:id="@id/releaseNoteFragment" />
+    <action android:id="@id/action_global_releaseNoteFragment" app:destination="@id/releaseNoteFragment" />
+    <fragment android:label="ReleaseNoteDialog" android:name="com.farsitel.bazaar.ui.changelog.dialog.ReleaseNoteDialog" android:id="@id/releaseNoteDialog" />
+    <action android:id="@id/action_global_maliciousAppFragment" app:destination="@id/maliciousAppFragment" />
+    <fragment android:label="MaliciousAppFragment" android:name="com.farsitel.bazaar.ui.malicious.MaliciousAppFragment" android:id="@id/maliciousAppFragment" />
+    <fragment android:label="BoughtVideosFragment" android:name="com.farsitel.bazaar.ui.boughtvideos.BoughtVideosFragment" android:id="@id/getBoughtVideoFragment" />
+    <fragment android:label="PlayedVideoFragment" android:name="com.farsitel.bazaar.ui.cinema.played.PlayedVideoFragment" android:id="@id/playedVideoFragment" />
+    <action android:id="@id/action_global_playedVideoFragment" app:destination="@id/playedVideoFragment" />
+    <fragment android:label="BoughtAppFragment" android:name="com.farsitel.bazaar.ui.boughtapp.BoughtAppFragment" android:id="@id/getBoughtAppFragment" />
+    <action android:id="@id/action_global_getBoughtAppFragment" app:destination="@id/getBoughtAppFragment" />
+    <action android:id="@id/action_global_developerReplyFragment" app:destination="@id/developerReplyFragment" />
+    <fragment android:label="DeveloperReply" android:name="com.farsitel.bazaar.ui.reviews.developer.DeveloperReplyFragment" android:id="@id/developerReplyFragment">
+        <argument android:name="reviewId" app:argType="integer" />
+    </fragment>
+    <fragment android:label="SubscriptionFragment" android:name="com.farsitel.bazaar.ui.subscription.SubscriptionFragment" android:id="@id/subscriptionFragment" />
+    <fragment android:label="LocationPermissionDialog" android:name="com.farsitel.bazaar.ui.home.location.LocationPermissionDialog" android:id="@id/locationPermissionDialog" />
+    <dialog android:label="GoToBazaarSettingForPermissionDialog" android:name="com.farsitel.bazaar.ui.app.permission.DialogGoToBazaarSettingForPermission" android:id="@id/goToBazaarSettingForPermissionDialog">
+        <argument android:name="title" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="description" app:argType="string" />
+    </dialog>
+    <action android:id="@id/action_global_goToBazaarSettingForPermissionDialog" app:destination="@id/goToBazaarSettingForPermissionDialog" />
+    <fragment android:label="EditorChoiceFragment" android:name="com.farsitel.bazaar.ui.editorchoice.EditorChoiceFragment" android:id="@id/editorChoiceFragment">
+        <argument android:name="slug" android:defaultValue="home" app:argType="string" />
+        <argument android:name="toolbarName" app:argType="string" />
+        <argument android:name="referrer" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+</navigation>

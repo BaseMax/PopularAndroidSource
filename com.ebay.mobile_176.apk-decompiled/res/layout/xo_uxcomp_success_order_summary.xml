@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/xo_uxcomp_success_order_summary_0" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/shipping_title" android:tag="binding_1" android:paddingTop="@dimen/ebayPadding" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/store_name" android:tag="binding_2" android:paddingTop="@dimen/xoSuccessShippingLineSpacingExtra" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/xoSuccessShippingLineSpacingExtra" />
+    <TextView android:id="@id/shipping_address" android:tag="binding_3" android:paddingTop="@dimen/xoSuccessShippingLineSpacingExtra" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/xoSuccessShippingLineSpacingExtra" />
+    <TextView android:id="@id/email" android:tag="binding_4" android:paddingTop="@dimen/xoSuccessShippingLineSpacingExtra" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/xoSuccessShippingLineSpacingExtra" />
+    <com.ebay.nautilus.shell.uxcomponents.widget.VerticalContainerView android:tag="binding_5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?verticalListItemsStyle" />
+</LinearLayout>

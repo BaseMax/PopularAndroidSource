@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.snappdialog.dialogViews.view.SnappRadioListDialogView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/list_content_type_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DialogText" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="start" android:id="@id/list_content_type_recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+</cab.snapp.snappdialog.dialogViews.view.SnappRadioListDialogView>

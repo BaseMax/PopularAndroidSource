@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_check_apps_update_title">
+        <item>روی WIFI و شبکهٔ سیم‌کارت</item>
+        <item>فقط روی WIFI</item>
+    </string-array>
+    <string-array name="settings_check_apps_update_values">
+        <item>@string/wifi_and_network_key</item>
+        <item>@string/wifi_key</item>
+    </string-array>
+    <string-array name="settings_locales_title">
+        <item>فارسی</item>
+        <item>English</item>
+    </string-array>
+</resources>

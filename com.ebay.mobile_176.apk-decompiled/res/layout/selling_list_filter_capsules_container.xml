@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.nautilus.shell.uxcomponents.widget.ScrollingContainerView android:id="@id/filter_capsule_scrolling_container" android:tag="layout/selling_list_filter_capsules_container_0" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?horizontalListItemsStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|right" android:orientation="vertical" android:tag="layout/xo_uxcomp_address_additional_option_render_summary_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/primary" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/xo_uxcomp_loadable_icon_and_text" />
+</LinearLayout>

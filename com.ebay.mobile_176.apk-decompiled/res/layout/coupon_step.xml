@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/coupon_step_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseline_unit" android:layout_marginRight="@dimen/baseline_unit_2x" android:layout_marginBottom="@dimen/baseline_unit_2x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceCaption2" android:gravity="center" android:id="@id/step_number" android:tag="binding_1" android:background="@drawable/coupon_circle" android:layout_width="@dimen/baseline_unit_4x" android:layout_height="@dimen/baseline_unit_4x" android:layout_marginRight="@dimen/baseline_unit_2x" android:layout_alignParentLeft="true" />
+    <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/step_title" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/baseline_unit" android:layout_toRightOf="@id/step_number" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/step_subtitle" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/step_number" android:layout_below="@id/step_title" />
+</RelativeLayout>

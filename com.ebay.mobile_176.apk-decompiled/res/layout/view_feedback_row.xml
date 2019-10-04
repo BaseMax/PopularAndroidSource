@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/text_header" android:paddingLeft="@dimen/ebayContentSideMargin" android:paddingRight="@dimen/ebayContentSideMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/EbayTextAppearance.Subhead.Secondary" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/feedback_content_layout" android:paddingLeft="@dimen/ebayContentSideMargin" android:paddingTop="@dimen/ebayPadding" android:paddingRight="@dimen/ebayContentSideMargin" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_spinner" android:layout_width="@dimen/ProgressSpinnerSize" android:layout_height="@dimen/ProgressSpinnerSize" android:layout_margin="@dimen/checkoutTinyMargin" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/feedback_type" android:background="@drawable/ic_positivefeedback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayStaticMargin" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/user" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:layout_gravity="center|left" android:id="@id/itemId" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginRight="@dimen/ebayContentSideMargin" layout="@layout/list_divider" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/listing_form_summary_aspects_0" android:paddingBottom="@dimen/ebayPadding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/item_details_module_header_tap_target" layout="@layout/listing_form_summary_header" />
+    <androidx.cardview.widget.CardView android:id="@id/details_card" style="@style/Sell.Card.ListingForm.Summary">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="?listingFormSummaryContentStyle">
+            <LinearLayout android:orientation="vertical" android:id="@id/details_tap_target" android:tag="binding_1" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:importantForAccessibility="no">
+                <include layout="@layout/listing_form_summary_error" style="@style/ListingFormSummaryErrorStyle.NoMarginBottom" />
+                <TextView android:id="@id/details_tool_tip" style="?listingFormSummaryGuidanceModuleTextStyle" />
+                <LinearLayout android:orientation="vertical" android:id="@id/details_content" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.DynamicCardContainer.ListingForm" />
+                <LinearLayout android:orientation="vertical" android:id="@id/missing_aspects_container" android:tag="binding_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" style="@style/Sell.DynamicCardContainer.ListingForm">
+                    <include android:id="@id/aspects_progress" layout="@layout/listing_form_aspects_progress_layout" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/recommended_aspects_container" android:background="@color/sell_box_background_mask" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.DynamicCardContainer.ListingForm">
+                        <View android:id="@id/aspect_progress_divider" android:layout_marginTop="@dimen/ebayMargin" style="@style/CommonDivider.Dark" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/missing_details_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <TextView android:id="@id/more_recommendation_label" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayNoMargin" android:layout_marginBottom="@dimen/ebayMarginHalf" style="@style/Sell.FormValue.Label" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageButton android:id="@id/details_button" android:visibility="gone" android:layout_below="@id/details_tap_target" android:contentDescription="@string/change_item_details" style="@style/EbayButton.Icon.Bolt" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

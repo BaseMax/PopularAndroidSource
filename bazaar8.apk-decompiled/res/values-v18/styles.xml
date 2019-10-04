@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Bazaar.Widget.Material.ProgressBar.Horizontal" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_height">5.0dip</item>
+        <item name="android:maxHeight">5.0dip</item>
+        <item name="android:progressDrawable">@drawable/progress_app_drawable</item>
+        <item name="android:minHeight">5.0dip</item>
+        <item name="android:mirrorForRtl">false</item>
+    </style>
+</resources>

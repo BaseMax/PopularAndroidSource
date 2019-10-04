@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/modal_toolbar" layout="@layout/modal_toolbar" />
+    <com.ebay.android.widget.ButtonBar android:id="@id/rtm_download_button_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" ebay:negativeButtonText="@string/cancel" ebay:positiveButtonText="@string/download" />
+    <WebView android:id="@id/rtmWebView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rtm_download_button_bar" android:layout_below="@id/modal_toolbar" android:layerType="software" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/funding_source_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/funding_source_image" android:layout_width="@dimen/xoHubFundingSourceImageWidth" android:layout_height="@dimen/xoHubFundingSourceImageHeight" android:src="@drawable/icon_mastercard" android:scaleType="fitStart" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/funding_source_text" android:paddingLeft="0.0dip" android:paddingRight="@dimen/xoMarginMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/payment_account" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Xo.Text.Smaller.Light" />
+    <TextView android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/payment_exchange_rate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Xo.Text.Smaller.Light" />
+    <LinearLayout android:orientation="vertical" android:id="@id/payment_exchange_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/payment_backup" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/payment_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/payment_display_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

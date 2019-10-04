@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/search_answers_message_more_0" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/message_image" android:tag="binding_1" android:layout_width="@dimen/answers_image_size" android:layout_height="@dimen/answers_image_size_vertical" android:src="@drawable/ic_missing_image" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/message_image" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textAppearance="?textAppearanceSubhead" android:ellipsize="end" android:id="@id/textview_message_title" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceBody2Accent" android:id="@id/textview_message_more" android:tag="binding_3" android:paddingTop="@dimen/ebayPadding15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+    </LinearLayout>
+</RelativeLayout>

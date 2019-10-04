@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="220.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="220.0dip" android:weightSum="10.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.5">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/ride_history_prof_pic_image_view" android:layout_width="120.0dip" android:layout_height="120.0dip" android:src="@drawable/ic_ride_history_header" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/alabaster" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.5">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/ride_history_time_with_snapp_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Default.ExtraExtraLarge" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/time_with_snapp" style="@style/TextView.Default.Large" />
+            </LinearLayout>
+            <View android:background="@color/alto" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:alpha="0.6" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/ride_history_finished_snapp_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Default.ExtraExtraLarge" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/successfull_snapp" style="@style/TextView.Default.Large" />
+            </LinearLayout>
+            <View android:background="@color/alto" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:alpha="0.6" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/ride_history_km_in_ride_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Default.ExtraExtraLarge" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kilometer_with_snapp" style="@style/TextView.Default.Large" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

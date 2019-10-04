@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/gsp_container" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:layout_gravity="center" android:visibility="invisible" android:layout_width="@dimen/xoImageSize" android:layout_height="@dimen/xoImageSize" android:layout_marginRight="@dimen/xoMarginMedium" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View style="@style/CommonDivider" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/gsp_import_link" android:background="?android:listChoiceBackgroundIndicator" android:paddingTop="@dimen/xoMarginMedium" android:paddingBottom="@dimen/xoMarginMedium" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/gsp_import_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/gsp_import_subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/gsp_import_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+            <ImageView android:id="@id/gsp_import_info" android:visibility="visible" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/store_picker_more_information" style="@style/Xo.Info" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

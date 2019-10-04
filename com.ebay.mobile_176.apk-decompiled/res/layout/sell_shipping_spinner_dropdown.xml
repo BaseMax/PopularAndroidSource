@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Sell.InlineLabel" />
+    <TextView android:textSize="12.0sp" android:textColor="?android:textColorSecondary" android:id="@id/value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Sell.InlineLabel" />
+</LinearLayout>

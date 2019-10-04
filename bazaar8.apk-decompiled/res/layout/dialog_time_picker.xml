@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TimePicker android:id="@id/edit" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.farsitel.bazaar.core.widget.DialogButtonLayout android:id="@id/dialogButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_double" app:cancel="@string/cancel" app:commit="@string/submit" app:layout_constraintTop_toBottomOf="@id/edit" />
+</LinearLayout>

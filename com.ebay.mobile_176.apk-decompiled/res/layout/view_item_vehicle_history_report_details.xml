@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard">
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/vhr_report_detail_text" android:padding="@dimen/ebayPadding3x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vhr_report_detail_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/vhr_report_detail_text_1" android:paddingLeft="@dimen/ebayPadding3x" android:paddingTop="@dimen/ebayPadding3x" android:paddingRight="@dimen/ebayPadding3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vehicle_history_detail_title_buyable_report_1" android:contentDescription="@string/vehicle_history_detail_title_buyable_report_1" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/vhr_report_detail_text_2" android:paddingLeft="@dimen/ebayPadding3x" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vehicle_history_detail_title_buyable_report_2" android:contentDescription="@string/vehicle_history_detail_title_buyable_report_2" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/vhr_report_detail_text_3" android:paddingLeft="@dimen/ebayPadding3x" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vehicle_history_detail_title_buyable_report_3" android:contentDescription="@string/vehicle_history_detail_title_buyable_report_3" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

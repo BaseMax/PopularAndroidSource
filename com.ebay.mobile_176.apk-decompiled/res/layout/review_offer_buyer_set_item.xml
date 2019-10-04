@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start|center|top" android:orientation="horizontal" android:tag="layout/review_offer_buyer_set_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody1" android:gravity="start" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <Space android:layout_width="@dimen/ebayMargin2x" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+        <TextView android:gravity="start" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:gravity="start" android:tag="binding_3" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:gravity="start" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

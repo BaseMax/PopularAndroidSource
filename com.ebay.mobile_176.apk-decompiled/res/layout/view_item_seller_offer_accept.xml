@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="start|center|top" android:orientation="horizontal" android:id="@id/accept_top_layout" android:paddingLeft="@dimen/ebayPadding3x" android:paddingRight="@dimen/ebayPadding3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:weightSum="3.0">
+        <TextView android:textAppearance="?textAppearanceBody1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/price" android:layout_weight="1.0" />
+        <Space android:layout_width="@dimen/ebayMargin" android:layout_height="1.0dip" />
+        <TextView android:textAppearance="?textAppearanceBody2" android:textStyle="bold" android:gravity="start" android:id="@id/accept_offer_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="start|center|top" android:orientation="horizontal" android:id="@id/accept_middle_layout" android:paddingLeft="@dimen/ebayPadding3x" android:paddingRight="@dimen/ebayPadding3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:weightSum="3.0" android:layout_below="@id/accept_top_layout">
+        <TextView android:textAppearance="?textAppearanceBody1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/quantity" android:layout_weight="1.0" />
+        <Space android:layout_width="@dimen/ebayMargin" android:layout_height="1.0dip" />
+        <TextView android:textAppearance="?textAppearanceBody2" android:textStyle="bold" android:gravity="start" android:id="@id/accept_offer_quantity" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    </LinearLayout>
+    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/accept_offer_legal" android:paddingLeft="@dimen/ebayPadding3x" android:paddingRight="@dimen/ebayPadding3x" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_below="@id/accept_middle_layout" />
+</RelativeLayout>

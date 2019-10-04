@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="homeScreenMaxWidth">750.0dip</dimen>
+    <dimen name="srp_tile_image_height">384.0dip</dimen>
+    <dimen name="standardMaxWidth">750.0dip</dimen>
+</resources>

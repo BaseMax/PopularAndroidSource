@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content" style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <com.ebay.mobile.sell.widget.CustomScrollView android:id="@id/parent_layout" android:layout_height="wrap_content" android:fillViewport="true" style="@style/Sell.Layout.Scroll">
+        <LinearLayout style="@style/Sell.Layout.ScrollChild.WithHelp">
+            <com.ebay.android.widget.ContainerLayout android:layout_margin="@dimen/ebayStaticMargin2x" style="@style/Sell.Layout.Container">
+                <LinearLayout style="@style/Sell.Layout">
+                    <Button android:id="@id/service_spinner_btn" android:visibility="visible" style="@style/Sell.FakeSpinner.MaterialButton" />
+                    <TextView android:id="@id/label_estimated_cost" android:visibility="gone" android:text="@string/label_service_estimated_cost" style="@style/Sell.Dialog.Help" />
+                </LinearLayout>
+                <LinearLayout style="@style/Sell.Layout">
+                    <TextView android:id="@id/ships_to_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginTop="@dimen/ebayStaticMargin2x" android:text="@string/ships_to" />
+                    <com.ebay.selling.listingform.widget.SingleLineButton android:id="@id/ships_to" style="@style/Sell.FakeSpinner" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/cost_row" style="@style/Sell.Layout.Row">
+                    <TextView android:gravity="center|left" android:layout_width="wrap_content" android:text="@string/label_cost" android:layout_weight="0.0" android:labelFor="@id/shipping_price" style="@style/Sell.Layout.Row.Label" />
+                    <com.ebay.mobile.widget.PriceView android:id="@id/shipping_price" android:layout_width="wrap_content" android:minWidth="88.0dip" android:hint="@string/hint_start_price" android:layout_weight="0.0" ebay:showHintTextForZero="true" style="@style/Sell.Layout.Row.EditText" />
+                </LinearLayout>
+                <androidx.appcompat.widget.SwitchCompat android:id="@id/free_shipping" android:text="@string/label_free_shipping" style="@style/Sell.Layout.Row.Switch" />
+            </com.ebay.android.widget.ContainerLayout>
+        </LinearLayout>
+    </com.ebay.mobile.sell.widget.CustomScrollView>
+</RelativeLayout>

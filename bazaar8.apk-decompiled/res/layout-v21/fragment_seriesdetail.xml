@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/layout_page_non_data" />
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="0.0dip" android:outlineProvider="bounds">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/toolbarShare" android:padding="@dimen/default_margin_half" android:layout_marginEnd="@dimen/default_margin_double" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_round_share_24px" style="@style/Bazaar.Image.Toolbar.Back" />
+                <androidx.appcompat.widget.AppCompatTextView android:gravity="center_vertical" android:id="@id/toolbarTitle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" android:alpha="0.0" android:layout_marginStart="@dimen/default_margin_one_half" android:layout_marginEnd="@dimen/default_margin_one_half" app:layout_constraintEnd_toStartOf="@id/toolbarShare" app:layout_constraintStart_toEndOf="@id/toolbarBackButton" style="@style/Bazaar.Text.Body1" />
+                <com.farsitel.bazaar.widget.RTLImageView android:id="@id/toolbarBackButton" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_round_arrow_back_24px" style="@style/Bazaar.Image.Toolbar.Back" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/merch_fragment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/placement_100825_stub" android:inflatedId="@id/placement_100825" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_100824_stub" android:inflatedId="@id/placement_100824" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_100532_stub" android:inflatedId="@id/placement_100532" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_100764_stub" android:inflatedId="@id/placement_100764" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_100533_stub" android:inflatedId="@id/placement_100533" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/placement_100975_stub" android:inflatedId="@id/placement_100975" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

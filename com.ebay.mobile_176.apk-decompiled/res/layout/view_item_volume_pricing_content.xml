@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/volume_pricing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceBody1" android:layout_gravity="left" android:id="@id/bulk_savings_textview" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:layout_gravity="right" android:id="@id/quantity_disclaimer_textview" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.ebay.nautilus.shell.uxcomponents.widget.ScrollingContainerView android:id="@id/volume_pricing_pills_view" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ViewItemHorizontalListItemsStyle" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Sell.Layout.Background.Dialog"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.mobile.sell.widget.CustomScrollView android:id="@id/sell_preview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:paddingLeft="@dimen/review_dialog_side_margin" android:paddingRight="@dimen/review_dialog_side_margin" style="@style/Sell.Layout.ScrollChild.Content">
+            <TextView android:textAppearance="?textAppearanceTitle1" android:id="@id/dialogToolbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/title_review" />
+            <TextView android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/label_fees" style="@style/Sell.Spoke.Title" />
+            <androidx.cardview.widget.CardView style="@style/Sell.Layout.CardView">
+                <com.ebay.android.widget.ContainerLayout style="@style/Sell.Layout.Container">
+                    <LinearLayout android:orientation="vertical" android:id="@id/fees" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                            <TextView android:textStyle="bold" android:textColor="?android:textColorTertiary" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/label_total_fees" android:layout_weight="5.0" />
+                            <TextView android:textStyle="bold" android:textColor="?android:textColorTertiary" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/total_fees" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+                            <TextView android:gravity="right" android:layout_gravity="center_vertical" android:paddingLeft="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <com.ebay.mobile.listingform.helper.CustomStyleTextView android:textColor="?android:textColorSecondary" android:gravity="center_vertical" android:id="@id/final_value_fee_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/ebayStaticMargin" android:layout_marginBottom="4.0dip" android:text="@string/final_value_fee_without_ftoc" />
+                    </LinearLayout>
+                </com.ebay.android.widget.ContainerLayout>
+            </androidx.cardview.widget.CardView>
+            <include layout="@layout/sell_relist_details" />
+            <RelativeLayout android:id="@id/guarantee_container_review" style="@style/Sell.Layout.Container">
+                <TextView android:gravity="center|left" android:id="@id/guarantee_container_review_heading" android:paddingTop="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginRight="@dimen/ebayStaticMargin" android:text="@string/price_guarantee" />
+                <com.ebay.mobile.listingform.helper.CustomStyleTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/style_guide_dark_gray" android:gravity="center|left" android:id="@id/guarantee_container_review_subtext" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginRight="@dimen/ebayStaticMargin" android:layout_below="@id/guarantee_container_review_heading" android:lineSpacingMultiplier="1.2" />
+            </RelativeLayout>
+            <Button android:layout_gravity="center_horizontal" android:id="@id/button_publish" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/button_publish" style="@style/EbayButton.Blue" />
+            <Button android:id="@id/button_preview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/preview_your_listing" style="@style/EbayButton.White" />
+            <TextView android:textColor="?android:textColorSecondary" android:gravity="center_vertical" android:id="@id/publish_tc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/LEGAL_EU_publish_tc" />
+            <TextView android:textColor="?android:textColorSecondary" android:gravity="center_vertical" android:id="@id/funds_held_s2f_notice" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" />
+        </LinearLayout>
+    </com.ebay.mobile.sell.widget.CustomScrollView>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin">
+        <TextView android:textAppearance="?textAppearanceTitle2" android:id="@id/header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/sub_header_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf">
+            <TextView android:textColor="?android:textColorPrimary" android:id="@id/sub_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/sub_header_button" android:layout_alignWithParentIfMissing="true" />
+            <ImageView android:id="@id/sub_header_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/plain_stats" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPaddingHalf" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" />
+    <androidx.cardview.widget.CardView android:id="@id/stats_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" style="@style/StyleGuideViewItemCard">
+        <LinearLayout android:orientation="vertical" android:id="@id/stats" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayStaticMargin" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:orientation="vertical" android:id="@id/buttons" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" />
+</LinearLayout>

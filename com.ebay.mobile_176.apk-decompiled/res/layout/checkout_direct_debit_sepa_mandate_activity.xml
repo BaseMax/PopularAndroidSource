@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/progress_container" />
+    <ScrollView android:id="@id/xo_content" android:background="?listContainerOutsideBackground" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/sepa_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceTitle2" android:id="@id/checkout_dd_account_details_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginTop="@dimen/xoMarginMediumLarge" android:layout_marginRight="@dimen/xoMarginMediumLarge" android:layout_marginBottom="@dimen/xoMarginMediumLarge" android:text="SEPA Direct Debit Mandate" />
+            <androidx.cardview.widget.CardView android:orientation="vertical" android:id="@id/legal_text_container" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/sepa_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginTop="@dimen/xoMarginMediumLarge" android:layout_marginRight="@dimen/xoMarginMediumLarge" android:layout_marginBottom="@dimen/xoMarginMediumLarge" android:text="Select Agree if you agree to the SEPA direct debit mandate that authorizes PayPal and direct debit payments(s) to withdraw from your bank account. At the same time you instruct your bank to honor the debits drawn by PayPal. You can ask for a refund for the amount charged within eight weeks from the date of exposure." />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:orientation="vertical" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xoMarginSmall" android:layout_marginBottom="@dimen/xoMarginSmall">
+                <TextView android:textAppearance="?textAppearanceBody2" android:textColor="?android:textColorLink" android:layout_gravity="right" android:id="@id/get_details_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xoMarginSmall" android:layout_marginRight="@dimen/xoMarginMediumLarge" android:layout_marginBottom="@dimen/xoMarginSmall" android:text="GET DETAILS" android:textAlignment="center" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</merge>

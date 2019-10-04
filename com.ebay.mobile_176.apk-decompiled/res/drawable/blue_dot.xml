@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="?colorAccent" />
+    <size android:height="@dimen/huge_bulletin_dot_dimension" android:width="@dimen/huge_bulletin_dot_dimension" />
+</shape>

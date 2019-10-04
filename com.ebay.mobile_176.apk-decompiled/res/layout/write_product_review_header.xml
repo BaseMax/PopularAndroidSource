@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/write_product_review_header" android:background="?containerBackgroundColor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="72.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/header_spacer" android:background="@color/style_guide_primary" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_alignParentTop="true" />
+    <View android:id="@id/footer_spacer" android:background="@color/style_guide_primary" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/info_graphic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin15" android:src="@drawable/ic_info_outline_black_36dp" android:tint="@color/style_guide_primary" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/style_guide_primary" android:gravity="center_vertical" android:id="@id/header_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip" android:text="@string/editing_previously_written" android:layout_toRightOf="@id/info_graphic" android:layout_above="@id/footer_spacer" android:layout_below="@id/header_spacer" />
+</RelativeLayout>

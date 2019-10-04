@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/searchlanding_minimum_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubhead" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/text_recent_entry" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/searchlanding_no_icon_list_margin" android:drawablePadding="@dimen/search_image_thumbnail_padding" />
+</LinearLayout>

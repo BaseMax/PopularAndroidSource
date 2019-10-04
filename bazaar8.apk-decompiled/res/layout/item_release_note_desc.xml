@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/item_release_note_desc_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/changelogIcon" android:layout_width="@dimen/changelog_icon_size" android:layout_height="@dimen/changelog_icon_size" android:layout_marginTop="@dimen/default_margin" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/default_margin_double_half" android:layout_marginEnd="@dimen/default_margin_half" android:layout_alignParentStart="true" app:srcCompat="@drawable/ic_round_done_24px" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/changeLogDesc" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin_triple" android:layout_toEndOf="@id/changelogIcon" android:layout_alignParentEnd="true" style="@style/Bazaar.Text.Body2.Dark" />
+</RelativeLayout>

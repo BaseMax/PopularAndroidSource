@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="?colorAlert" android:tag="layout/picker_panel_form_field_error_0" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableEnd="@drawable/ic_error_listing_form" android:accessibilityLiveRegion="assertive"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

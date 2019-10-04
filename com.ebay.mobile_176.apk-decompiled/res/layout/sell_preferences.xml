@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_progress" />
+    <com.ebay.mobile.sell.widget.CustomScrollView android:id="@id/parent_layout" style="@style/Sell.Layout.Scroll">
+        <LinearLayout style="@style/Sell.Layout.ScrollChild.WithHelp">
+            <LinearLayout android:layout_marginBottom="10.0dip" style="@style/Sell.Layout.ScrollChild.Content">
+                <TextView android:text="@string/heading_payment_methods" style="@style/Sell.Spoke.Title.Top" />
+                <androidx.cardview.widget.CardView style="@style/Sell.Layout.CardView">
+                    <com.ebay.mobile.widget.CardLayout style="@style/Sell.Layout.CardLayout">
+                        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/paypal_email_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMarginHalf" android:minHeight="?android:listPreferredItemHeight">
+                            <TextView android:textAppearance="?android:textAppearance" android:id="@id/edit_paypal_email_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:text="@string/label_paypal_id" android:layout_alignParentTop="true" />
+                            <com.ebay.mobile.sell.widget.PaypalEmailAutoComplete android:textAppearance="?android:textAppearance" android:id="@id/edit_paypal_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_paypal_id" android:selectAllOnFocus="true" android:layout_below="@id/edit_paypal_email_label" android:inputType="textEmailAddress" android:imeOptions="actionDone" />
+                        </RelativeLayout>
+                        <LinearLayout android:id="@id/payment_methods_row" android:layout_height="0.0dip" style="@style/Sell.Layout.Row">
+                            <TextView android:layout_gravity="center_vertical" android:minHeight="0.0dip" android:text="@string/label_payment_methods" style="@style/Sell.Layout.Row.Label" />
+                            <com.ebay.selling.listingform.widget.SingleLineButton android:ellipsize="end" android:id="@id/payment_methods" android:layout_width="0.0dip" android:minHeight="0.0dip" android:layout_weight="1.0" style="@style/Sell.FakeSpinner" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/immediatePayRow" android:layout_width="fill_parent" android:layout_height="0.0dip">
+                            <androidx.appcompat.widget.SwitchCompat android:id="@id/immediatePaySwitch" style="@style/Sell.Layout.Row.Switch" />
+                        </LinearLayout>
+                        <include layout="@layout/sell_show_hide_options" />
+                    </com.ebay.mobile.widget.CardLayout>
+                </androidx.cardview.widget.CardView>
+                <TextView android:text="@string/label_handling_time_item_location" style="@style/Sell.Spoke.Title" />
+                <androidx.cardview.widget.CardView style="@style/Sell.Layout.CardView">
+                    <com.ebay.mobile.widget.CardLayout style="@style/Sell.Layout.CardLayout">
+                        <LinearLayout style="@style/Sell.Layout.Row">
+                            <TextView android:text="@string/label_handling_time" style="@style/Sell.Layout.Row.Label" />
+                            <Spinner android:id="@id/spinner_handling_time" style="@style/Sell.Spinner.Inline" />
+                        </LinearLayout>
+                        <LinearLayout style="@style/Sell.Layout.Row">
+                            <TextView android:text="@string/label_country" style="@style/Sell.Layout.Row.Label" />
+                            <Spinner android:id="@id/spinner_country" style="@style/Sell.Spinner.Inline" />
+                        </LinearLayout>
+                        <LinearLayout style="@style/Sell.Layout.Row">
+                            <TextView android:text="@string/label_postal_code" style="@style/Sell.Layout.Row.Label" />
+                            <EditText android:id="@id/postal_code" android:layout_marginLeft="0.0dip" android:maxLength="24" android:inputType="textPostalAddress|textCapCharacters" style="@style/Sell.Layout.Row.EditText" />
+                        </LinearLayout>
+                        <LinearLayout style="@style/Sell.Layout.Row">
+                            <TextView android:text="@string/label_city_state" style="@style/Sell.Layout.Row.Label" />
+                            <EditText android:id="@id/city_state" android:layout_marginLeft="0.0dip" android:inputType="textCapWords" style="@style/Sell.Layout.Row.EditText" />
+                        </LinearLayout>
+                    </com.ebay.mobile.widget.CardLayout>
+                </androidx.cardview.widget.CardView>
+                <TextView android:text="@string/label_return_policy" style="@style/Sell.Spoke.Title" />
+                <androidx.cardview.widget.CardView style="@style/Sell.Layout.CardView">
+                    <com.ebay.mobile.widget.CardLayout style="@style/Sell.Layout.CardLayout">
+                        <androidx.appcompat.widget.SwitchCompat android:id="@id/return_policy_switch" android:text="@string/returns_accepted" style="@style/Sell.Layout.Row.Switch" />
+                        <LinearLayout android:gravity="center_horizontal" android:id="@id/return_policy_progress" android:padding="10.0dip" android:visibility="gone" android:layout_height="wrap_content" style="@style/Sell.Layout">
+                            <ProgressBar android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/label_returns_within_layout" style="@style/Sell.Layout.Row">
+                            <TextView android:id="@id/label_returns_within" android:text="@string/returns_accepted_within" style="@style/Sell.Layout.Row.Label" />
+                            <Spinner android:id="@id/spinner_returns_within" style="@style/Sell.Spinner.Inline" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/label_refund_given_as_layout" style="@style/Sell.Layout.Row">
+                            <TextView android:id="@id/label_refund_given_as" android:text="@string/refund_given_as" style="@style/Sell.Layout.Row.Label" />
+                            <Spinner android:id="@id/spinner_refund_given_as" style="@style/Sell.Spinner.Inline" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/label_return_shipping_paid_by_layout" style="@style/Sell.Layout.Row">
+                            <TextView android:id="@id/label_return_shipping_paid_by" android:text="@string/return_shipping_paid_by" style="@style/Sell.Layout.Row.Label" />
+                            <Spinner android:id="@id/spinner_return_shipping_paid_by" style="@style/Sell.Spinner.Inline" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/label_restocking_fee_layout" style="@style/Sell.Layout.Row">
+                            <TextView android:id="@id/label_restocking_fee" android:text="@string/restocking_fee" style="@style/Sell.Layout.Row.Label" />
+                            <Spinner android:id="@id/spinner_restocking_fee" style="@style/Sell.Spinner.Inline" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/label_return_policy_details_layout" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" style="@style/Sell.Layout">
+                            <TextView android:id="@id/label_return_policy_details" android:layout_width="fill_parent" android:layout_marginLeft="0.0dip" android:text="@string/additional_return_policy_details" style="@style/Sell.Layout.Row.Label" />
+                            <EditText android:scrollbarAlwaysDrawVerticalTrack="true" android:gravity="top" android:id="@id/policy_details" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:minHeight="44.0dip" android:hint="@string/additional_return_policy_details_hint" android:minLines="4" android:inputType="textLongMessage|textCapSentences|textMultiLine" android:isScrollContainer="true" style="@style/Sell.Layout.Row.EditText" />
+                        </LinearLayout>
+                    </com.ebay.mobile.widget.CardLayout>
+                </androidx.cardview.widget.CardView>
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/sell_charity_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:gravity="bottom" android:layout_width="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:text="@string/label_donate_to_charity" android:layout_weight="0.9" style="@style/Sell.Spoke.Title" />
+                    <ImageView android:layout_width="0.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_profile_charity" android:scaleType="centerInside" android:layout_weight="0.1" />
+                </LinearLayout>
+                <com.ebay.mobile.listingform.helper.CustomStyleTextView android:id="@id/sell_charity_subtitle" style="@style/Sell.Spoke.Subtitle" />
+                <androidx.cardview.widget.CardView android:id="@id/sell_charity_container" style="@style/Sell.Layout.CardView">
+                    <com.ebay.mobile.widget.CardLayout style="@style/Sell.Layout.CardLayout">
+                        <LinearLayout android:orientation="vertical" android:id="@id/make_a_donation_row" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.SwitchCompat android:id="@id/make_a_donation_checkbox" android:focusable="true" android:clickable="true" android:text="@string/sell_charity_label" style="@style/Sell.Layout.Row.Switch" />
+                            <com.ebay.mobile.listingform.helper.CustomStyleTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/charity_terms_conditions" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ebayPadding" android:paddingEnd="@dimen/ebayPadding" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/favorite_charities_container" style="@style/Sell.Layout.Row">
+                            <TextView android:id="@id/label_favorite_charities" android:text="@string/sell_preference_charity_label" style="@style/Sell.Layout.Row.Label" />
+                            <Button android:id="@id/favorite_charities" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/Sell.FakeSpinner.MaterialButton" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/donation_percentage_container" style="@style/Sell.Layout.Row">
+                            <TextView android:id="@id/label_charity_donation_percent" android:layout_height="fill_parent" android:text="@string/sell_charity_donation_percent" style="@style/Sell.Layout.Row.Label" />
+                            <Button android:id="@id/donation_percent_tv" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/Sell.FakeSpinner.MaterialButton" />
+                        </LinearLayout>
+                    </com.ebay.mobile.widget.CardLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/shopping_cart_dashed_line" />
+            <LinearLayout android:layout_marginTop="10.0dip" style="@style/Sell.Layout.ScrollChild.Content">
+                <TextView android:text="@string/sell_help_paymemt_methods_title" style="@style/Sell.Layout.Help.Title" />
+                <TextView android:text="@string/sell_help_paymemt_methods" style="@style/Sell.Layout.Help.Content" />
+                <TextView android:id="@id/help_immediate_pay_title" android:text="@string/sell_help_immediate_payment_title" style="@style/Sell.Layout.Help.Title" />
+                <TextView android:id="@id/help_immediate_pay_content" style="@style/Sell.Layout.Help.Content" />
+                <TextView android:text="@string/sell_help_handling_time_item_location_title" style="@style/Sell.Layout.Help.Title" />
+                <TextView android:text="@string/sell_help_handling_time_item_location" style="@style/Sell.Layout.Help.Content" />
+                <TextView android:text="@string/sell_help_return_policy_title" style="@style/Sell.Layout.Help.Title" />
+                <TextView android:text="@string/sell_help_return_policy" style="@style/Sell.Layout.Help.Content" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.ebay.mobile.sell.widget.CustomScrollView>
+</FrameLayout>

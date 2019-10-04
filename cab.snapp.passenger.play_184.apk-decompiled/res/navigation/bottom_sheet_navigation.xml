@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/bottom_sheet_navigation" app:startDestination="@id/topUpPaymentController"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="TopUpPaymentController" android:name="cab.snapp.passenger.units.top_up_payment2.TopUpPaymentController" android:id="@id/topUpPaymentController" />
+    <action android:id="@id/action_global_topUpPaymentController" app:destination="@id/topUpPaymentController" />
+</navigation>

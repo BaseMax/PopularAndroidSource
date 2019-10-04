@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/md_white_1000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/gray_text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/inline_lbl_missing_map" />
+    <Button android:textColor="@color/md_white_1000" android:id="@id/inline_install_missing_map" android:background="@color/dark_green" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginTop="16.0dip" android:minWidth="96.0dip" android:text="@string/inline_missing_map_install" />
+</LinearLayout>

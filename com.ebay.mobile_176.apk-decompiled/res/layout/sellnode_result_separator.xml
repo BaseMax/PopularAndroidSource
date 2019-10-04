@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content_layout" android:background="?listContainerOutsideBackground" android:paddingLeft="@dimen/ebayContentSideMargin" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayContentSideMargin" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceTitle2" android:ellipsize="start" android:id="@id/separatorText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/smartbox_see_your_product" android:maxLines="2" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:ellipsize="start" android:id="@id/separatorText2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/smartbox_see_your_product_2" android:maxLines="2" android:layout_below="@id/separatorText" />
+</RelativeLayout>

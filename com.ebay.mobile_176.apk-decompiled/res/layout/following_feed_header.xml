@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/ebayScalingPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/following_feed_header_title" />
+    <TextView android:textAppearance="?textAppearanceBody2" android:textColor="@color/style_guide_darker_gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/feed_header_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" />
+</LinearLayout>

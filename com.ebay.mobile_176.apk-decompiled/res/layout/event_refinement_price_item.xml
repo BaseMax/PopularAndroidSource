@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/simple_refine_title_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceBody2" android:gravity="center|left" android:id="@id/refinement_item_title" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <com.ebay.mobile.widget.PriceView android:gravity="center|left" android:id="@id/refinement_item_price" android:layout_width="@dimen/events_refine_price_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ebayMargin" android:lines="1" android:digits="1234567890.," android:layout_alignParentRight="true" android:inputType="numberDecimal" android:imeOptions="actionNext" ebay:showCurrencySymbolAlways="true" />
+</RelativeLayout>

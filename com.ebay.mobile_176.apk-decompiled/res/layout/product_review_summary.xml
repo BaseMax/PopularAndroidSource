@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCardProductReview"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginRight="@dimen/ebayStaticMargin">
+            <RelativeLayout android:id="@id/rating_summary_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?textAppearanceDisplay1" android:textSize="46.0sp" android:textColor="?android:textColorSecondary" android:id="@id/average_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="62.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="14.0dip" android:layout_toRightOf="@id/average_rating" android:layout_alignParentTop="true">
+                    <RatingBar android:layout_gravity="left" android:id="@id/rating_stars" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/EbayProductRating.Small" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:textColor="?android:textColorSecondary" android:id="@id/reviews_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/rating_histogram" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin15">
+                <include android:id="@id/five_star_ratings" layout="@layout/product_review_rating_count" />
+                <include android:id="@id/four_star_ratings" layout="@layout/product_review_rating_count" />
+                <include android:id="@id/three_star_ratings" layout="@layout/product_review_rating_count" />
+                <include android:id="@id/two_star_ratings" layout="@layout/product_review_rating_count" />
+                <include android:id="@id/one_star_ratings" layout="@layout/product_review_rating_count" />
+            </LinearLayout>
+            <View android:id="@id/horizontal_separator" android:background="?listDividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/aspects_container" android:paddingLeft="@dimen/product_review_tablet_bumpers" android:paddingRight="@dimen/product_review_tablet_bumpers" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" android:baselineAligned="false">
+                <include android:id="@id/aspect_left" android:paddingRight="@dimen/ebayMarginHalf" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/product_review_aspect" />
+                <include android:id="@id/aspect_middle" android:paddingLeft="@dimen/ebayMarginHalf" android:paddingRight="@dimen/ebayMarginHalf" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/product_review_aspect" />
+                <include android:id="@id/aspect_right" android:paddingLeft="@dimen/ebayMarginHalf" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/product_review_aspect" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/write_review_button_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="?listDividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" />
+                <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/button_write_review" android:layout_width="fill_parent" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMarginHalf" android:text="@string/write_a_review" style="@style/EbayButton" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/relevant_reviews_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="?listDividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ebayStaticMargin2x" android:layout_marginRight="@dimen/ebayStaticMargin2x" />
+            <TextView android:textAppearance="?textAppearanceSubhead2" android:id="@id/relevant_reviews_title" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginTop="@dimen/ebayStaticMargin" android:layout_marginRight="@dimen/ebayStaticMargin" android:text="@string/most_relevant_reviews" />
+            <LinearLayout android:orientation="vertical" android:id="@id/relevant_reviews" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" />
+            <Button android:textAppearance="?textAppearanceBody2Accent" android:layout_gravity="end" android:id="@id/button_more_reviews" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMarginHalf" android:layout_marginEnd="@dimen/ebayMargin" style="@style/EbayButton.Flat" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

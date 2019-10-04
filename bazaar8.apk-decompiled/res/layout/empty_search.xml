@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.farsitel.bazaar.widget.RTLImageView android:layout_width="@dimen/central_image_size" android:layout_height="@dimen/central_image_size" app:srcCompat="@drawable/ic_round_search_24px" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/searchEmptyTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_double" />
+</LinearLayout>

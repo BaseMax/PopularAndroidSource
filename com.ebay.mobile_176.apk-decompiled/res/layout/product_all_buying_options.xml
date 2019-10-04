@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/product_all_buying_options_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2Accent" android:ellipsize="end" android:gravity="left" android:tag="binding_1" android:paddingBottom="@dimen/ebayMarginHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:ellipsize="end" android:gravity="left" android:id="@id/textview_item_sub_heading" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+</LinearLayout>

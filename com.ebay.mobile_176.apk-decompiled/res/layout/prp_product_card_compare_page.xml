@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/prp_product_card_compare_page_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:divider="?dividerVertical" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/product_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_weight="1.0" layout="@layout/prp_product_card_compare" />
+    <include android:id="@id/product_right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_weight="1.0" layout="@layout/prp_product_card_compare" />
+</LinearLayout>

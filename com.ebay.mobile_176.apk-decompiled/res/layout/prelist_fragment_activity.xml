@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_horizontal" android:id="@id/layout_main" android:background="?listContainerOutsideBackground" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/charity_banner" />
+        <LinearLayout android:orientation="vertical" android:id="@id/prelist_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/charity_banner" />
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@android:id/empty" android:visibility="gone" android:layout_width="@dimen/ProgressSpinnerSize" android:layout_height="@dimen/ProgressSpinnerSize" />
+</FrameLayout>

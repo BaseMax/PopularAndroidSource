@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/bt_text_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/otp_text_code" android:layout_alignParentBottom="true" style="@style/EbayButton.Blue" />
+    <RelativeLayout android:id="@id/view_progress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bt_text_code">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+            <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center_vertical" android:id="@id/otp_collect_message2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayPadding2x" android:text="@string/otp_confirm_message2" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center_vertical" android:id="@id/otp_collect_message1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayPadding2x" android:text="@string/otp_confirm_message1" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

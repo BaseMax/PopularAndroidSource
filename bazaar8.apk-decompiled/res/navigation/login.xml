@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/graphLogin" app:startDestination="@id/startLogin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="startLogin" android:name="com.farsitel.bazaar.ui.login.StartLoginFragment" android:id="@id/startLogin">
+        <action android:id="@id/open_register_with_animation" app:destination="@id/registerFragment" app:enterAnim="@anim/slide_up_login" app:popUpTo="@id/graphLogin" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="RegisterFragment" android:name="com.farsitel.bazaar.ui.login.RegisterFragment" android:id="@id/registerFragment">
+        <argument android:name="dealerPackageName" app:argType="string" />
+        <argument android:name="loginType" app:argType="integer" />
+        <action android:id="@id/action_registerFragment_to_verifyOtpFragment" app:destination="@id/verifyOtpFragment" app:enterAnim="@anim/slide_up_login" app:exitAnim="@anim/slide_down" />
+        <action android:id="@id/action_registerFragment_to_loginWithEmailFragment" app:destination="@id/loginWithEmailFragment" app:enterAnim="@anim/slide_up_login" app:exitAnim="@anim/slide_down" />
+    </fragment>
+    <fragment android:label="VerifyOtpFragment" android:name="com.farsitel.bazaar.ui.login.VerifyOtpFragment" android:id="@id/verifyOtpFragment">
+        <argument android:name="phoneNumber" app:argType="string" />
+        <argument android:name="waitingTime" app:argType="long" />
+        <argument android:name="loginType" app:argType="integer" />
+    </fragment>
+    <fragment android:label="LoginWithEmailFragment" android:name="com.farsitel.bazaar.ui.login.merge.account.LoginWithEmailFragment" android:id="@id/loginWithEmailFragment">
+        <action android:id="@id/action_loginWithEmailFragment_to_verifyEmailOtpFragment" app:destination="@id/verifyEmailOtpFragment" app:enterAnim="@anim/slide_up_login" app:exitAnim="@anim/slide_down" />
+    </fragment>
+    <fragment android:label="VerifyEmailOtpFragment" android:name="com.farsitel.bazaar.ui.login.merge.account.VerifyEmailOtpFragment" android:id="@id/verifyEmailOtpFragment">
+        <argument android:name="email" app:argType="string" />
+        <argument android:name="waitingTime" app:argType="long" />
+        <action android:id="@id/verifyEmailOtpFragment_to_registerFragment" app:destination="@id/registerFragment" app:enterAnim="@anim/slide_up_login" app:exitAnim="@anim/slide_down" />
+    </fragment>
+</navigation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/loginBackground" android:background="@color/login_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ScrollView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <fragment android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/nav_host_fragment" android:background="@drawable/shape_round_top_only" android:layout_width="fill_parent" android:layout_height="wrap_content" app:defaultNavHost="true" app:navGraph="@navigation/login" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

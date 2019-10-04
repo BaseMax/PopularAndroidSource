@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/Prelist.Card.Authenticate"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/sell_authenticate_label_value_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/item_authentication_error_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ListingFormSummaryErrorStyle" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/sell_authenticate_PayPal_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <TextView android:id="@id/sell_authenticate_PayPal_label" android:layout_width="0.0dip" android:text="@string/sell_ebay_authenticate_paypal" android:layout_weight="0.37" android:labelFor="@id/sell_authenticate_PayPal_input" style="@style/Sell.FormValue.Label.Detail" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.63">
+                <EditText android:id="@id/sell_authenticate_PayPal_input" android:inputType="textEmailAddress" style="@style/Prelist.eBayAuthenticate.ValueEditText" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/CommonDivider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/sell_authenticate_first_name_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <TextView android:id="@id/sell_authenticate_first_name_label" android:layout_width="0.0dip" android:text="@string/sell_ebay_authenticate_first_name" android:layout_weight="0.37" android:labelFor="@id/sell_authenticate_first_name_input" style="@style/Sell.FormValue.Label.Detail" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.63">
+                <EditText android:id="@id/sell_authenticate_first_name_input" android:inputType="textPersonName" style="@style/Prelist.eBayAuthenticate.ValueEditText" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/CommonDivider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/sell_authenticate_last_name_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <TextView android:id="@id/sell_authenticate_last_name_label" android:layout_width="0.0dip" android:text="@string/sell_ebay_authenticate_last_name" android:layout_weight="0.37" android:labelFor="@id/sell_authenticate_last_name_input" style="@style/Sell.FormValue.Label.Detail" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.63">
+                <EditText android:id="@id/sell_authenticate_last_name_input" android:inputType="textPersonName" style="@style/Prelist.eBayAuthenticate.ValueEditText" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/CommonDivider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/sell_authenticate_address1_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <TextView android:id="@id/sell_authenticate_address1_label" android:layout_width="0.0dip" android:text="@string/sell_ebay_authenticate_address_1" android:layout_weight="0.37" android:labelFor="@id/sell_authenticate_address1_input" style="@style/Sell.FormValue.Label.Detail" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.63">
+                <EditText android:id="@id/sell_authenticate_address1_input" android:inputType="textPostalAddress" style="@style/Prelist.eBayAuthenticate.ValueEditText" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/CommonDivider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/sell_authenticate_address2_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <TextView android:id="@id/sell_authenticate_address2_label" android:layout_width="0.0dip" android:text="@string/sell_ebay_authenticate_address_2" android:layout_weight="0.37" android:labelFor="@id/sell_authenticate_address2_input" style="@style/Sell.FormValue.Label.Detail" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.63">
+                <EditText android:id="@id/sell_authenticate_address2_input" android:hint="@string/sell_ebay_authenticate_address_2_hint" android:inputType="textPostalAddress" style="@style/Prelist.eBayAuthenticate.ValueEditText" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/CommonDivider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/sell_authenticate_city_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <TextView android:id="@id/sell_authenticate_city_label" android:layout_width="0.0dip" android:text="@string/sell_ebay_authenticate_city" android:layout_weight="0.37" android:labelFor="@id/sell_authenticate_city_input" style="@style/Sell.FormValue.Label.Detail" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.63">
+                <EditText android:id="@id/sell_authenticate_city_input" android:inputType="textPostalAddress" style="@style/Prelist.eBayAuthenticate.ValueEditText" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/CommonDivider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/sell_authenticate_state_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <TextView android:id="@id/sell_authenticate_state_label" android:layout_width="0.0dip" android:text="@string/sell_ebay_authenticate_state" android:layout_weight="0.37" android:labelFor="@id/sell_authenticate_state_input" style="@style/Sell.FormValue.Label.Detail" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.63">
+                <EditText android:id="@id/sell_authenticate_state_input" android:inputType="textPostalAddress" style="@style/Prelist.eBayAuthenticate.ValueEditText" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/CommonDivider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/sell_authenticate_country_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <TextView android:id="@id/sell_authenticate_country_label" android:layout_width="0.0dip" android:text="@string/sell_ebay_authenticate_country" android:layout_weight="0.37" android:labelFor="@id/sell_authenticate_country_input" style="@style/Sell.FormValue.Label.Detail" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.63">
+                <EditText android:id="@id/sell_authenticate_country_input" android:inputType="textPostalAddress" style="@style/Prelist.eBayAuthenticate.ValueEditText" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/CommonDivider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/sell_authenticate_zip_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <TextView android:id="@id/sell_authenticate_zip_label" android:layout_width="0.0dip" android:text="@string/sell_ebay_authenticate_zip" android:layout_weight="0.37" android:labelFor="@id/sell_authenticate_zip_input" style="@style/Sell.FormValue.Label.Detail" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.63">
+                <EditText android:id="@id/sell_authenticate_zip_input" android:inputType="number" style="@style/Prelist.eBayAuthenticate.ValueEditText" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/CommonDivider" />   <LinearLayout android:orientation="horizontal" android:id="@id/sell_authenticate_phone_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" style="@style/Sell.DynamicCardContainer.ListingForm">
+            <TextView android:id="@id/sell_authenticate_phone_label" android:layout_width="0.0dip" android:text="@string/sell_ebay_authenticate_phone" android:layout_weight="0.37" android:labelFor="@id/sell_authenticate_phone_input" style="@style/Sell.FormValue.Label.Detail" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.63">
+                <EditText android:id="@id/sell_authenticate_phone_input" android:inputType="phone" style="@style/Prelist.eBayAuthenticate.ValueEditText" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

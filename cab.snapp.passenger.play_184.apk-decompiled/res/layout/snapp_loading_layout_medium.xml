@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center" android:id="@id/snapp_loading_first_view" android:background="@drawable/shape_circle_dark" android:layout_width="@dimen/shape_circle_width_medium" android:layout_height="@dimen/shape_circle_height_medium" android:layout_marginLeft="@dimen/shape_circle_margin_medium" android:layout_marginRight="@dimen/shape_circle_margin_medium" />
+    <View android:layout_gravity="center" android:id="@id/snapp_loading_second_view" android:background="@drawable/shape_circle_dark" android:layout_width="@dimen/shape_circle_width_medium" android:layout_height="@dimen/shape_circle_height_medium" android:layout_marginLeft="@dimen/shape_circle_margin_medium" android:layout_marginRight="@dimen/shape_circle_margin_medium" />
+    <View android:layout_gravity="center" android:id="@id/snapp_loading_third_view" android:background="@drawable/shape_circle_dark" android:layout_width="@dimen/shape_circle_width_medium" android:layout_height="@dimen/shape_circle_height_medium" android:layout_marginLeft="@dimen/shape_circle_margin_medium" android:layout_marginRight="@dimen/shape_circle_margin_medium" />
+</LinearLayout>

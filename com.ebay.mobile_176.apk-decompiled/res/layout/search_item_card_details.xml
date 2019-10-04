@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/search_item_text" android:tag="layout/search_item_card_details_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/search_overflow_icon" android:tag="binding_1" android:layout="@layout/search_overflow_icon" android:layout_width="@dimen/min_touch_target_unit" android:layout_height="@dimen/min_touch_target_unit" android:layout_marginTop="@dimen/pivot_overflow_icon_offset" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_caption" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMarginHalf">
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_caption_0" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_caption_1" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_header" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/search_overflow_icon" android:layout_below="@id/layout_caption" android:layout_alignParentLeft="true">
+        <TextView android:id="@id/textview_header_0" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?itemTitleStyle" />
+        <TextView android:id="@id/textview_header_1" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?itemTitleStyle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_subheader" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/layout_header">
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/textview_subheader_0" android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/textview_subheader_1" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/layout_info" android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_below="@id/layout_subheader">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/uxcomp_star_rating_small" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_primary" android:tag="binding_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_below="@id/layout_info">
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_primary_0" android:tag="binding_13" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_primary_1" android:tag="binding_14" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_primary_2" android:tag="binding_15" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_primary_3" android:tag="binding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_primary_4" android:tag="binding_17" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/layout_timer" android:tag="binding_18" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_timer_prepend" android:tag="binding_19" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.ebay.nautilus.shell.widget.CountdownView android:id="@id/textview_timer" android:tag="binding_20" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/EbayCountdownView.Small" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_timer_append" android:tag="binding_21" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_secondary" android:tag="binding_22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_below="@id/layout_primary">
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_secondary_0" android:tag="binding_23" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_secondary_1" android:tag="binding_24" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_secondary_2" android:tag="binding_25" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_secondary_3" android:tag="binding_26" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_secondary_4" android:tag="binding_27" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_footer" android:tag="binding_28" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_below="@id/layout_primary">
+        <Button android:textSize="@dimen/text_size_caption_material" android:gravity="center|left" android:id="@id/button_footer_0" android:tag="binding_29" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/EbayButton.Flat" />
+    </LinearLayout>
+</RelativeLayout>

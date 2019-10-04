@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/wallet_uxcomp_render_summary_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/render_summary_content" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include android:id="@id/primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" layout="@layout/wallet_uxcomp_icon_and_text" />
+        <LinearLayout android:orientation="vertical" android:id="@id/secondary" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/action_icon" android:layout_toRightOf="@id/primary" android:layout_alignWithParentIfMissing="true" android:importantForAccessibility="no" />
+        <LinearLayout android:orientation="vertical" android:id="@id/tertiary" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/action_icon" android:layout_toRightOf="@id/secondary" android:layout_alignWithParentIfMissing="true" />
+        <ImageView android:gravity="center" android:id="@id/bubble_icon" android:tag="binding_4" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/action_icon" android:tag="binding_5" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/subitems" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/render_summary_content">
+        <View android:id="@id/divider" android:tag="binding_7" android:layout_marginTop="@dimen/baseline_unit" android:layout_marginBottom="@dimen/baseline_unit" style="@style/CommonDivider" />
+        <include android:id="@id/subitem" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/wallet_uxcomp_render_summary_subitem" />
+    </LinearLayout>
+</RelativeLayout>

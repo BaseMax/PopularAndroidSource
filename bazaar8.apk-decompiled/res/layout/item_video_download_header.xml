@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_video_download_header_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/downloadVideoName" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Bazaar.Text.Body1" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/downloadVideoStorageSpace" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_quadruple" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/downloadVideoName" style="@style/Bazaar.Text.Body2.Dark" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/downloadVideoDesc" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/downloadVideoStorageSpace" style="@style/Bazaar.Text.Body2.Dark" />
+</androidx.constraintlayout.widget.ConstraintLayout>

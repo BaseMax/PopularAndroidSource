@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Switch android:textAppearance="?textAppearanceBody1" android:id="@id/button_toggle" android:tag="layout/answers_ux_toggle_message_0" android:paddingLeft="@dimen/ebayContentSideMargin" android:paddingTop="@dimen/component_header_padding" android:paddingRight="@dimen/ebayContentSideMargin" android:paddingBottom="@dimen/component_header_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

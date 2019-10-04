@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:tag="layout-sw600dp/shipment_tracking_progress_bar_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayPadding3x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/shipment_tracking_progress_drawable" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceSubheadSecondary" android:gravity="center_horizontal" android:id="@id/shipment_tracking_bullet_text" android:tag="binding_2" android:layout_width="@dimen/ebayMargin6x" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:scrollHorizontally="false" />
+            <TextView android:textAppearance="?textAppearanceSubhead" android:gravity="center_horizontal" android:id="@id/shipment_tracking_bullet_text_secondary" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/ebayMargin" android:layout_width="@dimen/ebayMargin8x" android:layout_height="fill_parent">
+        <View android:id="@id/shipment_tracking_step" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

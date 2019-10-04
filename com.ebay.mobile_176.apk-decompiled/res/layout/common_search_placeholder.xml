@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.SearchViewPlaceholderView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/aux_searchbar_side_margin" android:layout_marginRight="@dimen/aux_searchbar_side_margin" android:layout_marginBottom="@dimen/aux_searchbar_bottom_margin" style="?searchViewPlaceholderStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

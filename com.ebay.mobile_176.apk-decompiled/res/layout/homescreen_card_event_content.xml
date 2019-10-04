@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayScalingPadding2x" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/imageview_events" android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_event_image_height" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/event_text_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x">
+        <TextView android:textAppearance="?textAppearanceSubhead" android:ellipsize="end" android:id="@id/item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:maxLines="1" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:ellipsize="end" android:id="@id/item_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:maxLines="1" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:ellipsize="end" android:id="@id/item_timeLeft" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

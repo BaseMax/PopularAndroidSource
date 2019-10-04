@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/progress_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    </LinearLayout>
+    <com.ebay.mobile.sell.widget.CustomScrollView android:id="@id/parent_layout" style="@style/Sell.Layout.Scroll">
+        <LinearLayout style="@style/Sell.Layout.ScrollChild.WithHelp">
+            <LinearLayout android:layout_marginBottom="10.0dip" style="@style/Sell.Layout.ScrollChild.Content">
+                <TextView android:id="@id/focus" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" android:inputType="none" />
+                <androidx.cardview.widget.CardView android:id="@id/guarantee_layout" android:layout_marginTop="20.0dip" style="@style/Sell.Layout.CardView">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/guarantee_heading" android:layout_marginBottom="@dimen/ebayMarginHalf" style="@style/Sell.Spoke.Title" />
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayStaticMargin" android:text="@string/price_guarantee_recommendation_heading" android:lineSpacingMultiplier="1.2" />
+                        <CheckedTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?colorAccent" android:id="@id/guarantee_checkbox" android:lineSpacingMultiplier="1.2" style="@style/Sell.CheckedTextView" />
+                        <com.ebay.mobile.listingform.helper.CustomStyleTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/guarantee_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayStaticMargin" android:layout_marginBottom="10.0dip" android:lineSpacingMultiplier="1.2" />
+                        <TextView android:gravity="center_vertical" android:id="@id/guarantee_similar_items" android:layout_marginTop="0.0dip" style="@style/Sell.InlineLabel.Guidance.NoArrow" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@id/do_it_myself_button" android:layout_marginTop="20.0dip" style="@style/Sell.Layout.CardView">
+                    <TextView android:gravity="center" android:id="@id/do_it_myself_text" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/clickableButtonDimen" android:text="@string/guarantee_do_it_myself" />
+                </androidx.cardview.widget.CardView>
+                <LinearLayout android:orientation="vertical" android:id="@id/do_it_myself_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:text="@string/sell_label_format" style="@style/Sell.Spoke.Title.Top" />
+                    <androidx.cardview.widget.CardView style="@style/Sell.Layout.CardView">
+                        <com.ebay.mobile.widget.CardLayout android:id="@id/format_list" android:choiceMode="singleChoice" style="@style/Sell.Layout.CardLayout" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView android:text="@string/sell_label_price" style="@style/Sell.Spoke.Title.Top" />
+                    <androidx.cardview.widget.CardView android:id="@id/sell_layout" style="@style/Sell.Layout.CardView">
+                        <com.ebay.mobile.widget.CardLayout style="@style/Sell.Layout.CardLayout">
+                            <LinearLayout android:id="@id/currency_parent" android:weightSum="16.0" style="@style/Sell.Layout.Row">
+                                <TextView android:id="@id/currency_heading" android:text="@string/label_currency" android:layout_weight="5.0" style="@style/Sell.Layout.Row.Label" />
+                                <Spinner android:id="@id/spinner_currency" android:layout_weight="11.0" style="@style/Sell.Spinner.Inline" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/auction_start_price_row" style="@style/Sell.Layout.Row.WithGuidance">
+                                <LinearLayout style="@style/Sell.Layout.Row">
+                                    <TextView android:text="@string/label_auction_start_price" android:maxLines="2" style="@style/Sell.Layout.Row.Label" />
+                                    <com.ebay.mobile.widget.PriceView android:id="@id/auction_start_price" android:hint="@string/hint_start_price" android:imeOptions="actionNext|flagNoExtractUi" style="@style/Sell.Layout.Row.EditText" />
+                                </LinearLayout>
+                                <TextView android:id="@id/listing_start_price_guidance" android:visibility="gone" style="@style/Sell.InlineLabel.Guidance.RightArrowUp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/fixed_price_row" style="@style/Sell.Layout.Row.WithGuidance">
+                                <LinearLayout style="@style/Sell.Layout.Row">
+                                    <TextView android:text="@string/label_buy_it_now_price" android:maxLines="2" style="@style/Sell.Layout.Row.Label" />
+                                    <com.ebay.mobile.widget.PriceView android:id="@id/fixed_price" android:hint="@string/LOCKED_hint_fixed_price" android:imeOptions="actionNext|flagNoExtractUi" style="@style/Sell.Layout.Row.EditText" />
+                                </LinearLayout>
+                                <TextView android:id="@id/listing_fixed_price_guidance" android:visibility="gone" style="@style/Sell.InlineLabel.Guidance.RightArrowUp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/bin_row" style="@style/Sell.Layout.Row.WithGuidance">
+                                <LinearLayout style="@style/Sell.Layout.Row">
+                                    <TextView android:id="@id/bin_price_label" android:text="@string/label_buy_it_now_price" android:maxLines="2" style="@style/Sell.Layout.Row.Label" />
+                                    <com.ebay.mobile.widget.PriceView android:id="@id/buy_it_now" android:hint="@string/hint_bin_price" android:imeOptions="actionNext|flagNoExtractUi" style="@style/Sell.Layout.Row.EditText" />
+                                </LinearLayout>
+                                <TextView android:id="@id/listing_bin_price_guidance" android:visibility="gone" style="@style/Sell.InlineLabel.Guidance.RightArrowUp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/reserve_price_row" style="@style/Sell.Layout.Row">
+                                <TextView android:text="@string/label_reserve_price" android:maxLines="2" style="@style/Sell.Layout.Row.Label" />
+                                <com.ebay.mobile.widget.PriceView android:id="@id/reserve_price" android:hint="@string/hint_reserve_price" android:imeOptions="actionDone|flagNoExtractUi" style="@style/Sell.Layout.Row.EditText" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/quantity_row" style="@style/Sell.Layout.Row">
+                                <TextView android:text="@string/label_quantity" style="@style/Sell.Layout.Row.Label" />
+                                <EditText android:id="@id/quantity" android:hint="@string/hint_quantity" android:maxLength="5" android:inputType="number" android:imeOptions="actionDone|flagNoExtractUi" style="@style/Sell.Layout.Row.EditText" />
+                            </LinearLayout>
+                            <com.ebay.mobile.widget.CardLayout android:id="@id/scheduled_auction_layout" style="@style/Sell.Layout.CardLayout">
+                                <LinearLayout android:weightSum="16.0" style="@style/Sell.Layout.Row">
+                                    <TextView android:text="@string/label_duration" android:layout_weight="5.0" style="@style/Sell.Layout.Row.Label" />
+                                    <Spinner android:id="@id/spinner_duration" android:layout_weight="11.0" style="@style/Sell.Spinner.Inline" />
+                                </LinearLayout>
+                                <LinearLayout android:weightSum="16.0" style="@style/Sell.Layout.Row">
+                                    <TextView android:text="@string/label_schedule" android:layout_weight="5.0" style="@style/Sell.Layout.Row.Label" />
+                                    <Spinner android:id="@id/spinner_schedule" android:layout_weight="11.0" style="@style/Sell.Spinner.Inline" />
+                                </LinearLayout>
+                                <LinearLayout android:gravity="right" android:id="@id/schedule_buttons_layout" style="@style/Sell.Layout.Row">
+                                    <com.ebay.selling.listingform.widget.SingleLineButton android:ellipsize="none" android:id="@id/button_date_schedule" android:layout_width="wrap_content" style="@style/Sell.FakeSpinner" />
+                                    <com.ebay.selling.listingform.widget.SingleLineButton android:ellipsize="none" android:id="@id/button_time_schedule" android:layout_width="wrap_content" style="@style/Sell.FakeSpinner" />
+                                </LinearLayout>
+                                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                                    <com.ebay.android.widget.SingleLineTextView android:ellipsize="none" android:id="@id/ends_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginRight="@dimen/ebayStaticMargin" android:text="@string/label_listing_ends" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                                    <TextView android:gravity="right" android:id="@id/end_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayStaticMargin" android:layout_toRightOf="@id/ends_label" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                                </RelativeLayout>
+                            </com.ebay.mobile.widget.CardLayout>
+                            <include layout="@layout/sell_show_hide_options" />
+                        </com.ebay.mobile.widget.CardLayout>
+                    </androidx.cardview.widget.CardView>
+                    <TextView android:id="@id/best_offer_label" android:text="@string/best_offer" style="@style/Sell.Spoke.Title.Top" />
+                    <androidx.cardview.widget.CardView android:id="@id/sell_bo_layout" style="@style/Sell.Layout.CardView">
+                        <LinearLayout android:orientation="vertical" android:id="@id/best_offer_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.SwitchCompat android:id="@id/allow_best_offer" android:text="@string/label_allow_best_offer" style="@style/Sell.Layout.Row.Switch" />
+                            <LinearLayout android:id="@id/auto_accept_layout" style="@style/Sell.Group">
+                                <LinearLayout style="@style/Sell.Layout.Row">
+                                    <TextView android:id="@id/automatically_accept" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:text="@string/label_automatically_accept_offers" android:singleLine="false" style="@style/Sell.Layout.Row.Label" />
+                                    <com.ebay.mobile.widget.PriceView android:id="@id/automatically_accept_value" android:hint="@string/LOCKED_hint_auto_accept" android:imeOptions="flagNoExtractUi" style="@style/Sell.Layout.Row.EditText" />
+                                </LinearLayout>
+                                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/listContainerMarginDouble" android:text="@string/automatically_accept_subtext" android:singleLine="false" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_vertical" android:id="@id/auto_decline_layout" style="@style/Sell.Layout.Row">
+                                <TextView android:id="@id/automatically_decline" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:text="@string/label_automatically_decline_offers" android:singleLine="false" style="@style/Sell.Layout.Row.Label" />
+                                <com.ebay.mobile.widget.PriceView android:id="@id/automatically_decline_value" android:hint="@string/LOCKED_hint_auto_decline" android:imeOptions="flagNoExtractUi" style="@style/Sell.Layout.Row.EditText" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/help_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/shopping_cart_dashed_line" />
+                <LinearLayout android:layout_marginTop="10.0dip" style="@style/Sell.Layout.ScrollChild.Content">
+                    <TextView android:id="@id/sell_help_general_content" android:freezesText="true" style="@style/Sell.Layout.Help.Content" />
+                    <TextView android:text="@string/sell_help_price_format_auction_title" style="@style/Sell.Layout.Help.Title" />
+                    <TextView android:id="@id/sell_help_auction_content" android:freezesText="true" style="@style/Sell.Layout.Help.Content" />
+                    <TextView android:text="@string/sell_help_price_format_fixed_title" style="@style/Sell.Layout.Help.Title" />
+                    <TextView android:id="@id/sell_help_fixed_content" android:freezesText="true" style="@style/Sell.Layout.Help.Content" />
+                    <TextView android:text="@string/sell_help_price_format_auction_bin_title" style="@style/Sell.Layout.Help.Title" />
+                    <TextView android:id="@id/sell_help_auction_bin_content" android:freezesText="true" style="@style/Sell.Layout.Help.Content" />
+                    <TextView android:text="@string/sell_help_price_format_fixed_bo_title" style="@style/Sell.Layout.Help.Title" />
+                    <TextView android:id="@id/sell_help_fixed_bo_content" android:freezesText="true" style="@style/Sell.Layout.Help.Content" />
+                    <TextView android:text="@string/sell_help_price_format_reserve_title" style="@style/Sell.Layout.Help.Title" />
+                    <TextView android:id="@id/sell_help_reserve_content" android:freezesText="true" style="@style/Sell.Layout.Help.Content" />
+                    <TextView android:text="@string/sell_help_price_format_duration_title" style="@style/Sell.Layout.Help.Title" />
+                    <TextView android:text="@string/sell_help_price_format_duration" style="@style/Sell.Layout.Help.Content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.ebay.mobile.sell.widget.CustomScrollView>
+</FrameLayout>

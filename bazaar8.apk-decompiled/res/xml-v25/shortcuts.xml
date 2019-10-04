@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/free_ribbon_badge" android:enabled="true" android:shortcutId="search" android:shortcutShortLabel="@string/tab_title_search" android:shortcutLongLabel="@string/tab_title_search">
+        <intent android:targetPackage="com.farsitel.bazaar.dev" android:action="android.intent.action.VIEW" android:data="bazaar://search" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/free_ribbon_badge" android:enabled="true" android:shortcutId="video" android:shortcutShortLabel="@string/tab_title_video" android:shortcutLongLabel="@string/tab_title_video">
+        <intent android:targetPackage="com.farsitel.bazaar.dev" android:action="android.intent.action.VIEW" android:data="bazaar://videos" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/free_ribbon_badge" android:enabled="true" android:shortcutId="my_bazaar" android:shortcutShortLabel="@string/tab_title_my_bazaar" android:shortcutLongLabel="@string/tab_title_my_bazaar">
+        <intent android:targetPackage="com.farsitel.bazaar.dev" android:action="android.intent.action.VIEW" android:data="bazaar://my_bazaar" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

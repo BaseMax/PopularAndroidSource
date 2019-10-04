@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/pl_basic_ad_rate_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:animateLayoutChanges="true" style="@style/PlBasic"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" style="@style/PlBasic">
+        <ImageView android:layout_gravity="center" android:id="@id/pl_basic_error" android:layout_width="@dimen/error_resource_size" android:layout_height="@dimen/error_resource_size" android:layout_marginRight="@dimen/ebayMargin" android:src="@drawable/icon_alert_error" />
+        <TextView android:textStyle="bold" android:gravity="center_vertical" android:id="@id/title" android:tag="binding_2" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:id="@id/pl_basic_ad_rate" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:layout_marginBottom="0.0dip" style="@style/PlBasic.Text.Caption" />
+    <EditText android:id="@id/pl_basic_rate_edit" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginTop="0.0dip" android:layout_marginRight="@dimen/ebayMargin" android:layout_marginBottom="0.0dip" android:singleLine="true" android:inputType="numberDecimal" android:imeOptions="actionDone" />
+</LinearLayout>

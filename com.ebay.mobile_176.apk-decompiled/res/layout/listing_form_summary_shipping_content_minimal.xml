@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/listing_form_summary_shipping_content_minimal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="1.0" style="@style/Sell.DynamicCardContainer.ListingForm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/recommended_shipping_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayNoMargin" android:layout_marginRight="@dimen/ebayMargin15" android:layout_weight="0.6" android:importantForAccessibility="yes">
+        <TextView android:id="@id/shipping_recommendation_status_compressed_view" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPadding" android:visibility="gone" android:text="@string/recommended" android:drawablePadding="@dimen/ebayPadding" style="@style/Sell.EbayRecommended" />
+        <TextView android:id="@id/recommended_shipping_service" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.TextView.Big" />
+        <TextView android:textStyle="normal" android:id="@id/recommended_local_pickup_enabled" android:paddingBottom="@dimen/ebayPaddingHalf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/local_pickup_summary_label" style="@style/Sell.TextView.Big.Secondary" />
+        <TextView android:id="@id/recommended_shipping_package_weight_details" android:padding="@dimen/form_label_no_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+        <TextView android:id="@id/recommended_shipping_package_dimension_details" android:padding="@dimen/form_label_no_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+        <TextView android:id="@id/recommended_shipping_delivery_estimate_label" android:padding="@dimen/form_label_no_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Sell.FormValue.Label" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/shipping_price_tile" android:background="@drawable/sell_chance_of_selling_rectangle" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_weight="0.4" android:importantForAccessibility="yes">
+        <TextView android:id="@id/shipping_price_who_pays" android:maxLines="1" android:layout_centerHorizontal="true" style="@style/Sell.TextView.Medium" />
+        <TextView android:gravity="center" android:id="@id/shipping_price_value" android:text="@string/recommended_shipping_applied" android:layout_below="@id/shipping_price_who_pays" android:layout_centerHorizontal="true" style="@style/Sell.TextView.Big" />
+        <TextView android:gravity="center_horizontal" android:id="@id/shipping_price_additional_info" android:text="@string/recommended_shipping_applied" android:layout_below="@id/shipping_price_value" android:layout_centerHorizontal="true" style="@style/Sell.TextView.Small" />
+    </RelativeLayout>
+</LinearLayout>

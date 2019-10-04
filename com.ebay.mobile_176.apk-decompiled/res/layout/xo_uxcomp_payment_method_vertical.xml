@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/xo_uxcomp_payment_method_vertical_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center|left|top" android:orientation="horizontal" android:tag="binding_1" android:paddingTop="@dimen/ebayMargin15" android:paddingBottom="@dimen/ebayMargin15" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Row">
+        <FrameLayout android:id="@id/radio_container" android:tag="binding_2" android:layout_width="@dimen/xoLeftContentWidth" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin15" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <RadioButton android:id="@id/radio" android:tag="binding_3" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/summary_container" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/radio_container" android:layout_alignParentTop="true">
+            <include android:id="@id/primary" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/xo_uxcomp_payment_icon_and_text" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/secondary" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin15" />
+                <LinearLayout android:orientation="vertical" android:id="@id/tertiary" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin15" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:gravity="center" android:id="@id/bubble_icon" android:tag="binding_7" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/action_icon" android:tag="binding_8" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/payment_method_options" android:tag="binding_9" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

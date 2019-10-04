@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:textAppearance="?textAppearanceSubhead" android:id="@id/view_order_layout" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/search_refine_top_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="horizontal" android:id="@id/view_mode_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="?android:dividerVertical" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:showDividers="middle" android:dividerPadding="@dimen/ebayPadding">
+        <RadioButton android:id="@id/button_view_list" android:background="?android:selectableItemBackground" android:padding="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:button="@null" android:drawableLeft="@drawable/search_list_selector" android:contentDescription="@string/accessibility_search_view_mode_list" />
+        <RadioButton android:id="@id/button_view_grid" android:background="?android:selectableItemBackground" android:padding="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:button="@null" android:drawableLeft="@drawable/search_grid_selector" android:contentDescription="@string/accessibility_search_view_mode_tile" />
+    </RadioGroup>
+    <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/view_order_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view" android:layout_toLeftOf="@id/view_mode_buttons" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

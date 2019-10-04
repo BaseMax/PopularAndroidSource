@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/automatic_payment_method_parent" android:tag="layout/sell_landing_apm_0" android:background="@drawable/alert_red_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayContentSideMargin" android:layout_marginBottom="@dimen/ebayMargin2x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/automatic_payment_method_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sell_automatic_payment_title" android:drawableLeft="@drawable/ic_error" android:drawablePadding="@dimen/ebayPadding" />
+    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/automatic_payment_method_description" android:paddingLeft="@dimen/ebayPadding4x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sell_automatic_payment_description" />
+</LinearLayout>

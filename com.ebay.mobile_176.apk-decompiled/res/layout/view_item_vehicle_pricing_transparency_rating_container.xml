@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/vehicle_vpt_price_rating_container" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="0.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceDisplay1" android:id="@id/vehicle_vpt_price_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+    <TextView android:textAppearance="?textAppearanceCaption2" android:id="@id/vehicle_vpt_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/vehicle_vpt_price_comparison" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

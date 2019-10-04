@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/search_answers_message_0" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/message_icon" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?iconTintColor" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/textview_message_title" android:tag="binding_2" android:paddingRight="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/message_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

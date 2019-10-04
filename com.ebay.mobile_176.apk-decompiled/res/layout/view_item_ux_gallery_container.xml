@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.nautilus.shell.uxcomponents.widget.SingleItemContainerView android:tag="layout/view_item_ux_gallery_container_0" android:background="?containerBackgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content" app:componentInsidePaddingBottom="0.0dip" app:componentOutsidePaddingBottom="0.0dip" app:componentOutsidePaddingTop="0.0dip" style="?singleItemContainerNoPaddingStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

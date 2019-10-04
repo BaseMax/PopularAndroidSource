@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/listing_form_details_shipping_intl" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:id="@id/intl_shipping_details_card" style="@style/Sell.Card.ListingForm">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.SwitchCompat android:id="@id/international_shipping_toggle" style="@style/Sell.Switch" />
+            <LinearLayout android:orientation="vertical" android:id="@id/intl_shipping_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/intl_package_details_row" android:visibility="gone" style="@style/Sell.ShippingDetails.PackageRow">
+                    <TextView android:id="@id/intl_package_details_label" android:layout_marginLeft="@dimen/shipping_compensate_margin" android:text="@string/calculated_package_details_label" style="@style/Sell.ShippingDetails.Title" />
+                    <TextView android:id="@id/intl_package_details_text" android:layout_marginLeft="@dimen/shipping_compensate_margin" android:text="@string/shipping_package_sublabel" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/intl_shipping_service_row" android:visibility="gone" style="@style/Sell.ShippingDetails.DataRow">
+                    <TextView android:id="@id/intl_shipping_service_label" style="@style/Sell.ShippingDetails.Title" />
+                    <TextView android:id="@id/intl_shipping_service_text" style="@style/Sell.ShippingDetails.Link.WithNoMargin" />
+                    <TextView android:id="@id/intl_shipping_service_delivery_time_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                    <TextView android:id="@id/intl_shipping_service_package_weight_limits_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                    <TextView android:id="@id/intl_shipping_service_package_dimen_limits_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                    <TextView android:id="@id/intl_shipping_service_tracking_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                    <TextView android:id="@id/intl_shipping_service_insurance_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                </LinearLayout>
+                <View android:id="@id/intl_shipping_service_divider" style="@style/Sell.Divider" />
+                <LinearLayout android:id="@id/intl_shipping_cost_row" android:visibility="gone" style="@style/Sell.ShippingDetails.DataRow">
+                    <TextView android:id="@id/intl_shipping_cost_label" style="@style/Sell.ShippingDetails.Title" />
+                    <TextView android:id="@id/intl_shipping_cost_text" style="@style/Sell.ShippingDetails.Link.WithNoMargin" />
+                    <TextView android:id="@id/intl_shipping_cost_details_text" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                </LinearLayout>
+                <View android:id="@id/intl_shipping_cost_divider" style="@style/Sell.Divider" />
+                <LinearLayout android:id="@id/intl_destination_row" android:visibility="gone" style="@style/Sell.ShippingDetails.DataRow">
+                    <TextView android:id="@id/intl_destination_details_text" android:text="@string/intl_shipping_region_title" style="@style/Sell.ShippingDetails.Title" />
+                    <TextView android:id="@id/intl_destination_text" style="@style/Sell.ShippingDetails.Link.WithNoMargin" />
+                </LinearLayout>
+                <View style="@style/Sell.Divider.CompensateSideMargins" />
+                <Button android:id="@id/additional_intl_shipping_service_button" android:text="@string/add_second_international_service" style="@style/EbayButton.Flat.ListingForm.Centered" />
+                <LinearLayout android:orientation="vertical" android:id="@id/second_intl_shipping_service_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/second_intl_service_header_container" style="@style/Sell.ShippingDetails.ToggleHeaderContainer">
+                        <ImageButton android:id="@id/second_intl_service_off_button" android:src="@drawable/ic_clear" android:layout_alignParentTop="true" android:contentDescription="@string/remove_additional_intl_shipping_service_accessibility" android:layout_alignParentEnd="true" style="@style/Sell.Toggle" />
+                        <TextView android:id="@id/second_intl_service_label" android:layout_toLeftOf="@id/second_intl_service_off_button" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/Sell.ShippingDetails.Bolt.Title" />
+                        <TextView android:id="@id/second_intl_service_description_label" android:text="@string/additional_international_service" android:layout_toLeftOf="@id/second_intl_service_off_button" android:layout_below="@id/second_intl_service_label" android:layout_alignParentLeft="true" style="@style/Sell.ShippingDetails.Label" />
+                    </RelativeLayout>
+                    <LinearLayout android:id="@id/second_intl_package_details_row" android:visibility="gone" style="@style/Sell.ShippingDetails.PackageRow">
+                        <TextView android:id="@id/second_intl_package_details_label" android:layout_marginLeft="@dimen/shipping_compensate_margin" android:text="@string/calculated_package_details_label" style="@style/Sell.ShippingDetails.Title" />
+                        <TextView android:id="@id/second_intl_package_details_text" android:layout_marginLeft="@dimen/shipping_compensate_margin" android:text="@string/shipping_package_sublabel" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/second_intl_shipping_service_row" android:visibility="gone" style="@style/Sell.ShippingDetails.DataRow">
+                        <TextView android:id="@id/second_intl_shipping_service_label" style="@style/Sell.ShippingDetails.Title" />
+                        <TextView android:id="@id/second_intl_shipping_service_text" style="@style/Sell.ShippingDetails.Link.WithNoMargin" />
+                        <TextView android:id="@id/second_intl_shipping_service_delivery_time_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                        <TextView android:id="@id/second_intl_shipping_service_package_weight_limits_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                        <TextView android:id="@id/second_intl_shipping_service_package_dimen_limits_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                        <TextView android:id="@id/second_intl_shipping_service_tracking_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                        <TextView android:id="@id/second_intl_shipping_service_insurance_text" android:visibility="gone" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                    </LinearLayout>
+                    <View android:id="@id/second_intl_shipping_service_divider" style="@style/Sell.Divider" />
+                    <LinearLayout android:id="@id/second_intl_shipping_cost_row" android:visibility="gone" style="@style/Sell.ShippingDetails.DataRow">
+                        <TextView android:id="@id/second_intl_shipping_cost_label" style="@style/Sell.ShippingDetails.Title" />
+                        <TextView android:id="@id/second_intl_shipping_cost_text" style="@style/Sell.ShippingDetails.Link.WithNoMargin" />
+                        <TextView android:id="@id/second_intl_shipping_cost_details_text" style="@style/Sell.ShippingDetails.Bolt.SubLabel" />
+                    </LinearLayout>
+                    <View android:id="@id/second_intl_shipping_cost_divider" style="@style/Sell.Divider" />
+                    <LinearLayout android:id="@id/second_intl_destination_row" android:visibility="gone" style="@style/Sell.ShippingDetails.DataRow">
+                        <TextView android:id="@id/second_intl_destination_details_text" android:text="@string/intl_shipping_region_title" style="@style/Sell.ShippingDetails.Title" />
+                        <TextView android:id="@id/second_intl_destination_text" style="@style/Sell.ShippingDetails.Link.WithNoMargin" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

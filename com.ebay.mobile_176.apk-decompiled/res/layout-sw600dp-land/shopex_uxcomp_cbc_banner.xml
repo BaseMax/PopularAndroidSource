@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout-sw600dp-land/shopex_uxcomp_cbc_banner_0" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/imageview_item_image" android:tag="binding_1" android:layout_width="@dimen/shoppingCartCbcBannerIconWidth" android:layout_height="@dimen/shoppingCartCbcBannerIconHeight" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" android:src="@drawable/ic_missing_image" android:scaleType="centerCrop" app:fadeInDuration="@integer/answers_image_fade_in_duration" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_toRightOf="@id/imageview_item_image">
+            <TextView android:textAppearance="?textAppearanceTitle1" android:ellipsize="end" android:id="@id/textview_item_heading" android:tag="binding_2" android:paddingTop="@dimen/ebayMarginHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:ellipsize="end" android:id="@id/textview_item_sub_heading" android:tag="binding_3" android:paddingTop="@dimen/ebayMarginHalf" android:paddingBottom="@dimen/ebayMarginHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textAppearance="?textAppearanceBody2Accent" android:id="@id/textview_item_call_to_action" android:tag="binding_4" android:paddingTop="@dimen/ebayMarginHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

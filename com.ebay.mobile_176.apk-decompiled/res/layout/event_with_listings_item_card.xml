@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:tag="layout/event_with_listings_item_card_0" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ebay.android.widget.RemoteImageView android:layout_gravity="center_horizontal" android:tag="binding_1" android:layout_margin="@dimen/baseline_unit" android:src="@drawable/ic_missing_image" android:scaleType="fitCenter" style="?imageCarouselStyle" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:tag="binding_2" android:paddingLeft="@dimen/baseline_unit" android:paddingBottom="@dimen/baseline_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:minLines="1" />
+    </LinearLayout>
+</FrameLayout>

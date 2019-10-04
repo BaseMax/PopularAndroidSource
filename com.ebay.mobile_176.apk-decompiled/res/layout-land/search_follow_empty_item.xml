@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="horizontal" android:id="@android:id/empty" android:paddingTop="@dimen/searchlanding_null_top_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|top" android:layout_width="@dimen/searchlanding_null_icon_size" android:layout_height="@dimen/searchlanding_null_icon_size" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:src="@drawable/search_for" android:tint="?iconTintColor" android:contentDescription="@null" />
+    <ImageView android:layout_gravity="center|top" android:layout_width="@dimen/searchlanding_null_icon_size" android:layout_height="@dimen/searchlanding_null_icon_size" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:src="@drawable/member" android:tint="?iconTintColor" android:contentDescription="@null" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayStaticMargin">
+        <TextView android:layout_gravity="left" android:id="@id/followNullTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_landing_follow_null_title" style="?textAppearanceTitle2" />
+        <TextView android:id="@id/followNullMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_landing_follow_null_message" style="?textAppearanceBody1Secondary" />
+        <Button android:layout_gravity="left" android:id="@id/button_login" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_landing_follow_null_call_to_action" style="@style/EbayButton.Flat" />
+    </LinearLayout>
+</LinearLayout>

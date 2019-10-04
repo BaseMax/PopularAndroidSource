@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/photomanager_border" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/photo_manager_photo_image" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" app:missingImage="@drawable/photomanager_ic_camera" />
+    <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/photo_manager_photo_text" android:background="@color/black_60pct" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/photo_manager_photo_lock" android:background="@color/black_60pct" android:padding="1.0dip" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="29.0dip" android:src="@drawable/photomanager_lock" />
+        <ImageView android:id="@id/photo_manager_photo_error" android:background="@color/black_60pct" android:padding="1.0dip" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="29.0dip" android:src="@drawable/error_icon" />
+    </LinearLayout>
+    <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/photo_manager_photo_caption" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="" />
+    <TextView android:textSize="12.0sp" android:textColor="?android:textColorSecondary" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/photo_manager_photo_free" android:paddingLeft="3.0dip" android:paddingTop="2.0dip" android:paddingRight="3.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip" />
+</FrameLayout>

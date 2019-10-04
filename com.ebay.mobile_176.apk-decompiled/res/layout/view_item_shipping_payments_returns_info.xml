@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LetterboxViewItem">
+        <include layout="@layout/item_header_bin_plus_shipping" />
+        <androidx.cardview.widget.CardView android:id="@id/top_rated_listing_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_rated_listing_layout_1" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding15" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="top" android:background="@drawable/ic_etrs_logo_lg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin">
+                        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/proofPointsHeader1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/proofPointsItemLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@id/top_rated_listing_layout_3" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding15" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip">
+                    <ImageView android:id="@id/top_rated_seller_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_etrs20_lg" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/top_rated_seller_chevron" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMargin" android:src="?spokeChevronDrawable" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:importantForAccessibility="no" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_toLeftOf="@id/top_rated_seller_chevron" android:layout_toRightOf="@id/top_rated_seller_badge">
+                        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/proofPointsHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/proofPointsItemLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <TextView android:id="@id/proofPointsFooter" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <FrameLayout android:id="@id/plus_framelayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <FrameLayout android:id="@id/spr_fragment_layout" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" style="@style/StyleGuideViewItemFragmentFrame" />
+    </LinearLayout>
+</ScrollView>

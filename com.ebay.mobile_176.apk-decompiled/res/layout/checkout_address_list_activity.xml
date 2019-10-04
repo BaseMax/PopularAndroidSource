@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/progress_container" />
+    <RelativeLayout android:id="@id/xo_content" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:background="?listContainerOutsideBackground" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/checkout_error_container" />
+                <LinearLayout android:orientation="vertical" android:id="@id/address_list" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/xoMarginMedium" />
+                <LinearLayout android:orientation="vertical" android:id="@id/xo_address_footer" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center|right" android:orientation="vertical" android:id="@id/address_new_link" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/xoMarginMedium" style="@style/Xo.Row">
+                        <TextView android:textAppearance="?textAppearanceBody2Accent" android:id="@id/address_new_text" android:paddingTop="@dimen/xoMarginSmall" android:paddingRight="@dimen/xoMarginLarge" android:paddingBottom="@dimen/xoMarginSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</merge>

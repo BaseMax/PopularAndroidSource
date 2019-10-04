@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/notification_icon" android:background="@color/notification_ds6_logo_background" android:layout_width="@dimen/notification_ds6_collapsed_logo_width" android:layout_height="@dimen/notification_ds6_collapsed_logo_width" android:layout_marginTop="@dimen/ebayMarginHalf" android:src="@drawable/ic_logo_new_ds6" android:scaleType="fitCenter" android:contentDescription="@string/app_name" android:layout_marginStart="@dimen/notification_side_padding" android:layout_marginEnd="@dimen/ebayMargin" />
+    <TextView android:textAppearance="@style/EbayTextAppearance.Ds6" android:ellipsize="end" android:id="@id/notification_title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" android:layout_toLeftOf="@id/notification_time" android:layout_toRightOf="@id/notification_icon" android:layout_alignWithParentIfMissing="true" android:paddingEnd="@dimen/ebayPaddingHalf" />
+    <DateTimeView android:textAppearance="@style/EbayTextAppearance.Ds6.Regular.Secondary" android:id="@id/notification_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignBaseline="@id/notification_title" android:layout_marginEnd="@dimen/notification_side_padding" android:layout_alignParentEnd="true" />
+</merge>

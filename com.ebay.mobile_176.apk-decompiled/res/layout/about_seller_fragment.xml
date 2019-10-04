@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/about_seller_layout" android:tag="layout/about_seller_fragment_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <TextView android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_the_seller" style="@style/StyleGuideViewItemCardTitle" />
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_seller_details" android:tag="binding_1" android:paddingTop="@dimen/ebayPadding" android:paddingRight="0.0dip" android:paddingBottom="@dimen/ebayPadding" android:focusable="true" android:weightSum="1.0" style="@style/StyleGuideViewItemStatCell">
+                <com.ebay.mobile.widget.UserThumbnail android:id="@id/seller_avatar" android:layout_width="@dimen/ViewItemSellerPhotoSize" android:layout_height="@dimen/ViewItemSellerPhotoSize" ebay:borderColor="?thumbnailBorderColor" ebay:userThumbnailBorderWidth="@dimen/thumbnailBorderWidth" />
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/seller_name" android:paddingLeft="@dimen/checkoutSmallMargin" android:paddingRight="@dimen/checkoutSmallMargin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/seller_username" android:paddingLeft="@dimen/checkoutSmallMargin" android:paddingRight="@dimen/checkoutSmallMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/seller_name" />
+                    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/seller_feedback_percent" android:paddingLeft="@dimen/checkoutSmallMargin" android:paddingRight="@dimen/checkoutSmallMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/seller_username" />
+                    <TextView android:textAppearance="?buttonFlatAccentTextAppearance" android:textColor="?buttonFlatAccentTextColor" android:gravity="center_vertical" android:id="@id/seller_save" android:tag="binding_2" android:paddingLeft="@dimen/checkoutSmallMargin" android:paddingRight="@dimen/checkoutSmallMargin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/ebayPaddingHalf" android:layout_below="@id/seller_feedback_percent" />
+                </RelativeLayout>
+                <include layout="@layout/view_item_chevron" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/button_authorized_seller" android:tag="binding_3" android:background="?android:listChoiceBackgroundIndicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin">
+                <View android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:textAppearance="?textAppearanceBody2Accent" android:gravity="center|right" android:id="@id/authorized_seller" android:paddingTop="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/button_other_items" android:tag="binding_4" android:background="?android:listChoiceBackgroundIndicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin">
+                <View android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:textAppearance="?textAppearanceBody2Accent" android:gravity="center|right" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sellers_other_items" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

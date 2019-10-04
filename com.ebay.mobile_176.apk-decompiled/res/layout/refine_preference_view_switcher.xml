@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:orientation="horizontal" android:id="@id/view_mode_buttons" android:tag="layout/refine_preference_view_switcher_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="?android:dividerVertical" android:showDividers="middle" android:dividerPadding="@dimen/ebayPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/button_view_list" android:tag="binding_1" android:background="?android:selectableItemBackground" android:padding="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:button="@null" android:drawableLeft="@drawable/search_list_selector" android:contentDescription="@string/accessibility_search_view_mode_list" />
+    <RadioButton android:id="@id/button_view_grid" android:tag="binding_2" android:background="?android:selectableItemBackground" android:padding="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:button="@null" android:drawableLeft="@drawable/search_grid_selector" android:contentDescription="@string/accessibility_search_view_mode_tile" />
+</RadioGroup>

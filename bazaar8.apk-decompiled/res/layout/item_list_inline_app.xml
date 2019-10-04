@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/appRootItem" android:tag="layout/item_list_inline_app_0" android:paddingBottom="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/hamiCard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_half" android:layout_marginBottom="@dimen/default_margin_half" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_double" app:cardCornerRadius="@dimen/hami_corner_radius" app:cardElevation="@dimen/default_margin_half">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/hamiInline" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin_double" />
+            <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/appIcon" android:tag="binding_2" android:layout_margin="@dimen/default_margin" android:scaleType="fitXY" style="@style/Bazaar.Image.HamiAppIcon" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.farsitel.bazaar.widget.LocalAwareTextView android:ellipsize="end" android:id="@id/appName" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" style="@style/Bazaar.Text.Body2.White" />
+                    <androidx.appcompat.widget.AppCompatTextView android:ellipsize="end" android:id="@id/shortDescription" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" style="@style/Bazaar.Text.Body2.White" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_double">
+                    <com.google.android.material.button.MaterialButton android:id="@id/primaryButton" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" android:text="@string/install" style="@style/Bazaar.Button.Flat.White.Secondary" />
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@id/cancelButton" android:tag="binding_6" android:visibility="gone" android:layout_width="fill_parent" android:minWidth="100.0dip" app:srcCompat="@drawable/ic_round_close_24px" style="@style/Bazaar.Button.Flat.Secondary.Cancel" />
+                    <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginTop="@dimen/default_margin" style="@style/Bazaar.Widget.Material.ProgressBar.Horizontal.Hami" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

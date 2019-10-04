@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sell_preferences_summary_parent" android:tag="layout/listing_form_summary_preferences_0" android:paddingBottom="@dimen/ebayPadding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/preferences_module_header_tap_target" layout="@layout/listing_form_summary_header" />
+    <androidx.cardview.widget.CardView style="@style/Sell.Card.ListingForm">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="?listingFormSummaryContentStyle">
+            <LinearLayout android:orientation="vertical" android:id="@id/preferences_tap_target" android:tag="binding_1" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:importantForAccessibility="no">
+                <include layout="@layout/listing_form_summary_error" style="@style/ListingFormSummaryErrorStyle.NoMarginBottom" />
+                <TextView android:id="@id/preferences_tool_tip" android:visibility="gone" android:layout_marginBottom="@dimen/compensate_overview_tool_tip_margin" style="?listingFormSummaryGuidanceModuleTextStyle" />
+                <LinearLayout android:orientation="vertical" android:id="@id/preferences_label_value_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.DynamicCardContainer.ListingForm">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/payment_methods_container_summary" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                        <TextView android:id="@id/payment_methods_label" android:layout_width="0.0dip" android:text="@string/sell_preferences_payment_methods" android:layout_weight="0.4" style="@style/Sell.FormValue.Label" />
+                        <TextView android:id="@id/payment_methods_text_view" android:layout_width="0.0dip" android:layout_weight="0.6" style="@style/Sell.FormValue" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                        <TextView android:id="@id/handling_time_label_summary" android:layout_width="0.0dip" android:text="@string/sell_preferences_handling_time" android:layout_weight="0.4" style="@style/Sell.FormValue.Label" />
+                        <TextView android:id="@id/handling_time_text_view" android:layout_width="0.0dip" android:text="@string/sell_preferences_default_handling_time" android:layout_weight="0.6" style="@style/Sell.FormValue" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/item_location_container" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                        <TextView android:id="@id/item_location_label_preferences" android:layout_width="0.0dip" android:text="@string/sell_preferences_item_location" android:layout_weight="0.4" style="@style/Sell.FormValue.Label" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_weight="0.6" style="@style/Sell.FormValue">
+                            <TextView android:id="@id/postal_code_textview" android:paddingTop="@dimen/form_label_no_padding" style="@style/Sell.FormValue" />
+                            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/city_state_textview" android:padding="@dimen/form_label_no_padding" android:visibility="gone" style="@style/Sell.FormValue" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                        <TextView android:id="@id/returns_accepted_label" android:layout_width="0.0dip" android:text="@string/accept_returns" android:layout_weight="0.4" style="@style/Sell.FormValue.Label" />
+                        <TextView android:id="@id/returns_text_view" android:layout_width="0.0dip" android:layout_weight="0.6" style="@style/Sell.FormValue" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/immediate_pay_container" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                        <TextView android:id="@id/immediate_pay_label" android:layout_width="0.0dip" android:text="@string/sell_preferences_immediate_pay_label" android:layout_weight="0.4" style="@style/Sell.FormValue.Label" />
+                        <TextView android:id="@id/immediate_pay_value_text_view" android:layout_width="0.0dip" android:layout_weight="0.6" style="@style/Sell.FormValue" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageButton android:id="@id/preferences_button" android:layout_below="@id/preferences_tap_target" android:contentDescription="@string/change_preferences" style="@style/EbayButton.Icon.Bolt" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

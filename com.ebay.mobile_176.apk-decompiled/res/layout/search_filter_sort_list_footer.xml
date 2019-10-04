@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center_horizontal" android:id="@id/search_filter_sort_list_footer" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/LEGAL_best_match_disclaimer"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

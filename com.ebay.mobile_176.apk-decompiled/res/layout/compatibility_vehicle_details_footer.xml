@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?cardColor" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMarginHalf"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/CommonDivider" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/ebayPadding3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:importantForAccessibility="noHideDescendants">
+            <TextView android:textAppearance="?textAppearanceSubhead" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/compatibility_save_vehicle_prompt" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/compatibility_find_parts_subtitle" />
+        </LinearLayout>
+        <Switch android:id="@id/save_to_garage_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:contentDescription="@string/accessibility_compatibility_save_vehicle_prompt" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/ebayTextSizeCaption" android:id="@id/save_limit_reached" android:paddingTop="@dimen/ebayPaddingHalf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayStaticMargin" android:minHeight="12.0dip" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="layout-sw600dp/shipment_tracking_progress_bar_container_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.nautilus.shell.uxcomponents.widget.ScrollingContainerView android:layout_gravity="center_horizontal" android:id="@id/scrolling_container_view" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

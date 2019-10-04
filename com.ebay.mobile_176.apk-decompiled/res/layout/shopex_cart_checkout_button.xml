@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/shopex_checkout_button_layout" android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/shopping_cart_checkout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayPadding" android:text="@string/prox_checkout_label" style="@style/EbayButton.Blue" />
+</LinearLayout>

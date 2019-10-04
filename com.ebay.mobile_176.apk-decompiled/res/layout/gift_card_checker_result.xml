@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin">
+        <TextView android:textAppearance="?textAppearanceTitle1" android:textColor="@color/style_guide_dark_gray" android:gravity="center" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:text="@string/gift_card_check_balance_title" />
+    </RelativeLayout>
+    <TextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/style_guide_darker_gray" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gift_card_your_balance" />
+    <TextView android:textColor="@color/style_guide_text_primary" android:layout_gravity="center_horizontal" android:id="@id/gift_card_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" style="@style/EbayTextAppearanceStrong.Headline2" />
+    <Button android:id="@id/gift_card_entry_result_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin4x" android:text="@string/gift_card_check_another_button" style="@style/EbayButton" />
+    <TextView android:textColor="@color/style_guide_darker_gray" android:gravity="left" android:id="@id/gift_card_legal_text" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x" android:text="@string/gift_card_footnote" style="@style/EbayTextAppearanceSmall" />
+</LinearLayout>

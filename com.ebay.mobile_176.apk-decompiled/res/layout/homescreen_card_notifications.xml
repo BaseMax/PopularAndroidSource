@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/card_notifications_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?dividerHorizontal" android:showDividers="middle" android:dividerPadding="@dimen/ebayPadding2x">
+        <include android:id="@id/card_notification_item_0" layout="@layout/homescreen_card_notification_row" />
+        <include android:id="@id/card_notification_item_1" layout="@layout/homescreen_card_notification_row" />
+    </LinearLayout>
+    <View android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dividerHeight" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" />
+</LinearLayout>

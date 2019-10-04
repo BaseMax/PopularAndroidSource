@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/gallery_image_picker_empty_item_0" style="@style/GalleryImageFrameStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.android.widget.RemoteImageView android:visibility="invisible" android:contentDescription="@null" style="@style/GalleryImageStyle" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/ic_more_gallery_white_48dp" android:scaleType="centerCrop" android:tint="?iconTintColor" />
+        <TextView android:textAppearance="?textAppearanceBody2" android:textColor="?android:textColorSecondary" android:gravity="center" android:tag="binding_1" android:paddingTop="@dimen/ebayStaticMarginHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gallery_picker_more" android:textAllCaps="true" />
+    </LinearLayout>
+</FrameLayout>

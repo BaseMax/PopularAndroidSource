@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fast_and_free_layout_below" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon_shipping_below" android:layout_width="@dimen/fast_and_free_pic_width" android:layout_height="@dimen/fast_and_free_pic_height" android:src="@drawable/fast_and_free_truck_18dp" />
+    <TextView android:textSize="@dimen/ebayTextSize" android:textColor="@color/egd_fnf_green" android:id="@id/fast_and_free_below" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:text="@string/view_item_fast_and_free" android:contentDescription="@string/view_item_fast_and_free" />
+</LinearLayout>

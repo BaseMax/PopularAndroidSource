@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/recommended_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/reapply_recommendation_container" android:visibility="gone" style="@style/ListingFormDetailGuidanceModuleContainerStyle">
+        <ImageView android:layout_gravity="center|left|top" android:src="@drawable/ic_exclamation" android:tint="?iconTintColor" android:rotation="180.0" style="@style/ListingFormDetailGuidanceModuleIconStyle.Info" />
+        <TextView android:id="@id/recommended_tool_tip" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/ListingFormGuidanceMessage" />
+        <Button android:id="@id/recommendation_apply_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" android:text="@string/recommended_pricing_apply" android:contentDescription="@string/recommended_pricing_apply_accessible" android:layout_marginEnd="@dimen/ebayMargin" style="@style/EbayButton.Secondary" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/recommendation_applied_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center|left|top" android:src="@drawable/ic_circle_checked_guidance" style="@style/ListingFormDetailGuidanceModuleIconStyle" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/recommendation_text" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="0.0dip" android:layout_weight="1.0" android:lineSpacingMultiplier="@dimen/listing_form_line_spacing_multiplier" style="@style/EbayCardTitleStyle" />
+    </LinearLayout>
+</RelativeLayout>

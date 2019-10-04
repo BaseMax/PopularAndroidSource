@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/garage_action_item_container" android:tag="layout/compatibility_answer_garage_action_item_0" android:background="@drawable/answers_pill_background" android:clickable="true" android:layout_width="@dimen/answers_pill_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ebayMargin" android:foreground="?android:selectableItemBackground" android:minHeight="@dimen/srp_fitment_tile_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/answers_pill_background_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textAppearance="?textAppearanceBody2Accent" android:gravity="center" android:id="@id/add_garage_action_text" android:tag="binding_1" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textAlignment="center" />
+</FrameLayout>

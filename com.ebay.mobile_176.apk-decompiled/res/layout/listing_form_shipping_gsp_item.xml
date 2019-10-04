@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?containerBackgroundColor" android:paddingTop="@dimen/ebayMargin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/gsp_radio_button" android:layout_marginBottom="@dimen/ebayNoMargin" style="@style/Sell.Shipping.RadioButton" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/gsp_button_container" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:layout_below="@id/gsp_radio_button" android:onClick="onClick" android:paddingStart="@dimen/sell_shipping_radio_left_margin">
+        <View android:layout_gravity="center_vertical" android:background="@drawable/ic_info_filled_16dp" android:layout_width="@dimen/sell_info_icon_size" android:layout_height="@dimen/sell_info_icon_size" />
+        <TextView android:layout_gravity="center_vertical" android:text="@string/gsp_learn_more" style="@style/EbayButton.Flat.TextOnly" />
+    </LinearLayout>
+    <View android:id="@id/gsp_divider" android:layout_marginLeft="@dimen/shipping_compensate_margin" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/shipping_compensate_margin" android:layout_below="@id/gsp_button_container" style="@style/Sell.ShippingDetails.Divider" />
+</RelativeLayout>

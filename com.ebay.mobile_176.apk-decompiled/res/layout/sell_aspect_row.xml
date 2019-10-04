@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/aspect_row_container" android:background="?android:selectableItemBackground" android:padding="@dimen/ebayPadding" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:layout_marginStart="@dimen/compensate_full_bleed" android:layout_marginEnd="@dimen/compensate_full_bleed"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/lock" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:ellipsize="end" android:gravity="center|left" android:id="@id/label" android:includeFontPadding="false" style="@style/Sell.InlineLabel" />
+        <TextView android:gravity="left" android:id="@id/num_searches" android:visibility="gone" style="@style/Sell.InlineLabel.Caption.Gray" />
+        <TextView android:gravity="left" android:id="@id/value" style="@style/Sell.InlineLabel.Caption.Blue" />
+    </LinearLayout>
+    <ImageView android:id="@id/lock" android:visibility="gone" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/accessibility_locked" style="@style/Sell.LockIcon" />
+</RelativeLayout>

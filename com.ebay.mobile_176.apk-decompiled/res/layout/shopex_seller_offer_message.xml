@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@id/shopex_offer_message" android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ShopEx.Offers.Message"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

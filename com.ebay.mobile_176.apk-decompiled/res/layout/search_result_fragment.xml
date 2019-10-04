@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="left" android:id="@id/noBarcodeMatchText" android:padding="@dimen/ebayPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ebay.nautilus.shell.widget.EbaySwipeRefreshLayout android:enabled="false" android:id="@id/swipe_to_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:visibility="gone" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:fastScrollEnabled="false" />
+            <include layout="@layout/search_no_results" />
+        </FrameLayout>
+    </com.ebay.nautilus.shell.widget.EbaySwipeRefreshLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/progressContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

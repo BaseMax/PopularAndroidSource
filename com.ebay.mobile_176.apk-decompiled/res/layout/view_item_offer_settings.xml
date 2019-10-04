@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/best_offer_settings_content_frame" android:tag="layout/view_item_offer_settings_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_translucent_progress" />
+    <ScrollView android:id="@id/offer_settings_content" android:visibility="gone" style="@style/ItemView.TopScrollView">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/offer_settings_scroll_content" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:weightSum="1.0">
+                <TextView android:textAppearance="?textAppearanceBody1" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:labelFor="@id/offer_settings_kill_switch" />
+                <Switch android:id="@id/offer_settings_kill_switch" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textColor="?colorAlert" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" />
+            <TextView android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" />
+            <com.ebay.mobile.transaction.bestoffer.view.CurrencyEntryFieldView android:id="@id/auto_decline_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" />
+            <com.ebay.mobile.transaction.bestoffer.view.CurrencyEntryFieldView android:id="@id/auto_accept_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" />
+            <View android:layout_width="wrap_content" android:layout_height="0.0dip" android:minHeight="1.0dip" android:layout_weight="1.0" />
+            <Button android:layout_gravity="right" android:id="@id/offer_settings_save" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/EbayButton.Flat" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:visibility="gone" layout="@layout/best_offer_generic_error" />
+</FrameLayout>

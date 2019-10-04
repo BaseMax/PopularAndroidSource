@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/home_item_placeholder_content_0" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?cardStyleShadowStartColor" android:layout_marginTop="@dimen/ebayStaticMargin" style="?imageCarouselStyle" />
+    <View android:background="?cardStyleShadowStartColor" android:layout_height="@dimen/ebayMargin" android:layout_marginTop="@dimen/ebayStaticMargin" style="?imageCarouselStyle" />
+    <View android:background="?cardStyleShadowStartColor" android:layout_width="@dimen/homescreen_placeholder_title_one" android:layout_height="@dimen/ebayMargin" android:layout_marginTop="@dimen/ebayStaticMargin" />
+    <View android:background="?cardStyleShadowStartColor" android:layout_width="@dimen/homescreen_placeholder_title_two" android:layout_height="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayStaticMargin" />
+    <View android:background="?cardStyleShadowStartColor" android:layout_width="@dimen/homescreen_placeholder_title_three" android:layout_height="@dimen/ebayMargin" android:layout_marginTop="@dimen/ebayStaticMargin" />
+</LinearLayout>

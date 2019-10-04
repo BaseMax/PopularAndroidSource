@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tour_page_desc_text_size">16.0sp</dimen>
+    <dimen name="tour_page_image_size">320.0dip</dimen>
+    <dimen name="tour_page_title_text_size">20.0sp</dimen>
+</resources>

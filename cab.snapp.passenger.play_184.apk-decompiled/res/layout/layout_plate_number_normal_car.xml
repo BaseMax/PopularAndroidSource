@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/shape_rectangle_pure_white_with_black_stroke" android:clipChildren="true" android:layout_width="wrap_content" android:layout_height="40.0dip" android:minWidth="136.0dip" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/plate_number_normal_car_side_iv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/image_plate_realistic_flag" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="84.0dip" android:paddingStart="2.0dip" android:paddingEnd="2.0dip">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/pure_black" android:gravity="center" android:id="@id/plate_number_normal_car_main_part_a_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/traffic" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/pure_black" android:gravity="center" android:id="@id/plate_number_normal_car_main_character_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:fontFamily="@font/traffic" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/pure_black" android:gravity="center" android:id="@id/plate_number_normal_car_main_part_b_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/traffic" />
+        </LinearLayout>
+        <View android:background="@color/pure_black" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="32.0dip" android:layout_height="fill_parent">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="9.0sp" android:textColor="@color/pure_black" android:gravity="center" android:id="@id/plate_number_normal_car_iran_text_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="ایران" android:layout_alignParentTop="true" android:fontFamily="@font/traffic" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/pure_black" android:gravity="center" android:id="@id/plate_number_normal_car_iran_id_tv" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_alignParentBottom="true" android:fontFamily="@font/traffic" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

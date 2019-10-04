@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/checkbox_corner_radius_24dp" />
+    <stroke android:width="@dimen/checkbox_stroke_width_24dp" android:color="@color/color_accent" />
+    <size android:height="@dimen/checkbox_height_24dp" android:width="@dimen/checkbox_width_24dp" />
+</shape>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/review_thanks" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/product_review_feedback_icon_dimensions" android:layout_height="@dimen/product_review_feedback_icon_dimensions" android:layout_marginTop="@dimen/ebayMargin2x" android:src="@drawable/ic_check_success" android:tint="@color/style_guide_green" android:contentDescription="@null" />
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/review_submitted" />
+    <TextView android:textAppearance="?textAppearanceBody2Accent" android:layout_gravity="right" android:id="@id/show_hide_preview" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:foreground="?android:selectableItemBackground" android:text="@string/review_show_preview" />
+    <LinearLayout android:orientation="vertical" android:id="@id/preview_detail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x">
+        <RatingBar android:layout_gravity="left" android:id="@id/rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationX="-3.0dip" android:importantForAccessibility="yes" style="@style/EbayProductRating.Medium" />
+        <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/review_title" android:layout_marginTop="@dimen/ebayMargin" android:maxLines="2" style="@style/ItemView" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/review_description" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:fontFamily="sans-serif-light" />
+        <include layout="@layout/reviews_photos_single_row" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/payment_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/rootView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <fragment android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/navHostFragment" android:background="@drawable/shape_round_top_only" android:layout_width="fill_parent" android:layout_height="fill_parent" app:defaultNavHost="true" app:navGraph="@navigation/payment" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

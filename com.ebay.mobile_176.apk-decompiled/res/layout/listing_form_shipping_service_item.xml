@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/service_row_parent" android:background="@android:color/white" android:paddingTop="@dimen/ebayMargin" android:paddingBottom="@dimen/ebayMargin" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioButton android:id="@id/service_radio_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:importantForAccessibility="no" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginEnd="@dimen/ebayPadding" style="@style/Sell.Shipping.RadioButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

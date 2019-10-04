@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/label" android:paddingLeft="0.0dip" android:text="@string/label_short_international_shipping" style="@style/Sell.Layout.Text.Vertical.Label" />
+    <LinearLayout android:orientation="vertical" android:id="@id/international_service" android:clickable="false" style="@style/Sell.FakeSpinner">
+        <TextView android:gravity="left" android:id="@id/service_label" android:layout_width="fill_parent" android:layout_marginLeft="0.0dip" style="@style/Sell.InlineLabel.Blue" />
+        <TextView android:id="@id/value" android:layout_marginLeft="0.0dip" style="@style/Sell.InlineLabel.Blue" />
+        <TextView android:id="@id/location_label" android:layout_marginLeft="0.0dip" style="@style/Sell.InlineLabel.Blue" />
+        <TextView android:id="@id/paid_by" android:layout_marginLeft="0.0dip" android:text="@string/label_buyer_pays" style="@style/Sell.InlineLabel" />
+    </LinearLayout>
+</LinearLayout>

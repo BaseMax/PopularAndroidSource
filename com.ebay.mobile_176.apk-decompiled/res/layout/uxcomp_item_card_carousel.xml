@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/uxcomp_item_card_carousel_0" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/image" android:tag="binding_2" android:layout_marginBottom="@dimen/ebayStaticMargin" android:src="@drawable/ic_missing_image" android:contentDescription="@null" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="?imageCarouselStyle" />
+        <androidx.constraintlayout.widget.Barrier android:id="@id/before_details" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="image" />
+        <include layout="@layout/uxcomp_item_card_carousel_details" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

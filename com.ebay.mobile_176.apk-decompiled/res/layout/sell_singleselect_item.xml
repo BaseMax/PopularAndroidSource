@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton android:id="@id/button" android:paddingLeft="@dimen/ebayMargin15" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayMargin15" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

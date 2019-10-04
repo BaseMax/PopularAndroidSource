@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="#ffc6354b" android:gravity="start" android:id="@id/edittext_layout_textview_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:drawablePadding="2.0dip" android:layout_weight="1.0" android:fontFamily="@font/iran_sans_mobile_medium" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/color_accent" android:gravity="start" android:id="@id/edittext_layout_button_action" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="2.0dip" android:fontFamily="@font/iran_sans_mobile_medium" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatEditText android:textSize="16.0sp" android:textColor="#ff344558" android:gravity="start" android:id="@id/edittext_layout_edittext_inputData" android:background="@drawable/selector_edittext_rounded_background" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="4.0dip" android:fontFamily="@font/iran_sans_mobile_medium" />
+</LinearLayout>

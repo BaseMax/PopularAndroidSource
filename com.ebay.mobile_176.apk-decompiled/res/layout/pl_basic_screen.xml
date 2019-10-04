@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ebay.nautilus.shell.widget.EbaySwipeRefreshLayout android:id="@id/swipe_to_refresh_main" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view_main" android:paddingTop="@dimen/ebayMargin" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.ebay.nautilus.shell.widget.EbaySwipeRefreshLayout>
+        <com.ebay.nautilus.shell.uxcomponents.widget.VerticalContainerView android:layout_gravity="bottom" android:id="@id/plbasic_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin" style="@style/PlBasic" />
+    </LinearLayout>
+    <ViewStub android:id="@id/container_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/container_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/progress_container" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="?toolbarTheme" android:id="@id/compatibility_modal_toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:contentInsetStartWithNavigation="@dimen/common_title_inset_left">
+        <TextView android:textAppearance="?titleTextAppearance" android:layout_gravity="center|left" android:id="@id/compatibility_modal_toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </androidx.appcompat.widget.Toolbar>
+    <View style="@style/CommonDivider" />
+</LinearLayout>

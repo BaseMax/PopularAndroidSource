@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/ask_answer_container" android:tag="layout/reviews_qna_answer_question_0" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ReviewsQnaCardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/text_entry_container" layout="@layout/reviews_qna_text_entry" />
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/picker_panel_illustration_row_0" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceBody1" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ebay.android.widget.RemoteImageView android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

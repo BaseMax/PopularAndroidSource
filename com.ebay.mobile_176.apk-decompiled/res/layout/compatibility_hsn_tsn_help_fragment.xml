@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/compatibility_fragment_toolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding" android:paddingTop="@dimen/ebayPadding3x" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceSubhead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin2x" android:layout_marginRight="@dimen/ebayStaticMargin2x" android:text="@string/compatibility_help_title_hsn_tsn" />
+            <TextView android:textAppearance="?textAppearanceSubhead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin2x" android:layout_marginTop="@dimen/ebayStaticMargin3x" android:layout_marginRight="@dimen/ebayStaticMargin2x" android:layout_marginBottom="@dimen/ebayStaticMargin15" android:text="@string/compatibility_help_text1_hsn_tsn" />
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/motors_img_hsn_tsn_diagram01" android:contentDescription="@string/motors_finding_hsn_tsn_title" />
+            <TextView android:textAppearance="?textAppearanceSubhead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin2x" android:layout_marginTop="@dimen/ebayStaticMargin3x" android:layout_marginRight="@dimen/ebayStaticMargin2x" android:layout_marginBottom="@dimen/ebayStaticMargin15" android:text="@string/compatibility_help_text2_hsn_tsn" />
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/motors_img_hsn_tsn_diagram02" android:contentDescription="@string/motors_finding_hsn_tsn_title" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

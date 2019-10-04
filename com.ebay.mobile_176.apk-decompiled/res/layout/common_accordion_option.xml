@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.nautilus.shell.uxcomponents.widget.AccordionOptionView android:tag="layout/common_accordion_option_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:componentInsidePaddingLeft="0.0dip" app:componentInsidePaddingRight="0.0dip" app:componentOutsidePaddingBottom="@dimen/baseline_unit_2x" app:componentOutsidePaddingLeft="0.0dip" app:componentOutsidePaddingRight="0.0dip" style="?horizontalListItemsStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

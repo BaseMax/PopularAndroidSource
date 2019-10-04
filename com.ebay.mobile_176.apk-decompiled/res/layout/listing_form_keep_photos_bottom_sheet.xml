@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceHeadline" android:gravity="center_horizontal" android:id="@id/photos_bottom_sheet_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin3x" android:text="@string/keep_photos_popup_header" />
+    <TextView android:textAppearance="?textAppearanceSubhead" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/photos_bottom_sheet_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin3x" android:text="@string/keep_photos_popup_content" />
+    <Button android:id="@id/keep_photos_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:text="@string/keep_photos_popup_keep_button" style="@style/Sell.UniversalMainActionButton" />
+    <Button android:id="@id/remove_photos_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/keep_photos_popup_remove_button" style="@style/Sell.UniversalSecondaryActionButton" />
+</LinearLayout>

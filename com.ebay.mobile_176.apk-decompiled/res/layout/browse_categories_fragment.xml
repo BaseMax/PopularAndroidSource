@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/imageview_category" android:layout_width="fill_parent" android:layout_height="@dimen/browse_categories_header_image_height" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="insideOverlay" android:id="@id/category_list" android:paddingTop="@dimen/browse_categories_list_outside_padding_top" android:paddingBottom="0.0dip" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/browse_categories_outside_margin_horizontal" android:layout_marginEnd="@dimen/browse_categories_outside_margin_horizontal" />
+</FrameLayout>

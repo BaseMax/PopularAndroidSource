@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/black_60pct" android:paddingLeft="@dimen/ebayPadding4x" android:paddingRight="@dimen/ebayPadding4x" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintHeight_default="percent" app:layout_constraintHeight_percent="0.5" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin8x" android:src="@drawable/ic_image_search_onboarding_camera_white" android:contentDescription="@null" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_image_search_mountain_image_white" android:contentDescription="@null" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin3x" android:text="@string/image_search_on_boarding_title" style="@style/EbayTextAppearance.Subhead.Inverse" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin3x" android:text="@string/get_started" style="@style/EbayTextAppearance.Headline.Inverse" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

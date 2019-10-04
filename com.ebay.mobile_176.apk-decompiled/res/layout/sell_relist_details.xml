@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/auto_relist_container_review" style="@style/Sell.Layout.CardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/Sell.Layout.Container">
+        <CheckedTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/auto_relist_review" android:paddingTop="4.0dip" android:clickable="true" style="@style/Sell.CheckedTextView" />
+        <TextView android:textColor="?android:textColorSecondary" android:gravity="center|left" android:id="@id/auto_relist_learn_more" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginRight="@dimen/ebayStaticMargin" android:text="@string/LEGAL_auto_relist_learn_more_fees" android:drawableRight="@drawable/icon_arrowslidedown" android:layout_below="@id/auto_relist_review" />
+        <RelativeLayout android:id="@id/auto_relist_details_container" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin" android:layout_marginRight="@dimen/ebayStaticMargin" android:layout_below="@id/auto_relist_review">
+            <TextView android:textColor="?android:textColorSecondary" android:id="@id/auto_relist_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/LEGAL_auto_relist_fees" android:layout_toLeftOf="@id/auto_relist_details_arrowup" />
+            <ImageView android:id="@id/auto_relist_details_arrowup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrowslideup" android:layout_alignBottom="@id/auto_relist_details" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

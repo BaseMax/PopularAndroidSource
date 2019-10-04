@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/condition_definition_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/condition_def_label" style="@style/Sell.Layout.Help.Title.Condition" />
+    <TextView android:id="@id/condition_def_content" style="@style/Sell.Layout.Help.Content.Condition" />
+</LinearLayout>

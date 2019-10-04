@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView style="@style/Sell.Card.ListingForm">
+            <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/calculated_shipping_radio" style="@style/Sell.Shipping.RadioButton" />
+                <RadioButton android:id="@id/flat_rate_radio" style="@style/Sell.Shipping.RadioButton" />
+                <RelativeLayout android:id="@id/flat_rate_container" android:paddingLeft="@dimen/ebayPadding6x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayPadding2x">
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/flat_rate_buyer_pays_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:text="@string/flat_rate_shipping_buyer_pays_label" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <com.ebay.mobile.widget.PriceView android:id="@id/flat_rate_cost" android:layout_marginLeft="@dimen/ebayMarginHalf" android:selectAllOnFocus="false" android:layout_below="@id/flat_rate_buyer_pays_label" app:showCurrencySymbolAlways="true" style="@style/Sell.Bolt.PriceView.Shipping" />
+                </RelativeLayout>
+                <RadioButton android:id="@id/free_shipping_radio" style="@style/Sell.Shipping.RadioButton" />
+            </RadioGroup>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

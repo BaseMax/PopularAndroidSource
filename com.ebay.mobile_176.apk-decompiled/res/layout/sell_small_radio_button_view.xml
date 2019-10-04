@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:gravity="center_vertical" android:id="@id/condition_definition_radio" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:drawableRight="?android:listChoiceIndicatorSingle" />
+    <EditText android:gravity="top" android:id="@id/condition_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/sell_condition_description_hint" android:maxLength="1000" android:inputType="text" />
+    <TextView android:textColor="?android:textColorSecondary" android:layout_gravity="right" android:id="@id/description_letter_count" android:paddingRight="6.0dip" android:paddingBottom="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

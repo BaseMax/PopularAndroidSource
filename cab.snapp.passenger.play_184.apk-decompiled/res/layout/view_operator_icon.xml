@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ic_arrow_back_black_24dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" />
+</RelativeLayout>

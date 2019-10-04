@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@id/selection_capsule" android:tag="layout/product_top_products_selection_capsule_0" android:focusable="true" style="?selectionCapsuleStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

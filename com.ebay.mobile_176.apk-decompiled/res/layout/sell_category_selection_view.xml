@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/category_select_loading" layout="@layout/common_progress" />
+    <TextView android:textSize="16.0sp" android:gravity="center" android:id="@android:id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/parent_category_is_empty" />
+    <com.ebay.mobile.sell.widget.CustomScrollView android:id="@id/parent_layout" android:visibility="gone" style="@style/Sell.Layout.Scroll">
+        <LinearLayout android:orientation="vertical" android:id="@id/category_groups_parent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/selected_category_label" android:visibility="gone" android:text="@string/selected_category" style="@style/Sell.Spoke.Title.Category" />
+            <androidx.cardview.widget.CardView android:id="@id/selected_category_card" android:visibility="gone" style="@style/Sell.Layout.CardView.Category">
+                <com.ebay.android.widget.ContainerLayout android:id="@id/selected_category_container" app:containerDividerPadding="@dimen/ebayPadding2x" style="@style/Sell.Layout.Container.Category" />
+            </androidx.cardview.widget.CardView>
+            <TextView android:id="@id/suggestions_label" android:visibility="gone" android:text="@string/suggested_categories" style="@style/Sell.Spoke.Title.Category" />
+            <androidx.cardview.widget.CardView android:id="@id/suggestions_card" android:visibility="gone" style="@style/Sell.Layout.CardView.Category">
+                <com.ebay.android.widget.ContainerLayout android:id="@id/suggestions_container" app:containerDividerPadding="@dimen/ebayPadding2x" style="@style/Sell.Layout.Container.Category" />
+            </androidx.cardview.widget.CardView>
+            <TextView android:id="@id/categories_label" android:visibility="gone" android:text="@string/label_dialog_all_categories" style="@style/Sell.Spoke.Title.Category" />
+            <androidx.cardview.widget.CardView android:id="@id/category_tree_card" style="@style/Sell.Layout.CardView.Category">
+                <com.ebay.android.widget.ContainerLayout android:id="@id/category_tree_container" app:containerDividerPadding="@dimen/ebayPadding2x" style="@style/Sell.Layout.Container.Category" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </com.ebay.mobile.sell.widget.CustomScrollView>
+</FrameLayout>

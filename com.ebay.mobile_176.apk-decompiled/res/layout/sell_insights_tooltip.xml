@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:tag="layout/sell_insights_tooltip_0" android:background="@color/quick_tip_background" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SellInsightsToolTipStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

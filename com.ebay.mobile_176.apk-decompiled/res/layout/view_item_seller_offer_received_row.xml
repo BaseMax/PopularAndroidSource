@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/view_item_manager_offer_card_margin" android:layout_marginRight="@dimen/view_item_manager_offer_card_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/offer_received_container" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/seller_accept_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin">
+            <ImageView android:layout_width="@dimen/view_item_info_image_size" android:layout_height="@dimen/view_item_info_image_size" android:src="@drawable/error_icon" android:contentDescription="@null" />
+            <TextView android:textAppearance="?textAppearanceBody2" android:textColor="?colorAlert" android:id="@id/seller_accept_error" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" />
+        </LinearLayout>
+        <include layout="@layout/view_item_offer_row_content" />
+        <Button android:id="@id/seller_offer_row_accept_offer_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:text="@string/title_accept_offer" style="@style/EbayButton" />
+        <Button android:id="@id/seller_offer_row_counteroffer_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:text="@string/title_make_counteroffer" style="@style/EbayButton.SecondaryAlt" />
+        <Button android:id="@id/seller_offer_row_decline_offer_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_decline_offer" style="@style/EbayButton.SecondaryAlt" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

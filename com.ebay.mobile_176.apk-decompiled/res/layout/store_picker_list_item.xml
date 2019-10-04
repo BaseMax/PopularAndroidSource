@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:listChoiceBackgroundIndicator" android:paddingLeft="@dimen/ebayPadding15" android:paddingTop="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/store_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/distance" android:layout_alignParentLeft="true" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorSecondary" android:id="@id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin15" android:layout_alignParentRight="true" android:layout_centerVertical="false" />
+    <ImageView android:id="@id/is_selected_store" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin15" android:layout_marginTop="@dimen/ebayMarginHalf" android:src="@drawable/blue_check" android:layout_toRightOf="@id/store_info" android:layout_below="@id/distance" android:layout_alignParentRight="true" android:layout_centerVertical="false" android:contentDescription="@string/checkmark" />
+</RelativeLayout>

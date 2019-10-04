@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/manage_offer_section_header_0" android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="@dimen/ebayMargin3x" />
+    <TextView android:gravity="center_vertical" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" />
+</LinearLayout>

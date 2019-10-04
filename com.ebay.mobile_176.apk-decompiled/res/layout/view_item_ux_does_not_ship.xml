@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_does_not_ship_to_you_layout" android:tag="layout/view_item_ux_does_not_ship_0" android:background="@drawable/theme_list_selector_background" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/alert_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_alert_error" android:importantForAccessibility="no" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/style_guide_red" android:id="@id/item_does_not_ship_to_you" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_weight="7.0" android:importantForAccessibility="no" />
+    <TextView android:textColor="?android:textColorTertiary" android:id="@id/change_now" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:text="@string/change_now" android:layout_weight="3.0" android:importantForAccessibility="yes" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0">
+        <ImageView android:layout_gravity="center" android:id="@id/driver_assigned_notification_view_number_plate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitStart" android:adjustViewBounds="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_weight="2.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="8.0dip">
+            <TextView android:layout_gravity="center" android:id="@id/driver_assigned_notification_view_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/snapp_arrived" style="@style/TextView.Default.Medium" />
+            <TextView android:layout_gravity="center" android:id="@id/driver_assigned_notification_view_cab_type_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="پراید نوک مدادی" style="@style/TextView.Default.Small" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/driver_assigned_notification_driver_avatar" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ph_profile_picture" android:adjustViewBounds="true" />
+    </LinearLayout>
+</LinearLayout>

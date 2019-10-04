@@ -1,0 +1,96 @@
+.class public final Lcom/ebay/common/net/api/cart/GetUserIncentives$GetUserIncentivesResponse;
+.super Lcom/ebay/common/net/JsonResponse;
+.source "GetUserIncentives.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/ebay/common/net/api/cart/GetUserIncentives;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "GetUserIncentivesResponse"
+.end annotation
+
+
+# instance fields
+.field private incentives:Lcom/ebay/common/model/cart/UserIncentives;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 92
+    invoke-direct {p0}, Lcom/ebay/common/net/JsonResponse;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 94
+    iput-object v0, p0, Lcom/ebay/common/net/api/cart/GetUserIncentives$GetUserIncentivesResponse;->incentives:Lcom/ebay/common/model/cart/UserIncentives;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getUserIncentives()Lcom/ebay/common/model/cart/UserIncentives;
+    .locals 1
+
+    .line 98
+    iget-object v0, p0, Lcom/ebay/common/net/api/cart/GetUserIncentives$GetUserIncentivesResponse;->incentives:Lcom/ebay/common/model/cart/UserIncentives;
+
+    return-object v0
+.end method
+
+.method public parse(Ljava/io/InputStream;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/ebay/nautilus/kernel/net/ParseResponseDataException;
+        }
+    .end annotation
+
+    .line 104
+    invoke-super {p0, p1}, Lcom/ebay/common/net/JsonResponse;->parse(Ljava/io/InputStream;)V
+
+    .line 108
+    :try_start_0
+    iget-object p1, p0, Lcom/ebay/common/net/api/cart/GetUserIncentives$GetUserIncentivesResponse;->body:Lorg/json/JSONObject;
+
+    const-string v0, "getUserIncentivesResponse"
+
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object p1
+
+    .line 109
+    invoke-super {p0, p1}, Lcom/ebay/common/net/JsonResponse;->processAck(Lorg/json/JSONObject;)V
+
+    .line 111
+    new-instance v0, Lcom/ebay/common/model/cart/UserIncentives;
+
+    invoke-direct {v0, p1}, Lcom/ebay/common/model/cart/UserIncentives;-><init>(Lorg/json/JSONObject;)V
+
+    iput-object v0, p0, Lcom/ebay/common/net/api/cart/GetUserIncentives$GetUserIncentivesResponse;->incentives:Lcom/ebay/common/model/cart/UserIncentives;
+
+    .line 113
+    iget-object p1, p0, Lcom/ebay/common/net/api/cart/GetUserIncentives$GetUserIncentivesResponse;->incentives:Lcom/ebay/common/model/cart/UserIncentives;
+
+    invoke-super {p0, p1}, Lcom/ebay/common/net/JsonResponse;->exportErrorsToResponse(Lcom/ebay/common/model/cart/JsonModel;)V
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception p1
+
+    .line 117
+    invoke-static {p1}, Lcom/ebay/nautilus/kernel/net/ParseResponseDataException;->create(Ljava/lang/Throwable;)Lcom/ebay/nautilus/kernel/net/ParseResponseDataException;
+
+    move-result-object p1
+
+    throw p1
+.end method

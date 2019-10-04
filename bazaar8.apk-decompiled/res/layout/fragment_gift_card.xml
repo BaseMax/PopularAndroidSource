@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.farsitel.bazaar.widget.RTLImageView android:id="@id/backButton" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_close" app:tint="@color/c_icon_toolbar" style="@style/Bazaar.Image.Toolbar.Back" />
+                <androidx.appcompat.widget.AppCompatTextView android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gift_card" android:layout_marginStart="@dimen/default_margin_one_half" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/backButton" app:layout_constraintTop_toTopOf="parent" style="@style/Bazaar.Text.Body1.Dark" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/c_text_subtitle" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin_double" android:text="@string/gift_card_fragment_description" style="@style/Bazaar.Text.Body2" />
+            <com.google.android.material.textfield.TextInputLayout android:theme="@style/Bazaar.TextInput" android:id="@id/codeInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin_double">
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/codeEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/gift_code" android:singleLine="true" android:imeOptions="actionDone">
+                    <requestFocus />
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/c_edit_text_label" android:textColorLink="@color/green" android:linksClickable="true" android:id="@id/legalNotes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin_double" style="@style/Bazaar.Text.Caption" />
+            <com.farsitel.bazaar.widget.LoadingButton android:layout_gravity="end" android:id="@id/submitButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_double" app:text="@string/submit" style="@style/Bazaar.Button.Flat.Primary.SmallText" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_item_bid_flow_bottom_offset">0.0dip</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.passenger.units.referral.ReferralView android:orientation="vertical" android:background="@color/pure_white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_toolbar_primary" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/scorpion" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/view_referral_referral_intro_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:paddingStart="@dimen/padding_large" android:paddingEnd="@dimen/padding_large" style="@style/TextView.Default.Medium" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/scorpion" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/view_referral_code_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/TextView.Default.Large" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="22.0dip" android:layout_marginEnd="22.0dip">
+        <View android:layout_gravity="center_vertical" android:background="@color/white_three" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/brown_grey" android:layout_gravity="center_horizontal" android:background="@color/pure_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_your_code_passenger" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_small" style="@style/TextView.Default.Small" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/view_referral_referral_apps_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_medium" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" />
+    <ProgressBar android:id="@id/view_referral_loading_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small" />
+</cab.snapp.passenger.units.referral.ReferralView>

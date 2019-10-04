@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/picker_confirmation_0" android:paddingLeft="@dimen/ebayPadding3x" android:paddingTop="@dimen/ebayPadding3x" android:paddingRight="@dimen/ebayPadding3x" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/content" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin15" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/picker_recycler_view" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/content" android:layout_alignParentRight="true" android:overScrollMode="never" />
+</RelativeLayout>

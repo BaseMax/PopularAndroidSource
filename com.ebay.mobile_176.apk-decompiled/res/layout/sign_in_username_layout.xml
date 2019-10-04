@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/sign_in_classic" android:paddingTop="@dimen/ebayPadding4x" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:contentDescription="@string/sign_in" android:animateLayoutChanges="true" style="@style/HomeWidthContainer">
+        <TextView android:gravity="center_vertical" android:id="@id/sign_in_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/get_started" style="@style/EbayTextAppearanceLarge" />
+        <RelativeLayout android:id="@id/sign_in_alert" android:paddingTop="@dimen/signInMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <ImageView android:id="@id/sign_in_error_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_error" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorAlert" android:gravity="center_vertical" android:id="@id/sign_in_alert_text_view" android:paddingLeft="@dimen/signInMargin" android:paddingRight="@dimen/signInMargin" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/sign_in_error_image" android:importantForAccessibility="yes" />
+        </RelativeLayout>
+        <AutoCompleteTextView android:id="@id/edit_text_username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:hint="@string/sign_in_username_hint2" android:maxLines="1" android:completionThreshold="1" android:inputType="textEmailAddress" android:imeOptions="actionNext" style="@style/EbayTextAppearanceStrong.Body2" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/button_next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sign_in_next" style="@style/EbayButton.Blue" />
+    </LinearLayout>
+</ScrollView>

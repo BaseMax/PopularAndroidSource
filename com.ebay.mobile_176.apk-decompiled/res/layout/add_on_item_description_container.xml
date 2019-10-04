@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/add_on_item_description_container" android:paddingTop="@dimen/ebayPadding4x" android:paddingBottom="@dimen/ebayPadding5x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_item_add_on_description" />
+</LinearLayout>

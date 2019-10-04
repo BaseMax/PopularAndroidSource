@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/listing_form_similar_items_trending_price" />
+    <TextView android:id="@id/similar_items_title" android:text="@string/similar_sold_items_title" style="@style/Sell.Bolt.SimilarItems.Title" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/similar_item_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

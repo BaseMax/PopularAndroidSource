@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/mainContainer" android:tag="layout/activity_main_0" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/rootView" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/bottomNavigation" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:id="@id/homeTabContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <fragment android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/homeTab" android:layout_width="fill_parent" android:layout_height="fill_parent" app:defaultNavHost="false" app:navGraph="@navigation/main_nav" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/appTabContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <fragment android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/appTab" android:layout_width="fill_parent" android:layout_height="fill_parent" app:defaultNavHost="false" app:navGraph="@navigation/main_nav" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/gameTabContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <fragment android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/gameTab" android:layout_width="fill_parent" android:layout_height="fill_parent" app:defaultNavHost="false" app:navGraph="@navigation/main_nav" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/videosTabContainer" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <fragment android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/videosTab" android:layout_width="fill_parent" android:layout_height="fill_parent" app:defaultNavHost="false" app:navGraph="@navigation/main_nav" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/categoriesTabContainer" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <fragment android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/categoriesTab" android:layout_width="fill_parent" android:layout_height="fill_parent" app:defaultNavHost="false" app:navGraph="@navigation/main_nav" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/searchTabContainer" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <fragment android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/searchTab" android:layout_width="fill_parent" android:layout_height="fill_parent" app:defaultNavHost="false" app:navGraph="@navigation/main_nav" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/myBazaarTabContainer" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <fragment android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/myBazaarTab" android:layout_width="fill_parent" android:layout_height="fill_parent" app:defaultNavHost="false" app:navGraph="@navigation/main_nav" />
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/bottomNavigation" android:layout_width="fill_parent" android:layout_height="wrap_content" app:itemIconTint="@color/bottom_navigation_selector" app:itemTextColor="@color/bottom_navigation_selector" app:labelVisibilityMode="labeled" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

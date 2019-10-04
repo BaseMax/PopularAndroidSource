@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?tabTextAppearance" android:textColor="@color/tab_text_color_ds6" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="?textAppearanceBody2" android:textSize="@dimen/ebayTextSizeFinePrint" android:gravity="center" android:id="@android:id/text2" android:background="@drawable/tab_badge_background" android:layout_width="wrap_content" android:layout_height="@dimen/tab_badge_height" android:layout_marginTop="@dimen/tab_badge_top_margin" android:minWidth="@dimen/tab_badge_height" android:includeFontPadding="false" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/ebayMarginHalf" android:layout_toEndOf="@android:id/text1" />
+</RelativeLayout>

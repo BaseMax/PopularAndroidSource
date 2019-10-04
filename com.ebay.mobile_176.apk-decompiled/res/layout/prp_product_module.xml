@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/prp_product_module_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:background="?containerBackgroundColor" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?containerContentPaddingLeft" android:paddingEnd="?containerContentPaddingRight" android:layout_marginStart="?containerMarginLeft" android:layout_marginEnd="?containerMarginRight">
+        <TextView android:ellipsize="end" android:id="@id/product_rank" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayStaticMargin" android:maxLines="2" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/image_frame" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayStaticMargin2x" android:layout_centerVertical="true">
+                <com.ebay.android.widget.RemoteImageView android:id="@id/imageview_item_image" android:tag="binding_4" android:layout_width="@dimen/prp_product_image_size" android:layout_height="@dimen/prp_product_image_size" android:src="@drawable/ic_missing_image" android:scaleType="fitCenter" app:averageBackgroundColor="true" app:fadeInDuration="@integer/answers_image_fade_in_duration" />
+            </FrameLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/image_frame" android:layout_centerVertical="true">
+                <TextView android:ellipsize="end" android:id="@id/out_of_stock_message" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textAppearance="?textAppearanceTitle2" android:ellipsize="end" android:id="@id/textview_item_title" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@id/out_of_stock_message" />
+                <FrameLayout android:id="@id/rating_bar" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_below="@id/textview_item_title">
+                    <include layout="@layout/uxcomp_star_rating_small" />
+                </FrameLayout>
+                <TextView android:textColor="?android:textColorTertiary" android:id="@id/product_qna_summary" android:tag="binding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:includeFontPadding="false" android:layout_below="@id/rating_bar" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/button_change_aspects" android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/EbayButton.Secondary" />
+            <TextView android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/currently_applied_aspects" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toLeftOf="@id/button_change_aspects" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

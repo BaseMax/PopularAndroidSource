@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/progress_container" />
+    <ScrollView android:orientation="vertical" android:id="@id/xo_content" android:background="?listContainerOutsideBackground" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/checkout_error_container" />
+            <TextView android:textAppearance="?textAppearanceTitle2" android:id="@id/logistics_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginTop="@dimen/xoMarginMedium" android:layout_marginRight="@dimen/xoMarginMediumLarge" android:layout_marginBottom="@dimen/xoMarginSmall" android:text="@string/xo_logistics_picker_pickup_station" />
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CheckoutCard">
+                <LinearLayout android:orientation="vertical" android:id="@id/logistics_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</merge>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient android:startColor="@color/card_style_shadow_start" android:endColor="@color/card_style_shadow_end" android:angle="270.0" android:centerColor="@color/card_style_shadow_center" />
+            <corners android:topLeftRadius="2.0dip" android:bottomLeftRadius="2.0dip" />
+        </shape>
+    </item>
+    <item android:left="1.0dip" android:top="1.0dip" android:bottom="2.0dip">
+        <shape>
+            <solid android:color="@color/card_background_light" />
+            <corners android:topLeftRadius="2.0dip" android:bottomLeftRadius="2.0dip" />
+        </shape>
+    </item>
+</layer-list>

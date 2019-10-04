@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/compatibility_fragment_search_toolbar" />
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="@dimen/ebayPaddingHalf" android:paddingTop="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/compatibility_metadata_help_fragment" />
+        <LinearLayout android:orientation="vertical" android:id="@id/selectionsTextContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/compatibility_metadata_list_item" />
+            <View style="@style/CommonDivider" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/compatible_meta_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textFilterEnabled="true" android:divider="@null" android:dividerHeight="0.0dip" />
+            <include android:id="@id/first_row_inital" android:visibility="gone" layout="@layout/compatibility_metadata_list_initial" />
+        </FrameLayout>
+        <include android:id="@id/compatible_meta_empty_text" layout="@layout/compatibility_metadata_list_item" />
+    </LinearLayout>
+</LinearLayout>

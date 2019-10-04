@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/style_guide_darker_gray" android:gravity="bottom|center|left" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="48.0dip" android:textAllCaps="true" style="@style/EbayTextAppearanceStrong.Body1"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceTitle2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x" android:text="@string/facebook_linked_unlink_title" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/tv_facebook_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:text="@string/facebook_linked_unlink_detail" />
+</LinearLayout>

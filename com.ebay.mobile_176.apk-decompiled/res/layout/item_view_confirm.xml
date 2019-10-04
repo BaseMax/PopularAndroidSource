@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView style="@style/ItemView.TopScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LetterboxViewItem">
+            <include layout="@layout/item_header_price_shipping" />
+            <com.ebay.android.widget.ContainerLayout android:background="?listContainerOutsideBackground" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/checkoutSmallMargin" style="@style/StyleGuideViewItemStatContainer">
+                <LinearLayout android:orientation="vertical" android:id="@id/info_shipping_etc_container" android:padding="@dimen/checkoutMicroMargin" style="@style/ItemView" />
+            </com.ebay.android.widget.ContainerLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/info_total_etc_container" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" style="@style/ItemView" />
+            <View android:background="@color/style_guide_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin15" />
+            <TextView android:id="@id/user_consent_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:text="@string/user_consent_text" style="@style/ItemView" />
+            <Button android:id="@id/take_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:text="@string/review" style="@style/EbayButton.Blue" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x">
+                <ImageView android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMarginHalf" android:src="@drawable/ic_viewitem_info" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/ebayTextSize" android:textColor="?textColorSecondaryAlt" android:layout_gravity="center_vertical" android:id="@id/warning" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/common_error" />
+    <include layout="@layout/common_translucent_progress" />
+</merge>

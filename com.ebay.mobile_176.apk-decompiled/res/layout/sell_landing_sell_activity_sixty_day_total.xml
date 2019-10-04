@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/sixty_day_total_parent" android:tag="layout/sell_landing_sell_activity_sixty_day_total_0" android:background="?android:selectableItemBackground" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceDisplay2" android:id="@id/sixty_day_total" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="center_horizontal" android:id="@id/sixty_day_total_metric" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sell_landing_sixty_day_total" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/sixty_day_total" />
+</androidx.constraintlayout.widget.ConstraintLayout>

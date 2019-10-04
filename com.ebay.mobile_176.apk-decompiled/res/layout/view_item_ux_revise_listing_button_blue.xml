@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.sell.widget.TextImageButton android:tag="layout/view_item_ux_revise_listing_button_blue_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:freezesText="true" style="@style/EbayButton.Blue"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

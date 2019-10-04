@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container_title" android:tag="layout/xo_uxcomp_success_header_layout_0" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/component_header_padding" android:paddingBottom="@dimen/baseline_unit" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/min_touch_target_unit"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceTitle2" android:ellipsize="end" android:id="@id/textview_header_title" android:tag="binding_1" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:id="@id/textview_header_subtitle" android:tag="binding_2" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/textview_header_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

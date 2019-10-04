@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/footer_layout" android:background="?selectableItemBackgroundBase" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:ebay="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/style_guide_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.ebay.android.widget.MaxSizeRelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayStaticMargin" ebay:maxWidth="@dimen/list_max_delete_width">
+        <Button android:id="@id/removeButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/list_delete" style="@style/EbayButton.Blue" />
+    </com.ebay.android.widget.MaxSizeRelativeLayout>
+</LinearLayout>

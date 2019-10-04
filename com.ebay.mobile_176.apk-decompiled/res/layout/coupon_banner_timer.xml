@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubhead2" android:textColor="?android:textColorPrimaryInverse" android:tag="layout/coupon_banner_timer_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMarginHalf" />
+    <com.ebay.nautilus.shell.widget.CountdownView android:textAppearance="?textAppearanceSubhead2" android:textColor="?android:textColorPrimaryInverse" android:tag="layout/coupon_banner_timer_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:durationFormat="seconds" app:formatDayHour="@string/DHMS_day_hour" app:formatHourMinute="@string/DHMS_hour_minute" app:formatMinuteSecond="@string/DHMS_minute_second" app:formatSecond="@string/DHMS_seconds" />
+</merge>

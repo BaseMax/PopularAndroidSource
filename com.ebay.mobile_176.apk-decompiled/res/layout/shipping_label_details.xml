@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/shipping_label_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/button_container" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ebayTextSizeLarge" android:textColor="@color/style_guide_text_primary" android:text="@string/psl_label_details_title" style="@style/Sell.Spoke.Title.Top" />
+            <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+                <TextView android:textSize="@dimen/psl_text_size" android:textColor="@color/style_guide_dark_gray" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/psl_carrier_service" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/psl_text_size" android:id="@id/shipping_carrierservice_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+                <TextView android:textSize="@dimen/psl_text_size" android:textColor="@color/style_guide_dark_gray" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/psl_package_info" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/psl_text_size" android:id="@id/shipping_package_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+                <TextView android:textSize="@dimen/psl_text_size" android:textColor="@color/style_guide_dark_gray" android:id="@id/additional_services_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/psl_additional_options" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/psl_text_size" android:id="@id/shipping_additional_services" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+                <TextView android:textSize="@dimen/psl_text_size" android:textColor="@color/style_guide_dark_gray" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/psl_ships_to" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/psl_text_size" android:id="@id/shipping_ships_to" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+                <TextView android:textSize="@dimen/psl_text_size" android:textColor="@color/style_guide_dark_gray" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/psl_ships_from" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/psl_text_size" android:id="@id/shipping_ships_from" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/print_label_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:text="@string/psl_print_label" style="@style/EbayButton.White" />
+        <Button android:id="@id/email_label_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:text="@string/psl_create_email" style="@style/EbayButton.White" />
+        <Button android:id="@id/void_label_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:text="@string/psl_void_label" style="@style/EbayButton.White" />
+    </LinearLayout>
+</RelativeLayout>

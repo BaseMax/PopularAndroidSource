@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceBody2" android:ellipsize="end" android:id="@id/textview_item_title" android:tag="layout/onboarding_pill_0" android:foreground="?selectableItemBackground" android:maxLines="1" android:textAllCaps="false" style="@style/OnboardingCapsule"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

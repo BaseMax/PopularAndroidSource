@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@mipmap/ic_app_shortcut_search" android:enabled="true" android:shortcutId="appShortcutSearch" android:shortcutShortLabel="@string/search">
+        <intent android:targetPackage="com.ebay.mobile" android:action="android.intent.action.VIEW" android:targetClass="com.ebay.mobile.activities.MainActivity" />
+        <intent android:targetPackage="com.ebay.mobile" android:action="android.intent.action.VIEW" android:targetClass="com.ebay.mobile.search.landing.SearchLandingPageActivity">
+            <extra android:name="appShortcutEvent" android:value="appShortcutSearch" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@mipmap/ic_app_shortcut_watching" android:enabled="true" android:shortcutId="appShortcutWatching" android:shortcutShortLabel="@string/LOCKED_my_ebay_tab_watching">
+        <intent android:targetPackage="com.ebay.mobile" android:action="android.intent.action.VIEW" android:targetClass="com.ebay.mobile.activities.MainActivity" />
+        <intent android:targetPackage="com.ebay.mobile" android:action="android.intent.action.VIEW" android:targetClass="com.ebay.mobile.connection.myebay.WatchingHandler">
+            <extra android:name="appShortcutEvent" android:value="appShortcutWatching" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@mipmap/ic_app_shortcut_selling" android:enabled="true" android:shortcutId="appShortcutSelling" android:shortcutShortLabel="@string/LOCKED_my_ebay_tab_selling">
+        <intent android:targetPackage="com.ebay.mobile" android:action="android.intent.action.VIEW" android:targetClass="com.ebay.mobile.activities.MainActivity" />
+        <intent android:targetPackage="com.ebay.mobile" android:action="android.intent.action.VIEW" android:targetClass="com.ebay.mobile.activities.SellingActivity">
+            <extra android:name="appShortcutEvent" android:value="appShortcutSelling" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@mipmap/ic_app_shortcut_saved" android:enabled="true" android:shortcutId="appShortcutFollowing" android:shortcutShortLabel="@string/saved">
+        <intent android:targetPackage="com.ebay.mobile" android:action="android.intent.action.VIEW" android:targetClass="com.ebay.mobile.activities.MainActivity" />
+        <intent android:targetPackage="com.ebay.mobile" android:action="android.intent.action.VIEW" android:targetClass="com.ebay.mobile.following.BrowseFollowingActivity">
+            <extra android:name="appShortcutEvent" android:value="appShortcutFollowing" />
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

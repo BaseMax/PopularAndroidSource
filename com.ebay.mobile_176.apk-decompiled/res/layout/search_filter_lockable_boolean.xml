@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/filter_list_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.mobile.search.refine.SearchRefinementLock android:layout_gravity="center_vertical" android:id="@id/tag_search_filter_lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_lock_black_24dp" android:tint="?iconTintColorCheckable" android:minWidth="@dimen/min_touch_target_unit" android:minHeight="32.0dip" style="@style/EbayButton.Icon" />
+    <Switch android:textAppearance="?textAppearanceSubhead" android:id="@id/checkbox_filter_element" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

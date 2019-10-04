@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <ripple android:color="?android:colorControlHighlight" android:exitFadeDuration="@android:integer/config_shortAnimTime">
+            <item android:id="@android:id/mask" android:drawable="@drawable/capsule_filled" />
+            <item android:drawable="@drawable/capsule_filled" />
+        </ripple>
+    </item>
+    <item>
+        <ripple android:color="?android:colorControlHighlight" android:exitFadeDuration="@android:integer/config_shortAnimTime">
+            <item android:id="@android:id/mask" android:drawable="@drawable/capsule_outlined" />
+            <item android:drawable="@drawable/capsule_outlined" />
+        </ripple>
+    </item>
+</selector>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_profile_header_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_double" android:layout_marginStart="@dimen/default_margin_double" android:layout_marginEnd="@dimen/default_margin_double"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/c_list_items_heading" android:gravity="center_vertical" android:tag="binding_1" android:paddingTop="@dimen/default_margin_double" android:paddingBottom="@dimen/default_margin_double" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextAppearance.Tiny" />
+</FrameLayout>

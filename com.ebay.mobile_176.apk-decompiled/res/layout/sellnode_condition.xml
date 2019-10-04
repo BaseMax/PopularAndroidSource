@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:id="@id/parent_layout" android:paddingBottom="@dimen/ebayPadding" android:clipToPadding="false" style="@style/Sell.Layout.Scroll">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.cardview.widget.CardView style="@style/Sell.Card.ListingForm.WithTopMargin">
+                <RadioGroup android:orientation="vertical" android:id="@id/condition_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compensate_radio_group_margin" android:layout_marginRight="@dimen/compensate_radio_group_margin" android:layout_marginBottom="@dimen/ebayMargin" android:showDividers="middle" style="@style/Sell.DynamicCardContainer.ListingForm" />
+            </androidx.cardview.widget.CardView>
+            <TextView android:textAppearance="?textAppearanceSubhead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentHeaderLeftMargin" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayContentHeaderRightMargin" android:text="@string/sell_label_condition_definitions" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/condition_descriptions_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

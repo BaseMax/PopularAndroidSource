@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/uxcomp_accordion_header_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/container_title" android:tag="binding_1" android:background="?selectableItemBackground" android:paddingTop="@dimen/baseline_unit_2x" android:paddingBottom="@dimen/baseline_unit_2x" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:ellipsize="end" android:id="@id/textview_header_title" android:tag="binding_2" android:paddingBottom="@dimen/baseline_unit_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:scrollHorizontally="false" />
+            <TextView android:textAppearance="?textAppearanceTitle2" android:ellipsize="end" android:id="@id/textview_header_subtitle" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="false" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/button_header_show_hide" android:tag="binding_4" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/baseline_unit_half" android:src="@drawable/ic_expand_more_black_24dp" android:tint="?iconTintColor" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    </RelativeLayout>
+</FrameLayout>

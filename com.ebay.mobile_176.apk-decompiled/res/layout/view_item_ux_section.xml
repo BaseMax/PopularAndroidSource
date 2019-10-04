@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/section_container" android:tag="layout/view_item_ux_section_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/chevron_right" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+        <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/textview_title" android:tag="binding_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/baseline_unit_half" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/textview_subtitle" android:tag="binding_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/baseline_unit_half" />
+        <com.ebay.nautilus.shell.uxcomponents.widget.VerticalContainerView android:id="@id/view_container" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:decorations="none" app:verticalCellPadding="@dimen/baseline_unit" style="?verticalListItemsNoPaddingStyle" />
+    </LinearLayout>
+    <ImageView android:id="@id/chevron_right" android:tag="binding_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?spokeChevronDrawable" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/accessibility_info_icon" android:importantForAccessibility="yes" />
+</RelativeLayout>

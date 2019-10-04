@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LetterboxViewItem">
+        <include layout="@layout/item_header_bin_plus_shipping" />
+        <TextView android:textAppearance="?textAppearanceTitle1" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/view_item_fitment_important_part_details" />
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard">
+                <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin">
+                    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/part_details_full" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/part_details_quantity_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/ebayMargin" />
+                    <LinearLayout android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" style="@style/StyleGuideViewItemStatCell">
+                        <TextView android:text="@string/view_item_fitment_quantity_needed" style="@style/StyleGuideViewItemStatKey" />
+                        <TextView android:id="@id/part_details_quantity" style="@style/StyleGuideViewItemStatValue" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin">
+                    <View android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/part_details_refnum" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <com.ebay.android.widget.RemoteImageView android:id="@id/part_diagram" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:dynamicHeight="square" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

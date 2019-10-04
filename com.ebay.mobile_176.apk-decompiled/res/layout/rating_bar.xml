@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow android:paddingTop="@dimen/baseline_unit" android:paddingBottom="@dimen/baseline_unit" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody1" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_height="wrap_content" />
+    <RatingBar android:layout_gravity="center_vertical" android:id="@id/rating_bar" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutSmallMargin" android:maxHeight="13.0dip" android:indeterminateDrawable="@drawable/feedback_star_selector" android:progressDrawable="@drawable/feedback_star_selector" android:minHeight="13.0dip" android:numStars="5" style="?android:ratingBarStyleSmall" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/number" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:text="(0)" />
+</TableRow>

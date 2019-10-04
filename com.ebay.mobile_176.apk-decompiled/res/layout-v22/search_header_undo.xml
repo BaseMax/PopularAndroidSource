@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:paddingLeft="@dimen/ebayContentSideMargin" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayContentSideMargin" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody1" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_undo_white_24dp" android:drawableTint="?iconTintColor" />
+</RelativeLayout>

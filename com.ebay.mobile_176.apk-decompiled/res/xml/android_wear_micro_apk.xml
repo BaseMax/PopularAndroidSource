@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wearableApp package="com.ebay.mobile">
+    <versionCode>176</versionCode>
+    <versionName>5.36.0.20</versionName>
+    <rawPathResId>android_wear_micro_apk</rawPathResId>
+</wearableApp>

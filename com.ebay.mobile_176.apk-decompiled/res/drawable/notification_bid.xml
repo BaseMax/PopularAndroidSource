@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/ic_notification_bid" android:tint="@color/notification_action_text_light"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

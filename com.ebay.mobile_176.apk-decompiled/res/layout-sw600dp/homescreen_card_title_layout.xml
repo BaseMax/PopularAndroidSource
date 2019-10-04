@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/titleLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentHeaderLeftMargin" android:layout_marginRight="@dimen/ebayContentHeaderRightMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="?textAppearanceTitle2" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/subtitle" android:paddingTop="@dimen/ebayPaddingHalf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button android:id="@id/more_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_more" style="@style/EbayButton.Flat" />
+</LinearLayout>

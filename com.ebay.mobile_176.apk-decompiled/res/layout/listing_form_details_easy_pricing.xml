@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView style="@style/Sell.Card.ListingForm"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioGroup android:id="@id/easy_pricing_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:textAppearance="?textAppearanceBody2" android:id="@id/enable_easy_pricing_radio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:text="@string/sell_button_on" />
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/easy_pricing_description" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin6x" android:layout_marginRight="@dimen/ebayMargin2x" />
+                <View android:layout_marginTop="@dimen/ebayMargin2x" style="@style/CommonDivider" />
+                <RadioButton android:textAppearance="?textAppearanceBody2" android:id="@id/disable_easy_pricing_radio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/sell_button_off" />
+            </RadioGroup>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+    <include layout="@layout/common_progress" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/style_guide_canvas" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/progress_container" />
+    <FrameLayout android:id="@id/listContainer" android:background="@color/style_guide_canvas" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/ebayTextSizeMedium" android:textColor="?android:textColorPrimary" android:layout_gravity="center" android:id="@android:id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/symban_empty_list" android:drawableTop="@drawable/ic_notifications_empty" android:drawablePadding="@dimen/ebayPadding" />
+        <com.ebay.nautilus.shell.widget.EbaySwipeRefreshLayout android:id="@id/swipeToRefresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:divider="@color/style_guide_light_gray" android:dividerHeight="@dimen/dividerHeight" />
+        </com.ebay.nautilus.shell.widget.EbaySwipeRefreshLayout>
+    </FrameLayout>
+</RelativeLayout>

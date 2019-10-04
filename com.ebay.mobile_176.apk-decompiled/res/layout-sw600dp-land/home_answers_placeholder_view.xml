@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:tag="layout-sw600dp-land/home_answers_placeholder_view_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shimmer="http://schemas.android.com/apk/res-auto">
+    <com.facebook.shimmer.ShimmerFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" shimmer:shimmer_repeat_delay="@integer/homescreen_shimmer_delay" shimmer:shimmer_tilt="@integer/homescreen_shimmer_tilt">
+        <View android:tag="binding_1" android:background="?cardStyleShadowStartColor" android:layout_width="@dimen/homescreen_placeholder_title" android:layout_height="@dimen/ebayMargin2x" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin2x" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <LinearLayout android:background="@color/white_66pct" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.facebook.shimmer.ShimmerFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" shimmer:shimmer_repeat_delay="@integer/homescreen_shimmer_delay" shimmer:shimmer_tilt="@integer/homescreen_shimmer_tilt">
+            <LinearLayout android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include android:id="@id/home_item_placeholder_content1" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/home_item_placeholder_content" />
+                <View android:tag="binding_3" android:background="?cardStyleShadowStartColor" android:layout_width="@dimen/borderSizeThin" android:layout_height="fill_parent" />
+                <include android:id="@id/home_item_placeholder_content2" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/home_item_placeholder_content" />
+                <View android:tag="binding_4" android:background="?cardStyleShadowStartColor" android:layout_width="@dimen/borderSizeThin" android:layout_height="fill_parent" />
+                <include android:id="@id/home_item_placeholder_content3" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/home_item_placeholder_content" />
+                <View android:tag="binding_5" android:background="?cardStyleShadowStartColor" android:layout_width="@dimen/borderSizeThin" android:layout_height="fill_parent" />
+                <include android:id="@id/home_item_placeholder_content4" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/home_item_placeholder_content" />
+                <View android:tag="binding_6" android:background="?cardStyleShadowStartColor" android:layout_width="@dimen/borderSizeThin" android:layout_height="fill_parent" />
+                <include android:id="@id/home_item_placeholder_content5" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/home_item_placeholder_content" />
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </LinearLayout>
+</LinearLayout>

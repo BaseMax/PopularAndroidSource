@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/link_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/ebayContentSideMargin">
+        <ImageView android:id="@id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:src="@drawable/ic_green_checkmark" />
+        <TextView android:textAppearance="?textAppearanceTitle2" android:id="@id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:text="@string/google_linked" android:layout_toRightOf="@id/iv_icon" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/tv_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/google_linked_detail" android:layout_below="@id/tv_status" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/button_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/google_linked_continue" android:layout_alignParentBottom="true" style="@style/EbayButton.Blue" />
+    </RelativeLayout>
+</FrameLayout>

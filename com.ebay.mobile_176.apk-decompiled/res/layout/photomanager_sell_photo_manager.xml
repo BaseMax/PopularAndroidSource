@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/progress_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/parent_layout" android:layout_width="fill_parent" android:weightSum="1.0" style="@style/Sell.Layout.Background">
+        <include layout="@layout/photomanager_grid" />
+        <include layout="@layout/shopping_cart_dashed_line" />
+        <RelativeLayout android:id="@id/help_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin15" style="@style/Sell.Layout.Help.Content">
+            <ImageView android:id="@id/info_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMarginHalf" android:src="@drawable/info_holo" android:layout_centerVertical="true" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/help_line_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/photomanager_help" android:layout_toRightOf="@id/info_icon" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="@string/photomanager_help_2" android:layout_toRightOf="@id/info_icon" android:layout_below="@id/help_line_1" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

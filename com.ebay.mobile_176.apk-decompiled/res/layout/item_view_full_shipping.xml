@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/full_shipping_layout" style="@style/ItemView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/shipping_layout" style="@style/ItemStatLayout">
+        <TextView android:text="@string/shipping" style="@style/ItemStatHeader" />
+        <TextView android:textColor="?itemViewDefaultTextColorSecondary" android:id="@id/shipping_cost_textview" style="@style/ItemStatValue" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/shipping_each_additional_layout" style="@style/ItemStatLayout">
+        <TextView android:text="@string/each_additional" style="@style/ItemStatHeader" />
+        <TextView android:id="@id/shipping_each_additional_textview" style="@style/ItemStatValue" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/gsp_verbiage_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/gsp_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:src="@drawable/icon_alert_info" android:layout_alignParentRight="true" android:contentDescription="@string/terms_and_conditions" />
+            <LinearLayout android:layout_height="wrap_content" android:layout_toLeftOf="@id/gsp_info" style="@style/ItemStatLayout">
+                <TextView android:text="@string/LEGAL_gsp_import_charges" style="@style/ItemStatHeader" />
+                <TextView android:id="@id/shipping_import_charges_price" style="@style/ItemStatValue" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout style="@style/ItemStatLayout">
+            <TextView style="@style/ItemStatHeader" />
+            <TextView android:text="@string/LEGAL_gsp_estimate_final_at_xo" style="@style/ItemStatValue" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/ship_date_layout" style="@style/ItemStatLayout">
+        <TextView android:text="@string/item_view_ship_date" style="@style/ItemStatHeader" />
+        <TextView android:id="@id/ship_date_textview" style="@style/ItemStatValue" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ship_estimated_delivery_layout" style="@style/ItemStatLayout">
+        <TextView android:text="@string/item_view_ship_delivery" style="@style/ItemStatHeader" />
+        <TextView android:id="@id/ship_estimated_delivery_textview" style="@style/ItemStatValue" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/fast_and_free_layout" style="@style/ItemStatLayout">
+        <TextView style="@style/ItemStatHeader" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/fast_and_free_pic_width_x2" android:layout_height="@dimen/fast_and_free_pic_height_x2" android:src="@drawable/fast_and_free_truck_18dp" />
+        <TextView android:textColor="@color/egd_fnf_green" android:layout_gravity="center_vertical" android:id="@id/fast_and_free_full" style="@style/ItemStatValue" />
+    </LinearLayout>
+</LinearLayout>

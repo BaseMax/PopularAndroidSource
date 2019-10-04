@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/audioContentLayout" android:background="@drawable/inline_audio_background" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ir.cafebazaar.inline.ux.audio.PlayPauseView android:id="@id/playPauseBtn" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="8.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/seekBarContainer" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/currentTime" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="14.0" />
+        <SeekBar android:layout_gravity="center_vertical" android:id="@id/seekBar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="100" android:thumb="@drawable/seekbar_thumb" android:layout_weight="72.0" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/totalTime" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="14.0" />
+    </LinearLayout>
+</LinearLayout>

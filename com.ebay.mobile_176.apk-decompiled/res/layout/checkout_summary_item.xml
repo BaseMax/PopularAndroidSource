@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/checkout_summary_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:gravity="right" android:layout_gravity="bottom" android:id="@id/checkout_summary_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/checkout_summary_label" android:layout_alignParentRight="true" />
+</RelativeLayout>

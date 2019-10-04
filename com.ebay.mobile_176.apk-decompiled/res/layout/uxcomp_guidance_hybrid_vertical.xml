@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/uxcomp_guidance_hybrid_vertical_0" android:background="@drawable/pill_background" android:clickable="true" android:layout_width="@dimen/answers_hybrid_vertical_width" android:layout_height="@dimen/answers_hybrid_vertical_height" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="@dimen/ebayMargin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/ebayMargin" android:paddingEnd="@dimen/ebayMargin">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/imageview_item_image" android:tag="binding_1" android:layout_width="@dimen/answers_hybrid_vertical_image_width" android:layout_height="@dimen/answers_hybrid_vertical_image_height" android:layout_marginBottom="@dimen/ebayMargin" android:src="@drawable/ic_missing_image" android:scaleType="fitCenter" app:fadeInDuration="@integer/answers_image_fade_in_duration" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:gravity="center|top" android:id="@id/textview_item_title" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" />
+    </LinearLayout>
+    <View android:background="@color/pill_background_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

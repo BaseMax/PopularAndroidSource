@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_item_add_on_installer_body_0" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/ebayPadding15" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <com.ebay.android.widget.RemoteImageView android:id="@id/item_thumbnail" android:tag="binding_1" android:layout_width="@dimen/ItemViewThumbnailHeight" android:layout_height="@dimen/ItemViewThumbnailHeight" android:scaleType="fitCenter" android:contentDescription="@string/accessibility_item_image" app:averageBackgroundColor="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="1.0" android:layout_weight="1.0">
+                <TextView android:id="@id/item_title" android:tag="binding_2" android:focusable="true" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/ebayMargin15" android:layout_marginRight="@dimen/ebayMargin15" android:layout_weight="1.0" />
+                <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/item_price" android:tag="binding_3" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin15" android:layout_marginRight="@dimen/ebayMargin15" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMarginHalf" style="@style/StyleGuideViewItemCard">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?listDividerHorizontal" android:showDividers="middle">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/installer_near_postal_area" android:tag="binding_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <Button android:id="@id/installer_update_postal_button" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/installer_location_update_button" style="@style/EbayButton.Flat" />
+                </LinearLayout>
+                <TextView android:textAppearance="?textAppearanceCaption1" android:textColor="?colorAlert" android:id="@id/installer_error_message" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:accessibilityLiveRegion="assertive" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:tag="binding_7" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/installation_all_pay_at_shop" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/installer_location_recycler_view" android:tag="binding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

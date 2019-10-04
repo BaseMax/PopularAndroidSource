@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/accept_modal_contents" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginBottom="@dimen/ebayMarginHalf" />
+    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/accept_modal_legal" android:paddingLeft="@dimen/ebayPadding3x" android:paddingRight="@dimen/ebayPadding3x" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_below="@id/accept_modal_contents" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/prp_stateful_button_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/prp_action_button" android:tag="binding_1" android:layout_width="fill_parent" style="@style/EbayButton" />
+    <Button android:id="@id/prp_action_button_secondary" android:tag="binding_2" android:layout_width="fill_parent" style="@style/EbayButton.SecondaryAlt" />
+</LinearLayout>

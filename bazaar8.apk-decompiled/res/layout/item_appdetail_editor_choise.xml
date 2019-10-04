@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/item_appdetail_editor_choise_0" android:layout_width="fill_parent" android:layout_height="@dimen/default_components_height" style="@style/Bazaar.ContainerRipple"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginStart="@dimen/default_margin_double" app:srcCompat="@drawable/ic_editor_choice" />
+    <androidx.appcompat.widget.AppCompatTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/editor_choice" android:layout_weight="1.0" android:layout_marginStart="@dimen/default_margin_double" style="@style/Bazaar.Text.Body2.Dark" />
+    <androidx.appcompat.widget.AppCompatTextView android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.farsitel.bazaar.widget.RTLImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_margin_double" app:srcCompat="@drawable/ic_round_chevron_right_24px" style="@style/Bazaar.Image.Icon.Secondary" />
+</LinearLayout>

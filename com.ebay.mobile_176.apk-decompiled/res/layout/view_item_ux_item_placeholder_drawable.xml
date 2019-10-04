@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/view_item_ux_item_placeholder_drawable_0" android:layout_width="fill_parent" android:layout_height="@dimen/ItemViewPhotoGalleryHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/item_thumbnail" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ebayMargin2x" android:scaleType="fitCenter" android:contentDescription="@string/accessibility_item_image" app:averageBackgroundColor="true" />
+</FrameLayout>

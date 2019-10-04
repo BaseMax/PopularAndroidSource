@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.nautilus.shell.quicktips.widget.BubbleLayout android:id="@id/quicktip_bubble_layout" android:tag="layout/common_inline_tip_0" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/InlineQuickTipStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/QuickTipTitle" />
+        <TextView android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/QuickTipMessage" />
+    </LinearLayout>
+</com.ebay.nautilus.shell.quicktips.widget.BubbleLayout>

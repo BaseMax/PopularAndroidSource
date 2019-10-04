@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/picker_panel_form_entry_vrm_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputEditText android:textAppearance="?textAppearanceTitle2" android:id="@id/input_text" android:tag="binding_1" android:background="@color/verticals_picker_vrm_entry_background" android:paddingRight="@dimen/min_touch_target_unit" android:layout_width="fill_parent" android:layout_height="@dimen/picker_vrm_entry_height" android:singleLine="true" android:drawableLeft="@drawable/ic_vrm_gb_logo" android:drawablePadding="@dimen/ebayPadding15" />
+    <ImageButton android:layout_gravity="center|right" android:tag="binding_2" android:background="@null" android:layout_width="@dimen/min_touch_target_unit" android:layout_height="@dimen/min_touch_target_unit" android:foreground="?selectableItemBackgroundBorderless" android:src="@drawable/ic_close_white_24dp" android:tint="?iconTintColor" android:contentDescription="@string/clear" />
+</FrameLayout>

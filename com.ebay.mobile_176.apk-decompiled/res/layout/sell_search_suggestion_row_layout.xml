@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/sell_search_suggestion_padding" android:paddingRight="@dimen/sell_search_suggestion_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubhead" android:gravity="center_vertical" android:id="@id/text" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/searchlanding_minimum_item_height" android:layout_toLeftOf="@id/search_complete_icon" android:layout_alignParentLeft="true" />
+    <ImageView android:gravity="center_vertical" android:id="@id/search_complete_icon" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search_complete" android:scaleType="centerInside" android:tint="?iconTintColor" android:minHeight="@dimen/searchlanding_minimum_item_height" android:layout_alignParentRight="true" android:contentDescription="@string/use_suggested_search_accessibility_text" />
+</RelativeLayout>

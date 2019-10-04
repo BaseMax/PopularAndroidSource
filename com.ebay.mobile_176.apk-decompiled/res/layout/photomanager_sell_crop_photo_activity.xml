@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_bar" android:paddingLeft="@dimen/ebayLetterboxSideMargin" android:paddingRight="@dimen/ebayLetterboxSideMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/ButtonBar.Floating">
+        <Button android:id="@id/button_rotate" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/rotate" android:layout_weight="1.0" style="@style/EbayButton.White" />
+        <Button android:id="@id/button_upload" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/upload" android:layout_weight="1.0" style="@style/EbayButton.White" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/button_bar">
+        <view android:id="@id/CropImageView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.ebay.mobile.photomanager.android.CropImageView" />
+    </LinearLayout>
+</RelativeLayout>

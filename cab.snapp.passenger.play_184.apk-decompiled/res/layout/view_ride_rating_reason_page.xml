@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/pure_white" android:paddingLeft="@dimen/padding_small" android:paddingRight="@dimen/padding_small" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/bluish_grey" android:id="@id/view_ride_rating_reason_page_title" android:layout_marginTop="@dimen/margin_medium" android:layout_centerHorizontal="true" style="@style/TextView.Default.Medium" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/view_ride_rating_reason_page_recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" />
+</LinearLayout>

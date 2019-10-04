@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/actions_and_seller_away_layout" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding2x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/high_availability_message" android:background="@color/alertMessageSeverityStripBgWarning" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/seller_away_layout" android:background="@color/alertMessageSeverityStripBgWarning" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceTitle2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/seller_is_away" />
+        <TextView android:id="@id/seller_away_message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/actions_fragment_layout" android:paddingTop="@dimen/ebayPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/status_message_module_layout" android:paddingTop="@dimen/ebayPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/out_of_stock_layout" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding2x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/view_item_out_of_stock" />
+</LinearLayout>

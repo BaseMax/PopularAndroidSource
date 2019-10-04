@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <FrameLayout android:id="@id/review_photo_cell1" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/review_photo_cell2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/review_photo_cell3" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_weight="1.0" />
+        <com.ebay.mobile.widget.SquareLayout android:gravity="center" android:orientation="vertical" android:id="@id/review_photo_filler" android:background="@color/product_reviews_add_photos_bg" android:visibility="gone" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_reviews_include_photo_64dp" android:tint="@color/product_reviews_add_photos_ic_fill" />
+            <TextView android:textAppearance="@style/EbayTextAppearance.Caption" android:textColor="@color/product_reviews_add_photos_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMargin2x" android:layout_marginRight="@dimen/ebayStaticMargin2x" android:text="@string/reviews_include_as_many_photos" />
+        </com.ebay.mobile.widget.SquareLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:baselineAligned="false">
+        <FrameLayout android:id="@id/review_photo_cell3_row2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMarginHalf" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/review_photo_cell4" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/review_photo_cell5" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_weight="1.0" />
+    </LinearLayout>
+</merge>

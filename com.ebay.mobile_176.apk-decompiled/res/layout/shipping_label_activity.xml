@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.android.widget.MaxSizeLinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" ebay:maxWidth="@dimen/sell_smartbox_max_width" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+        <FrameLayout android:id="@id/shipping_label_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.ebay.android.widget.MaxSizeLinearLayout>
+    <include android:visibility="gone" layout="@layout/common_error" />
+</FrameLayout>

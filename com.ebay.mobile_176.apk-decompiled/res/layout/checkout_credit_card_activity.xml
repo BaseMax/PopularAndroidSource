@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/progress_container" />
+    <LinearLayout android:orientation="vertical" android:id="@id/xo_content" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/checkout_error_container" />
+        <ScrollView android:background="?listContainerOutsideBackground" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/credit_card_icon_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMedium" android:layout_marginTop="@dimen/xoMarginSmall" android:layout_marginRight="@dimen/xoMarginMediumLarge">
+                    <ImageView android:id="@id/credit_card_visa" android:src="@drawable/icon_visa" android:contentDescription="@string/prox_payment_method_header_credit_card_visa" style="@style/XoCcIconStyle" />
+                    <ImageView android:id="@id/credit_card_mastercard" android:src="@drawable/icon_mastercard" android:contentDescription="@string/prox_payment_method_header_credit_card_mastercard" style="@style/XoCcIconStyle" />
+                    <ImageView android:id="@id/credit_card_postepay" android:src="@drawable/icon_postepay" android:contentDescription="@string/prox_payment_method_header_credit_card_poste_pay" style="@style/XoCcIconStyle" />
+                    <ImageView android:id="@id/credit_card_amex" android:src="@drawable/icon_amex" android:contentDescription="@string/prox_payment_method_header_credit_card_amex" style="@style/XoCcIconStyle" />
+                    <ImageView android:id="@id/credit_card_discover" android:src="@drawable/icon_discover" android:contentDescription="@string/prox_payment_method_header_credit_card_discover" style="@style/XoCcIconStyle" />
+                    <ImageView android:id="@id/credit_card_maestro" android:src="@drawable/icon_maestro" android:contentDescription="@string/prox_payment_method_header_credit_card_maestro" style="@style/XoCcIconStyle" />
+                </LinearLayout>
+                <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xoMarginSmall" style="@style/CheckoutCard">
+                    <LinearLayout android:orientation="vertical" android:id="@id/checkout_card_details_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@id/card_number_layout" android:paddingLeft="@dimen/xoMarginMedium" android:paddingTop="@dimen/xoMarginTiny" android:paddingRight="@dimen/xoMarginMediumLarge" android:paddingBottom="@dimen/xoMarginMediumLarge" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.google.android.material.textfield.TextInputLayout android:id="@id/card_number_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/prox_payment_method_credit_card_card_number_label" app:errorEnabled="false">
+                                <com.google.android.material.textfield.TextInputEditText android:textAppearance="?textAppearanceSubhead" android:id="@id/card_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:maxLength="@integer/max_card_number_input_length" android:digits="01234567890 " android:inputType="number" android:imeOptions="actionNext" android:textIsSelectable="false" android:nextFocusForward="@id/card_expiration" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/card_expiration_layout" android:paddingLeft="@dimen/xoMarginMedium" android:paddingTop="@dimen/xoMarginTiny" android:paddingRight="@dimen/xoMarginMediumLarge" android:paddingBottom="@dimen/xoMarginMediumLarge" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.google.android.material.textfield.TextInputLayout android:id="@id/card_expiration_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/prox_payment_method_credit_card_expiration_label" app:errorEnabled="false">
+                                <com.google.android.material.textfield.TextInputEditText android:textAppearance="?textAppearanceSubhead" android:id="@id/card_expiration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:maxLength="5" android:digits="01234567890/" android:inputType="number" android:imeOptions="actionNext" android:textIsSelectable="false" android:nextFocusForward="@id/card_cvv" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/card_cvv_layout" android:paddingLeft="@dimen/xoMarginMedium" android:paddingTop="@dimen/xoMarginTiny" android:paddingRight="@dimen/xoMarginMediumLarge" android:paddingBottom="@dimen/xoMarginMediumLarge" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.google.android.material.textfield.TextInputLayout android:id="@id/card_cvv_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/prox_payment_method_credit_card_cvc_label" app:errorEnabled="false">
+                                <com.google.android.material.textfield.TextInputEditText android:textAppearance="?textAppearanceSubhead" android:id="@id/card_cvv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:maxLength="4" android:digits="\ 01234567890" android:inputType="number" android:imeOptions="actionNext" android:textIsSelectable="false" android:nextFocusForward="@id/card_name" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/card_name_layout" android:paddingLeft="@dimen/xoMarginMedium" android:paddingTop="@dimen/xoMarginTiny" android:paddingRight="@dimen/xoMarginMediumLarge" android:paddingBottom="@dimen/xoMarginMediumLarge" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.google.android.material.textfield.TextInputLayout android:id="@id/card_name_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/prox_payment_method_credit_card_name_on_card_label" app:errorEnabled="false">
+                                <com.google.android.material.textfield.TextInputEditText android:textAppearance="?textAppearanceSubhead" android:id="@id/card_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:inputType="textCapWords|textNoSuggestions" android:imeOptions="actionNext" android:textIsSelectable="false" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                        <RelativeLayout android:id="@id/checkout_remember_content" android:paddingLeft="@dimen/xoMarginMediumLarge" android:paddingRight="@dimen/xoMarginMediumLarge" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/xoMarginMediumLarge" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+                                <TextView android:textAppearance="?textAppearanceSubheadSecondary" android:id="@id/remember_payment_details_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prox_remember_instrument_label" android:importantForAccessibility="no" android:labelFor="@id/card_remember" />
+                                <TextView android:textAppearance="?textAppearanceCaption1" android:textColor="?android:textColorLink" android:id="@id/remember_payment_details_link" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/store_picker_more_information" />
+                            </LinearLayout>
+                            <androidx.appcompat.widget.SwitchCompat android:layout_gravity="right" android:id="@id/card_remember" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <TextView android:textAppearance="?textAppearanceTitle2" android:id="@id/checkout_billing_address_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginTop="@dimen/xoMarginMedium" android:layout_marginRight="@dimen/xoMarginMediumLarge" android:layout_marginBottom="@dimen/xoMarginMedium" android:text="@string/prox_payment_method_header_billing_address" />
+                <FrameLayout android:id="@id/address_edit_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/legal_disclaimer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginRight="@dimen/xoMarginMediumLarge" android:layout_marginBottom="@dimen/xoMarginMediumLarge" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</merge>

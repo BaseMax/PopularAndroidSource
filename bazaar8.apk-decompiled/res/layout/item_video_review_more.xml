@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_video_review_more_0" android:paddingBottom="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/videoDescriptionMoreText" android:tag="binding_1" android:padding="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_double" android:layout_marginBottom="@dimen/default_margin_double" android:text="@string/all_review" style="@style/Bazaar.Text.Medium.VideoAction.Ripple" />
+</FrameLayout>

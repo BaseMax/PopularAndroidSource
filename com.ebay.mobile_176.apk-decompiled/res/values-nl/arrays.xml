@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vehicle_history_report_unavailable_reason_list">
+        <item>Het voertuig is te nieuw en heeft nog geen voertuiggeschiedenis.</item>
+        <item>Het voertuig is vóór 1981 geproduceerd.</item>
+        <item>Het voertuig had geen 17-cijferig chassisnummer.</item>
+        <item>Het voertuig was niet bestemd voor de Amerikaanse markt (zoals exclusieve modellen in beperkte oplage).</item>
+        <item>De verkoper heeft het chassisnummer niet goed ingevoerd.</item>
+    </string-array>
+</resources>

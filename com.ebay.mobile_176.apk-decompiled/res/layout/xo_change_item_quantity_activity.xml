@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/listContainerLightOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/listContainerLightInsideBackground" android:paddingLeft="@dimen/shopExQuantityUpdatePadding" android:paddingRight="@dimen/shopExQuantityUpdatePadding" android:paddingBottom="@dimen/shopExQuantityUpdatePadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/shopExQuanityUpdateTopMargin">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/quantity_layout" android:paddingTop="@dimen/shopExQuanityUpdateTopMargin" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-4.0dip" app:errorEnabled="false">
+            <com.google.android.material.textfield.TextInputEditText android:textAppearance="?textAppearanceSubhead" android:id="@id/quantity_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:inputType="number" android:imeOptions="actionDone" android:textIsSelectable="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/minimum_quantity" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/maximum_quantity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:labelFor="@id/quantity_field" />
+    </LinearLayout>
+</ScrollView>

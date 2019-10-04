@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="?android:textColorSecondary" android:gravity="center" android:tag="layout/picker_panel_empty_filter_result_0" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding3x" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding3x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

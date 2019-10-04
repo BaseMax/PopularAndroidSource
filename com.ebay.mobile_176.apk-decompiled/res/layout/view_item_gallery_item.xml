@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/view_item_gallery_image_dimension" android:layout_height="@dimen/view_item_gallery_image_dimension"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/image_view_gallery_progress" android:layout_width="@dimen/commonProgressSize" android:layout_height="@dimen/commonProgressSize" android:layout_centerInParent="true" style="@style/Widget.AppCompat.ProgressBar" />
+    <com.ebay.android.widget.RemoteImageView android:id="@id/image_image" android:layout_width="fill_parent" android:layout_height="fill_parent" ebay:averageBackgroundColor="true" ebay:maxHeightPixels="@integer/search_list_image_size" ebay:maxWidthPixels="@integer/search_list_image_size" />
+</RelativeLayout>

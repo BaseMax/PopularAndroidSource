@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/list_container" android:layout_width="fill_parent" android:layout_height="240.0dip">
+        <ListView android:id="@id/list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@drawable/selector" android:divider="@null" android:layout_weight="1.0" />
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/addButtonContainer" android:background="@color/dark_green" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="8.0dip" android:layout_weight="0.0">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/add" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/addIcon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/add" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/title_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:text="@string/title" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/inline_edittext_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center_vertical" android:id="@id/title_voice_btn" android:background="@drawable/ic_action_voice" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="8.0dip" />
+            <androidx.appcompat.widget.AppCompatEditText android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/title_content" android:background="@null" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+        </LinearLayout>
+        <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/title_accept" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="18.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/title_accept_text" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="@string/confirm_title" android:drawablePadding="8.0dip" />
+            </FrameLayout>
+            <View android:id="@id/title_divider" android:background="@color/gray" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/title_delete" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="18.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/title_delete_text" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="@string/delete_address" android:drawablePadding="8.0dip" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/address_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:text="@string/address" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/inline_edittext_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center_vertical" android:id="@id/address_voice_btn" android:background="@drawable/ic_action_voice" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="8.0dip" />
+            <androidx.appcompat.widget.AppCompatEditText android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/address_content" android:background="@null" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+        </LinearLayout>
+        <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+        <FrameLayout android:id="@id/address_accept" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="18.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/address_accept_text" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="@string/confirm_address" android:drawableRight="@drawable/ic_check" android:drawablePadding="8.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

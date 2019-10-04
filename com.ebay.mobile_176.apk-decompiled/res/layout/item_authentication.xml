@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:id="@id/sell_authenticate_scroll_parent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/authenticate_root_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/item_authentication_opt_in" layout="@layout/item_authentication_opt_in" />
+            <include android:id="@id/item_authentication_preferences" android:visibility="gone" layout="@layout/item_authentication_preferences" />
+            <include android:id="@id/item_authentication_finalize" android:visibility="gone" layout="@layout/item_authentication_finalize" />
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:id="@id/authenticate_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" />
+</RelativeLayout>

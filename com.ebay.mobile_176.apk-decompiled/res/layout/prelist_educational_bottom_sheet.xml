@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="@dimen/prelist_educational_bottom_sheet_height">
+        <TextView android:textAppearance="?textAppearanceHeadline" android:gravity="center_horizontal" android:id="@id/interstitial_heading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin3x" android:text="@string/prelist_educational_bottom_sheet_heading" />
+        <ImageView android:id="@id/interstitial_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_prelist_educational_bottomsheet" android:importantForAccessibility="no" />
+        <TextView android:textAppearance="?textAppearanceSubhead" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/interstitial_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin3x" android:text="@string/prelist_educational_bottom_sheet_description" android:lineSpacingExtra="@dimen/prelist_line_spacing_extra" />
+        <Button android:id="@id/close_interstitial_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:text="@string/prelist_got_it_button_label" style="@style/Sell.UniversalMainActionButton" />
+    </LinearLayout>
+</ScrollView>

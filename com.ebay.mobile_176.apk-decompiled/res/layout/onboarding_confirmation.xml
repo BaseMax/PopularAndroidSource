@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/onboarding_fragment_background" android:background="@color/onboarding_confirmation_background" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/onboarding_progress_container" />
+    <com.ebay.nautilus.shell.widget.EbaySwipeRefreshLayout android:id="@id/swipe_to_refresh_main" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/confirmation_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <ImageButton android:id="@id/confirmation_close" android:background="@drawable/ic_close_white_24dp" android:padding="@dimen/baseline_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/close" android:backgroundTint="@color/onboarding_confirmation_textcolor" />
+            <TextView android:textAppearance="?textAppearanceTitle2" android:textSize="@dimen/text_size_display_2_material" android:textColor="@color/onboarding_confirmation_textcolor" android:id="@id/confirmation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin4x" android:layout_below="@id/confirmation_close" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view_main" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ViewStub android:id="@id/container_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/container_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

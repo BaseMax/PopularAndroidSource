@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/photomanager2_edit_0" android:background="@color/photomanager_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_bar" android:background="?colorPrimary" android:paddingLeft="@dimen/ebayLetterboxSideMargin" android:paddingRight="@dimen/ebayLetterboxSideMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:layout_alignParentBottom="true" style="@style/ButtonBar">
+        <ImageButton android:id="@id/button_rotate" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="?photoRotateIcon" android:layout_weight="1.0" android:contentDescription="@string/rotate" style="?borderlessButtonStyle" />
+        <ImageButton android:id="@id/button_crop" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="?photoCropIcon" android:layout_weight="1.0" android:contentDescription="@string/crop" style="?borderlessButtonStyle" />
+        <ImageButton android:id="@id/button_delete" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="?photoDeleteIcon" android:layout_weight="1.0" android:contentDescription="@string/delete" style="?borderlessButtonStyle" />
+    </LinearLayout>
+    <FrameLayout android:gravity="center_horizontal" android:id="@id/image_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/button_bar">
+        <com.ebay.android.widget.CropImageView android:id="@id/crop_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+    <TextView android:textColor="?colorAlert" android:id="@id/textview_error" android:background="@drawable/rounded_corner_error_listing_form" android:padding="@dimen/baseline_unit_2x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/button_bar" />
+</RelativeLayout>

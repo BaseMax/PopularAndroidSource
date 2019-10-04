@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="horizontal" android:tag="layout/sio_card_layout_0" android:background="?containerBackgroundColor" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?containerContentPaddingLeft" android:paddingEnd="?containerContentPaddingRight"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/image_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayStaticMargin2x">
+        <com.ebay.android.widget.RemoteImageView android:tag="binding_1" android:layout_width="136.0dip" android:layout_height="136.0dip" android:src="@drawable/ic_missing_image" android:scaleType="fitCenter" app:averageBackgroundColor="true" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:tag="binding_2" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.ebay.nautilus.shell.uxcomponents.widget.VerticalContainerView android:id="@id/txn_card" android:tag="binding_3" android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" app:decorations="none" app:verticalCellPadding="@dimen/baseline_unit" style="?verticalListItemsNoPaddingStyle" />
+    </LinearLayout>
+</LinearLayout>

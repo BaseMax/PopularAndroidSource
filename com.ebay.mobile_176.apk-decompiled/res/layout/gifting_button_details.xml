@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ButtonBar.Floating"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:orientation="vertical" android:id="@id/generic_view" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/button_preview_buybar" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/gift_details_preview_button" android:layout_weight="0.5" android:contentDescription="@string/gift_details_preview_button" style="@style/EbayButton.Secondary" />
+    <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/button_edit_buybar" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/gift_details_edit_button" android:layout_weight="0.5" android:contentDescription="@string/gift_details_edit_button" style="@style/EbayButton.Secondary" />
+    <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/button_continue" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/button_continue" android:layout_weight="0.5" android:contentDescription="@string/button_continue" style="@style/EbayButton.Blue" />
+</LinearLayout>

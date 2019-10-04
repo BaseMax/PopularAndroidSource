@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/add_on_items_max_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LetterboxViewItem">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin15" style="@style/StyleGuideViewItemCard">
+            <include layout="@layout/item_header_thumbnail" />
+        </LinearLayout>
+        <androidx.cardview.widget.CardView android:id="@id/add_on_items_details_card" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/StyleGuideViewItemCard">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding15" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/add_on_item_title_layout" />
+                <TextView android:textAppearance="?textAppearanceTitle1" android:id="@id/add_on_item_price_starting_at" android:paddingTop="@dimen/ebayPaddingHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <include layout="@layout/add_on_item_description_container" />
+                <include layout="@layout/view_item_add_on_learn_more" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <include layout="@layout/view_item_add_on_footer" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="420.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/baseline_unit_2x" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/button_scan_package" android:text="@string/button_scan_tracking_label" style="@style/Sell.ScanButton" />
+            <TextView android:gravity="center_horizontal" android:id="@id/label_scan_your_item" android:layout_width="fill_parent" android:layout_marginBottom="5.0dip" android:text="@string/label_scan_your_item" style="@style/Sell.ScanButtonSubText" />
+            <TextView android:textStyle="bold" android:id="@id/tracking_number_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shipment_tracking_number_label" android:labelFor="@id/tracking_number_edit_text" />
+            <EditText android:id="@id/tracking_number_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:inputType="text" android:imeOptions="actionNext">
+                <requestFocus />
+            </EditText>
+            <TextView android:textStyle="bold" android:id="@id/shipping_carrier_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shipment_tracking_carrier_label" android:labelFor="@id/tracking_carrier_edit_text" />
+            <EditText android:id="@id/tracking_carrier_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:inputType="text" android:imeOptions="actionDone" />
+        </LinearLayout>
+    </ScrollView>
+    <com.ebay.android.widget.ButtonBar android:id="@id/button_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" ebay:negativeButtonId="@id/tracking_dialog_cancel_button" ebay:negativeButtonText="@string/cancel" ebay:neutralButtonId="@id/tracking_dialog_remove_button" ebay:neutralButtonText="@string/tracking_dialog_remove" ebay:positiveButtonId="@id/tracking_dialog_save_button" ebay:positiveButtonText="@string/save" ebay:showTopDivider="true" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

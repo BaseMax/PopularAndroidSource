@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/carbon_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/snapp_group_services" android:paddingStart="@dimen/snapp_services_side_margin" android:paddingEnd="@dimen/snapp_services_side_margin" style="@style/TextView.Bold.ExtraExtraLarge" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/item_snapp_services_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foregroundGravity="center_horizontal" android:paddingStart="@dimen/snapp_jek_service_recyclerview_side_margin" android:paddingEnd="@dimen/snapp_jek_service_recyclerview_side_margin" />
+    <View android:layout_width="fill_parent" android:layout_height="24.0dip" />
+</LinearLayout>

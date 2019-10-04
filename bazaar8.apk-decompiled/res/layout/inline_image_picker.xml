@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_menu" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="fill_parent" android:indeterminate="false" android:indeterminateOnly="false" />
+</FrameLayout>

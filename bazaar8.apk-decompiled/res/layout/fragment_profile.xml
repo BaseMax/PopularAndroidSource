@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.farsitel.bazaar.widget.RTLImageView android:id="@id/backButton" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_round_arrow_back_24px" app:tint="@color/c_icon_toolbar" style="@style/Bazaar.Image.Toolbar.Back" />
+                <androidx.appcompat.widget.AppCompatTextView android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_title" android:layout_marginStart="@dimen/default_margin_one_half" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/backButton" app:layout_constraintTop_toTopOf="parent" style="@style/Bazaar.Text.Body1.Dark" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:paddingBottom="@dimen/default_margin_double" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include layout="@layout/layout_page_non_data" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

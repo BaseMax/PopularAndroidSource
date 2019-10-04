@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/rl_amount_root" android:background="@drawable/selector_button_charge_amount" android:padding="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_size_medium" android:textColor="@color/grayish_brown" android:id="@id/tv_charge_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:singleLine="true" android:layout_centerVertical="true" style="@style/TextView.Default.LocaleNumerals" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_size_small" android:textColor="@color/grayish_brown" android:id="@id/tv_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/snapp_charge_rials" android:maxLines="1" android:lines="1" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_very_small" android:layout_toEndOf="@id/tv_charge_amount" style="@style/TextView.Light" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/add_photo_cell" android:tag="layout/listing_form_add_photo_cell_0" android:background="@drawable/gray_dotted_line_frame_background" android:layout_width="fill_parent" android:layout_height="@dimen/sell_photo_carousel_cell_width" android:foreground="?android:selectableItemBackground" android:contentDescription="@string/add_photos"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add_circle_blue_48dp" android:importantForAccessibility="no" />
+</LinearLayout>

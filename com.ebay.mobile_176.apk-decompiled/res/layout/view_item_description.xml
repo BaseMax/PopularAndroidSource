@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/description_and_product_details_layout" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="0.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/ebayMargin" />
+    <RelativeLayout android:id="@id/button_item_description" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/item_description_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/snippet_chevron_icon">
+            <TextView android:textAppearance="?textAppearanceSubhead2" android:id="@id/description_title_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:text="@string/item_description" />
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:textStyle="italic" android:id="@id/seller_notes_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:id="@id/description_snippet_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="5" />
+        </LinearLayout>
+        <ImageView android:id="@id/snippet_chevron_icon" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:src="?spokeChevronDrawable" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/accessibility_info_icon" android:importantForAccessibility="no" />
+        <TextView android:textAppearance="?textAppearanceBody2Accent" android:gravity="center|right" android:id="@id/description_snippet_readmore" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/item_description" android:layout_below="@id/item_description_text" android:contentDescription="@string/item_description_accessibility" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/button_product_details" android:background="?android:listChoiceBackgroundIndicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textAppearance="?textAppearanceBody2Accent" android:gravity="center|right" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_product_details" />
+    </LinearLayout>
+</LinearLayout>

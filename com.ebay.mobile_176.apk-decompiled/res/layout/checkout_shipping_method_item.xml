@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/shipping_method" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/shipping_select_link" android:layout_width="@dimen/xoLeftContentWidth" android:layout_height="fill_parent" android:importantForAccessibility="noHideDescendants" style="@style/Xo.Row">
+        <RadioButton android:id="@id/shipping_radio_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/shipping_method_detail" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/shipping_method_divider" style="@style/CommonDivider" />
+        <LinearLayout android:orientation="vertical" android:id="@id/shipping_method_row" android:paddingTop="@dimen/xoMarginMedium" android:paddingRight="@dimen/xoMarginMediumLarge" android:paddingBottom="@dimen/xoMarginMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" style="@style/Xo.Row">
+            <com.ebay.android.widget.RemoteImageView android:id="@id/shipping_method_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/xoShippingImageHeight" android:scaleType="fitStart" android:contentDescription="@string/shipping" ebay:fadeInDuration="@integer/checkoutImageFadeInDuration" />
+            <TextView android:id="@id/section_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Xo.Text" />
+            <ImageView android:id="@id/ebay_plus_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ebay_plus_logo" />
+            <include layout="@layout/checkout_item_shipping_branding" />
+            <LinearLayout android:orientation="vertical" android:id="@id/egd_message_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/shipping_cutoff_time_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/delivery_estimate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/delivery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/delivery_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xoMarginTiny" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

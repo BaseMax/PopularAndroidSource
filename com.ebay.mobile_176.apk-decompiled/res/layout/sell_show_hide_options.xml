@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/more_options_layout" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/more_options_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayStaticMargin" android:text="@string/label_show_more_options" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/more_options_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x" android:src="@drawable/icon_arrowslidedown" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

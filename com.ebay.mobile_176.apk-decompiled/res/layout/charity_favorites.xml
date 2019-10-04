@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/container_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.cardview.widget.CardView android:id="@id/search_card" android:layout_marginBottom="0.0dip" style="@style/EbayCardStyle.Dynamic">
+            <androidx.appcompat.widget.SearchView android:id="@id/search_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapSentences" android:imeOptions="actionSearch|flagNoExtractUi" android:iconifiedByDefault="false" app:queryBackground="@android:color/transparent" app:queryHint="@string/givingworks_keyword_hint" app:submitBackground="@null" />
+        </androidx.cardview.widget.CardView>
+        <ScrollView android:id="@id/scroll_container" android:paddingBottom="@dimen/ebayMargin" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/givingworks_favorites_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/givingworks_favorites_list_label" android:layout_marginTop="@dimen/ebayStaticMargin2x" android:text="@string/givingworks_favorites_list_header" android:layout_alignParentLeft="true" style="@style/Sell.Details.Header" />
+                    <TextView android:textAppearance="?textAppearanceBody2Accent" android:id="@id/givingworks_edit" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayContentSideMargin" android:text="@string/edit" android:layout_alignBaseline="@id/givingworks_favorites_list_label" android:layout_alignParentRight="true" android:contentDescription="@string/givingworks_accessibility_edit_my_favorites" />
+                    <TextView android:textAppearance="?textAppearanceBody2Accent" android:id="@id/givingworks_cancel_edit" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayContentSideMargin" android:text="@string/done" android:layout_alignBaseline="@id/givingworks_favorites_list_label" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <androidx.cardview.widget.CardView android:id="@id/givingworks_favorites_list_container" style="@style/EbayCardStyle.Dynamic">
+                    <LinearLayout android:orientation="vertical" android:id="@id/givingworks_favorites_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?listDividerHorizontal" android:showDividers="middle" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_marginTop="@dimen/ebayStaticMargin2x" style="@style/EbayCardStyle.Dynamic">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:id="@id/givingworks_learn_more_layout" android:background="?android:selectableItemBackground" android:padding="@dimen/ebayContentSideMargin" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textAppearance="?textAppearanceSubhead" android:layout_gravity="center_vertical" android:id="@id/givingworks_learn_more" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/givingworks_learn_more" android:layout_weight="1.0" />
+                            <ImageView android:id="@id/givingworks_learn_more_chevron_down" style="@style/Checkout.Chevron.Down" />
+                            <ImageView android:id="@id/givingworks_learn_more_chevron_up" android:visibility="gone" style="@style/Checkout.Chevron.Up" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/givingworks_help_layout" android:padding="@dimen/ebayContentSideMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/ebayTextSizeMedium" android:layout_gravity="center_vertical" android:id="@id/givingworks_help_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:text="@string/givingworks_help_title" style="@style/Checkout.Text" />
+                            <TextView android:textColor="@color/ebay_text_color_header" android:layout_gravity="center_vertical" android:id="@id/givingworks_help_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:text="@string/givingworks_help_text" />
+                            <LinearLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin">
+                                <ImageView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_charity_ribbon" />
+                                <TextView android:textColor="@color/ebay_text_color_header" android:layout_gravity="center_vertical" android:id="@id/givingworks_help_checkout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:text="@string/givingworks_help_checkout" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <LinearLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin">
+                                <ImageView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_charity_percent" />
+                                <TextView android:textColor="@color/ebay_text_color_header" android:layout_gravity="center_vertical" android:id="@id/givingworks_help_selling" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:text="@string/givingworks_help_selling" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <LinearLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin">
+                                <ImageView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_charity_cart" />
+                                <TextView android:textColor="@color/ebay_text_color_header" android:layout_gravity="center_vertical" android:id="@id/givingworks_help_shopping" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:text="@string/givingworks_help_shopping" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <ImageView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:src="@drawable/ic_charity_logo" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+        <FrameLayout android:id="@id/givingworks_search_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ebayStaticMargin15" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="@dimen/ProgressSpinnerSize" android:layout_height="@dimen/ProgressSpinnerSize" />
+    </LinearLayout>
+    <include layout="@layout/common_error" />
+</LinearLayout>

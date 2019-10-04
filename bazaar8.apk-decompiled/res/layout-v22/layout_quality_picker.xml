@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bottomSheetContainer" android:background="@drawable/bg_bottom_sheet" android:layout_width="fill_parent" android:layout_height="wrap_content" app:behavior_peekHeight="0.0dip" app:layout_behavior="com.farsitel.bazaar.player.quality.AutoCloseBottomSheetBehavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:id="@id/bottomSheetTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_double" android:layout_marginBottom="@dimen/default_margin_double" android:text="@string/player_select_subtitle" android:layout_marginVertical="@dimen/default_margin_double" style="@style/Bazaar.Text.Body1" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@id/store_map" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <Button android:textAppearance="?textAppearanceBody1" android:layout_gravity="center|top" android:id="@id/search_this_area" android:padding="@dimen/full_bleed_content_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="@string/xo_search_this_area" style="@style/EbayButton.White.Letterboxed.Modal" />
+    </FrameLayout>
+    <include android:id="@id/selected_store_location_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/store_location_list_item" />
+</LinearLayout>

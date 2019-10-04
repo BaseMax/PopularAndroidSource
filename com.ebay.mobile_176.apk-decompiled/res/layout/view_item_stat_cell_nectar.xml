@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/stat_layout" style="@style/StyleGuideViewItemStatCell"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/stat_key" style="@style/StyleGuideViewItemStatKey" />
+    <TextView android:id="@id/rewards_value" android:text="rewards value" android:drawableRight="@drawable/ic_nectar_logo" android:drawablePadding="@dimen/ebayPadding" style="@style/StyleGuideViewItemStatValue" />
+</LinearLayout>

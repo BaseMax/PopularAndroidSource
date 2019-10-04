@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/product_review_aspect_0" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="78.0dip" android:layout_height="78.0dip">
+        <ProgressBar android:id="@id/percent_bar" android:tag="binding_1" android:background="@drawable/aspect_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:progressDrawable="@drawable/aspect_foreground" style="?android:progressBarStyleHorizontal" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="16.0sp" android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:id="@id/percent_amount" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:gravity="center_horizontal" android:id="@id/description" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+</LinearLayout>

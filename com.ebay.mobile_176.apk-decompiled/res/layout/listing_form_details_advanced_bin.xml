@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bin_more_options_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/bin_duration_spinner_row" android:paddingRight="@dimen/ebayPadding" android:focusable="true" style="@style/Sell.Bolt.PriceTextParent">
+        <TextView android:id="@id/bin_label_duration" android:text="@string/label_duration" android:layout_alignParentStart="true" android:labelFor="@id/bin_spinner_duration" style="@style/Sell.PricingDetails.Label" />
+        <TextView android:id="@id/bin_sublabel_duration" android:layout_toLeftOf="@id/bin_spinner_duration" android:layout_below="@id/bin_label_duration" android:layout_alignParentLeft="true" style="@style/Sell.PricingDetails.SubLabel" />
+        <Spinner android:id="@id/bin_spinner_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/bin_duration_divider" style="@style/CommonDivider" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/bin_offers_row_parent" android:paddingRight="@dimen/ebayPadding2x" android:focusable="true" style="@style/Sell.Bolt.PriceToggleParent.MoreOptions"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:id="@id/bin_offers_label" android:text="@string/label_offers" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/Sell.PricingDetails.Label" />
+        <Button android:id="@id/bin_offers_button" android:layout_centerVertical="true" android:contentDescription="@string/label_offers" android:layout_alignParentEnd="true" style="@style/Sell.PricingDetails.Toggle.EasyPricing" />
+    </RelativeLayout>
+    <View android:id="@id/bin_offers_divider" android:visibility="gone" style="@style/CommonDivider" />
+    <RelativeLayout android:id="@id/bin_value_added_tax_row" android:paddingRight="@dimen/ebayPadding" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" style="@style/Sell.Bolt.PriceTextParent">
+        <TextView android:id="@id/bin_label_value_added_tax" android:text="@string/label_vat" android:layout_alignParentStart="true" android:labelFor="@id/auction_value_added_tax" style="@style/Sell.PricingDetails.Label" />
+        <com.ebay.mobile.widget.PercentView android:id="@id/bin_value_added_tax" app:showPercentSymbolAlways="true" style="@style/Sell.Bolt.PercentView" />
+    </RelativeLayout>
+    <View android:id="@id/bin_vat_divider" android:visibility="gone" style="@style/CommonDivider" />
+    <RelativeLayout android:id="@id/quantity_row" android:paddingRight="@dimen/ebayPadding2x" android:focusable="true" android:visibility="gone" style="@style/Sell.Bolt.PriceToggleParent">
+        <TextView android:id="@id/quantity_label" android:layout_marginTop="0.0dip" android:text="@string/label_quantity" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:labelFor="@id/quantity_bin_input" style="@style/Sell.PricingDetails.Label" />
+        <EditText android:gravity="right" android:id="@id/quantity_bin_input" android:paddingBottom="@dimen/ebayMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/ebayMargin4x" android:selectAllOnFocus="true" android:maxLength="5" android:layout_alignBaseline="@id/quantity_label" android:inputType="number" android:imeOptions="actionDone|flagNoExtractUi" android:layout_alignParentEnd="true" />
+        <TextView android:id="@id/quantity_sublabel" android:text="@string/price_option_quantity_sublabel" android:layout_below="@id/quantity_label" android:layout_alignParentLeft="true" style="@style/Sell.PricingDetails.SubLabel" />
+    </RelativeLayout>
+    <View android:id="@id/schedule_bin_divider" android:visibility="gone" style="@style/CommonDivider" />
+    <RelativeLayout android:id="@id/schedule_bin_price_layout" android:paddingRight="@dimen/ebayPadding2x" android:focusable="true" style="@style/Sell.Bolt.PriceToggleParent">
+        <ToggleButton android:id="@id/schedule_bin_price_toggle" android:paddingTop="0.0dip" android:paddingBottom="@dimen/ebayMargin" android:textOn="@string/sell_button_on" android:textOff="@string/sell_button_off" android:layout_alignParentTop="true" android:contentDescription="@string/scheduled_start_time" android:layout_alignParentEnd="true" style="@style/Sell.PricingDetails.Toggle" />
+        <TextView android:id="@id/schedule_bin_price_label" android:layout_marginTop="0.0dip" android:text="@string/scheduled_start_time" android:layout_toLeftOf="@id/schedule_bin_price_toggle" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/Sell.PricingDetails.Label" />
+        <TextView android:id="@id/schedule_bin_price_sublabel" android:text="@string/scheduled_start_time_sublabel" android:layout_toLeftOf="@id/schedule_bin_price_toggle" android:layout_below="@id/schedule_bin_price_label" android:layout_alignParentLeft="true" style="@style/Sell.PricingDetails.SubLabel" />
+    </RelativeLayout>
+    <View android:id="@id/schedule_bin_date_divider" android:visibility="gone" style="@style/CommonDivider" />
+    <RelativeLayout android:id="@id/bin_date_row" style="@style/Sell.Bolt.DateTimeParent">
+        <com.ebay.selling.listingform.widget.SingleLineButton android:ellipsize="none" android:id="@id/button_bin_date_schedule" android:freezesText="true" style="@style/Sell.FakeSpinner.Pricing" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:ellipsize="end" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:text="@string/price_option_schedule_date" android:maxLines="1" android:layout_toLeftOf="@id/button_bin_date_schedule" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/schedule_bin_time_divider" android:visibility="gone" style="@style/CommonDivider" />
+    <RelativeLayout android:id="@id/bin_time_row" style="@style/Sell.Bolt.DateTimeParent">
+        <com.ebay.selling.listingform.widget.SingleLineButton android:ellipsize="none" android:id="@id/button_bin_time_schedule" android:freezesText="true" style="@style/Sell.FakeSpinner.Pricing" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:ellipsize="end" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:text="@string/price_option_schedule_time" android:maxLines="1" android:layout_toLeftOf="@id/button_bin_time_schedule" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

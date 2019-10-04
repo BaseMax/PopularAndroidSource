@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/modal_background" android:background="@android:color/transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/modal_padding" android:layout_width="fill_parent" android:layout_height="@dimen/modal_tablet_top_padding" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/modal_main" android:background="@android:color/white" android:layout_below="@id/modal_padding" style="@style/EbayModalStyle">
+        <include layout="@layout/modal_layout_toolbar" />
+        <FrameLayout android:id="@id/modal_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/dialog_base_root" android:background="@drawable/base_dialog_rounded_background_inset" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/dialog_controller_base_content_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</ScrollView>

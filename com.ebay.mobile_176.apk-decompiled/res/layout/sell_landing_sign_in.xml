@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/sell_landing_sign_in_0" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:id="@id/button_register" android:tag="binding_1" android:layout_marginRight="@dimen/sell_landing_sign_in_button_inner_margin" android:minWidth="@dimen/homescreen_card_sign_in_button_width" android:text="@string/register" app:layout_constraintEnd_toStartOf="@id/button_sign_in" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/SellLandingSignInButtonStyle" />
+    <Button android:id="@id/button_sign_in" android:tag="binding_2" android:layout_marginLeft="@dimen/sell_landing_sign_in_button_inner_margin" android:text="@string/sign_in" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/button_register" app:layout_constraintTop_toTopOf="parent" style="@style/SellLandingSignInButtonStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

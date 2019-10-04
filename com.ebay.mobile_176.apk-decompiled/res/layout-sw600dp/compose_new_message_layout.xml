@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/message_compose_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/subjectLayout" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/compose_message_margin" android:layout_weight="1.0" style="@style/ComposeMessage.Margin">
+            <TextView android:textSize="@dimen/ebayTextSize" android:id="@id/message_to_address" android:layout_marginTop="20.0dip" style="@style/ComposeMessage.Toaddress" />
+            <View android:background="@color/style_guide_divider" android:layout_width="fill_parent" android:layout_height="@dimen/compose_message_divider_width" android:layout_marginLeft="@dimen/compose_message_divider_spacing" android:layout_marginRight="@dimen/compose_message_divider_spacing" />
+            <EditText android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorPrimary" android:textColorHint="?android:textColorSecondary" android:id="@id/compose_msg_subject" android:visibility="gone" android:layout_marginTop="15.0dip" android:hint="@string/message_subject_hint" android:maxLength="100" style="@style/ComposeMessage.Padding" />
+            <Button android:textColor="?android:textColorPrimary" android:id="@id/subjectSpinner" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseline_unit" android:hint="@string/message_subject_dialog_header" style="@style/FakeSpinnerButton" />
+            <EditText android:textSize="@dimen/ebayTextSize" android:textColor="?android:textColorPrimary" android:textColorHint="?android:textColorSecondary" android:id="@id/compose_msg" android:focusable="false" android:layout_marginTop="10.0dip" android:hint="@string/compose_message" android:minLines="2" android:maxLength="2000" android:inputType="textCapSentences|textMultiLine" android:imeOptions="actionDone" style="@style/ComposeMessage.Padding" />
+            <TextView android:textColor="?android:textColorSecondary" android:id="@id/inline_reply_text" android:padding="@dimen/compose_message_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/style_guide_divider" android:layout_width="fill_parent" android:layout_height="@dimen/compose_message_divider_width" />
+        <LinearLayout android:orientation="vertical" android:id="@id/attachphoto_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compose_message_margin" android:layout_marginRight="@dimen/compose_message_margin" android:layout_marginBottom="@dimen/compose_message_margin" android:contentDescription="@string/message_static_photo_count_text">
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:textColor="?android:textColorSecondary" android:id="@id/review_photo_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compose_message_margin" android:layout_marginRight="@dimen/compose_message_margin" android:layout_marginBottom="@dimen/ebayStaticMargin" android:text="@string/reviews_photos" />
+            <TextView android:textColor="?android:textColorSecondary" android:id="@id/review_photo_summary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compose_message_margin" android:layout_marginRight="@dimen/compose_message_margin" android:layout_marginBottom="@dimen/ebayStaticMargin" />
+            <include layout="@layout/reviews_photos_add_multi_row" />
+            <TextView android:textColor="?android:textColorSecondary" android:gravity="center_vertical" android:id="@id/review_add_photos" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayStaticMargin" android:drawablePadding="@dimen/ebayPaddingHalf" />
+        </LinearLayout>
+        <View android:background="@color/style_guide_divider" android:layout_width="fill_parent" android:layout_height="@dimen/compose_message_divider_width" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/legal_layout" android:background="#ffffffff" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/common_auction_blue_light" android:id="@id/legal_layout_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/LEGAL_seller_fee_recoup_message" />
+        </LinearLayout>
+        <View android:background="@color/style_guide_divider" android:layout_width="fill_parent" android:layout_height="@dimen/compose_message_divider_width" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sendCancelLayout" android:layout_width="fill_parent" android:layout_height="@dimen/compose_message_send_cancel_btn_layout_height">
+            <TextView android:gravity="center" android:id="@id/cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" style="?buttonBarButtonStyle" />
+            <View android:background="?dividerVertical" android:layout_width="@dimen/compose_message_divider_width" android:layout_height="fill_parent" />
+            <TextView android:gravity="center" android:id="@id/send" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/send" android:layout_weight="1.0" style="?buttonBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

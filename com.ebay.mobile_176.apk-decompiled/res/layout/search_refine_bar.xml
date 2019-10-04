@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/search_refine_bar_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/refinement_bar_relative_layout" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize">
+        <RelativeLayout android:id="@id/viewgroup_item_count_landscape" android:tag="binding_1" android:paddingLeft="@dimen/ebayScalingPadding2x" android:paddingRight="@dimen/ebayScalingPadding2x" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center_vertical" android:id="@id/textview_item_count_landscape" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+            <FrameLayout android:id="@id/container_info_button_landscape" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/textview_item_count_landscape" android:layout_centerVertical="true">
+                <ImageButton android:id="@id/button_message_info__landscape" android:tag="binding_4" android:background="?android:selectableItemBackground" android:layout_width="@dimen/min_touch_target_unit" android:layout_height="@dimen/min_touch_target_unit" android:src="@drawable/info_icon" android:tint="?iconTintColor" />
+            </FrameLayout>
+        </RelativeLayout>
+        <View android:id="@id/divider_left" android:tag="binding_5" android:background="?android:dividerVertical" android:layout_width="1.0dip" android:layout_height="@dimen/search_refine_divider_height" android:layout_toRightOf="@id/viewgroup_item_count_landscape" android:layout_centerVertical="true" />
+        <Button android:gravity="center|left" android:id="@id/button_follow" android:tag="binding_6" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawablePadding="@dimen/ebayPadding" android:layout_toRightOf="@id/divider_left" android:layout_alignWithParentIfMissing="true" style="@style/EbayButton.Flat.Refine" />
+        <Space android:id="@id/header_spacer" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/button_sort" android:layout_toRightOf="@id/button_follow" />
+        <Button android:id="@id/button_sort" android:tag="binding_7" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/sort" android:layout_toLeftOf="@id/divider" style="@style/EbayButton.Flat.Refine" />
+        <View android:id="@id/divider" android:tag="binding_8" android:background="?android:dividerVertical" android:layout_width="1.0dip" android:layout_height="@dimen/search_refine_divider_height" android:layout_toLeftOf="@id/button_filter" android:layout_centerVertical="true" />
+        <Button android:id="@id/button_filter" android:tag="binding_9" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" style="@style/EbayButton.Flat.Refine" />
+        <View android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dividerHeight" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/viewgroup_item_count" android:tag="binding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/sub_toolbar_height">
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/textview_item_count" android:tag="binding_11" android:paddingLeft="@dimen/ebayScalingPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <FrameLayout android:id="@id/container_info_button" android:tag="binding_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/textview_item_count" android:layout_centerVertical="true">
+            <ImageButton android:id="@id/button_message_info" android:tag="binding_13" android:background="?android:selectableItemBackground" android:layout_width="@dimen/min_touch_target_unit" android:layout_height="@dimen/min_touch_target_unit" android:src="@drawable/info_icon" android:tint="?iconTintColor" />
+        </FrameLayout>
+        <View android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dividerHeight" android:layout_marginLeft="@dimen/baseline_unit" android:layout_marginRight="@dimen/baseline_unit" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

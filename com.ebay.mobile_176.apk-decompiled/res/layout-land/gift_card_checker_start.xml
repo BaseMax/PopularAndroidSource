@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/gift_card_image" android:layout_width="@dimen/gift_card_image_width" android:layout_height="@dimen/gift_card_image_height" android:layout_margin="@dimen/ebayMargin2x" android:src="@drawable/gift_card" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="@dimen/ebayMargin" android:layout_weight="5.0">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin">
+            <TextView android:textAppearance="?textAppearanceTitle1" android:textColor="@color/style_guide_dark_gray" android:gravity="center" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin" android:text="@string/gift_card_check_balance_title" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/style_guide_darker_gray" android:gravity="left" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/gift_card_enter_your_code" style="@style/EbayTextAppearanceStrong.Body2" />
+        <EditText android:textAppearance="?textAppearanceBody2" android:id="@id/gift_card_code" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:hint="@string/gift_card_hint" android:inputType="number" android:imeOptions="actionGo" />
+        <TextView android:textColor="?colorAlert" android:gravity="left" android:id="@id/gift_card_not_found" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/gift_card_not_found" style="@style/EbayTextAppearanceSmall" />
+        <TextView android:textColor="?colorAlert" android:gravity="left" android:id="@id/gift_card_rate_limit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/gift_card_rate_limit" style="@style/EbayTextAppearanceSmall" />
+        <Button android:id="@id/gift_card_entry_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/gift_card_check_balance_button" style="@style/EbayButton.Blue" />
+        <TextView android:textColor="@color/style_guide_darker_gray" android:gravity="left" android:id="@id/gift_card_legal_text" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/gift_card_footnote" style="@style/EbayTextAppearanceSmall" />
+    </LinearLayout>
+</LinearLayout>

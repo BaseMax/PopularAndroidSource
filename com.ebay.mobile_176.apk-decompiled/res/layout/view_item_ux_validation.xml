@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/error_layout" android:tag="layout/view_item_ux_validation_0" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="center" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginRight="@dimen/checkoutLargeMargin" android:freezesText="true" />
+    <Button android:layout_gravity="center" android:id="@id/error_retry_btn" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutMediumMargin" android:text="@string/retry" android:freezesText="true" style="@style/EbayButton.Blue" />
+    <Button android:layout_gravity="center" android:id="@id/error_okay_btn" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkoutMediumMargin" android:text="@string/ok" android:freezesText="true" style="@style/EbayButton.Blue" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="?cardColor" android:paddingLeft="@dimen/ebayPaddingHalf" android:paddingRight="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/motors_hsn" android:alpha="0.0" android:labelFor="@id/hsn_edit_text" />
+            <EditText android:textAppearance="?textAppearanceSubhead" android:textColorHint="@color/style_guide_gray" android:gravity="center_vertical" android:id="@id/hsn_edit_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayStaticMargin" android:hint="@string/motors_hsn" android:layout_weight="1.0" android:inputType="text" android:imeOptions="flagNoFullscreen" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/motors_tsn" android:alpha="0.0" android:labelFor="@id/tsn_edit_text" />
+            <EditText android:textAppearance="?textAppearanceSubhead" android:textColorHint="@color/style_guide_gray" android:gravity="center_vertical" android:id="@id/tsn_edit_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/motors_tsn" android:layout_weight="1.0" android:inputType="text" android:imeOptions="flagNoFullscreen" />
+        </LinearLayout>
+        <TextView android:textColor="?colorAlert" android:gravity="center_vertical" android:id="@id/hsn_tsn_alert_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayPaddingHalf" android:layout_marginRight="@dimen/ebayPaddingHalf" android:layout_marginBottom="@dimen/ebayStaticMargin" android:text="@string/motors_hsn_tsn_error" android:drawableRight="@drawable/ic_error" android:drawablePadding="@dimen/ebayScalingPadding15" />
+        <TextView android:textAppearance="?textAppearanceBody2" android:textColor="?android:textColorTertiary" android:id="@id/hsn_tsn_help_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayPaddingHalf" android:layout_marginTop="@dimen/ebayStaticMargin2x" android:layout_marginRight="@dimen/ebayPaddingHalf" android:layout_marginBottom="@dimen/ebayStaticMargin" android:text="@string/motors_need_help_hsn_tsn" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

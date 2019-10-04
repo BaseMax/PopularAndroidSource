@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_item_price_with_button_0" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/price_or_map_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textAppearance="?textAppearanceTitle1" android:textSize="@dimen/ebayTextSizeHuge" android:id="@id/textview_item_price" android:paddingRight="@dimen/checkoutTinyMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                <TextView android:id="@id/includes_vat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/including_VAT_standalone" />
+                <TextView android:textColor="@color/common_auction_blue_light" android:id="@id/item_view_show_price_button" android:paddingRight="@dimen/checkoutTinyMargin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_view_show_price" />
+            </LinearLayout>
+            <ImageView android:id="@id/item_view_map_info_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutSmallMargin" android:src="@drawable/ic_viewitem_info" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/accessibility_info_icon" />
+        </RelativeLayout>
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/price_below_market" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/shipping_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/converted_prices_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/deposit_amount_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/unit_price_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/does_not_ship_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/price_type_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/bid_count_or_time_left_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/bid_count_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/time_left_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:id="@id/bid_count_time_left_divider" android:background="@drawable/divider_vertical" android:paddingTop="@dimen/ebayPadding" android:paddingBottom="@dimen/ebayPadding" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" />
+                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/time_left_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/reserve_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/reserve_not_met" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/typically_price_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/textview_pricing_treatment" android:visibility="gone" style="@style/ItemView">
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/was_textview" android:paddingRight="@dimen/checkoutTinyMargin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/original_price_textview" android:paddingRight="@dimen/checkoutSmallMargin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/percent_off_textview" android:paddingRight="@dimen/checkoutTinyMargin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textAppearance="?textAppearanceCaption1" android:textSize="@dimen/text_size_regular" android:id="@id/volume_pricing_discount_label_textview" android:paddingRight="@dimen/ebayPadding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ItemView" />
+    <TextView android:textColor="@color/style_guide_darker_gray" android:id="@id/paypal_not_available_textview" android:paddingTop="@dimen/ebayPaddingHalf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paypal_not_available_verbiage" />
+</LinearLayout>

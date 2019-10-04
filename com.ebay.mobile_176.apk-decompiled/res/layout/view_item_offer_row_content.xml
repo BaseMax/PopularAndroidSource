@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left|top" android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:weightSum="3.0">
+        <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/offer_price_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/price" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?textAppearanceBody2" android:gravity="left" android:id="@id/offer_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left|top" android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:weightSum="3.0">
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/label_quantity" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:gravity="left" android:id="@id/offer_quantity" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left|top" android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:weightSum="3.0">
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/seller_offer_expires_title" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/offer_time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" />
+            <View android:background="@color/style_guide_shadow" android:layout_width="1.0dip" android:layout_height="@dimen/ebayMargin" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/offer_number_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left|top" android:orientation="horizontal" android:id="@id/offer_message_container" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:weightSum="3.0">
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/seller_offer_message_title" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="left" android:id="@id/offer_message" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left|top" android:orientation="horizontal" android:id="@id/buyer_container" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:weightSum="3.0">
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/offer_maker_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/offer_label_buyer" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:textColor="?android:textColorTertiary" android:gravity="left" android:id="@id/offer_buyer_id" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left|top" android:orientation="horizontal" android:id="@id/offer_ships_to_container" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:weightSum="3.0">
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ships_to" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:gravity="left" android:id="@id/offer_ships_to" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    </LinearLayout>
+</merge>

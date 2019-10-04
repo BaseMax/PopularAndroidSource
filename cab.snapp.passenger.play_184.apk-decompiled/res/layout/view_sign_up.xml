@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.passenger.units.signup.SignUpView android:background="@color/pure_white" android:paddingBottom="@dimen/padding_medium" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/sign_up_header_height">
+            <ImageView android:layout_width="@dimen/sign_up_header_img_width" android:layout_height="@dimen/sign_up_header_img_height" android:src="@drawable/ic_sign_up" android:scaleType="centerInside" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/view_sign_up_with_google_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <cab.snapp.snappuikit.SnappLoading android:id="@id/view_sign_up_with_google_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:snappLoadingTheme="accent" />
+            <cab.snapp.snappuikit.SnappButton android:id="@id/view_sign_up_with_google_button" android:layout_centerHorizontal="true" app:btnIconEnd="@drawable/ic_google_logo_24px" app:btnIsRounded="true" app:btnText="@string/view_sign_up_with_google" app:btnTextGravity="start" style="@style/SnappButton.Neutral.Medium" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/panel_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+            <View android:background="@color/very_light_pink" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerInParent="true" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" />
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/brown_grey" android:background="@color/pure_white" android:paddingLeft="@dimen/margin_medium" android:paddingRight="@dimen/margin_medium" android:text="@string/view_sign_up_or" android:layout_centerInParent="true" style="@style/TextView.Default.Medium" />
+        </RelativeLayout>
+        <cab.snapp.snappuikit.SnappEditText android:id="@id/view_sign_up_fullname_edit_text" android:layout_marginStart="@dimen/padding_medium" android:layout_marginEnd="@dimen/padding_medium" app:etColor="@color/colorPrimary" app:etHint="@string/view_sign_up_fullname_hint" app:etHintColor="@color/brown_grey" app:etImeOption="next" app:etInputType="email" style="@style/SnappEditText" />
+        <cab.snapp.snappuikit.SnappEditText android:id="@id/view_sign_up_email_edit_text" android:layout_marginStart="@dimen/padding_medium" android:layout_marginEnd="@dimen/padding_medium" app:etColor="@color/colorPrimary" app:etHint="@string/view_sign_up_email_hint" app:etHintColor="@color/brown_grey" app:etImeOption="next" app:etInputType="email" app:etTextIcon="@drawable/ic_email" style="@style/SnappEditText" />
+        <cab.snapp.snappuikit.SnappEditText android:id="@id/view_sign_up_password_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/padding_medium" android:layout_marginEnd="@dimen/padding_medium" app:etGravity="start" app:etHint="@string/view_sign_up_password_hint" app:etHintColor="@color/brown_grey" app:etImeOption="done" app:etInputType="password" app:etTextIcon="@drawable/ic_password" style="@style/SnappEditText" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <cab.snapp.snappuikit.SnappButton android:id="@id/view_sign_up_button" android:layout_width="156.0dip" android:layout_centerHorizontal="true" app:btnHasShadow="false" app:btnIsRounded="true" app:btnText="@string/view_sign_up" style="@style/SnappButton.Accent.Large" />
+            <cab.snapp.snappuikit.SnappLoading android:id="@id/view_sign_up_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:snappLoadingTheme="accent" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <cab.snapp.snappuikit.SnappCheckBox android:id="@id/view_sign_up_news_letter_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small" android:checked="true" app:cbStyle="small" />
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/greyish_brown" android:text="@string/view_sign_up_add_to_news_letter" style="@style/TextView.Light.Small" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/bluish_grey" android:gravity="center" android:text="@string/view_sign_up_terms_agreement" style="@style/TextView.Light.Small" />
+    </LinearLayout>
+</cab.snapp.passenger.units.signup.SignUpView>

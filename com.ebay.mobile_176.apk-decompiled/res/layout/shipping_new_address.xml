@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/psl_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_marginLeft="@dimen/psl_padding" android:text="@string/psl_ships_to" style="@style/Sell.Spoke.Title.Top" />
+        <LinearLayout android:id="@id/shipping_carrier_container" android:padding="@dimen/psl_padding" style="@style/Sell.Layout.Container">
+            <Spinner android:gravity="bottom" android:entries="@array/US_country" android:id="@id/country" android:paddingLeft="@dimen/psl_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.Layout.Row.Centered" />
+            <EditText android:gravity="bottom" android:id="@id/shipping_to_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/psl_addr_name" android:inputType="textPersonName" style="@style/Sell.Layout.Row.Centered" />
+            <EditText android:gravity="bottom" android:id="@id/shipping_to_street" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/psl_addr_street" android:inputType="textPostalAddress" style="@style/Sell.Layout.Row.Centered" />
+            <EditText android:gravity="bottom" android:id="@id/shipping_to_apt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/psl_addr_apt" android:inputType="textPostalAddress" style="@style/Sell.Layout.Row.Centered" />
+            <EditText android:gravity="bottom" android:id="@id/shipping_to_city" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/psl_addr_city" android:inputType="textPostalAddress" style="@style/Sell.Layout.Row.Centered" />
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" style="@style/Sell.Layout.Row.Centered">
+                <Spinner android:gravity="bottom" android:entries="@array/US_state_codes" android:id="@id/shipping_to_state" android:paddingLeft="@dimen/psl_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <EditText android:textSize="@dimen/psl_text_size" android:gravity="bottom" android:id="@id/shipping_to_zip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/psl_addr_zip" android:layout_weight="1.0" android:inputType="textPostalAddress" />
+            </LinearLayout>
+            <EditText android:gravity="bottom" android:id="@id/shipping_to_phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/psl_addr_phone" android:inputType="phone" style="@style/Sell.Layout.Row.Centered" />
+            <CheckBox android:id="@id/shipping_to_residential" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/psl_addr_residence" style="@style/Sell.Layout.Row.Centered" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/progress_container" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/checkout_error_container" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/xoMarginSmall" android:paddingTop="@dimen/xoMarginMedium" android:paddingRight="@dimen/xoMarginSmall" android:paddingBottom="@dimen/xoMarginMedium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/funding_source_image" android:layout_width="@dimen/xoFundingSourceImageWidth" android:layout_height="@dimen/xoFundingSourceImageHeight" android:layout_marginRight="@dimen/xoMarginSmall" android:src="@drawable/icon_discover" android:scaleType="fitXY" android:contentDescription="@null" />
+                <TextView android:id="@id/funding_source_text" android:visibility="visible" android:layout_width="@dimen/xoLeftContentWidth" android:layout_height="wrap_content" style="@style/Xo.Text" />
+            </LinearLayout>
+            <com.ebay.android.widget.SingleLineEditText android:id="@id/user_verification_input" android:background="?listContainerBackground" android:paddingLeft="@dimen/xoMarginSmall" android:paddingTop="@dimen/xoMarginMediumLarge" android:paddingRight="@dimen/xoMarginSmall" android:paddingBottom="@dimen/xoMarginMediumLarge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginSmall" android:layout_marginRight="@dimen/xoMarginSmall" android:layout_marginBottom="@dimen/xoMarginMediumLarge" android:inputType="text" style="@style/Xo.Text.Input" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xoMarginSmall">
+                <Button android:enabled="false" android:id="@id/checkout_button_confirm" android:layout_width="fill_parent" android:layout_height="@dimen/clickableButtonDimen" android:layout_marginBottom="@dimen/xoMarginMedium" style="@style/EbayButton.Blue" />
+                <Button android:id="@id/checkout_button_change_payment_method" android:layout_width="fill_parent" android:layout_height="@dimen/clickableButtonDimen" style="@style/EbayButton.White" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

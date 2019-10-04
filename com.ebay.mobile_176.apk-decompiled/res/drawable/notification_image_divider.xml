@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/notification_image_divider_start_color" android:endColor="@color/notification_image_divider_end_color" android:angle="0.0" android:type="linear" android:centerX="25.0%" />
+    <size android:height="@dimen/notification_content_image_height" android:width="@dimen/notification_image_divider_width" />
+</shape>

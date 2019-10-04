@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/progress_container" />
+    <FrameLayout android:orientation="vertical" android:id="@id/xo_content" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/incentive_paypal_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="70.0dip" android:layout_height="59.0dip" android:layout_marginTop="128.0dip" android:src="@drawable/icon_alert_caution" android:scaleType="fitCenter" android:contentDescription="@string/alert" />
+            <TextView android:textColor="@color/style_guide_darker_gray" android:gravity="center" android:id="@id/incentive_paypal_disabled_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginTop="@dimen/xoMarginLarge" android:layout_marginRight="@dimen/xoMarginMediumLarge" android:text="@string/xo_cart_login_to_paypal_to_redeem" style="@style/Xo.Text.Medium.Larger" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/incentives_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/checkout_error_container" />
+            <LinearLayout android:orientation="vertical" android:id="@id/incentives_entry" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/xoMarginLarge">
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/incentive_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xoMarginSmall" app:errorEnabled="false">
+                    <com.google.android.material.textfield.TextInputEditText android:textAppearance="?textAppearanceSubhead" android:id="@id/incentive_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginRight="@dimen/xoMarginMediumLarge" android:lines="1" android:inputType="textCapCharacters|textNoSuggestions" android:imeOptions="actionDone" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView android:textColor="?colorAlert" android:layout_gravity="center_vertical" android:id="@id/xo_cart_incentives_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" style="?android:textAppearanceSmall" />
+                <TextView android:textColor="?android:textColorSecondary" android:id="@id/xo_cart_incentive_paypal_verbiage" android:paddingLeft="@dimen/checkoutSmallMargin" android:paddingTop="@dimen/ebayPadding" android:paddingRight="@dimen/checkoutSmallMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Text.Smaller" />
+            </LinearLayout>
+            <ScrollView android:id="@id/incentive_list_items" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/incentives_list" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:showDividers="none" />
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

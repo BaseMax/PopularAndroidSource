@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/emptyViewImage" android:layout_width="56.0dip" android:layout_height="56.0dip" style="@style/Bazaar.Image.Toolbar.Dark" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/emptyViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_double" style="@style/Bazaar.Text.Body1" />
+    <com.google.android.material.button.MaterialButton android:id="@id/emptyViewAction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_double" android:minWidth="185.0dip" android:minHeight="56.0dip" style="@style/Bazaar.Button.Flat.Primary.Video.MediumText" />
+</LinearLayout>

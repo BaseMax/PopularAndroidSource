@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize">
+        <Button android:gravity="center|left" android:id="@id/button_follow" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/search_button_bar_save" android:layout_toLeftOf="@id/button_sort" android:layout_alignParentLeft="true" style="@style/EbayButton.Flat.Refine" />
+        <Button android:id="@id/button_sort" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/sort" android:layout_toLeftOf="@id/divider" style="@style/EbayButton.Flat.Refine" />
+        <View android:id="@id/divider" android:background="?android:dividerVertical" android:layout_width="1.0dip" android:layout_height="@dimen/search_refine_divider_height" android:layout_toLeftOf="@id/button_filter" android:layout_centerVertical="true" />
+        <Button android:id="@id/button_filter" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/filter" android:layout_alignParentRight="true" android:drawableTint="@color/button_default_normal" style="@style/EbayButton.Flat.Refine" />
+        <View android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dividerHeight" android:layout_alignParentBottom="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/seller_offer_stub" android:layout="@layout/search_result_seller_offer" android:inflatedId="@id/seller_offer_layout" android:layout_width="fill_parent" android:layout_height="@dimen/search_seller_offer_height" />
+    <RelativeLayout android:id="@id/viewgroup_item_count" android:background="?cardColor" android:layout_width="fill_parent" android:layout_height="@dimen/sub_toolbar_height">
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="center_vertical" android:id="@id/textview_item_count" android:paddingLeft="@dimen/ebayScalingPadding2x" android:paddingRight="@dimen/ebayScalingPadding2x" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dividerHeight" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginRight="@dimen/ebayContentSideMargin" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

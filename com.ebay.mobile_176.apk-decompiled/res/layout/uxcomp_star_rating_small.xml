@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_stars" android:tag="layout/uxcomp_star_rating_small_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RatingBar android:id="@id/view_stars" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:importantForAccessibility="no" style="@style/EbayProductRating.Small" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_ratings_count" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_toRightOf="@id/view_stars" android:layout_centerVertical="true" android:importantForAccessibility="no" />
+</RelativeLayout>

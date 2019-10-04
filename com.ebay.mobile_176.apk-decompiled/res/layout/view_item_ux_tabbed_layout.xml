@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.tabs.TabLayout android:id="@id/container_tablayout" android:background="?containerBackgroundColor" android:paddingBottom="@dimen/ebayStaticMarginHalf" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?containerContentPaddingLeft" android:paddingEnd="?containerContentPaddingRight" android:layout_marginStart="?containerMarginLeft" android:layout_marginEnd="?containerMarginRight" style="@style/ContainerTabStyle" />
+</LinearLayout>

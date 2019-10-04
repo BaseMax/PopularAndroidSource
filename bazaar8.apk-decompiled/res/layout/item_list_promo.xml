@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_list_promo_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/default_margin_one_half" android:layout_marginEnd="@dimen/default_margin_one_half" app:cardCornerRadius="@dimen/default_margin_one_half" app:cardElevation="@dimen/default_margin_quarter" app:cardUseCompatPadding="true" style="@style/Bazaar.ForegroundContainerRipple">
+        <com.farsitel.bazaar.core.widget.AspectRatioImageView android:id="@id/promoImage" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="0.0dip" app:ratio="0.5" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

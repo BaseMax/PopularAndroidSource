@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?containerBackgroundColor" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/view_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayContentSideMargin">
+            <TextView android:textAppearance="?textAppearanceHeadline2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayContentSideMargin" android:text="@string/native_register_message" />
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/view_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/registerTextInputHeight">
+                <com.google.android.material.textfield.TextInputEditText android:textAppearance="?textAppearanceSubhead" android:textColorHint="?android:textColorHint" android:id="@id/et_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/native_register_email" android:maxLines="1" android:maxLength="@integer/max_input_length_for_sign_in_and_reg" android:inputType="textNoSuggestions" android:contentDescription="@string/native_register_email" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/view_first_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/registerTextInputHeight">
+                <com.google.android.material.textfield.TextInputEditText android:textAppearance="?textAppearanceSubhead" android:textColorHint="?android:textColorHint" android:id="@id/et_first_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/native_register_first_name" android:maxLines="1" android:maxLength="@integer/max_input_length_for_sign_in_and_reg" android:inputType="textNoSuggestions" android:contentDescription="@string/native_register_first_name" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/view_last_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/registerTextInputHeight">
+                <com.google.android.material.textfield.TextInputEditText android:textAppearance="?textAppearanceSubhead" android:textColorHint="?android:textColorHint" android:id="@id/et_last_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/native_register_last_name" android:maxLines="1" android:maxLength="@integer/max_input_length_for_sign_in_and_reg" android:inputType="textNoSuggestions" android:contentDescription="@string/native_register_last_name" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/bt_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/button_continue" android:contentDescription="@string/button_continue" style="@style/EbayButton" />
+            <TextView android:textAppearance="?buttonFlatAccentTextAppearance" android:textColor="?buttonFlatAccentTextColor" android:gravity="center" android:layout_gravity="center" android:id="@id/bt_business" android:layout_width="fill_parent" android:layout_height="@dimen/registerButtonHeight" android:layout_marginTop="@dimen/ebayMargin2x" android:foreground="?selectableItemBackground" android:text="@string/native_register_create_business_account" />
+            <LinearLayout android:gravity="center_horizontal" android:id="@id/bt_sign_in" android:layout_width="fill_parent" android:layout_height="@dimen/registerButtonHeight" android:layout_marginTop="@dimen/ebayMargin2x" android:foreground="?selectableItemBackground" android:minHeight="@dimen/registerButtonHeight">
+                <TextView android:textAppearance="?textAppearanceSubhead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/native_register_already_a_member" />
+                <TextView android:textAppearance="?buttonFlatAccentTextAppearance" android:textColor="?buttonFlatAccentTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/registerWordMargin" android:text="@string/sign_in" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/progress_loading" android:background="@color/registration_dimmed_black" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/homescreen_card_title_layout" />
+    <androidx.cardview.widget.CardView android:id="@id/carousel_card_view" style="@style/HomeScreenCardStyle">
+        <androidx.recyclerview.widget.RecyclerView android:gravity="center_vertical" android:id="@id/carousel_list" android:paddingLeft="@dimen/homescreen_card_caterpillar_padding" android:paddingRight="@dimen/homescreen_card_caterpillar_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

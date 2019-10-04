@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/spec_help_image" android:paddingTop="@dimen/ebayPadding3x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+    <TextView android:textAppearance="?textAppearanceSubhead" android:gravity="center" android:id="@id/spec_help_label" android:paddingRight="@dimen/ebayPadding8x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+</merge>

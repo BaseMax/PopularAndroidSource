@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_progress" />
+    <com.ebay.mobile.sell.widget.CustomScrollView android:id="@id/parent_layout" style="@style/Sell.Layout.Scroll">
+        <LinearLayout style="@style/Sell.Layout.ScrollChild.WithHelp">
+            <LinearLayout android:layout_marginBottom="10.0dip" style="@style/Sell.Layout.ScrollChild.Content">
+                <TextView android:id="@id/focus" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" android:inputType="none" />
+                <TextView android:id="@id/sell_shipping_label" android:text="@string/listing_shipping" style="@style/Sell.Spoke.Title" />
+                <androidx.cardview.widget.CardView android:id="@id/sell_package_info" style="@style/Sell.Layout.CardView">
+                    <LinearLayout android:orientation="vertical" android:focusable="false" android:clickable="false" style="@style/Sell.Layout.Row">
+                        <TextView android:id="@id/package_info_label" android:text="@string/label_package_details" style="@style/Sell.Layout.Text.Vertical.Label" />
+                        <com.ebay.selling.listingform.widget.SingleLineButton android:textSize="@dimen/ebayTextSize" android:id="@id/sell_package_info_display" style="@style/Sell.FakeSpinner" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@id/shipping_container" style="@style/Sell.Layout.CardView">
+                    <com.ebay.mobile.widget.CardLayout style="@style/Sell.Layout.CardLayout">
+                        <Button android:id="@id/sell_add_first_shipping_service" android:text="@string/label_add_shipping_service" style="@style/Sell.Layout.ClickableArea" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/domestic_layout_1" android:visibility="gone" style="@style/Sell.Layout.ShippingService" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/domestic_layout_2" android:visibility="gone" style="@style/Sell.Layout.ShippingService" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/domestic_layout_3" android:visibility="gone" style="@style/Sell.Layout.ShippingService" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/domestic_layout_4" android:visibility="gone" style="@style/Sell.Layout.ShippingService" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/local_pickup_row" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="0.0dip">
+                            <androidx.appcompat.widget.SwitchCompat android:id="@id/local_pickup_checkbox" android:text="@string/label_local_pickup_enabled" style="@style/Sell.Layout.Row.Switch" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/domestic_shipping_row" android:layout_height="0.0dip" style="@style/Sell.Layout.Vertical">
+                            <TextView android:text="@string/label_domestic_shipping_type" style="@style/Sell.Layout.Text.Vertical.Label" />
+                            <Spinner android:id="@id/spinner_domestic_shipping_type" style="@style/Sell.Spinner.Vertical" />
+                        </LinearLayout>
+                        <Button android:id="@id/sell_add_domestic_shipping_service" android:layout_height="0.0dip" android:text="@string/label_add_domestic_shipping_service" style="@style/Sell.Layout.ClickableArea" />
+                        <include android:id="@id/more_domestic_options" layout="@layout/sell_show_hide_options" />
+                    </com.ebay.mobile.widget.CardLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@id/intl_shipping_container" style="@style/Sell.Layout.CardView">
+                    <com.ebay.mobile.widget.CardLayout style="@style/Sell.Layout.CardLayout">
+                        <LinearLayout android:orientation="vertical" android:id="@id/intl_layout_1" android:visibility="gone" style="@style/Sell.Layout.ShippingService" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/intl_layout_2" android:visibility="gone" style="@style/Sell.Layout.ShippingService" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/intl_layout_3" android:visibility="gone" style="@style/Sell.Layout.ShippingService" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/intl_layout_4" android:visibility="gone" style="@style/Sell.Layout.ShippingService" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/intl_layout_5" android:visibility="gone" style="@style/Sell.Layout.ShippingService" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/gsp_row" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.SwitchCompat android:id="@id/gspCheckBox" android:text="@string/label_global_shipping_program" style="@style/Sell.Layout.Row.Switch" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/international_shipping_type_row" android:focusable="true" android:focusableInTouchMode="true" android:layout_height="0.0dip" style="@style/Sell.Layout.Vertical">
+                            <TextView android:text="@string/label_international_shipping_type" style="@style/Sell.Layout.Text.Vertical.Label" />
+                            <Spinner android:id="@id/spinner_intl_shipping_type" style="@style/Sell.Spinner.Vertical" />
+                        </LinearLayout>
+                        <Button android:id="@id/sell_add_intl_shipping_service" android:layout_height="0.0dip" android:text="@string/label_add_international_shipping_service" style="@style/Sell.Layout.ClickableArea" />
+                        <include android:id="@id/more_intl_options" layout="@layout/sell_show_hide_options" />
+                    </com.ebay.mobile.widget.CardLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/shopping_cart_dashed_line" />
+            <LinearLayout android:layout_marginTop="10.0dip" style="@style/Sell.Layout.ScrollChild.Content">
+                <TextView android:text="@string/sell_help_shipping" style="@style/Sell.Layout.Help.Content" />
+                <TextView android:id="@id/sell_help_gsp_title" android:text="@string/sell_help_shipping_gsp_title" style="@style/Sell.Layout.Help.Title" />
+                <TextView android:id="@id/sell_help_gsp" android:text="@string/sell_help_shipping_gsp" style="@style/Sell.Layout.Help.Content" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.ebay.mobile.sell.widget.CustomScrollView>
+</FrameLayout>

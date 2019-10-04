@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/quick_shop_cart_0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/quick_shop_error" android:tag="binding_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/partial_error_border" android:weightSum="1.0">
+        <FrameLayout android:background="?colorAlert" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/partial_error_image_size" android:layout_height="@dimen/partial_error_image_size" android:layout_margin="@dimen/ebayMarginHalf" android:src="@drawable/ic_null_alert_white" />
+        </FrameLayout>
+        <TextView android:textAppearance="?textAppearanceBody1" android:background="?containerBackgroundColor" android:padding="@dimen/ebayPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/card_error" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textAppearance="?textAppearanceBody2" android:textColor="?textColorError" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/quick_shop_quantity_control" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/quick_shop_error" style="@style/QuickShopCartContainer">
+        <ImageButton android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" android:src="@drawable/ic_remove_circle_outline_black_24dp" style="@style/EbayButton.Flat" />
+        <TextView android:textAppearance="?textAppearanceBody2" android:textColor="@android:color/white" android:gravity="center" android:tag="binding_4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageButton android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" style="@style/EbayButton.Flat" />
+    </LinearLayout>
+    <FrameLayout android:background="@drawable/quick_shop_view_add_cart_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/quick_shop_error">
+        <Button android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayButton.Flat" />
+        <ProgressBar android:layout_gravity="center" android:tag="binding_7" android:layout_width="@dimen/quick_shop_inline_progress" android:layout_height="@dimen/quick_shop_inline_progress" />
+    </FrameLayout>
+</RelativeLayout>

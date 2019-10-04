@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/price_option_bin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/bin_switch" style="@style/Sell.Price_Switch" />
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/bin_price_container" android:background="@color/sell_box_background_mask" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginRight="@dimen/ebayContentSideMargin">
+            <RelativeLayout android:id="@id/bin_recommendation_container" style="@style/Sell.Bolt.PriceTextParent">
+                <TextView android:id="@id/bin_recommendation" android:layout_width="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/online_trending_price" android:layout_toLeftOf="@id/similar_item_button_bin" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="@style/Sell.PricingDetails.Recommendation" />
+                <TextView android:text="@string/other_sellers_priced" android:layout_below="@id/bin_recommendation" android:layout_alignParentStart="true" style="@style/Sell.PricingDetails.OtherSellerPricing" />
+                <ImageButton android:id="@id/similar_item_button_bin" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chart_similar_items_blue" android:layout_alignParentTop="true" android:contentDescription="@string/similar_sold_items" android:layout_alignParentEnd="true" style="@style/EbayButton.Flat" />
+            </RelativeLayout>
+            <View android:id="@id/bin_recommendation_divider" style="@style/CommonDivider.Dark" />
+            <LinearLayout android:id="@id/bin_price_row" android:focusable="true" android:focusableInTouchMode="true" style="@style/Sell.Bolt.PriceTextParent">
+                <TextView android:layout_gravity="center_vertical" android:id="@id/label_bin_price" android:layout_width="0.0dip" android:layout_marginTop="0.0dip" android:text="@string/offer_label_price" android:layout_weight="0.4" android:labelFor="@id/bin_price" style="@style/Sell.PricingDetails.Label" />
+                <RelativeLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.6">
+                    <com.ebay.mobile.widget.PriceView android:id="@id/bin_price" app:showCurrencySymbolAlways="true" style="@style/Sell.Bolt.PriceView" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/bin_price_divider" android:visibility="gone" android:layout_marginLeft="@dimen/ebayMargin4x" style="@style/CommonDivider" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/bin_easy_pricing_row" android:paddingLeft="@dimen/ebayPadding2x" android:focusable="true" android:visibility="visible" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginRight="@dimen/ebayContentSideMargin" style="@style/Sell.Bolt.PriceToggleParent.EasyPricing"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:id="@id/bin_easy_pricing_label" android:text="@string/easy_pricing_title" android:layout_toLeftOf="@id/bin_easy_pricing_button" android:layout_alignParentStart="true" style="@style/Sell.PricingDetails.Label" />
+            <TextView android:id="@id/bin_easy_pricing_sublabel" android:text="@string/easy_pricing_bin_description" android:layout_toLeftOf="@id/bin_easy_pricing_button" android:layout_below="@id/bin_easy_pricing_label" android:layout_alignParentLeft="true" style="@style/Sell.PricingDetails.SubLabel" />
+            <Button android:id="@id/bin_easy_pricing_button" android:text="@string/sell_button_off" android:layout_centerVertical="true" android:contentDescription="@string/easy_pricing_title" android:layout_alignParentEnd="true" style="@style/Sell.PricingDetails.Toggle.EasyPricing" />
+        </RelativeLayout>
+        <View android:id="@id/bin_easy_pricing_divider" android:layout_marginLeft="@dimen/ebayMargin4x" style="@style/CommonDivider" />
+        <Button android:id="@id/bin_more_options" android:text="@string/show_options" style="@style/Sell.Bolt.AdvancedButton" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentSideMargin">
+            <include layout="@layout/listing_form_details_advanced_bin" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?android:colorBackground" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/coupon_clip_success_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x" android:src="@drawable/ic_check_circle_green" android:importantForAccessibility="no" android:layout_toStartOf="@id/coupon_body" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/coupon_body" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toEndOf="@id/coupon_clip_success_icon" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textAppearance="@style/EbayTextAppearance.Ds6.Regular" android:layout_gravity="center_horizontal" android:id="@id/coupon_copied_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin" android:text="@string/coupon_code_copied" android:contentDescription="@string/accessibility_coupon_code_copied" android:layout_marginStart="@dimen/ebayMargin2x" android:layout_marginEnd="@dimen/notification_ds6_logo_width" />
+        <TextView android:textAppearance="@style/EbayTextAppearance.Ds6.Regular.Bold" android:id="@id/coupon_code_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x" android:layout_marginStart="@dimen/ebayMargin" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

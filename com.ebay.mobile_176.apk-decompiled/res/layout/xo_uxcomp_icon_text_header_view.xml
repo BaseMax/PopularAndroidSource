@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/xo_uxcomp_icon_text_header_view_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMediumLarge" android:layout_marginTop="@dimen/xoMarginMedium" android:layout_marginBottom="@dimen/xoMarginMediumLarge"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:tag="binding_1" android:layout_width="@dimen/xoHeaderIconWidth" android:layout_height="@dimen/xoHeaderIconHeight" android:layout_marginRight="@dimen/xoMarginSmall" />
+    <com.ebay.android.widget.EbayTextView android:layout_gravity="center_vertical" android:id="@id/xo_header_title" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/xoRightContentMargin" />
+</LinearLayout>

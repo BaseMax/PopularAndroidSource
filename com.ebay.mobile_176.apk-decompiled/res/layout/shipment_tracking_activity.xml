@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/shipment_tracking_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x" layout="@layout/item_header_thumbnail" />
+                <LinearLayout android:orientation="vertical" android:id="@id/container_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+        <com.ebay.android.widget.ButtonBar android:id="@id/button_bar_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" ebay:positiveButtonId="@id/add_tracking_info" ebay:positiveButtonText="@string/shipment_tracking_add_tracking_info" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <include layout="@layout/common_progress" />
+    <include layout="@layout/common_error" />
+    <include layout="@layout/common_translucent_progress" />
+</merge>

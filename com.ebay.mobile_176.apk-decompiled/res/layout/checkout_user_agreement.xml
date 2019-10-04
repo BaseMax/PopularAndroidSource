@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/user_agreement_layout" android:paddingLeft="@dimen/xoMarginTiny" android:paddingTop="@dimen/xoMarginMedium" android:paddingRight="@dimen/xoMarginMediumLarge" android:paddingBottom="@dimen/xoMarginMedium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/user_agreement_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMedium" android:layout_marginRight="0.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/user_agreement_legal_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMedium" android:layout_marginRight="0.0dip">
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/user_agreement_legal_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:textColor="?android:textColorLink" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/user_agreement_weblink" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/terms_and_conditions_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

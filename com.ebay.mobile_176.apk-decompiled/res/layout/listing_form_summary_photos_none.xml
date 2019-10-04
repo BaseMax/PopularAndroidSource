@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/photos_tool_tip" android:background="@drawable/rounded_corner_guidance_module_listing_form" android:padding="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compensate_overview_tool_tip_margin" android:layout_marginRight="@dimen/compensate_overview_tool_tip_margin" style="@style/Sell.DynamicCardContainer.ListingForm">
+        <ImageView android:id="@id/camera_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_photo_camera_black_48dp" android:tint="?iconTintColor" android:layout_centerVertical="true" style="@style/Sell.EmptyStateIcon" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/photos_tool_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin3x" android:layout_marginRight="@dimen/overview_guidance_photo_margin_right" android:text="@string/photos_description" android:layout_toRightOf="@id/camera_icon" android:layout_centerVertical="true" style="@style/ListingFormOverviewPhotosGuidanceModuleMessage" />
+    </RelativeLayout>
+</merge>

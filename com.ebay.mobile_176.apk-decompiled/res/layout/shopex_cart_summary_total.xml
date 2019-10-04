@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/shopex_cart_total_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/shopex_cart_summary_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/shopex_cart_summary_value" android:layout_alignParentLeft="true" style="@style/ShopEx.CartSummary.Totals" />
+    <TextView android:id="@id/shopex_cart_summary_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/ShopEx.CartSummary.Totals" />
+</RelativeLayout>

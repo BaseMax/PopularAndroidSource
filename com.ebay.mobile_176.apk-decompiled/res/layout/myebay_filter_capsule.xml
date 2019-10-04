@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="horizontal" android:tag="layout/myebay_filter_capsule_0" android:background="@drawable/cat_filter_background" android:paddingLeft="@dimen/baseline_unit_2x" android:paddingTop="@dimen/baseline_unit" android:paddingRight="@dimen/baseline_unit_2x" android:paddingBottom="@dimen/baseline_unit" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackgroundBorderless"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/ebay_text_color_inverted" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/item_title" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:lines="1" />
+</FrameLayout>

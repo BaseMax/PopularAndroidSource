@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.android.widget.RemoteImageView android:layout_gravity="center_vertical" android:id="@id/image" android:background="?selectableItemBackgroundBase" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginRight="6.0dip" android:foreground="?android:selectableItemBackground" android:scaleType="fitCenter" android:contentDescription="@string/accessibility_item_image" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/image" android:layout_centerVertical="true" />
+</RelativeLayout>

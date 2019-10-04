@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start|center" android:orientation="horizontal" android:background="@drawable/selector_rectangle_white" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_large"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/favorite_bar_favorite_row_layout_star_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_star_green_blue_24dp" android:scaleType="centerInside" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/favorite_bar_favorite_row_layout_address_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/margin_small" style="@style/TextView.Bold.Small" />
+</LinearLayout>

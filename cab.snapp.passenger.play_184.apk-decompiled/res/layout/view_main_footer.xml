@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.passenger.units.footer.mainfooter.MainFooterView android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/view_main_footer_origin_dest_layout" android:background="@color/athens_gray" android:layout_width="fill_parent" android:layout_height="@dimen/main_footer_select_origin_destination_height" android:animateLayoutChanges="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_main_footer_select_origin_layout" android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_size_very_small" android:textColor="@color/colorPrimary" android:ellipsize="marquee" android:id="@id/view_main_footer_vehicles_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" android:marqueeRepeatLimit="marquee_forever" style="@style/TextView.Default.Medium" />
+                <cab.snapp.snappuikit.SnappCircleProgressBar android:id="@id/view_main_footer_vehicles_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:cpbSize="tiny" app:cpbTheme="accent" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_large" android:paddingEnd="@dimen/padding_large">
+                <View android:background="@color/very_light_pink" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/Divider.Horizontal" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_location_8dp" android:layout_marginStart="@dimen/margin_very_small" android:layout_marginEnd="@dimen/margin_very_small" />
+                <View android:background="@color/very_light_pink" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/Divider.Horizontal" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_size_very_small" android:textColor="@color/colorPrimary" android:gravity="center" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/origin_label" style="@style/TextView.Default.Medium" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_size_very_small" android:textColor="@color/colorPrimary" android:ellipsize="marquee" android:gravity="center" android:id="@id/view_main_footer_address_textview" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@style/TextView.Default.Small" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_main_footer_select_destination_layout" android:background="@color/athens_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_size_very_small" android:textColor="@color/colorPrimary" android:gravity="center" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/origin_label" style="@style/TextView.Default.Small" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_size_very_small" android:textColor="@color/colorPrimary" android:ellipsize="marquee" android:gravity="center" android:id="@id/view_main_footer_origin_address_textview" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@style/TextView.Default.Small" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_large" android:paddingEnd="@dimen/padding_large">
+                <View android:background="@color/very_light_pink" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/Divider.Horizontal" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_location_8dp" android:layout_marginStart="@dimen/margin_very_small" android:layout_marginEnd="@dimen/margin_very_small" />
+                <View android:background="@color/very_light_pink" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/Divider.Horizontal" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_size_very_small" android:textColor="@color/colorPrimary" android:gravity="center" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/destination_label" style="@style/TextView.Default.Small" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_size_very_small" android:textColor="@color/colorPrimary" android:ellipsize="marquee" android:gravity="center" android:id="@id/view_main_footer_destination_address_textview" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@style/TextView.Default.Small" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</cab.snapp.passenger.units.footer.mainfooter.MainFooterView>

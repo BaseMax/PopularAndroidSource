@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="64.0dip" android:layout_height="64.0dip" app:srcCompat="@drawable/ic_signal_wifi_off_black_24dp" />
+    <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_triple" android:text="@string/no_internet_connection" android:layout_marginStart="@dimen/default_margin_double_half" android:layout_marginEnd="@dimen/default_margin_double_half" style="@style/Bazaar.Text.Body1" />
+    <com.google.android.material.button.MaterialButton android:id="@id/retry" android:layout_width="wrap_content" android:layout_height="@dimen/default_components_height" android:layout_marginTop="@dimen/default_margin_triple" android:text="@string/try_again" style="@style/Bazaar.Button.Flat.Primary.SmallText" />
+</LinearLayout>

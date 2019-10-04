@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/pl_basic_cta_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin" style="@style/PlBasic"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/pl_basic_primary_button" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayButton" />
+    <Button android:id="@id/pl_basic_secondary_button" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayButton.SecondaryAlt" />
+</FrameLayout>

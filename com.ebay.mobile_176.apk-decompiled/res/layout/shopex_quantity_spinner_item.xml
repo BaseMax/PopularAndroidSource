@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceBody1" android:id="@id/spinner_value" android:paddingLeft="@dimen/shopExQuantityItemLeftRightPadding" android:paddingTop="@dimen/shopExQuantityItemTopBottomPadding" android:paddingRight="@dimen/shopExQuantityItemLeftRightPadding" android:paddingBottom="@dimen/shopExQuantityItemTopBottomPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow android:layout_height="wrap_content" style="@style/RichUserProfile.TableCellRatings.TableRow.Ratings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RatingBar android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.1" android:textAlignment="center" style="@style/EbayProductRating.Small" />
+    </RelativeLayout>
+    <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:gravity="right" android:layout_gravity="center|left" android:id="@id/number" android:paddingLeft="@dimen/baseline_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(0)" android:maxLines="1" android:layout_weight="1.0" />
+</TableRow>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/plus_upsell_container" android:tag="layout/view_item_plus_v2_main_upsell_0" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/plus_upsell_text" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <ImageView android:id="@id/ebay_plus_logo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMarginHalf" android:src="@drawable/ebay_plus_logo" android:scaleType="fitStart" android:adjustViewBounds="true" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <TextView android:textColor="@color/common_auction_blue_light" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/plus_au_nonmember_try" />
+</LinearLayout>

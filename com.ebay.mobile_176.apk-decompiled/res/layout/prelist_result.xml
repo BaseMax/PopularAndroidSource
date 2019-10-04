@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/result_parent" android:background="?android:selectableItemBackground" android:padding="@dimen/prelist_item_padding" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/prelist_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/product_image_frame" android:layout_width="@dimen/srp_list_image_width" android:layout_height="@dimen/srp_list_image_height" android:layout_marginRight="@dimen/srp_list_text_spacing">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/product_image" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@null" res_auto:averageBackgroundColor="true" res_auto:fadeInDuration="@integer/search_image_fade_in_duration" res_auto:maxHeightPixels="@integer/search_list_image_size" res_auto:maxWidthPixels="@integer/search_list_image_size" />
+        <TextView android:textAppearance="?textAppearanceCaption1Inverse" android:gravity="center_horizontal" android:layout_gravity="bottom" android:id="@id/product_image_caption" android:background="@color/black_65pct" android:padding="@dimen/ebayPaddingHalf" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/example_only_overlay" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/product_image_frame" android:layout_centerVertical="true">
+        <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="start" android:id="@id/product_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" />
+        <TextView android:id="@id/product_aspects" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" />
+    </LinearLayout>
+</RelativeLayout>

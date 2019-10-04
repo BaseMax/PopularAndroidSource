@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/support_item_ticket_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:id="@id/support_item_ticket_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_extra_large" style="@style/TextView.Default.Large" />
+        <ImageView android:id="@id/support_item_ticket_arrow_iv" android:padding="@dimen/padding_small" android:layout_width="@dimen/minimum_touchable_width" android:layout_height="@dimen/minimum_touchable_height" android:src="@drawable/menu_arrow_left" android:scaleType="centerInside" style="@style/MirroredImage" />
+    </LinearLayout>
+    <LinearLayout android:background="@color/very_light_pink" android:layout_width="fill_parent" android:layout_height="@dimen/height_divider_horizontal" android:layout_below="@id/support_item_ticket_top_layout" />
+</RelativeLayout>

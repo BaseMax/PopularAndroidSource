@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rating_v1_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/big_view_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/rating_v1_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/rating_v1_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="103.0dip" android:scaleType="centerCrop" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/rating_v1_icon" android:visibility="gone" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/left" android:scaleType="centerCrop" android:layout_marginStart="10.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0dip" android:ellipsize="end" android:id="@id/rating_v1_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:maxLines="1" />
+                    <TextView android:textSize="13.0dip" android:ellipsize="end" android:id="@id/rating_v1_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:maxLines="3" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/rating_v1_star_body" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:id="@id/rating_v1_star1" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@id/rating_v1_star2" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@id/rating_v1_star3" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@id/rating_v1_star4" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@id/rating_v1_star5" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@id/rating_v1_star6" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@id/rating_v1_star7" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@id/rating_v1_star8" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@id/rating_v1_star9" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ImageView android:id="@id/rating_v1_star10" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/rating_v1_submit_margin" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="bottom" android:id="@id/rating_v1_submit" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="Submit" />
+</LinearLayout>

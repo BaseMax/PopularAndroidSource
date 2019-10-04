@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/view_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/view_main" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:paddingTop="@dimen/ebayPadding4x" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:animateLayoutChanges="true" style="@style/HomeWidthContainer">
+            <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/sign_in_hello" style="@style/EbayTextAppearanceLarge" />
+            <TextView android:textAppearance="?textAppearanceSubhead" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/sign_in_2fa_cta" />
+            <Button android:layout_gravity="center_vertical" android:id="@id/button_approve" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:text="@string/sign_in_2fa_approve" style="@style/EbayButton.Blue" />
+            <Button android:layout_gravity="center_vertical" android:id="@id/button_deny" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sign_in_2fa_deny" style="@style/EbayButton.White" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

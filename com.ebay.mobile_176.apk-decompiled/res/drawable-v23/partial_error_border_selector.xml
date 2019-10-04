@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/partial_error_border_width" android:color="?colorAlert" />
+        </shape>
+    </item>
+    <item android:width="@dimen/partial_error_bar_width">
+        <shape android:shape="rectangle">
+            <solid android:color="?colorAlert" />
+        </shape>
+    </item>
+    <item android:height="@dimen/partial_error_image_size" android:width="@dimen/partial_error_image_size" android:drawable="@drawable/ic_null_alert_white" android:left="@dimen/partial_error_image_padding" android:top="@dimen/partial_error_image_padding" />
+</layer-list>

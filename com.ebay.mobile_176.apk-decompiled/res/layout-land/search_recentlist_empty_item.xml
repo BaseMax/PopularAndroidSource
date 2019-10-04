@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="horizontal" android:id="@android:id/empty" android:paddingTop="@dimen/searchlanding_null_top_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|top" android:layout_width="@dimen/searchlanding_null_icon_size" android:layout_height="@dimen/searchlanding_null_icon_size" android:src="@drawable/search" android:tint="?iconTintColor" android:contentDescription="@null" />
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:paddingLeft="@dimen/ebayMargin2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayStaticMargin">
+        <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_search_hint" style="?textAppearanceTitle2" />
+        <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_landing_recent_null_message" style="?textAppearanceBody1Secondary" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceTitle2" android:id="@id/groupTitle" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayStaticMargin2x" android:text="@string/selling_card_we_sell_you_get_paid" style="@style/Sell.CardTitle" />
+    <androidx.cardview.widget.CardView android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" style="@style/Sell.Card">
+        <LinearLayout android:orientation="vertical" android:id="@id/sell_valet_card" android:background="?selectableItemBackgroundBorderless" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x">
+                <TextView android:id="@id/valet_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selling_card_valet_description" android:layout_toLeftOf="@id/valet_image" android:layout_alignParentLeft="true" android:lineSpacingMultiplier="1.2" />
+                <ImageView android:id="@id/valet_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:src="@drawable/logo_valet_us" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" layout="@layout/list_divider" />
+            <TextView android:layout_gravity="right" android:id="@id/learn_more_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x" android:text="@string/selling_card_valet_button" style="?textAppearanceBody2Accent" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

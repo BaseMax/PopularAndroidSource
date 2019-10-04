@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/filter_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentHeaderLeftMargin" android:layout_marginTop="@dimen/ebayPadding2x" android:layout_marginRight="@dimen/ebayContentHeaderRightMargin" android:layout_marginBottom="@dimen/ebayPadding2x">
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/refine_title" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="center_vertical" android:id="@android:id/text1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:id="@id/header_bottom_separator" android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginRight="@dimen/ebayContentSideMargin" />
+</LinearLayout>

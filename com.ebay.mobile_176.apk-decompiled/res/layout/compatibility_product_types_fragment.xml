@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/compatibility_fragment_toolbar" />
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ebayTextSizeTitle3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayStaticMargin2x" android:layout_marginBottom="@dimen/ebayStaticMargin2x" android:minHeight="@dimen/compatibility_type_title_height" android:text="@string/compatibility_what_vehicle_type" />
+        <GridView android:gravity="center" android:id="@id/product_types_grid_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:horizontalSpacing="@dimen/compatibility_type_grid_spacing" android:verticalSpacing="@dimen/compatibility_type_grid_spacing" android:stretchMode="none" android:columnWidth="@dimen/compatibility_type_item_width" android:numColumns="auto_fit" />
+    </LinearLayout>
+</LinearLayout>

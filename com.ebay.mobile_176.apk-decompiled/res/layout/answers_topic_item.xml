@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/trend_topic_container" android:tag="layout/answers_topic_item_0" android:focusable="true" android:clickable="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceDisplay2" android:layout_gravity="center_vertical" android:id="@id/trend_topic_position" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_weight="1.0">
+            <TextView android:textAppearance="?textAppearanceSubhead" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/trend_topic_title" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/trend_topic_stat" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:maxLines="1" />
+        </LinearLayout>
+        <com.ebay.android.widget.RemoteImageView android:tag="binding_4" android:layout_width="@dimen/homescreen_trend_image_tab_width" android:layout_height="@dimen/homescreen_trend_image_tab_height" android:scaleType="fitCenter" app:averageBackgroundColor="true" />
+    </LinearLayout>
+</FrameLayout>

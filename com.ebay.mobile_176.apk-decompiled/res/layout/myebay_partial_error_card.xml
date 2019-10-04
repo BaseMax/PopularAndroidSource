@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:tag="layout/myebay_partial_error_card_0" android:background="@drawable/partial_error_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseline_unit_2x" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="?colorAlert" android:layout_width="@dimen/partial_error_bar_width" android:layout_height="fill_parent">
+        <ImageView android:layout_width="@dimen/partial_error_image_size" android:layout_height="@dimen/partial_error_image_size" android:layout_marginLeft="@dimen/partial_error_image_padding" android:layout_marginTop="@dimen/partial_error_image_padding" android:src="@drawable/ic_null_alert_white" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/baseline_unit_2x" android:layout_marginTop="@dimen/baseline_unit_2x" android:layout_marginBottom="@dimen/baseline_unit" android:layout_weight="1.0">
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/textview_error_message" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/baseline_unit_2x" />
+        <Button android:layout_gravity="right" android:id="@id/button_refresh" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/baseline_unit" android:text="@string/refresh" style="@style/EbayButton.Flat" />
+    </LinearLayout>
+</LinearLayout>

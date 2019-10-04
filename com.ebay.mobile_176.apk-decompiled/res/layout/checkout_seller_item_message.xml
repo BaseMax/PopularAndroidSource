@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/checkout_seller_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/message_link" android:paddingTop="@dimen/xoMarginMedium" android:paddingBottom="@dimen/xoMarginMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants" style="@style/Xo.Row">
+        <TextView android:textAppearance="?textAppearanceBody1" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/message_title" android:paddingRight="@dimen/xoMarginSmall" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/message_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintLeft_toRightOf="@id/message_title" app:layout_constraintRight_toLeftOf="@id/message_chevron" app:layout_constraintTop_toTopOf="parent" style="@style/Xo.Text" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/message_chevron" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toRightOf="@id/message_content" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Checkout.Chevron.Right" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/message_divider_ds6" style="@style/Xo.Divider.Ds6" />
+</LinearLayout>

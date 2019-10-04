@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/snapp_jek_services_item_holder_height" android:layout_margin="@dimen/snapp_jek_services_item_sides_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/selector_card_view_in_jek" android:paddingTop="4.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/item_snapp_jek_service_content" />
+        <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/item_snapp_jek_service_content_badge_textview" android:background="@drawable/shape_rounded_12dp_rectangle" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_marginTop="5.0dip" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" style="@style/TextView.Default.Tiny" />
+    </FrameLayout>
+</LinearLayout>

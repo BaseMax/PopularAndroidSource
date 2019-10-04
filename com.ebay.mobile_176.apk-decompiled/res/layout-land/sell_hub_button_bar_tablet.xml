@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ButtonBar.Floating"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/button_save" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/sell_save_for_later" android:layout_weight="1.0" style="@style/EbayButton.Blue" />
+    <Button android:id="@id/button_continue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/sell_review" android:layout_weight="1.0" style="@style/EbayButton.Blue" />
+</LinearLayout>

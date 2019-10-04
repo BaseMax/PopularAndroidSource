@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/recommended_pricing_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="1.0" style="@style/Sell.DynamicCardContainer.ListingForm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/recommended_sell_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin15" android:layout_weight="0.6" android:importantForAccessibility="yes">
+        <TextView android:id="@id/pricing_recommendation_status_compressed_view" android:visibility="gone" android:text="@string/recommended" android:drawablePadding="@dimen/ebayPadding" style="@style/Sell.EbayRecommended" />
+        <TextView android:id="@id/pricing_recommendation_label" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" style="@style/Sell.TextView.Big" />
+        <TextView android:id="@id/offers_allowed_summary" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" style="@style/Sell.TextView.Medium" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:ellipsize="none" android:id="@id/best_chance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollHorizontally="false" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/price_container" android:background="@drawable/sell_chance_of_selling_rectangle" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.4" android:importantForAccessibility="yes">
+        <TextView android:textAppearance="?textAppearanceBody2" android:gravity="center" android:id="@id/recommendation_price_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerHorizontal="true" android:importantForAccessibility="no" />
+        <TextView android:id="@id/recommendation_price_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/recommendation_price_label" android:layout_centerHorizontal="true" android:importantForAccessibility="no" style="@style/Sell.TextView.Big" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:gravity="center" android:id="@id/recommendation_price_guidance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/recommendation_price_value" android:layout_centerHorizontal="true" android:importantForAccessibility="no" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/view_item_add_on_installer_bindable_view_0" android:background="?android:listChoiceBackgroundIndicator" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/installer_radio_button" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayPaddingHalf" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_weight="1.0">
+        <TextView android:textAppearance="?textAppearanceBody1" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMarginHalf" android:labelFor="@id/installer_radio_button" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:orientation="vertical" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:foreground="?selectableItemBackground">
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/first_line" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+            <ImageView android:tag="binding_7" android:paddingLeft="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?iconTintColor" android:layout_toRightOf="@id/first_line" />
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:tag="binding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/first_line" />
+        </RelativeLayout>
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:paddingTop="@dimen/ebayPaddingHalf" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceBody1" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMarginHalf" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

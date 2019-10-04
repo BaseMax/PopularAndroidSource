@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.snappdialog.dialogViews.view.SnappLoadingDialogView android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="20.0sp" android:id="@id/loading_content_type_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" style="@style/DialogText" />
+    <cab.snapp.snappdialog.widgets.SnappLoading android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</cab.snapp.snappdialog.dialogViews.view.SnappLoadingDialogView>

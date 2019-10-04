@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingRight="@dimen/following_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/searchlanding_minimum_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.mobile.widget.UserThumbnail android:id="@id/following_item_remote_image" android:visibility="gone" android:layout_width="@dimen/following_magnifier_size" android:layout_height="@dimen/following_magnifier_size" android:layout_marginLeft="@dimen/following_item_padding" android:layout_marginRight="@dimen/ebayMargin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/text_followed_entry" android:paddingLeft="@dimen/ebayMargin2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_youtube_searched_for_grey_24dp" android:drawablePadding="@dimen/searchlanding_icon_list_margin" android:layout_toLeftOf="@id/following_item_dot" android:layout_toRightOf="@id/following_item_remote_image" android:layout_centerVertical="true" />
+    <include android:layout_width="@dimen/following_bluedotsize" android:layout_height="@dimen/following_bluedotsize" android:layout_marginLeft="@dimen/following_bluedotLeftMargin" android:layout_marginRight="@dimen/following_bluedotRightMargin" android:layout_alignParentRight="true" android:layout_centerVertical="true" layout="@layout/new_items_dot" />
+</RelativeLayout>

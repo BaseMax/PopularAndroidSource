@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_marginLeft="@dimen/checkoutSmallMargin" android:layout_marginTop="0.0dip" style="@style/ItemStatLayout">
+        <TextView android:textStyle="bold" android:id="@id/bid_value_label" android:text="@string/current_bid" style="@style/ItemStatHeader" />
+        <TextView android:id="@id/bid_value" android:layout_alignParentRight="true" style="@style/ItemStatValue.Black.Bold" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/quantity_layout" android:visibility="gone" android:layout_marginLeft="@dimen/checkoutSmallMargin" android:layout_marginTop="0.0dip" style="@style/ItemStatLayout">
+        <TextView android:textStyle="bold" android:text="@string/quantity" style="@style/ItemStatHeader" />
+        <TextView android:id="@id/quantity_value" android:layout_alignParentRight="true" style="@style/ItemStatValue.Black.Bold" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/discount_layout" android:visibility="gone" android:layout_marginLeft="@dimen/checkoutSmallMargin" android:layout_marginTop="0.0dip" style="@style/ItemStatLayout">
+        <TextView android:id="@id/discount_value_label" android:text="@string/view_item_review_discount" style="@style/ItemStatHeader.Bold" />
+        <TextView android:gravity="center|right" android:id="@id/discount_value" android:layout_width="fill_parent" style="@style/ItemStatValue.Black.Bold" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/shipping_cost_layout" android:visibility="gone" android:layout_marginLeft="@dimen/checkoutSmallMargin" android:layout_marginTop="0.0dip" style="@style/ItemStatLayout">
+        <TextView android:text="@string/shipping" style="@style/ItemStatHeader" />
+        <TextView android:id="@id/shipping_cost_value" android:layout_alignParentRight="true" style="@style/ItemStatValue.Black" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/sales_tax_layout" android:visibility="gone" android:layout_marginLeft="@dimen/checkoutSmallMargin" android:layout_marginTop="0.0dip" style="@style/ItemStatLayout">
+        <TextView android:text="@string/item_view_sales_tax" style="@style/ItemStatHeader" />
+        <TextView android:id="@id/sales_tax_value" android:layout_alignParentRight="true" style="@style/ItemStatValue.Black" />
+    </RelativeLayout>
+    <View android:background="@color/dashed_line_dark" android:layout_marginLeft="@dimen/checkoutSmallMargin" android:layout_marginTop="2.0dip" android:layout_marginRight="@dimen/checkoutSmallMargin" style="@style/CommonDivider" />
+    <RelativeLayout android:layout_marginLeft="@dimen/checkoutSmallMargin" android:layout_marginBottom="0.0dip" style="@style/ItemStatLayout">
+        <TextView android:id="@id/max_bid_value_label" android:text="@string/your_maximum_bid" style="@style/ItemStatHeader.Black.Bold" />
+        <TextView android:id="@id/max_bid_value" android:layout_alignParentRight="true" style="@style/ItemStatValue.Blue.Bold" />
+    </RelativeLayout>
+</LinearLayout>

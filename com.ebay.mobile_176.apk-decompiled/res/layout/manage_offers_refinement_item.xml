@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/manage_offers_refinement_item_0" android:background="?selectableItemBackgroundBase" android:layout_width="fill_parent" android:layout_height="@dimen/simple_refine_item_height" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/refinement_item_title" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="2" android:layout_weight="1.0" />
+    <ImageView android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/checkmark_accent" android:contentDescription="@null" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/layout_main" style="@style/Prelist.ProductsList"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/aspects_recycler" android:background="?containerBackgroundColor" android:visibility="gone" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ebayContentSideMargin" android:paddingEnd="@dimen/ebayContentSideMargin" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <include layout="@layout/prelist_items_aspect_layout" />
+    <include layout="@layout/no_items_layout" />
+    <include layout="@layout/progress_container" />
+</LinearLayout>

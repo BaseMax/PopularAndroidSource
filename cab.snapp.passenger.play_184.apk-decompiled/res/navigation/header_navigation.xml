@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/header_navigation" app:startDestination="@id/jekHeaderController"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="MainHeaderController" android:name="cab.snapp.passenger.units.mainheader.MainHeaderController" android:id="@id/mainHeaderController">
+        <action android:id="@id/action_mainHeaderController_to_jekHeaderController" app:destination="@id/jekHeaderController" />
+    </fragment>
+    <fragment android:label="JekHeaderController" android:name="cab.snapp.passenger.units.jek_header.JekHeaderController" android:id="@id/jekHeaderController">
+        <action android:id="@id/action_jekHeaderController_to_mainHeaderController" app:destination="@id/mainHeaderController" />
+    </fragment>
+</navigation>

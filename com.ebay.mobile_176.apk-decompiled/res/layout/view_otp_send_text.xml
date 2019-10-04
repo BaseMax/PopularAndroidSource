@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/bt_resend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/otp_resend_code" android:layout_above="@id/bt_sign_in" android:layout_alignParentRight="true" style="@style/EbayButton.Flat" />
+    <Button android:id="@id/bt_sign_in" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/sign_in" android:layout_alignParentBottom="true" style="@style/EbayButton.Blue" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bt_resend">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/view_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayPadding2x">
+            <com.google.android.material.textfield.TextInputEditText android:textAppearance="?textAppearanceSubhead" android:textSize="@dimen/ebayTextSize" android:textColorHint="?android:textColorHint" android:id="@id/et_enter_otp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/otp_hint_text" android:maxLines="1" android:inputType="textNoSuggestions" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </ScrollView>
+</RelativeLayout>

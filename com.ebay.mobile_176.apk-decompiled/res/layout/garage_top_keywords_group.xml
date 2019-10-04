@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.verticals.motor.ParagraphContainerWithSearchView android:id="@id/expandable_view" android:tag="layout/garage_top_keywords_group_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:alignment="left" style="@style/GarageSearchStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

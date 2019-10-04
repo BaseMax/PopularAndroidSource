@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/shopex_cart_summary_layout" android:paddingLeft="@dimen/shopExCartSummaryVerticalMargin" android:paddingTop="@dimen/shopExCartSummaryHorizontalMargin" android:paddingRight="@dimen/shopExCartSummaryVerticalMargin" android:paddingBottom="@dimen/shopExCartSummaryHorizontalMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ShopEx.CartSummary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/shopex_cart_subtotals" android:paddingBottom="@dimen/shopExCartSummaryHorizontalMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/style_guide_divider" android:paddingLeft="@dimen/shopExCartSummaryVerticalMargin" android:paddingRight="@dimen/shopExCartSummaryVerticalMargin" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/shopex_cart_total" android:paddingTop="@dimen/shopExCartSummaryHorizontalMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

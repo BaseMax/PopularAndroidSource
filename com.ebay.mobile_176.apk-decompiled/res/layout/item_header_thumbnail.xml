@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" style="@style/StyleGuideViewItemCard.SharedTop"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/item_header_layout" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/item_thumbnail" android:focusable="false" android:layout_width="@dimen/ItemViewThumbnailHeight" android:layout_height="@dimen/ItemViewThumbnailHeight" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:contentDescription="@string/accessibility_item_image" android:importantForAccessibility="no" ebay:averageBackgroundColor="true" />
+        <TextView android:id="@id/item_title" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:layout_toRightOf="@id/item_thumbnail" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

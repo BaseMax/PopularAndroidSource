@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/compatibility_fragment_toolbar" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compatibility_detail_card_side_margin" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/compatibility_detail_card_side_margin" android:layout_marginBottom="@dimen/ebayMargin2x" style="@style/CardView">
+            <ListView android:id="@id/vehicle_details_list_view" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/style_guide_light_divider" android:dividerHeight="1.0dip" android:headerDividersEnabled="false" android:footerDividersEnabled="false" style="@style/CardView" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <include layout="@layout/compatibility_select_specification" />
+    <include layout="@layout/compatibility_go_button" />
+</LinearLayout>

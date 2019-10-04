@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/cameraImageFrameLayout" android:tag="layout/camera_photo_picker_item_0" android:descendantFocusability="blocksDescendants" style="@style/CameraImageFrameStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:tag="binding_1" style="@style/CameraImageStyle" />
+    <TextView android:textAppearance="?textAppearanceCaption1Inverse" android:layout_gravity="center|right|top" android:tag="binding_2" android:background="?colorAccent" android:padding="@dimen/ebayStaticMarginHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

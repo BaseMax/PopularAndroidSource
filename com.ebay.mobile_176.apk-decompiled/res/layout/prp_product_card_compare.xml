@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/prp_product_card_compare_0" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="#ff333333" android:gravity="center_horizontal" android:id="@id/viewing_label" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" />
+        <com.ebay.android.widget.RemoteImageView android:id="@id/imageview_item_image" android:tag="binding_3" android:src="@drawable/ic_missing_image" style="?imageCarouselStyle" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/product_card_info_horizontal" />
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:divider="?dividerHorizontal" android:showDividers="beginning|middle">
+            <LinearLayout android:orientation="vertical" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin">
+                <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="#8a000000" android:gravity="center_horizontal" android:id="@id/aspect_label_1" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/aspect_value_1" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin">
+                <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="#8a000000" android:gravity="center_horizontal" android:id="@id/aspect_label_2" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/aspect_value_2" android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:tag="binding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin">
+                <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="#8a000000" android:gravity="center_horizontal" android:id="@id/aspect_label_3" android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/aspect_value_3" android:tag="binding_12" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="user" />
+        </trust-anchors>
+    </debug-overrides>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">api.ebay.com</domain>
+        <domain includeSubdomains="true">apisd.ebay.com</domain>
+        <domain includeSubdomains="true">apix.ebay.com</domain>
+        <domain includeSubdomains="true">fiappsvc.ebay.com</domain>
+        <domain includeSubdomains="true">idauth.ebay.com</domain>
+        <domain includeSubdomains="true">mobidcs.ebay.com</domain>
+        <domain includeSubdomains="true">mobipushpkg.ebay.com</domain>
+        <domain includeSubdomains="true">mobiselling.ebay.com</domain>
+        <domain includeSubdomains="true">mobiuas.ebay.com</domain>
+        <domain includeSubdomains="true">mobixo4.ebay.com</domain>
+        <domain includeSubdomains="true">spesvc.ebay.com</domain>
+        <domain includeSubdomains="true">srv.main.ebayrtm.com</domain>
+        <domain includeSubdomains="true">svcs.ebay.com</domain>
+        <domain includeSubdomains="true">www.paypalobjects.com</domain>
+        <domain includeSubdomains="true">i.ebayimg.com</domain>
+    </domain-config>
+</network-security-config>

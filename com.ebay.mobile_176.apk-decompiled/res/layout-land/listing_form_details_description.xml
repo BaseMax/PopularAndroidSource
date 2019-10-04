@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="?containerBackgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/description_tool_tip" android:text="@string/description_tool_tip" style="@style/ListingFormDetailGuidanceModuleTextStyle" />
+        <include layout="@layout/rich_text_editor" />
+    </LinearLayout>
+</ScrollView>

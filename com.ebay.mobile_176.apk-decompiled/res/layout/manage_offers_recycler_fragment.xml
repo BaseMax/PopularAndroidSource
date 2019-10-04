@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/progress_container" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ebay.nautilus.shell.widget.EbaySwipeRefreshLayout android:id="@id/swipe_to_refresh_main" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view_main" android:background="?listContainerOutsideBackground" android:paddingTop="?actionBarSize" android:visibility="visible" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ViewStub android:id="@id/container_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ViewStub android:id="@id/container_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </com.ebay.nautilus.shell.widget.EbaySwipeRefreshLayout>
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar_section_header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="@dimen/toolbar_elevation">
+            <RelativeLayout android:id="@id/container_section_header" android:background="?listContainerOutsideBackground" android:paddingLeft="@dimen/ebayMargin2x" android:paddingRight="@dimen/ebayEditToolbarSideMargin" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize">
+                <Button android:id="@id/button_sort_or_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/EbayButton.Flat" />
+                <TextView android:id="@id/offer_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/button_sort_or_filter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+    </FrameLayout>
+</FrameLayout>

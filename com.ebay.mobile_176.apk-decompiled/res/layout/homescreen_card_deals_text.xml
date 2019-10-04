@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/style_guide_gray" android:id="@id/item_eek_rating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?textAppearanceCaption1" />
+    <TextView android:ellipsize="end" android:id="@id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayStaticMargin" android:maxLines="2" style="?itemTitleStyle" />
+    <TextView android:ellipsize="end" android:id="@id/item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?itemPriceStyle" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:ellipsize="end" android:id="@id/item_price_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+</LinearLayout>

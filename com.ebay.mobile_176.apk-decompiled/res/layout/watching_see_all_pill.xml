@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/watching_see_all_pill_0" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="center" android:layout_gravity="center" android:id="@id/see_all_button" android:tag="binding_1" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/see_all" style="@style/EbayButton.Flat" />
+    <View android:background="@color/pill_background_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

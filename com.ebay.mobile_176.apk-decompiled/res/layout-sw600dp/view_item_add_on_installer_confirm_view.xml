@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout-sw600dp/view_item_add_on_installer_confirm_view_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayLetterboxSideMarginViewItem">
+                <include layout="@layout/view_item_add_on_installer_confirm_body" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentPaddingBottom="@dimen/ebayPadding" app:contentPaddingLeft="@dimen/ebayPadding2x" app:contentPaddingRight="@dimen/ebayPadding2x" app:contentPaddingTop="@dimen/ebayPadding">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+            <Button android:id="@id/continue_without_installation" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/installer_confirmation_without_install" android:layout_weight="1.0" style="@style/EbayButton.SecondaryAlt" />
+            <Button android:id="@id/continue_with_installation" android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/installer_confirmation_with_install" android:layout_weight="1.0" style="@style/EbayButton" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

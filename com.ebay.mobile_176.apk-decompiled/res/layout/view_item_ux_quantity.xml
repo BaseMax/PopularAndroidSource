@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/quantity_option_row" android:tag="layout/view_item_ux_quantity_0" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="0.0dip" android:paddingEnd="@dimen/ebayPadding">
+        <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/quantity_selection_text" android:tag="binding_1" android:importantForAccessibility="no" style="@style/ItemStatHeader" />
+        <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/quantity_selection_sub_text" android:tag="binding_2" android:importantForAccessibility="no" style="@style/ItemStatHeader" />
+    </LinearLayout>
+    <Spinner android:id="@id/quantity_selection_spinner" android:tag="binding_3" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="SpinnerItem.DropDownItem.ItemView" />
+</LinearLayout>

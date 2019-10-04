@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/view_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.SwitchCompat android:gravity="center" android:id="@id/sw_2fa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x" android:layout_alignTop="@id/view_title_description" android:layout_alignBottom="@id/view_title_description" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/view_title_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x" android:layout_toLeftOf="@id/sw_2fa">
+            <TextView android:textAppearance="?textAppearanceBody2" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sign_in_2fa_title" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/tv_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sign_in_2fa_description" />
+        </LinearLayout>
+        <View android:background="@color/style_guide_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/view_title_description" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/view_progress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

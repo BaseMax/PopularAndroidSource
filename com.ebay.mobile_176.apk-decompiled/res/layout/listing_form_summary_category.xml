@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/listing_form_summary_category_0" android:paddingBottom="@dimen/ebayPadding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/category_module_header_tap_target" layout="@layout/listing_form_summary_header" />
+    <androidx.cardview.widget.CardView style="@style/Sell.Card.ListingForm">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="?listingFormSummaryContentStyle">
+            <LinearLayout android:orientation="vertical" android:id="@id/category_tap_target" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:importantForAccessibility="no">
+                <TextView android:id="@id/category_tool_tip" android:visibility="gone" android:layout_marginBottom="@dimen/compensate_overview_tool_tip_margin" style="?listingFormSummaryGuidanceModuleTextStyle" />
+                <LinearLayout android:orientation="vertical" android:id="@id/category_content" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.DynamicCardContainer.ListingForm">
+                    <TextView android:id="@id/category_path" style="@style/Sell.TextView" />
+                    <TextView android:id="@id/store_category_header" android:visibility="gone" android:text="@string/store_category" style="@style/Sell.TextView.Secondary.TopMargin" />
+                    <TextView android:id="@id/primary_store_category" android:visibility="gone" style="@style/Sell.TextView" />
+                    <TextView android:id="@id/secondary_store_category" android:visibility="gone" style="@style/Sell.TextView" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageButton android:id="@id/category_button" android:visibility="gone" android:layout_below="@id/category_tap_target" android:contentDescription="@string/change_category" style="@style/EbayButton.Icon.Bolt" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

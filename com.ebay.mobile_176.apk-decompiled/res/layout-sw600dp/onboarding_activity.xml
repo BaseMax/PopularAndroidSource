@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_content" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="bottom" android:id="@id/tabs" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/onboarding_tab_height" android:layout_marginTop="@dimen/baseline_unit_2x" app:tabGravity="fill" app:tabIndicatorHeight="0.0dip" app:tabMaxWidth="0.0dip" app:tabMode="scrollable" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+            <FrameLayout android:id="@id/view_pager_cover" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@id/dots" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tabBackground="@drawable/onboarding_dot" app:tabGravity="fill" app:tabIndicatorHeight="0.0dip" app:tabPaddingEnd="@dimen/baseline_unit" app:tabPaddingStart="@dimen/baseline_unit" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/onboarding_confirmation_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin8x" android:layout_marginTop="@dimen/ebayMargin3x" android:layout_marginRight="@dimen/ebayMargin8x" android:layout_marginBottom="@dimen/ebayMargin3x" />
+    <include layout="@layout/onboarding_progress_container" />
+</FrameLayout>

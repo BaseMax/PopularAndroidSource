@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.viewpager.widget.ViewPager android:id="@id/tab_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/shopping_cart_button_layout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/shopping_cart_checkout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayPadding" android:text="@string/prox_checkout_label" style="@style/EbayButton.Blue" />
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/common_translucent_progress" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:focusableInTouchMode="true" layout="@layout/progress_container" />
+    <RelativeLayout android:id="@id/xo_content" android:background="?listContainerOutsideBackground" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/checkout_error_container" />
+        <androidx.cardview.widget.CardView android:id="@id/store_location_search_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginSmall" android:layout_marginTop="@dimen/xoMarginMediumLarge" android:layout_marginRight="@dimen/xoMarginSmall" android:layout_marginBottom="@dimen/xoMarginMedium" android:layout_below="@id/error_container" style="@style/CheckoutCard">
+            <androidx.appcompat.widget.SearchView android:textAppearance="?textAppearanceTitle1" android:id="@id/store_location_search_view" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:iconifiedByDefault="false" app:queryBackground="@color/white_0pct" app:submitBackground="@null" app:voiceIcon="@null" />
+        </androidx.cardview.widget.CardView>
+        <include android:id="@id/store_list_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/store_location_display_options_layout" android:layout_below="@id/store_location_search_layout" layout="@layout/fragment_container" />
+        <include android:id="@id/store_map_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/store_location_display_options_layout" android:layout_below="@id/store_location_search_layout" layout="@layout/fragment_container" />
+        <androidx.cardview.widget.CardView android:id="@id/store_location_display_options_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:layout_alignParentBottom="true" style="@style/CheckoutCard">
+            <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/store_location_display_option" android:paddingLeft="@dimen/xoMarginMediumLarge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xoMarginMediumLarge" android:layout_marginBottom="@dimen/xoMarginMediumLarge" android:textAllCaps="true" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/product_card" android:tag="layout/product_ux_top_product_0" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceHeadline" android:gravity="center" android:layout_gravity="center" android:id="@id/textview_label" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/product_top_products_label_min_size" android:textAlignment="center" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/product_item_detail" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/baseline_unit" android:layout_marginEnd="@dimen/baseline_unit">
+        <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:id="@id/textview_item_title" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <FrameLayout android:id="@id/view_stars_layout" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_below="@id/textview_item_title">
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/uxcomp_star_rating_small" />
+        </FrameLayout>
+        <TextView android:textAppearance="?textAppearanceCaption1" android:ellipsize="end" android:id="@id/textview_item_label" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayStaticMargin" android:maxLines="2" android:layout_below="@id/view_stars_layout" />
+        <TextView android:textAppearance="?textAppearanceSubhead2" android:orientation="horizontal" android:id="@id/textview_price_new" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textview_item_label" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:orientation="horizontal" android:id="@id/textview_price_used" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textview_price_new" android:lineSpacingMultiplier="1.1" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="bottom" android:id="@id/bpp_icon_product_card" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="@dimen/product_best_price_promise_image_size" android:src="@drawable/ic_best_price_promise_icon" />
+        <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/image_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ebay.android.widget.RemoteImageView android:id="@id/imageview_item_image" android:tag="binding_8" android:layout_width="@dimen/product_top_products_image_size" android:layout_height="@dimen/product_top_products_image_size" android:src="@drawable/ic_missing_image" android:scaleType="fitCenter" app:fadeInDuration="@integer/answers_image_fade_in_duration" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

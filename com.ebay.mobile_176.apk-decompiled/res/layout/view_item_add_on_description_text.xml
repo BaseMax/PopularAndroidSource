@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceBody1" android:layout_gravity="center" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/ebayPadding15"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

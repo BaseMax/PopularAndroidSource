@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="DHMS_accessibility_day_hour">
+        <item quantity="other">осталось %1$d дн. %2$d ч.</item>
+        <item quantity="one">остался %1$d день %2$d ч.</item>
+        <item quantity="few">осталось %1$d дн. %2$d ч.</item>
+        <item quantity="many">осталось %1$d дн. %2$d ч.</item>
+    </plurals>
+    <plurals name="DHMS_accessibility_days">
+        <item quantity="other">осталось %1$d дн.</item>
+        <item quantity="one">остался %1$d день</item>
+        <item quantity="few">осталось %1$d дн.</item>
+        <item quantity="many">осталось %1$d дн.</item>
+    </plurals>
+    <plurals name="DHMS_accessibility_hour_minute">
+        <item quantity="other">осталось %1$d ч. %2$d мин.</item>
+        <item quantity="one">остался %1$d час %2$d мин.</item>
+        <item quantity="few">осталось %1$d ч. %2$d мин.</item>
+        <item quantity="many">осталось %1$d ч. %2$d мин.</item>
+    </plurals>
+    <plurals name="DHMS_accessibility_hours">
+        <item quantity="other">осталось %1$d ч.</item>
+        <item quantity="one">остался %1$d час</item>
+        <item quantity="few">осталось %1$d ч.</item>
+        <item quantity="many">осталось %1$d ч.</item>
+    </plurals>
+    <plurals name="DHMS_accessibility_minute_second">
+        <item quantity="other">осталось %1$d мин. %2$d сек.</item>
+        <item quantity="one">осталась %1$d мин. %2$d сек.</item>
+        <item quantity="few">осталось %1$d мин. %2$d сек.</item>
+        <item quantity="many">осталось %1$d мин. %2$d сек.</item>
+    </plurals>
+    <plurals name="DHMS_accessibility_minutes">
+        <item quantity="other">осталось %1$d мин.</item>
+        <item quantity="one">осталась %1$d минута</item>
+        <item quantity="few">осталось %1$d мин.</item>
+        <item quantity="many">осталось %1$d мин.</item>
+    </plurals>
+    <plurals name="DHMS_accessibility_seconds">
+        <item quantity="other">осталось %1$d сек.</item>
+        <item quantity="one">осталась %1$d сек.</item>
+        <item quantity="few">осталось %1$d сек.</item>
+        <item quantity="many">осталось %1$d сек.</item>
+    </plurals>
+    <plurals name="LEGAL_auto_relist_option_fees">
+        <item quantity="other">Опубликовать это объявление повторно до %d раза, если товар не будет продан.</item>
+        <item quantity="one">Опубликовать это объявление повторно %d раз, если товар не будет продан.</item>
+        <item quantity="few">Опубликовать это объявление повторно до %d раза, если товар не будет продан.</item>
+        <item quantity="many">Опубликовать это объявление повторно до %d раза, если товар не будет продан.</item>
+    </plurals>
+    <plurals name="LEGAL_auto_relist_option_free">
+        <item quantity="other">Опубликовать это объявление повторно до %d раз, если товар не будет продан. Повторная публикация бесплатна.</item>
+        <item quantity="one">Опубликовать это объявление повторно %d раз, если товар не будет продан. Повторная публикация бесплатна.</item>
+        <item quantity="few">Опубликовать это объявление повторно до %d раз, если товар не будет продан. Повторная публикация бесплатна.</item>
+        <item quantity="many">Опубликовать это объявление повторно до %d раз, если товар не будет продан. Повторная публикация бесплатна.</item>
+    </plurals>
+    <plurals name="LEGAL_auto_relist_text">
+        <item quantity="other">Если ваш товар не будет продан, мы выставим его повторно еще %1$d раза.</item>
+        <item quantity="one">Если ваш товар не будет продан, мы выставим его повторно еще %1$d раз.</item>
+        <item quantity="few">Если ваш товар не будет продан, мы выставим его повторно еще %1$d раза.</item>
+        <item quantity="many">Если ваш товар не будет продан, мы выставим его повторно еще %1$d раз.</item>
+    </plurals>
+    <plurals name="accepted_within_business_days">
+        <item quantity="other">Принимается в течение %d раб. дн.</item>
+        <item quantity="one">Принимается в течение %d раб. дня</item>
+        <item quantity="few">Принимается в течение %d раб. дн.</item>
+        <item quantity="many">Принимается в течение %d раб. дн.</item>
+    </plurals>
+    <plurals name="accepted_within_days">
+        <item quantity="other">Принимается в течение %d дн.</item>
+        <item quantity="one">Принимается в течение %d дня</item>
+        <item quantity="few">Принимается в течение %d дн.</item>
+        <item quantity="many">Принимается в течение %d дн.</item>
+    </plurals>
+    <plurals name="accessibility_active_item_count">
+        <item quantity="other">%d активных объявления, кнопка</item>
+        <item quantity="one">%d активное объявление, кнопка</item>
+        <item quantity="few">%d активных объявления, кнопка</item>
+        <item quantity="many">%d активных объявлений, кнопка</item>
+    </plurals>
+    <plurals name="accessibility_approx_zero_x_and_x_cents">
+        <item quantity="other">(Приблиз. %1$s0 и %2$d цента)</item>
+        <item quantity="one">(Приблиз. %1$s0 и %2$d цент)</item>
+        <item quantity="few">(Приблиз. %1$s0 и %2$d цента)</item>
+        <item quantity="many">(Приблиз. %1$s0 и %2$d центов)</item>
+    </plurals>
+    <plurals name="accessibility_aspect_summary">
+        <item quantity="other">%1$s пользоват. соглашаются %2$s</item>
+        <item quantity="one">%1$s пользователь соглашается %2$s</item>
+        <item quantity="few">%1$s пользоват. соглашаются %2$s</item>
+        <item quantity="many">%1$s пользоват. соглашаются %2$s</item>
+    </plurals>
+    <plurals name="accessibility_day_hours">
+        <item quantity="other">остался %1$d день %2$d ч.</item>
+        <item quantity="one">Остался %1$d день %2$d ч.</item>
+        <item quantity="few">остался %1$d день %2$d ч.</item>
+        <item quantity="many">остался %1$d день %2$d ч.</item>
+    </plurals>
+    <plurals name="accessibility_days">
+        <item quantity="other">осталось %d дн.</item>
+        <item quantity="one">остался %d день</item>
+        <item quantity="few">осталось %d дн.</item>
+        <item quantity="many">осталось %d дн.</item>
+    </plurals>
+    <plurals name="accessibility_days_hours">
+        <item quantity="other">осталось %1$d дн. %2$d ч.</item>
+        <item quantity="one">Осталось %1$d дн. %2$d ч.</item>
+        <item quantity="few">осталось %1$d дн. %2$d ч.</item>
+        <item quantity="many">осталось %1$d дн. %2$d ч.</item>
+    </plurals>
+    <plurals name="accessibility_delete_x_selected">
+        <item quantity="other">Удалить %d выбранных товара</item>
+        <item quantity="one">Удалить %d выбранный товар</item>
+        <item quantity="few">Удалить %d выбранных товара</item>
+        <item quantity="many">Удалить %d выбранных товаров</item>
+    </plurals>
+    <plurals name="accessibility_hour_minutes">
+        <item quantity="other">остался %1$d час %2$d мин.</item>
+        <item quantity="one">Осталось %1$d ч. %2$d мин.</item>
+        <item quantity="few">остался %1$d час %2$d мин.</item>
+        <item quantity="many">остался %1$d час %2$d мин.</item>
+    </plurals>
+    <plurals name="accessibility_hours">
+        <item quantity="other">осталось %d ч.</item>
+        <item quantity="one">остался %d час</item>
+        <item quantity="few">осталось %d ч.</item>
+        <item quantity="many">осталось %d ч.</item>
+    </plurals>
+    <plurals name="accessibility_hours_minutes">
+        <item quantity="other">осталось %1$d ч. %2$d мин.</item>
+        <item quantity="one">Осталось %1$d ч. %2$d мин.</item>
+        <item quantity="few">осталось %1$d ч. %2$d мин.</item>
+        <item quantity="many">осталось %1$d ч. %2$d мин.</item>
+    </plurals>
+    <plurals name="accessibility_item_removed_count">
+        <item quantity="other">Удалено %1$d тов.</item>
+        <item quantity="one">Удален %1$d товар</item>
+        <item quantity="few">Удалено %1$d тов.</item>
+        <item quantity="many">Удалено %1$d тов.</item>
+    </plurals>
+    <plurals name="accessibility_minute_seconds">
+        <item quantity="other">осталась %1$d мин. %2$d сек.</item>
+        <item quantity="one">Осталось %1$d мин. %2$d сек.</item>
+        <item quantity="few">осталась %1$d мин. %2$d сек.</item>
+        <item quantity="many">осталась %1$d мин. %2$d сек.</item>
+    </plurals>
+    <plurals name="accessibility_minutes">
+        <item quantity="other">осталось %d мин.</item>
+        <item quantity="one">осталась %d минута</item>
+        <item quantity="few">осталось %d мин.</item>
+        <item quantity="many">осталось %d мин.</item>
+    </plurals>
+    <plurals name="accessibility_minutes_seconds">
+        <item quantity="other">осталось %1$d мин. %2$d сек.</item>
+        <item quantity="one">Осталось %1$d мин. %2$d сек.</item>
+        <item quantity="few">осталось %1$d мин. %2$d сек.</item>
+        <item quantity="many">осталось %1$d мин. %2$d сек.</item>
+    </plurals>
+    <plurals name="accessibility_my_ebay_items_found">
+        <item quantity="other">Найдено %1$d товара.</item>
+        <item quantity="one">Найден %1$d товар.</item>
+        <item quantity="few">Найдено %1$d товара.</item>
+        <item quantity="many">Найдено %1$d товаров.</item>
+    </plurals>
+    <plurals name="accessibility_onboarding_count">
+        <item quantity="other">Выбрано %d тем</item>
+        <item quantity="one">Выбрана %d тема</item>
+        <item quantity="few">Выбрано %d темы</item>
+        <item quantity="many">Выбрано %d тем</item>
+    </plurals>
+    <plurals name="accessibility_photos_count_content_description">
+        <item quantity="other">У вас добавлено %d фото.</item>
+        <item quantity="one">У вас добавлено %d фото. Добавьте как можно больше фотографий товара</item>
+        <item quantity="few">У вас добавлено %d фото.</item>
+        <item quantity="many">У вас добавлено %d фото.</item>
+    </plurals>
+    <plurals name="accessibility_quantity_x_selected">
+        <item quantity="other">Выбрано %d</item>
+        <item quantity="one">Выбрано %d</item>
+        <item quantity="few">Выбрано %d</item>
+        <item quantity="many">Выбрано %d</item>
+    </plurals>
+    <plurals name="accessibility_rating_star_summary">
+        <item quantity="other">%1$d из %2$d звездочек</item>
+        <item quantity="one">%1$d из %2$d звездочки</item>
+        <item quantity="few">%1$d из %2$d звездочек</item>
+        <item quantity="many">%1$d из %2$d звездочек</item>
+    </plurals>
+    <plurals name="accessibility_rating_star_summary_precise">
+        <item quantity="other">%1$s %2$.1f звездочки из %3$d</item>
+        <item quantity="one">%1$s %2$.1f звездочка из %3$d</item>
+        <item quantity="few">%1$s %2$.1f звездочки из %3$d</item>
+        <item quantity="many">%1$s %2$.1f звездочек из %3$d</item>
+    </plurals>
+    <plurals name="accessibility_rating_stars">
+        <item quantity="other">%1$d из %2$d звездочек</item>
+        <item quantity="one">%1$d из %2$d звездочки</item>
+        <item quantity="few">%1$d из %2$d звездочек</item>
+        <item quantity="many">%1$d из %2$d звездочек</item>
+    </plurals>
+    <plurals name="accessibility_ratings_count">
+        <item quantity="other">%1$s %2$d оценки</item>
+        <item quantity="one">%1$s %2$d оценка</item>
+        <item quantity="few">%1$s %2$d оценки</item>
+        <item quantity="many">%1$s %2$d оценок</item>
+    </plurals>
+    <plurals name="accessibility_ratings_total_count">
+        <item quantity="other">%1$d оценки</item>
+        <item quantity="one">%1$d оценка</item>
+        <item quantity="few">%1$d оценки</item>
+        <item quantity="many">%1$d оценок</item>
+    </plurals>
+    <plurals name="accessibility_recent_feedback_rating_month">
+        <item quantity="other">%d месяца</item>
+        <item quantity="one">%d месяц</item>
+        <item quantity="few">%d месяца</item>
+        <item quantity="many">%d месяцев</item>
+    </plurals>
+    <plurals name="accessibility_review_summary">
+        <item quantity="other">%1$s %2$s дал оценку %3$d звездоч. и написал отзыв, озаглавленный %4$s. %5$s %6$s.</item>
+        <item quantity="one">%1$s %2$s дал оценку %3$d звездоч. и написал отзыв, озаглавленный %4$s. %5$s %6$s.</item>
+        <item quantity="few">%1$s %2$s дал оценку %3$d звездоч. и написал отзыв, озаглавленный %4$s. %5$s %6$s.</item>
+        <item quantity="many">%1$s %2$s дал оценку %3$d звездоч. и написал отзыв, озаглавленный %4$s. %5$s %6$s.</item>
+    </plurals>
+    <plurals name="accessibility_reviews_buybox">
+        <item quantity="other">%1$d отзыва. Средняя оценка %2$s из 5</item>
+        <item quantity="one">%1$d отзыв. Средняя оценка %2$s из 5</item>
+        <item quantity="few">%1$d отзыва. Средняя оценка %2$s из 5</item>
+        <item quantity="many">%1$d отзывов. Средняя оценка %2$s из 5</item>
+    </plurals>
+    <plurals name="accessibility_reviews_count">
+        <item quantity="other">%d отзыва</item>
+        <item quantity="one">%d отзыв</item>
+        <item quantity="few">%d отзыва</item>
+        <item quantity="many">%d отзывов</item>
+    </plurals>
+    <plurals name="accessibility_saved_interests_found">
+        <item quantity="other">Найдено %1$d темы.</item>
+        <item quantity="one">Найдена %1$d тема.</item>
+        <item quantity="few">Найдено %1$d темы.</item>
+        <item quantity="many">Найдено %1$d тем.</item>
+    </plurals>
+    <plurals name="accessibility_saved_search_found">
+        <item quantity="other">Найдено %1$d запроса поиска.</item>
+        <item quantity="one">Найден %1$d запрос поиска.</item>
+        <item quantity="few">Найдено %1$d запроса поиска.</item>
+        <item quantity="many">Найдено %1$d запросов поиска.</item>
+    </plurals>
+    <plurals name="accessibility_saved_seller_found">
+        <item quantity="other">Найдено %1$d продавца.</item>
+        <item quantity="one">Найден %1$d продавец.</item>
+        <item quantity="few">Найдено %1$d продавца.</item>
+        <item quantity="many">Найдено %1$d продавцов.</item>
+    </plurals>
+    <plurals name="accessibility_seconds">
+        <item quantity="other">осталось %d сек.</item>
+        <item quantity="one">осталась %d сек.</item>
+        <item quantity="few">осталось %d сек.</item>
+        <item quantity="many">осталось %d сек.</item>
+    </plurals>
+    <plurals name="accessibility_sell_aspects_progress_meter">
+        <item quantity="other">%1$d из %2$d сведений заполнены</item>
+        <item quantity="one">%1$d из %2$d сведения заполнены</item>
+        <item quantity="few">%1$d из %2$d сведений заполнены</item>
+        <item quantity="many">%1$d из %2$d сведений заполнены</item>
+    </plurals>
+    <plurals name="accessibility_sell_landing_promo_offers_remaining">
+        <item quantity="other">Осталось промо-акций: %s</item>
+        <item quantity="one">Осталась %s промо-акция</item>
+        <item quantity="few">Осталось промо-акций: %s</item>
+        <item quantity="many">Осталось промо-акций: %s</item>
+    </plurals>
+    <plurals name="accessibility_sold_item_count">
+        <item quantity="other">%d проданных товара, кнопка</item>
+        <item quantity="one">%d проданный товар, кнопка</item>
+        <item quantity="few">%d проданных товара, кнопка</item>
+        <item quantity="many">%d проданных товаров, кнопка</item>
+    </plurals>
+    <plurals name="accessibility_unsold_item_count">
+        <item quantity="other">%d непроданных товара, кнопка</item>
+        <item quantity="one">%d непроданный товар, кнопка</item>
+        <item quantity="few">%d непроданных товара, кнопка</item>
+        <item quantity="many">%d непроданных товаров, кнопка</item>
+    </plurals>
+    <plurals name="accessibility_zero_x_and_x_cents">
+        <item quantity="other">(Приблиз. %1$s0 и %2$d цента)</item>
+        <item quantity="one">(%1$s0 и %2$d цент)</item>
+        <item quantity="few">(Приблиз. %1$s0 и %2$d цента)</item>
+        <item quantity="many">(Приблиз. %1$s0 и %2$d центов)</item>
+    </plurals>
+    <plurals name="active_list_label">
+        <item quantity="other">Активные</item>
+        <item quantity="one">Активные</item>
+        <item quantity="few">Активные</item>
+        <item quantity="many">Активные</item>
+    </plurals>
+    <plurals name="auto_relist_sublabel_with_duration">
+        <item quantity="other">Если ваш товар не будет продан, мы бесплатно разместим его повторно до %1$d раз со сроком публикации %2$s</item>
+        <item quantity="one">Если ваш товар не будет продан, мы бесплатно разместим его повторно %1$d раз со сроком публикации %2$s</item>
+        <item quantity="few">Если ваш товар не будет продан, мы бесплатно разместим его повторно до %1$d раз со сроком публикации %2$s</item>
+        <item quantity="many">Если ваш товар не будет продан, мы бесплатно разместим его повторно до %1$d раз со сроком публикации %2$s</item>
+    </plurals>
+    <plurals name="auto_relist_sublabel_without_duration">
+        <item quantity="other">Если ваш товар не будет продан, мы бесплатно разместим его повторно до %1$d раз.</item>
+        <item quantity="one">Если ваш товар не будет продан, мы бесплатно разместим его повторно %1$d раз.</item>
+        <item quantity="few">Если ваш товар не будет продан, мы бесплатно разместим его повторно до %1$d раз.</item>
+        <item quantity="many">Если ваш товар не будет продан, мы бесплатно разместим его повторно до %1$d раз.</item>
+    </plurals>
+    <plurals name="available_at_n_locations">
+        <item quantity="other">Доступно в %1$d ближайших пунктах</item>
+        <item quantity="one">Доступно в %1$d ближайшем пункте</item>
+        <item quantity="few">Доступно в %1$d ближайших пунктах</item>
+        <item quantity="many">Доступно в %1$d ближайших пунктах</item>
+    </plurals>
+    <plurals name="bid_count_label">
+        <item quantity="other">ставок</item>
+        <item quantity="one">ставка</item>
+        <item quantity="few">ставки</item>
+        <item quantity="many">ставок</item>
+    </plurals>
+    <plurals name="card_followingoverview_listingsformat">
+        <item quantity="other">%d товара на продажу</item>
+        <item quantity="one">%d товар на продажу</item>
+        <item quantity="few">%d товара на продажу</item>
+        <item quantity="many">%d товаров на продажу</item>
+    </plurals>
+    <plurals name="card_sellingoverview_activecount">
+        <item quantity="other">Активно</item>
+        <item quantity="one">Активно</item>
+        <item quantity="few">Активно</item>
+        <item quantity="many">Активно</item>
+    </plurals>
+    <plurals name="card_sellingoverview_soldcount">
+        <item quantity="other">Продано</item>
+        <item quantity="one">Продано</item>
+        <item quantity="few">Продано</item>
+        <item quantity="many">Продано</item>
+    </plurals>
+    <plurals name="card_sellingoverview_summarystring">
+        <item quantity="other">Итого за %d дн.</item>
+        <item quantity="one">Итого за %d дн.</item>
+        <item quantity="few">Итого за %d дн.</item>
+        <item quantity="many">Итого за %d дн.</item>
+    </plurals>
+    <plurals name="card_sellingoverview_unsoldcount">
+        <item quantity="other">Непродано</item>
+        <item quantity="one">Непродано</item>
+        <item quantity="few">Непродано</item>
+        <item quantity="many">Непродано</item>
+    </plurals>
+    <plurals name="characters_left">
+        <item quantity="other">Осталось %d символа</item>
+        <item quantity="one">Остался %d символ</item>
+        <item quantity="few">Осталось %d символа</item>
+        <item quantity="many">Осталось %d символов</item>
+    </plurals>
+    <plurals name="common_number_bids">
+        <item quantity="other">%d ставки</item>
+        <item quantity="one">%d ставка</item>
+        <item quantity="few">%d ставки</item>
+        <item quantity="many">%d ставок</item>
+    </plurals>
+    <plurals name="common_number_items">
+        <item quantity="other">%d товара</item>
+        <item quantity="one">%d товар</item>
+        <item quantity="few">%d товара</item>
+        <item quantity="many">%d товаров</item>
+    </plurals>
+    <plurals name="common_number_results_found">
+        <item quantity="other">%s результ.</item>
+        <item quantity="one">%s результат</item>
+        <item quantity="few">%s результ.</item>
+        <item quantity="many">%s результ.</item>
+    </plurals>
+    <plurals name="confirm_delete">
+        <item quantity="other">Вы действительно хотите удалить %d тов. из списка?</item>
+        <item quantity="one">Вы действительно хотите удалить %d товар из списка?</item>
+        <item quantity="few">Вы действительно хотите удалить %d тов. из списка?</item>
+        <item quantity="many">Вы действительно хотите удалить %d тов. из списка?</item>
+    </plurals>
+    <plurals name="confirm_following_seller_delete">
+        <item quantity="other">Вы действительно хотите удалить %d продавцов из списка?</item>
+        <item quantity="one">Вы действительно хотите удалить %d продавца из списка?</item>
+        <item quantity="few">Вы действительно хотите удалить %d продавца из списка?</item>
+        <item quantity="many">Вы действительно хотите удалить %d продавцов из списка?</item>
+    </plurals>
+    <plurals name="delivery_time_precise">
+        <item quantity="other">%s раб. дня</item>
+        <item quantity="one">%s раб. день</item>
+        <item quantity="few">%s раб. дня</item>
+        <item quantity="many">%s раб. дней</item>
+    </plurals>
+    <plurals name="duration_days">
+        <item quantity="other">%s дн.</item>
+        <item quantity="one">%s день</item>
+        <item quantity="few">%s дн.</item>
+        <item quantity="many">%s дн.</item>
+    </plurals>
+    <plurals name="error_message_low_resolution">
+        <item quantity="other">Размер изображения должен составлять не менее %d пикселей по большей стороне.</item>
+        <item quantity="one">Размер изображения должен составлять не менее %d пикселя по большей стороне.</item>
+        <item quantity="few">Размер изображения должен составлять не менее %d пикселей по большей стороне.</item>
+        <item quantity="many">Размер изображения должен составлять не менее %d пикселей по большей стороне.</item>
+    </plurals>
+    <plurals name="feed_collection_items">
+        <item quantity="other">%1$d товара добавлено в %2$s</item>
+        <item quantity="one">%1$d товар добавлен в %2$s</item>
+        <item quantity="few">%1$d товара добавлено в %2$s</item>
+        <item quantity="many">%1$d товаров добавлено в %2$s</item>
+    </plurals>
+    <plurals name="filter_applied_accessibility">
+        <item quantity="other">Применен фильтр (%d)</item>
+        <item quantity="one">Применен фильтр (%d)</item>
+        <item quantity="few">Применен фильтр (%d)</item>
+        <item quantity="many">Применен фильтр (%d)</item>
+    </plurals>
+    <plurals name="following_collection_count">
+        <item quantity="other">%d коллекции</item>
+        <item quantity="one">%d коллекция</item>
+        <item quantity="few">%d коллекции</item>
+        <item quantity="many">%d коллекций</item>
+    </plurals>
+    <plurals name="following_interest_count">
+        <item quantity="other">%d тем</item>
+        <item quantity="one">%d тема</item>
+        <item quantity="few">%d темы</item>
+        <item quantity="many">%d тем</item>
+    </plurals>
+    <plurals name="following_member_count">
+        <item quantity="other">%d участника</item>
+        <item quantity="one">%d участник</item>
+        <item quantity="few">%d участника</item>
+        <item quantity="many">%d участников</item>
+    </plurals>
+    <plurals name="following_search_count">
+        <item quantity="other">%d запроса поиска</item>
+        <item quantity="one">%d запрос поиска</item>
+        <item quantity="few">%d запроса поиска</item>
+        <item quantity="many">%d запросов поиска</item>
+    </plurals>
+    <plurals name="following_seller_count">
+        <item quantity="other">%d продавца</item>
+        <item quantity="one">%d продавец</item>
+        <item quantity="few">%d продавца</item>
+        <item quantity="many">%d продавцов</item>
+    </plurals>
+    <plurals name="gallery_picker_accessibility_selection_status">
+        <item quantity="other">Выбрано %1$d фото для загрузки. Выберите до %2$d</item>
+        <item quantity="one">Выбрано 1 фото для загрузки. Выберите до %2$d</item>
+        <item quantity="few">Выбрано %1$d фото для загрузки. Выберите до %2$d</item>
+        <item quantity="many">Выбрано %1$d фото для загрузки. Выберите до %2$d</item>
+    </plurals>
+    <plurals name="gallery_picker_count">
+        <item quantity="other">%1$d из %2$d</item>
+        <item quantity="one">%1$d из %2$d</item>
+        <item quantity="few">%1$d из %2$d</item>
+        <item quantity="many">%1$d из %2$d</item>
+    </plurals>
+    <plurals name="handling_time">
+        <item quantity="other">%s раб. дней</item>
+        <item quantity="one">%s раб. дня</item>
+        <item quantity="few">%s раб. дня</item>
+        <item quantity="many">%s раб. дней</item>
+    </plurals>
+    <plurals name="homescreen_card_accessibility_notification_count">
+        <item quantity="other">%d уведомления</item>
+        <item quantity="one">%d уведомление</item>
+        <item quantity="few">%d уведомления</item>
+        <item quantity="many">%d уведомлений</item>
+    </plurals>
+    <plurals name="hotness_n_plus_sold">
+        <item quantity="other">Продано более %1$d</item>
+        <item quantity="one">Продано более %1$d</item>
+        <item quantity="few">Продано более %1$d</item>
+        <item quantity="many">Продано более %1$d</item>
+    </plurals>
+    <plurals name="hotness_quantity_available">
+        <item quantity="other">Осталось всего %1$d тов.</item>
+        <item quantity="one">Остался всего %1$d товар</item>
+        <item quantity="few">Осталось всего %1$d тов.</item>
+        <item quantity="many">Осталось всего %1$d тов.</item>
+    </plurals>
+    <plurals name="hotness_quantity_sold_24_hour">
+        <item quantity="other">%1$d продано за 24 ч</item>
+        <item quantity="one">%1$d продан за 24 ч</item>
+        <item quantity="few">%1$d продано за 24 ч</item>
+        <item quantity="many">%1$d продано за 24 ч</item>
+    </plurals>
+    <plurals name="hotness_quantity_sold_one_hour">
+        <item quantity="other">%1$d продано за 1 ч</item>
+        <item quantity="one">%1$d продан за 1 ч</item>
+        <item quantity="few">%1$d продано за 1 ч</item>
+        <item quantity="many">%1$d продано за 1 ч</item>
+    </plurals>
+    <plurals name="hotness_quantity_sold_total">
+        <item quantity="other">%1$d продано</item>
+        <item quantity="one">%1$d продано</item>
+        <item quantity="few">%1$d продано</item>
+        <item quantity="many">%1$d продано</item>
+    </plurals>
+    <plurals name="image_search_number_results_found">
+        <item quantity="other">%s визуально похожих результата</item>
+        <item quantity="one">%s визуально похожий результат</item>
+        <item quantity="few">%s визуально похожих результата</item>
+        <item quantity="many">%s визуально похожих результатов</item>
+    </plurals>
+    <plurals name="installer_map_tire_installation_numbers">
+        <item quantity="other">Установка х %d шин</item>
+        <item quantity="one">Установка х %d шина</item>
+        <item quantity="few">Установка х %d шины</item>
+        <item quantity="many">Установка х %d шин</item>
+    </plurals>
+    <plurals name="installer_map_tire_numbers">
+        <item quantity="other">Шины х %d</item>
+        <item quantity="one">Шина х %d</item>
+        <item quantity="few">Шины х %d</item>
+        <item quantity="many">Шины х %d</item>
+    </plurals>
+    <plurals name="intent_number_recently_viewed_groups">
+        <item quantity="other">%1$d группы</item>
+        <item quantity="one">%1$d группа</item>
+        <item quantity="few">%1$d группы</item>
+        <item quantity="many">%1$d групп</item>
+    </plurals>
+    <plurals name="intl_shipping_region_selected">
+        <item quantity="other">Выбрано %d региона</item>
+        <item quantity="one">Выбран %d регион</item>
+        <item quantity="few">Выбрано %d региона</item>
+        <item quantity="many">Выбрано %d регионов</item>
+    </plurals>
+    <plurals name="item_view_more_than_xx_available">
+        <item quantity="other">Доступно более %d</item>
+        <item quantity="one">Доступно более %d</item>
+        <item quantity="few">Доступно более %d</item>
+        <item quantity="many">Доступно более %d</item>
+    </plurals>
+    <plurals name="item_view_num_bids">
+        <item quantity="other">%d ставки</item>
+        <item quantity="one">%d ставка</item>
+        <item quantity="few">%d ставки</item>
+        <item quantity="many">%d ставок</item>
+    </plurals>
+    <plurals name="item_view_quantity_available">
+        <item quantity="other">%d в наличии</item>
+        <item quantity="one">%d в наличии</item>
+        <item quantity="few">%d в наличии</item>
+        <item quantity="many">%d в наличии</item>
+    </plurals>
+    <plurals name="item_view_quantity_sold">
+        <item quantity="other">%d продано</item>
+        <item quantity="one">%d продан</item>
+        <item quantity="few">%d продано</item>
+        <item quantity="many">%d продано</item>
+    </plurals>
+    <plurals name="label_see_all_reviews">
+        <item quantity="other">См. все %d отзыва</item>
+        <item quantity="one">См. %d отзыв</item>
+        <item quantity="few">См. все %d отзыва</item>
+        <item quantity="many">См. все %d отзывов</item>
+    </plurals>
+    <plurals name="messages_confirm_delete">
+        <item quantity="other">Удалить %d сообщений?</item>
+        <item quantity="one">Удалить %d сообщение?</item>
+        <item quantity="few">Удалить %d сообщения?</item>
+        <item quantity="many">Удалить %d сообщений?</item>
+    </plurals>
+    <plurals name="messages_deleted">
+        <item quantity="other">Удалено %d сообщения</item>
+        <item quantity="one">Удалено %d сообщение</item>
+        <item quantity="few">Удалено %d сообщения</item>
+        <item quantity="many">Удалено %d сообщений</item>
+    </plurals>
+    <plurals name="messages_flagged">
+        <item quantity="other">%d сообщения отмечено флажком</item>
+        <item quantity="one">%d сообщение отмечено флажком</item>
+        <item quantity="few">%d сообщения отмечено флажком</item>
+        <item quantity="many">%d сообщений отмечено флажком</item>
+    </plurals>
+    <plurals name="messages_marked_read">
+        <item quantity="other">%d сообщения отмечено как прочитанные</item>
+        <item quantity="one">%d сообщение отмечено как прочитанное</item>
+        <item quantity="few">%d сообщения отмечено как прочитанные</item>
+        <item quantity="many">%d сообщений отмечено как прочитанные</item>
+    </plurals>
+    <plurals name="messages_marked_unread">
+        <item quantity="other">%d сообщения отмечено как непрочитанные</item>
+        <item quantity="one">%d сообщение отмечено как непрочитанное</item>
+        <item quantity="few">%d сообщения отмечено как непрочитанные</item>
+        <item quantity="many">%d сообщений отмечено как непрочитанные</item>
+    </plurals>
+    <plurals name="messages_moved">
+        <item quantity="other">Перемещено %d сообщения</item>
+        <item quantity="one">Перемещено %d сообщение</item>
+        <item quantity="few">Перемещено %d сообщения</item>
+        <item quantity="many">Перемещено %d сообщений</item>
+    </plurals>
+    <plurals name="messages_restored">
+        <item quantity="other">%d сообщения восстановлено</item>
+        <item quantity="one">%d сообщение восстановлено</item>
+        <item quantity="few">%d сообщения восстановлено</item>
+        <item quantity="many">%d сообщений восстановлено</item>
+    </plurals>
+    <plurals name="messages_selection_count">
+        <item quantity="other">%d выбрано</item>
+        <item quantity="one">%d выбран</item>
+        <item quantity="few">%d выбрано</item>
+        <item quantity="many">%d выбрано</item>
+    </plurals>
+    <plurals name="messages_unflagged">
+        <item quantity="other">с %d сообщений снят флажок</item>
+        <item quantity="one">с %d сообщения снят флажок</item>
+        <item quantity="few">с %d сообщений снят флажок</item>
+        <item quantity="many">с %d сообщений снят флажок</item>
+    </plurals>
+    <plurals name="nectar_booster_points">
+        <item quantity="other">+ %d бонусных очка</item>
+        <item quantity="one">+ %d бонусное очко</item>
+        <item quantity="few">+ %d бонусных очка</item>
+        <item quantity="many">+ %d бонусных очков</item>
+    </plurals>
+    <plurals name="nectar_points">
+        <item quantity="other">Получите %d очка</item>
+        <item quantity="one">Получите %d очко</item>
+        <item quantity="few">Получите %d очка</item>
+        <item quantity="many">Получите %d очков</item>
+    </plurals>
+    <plurals name="negative_feedback_count">
+        <item quantity="other">%d пользоват. оценили этот отзыв отрицательно.</item>
+        <item quantity="one">%d пользователь оценил этот отзыв отрицательно.</item>
+        <item quantity="few">%d пользоват. оценили этот отзыв отрицательно.</item>
+        <item quantity="many">%d пользоват. оценили этот отзыв отрицательно.</item>
+    </plurals>
+    <plurals name="offer_shipping_for_multiple_items">
+        <item quantity="other">за %1$d товара</item>
+        <item quantity="one">за %1$d товар</item>
+        <item quantity="few">за %1$d товара</item>
+        <item quantity="many">за %1$d товаров</item>
+    </plurals>
+    <plurals name="offer_validity_buyer_final_hours">
+        <item quantity="other">Срок отправленного вами окончательного предложения истекает раньше, чем через %d ч.</item>
+        <item quantity="one">Срок отправленного вами окончательного предложения истекает раньше, чем через %d час.</item>
+        <item quantity="few">Срок отправленного вами окончательного предложения истекает раньше, чем через %d ч.</item>
+        <item quantity="many">Срок отправленного вами окончательного предложения истекает раньше, чем через %d ч.</item>
+    </plurals>
+    <plurals name="offer_validity_buyer_final_minutes">
+        <item quantity="other">Срок отправленного вами окончательного предложения истекает раньше, чем через %d мин.</item>
+        <item quantity="one">Срок отправленного вами окончательного предложения истекает раньше, чем через %d минуту.</item>
+        <item quantity="few">Срок отправленного вами окончательного предложения истекает раньше, чем через %d мин.</item>
+        <item quantity="many">Срок отправленного вами окончательного предложения истекает раньше, чем через %d мин.</item>
+    </plurals>
+    <plurals name="offer_validity_buyer_first_offer_hours">
+        <item quantity="other">Срок отправленного вами предложения истекает раньше, чем через %d ч.</item>
+        <item quantity="one">Срок отправленного вами предложения истекает раньше, чем через %d час.</item>
+        <item quantity="few">Срок отправленного вами предложения истекает раньше, чем через %d ч.</item>
+        <item quantity="many">Срок отправленного вами предложения истекает раньше, чем через %d ч.</item>
+    </plurals>
+    <plurals name="offer_validity_buyer_first_offer_minutes">
+        <item quantity="other">Срок отправленного вами предложения истекает раньше, чем через %d мин.</item>
+        <item quantity="one">Срок отправленного вами предложения истекает раньше, чем через %d минуту.</item>
+        <item quantity="few">Срок отправленного вами предложения истекает раньше, чем через %d мин.</item>
+        <item quantity="many">Срок отправленного вами предложения истекает раньше, чем через %d мин.</item>
+    </plurals>
+    <plurals name="offer_validity_buyer_received_counter_hours">
+        <item quantity="other">Срок полученного вами встречного предложения истекает раньше, чем через %d ч.</item>
+        <item quantity="one">Срок полученного вами встречного предложения истекает раньше, чем через %d час.</item>
+        <item quantity="few">Срок полученного вами встречного предложения истекает раньше, чем через %d ч.</item>
+        <item quantity="many">Срок полученного вами встречного предложения истекает раньше, чем через %d ч.</item>
+    </plurals>
+    <plurals name="offer_validity_buyer_received_counter_minutes">
+        <item quantity="other">Срок полученного вами встречного предложения истекает раньше, чем через %d мин.</item>
+        <item quantity="one">Срок полученного вами встречного предложения истекает раньше, чем через %d минуту.</item>
+        <item quantity="few">Срок полученного вами встречного предложения истекает раньше, чем через %d мин.</item>
+        <item quantity="many">Срок полученного вами встречного предложения истекает раньше, чем через %d мин.</item>
+    </plurals>
+    <plurals name="offer_validity_counter_hours">
+        <item quantity="other">Срок отправленного вами встречного предложения истекает раньше, чем через %d ч.</item>
+        <item quantity="one">Срок отправленного вами встречного предложения истекает раньше, чем через %d час.</item>
+        <item quantity="few">Срок отправленного вами встречного предложения истекает раньше, чем через %d ч.</item>
+        <item quantity="many">Срок отправленного вами встречного предложения истекает раньше, чем через %d ч.</item>
+    </plurals>
+    <plurals name="offer_validity_counter_minutes">
+        <item quantity="other">Срок отправленного вами встречного предложения истекает раньше, чем через %d мин.</item>
+        <item quantity="one">Срок отправленного вами встречного предложения истекает раньше, чем через %d минуту.</item>
+        <item quantity="few">Срок отправленного вами встречного предложения истекает раньше, чем через %d мин.</item>
+        <item quantity="many">Срок отправленного вами встречного предложения истекает раньше, чем через %d мин.</item>
+    </plurals>
+    <plurals name="offer_validity_received_final_counter_hours">
+        <item quantity="other">Срок полученного вами окончательного предложения истекает раньше, чем через %d ч.</item>
+        <item quantity="one">Срок полученного вами окончательного предложения истекает раньше, чем через %d час.</item>
+        <item quantity="few">Срок полученного вами окончательного предложения истекает раньше, чем через %d ч.</item>
+        <item quantity="many">Срок полученного вами окончательного предложения истекает раньше, чем через %d ч.</item>
+    </plurals>
+    <plurals name="offer_validity_received_final_counter_minutes">
+        <item quantity="other">Срок полученного вами окончательного предложения истекает раньше, чем через %d мин.</item>
+        <item quantity="one">Срок полученного вами окончательного предложения истекает раньше, чем через %d минуту.</item>
+        <item quantity="few">Срок полученного вами окончательного предложения истекает раньше, чем через %d мин.</item>
+        <item quantity="many">Срок полученного вами окончательного предложения истекает раньше, чем через %d мин.</item>
+    </plurals>
+    <plurals name="offer_validity_seller_offer_hours">
+        <item quantity="other">Срок полученного вами предложения истекает раньше, чем через %d ч.</item>
+        <item quantity="one">Срок полученного вами предложения истекает раньше, чем через %d час.</item>
+        <item quantity="few">Срок полученного вами предложения истекает раньше, чем через %d ч.</item>
+        <item quantity="many">Срок полученного вами предложения истекает раньше, чем через %d ч.</item>
+    </plurals>
+    <plurals name="offer_validity_seller_offer_minutes">
+        <item quantity="other">Срок полученного вами предложения истекает раньше, чем через %d мин.</item>
+        <item quantity="one">Срок полученного вами предложения истекает раньше, чем через %d минуту.</item>
+        <item quantity="few">Срок полученного вами предложения истекает раньше, чем через %d мин.</item>
+        <item quantity="many">Срок полученного вами предложения истекает раньше, чем через %d мин.</item>
+    </plurals>
+    <plurals name="offer_validity_seller_received_counter_hours">
+        <item quantity="other">Срок полученного вами встречного предложения истекает раньше, чем через %d ч.</item>
+        <item quantity="one">Срок полученного вами встречного предложения истекает раньше, чем через %d час.</item>
+        <item quantity="few">Срок полученного вами встречного предложения истекает раньше, чем через %d ч.</item>
+        <item quantity="many">Срок полученного вами встречного предложения истекает раньше, чем через %d ч.</item>
+    </plurals>
+    <plurals name="offer_validity_seller_received_counter_minutes">
+        <item quantity="other">Срок полученного вами встречного предложения истекает раньше, чем через %d мин.</item>
+        <item quantity="one">Срок полученного вами встречного предложения истекает раньше, чем через %d минуту.</item>
+        <item quantity="few">Срок полученного вами встречного предложения истекает раньше, чем через %d мин.</item>
+        <item quantity="many">Срок полученного вами встречного предложения истекает раньше, чем через %d мин.</item>
+    </plurals>
+    <plurals name="offer_you_have_x_offers">
+        <item quantity="other">Вы получили %1$s предложения</item>
+        <item quantity="one">Вы получили %1$s предложение.</item>
+        <item quantity="few">Вы получили %1$s предложения</item>
+        <item quantity="many">Вы получили %1$s предложений</item>
+    </plurals>
+    <plurals name="offers_completed_accept">
+        <item quantity="other">Принято %d предложения</item>
+        <item quantity="one">Принято %d предложение</item>
+        <item quantity="few">Принято %d предложения</item>
+        <item quantity="many">Принято %d предложений</item>
+    </plurals>
+    <plurals name="offers_completed_declined">
+        <item quantity="other">Отклонено %d предложения</item>
+        <item quantity="one">Отклонено %d предложение</item>
+        <item quantity="few">Отклонено %d предложения</item>
+        <item quantity="many">Отклонено %d предложений</item>
+    </plurals>
+    <plurals name="offers_completed_expired">
+        <item quantity="other">Истекло %d предложения</item>
+        <item quantity="one">Истекло %d предложение</item>
+        <item quantity="few">Истекло %d предложения</item>
+        <item quantity="many">Истекло %d предложений</item>
+    </plurals>
+    <plurals name="package_weight_major_with_unit_imperial_accessible">
+        <item quantity="other">%s фунта</item>
+        <item quantity="one">%s фунт</item>
+        <item quantity="few">%s фунта</item>
+        <item quantity="many">%s фунтов</item>
+    </plurals>
+    <plurals name="package_weight_major_with_unit_metric_accessible">
+        <item quantity="other">%s килограммa</item>
+        <item quantity="one">%s килограмм</item>
+        <item quantity="few">%s килограммa</item>
+        <item quantity="many">%s килограмм</item>
+    </plurals>
+    <plurals name="package_weight_minor_with_unit_imperial_accessible">
+        <item quantity="other">%s унции</item>
+        <item quantity="one">%s унция</item>
+        <item quantity="few">%s унции</item>
+        <item quantity="many">%s унций</item>
+    </plurals>
+    <plurals name="package_weight_minor_with_unit_metric_accessible">
+        <item quantity="other">%s грамма</item>
+        <item quantity="one">%s грамм</item>
+        <item quantity="few">%s грамма</item>
+        <item quantity="many">%s грамм</item>
+    </plurals>
+    <plurals name="payment_reminder_sub_banner_pay_time_days">
+        <item quantity="other">На совершение оплаты у покупателей может уходить до %d дн.</item>
+        <item quantity="one">На совершение оплаты у покупателей может уходить до %d дн.</item>
+        <item quantity="few">На совершение оплаты у покупателей может уходить до %d дн.</item>
+        <item quantity="many">На совершение оплаты у покупателей может уходить до %d дн.</item>
+    </plurals>
+    <plurals name="payment_reminder_sub_banner_pay_time_hours">
+        <item quantity="other">На совершение оплаты у покупателей может уходить до %d ч.</item>
+        <item quantity="one">На совершение оплаты у покупателей может уходить до %d ч.</item>
+        <item quantity="few">На совершение оплаты у покупателей может уходить до %d ч.</item>
+        <item quantity="many">На совершение оплаты у покупателей может уходить до %d ч.</item>
+    </plurals>
+    <plurals name="photomanager_photos_deleted">
+        <item quantity="other">Удалено %1$d фото</item>
+        <item quantity="one">Удалено %1$d фото</item>
+        <item quantity="few">Удалено %1$d фото</item>
+        <item quantity="many">Удалено %1$d фото</item>
+    </plurals>
+    <plurals name="positive_feedback_count">
+        <item quantity="other">%d пользоват. оценили этот отзыв положительно.</item>
+        <item quantity="one">%d пользователь оценил этот отзыв положительно.</item>
+        <item quantity="few">%d пользоват. оценили этот отзыв положительно.</item>
+        <item quantity="many">%d пользоват. оценили этот отзыв положительно.</item>
+    </plurals>
+    <plurals name="product_ratings">
+        <item quantity="other">%d оценки товара</item>
+        <item quantity="one">%d оценка товара</item>
+        <item quantity="few">%d оценки товара</item>
+        <item quantity="many">%d оценок товара</item>
+    </plurals>
+    <plurals name="product_ratings_and_reviews">
+        <item quantity="other">%d оценки товара и отзыва</item>
+        <item quantity="one">%d оценка товара и отзыв</item>
+        <item quantity="few">%d оценки товара и отзыва</item>
+        <item quantity="many">%d оценок товара и отзывов</item>
+    </plurals>
+    <plurals name="psl_format_days">
+        <item quantity="other">%1$s дня</item>
+        <item quantity="one">%1$s день</item>
+        <item quantity="few">%1$s дня</item>
+        <item quantity="many">%1$s дней</item>
+    </plurals>
+    <plurals name="quantity_available">
+        <item quantity="other">%d в наличии</item>
+        <item quantity="one">%d в наличии</item>
+        <item quantity="few">%d в наличии</item>
+        <item quantity="many">%d в наличии</item>
+    </plurals>
+    <plurals name="rating_stars">
+        <item quantity="other">%d звездочки</item>
+        <item quantity="one">%d звездочка</item>
+        <item quantity="few">%d звездочки</item>
+        <item quantity="many">%d звездочек</item>
+    </plurals>
+    <plurals name="ratings">
+        <item quantity="other">%1$d оценки</item>
+        <item quantity="one">%1$d оценка</item>
+        <item quantity="few">%1$d оценки</item>
+        <item quantity="many">%1$d оценок</item>
+    </plurals>
+    <plurals name="reviews_photos_summary">
+        <item quantity="other">Вы загрузили %1$d фото. Чтобы редактировать, нажмите на фото.</item>
+        <item quantity="one">Вы загрузили %1$d фото. Чтобы редактировать, нажмите на фото.</item>
+        <item quantity="few">Вы загрузили %1$d фото. Чтобы редактировать, нажмите на фото.</item>
+        <item quantity="many">Вы загрузили %1$d фото. Чтобы редактировать, нажмите на фото.</item>
+    </plurals>
+    <plurals name="reviews_plural">
+        <item quantity="other">Отзывы: %d</item>
+        <item quantity="one">Отзывы: %d</item>
+        <item quantity="few">Отзывы: %d</item>
+        <item quantity="many">Отзывы: %d</item>
+    </plurals>
+    <plurals name="search_applied_filters_header_title_format">
+        <item quantity="other">%1$d фильтров применено</item>
+        <item quantity="one">%1$d фильтр применен</item>
+        <item quantity="few">%1$d фильтра применено</item>
+        <item quantity="many">%1$d фильтров применено</item>
+    </plurals>
+    <plurals name="search_applied_filters_pill_title_format">
+        <item quantity="other">%1$d применено</item>
+        <item quantity="one">%1$d применен</item>
+        <item quantity="few">%1$d применено</item>
+        <item quantity="many">%1$d применено</item>
+    </plurals>
+    <plurals name="search_landing_showing_n_suggestions_accessibility">
+        <item quantity="other">Показано %d варианта</item>
+        <item quantity="one">Показан %d вариант</item>
+        <item quantity="few">Показано %d варианта</item>
+        <item quantity="many">Показано %d вариантов</item>
+    </plurals>
+    <plurals name="search_refinement_guaranteed_delivery_shipping">
+        <item quantity="other">%d-дневная доставка</item>
+        <item quantity="one">%d-дневная доставка</item>
+        <item quantity="few">%d-дневная доставка</item>
+        <item quantity="many">%d-дневная доставка</item>
+    </plurals>
+    <plurals name="selected_item_count">
+        <item quantity="other">Выбрано %d товара</item>
+        <item quantity="one">Выбран %d товар</item>
+        <item quantity="few">Выбрано %d товара</item>
+        <item quantity="many">Выбрано %d товаров</item>
+    </plurals>
+    <plurals name="sell_photos_added_qty">
+        <item quantity="other">Добавлено %d фото</item>
+        <item quantity="one">Добавлено %d фото</item>
+        <item quantity="few">Добавлено %d фото</item>
+        <item quantity="many">Добавлено %d фото</item>
+    </plurals>
+    <plurals name="sell_recommendation_interested_buyers">
+        <item quantity="other">%d заинтересованных покупателя</item>
+        <item quantity="one">%d заинтересованный покупатель</item>
+        <item quantity="few">%d заинтересованных покупателя</item>
+        <item quantity="many">%d заинтересованных покупателей</item>
+    </plurals>
+    <plurals name="sell_showing_suggestions_accessibility">
+        <item quantity="other">Показано %d варианта</item>
+        <item quantity="one">Показан %d вариант</item>
+        <item quantity="few">Показано %d варианта</item>
+        <item quantity="many">Показано %d вариантов</item>
+    </plurals>
+    <plurals name="seller_offer_received_count">
+        <item quantity="other">Получено %d предложения</item>
+        <item quantity="one">Получено %d предложение</item>
+        <item quantity="few">Получено %d предложения</item>
+        <item quantity="many">Получено %d предложений</item>
+    </plurals>
+    <plurals name="seller_offer_sent_count">
+        <item quantity="other">Отправлено %d предложения</item>
+        <item quantity="one">Отправлено %d предложение</item>
+        <item quantity="few">Отправлено %d предложения</item>
+        <item quantity="many">Отправлено %d предложений</item>
+    </plurals>
+    <plurals name="selling_draft_recommendation_day_auction">
+        <item quantity="other">%1$s-дневный аукцион с начальной ценой %2$s</item>
+        <item quantity="one">%1$s-дневный аукцион с начальной ценой %2$s</item>
+        <item quantity="few">%1$s-дневный аукцион с начальной ценой %2$s</item>
+        <item quantity="many">%1$s-дневный аукцион с начальной ценой %2$s</item>
+    </plurals>
+    <plurals name="selling_draft_recommendation_day_auction_de">
+        <item quantity="other">%1$s-дневный аукцион; начальная цена: %2$s</item>
+        <item quantity="one">%1$s-дневный аукцион; начальная цена: %2$s</item>
+        <item quantity="few">%1$s-дневный аукцион; начальная цена: %2$s</item>
+        <item quantity="many">%1$s-дневный аукцион; начальная цена: %2$s</item>
+    </plurals>
+    <plurals name="selling_draft_summary_auction_label">
+        <item quantity="other">%1$s-дневный аукцион</item>
+        <item quantity="one">%1$s-дневный аукцион</item>
+        <item quantity="few">%1$s-дневный аукцион</item>
+        <item quantity="many">%1$s-дневный аукцион</item>
+    </plurals>
+    <plurals name="selling_list_new_offer_with_expiry">
+        <item quantity="other">%1$d новых предложения - предложение с высшей ценой истекает через %2$s</item>
+        <item quantity="one">%1$d новое предложение - истекает через %2$s</item>
+        <item quantity="few">%1$d новых предложения - предложение с высшей ценой истекает через %2$s</item>
+        <item quantity="many">%1$d новых предложений - предложение с высшей ценой истекает через %2$s</item>
+    </plurals>
+    <plurals name="selling_list_sold_order_summary_listing_count">
+        <item quantity="other">Всего товаров: %d</item>
+        <item quantity="one">"Всего товаров: %d "</item>
+        <item quantity="few">Всего товаров: %d</item>
+        <item quantity="many">Всего товаров: %d</item>
+    </plurals>
+    <plurals name="selling_overview_awaiting_payment">
+        <item quantity="other">В ожидании оплаты</item>
+        <item quantity="one">В ожидании оплаты</item>
+        <item quantity="few">В ожидании оплаты</item>
+        <item quantity="many">В ожидании оплаты</item>
+    </plurals>
+    <plurals name="selling_overview_did_not_sell">
+        <item quantity="other">Не продались, но могут быть размещены повторно</item>
+        <item quantity="one">Не продались, но могут быть размещены повторно</item>
+        <item quantity="few">Не продались, но могут быть размещены повторно</item>
+        <item quantity="many">Не продались, но могут быть размещены повторно</item>
+    </plurals>
+    <plurals name="selling_overview_new_offers">
+        <item quantity="other">Новых предложения</item>
+        <item quantity="one">Новое предложение</item>
+        <item quantity="few">Новых предложения</item>
+        <item quantity="many">Новых предложений</item>
+    </plurals>
+    <plurals name="selling_overview_paid_ship_now">
+        <item quantity="other">Оплачено - отправить</item>
+        <item quantity="one">Оплачено - отправить</item>
+        <item quantity="few">Оплачено - отправить</item>
+        <item quantity="many">Оплачено - отправить</item>
+    </plurals>
+    <plurals name="selling_overview_scheduled_listings">
+        <item quantity="other">Запланированных объявления</item>
+        <item quantity="one">Запланированное объявление</item>
+        <item quantity="few">Запланированных объявления</item>
+        <item quantity="many">Запланированных объявлений</item>
+    </plurals>
+    <plurals name="selling_overview_ship_when_paid">
+        <item quantity="other">Отправьте после оплаты</item>
+        <item quantity="one">Отправьте после оплаты</item>
+        <item quantity="few">Отправьте после оплаты</item>
+        <item quantity="many">Отправьте после оплаты</item>
+    </plurals>
+    <plurals name="selling_overview_will_sell">
+        <item quantity="other">Аукциона, на кот. товары будут проданы</item>
+        <item quantity="one">Аукцион, на кот. товар будет продан</item>
+        <item quantity="few">Аукциона, на кот. товары будут проданы</item>
+        <item quantity="many">Аукционов, на кот. товары будут проданы</item>
+    </plurals>
+    <plurals name="shopping_cart_accessibility_count">
+        <item quantity="other">Корзина, %1$s товара, кнопка.</item>
+        <item quantity="one">Корзина, %1$s товар, кнопка.</item>
+        <item quantity="few">Корзина, %1$s товара, кнопка.</item>
+        <item quantity="many">Корзина, %1$s товаров, кнопка.</item>
+    </plurals>
+    <plurals name="sio_seller_sent_offer">
+        <item quantity="other">Вы отправили предложение %d покупателям.</item>
+        <item quantity="one">Вы отправили предложение %d покупателю.</item>
+        <item quantity="few">Вы отправили предложение %d покупателям.</item>
+        <item quantity="many">Вы отправили предложение %d покупателям.</item>
+    </plurals>
+    <plurals name="sold_list_label">
+        <item quantity="other">Продано</item>
+        <item quantity="one">Продано</item>
+        <item quantity="few">Продано</item>
+        <item quantity="many">Продано</item>
+    </plurals>
+    <plurals name="srp_miles">
+        <item quantity="other">%,d мили</item>
+        <item quantity="one">%,d миля</item>
+        <item quantity="few">%,d мили</item>
+        <item quantity="many">%,d миль(-и)</item>
+    </plurals>
+    <plurals name="srp_ratings_count_accessibility">
+        <item quantity="other">%1$d оценки товара</item>
+        <item quantity="one">%1$d оценка товара</item>
+        <item quantity="few">%1$d оценки товара</item>
+        <item quantity="many">%1$d оценок товара</item>
+    </plurals>
+    <plurals name="status_bids">
+        <item quantity="other">ПОЛУЧЕНЫ СТАВКИ</item>
+        <item quantity="one">ПОЛУЧЕНА СТАВКА</item>
+        <item quantity="few">ПОЛУЧЕНЫ СТАВКИ</item>
+        <item quantity="many">ПОЛУЧЕНЫ СТАВКИ</item>
+    </plurals>
+    <plurals name="status_offer">
+        <item quantity="other">%d НОВЫХ ПРЕДЛОЖЕНИЯ</item>
+        <item quantity="one">%d НОВОЕ ПРЕДЛОЖЕНИЕ</item>
+        <item quantity="few">%d НОВЫХ ПРЕДЛОЖЕНИЯ</item>
+        <item quantity="many">%d НОВЫХ ПРЕДЛОЖЕНИЙ</item>
+    </plurals>
+    <plurals name="store_picker_fulfillment_format_days">
+        <item quantity="other">Готово через %1$d раб. дня</item>
+        <item quantity="one">Готово через %1$d раб. день</item>
+        <item quantity="few">Готово через %1$d раб. дня</item>
+        <item quantity="many">Готово через %1$d раб. дней</item>
+    </plurals>
+    <plurals name="store_picker_fulfillment_format_hours">
+        <item quantity="other">Готово через %1$d раб. часа</item>
+        <item quantity="one">Готово через %1$d раб. час</item>
+        <item quantity="few">Готово через %1$d раб. часа</item>
+        <item quantity="many">Готово через %1$d раб. часов</item>
+    </plurals>
+    <plurals name="store_picker_fulfillment_format_minutes">
+        <item quantity="other">Готово через %1$d минуты</item>
+        <item quantity="one">Готово через %1$d минуту</item>
+        <item quantity="few">Готово через %1$d минуты</item>
+        <item quantity="many">Готово через %1$d минут</item>
+    </plurals>
+    <plurals name="summary_simple_pricing_details">
+        <item quantity="other">%1$s-дневный аукцион, начальная цена</item>
+        <item quantity="one">%1$s-дневный аукцион, начальная цена</item>
+        <item quantity="few">%1$s-дневный аукцион, начальная цена</item>
+        <item quantity="many">%1$s-дневный аукцион, начальная цена</item>
+    </plurals>
+    <plurals name="time_duration_business_days">
+        <item quantity="other">%d раб. дня</item>
+        <item quantity="one">%d раб. день</item>
+        <item quantity="few">%d раб. дня</item>
+        <item quantity="many">%d раб. дней</item>
+    </plurals>
+    <plurals name="time_duration_calendar_days">
+        <item quantity="other">%d дня</item>
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+    </plurals>
+    <plurals name="time_duration_hours">
+        <item quantity="other">%d часа</item>
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+    </plurals>
+    <plurals name="time_duration_minutes">
+        <item quantity="other">%d минуты</item>
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+    </plurals>
+    <plurals name="time_duration_months">
+        <item quantity="other">%d месяца</item>
+        <item quantity="one">%d месяц</item>
+        <item quantity="few">%d месяца</item>
+        <item quantity="many">%d месяцев</item>
+    </plurals>
+    <plurals name="time_duration_seconds">
+        <item quantity="other">%d секунд</item>
+        <item quantity="one">%d секунда</item>
+        <item quantity="few">%d секунд</item>
+        <item quantity="many">%d секунд</item>
+    </plurals>
+    <plurals name="time_duration_years">
+        <item quantity="other">%d года</item>
+        <item quantity="one">%d год</item>
+        <item quantity="few">%d года</item>
+        <item quantity="many">%d лет</item>
+    </plurals>
+    <plurals name="trending_clicks_count">
+        <item quantity="other">%1$,d нажатия</item>
+        <item quantity="one">%1$,d нажатие</item>
+        <item quantity="few">%1$,d нажатия</item>
+        <item quantity="many">%1$,d нажатий</item>
+    </plurals>
+    <plurals name="trending_views_count">
+        <item quantity="other">%1$,d просмотра</item>
+        <item quantity="one">%1$,d просмотр</item>
+        <item quantity="few">%1$,d просмотра</item>
+        <item quantity="many">%1$,d просмотров</item>
+    </plurals>
+    <plurals name="unsold_list_label">
+        <item quantity="other">Не продано</item>
+        <item quantity="one">Не продано</item>
+        <item quantity="few">Не продано</item>
+        <item quantity="many">Не продано</item>
+    </plurals>
+    <plurals name="vehicle_history_report_buy_report_caption">
+        <item quantity="other">Для этого транспорт. ср-ва есть %d записи</item>
+        <item quantity="one">Для этого транспорт. ср-ва есть %d запись</item>
+        <item quantity="few">Для этого транспорт. ср-ва есть %d записи</item>
+        <item quantity="many">Для этого транспорт. ср-ва есть %d записей</item>
+    </plurals>
+    <plurals name="vehicle_history_report_buyable_price">
+        <item quantity="other">%1$d в одном отчете за %2$s</item>
+        <item quantity="one">Один отчет за %2$s</item>
+        <item quantity="few">%1$d в одном отчете за %2$s</item>
+        <item quantity="many">%1$d в одном отчете за %2$s</item>
+    </plurals>
+    <plurals name="view_count_label">
+        <item quantity="other">просмотрa</item>
+        <item quantity="one">Просмотр</item>
+        <item quantity="few">просмотрa</item>
+        <item quantity="many">просмотров</item>
+    </plurals>
+    <plurals name="view_item_offer_message_count_accessibility">
+        <item quantity="other">Введено %1$d из %2$d максим. символ.</item>
+        <item quantity="one">Введено %1$d из %2$d максим. символ.</item>
+        <item quantity="few">Введено %1$d из %2$d максим. символ.</item>
+        <item quantity="many">Введено %1$d из %2$d максим. символ.</item>
+    </plurals>
+    <plurals name="view_item_offers_left">
+        <item quantity="other">Осталось %d предложения</item>
+        <item quantity="one">Осталось %d предложение</item>
+        <item quantity="few">Осталось %d предложения</item>
+        <item quantity="many">Осталось %d предложений</item>
+    </plurals>
+    <plurals name="watcher_count_label">
+        <item quantity="other">отслеживающих</item>
+        <item quantity="one">отслеживающий</item>
+        <item quantity="few">отслеживающих</item>
+        <item quantity="many">отслеживающих</item>
+    </plurals>
+    <plurals name="watchers">
+        <item quantity="other">%1$d oтслеживающих</item>
+        <item quantity="one">%1$d отслеживающий</item>
+        <item quantity="few">%1$d oтслеживающих</item>
+        <item quantity="many">%1$d oтслеживающих</item>
+    </plurals>
+    <plurals name="watching">
+        <item quantity="other">Отслеживает: %1$d</item>
+        <item quantity="one">Отслеживает: %1$d</item>
+        <item quantity="few">Отслеживает: %1$d</item>
+        <item quantity="many">Отслеживает: %1$d</item>
+    </plurals>
+    <plurals name="watching_category_accessibility_text">
+        <item quantity="other">Категория %1$s. %2$d товара</item>
+        <item quantity="one">Категория %1$s. %2$d товар</item>
+        <item quantity="few">Категория %1$s. %2$d товара</item>
+        <item quantity="many">Категория %1$s. %2$d товаров</item>
+    </plurals>
+</resources>

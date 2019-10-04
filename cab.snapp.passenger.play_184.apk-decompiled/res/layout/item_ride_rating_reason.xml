@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView android:textColor="?colorPrimary" android:gravity="center" android:id="@id/item_ride_rating_reason_text_view" android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_very_small" style="@style/TextView.Default.Medium"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

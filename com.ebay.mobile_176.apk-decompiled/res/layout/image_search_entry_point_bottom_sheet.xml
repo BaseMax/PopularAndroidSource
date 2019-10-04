@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/image_search_picker_layout" android:paddingTop="@dimen/search_image_row_padding_top" android:paddingBottom="@dimen/search_image_row_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image_search_picker_icon" android:paddingTop="@dimen/search_image_icon_padding_top" android:layout_width="@dimen/search_image_icon_width" android:layout_height="@dimen/search_image_icon_height" android:layout_marginLeft="@dimen/ebayMargin2x" android:src="@drawable/ic_photo_camera_black_24dp" android:tint="?iconTintColorCheckable" />
+        <TextView android:textSize="@dimen/ebayTextSizeBody2" android:layout_gravity="center_horizontal" android:id="@id/image_search_picker_text" android:layout_width="wrap_content" android:layout_height="@dimen/search_image_text_height" android:layout_marginLeft="@dimen/ebayMargin4x" android:text="@string/image_search_dialog" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/redlazer_picker_layout" android:paddingTop="@dimen/search_image_row_padding_top" android:paddingBottom="@dimen/search_image_row_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/reslazser_picker_icon" android:paddingTop="@dimen/search_image_icon_padding_top" android:layout_width="@dimen/search_image_icon_width" android:layout_height="@dimen/search_image_icon_height" android:layout_marginLeft="@dimen/ebayMargin2x" android:src="?barcodeIcon" android:tint="?iconTintColorCheckable" />
+        <TextView android:textSize="@dimen/ebayTextSizeBody2" android:layout_gravity="center_horizontal" android:id="@id/redlazer_picker_text" android:layout_width="wrap_content" android:layout_height="@dimen/search_image_text_height" android:layout_marginLeft="@dimen/ebayMargin4x" android:text="@string/barcode_scan_dialog" />
+    </LinearLayout>
+</LinearLayout>

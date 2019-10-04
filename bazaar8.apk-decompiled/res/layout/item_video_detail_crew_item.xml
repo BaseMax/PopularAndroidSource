@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/item_video_detail_crew_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:ellipsize="end" android:id="@id/crewsTitle" android:tag="binding_1" android:paddingTop="@dimen/default_margin_one_half" android:paddingBottom="@dimen/default_margin_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="@dimen/default_margin_double" android:paddingEnd="@dimen/default_margin_double" style="@style/Bazaar.Text.Caption.Name" />
+    <FrameLayout android:orientation="vertical" android:id="@id/personsParentView" android:paddingTop="@dimen/default_margin_half" android:paddingBottom="@dimen/default_margin_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin_double" android:paddingEnd="@dimen/default_margin_double" />
+</LinearLayout>

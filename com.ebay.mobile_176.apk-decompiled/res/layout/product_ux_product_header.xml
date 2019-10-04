@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/product_ux_product_header_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" android:layout_marginStart="@dimen/ebayMargin" android:layout_marginEnd="@dimen/ebayMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:layout_gravity="center_vertical" android:id="@id/imageview_item_image" android:tag="binding_1" android:layout_width="@dimen/all_offers_product_image_size" android:layout_height="@dimen/all_offers_product_image_size" android:src="@drawable/ic_missing_image" android:scaleType="fitCenter" app:averageBackgroundColor="true" app:fadeInDuration="@integer/answers_image_fade_in_duration" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceTitle2" android:ellipsize="end" android:id="@id/textview_item_title" android:tag="binding_2" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_eek_rating" android:tag="binding_3" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <FrameLayout android:tag="binding_4" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/min_touch_target_unit" android:minHeight="@dimen/min_touch_target_unit">
+            <include layout="@layout/uxcomp_star_rating_small" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

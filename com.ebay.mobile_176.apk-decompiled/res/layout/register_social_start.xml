@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceHeadline2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayContentSideMargin" android:text="@string/native_register_message" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayContentSideMargin" android:layout_alignParentBottom="true">
+        <Button android:id="@id/button_classic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/sign_in_use_email" style="@style/EbayButton" />
+        <Button android:id="@id/button_google" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/native_registration_continue_google" style="@style/SignInGoogleButton" />
+        <Button android:id="@id/button_facebook" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/native_registration_continue_facebook" style="@style/SignInFacebookButton" />
+        <Button android:id="@id/button_business" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/native_register_create_business_account" style="@style/EbayButton.SecondaryAlt" />
+    </LinearLayout>
+</RelativeLayout>

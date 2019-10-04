@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="wrap_content" style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.mobile.sell.widget.CustomScrollView android:id="@id/parent_layout" android:layout_height="wrap_content" android:fillViewport="false" style="@style/Sell.Layout.Scroll">
+        <LinearLayout style="@style/Sell.Layout.ScrollChild.Content">
+            <TextView android:text="@string/label_ship_to" style="@style/Sell.Spoke.Title" />
+            <com.ebay.android.widget.ContainerLayout android:id="@id/region_container" style="@style/Sell.Layout.Container" />
+            <TextView android:id="@id/custom_locations_label" android:text="@string/label_custom_location" style="@style/Sell.Spoke.Title" />
+            <com.ebay.android.widget.ContainerLayout android:id="@id/custom_locations_container" android:background="@drawable/category_container_bg" style="@style/Sell.Layout.Container" />
+        </LinearLayout>
+    </com.ebay.mobile.sell.widget.CustomScrollView>
+</FrameLayout>

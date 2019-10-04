@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="@dimen/ebayPadding15" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/authorized_seller_header" android:paddingLeft="@dimen/ebayPadding15" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/authorized_seller_description" android:paddingLeft="@dimen/ebayPadding15" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

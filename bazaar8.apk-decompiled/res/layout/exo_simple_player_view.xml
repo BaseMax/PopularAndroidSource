@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+        <com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:layout_gravity="center" android:id="@id/exo_content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/exo_watermark" android:layout_width="48.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxHeight="48.0dip" android:layout_marginStart="8.0dip" />
+            <View android:id="@id/exo_shutter" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.google.android.exoplayer2.ui.SubtitleView android:id="@id/exo_subtitles" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.farsitel.bazaar.core.widget.loading.SpinKitView android:layout_gravity="center" android:id="@id/exo_buffering" android:layout_width="@dimen/loading_size" android:layout_height="@dimen/loading_size" android:indeterminate="true" app:loadingColor="@color/white" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/exo_error_message" android:background="@color/exo_error_message_background_color" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+        <FrameLayout android:id="@id/exo_ad_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/exo_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/exo_controller_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.farsitel.bazaar.core.widget.loading.SpinKitView android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="@dimen/loading_size" android:layout_height="@dimen/loading_size" app:loadingColor="@color/white" />
+    </FrameLayout>
+    <include layout="@layout/layout_quality_picker" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

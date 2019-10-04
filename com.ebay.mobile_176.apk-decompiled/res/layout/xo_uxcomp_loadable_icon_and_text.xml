@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/xo_uxcomp_loadable_icon_and_text_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/image" android:tag="binding_1" android:paddingLeft="0.0dip" android:paddingRight="@dimen/ebayMargin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/text" app:layout_constraintTop_toTopOf="parent" style="@style/Xo.Image.Large" />
+    <TextView android:id="@id/text" android:tag="binding_2" android:paddingLeft="0.0dip" android:paddingRight="@dimen/ebayMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/image" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

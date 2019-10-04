@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?listDividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/add_on_postal_code_available" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:id="@id/add_on_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update" android:contentDescription="@string/accessibility_update_postal_code" style="@style/EbayButton.Flat" />
+        </LinearLayout>
+        <TextView android:textAppearance="?textAppearanceCaption1" android:textColor="?textColorError" android:id="@id/postal_code_error_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMarginHalf" android:accessibilityLiveRegion="assertive" />
+    </LinearLayout>
+    <View android:background="?listDividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</merge>

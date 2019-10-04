@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="32.0sp" android:layout_gravity="center_horizontal" android:id="@id/text1" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/congratulations" android:drawableTop="@drawable/success_checkmark" android:drawablePadding="@dimen/ebayPadding2x" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/congrats_subtext" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayStaticMarginHalf" android:text="@string/your_item_is_listed" android:maxEms="18" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/guarantee_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayStaticMarginHalf" android:layout_marginTop="30.0dip" android:layout_marginRight="@dimen/ebayStaticMarginHalf">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/guarantee_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayStaticMarginHalf" android:text="@string/price_guarantee" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center_horizontal" android:id="@id/guarantee_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/price_guarantee_ineligible" android:maxEms="20" />
+            <com.ebay.mobile.listingform.helper.CustomStyleTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/guarantee_terms_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.ebay.android.widget.ButtonBar android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" ebay:positiveButtonId="@id/view_listing" ebay:positiveButtonText="@string/view_listing" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

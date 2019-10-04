@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/listContainerLightOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="@dimen/ebayPadding3x" android:paddingTop="@dimen/ebayPadding4x" android:paddingRight="@dimen/ebayPadding3x" android:paddingBottom="@dimen/ebayPadding4x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin15">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin15" android:src="@drawable/tire_learnmore" android:contentDescription="@string/accessibility_tire_learn_more_description" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tire_spec_section_width" android:importantForAccessibility="no" style="@style/MotorFinderIllustration" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tire_spec_aspect_ratio" android:importantForAccessibility="no" style="@style/MotorFinderIllustration" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tire_spec_rim_diameter" android:importantForAccessibility="no" style="@style/MotorFinderIllustration" />
+    </LinearLayout>
+</ScrollView>

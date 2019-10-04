@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/item_vitrin_app_0" android:paddingTop="@dimen/default_margin_double" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Bazaar.ContainerRipple"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.farsitel.bazaar.core.widget.AspectRatioImageView android:id="@id/relatedAppIcon" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="0.0dip" app:ratio="1" />
+    <com.farsitel.bazaar.widget.LocalAwareTextView android:id="@id/relatedAppName" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin4dp" app:gravity="START" style="@style/Bazaar.Text.Caption.PrimaryVitrin" />
+    <com.farsitel.bazaar.widget.NoDiscountTextView android:id="@id/relatedAppPriceNoDiscount" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin4dp" style="@style/Bazaar.Text.Body2" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:id="@id/relatedAppPrice" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin" style="@style/Bazaar.Text.Caption.SecondaryVitrin" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iapIcon" android:tag="binding_5" android:padding="@dimen/default_margin_quarter" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_billing" style="@style/Bazaar.Image.Icon" />
+    </LinearLayout>
+</LinearLayout>

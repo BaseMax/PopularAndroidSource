@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/store_location_container" android:background="?cardColor" android:paddingLeft="@dimen/xoMarginTiny" android:paddingTop="@dimen/xoMarginMedium" android:paddingRight="@dimen/xoMarginMediumLarge" android:paddingBottom="@dimen/xoMarginTiny" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/store_location_selector" android:layout_width="@dimen/xoLeftContentWidth" android:layout_height="fill_parent" style="@style/Xo.Row">
+        <RadioButton android:id="@id/store_radio_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/item_store_link" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/store_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/store_address1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/store_name" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/store_address2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/store_address1" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/store_city_and_postal_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/store_address2" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/store_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <com.ebay.android.widget.RemoteImageView android:id="@id/store_picker_ebay_plus_logo" android:visibility="gone" android:layout_width="@dimen/xoImageSize" android:layout_height="@dimen/xoShippingImageHeight" android:scaleType="fitEnd" android:layout_below="@id/store_distance" android:layout_alignParentRight="true" android:contentDescription="@null" ebay:fadeInDuration="@integer/checkoutImageFadeInDuration" />
+        <LinearLayout android:orientation="vertical" android:id="@id/store_hours" android:paddingTop="@dimen/xoMarginTiny" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/store_city_and_postal_code">
+            <TextView android:textAppearance="?textAppearanceCaption2" android:id="@id/store_hours_header" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xo_store_hours" />
+            <LinearLayout android:paddingTop="@dimen/xoMarginTiny" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/store_location_days_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?textAppearanceCaption2" android:id="@id/day_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/day_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/day_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/day_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/day_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/day_6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/day_7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/store_location_time_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xoMarginMedium">
+                    <TextView android:textAppearance="?textAppearanceCaption2" android:id="@id/hours_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/hours_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/hours_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/hours_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/hours_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/hours_6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/hours_7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/store_legal_text" android:paddingTop="@dimen/xoMarginTiny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xo_pudo_store_legal_text" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

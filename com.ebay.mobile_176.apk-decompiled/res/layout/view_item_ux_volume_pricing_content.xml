@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/volume_pricing" android:tag="layout/view_item_ux_volume_pricing_content_0" android:paddingLeft="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayNoMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/bulk_savings_textview" android:tag="binding_1" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:gravity="right" android:id="@id/quantity_disclaimer_textview" android:tag="binding_2" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.ebay.nautilus.shell.uxcomponents.widget.ScrollingContainerView android:id="@id/volume_pricing_scrolling_view" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ViewItemHorizontalListItemsStyle" />
+</LinearLayout>

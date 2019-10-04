@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vehicle_history_report_unavailable_reason_list">
+        <item>Le véhicule est trop récent.</item>
+        <item>Le véhicule a été construit avant 1981.</item>
+        <item>"Le véhicule n'a pas de numéro d'identification à 17 chiffres."</item>
+        <item>"Le véhicule n'était pas destiné au marché américain au moment de sa construction (éditions limitées ou modèles rares)."</item>
+        <item>"Le vendeur a mal saisi le numéro d'identification du véhicule."</item>
+    </string-array>
+</resources>

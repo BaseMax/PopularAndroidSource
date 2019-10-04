@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/valet_order_confirmation_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/confirmation_card" style="@style/Prelist.Card.Authenticate">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/confirmation_logo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:importantForAccessibility="no" app:srcCompat="@drawable/item_auth_confirmation_usps" />
+            <TextView android:textAppearance="?textAppearanceHeadline" android:textColor="@color/style_guide_green" android:id="@id/confirmation_header" android:tag="binding_1" android:layout_marginTop="@dimen/ebayMargin5x" style="@style/Prelist.eBayAuthenticate.TextView" />
+            <TextView android:textAppearance="?textAppearanceTitle1" android:textColor="@color/style_guide_gray" android:id="@id/confirmation_order" android:tag="binding_2" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin5x" style="@style/Prelist.eBayAuthenticate.TextView" />
+            <View style="@style/CommonDivider" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/confirmation_email" android:tag="binding_3" android:layout_marginTop="@dimen/ebayMargin2x" style="@style/Prelist.eBayAuthenticate.TextView" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/confirmation_instructions" android:tag="binding_4" android:layout_marginTop="@dimen/ebayMargin2x" style="@style/Prelist.eBayAuthenticate.TextView" />
+            <Button android:id="@id/confirmation_done_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x" android:text="@string/done" android:onClick="onDoneButtonClicked" style="@style/EbayButton" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

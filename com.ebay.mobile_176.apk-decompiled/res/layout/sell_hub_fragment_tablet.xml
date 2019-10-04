@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="false" style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/button_bar_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/sell_hub_button_bar_tablet" />
+    </FrameLayout>
+    <com.ebay.mobile.sell.widget.CustomScrollView android:id="@id/parent_layout" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/button_bar_frame">
+        <LinearLayout android:orientation="vertical" android:id="@id/listing_header" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip">
+            <com.ebay.android.widget.ContainerLayout android:id="@id/container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/sell_spokes" />
+                <View android:layout_gravity="right" android:background="@drawable/sell_hub_shadow" android:layout_width="4.0dip" android:layout_height="fill_parent" />
+            </com.ebay.android.widget.ContainerLayout>
+        </LinearLayout>
+    </com.ebay.mobile.sell.widget.CustomScrollView>
+</RelativeLayout>

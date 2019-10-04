@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/sell_landing_valet_card_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/valet_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/selling_card_valet_description" android:lineSpacingMultiplier="1.2" android:layout_marginEnd="@dimen/ebayMargin" app:layout_constraintEnd_toStartOf="@id/valet_image" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/valet_image" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ebayMargin" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/valet_divider" android:background="?listDividerHorizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dividerHeight" app:layout_constraintTop_toBottomOf="@id/valet_barrier" />
+    <Button android:id="@id/valet_button" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selling_card_valet_button" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/valet_divider" style="@style/EbayButton.Flat" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/valet_barrier" android:layout_width="fill_parent" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="valet_text,valet_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>

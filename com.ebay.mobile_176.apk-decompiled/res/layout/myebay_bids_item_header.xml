@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="left" android:tag="layout/myebay_bids_item_header_0" android:paddingTop="@dimen/ebayScalingPadding" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?textAppearanceBody1Secondary"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

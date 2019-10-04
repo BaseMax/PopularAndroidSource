@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/progress_container" />
+    <RelativeLayout android:id="@id/xo_content" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:background="?listContainerOutsideBackground" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/shipping_method_list" android:background="?listContainerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </RelativeLayout>
+</merge>

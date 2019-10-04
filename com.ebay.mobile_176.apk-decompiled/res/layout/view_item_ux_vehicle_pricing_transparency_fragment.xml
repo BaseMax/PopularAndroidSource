@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_item_ux_vehicle_pricing_transparency_fragment_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_transparency_title" style="@style/StyleGuideViewItemCardTitle" />
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemCard">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin">
+            <RelativeLayout android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/vehicle_pricing_rating_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_rating_title" android:layout_toLeftOf="@id/vehicle_pricing_rating_info_container" android:layout_centerVertical="true" />
+                <LinearLayout android:id="@id/vehicle_pricing_rating_info_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <ImageButton android:id="@id/vehicle_pricing_title_info" android:background="?android:selectableItemBackground" android:layout_width="@dimen/min_touch_target_unit" android:layout_height="@dimen/min_touch_target_unit" android:src="@drawable/info_icon" android:tint="?iconTintColor" android:contentDescription="@string/accessibility_info_icon" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/vehicle_pricing_container" android:layout_width="@dimen/vehicle_pricing_graph_width" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:tag="binding_1" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                            <View android:id="@id/vehicle_price_left_filling" android:layout_width="0.0dip" android:layout_height="wrap_content" />
+                            <include layout="@layout/view_item_vehicle_pricing_transparency_rating_container" />
+                            <View android:id="@id/vehicle_price_right_filling" android:layout_width="0.0dip" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/vehicle_distribution" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+                        <View android:id="@id/vehicle_price_indicator" android:layout_width="0.0dip" android:layout_height="wrap_content" />
+                        <View android:background="@color/black_65pct" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginBottom="@dimen/vehicle_pricing_indicator_margin" />
+                    </LinearLayout>
+                </FrameLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.125" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25">
+                        <TextView android:textAppearance="?textAppearanceCaption2" android:gravity="center_horizontal" android:padding="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_low_price" android:importantForAccessibility="no" />
+                        <TextView android:textAppearance="?textAppearanceCaption2" android:gravity="center_horizontal" android:id="@id/vehicle_vpt_low_price" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25" android:importantForAccessibility="noHideDescendants">
+                        <TextView android:textAppearance="?textAppearanceCaption2" android:gravity="center_horizontal" android:padding="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_market_price" />
+                        <TextView android:textAppearance="?textAppearanceCaption2" android:gravity="center_horizontal" android:id="@id/vehicle_vpt_market_price" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25" android:importantForAccessibility="noHideDescendants">
+                        <TextView android:textAppearance="?textAppearanceCaption2" android:gravity="center_horizontal" android:padding="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vehicle_pricing_high_price" />
+                        <TextView android:textAppearance="?textAppearanceCaption2" android:gravity="center_horizontal" android:id="@id/vehicle_vpt_high_price" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.125" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/vehicle_pricing_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/vehicle_pricing_rating_title" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

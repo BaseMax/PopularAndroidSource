@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sign_in_alert" android:paddingTop="@dimen/signInMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sign_in_error_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_error" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?colorAlert" android:gravity="center_vertical" android:id="@id/sign_in_alert_text_view" android:paddingLeft="@dimen/signInMargin" android:paddingRight="@dimen/signInMargin" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/sign_in_error_image" android:importantForAccessibility="yes" />
+</RelativeLayout>

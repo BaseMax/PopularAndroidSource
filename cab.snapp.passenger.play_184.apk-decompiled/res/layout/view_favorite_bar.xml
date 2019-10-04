@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cab.snapp.passenger.units.favorite_bar.FavoriteBarView android:background="@color/pure_white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/view_favorite_bar_recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/divider" />
+    <View android:id="@id/divider" android:background="@color/alto" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/view_main_header_toolbar" android:layout_alignParentBottom="true" />
+</cab.snapp.passenger.units.favorite_bar.FavoriteBarView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView style="@style/Sell.Card.ListingForm">
+            <RelativeLayout android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/sell_package_details_unknown_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.SwitchCompat android:id="@id/package_details_unknown_toggle" android:text="@string/package_details_unknown_label" style="@style/Sell.Switch" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/sell_package_weight_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sell_package_details_unknown_container">
+                    <TextView android:id="@id/package_weight_title" android:text="@string/shipping_calculator_weight" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/Sell.Details.PackageLabel" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/sell_package_weight_major_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:layout_below="@id/sell_package_weight_header_container">
+                    <TextView android:id="@id/package_weight_major_unit" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:text="@string/package_weight_unit_major_imperial_label" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:labelFor="@id/package_weight_major_value" style="@style/Sell.ShippingDetails.Label" />
+                    <EditText android:id="@id/package_weight_major_value" android:layout_below="@id/package_weight_major_unit" style="@style/Sell.ShippingDetails.EditText.Weight" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/sell_package_weight_minor_container" android:paddingBottom="@dimen/ebayMargin2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sell_package_weight_major_container">
+                    <TextView android:id="@id/package_weight_minor_unit" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:text="@string/package_weight_unit_minor_imperial_label" android:layout_alignParentLeft="true" android:labelFor="@id/package_weight_minor_value" style="@style/Sell.ShippingDetails.Label" />
+                    <EditText android:id="@id/package_weight_minor_value" android:layout_below="@id/package_weight_minor_unit" style="@style/Sell.ShippingDetails.EditText.Weight" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sell_package_weight_minor_container">
+                    <RelativeLayout android:id="@id/sell_package_dimension_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/package_dimensions_title" android:text="@string/shipping_calculator_dimensions" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/Sell.Details.PackageLabel" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/sell_package_length_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:layout_below="@id/sell_package_dimension_header_container">
+                        <TextView android:id="@id/package_length_label" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:text="@string/label_length_stateless" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:labelFor="@id/package_length_value" style="@style/Sell.ShippingDetails.Label" />
+                        <EditText android:id="@id/package_length_value" android:layout_below="@id/package_length_label" style="@style/Sell.ShippingDetails.EditText.Dimensions" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/sell_package_width_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:layout_below="@id/sell_package_length_container">
+                        <TextView android:id="@id/package_width_label" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:text="@string/label_width_stateless" android:layout_alignParentLeft="true" android:labelFor="@id/package_width_value" style="@style/Sell.ShippingDetails.Label" />
+                        <EditText android:id="@id/package_width_value" android:layout_below="@id/package_width_label" style="@style/Sell.ShippingDetails.EditText.Dimensions" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/sell_package_height_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sell_package_width_container">
+                        <TextView android:id="@id/package_depth_label" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:text="@string/label_height_stateless" android:layout_alignParentLeft="true" android:labelFor="@id/package_depth_value" style="@style/Sell.ShippingDetails.Label" />
+                        <EditText android:id="@id/package_depth_value" android:layout_below="@id/package_depth_label" style="@style/Sell.ShippingDetails.EditText.Dimensions" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_appdetail_more_description_0" android:paddingTop="@dimen/default_margin_half" android:paddingBottom="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:id="@id/appDescriptionMoreText" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/more" style="@style/Bazaar.Text.FlatRipple" />
+</FrameLayout>

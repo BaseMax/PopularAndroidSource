@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="?colorAccent" android:gravity="center_vertical" android:tag="layout/search_overflow_actionable_option_0" android:padding="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:textAlignment="gravity" style="?textAppearanceTitle2"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

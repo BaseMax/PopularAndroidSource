@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/onboarding_fragment_background" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/progress_container" />
+    <com.ebay.nautilus.shell.widget.EbaySwipeRefreshLayout android:id="@id/swipe_to_refresh_main" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?textAppearanceHeadline" android:ellipsize="end" android:id="@id/tablet_bubble" android:background="@drawable/onboarding_question_bubble" android:padding="@dimen/baseline_unit_2x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/baseline_unit_2x" android:maxLines="2" android:elevation="@dimen/onboarding_tab_shadow" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view_main" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <RelativeLayout android:id="@id/question_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:animateLayoutChanges="true">
+            <TextView android:gravity="center" android:id="@id/count_circle" android:background="@drawable/onboarding_circle" android:visibility="gone" android:layout_width="@dimen/baseline_unit_4x" android:layout_height="@dimen/baseline_unit_4x" android:layout_marginLeft="@dimen/baseline_unit" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:elevation="@dimen/card_elevation" />
+            <TextView android:id="@id/cta_button" android:padding="@dimen/baseline_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/EbayButton.Flat" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ViewStub android:id="@id/container_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/container_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

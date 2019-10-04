@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/central_image_size" android:layout_height="@dimen/central_image_size" app:srcCompat="@drawable/ic_notfound" />
+    <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:id="@id/notFoundText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_triple" android:text="@string/data_not_found" android:lineSpacingExtra="4.0dip" android:layout_marginStart="@dimen/default_margin_triple" android:layout_marginEnd="@dimen/default_margin_triple" style="@style/Bazaar.Text.Body2.Dark" />
+</LinearLayout>

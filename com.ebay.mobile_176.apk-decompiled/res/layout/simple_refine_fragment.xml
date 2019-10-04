@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/simple_refine_title_height">
+        <TextView android:id="@id/simple_refine_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refine" android:layout_centerInParent="true" />
+        <TextView android:textAppearance="?textAppearanceBody2Accent" android:gravity="center" android:id="@id/simple_refine_done" android:padding="@dimen/ebayPadding2x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/done" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/simple_refine_recycler" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Button android:gravity="center" android:id="@id/simple_refine_reset" android:layout_width="fill_parent" android:layout_height="@dimen/simple_refine_button_height" android:layout_margin="@dimen/ebayMargin2x" android:text="@string/reset" style="@style/EbayButton.White" />
+</LinearLayout>

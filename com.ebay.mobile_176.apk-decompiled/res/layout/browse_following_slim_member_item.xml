@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.common.SelectableContainerLayout android:background="?cardColor" android:layout_width="fill_parent" android:layout_height="wrap_content" res_auto:selectionBackground="?listItemSelectedBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/following_item_padding" android:paddingRight="@dimen/following_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" res_auto:foreground="?android:selectableItemBackground">
+        <com.ebay.mobile.widget.UserThumbnail android:id="@id/thumbnail" android:layout_width="@dimen/following_avatar_size" android:layout_height="@dimen/following_avatar_size" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin3x" android:layout_marginRight="@dimen/ebayMargin8x" android:layout_marginBottom="@dimen/ebayMargin3x" android:layout_toRightOf="@id/thumbnail" android:layout_centerVertical="true">
+            <TextView android:textAppearance="?textAppearanceSubhead" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/following_profile_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.ebay.mobile.common.SelectableContainerLayout>

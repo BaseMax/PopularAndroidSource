@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/added_to_cart_dialog_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/added_to_cart_toolbar" />
+    <androidx.core.widget.NestedScrollView android:id="@id/added_to_cart_scrollview" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/added_to_cart_scroll_layout" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ebay.nautilus.shell.uxcomponents.widget.SingleItemContainerView android:id="@id/added_to_cart_card_container" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/baseline_unit_2x" style="@style/AddedToCartSingleItemCardStyle" />
+            <include android:id="@id/placement_100936" layout="@layout/added_to_cart_dialog_complementary_placement" />
+            <com.ebay.nautilus.shell.uxcomponents.widget.ScrollingContainerView android:id="@id/placement_100941" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddedToCartDialogHorizontalListItemsCardStyle" />
+            <com.ebay.nautilus.shell.uxcomponents.widget.ScrollingContainerView android:id="@id/placement_100950" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AddedToCartDialogHorizontalListItemsCardStyle" />
+            <include android:id="@id/placement_100951" layout="@layout/added_to_cart_dialog_complementary_placement" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <Button android:layout_gravity="center" android:id="@id/call_to_action_button" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/baseline_unit" android:minHeight="54.0dip" style="@style/EbayButton" />
+</LinearLayout>

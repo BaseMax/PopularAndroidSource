@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/intent_edit_button_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <Button android:layout_gravity="center_vertical" android:id="@id/cancel_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" style="@style/EbayButton.Flat" />
+        <View android:id="@id/view_separator" android:background="?android:dividerVertical" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/ebayStaticMargin15" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/intent_select_all_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_homescreen_intent_select_all_checkbox_text" style="@style/EbayButton.Flat" />
+    </LinearLayout>
+    <Button android:layout_gravity="center|right" android:id="@id/edit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit" style="@style/EbayButton.Flat" />
+</FrameLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:theme="@style/AppTheme.Notification.NonDs6" android:ellipsize="end" android:gravity="center|left" android:id="@id/button" android:paddingTop="@dimen/ebayPadding15" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="@dimen/ebayPadding2x" android:paddingEnd="@dimen/ebayPadding2x" style="@style/Notification.EbayButton.Flat.NonDs6"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

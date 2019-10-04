@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/cash_it_in_card" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.Card.ListAnItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ebayMargin4x">
+            <LinearLayout android:orientation="vertical" android:id="@id/cashContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_above="@id/sell_something_button" android:layout_alignLeft="@id/sell_something_button" android:layout_alignRight="@id/sell_something_button">
+                <TextView android:textAppearance="?textAppearanceHeadline" android:textColor="@color/ebay_text_color_primary" android:id="@id/cashTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMarginHalf" android:text="@string/cash_it_in" android:maxLines="2" android:textAllCaps="true" />
+                <TextView android:textAppearance="?textAppearanceSubheadSecondary" android:textColor="@color/ebay_text_color_secondary" android:id="@id/cashDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x" android:maxLines="2" />
+            </LinearLayout>
+            <Button android:gravity="center" android:id="@id/sell_something_button" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="@string/sell_something_today" android:layout_alignParentBottom="true" style="@style/Sell.ListAnItemButton" />
+        </RelativeLayout>
+        <com.ebay.android.widget.RemoteImageView android:id="@id/cash_in_image" android:layout_width="@dimen/homescreen_card_cash_it_in_full_image_width" android:layout_height="@dimen/homescreen_card_cash_it_in_image_height" android:contentDescription="@null" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

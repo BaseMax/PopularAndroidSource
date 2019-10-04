@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/listContainerLightInsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/ebayContentSideMargin" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="?textAppearanceHeadline2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sign_in_hello" />
+        <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/text_google_sign_in_greeting" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/sign_in_social_prompt" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayContentSideMargin" android:layout_alignParentBottom="true">
+        <Button android:id="@id/button_classic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/sign_in_use_email_or_username" style="@style/EbayButton" />
+        <Button android:id="@id/button_google" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/sign_in_google" style="@style/SignInGoogleButton" />
+        <Button android:id="@id/button_facebook" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/sign_in_facebook" style="@style/SignInFacebookButton" />
+        <Button android:id="@id/button_create_account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/sign_in_register_create" style="@style/EbayButton.SecondaryAlt" />
+    </LinearLayout>
+</RelativeLayout>

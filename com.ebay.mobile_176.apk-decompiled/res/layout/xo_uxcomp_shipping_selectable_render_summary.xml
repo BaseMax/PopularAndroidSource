@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left|top" android:tag="layout/xo_uxcomp_shipping_selectable_render_summary_0" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Row"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:id="@id/radio_container" android:tag="binding_1" android:layout_width="@dimen/xoLeftContentWidth" android:layout_height="fill_parent">
+        <RadioButton android:layout_gravity="center" android:id="@id/radio" android:tag="binding_2" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <CheckBox android:id="@id/checkbox" android:tag="binding_3" android:layout="@dimen/xoSelectableViewLeftMargin" android:layout_width="@dimen/xoSelectableViewWidth" android:layout_height="wrap_content" />
+    <include android:id="@id/primary" android:layout_width="@dimen/xoLeftContentWidth" android:layout_height="wrap_content" layout="@layout/xo_uxcomp_loadable_icon_and_text" />
+    <LinearLayout android:orientation="vertical" android:id="@id/secondary" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants" />
+    <LinearLayout android:orientation="vertical" android:id="@id/tertiary" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageButton android:layout_gravity="center" android:id="@id/action_icon" android:tag="binding_6" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin2x" />
+</LinearLayout>

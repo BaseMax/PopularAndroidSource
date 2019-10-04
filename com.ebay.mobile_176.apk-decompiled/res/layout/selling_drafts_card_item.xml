@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayScalingPadding15" android:paddingTop="@dimen/ebayScalingPadding2x" android:paddingRight="@dimen/ebayScalingPadding15" android:paddingBottom="@dimen/ebayScalingPadding2x" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/item_image" android:layout_width="@dimen/homescreen_card_deals_image_width" android:layout_height="@dimen/homescreen_card_deals_image_height" android:layout_marginBottom="@dimen/ebayMargin" android:scaleType="fitCenter" app:averageBackgroundColor="true" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:textColor="?textColorSecondaryAlt" android:ellipsize="end" android:id="@id/item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" />
+        <TextView android:textAppearance="?textAppearanceCaption1" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/item_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:maxLines="1" />
+    </LinearLayout>
+</FrameLayout>

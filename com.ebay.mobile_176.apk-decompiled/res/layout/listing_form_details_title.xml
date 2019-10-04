@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="?containerBackgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/title_parent_description" android:text="@string/title_description" style="@style/ListingFormDetailGuidanceModuleTextStyle" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/title_view_parent" android:paddingLeft="@dimen/listing_form_text_input_layout_side_margin" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/listing_form_text_input_layout_side_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_label" android:labelFor="@id/title_view">
+            <com.google.android.material.textfield.TextInputEditText android:enabled="false" android:id="@id/title_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" android:imeOptions="actionDone" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/subtitle_view_parent" android:paddingLeft="@dimen/listing_form_text_input_layout_side_margin" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/listing_form_text_input_layout_side_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/subtitle_optional_label" android:labelFor="@id/subtitle_view">
+            <com.google.android.material.textfield.TextInputEditText android:enabled="false" android:id="@id/subtitle_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" android:imeOptions="actionDone" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/coupon_toolbar" android:tag="layout/coupon_banner_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:tag="binding_1" android:background="@color/coupon_background_color_v2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="@dimen/ebayPadding3x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin15" android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMargin15" android:layout_marginBottom="@dimen/ebayMargin15" android:layout_alignParentLeft="true">
+            <LinearLayout android:tag="binding_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:transformPivotX="0.0dip">
+                <include layout="@layout/coupon_banner_timer" />
+            </LinearLayout>
+            <TextView android:textAppearance="?textAppearanceSubhead2Inverse" android:gravity="center_vertical" android:id="@id/coupon_title" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" />
+            <TextView android:textAppearance="?textAppearanceCaption2Inverse" android:gravity="center_vertical" android:id="@id/coupon_subtitle" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textAppearance="?textAppearanceCaption2Inverse" android:gravity="center_vertical" android:id="@id/coupon_secondary_subtitle" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/close_button" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:src="@drawable/ic_modal_close" android:tint="?android:textColorPrimaryInverse" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

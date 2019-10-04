@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/picker_panel_detail_summary_item_0" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding15" android:paddingRight="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/picker_summary_icon_dimen" android:layout_height="@dimen/picker_summary_icon_dimen" android:src="@drawable/ic_check_circle_green_36dp" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:layout_gravity="center_vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" />
+</LinearLayout>

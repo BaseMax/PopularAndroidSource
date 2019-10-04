@@ -1,0 +1,3 @@
+com.ebay.mobile.dagger.AppComponentInitializer
+com.ebay.nautilus.domain.dagger.DomainComponentInitializer
+com.ebay.nautilus.kernel.dagger.KernelComponentInitializer

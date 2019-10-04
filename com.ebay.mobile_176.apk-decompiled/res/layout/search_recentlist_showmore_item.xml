@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?listChoiceBackgroundIndicator" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2Accent" android:id="@id/button_clear_recent_searches" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/searchlanding_no_icon_list_margin" android:text="@string/search_landing_clear_recent_searches" android:textAllCaps="true" />
+</LinearLayout>

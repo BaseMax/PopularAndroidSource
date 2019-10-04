@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/view_item_add_on_installer_bulletin_0" android:padding="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceSubheadInverse" android:gravity="center" android:tag="binding_1" android:layout_width="@dimen/huge_bulletin_dot_dimension" android:layout_height="@dimen/huge_bulletin_dot_dimension" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin3x" />
+    <TextView android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

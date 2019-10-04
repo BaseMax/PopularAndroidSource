@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_marginBottom="@dimen/ebayMargin" style="@style/StyleGuideViewItemStatCell">
+        <TextView android:text="@string/vehicle_history_report_special_offer" style="@style/StyleGuideViewItemStatKey" />
+        <LinearLayout android:orientation="vertical" android:id="@id/vhr_special_offers" style="@style/StyleGuideViewItemStatValue" />
+    </LinearLayout>
+    <include android:id="@id/vhr_buy_report_container" layout="@layout/view_item_vehicle_history_report_footer" />
+    <include android:id="@id/vhr_access_report_container" layout="@layout/view_item_vehicle_history_report_footer" />
+</LinearLayout>

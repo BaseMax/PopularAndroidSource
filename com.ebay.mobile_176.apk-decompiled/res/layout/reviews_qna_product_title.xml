@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/reviews_qna_product_title_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" style="@style/ReviewsQnaCardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/item_header_layout" android:padding="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/item_thumbnail" android:tag="binding_1" android:layout_width="@dimen/ItemViewThumbnailHeight" android:layout_height="@dimen/ItemViewThumbnailHeight" android:src="@drawable/ic_missing_image" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:contentDescription="@null" app:averageBackgroundColor="true" app:fadeInDuration="@integer/answers_image_fade_in_duration" />
+        <TextView android:id="@id/item_title" android:tag="binding_2" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:layout_toRightOf="@id/item_thumbnail" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

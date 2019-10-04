@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:paddingTop="@dimen/ebayPaddingHalf" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/search_refine_vehicle_detail_row"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/vehicle_item_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    <TextView android:enabled="false" android:ellipsize="end" android:id="@id/vehicle_item_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/vehicle_item_label" android:layout_alignParentLeft="true" style="@style/Refine.Caption" />
+</RelativeLayout>

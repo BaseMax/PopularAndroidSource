@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/shipping_container" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/shipping_button_link" android:focusable="false" android:visibility="invisible" android:clickable="true" android:layout_width="@dimen/xoImageSize" android:layout_height="@dimen/xoImageSize" android:layout_marginRight="@dimen/xoMarginMedium">
+        <RadioButton android:id="@id/shipping_radio_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View style="@style/CommonDivider" />
+        <RelativeLayout android:id="@id/item_shipping_link" android:background="?android:listChoiceBackgroundIndicator" android:paddingTop="@dimen/xoMarginMedium" android:paddingBottom="@dimen/xoMarginMedium" android:focusable="true" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:labelFor="@id/shipping_radio_button">
+            <LinearLayout android:orientation="vertical" android:id="@id/checkout_xoneor_shipping_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/shipping_item_chevron">
+                <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/shipping_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/shipping_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <include layout="@layout/checkout_item_shipping_branding" />
+                <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/egd_message_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/shipping_countdown_timer_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/shipping_cutoff_time_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/shipping_store_location" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.ebay.android.widget.RemoteImageView android:id="@id/hub_shipping_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/xoShippingImageHeight" android:scaleType="fitStart" android:contentDescription="@string/shipping" ebay:fadeInDuration="@integer/checkoutImageFadeInDuration" />
+                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/shipping_delivery" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/shipping_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/shipping_cost" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xoMarginTiny" android:maxLines="1" />
+            </LinearLayout>
+            <ImageView android:id="@id/shipping_item_chevron" android:visibility="visible" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/show_options" style="@style/Checkout.Chevron.Right" />
+            <ImageView android:id="@id/shipping_item_info" android:visibility="gone" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/store_picker_more_information" style="@style/Xo.Info" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

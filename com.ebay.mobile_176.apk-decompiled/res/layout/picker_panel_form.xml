@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/picker_panel_form_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.nautilus.shell.uxcomponents.widget.ScrollingContainerView android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMarginHalf" style="@style/VerticalListItemsNoPaddingStyle" />
+    <include layout="@layout/picker_panel_form_field_error" />
+    <include layout="@layout/picker_panel_call_to_action" />
+</LinearLayout>

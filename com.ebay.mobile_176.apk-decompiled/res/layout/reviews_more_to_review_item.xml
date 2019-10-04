@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.widget.FLinearLayout android:orientation="vertical" android:id="@id/more_to_review_item" android:layout_width="wrap_content" android:layout_height="fill_parent" app:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:id="@id/more_to_review_image" android:layout_width="@dimen/product_review_mtr_size" android:layout_height="@dimen/product_review_mtr_size" android:layout_margin="1.0dip" app:dynamicHeight="square" />
+    <TextView android:ellipsize="end" android:id="@id/more_to_review_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:lines="2" />
+</com.ebay.mobile.widget.FLinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:minHeight="@dimen/homescreen_card_notifications_iconsize"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="@dimen/ebayPadding2x" android:paddingTop="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding3x" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Space android:id="@id/notification_dummy_icon" android:layout_width="@dimen/homescreen_card_notifications_iconsize" android:layout_height="@dimen/homescreen_card_notifications_iconsize" />
+        <TextView android:textSize="@dimen/ebayTextSizeHeadline1" android:textColor="@android:color/white" android:gravity="center" android:id="@id/notification_item_counter" android:background="@drawable/circular_button" android:visibility="gone" android:layout_width="@dimen/homescreen_card_notifications_iconsize" android:layout_height="@dimen/homescreen_card_notifications_iconsize" android:layout_centerVertical="true" />
+        <com.ebay.android.widget.RemoteImageView android:id="@id/notification_item_image" android:padding="@dimen/circular_image_padding" android:visibility="gone" android:layout_width="@dimen/homescreen_card_notifications_iconsize" android:layout_height="@dimen/homescreen_card_notifications_iconsize" android:scaleType="centerCrop" android:layout_centerVertical="true" android:contentDescription="@null" res_auto:circularImage="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_toRightOf="@id/notification_dummy_icon" android:layout_centerVertical="true">
+            <TextView android:textAppearance="?textAppearanceCaption1" android:textColor="?colorAlert" android:id="@id/notification_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:id="@id/notification_item_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/notification_ends_in" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

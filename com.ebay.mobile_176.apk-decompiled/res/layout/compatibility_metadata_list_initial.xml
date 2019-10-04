@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceHeadline" android:textColor="?buttonFlatAccentTextColor" android:gravity="center" android:layout_width="@dimen/compatibility_meta_inital_width" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin15"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

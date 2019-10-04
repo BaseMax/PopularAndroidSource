@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/view_progress" android:background="@color/registration_dimmed_black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.ebay.mobile.connection.idsignin.otp.autoretrievesms.AutoRetrieveOtpCodeInputView android:id="@id/view_code_input" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ebay.mobile.connection.idsignin.otp.autoretrievesms.AutoRetrieveOtpConfirmView android:id="@id/view_confirm_phone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

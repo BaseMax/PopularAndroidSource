@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/tv_address1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/tv_address2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/tv_city" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addresses_comma" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/tv_state" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " />
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/tv_zip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/tv_country" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/tv_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

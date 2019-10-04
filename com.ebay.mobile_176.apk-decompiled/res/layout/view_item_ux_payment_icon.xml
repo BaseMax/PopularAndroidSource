@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/view_item_ux_payment_icon_0" android:paddingBottom="@dimen/ebayPaddingHalf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="0.0dip" android:paddingEnd="@dimen/ebayPaddingHalf"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ebay.android.widget.RemoteImageView android:layout_gravity="bottom" android:id="@id/image" android:tag="binding_1" android:layout_width="@dimen/view_item_payments_width" android:layout_height="@dimen/view_item_payments_height" android:scaleType="fitCenter" />
+    <TextView android:textSize="@dimen/view_item_payments_auto_text_size" android:layout_gravity="bottom" android:id="@id/text" android:tag="binding_2" android:background="@drawable/view_item_payment_border" android:layout_width="wrap_content" android:layout_height="@dimen/view_item_payments_height" android:maxWidth="@dimen/view_item_payments_max_text_width" app:autoSizeMaxTextSize="@dimen/view_item_payments_auto_text_size" app:autoSizeMinTextSize="@dimen/view_item_payments_auto_text_size_min" app:autoSizeTextType="uniform" style="?textAppearanceCaption" />
+</FrameLayout>

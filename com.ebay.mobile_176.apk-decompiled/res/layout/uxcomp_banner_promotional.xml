@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/uxcomp_banner_promotional_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/imageview_banner_image" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="@dimen/uxcomp_banner_promotional_image_height" android:src="@drawable/ic_missing_image" android:scaleType="centerCrop" app:fadeInDuration="@integer/answers_image_fade_in_duration" />
+        <RelativeLayout android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/uxcomp_banner_promotional_textbox_height">
+            <TextView android:textAppearance="?textAppearanceTitle2" android:ellipsize="end" android:id="@id/textview_banner_title" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:id="@id/textview_banner_subtitle" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:maxLines="2" android:layout_below="@id/textview_banner_title" android:layout_alignParentLeft="true" />
+            <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/textview_banner_call_to_action" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_below="@id/textview_banner_subtitle" android:layout_alignParentLeft="true" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:ellipsize="end" android:gravity="left" android:id="@id/textview_banner_legal_text" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:maxLines="2" android:layout_below="@id/textview_banner_call_to_action" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

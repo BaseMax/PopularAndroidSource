@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="@dimen/my_ebay_null_image_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x" android:src="@drawable/ic_null_watching" android:adjustViewBounds="true" android:contentDescription="@null" />
+    <TextView android:textAppearance="?textAppearanceBody2" android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_state_description" />
+</LinearLayout>

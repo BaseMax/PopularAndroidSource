@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/xo_uxcomp_ppc_uk_render_0" android:paddingTop="@dimen/xoMarginSmall" android:paddingBottom="@dimen/xoMarginSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:divider="?listDividerVertical" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/first" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/ppc_uk_entries" />
+    <include android:id="@id/second" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_weight="1.0" layout="@layout/ppc_uk_entries" />
+    <include android:id="@id/third" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_weight="1.0" layout="@layout/ppc_uk_entries" />
+</LinearLayout>

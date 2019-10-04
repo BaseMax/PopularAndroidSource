@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="MessagesIsDualPane">true</bool>
+    <bool name="browse_categories_show_child_dividers">true</bool>
+    <bool name="browse_categories_show_parent_dividers">false</bool>
+    <bool name="view_item_side_by_side">true</bool>
+</resources>

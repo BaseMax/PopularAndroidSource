@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/search_answers_two_line_message_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/button_message_info" android:tag="binding_1" android:background="?android:selectableItemBackground" android:layout_width="@dimen/min_touch_target_unit" android:layout_height="@dimen/min_touch_target_unit" android:src="@drawable/info_icon" android:tint="?iconTintColor" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/container_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/button_message_info" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="end" android:id="@id/textview_message_title" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:ellipsize="end" android:id="@id/textview_message_subtitle" android:tag="binding_3" android:paddingTop="@dimen/baseline_unit_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

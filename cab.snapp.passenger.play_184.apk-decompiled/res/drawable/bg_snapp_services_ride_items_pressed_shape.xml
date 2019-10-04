@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" />
+    <stroke android:width="@dimen/padding_small" android:color="@color/transparent" />
+    <corners android:radius="22.0dip" />
+    <size android:height="@dimen/snapp_services_ride_items_expanded_clicked_height" android:width="@dimen/snapp_services_ride_items_expanded_clicked_height" />
+</shape>

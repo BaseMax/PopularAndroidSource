@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/common_label_value_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:tag="binding_1" style="@style/EbayLabelStyle.table" />
+    <TextView android:tag="binding_2" style="@style/EbayValueStyle.table" />
+</LinearLayout>

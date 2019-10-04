@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.common.SelectableContainerLayout android:orientation="horizontal" android:paddingLeft="@dimen/ebayContentSideMargin" android:paddingRight="@dimen/ebayContentSideMargin" android:layout_width="fill_parent" android:layout_height="wrap_content" ebay:selectionBackground="?listItemSelectedBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:background="?selectableItemBackgroundBase" android:layout_width="@dimen/my_ebay_image_dimen" android:layout_height="@dimen/my_ebay_image_dimen" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin">
+            <com.ebay.android.widget.RemoteImageView android:id="@id/image" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" ebay:averageBackgroundColor="true" ebay:fadeInDuration="@integer/search_image_fade_in_duration" ebay:maxHeightPixels="@integer/search_list_image_size" ebay:maxWidthPixels="@integer/search_list_image_size" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/my_ebay_image_dimen" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" android:weightSum="1.0">
+            <TextView android:gravity="left" android:id="@id/item_user_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:textAllCaps="true" style="@style/EbayTextAppearanceStrong.Body1" />
+            <TextView android:id="@id/item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="?itemTitleStyle" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:textColor="?android:textColorSecondary" android:id="@id/item_variation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/my_ebay_item_bottom_content_height">
+                <TextView android:id="@id/item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="?itemPriceStyle" />
+                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/item_shipping_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_below="@id/item_price" android:layout_alignParentLeft="true" />
+                <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/item_secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_below="@id/item_shipping_price" android:layout_alignParentLeft="true" />
+                <LinearLayout android:gravity="center|right|top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/item_bid_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/item_bo_or_bin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/item_time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.ebay.mobile.common.SelectableContainerLayout>

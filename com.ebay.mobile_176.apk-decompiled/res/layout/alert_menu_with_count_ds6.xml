@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody1" android:textColor="?android:textColorPrimaryInverse" android:gravity="center" android:layout_gravity="center" android:id="@id/nav_count" android:background="@drawable/alert_count_background_ds6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="20.0dip" android:minHeight="20.0dip" android:lineSpacingMultiplier="@dimen/default_line_spacing_multiplier" android:paddingStart="@dimen/baseline_unit_half" android:paddingEnd="@dimen/baseline_unit_half" />
+</FrameLayout>

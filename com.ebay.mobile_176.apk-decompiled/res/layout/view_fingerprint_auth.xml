@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fingerprint_container" android:background="?listContainerBackground" android:padding="@dimen/ebayContentSideMargin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/peg" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_centerInParent="true" />
+    <TextView android:textAppearance="?textAppearanceTitle1" android:gravity="center" android:id="@id/fingerprint_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:text="@string/sign_in_confirm_fingerprint" android:layout_above="@id/iv_fingerprint" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_fingerprint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin4x" android:src="@drawable/ic_fingerprint" android:layout_above="@id/peg" android:layout_centerHorizontal="true" android:contentDescription="@string/sign_in_confirm_fingerprint" />
+    <TextView android:textAppearance="?textAppearanceTitle1" android:gravity="center" android:id="@id/tv_fingerprint_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin4x" android:text="@string/fingerprint_hint" android:layout_below="@id/peg" android:layout_centerHorizontal="true" />
+    <Button android:layout_gravity="center_vertical" android:id="@id/bt_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_alignParentBottom="true" style="@style/EbayButton.Flat" />
+</RelativeLayout>

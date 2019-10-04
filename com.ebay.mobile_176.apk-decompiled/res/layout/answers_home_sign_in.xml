@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:tag="layout/answers_home_sign_in_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginTop="@dimen/ebayStaticMargin15" android:layout_marginRight="@dimen/ebayContentSideMargin" android:layout_marginBottom="@dimen/ebayStaticMargin15"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceSubheadSecondary" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/homescreen_sign_in_message" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="@dimen/ebayPadding" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/homescreen_card_sign_in_layout_width">
+        <Button android:id="@id/button_register" android:tag="binding_1" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMarginHalf" android:minWidth="@dimen/homescreen_card_sign_in_button_width" android:text="@string/register" android:layout_weight="1.0" style="@style/EbayButton.White" />
+        <Button android:id="@id/button_sign_in" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:minWidth="@dimen/homescreen_card_sign_in_button_width" android:text="@string/sign_in" android:layout_weight="1.0" style="@style/EbayButton.White" />
+    </LinearLayout>
+</LinearLayout>

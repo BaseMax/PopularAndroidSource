@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog" android:padding="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@id/iconImageView" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="@dimen/default_margin_double_half" app:srcCompat="@drawable/ic_success" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_double" android:layout_marginTop="@dimen/default_margin_double_half" android:layout_marginRight="@dimen/default_margin_double" android:text="@string/merge_account_success_title" style="@style/Bazaar.Text.Body1" />
+    <androidx.appcompat.widget.AppCompatTextView android:layout_gravity="start" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin_double" android:text="@string/merge_account_success_description" style="@style/Bazaar.Text.Body2.Dark" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/creditTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin_double" style="@style/Bazaar.Text.Body1" />
+    <com.farsitel.bazaar.core.widget.DialogButtonLayout android:id="@id/dialogButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" app:commit="@string/commit" />
+</LinearLayout>

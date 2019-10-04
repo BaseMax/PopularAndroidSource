@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/givingworks_results_container" android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/givingworks_search_label" android:layout_marginTop="@dimen/ebayStaticMargin2x" android:text="@string/charity_select_for_sell_buy" style="@style/Sell.Details.Header" />
+        <androidx.cardview.widget.CardView style="@style/EbayCardStyle.Dynamic">
+            <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="@dimen/ProgressSpinnerSize" android:layout_height="@dimen/ProgressSpinnerSize" android:layout_centerInParent="true" />
+        <TextView android:textAppearance="@style/EbayTextAppearance.Subhead.Secondary" android:id="@id/no_results_found" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayContentSideMargin" android:freezesText="true" />
+    </RelativeLayout>
+</LinearLayout>

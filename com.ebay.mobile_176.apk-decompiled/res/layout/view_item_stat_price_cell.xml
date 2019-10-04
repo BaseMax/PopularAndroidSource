@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" style="@style/StyleGuideViewItemStatCell"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ebayTextSizeHuge" android:textColor="?itemViewDefaultTextColor" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/ebayTextSize" android:textColor="?textColorSecondaryAlt" android:id="@id/shipping" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/price" android:layout_alignBaseline="@id/price" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/ebayTextSize" android:textColor="?textColorSecondaryAlt" android:id="@id/shipping_below" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/ebayTextSize" android:textColor="?textColorSecondaryAlt" android:id="@id/converted_price" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

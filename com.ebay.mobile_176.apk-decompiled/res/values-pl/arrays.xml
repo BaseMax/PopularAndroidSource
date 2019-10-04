@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vehicle_history_report_unavailable_reason_list">
+        <item>Pojazd jest zbyt nowy, aby miał raport o historii pojazdu.</item>
+        <item>Pojazd został wyprodukowany przed 1981 rokiem.</item>
+        <item>Pojazd nie miał 17-cyfrowego numeru identyfikacyjnego pojazdu.</item>
+        <item>Pojazd nie był przeznaczony na rynek USA (np. był to egzemplarz z linii limitowanej).</item>
+        <item>Sprzedawca nie podał poprawnego numeru identyfikacyjnego.</item>
+    </string-array>
+</resources>

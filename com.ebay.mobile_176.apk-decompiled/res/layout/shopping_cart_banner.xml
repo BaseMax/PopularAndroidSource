@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@android:color/white" android:id="@id/banner_right_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMarginHalf" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="?android:textAppearance" />
+    <TextView android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/banner_main_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_marginRight="@dimen/ebayMarginHalf" android:layout_toLeftOf="@id/banner_right_text" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="?android:textAppearance" />
+    <TextView android:id="@id/status_banner_supplement" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/banner_main_text" android:layout_alignLeft="@id/banner_main_text" />
+</RelativeLayout>

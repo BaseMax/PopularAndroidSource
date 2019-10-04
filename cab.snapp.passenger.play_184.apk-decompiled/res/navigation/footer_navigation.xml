@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/footer_navigation" app:startDestination="@id/mainFooterController"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="Main Footer" android:name="cab.snapp.passenger.units.footer.mainfooter.MainFooterController" android:id="@id/mainFooterController" />
+    <fragment android:label="Ride Request Footer" android:name="cab.snapp.passenger.units.footer.ride_request_footer.RideRequestFooterController" android:id="@id/rideRequestFooterController">
+        <action android:id="@id/action_rideRequestFooterController_to_mainFooterController" app:destination="@id/mainFooterController" app:enterAnim="@anim/fragment_animation_enter_from_down" app:exitAnim="@anim/fragment_animation_exit_to_down" app:popEnterAnim="@anim/fragment_animation_enter_from_down" app:popExitAnim="@anim/fragment_animation_exit_to_down" />
+    </fragment>
+    <fragment android:label="Driver Assigned Footer" android:name="cab.snapp.passenger.units.footer.driver_assigned_footer.DriverAssignedFooterController" android:id="@id/driverAssignedFooterController" />
+</navigation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Sell.Layout.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.cardview.widget.CardView android:id="@id/prelist_result_card" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.Card">
+                <androidx.core.widget.NestedScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/prelist_solt_button" android:layout_alignParentTop="true">
+                    <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:gravity="center_horizontal" android:id="@id/prelist_additional_info_header" android:padding="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:text="@string/prelist_additional_info_header_label_pbc" style="@style/ListingFormSummaryGuidanceModuleTextStyle" />
+                        <TextView android:textAppearance="?textAppearanceSubhead" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/product_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x" android:maxLines="3" />
+                        <com.ebay.android.widget.RemoteImageView android:layout_gravity="center_horizontal" android:id="@id/product_image" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/srp_list_image_width" android:layout_height="@dimen/srp_list_image_height" android:scaleType="fitCenter" android:contentDescription="@null" res_auto:averageBackgroundColor="true" res_auto:fadeInDuration="@integer/search_image_fade_in_duration" res_auto:maxHeightPixels="@integer/search_list_image_size" res_auto:maxWidthPixels="@integer/search_list_image_size" />
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/product_aspects" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMargin2x" android:nestedScrollingEnabled="false" />
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+                <Button android:id="@id/prelist_solt_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin2x" android:text="@string/prelist_sell_one_like_this" android:layout_alignParentBottom="true" style="@style/EbayButton.Blue" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout android:gravity="left" android:id="@id/prelist_conditions_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/prelist_conditions_header_label" android:text="@string/prelist_select_condition" android:layout_toLeftOf="@id/info_button" android:layout_centerVertical="true" style="@style/Prelist.Header" />
+            <ImageButton android:id="@id/info_button" android:src="@drawable/info_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/prelist_info_button_description" style="@style/EbayButton.Icon" />
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView android:id="@id/prelist_conditions_card" android:visibility="gone" style="@style/Sell.Card.ListingForm.WithTopMargin">
+            <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioGroup android:orientation="vertical" android:id="@id/condition_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compensate_radio_group_margin" android:layout_marginRight="@dimen/compensate_radio_group_margin" android:layout_marginBottom="@dimen/ebayMargin" android:showDividers="middle" style="@style/Sell.DynamicCardContainer.ListingForm" />
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="visible" android:layout_width="@dimen/ProgressSpinnerSize" android:layout_height="@dimen/ProgressSpinnerSize" />
+</FrameLayout>

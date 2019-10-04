@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkoutSmallMargin" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bopis_address_capitalized" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:id="@id/store_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/cityStateZip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/est_pickup_date_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:text="@string/pickup" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/est_pickup_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" />
+    </LinearLayout>
+    <View android:layout_marginTop="@dimen/ebayMarginHalf" android:layout_marginBottom="@dimen/ebayMarginHalf" style="@style/CommonDivider.Vertical" />
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutSmallMargin">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bopis_hours_capitalized" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:ellipsize="none" android:id="@id/hours" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

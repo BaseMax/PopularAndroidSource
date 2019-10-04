@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.android.widget.MessageBar android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/message_bar" android:background="?alertMessageBarBg" android:paddingTop="2.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:dividerVertical" android:showDividers="middle" android:dividerPadding="6.0dip">
+        <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/error_textview" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="6.0dip" android:drawableLeft="@drawable/ic_alert_message" android:drawablePadding="20.0dip" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/message_bar_button_retry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_menu_refresh" android:contentDescription="@string/retry" style="?android:borderlessButtonStyle" />
+        <ImageButton android:id="@id/message_bar_button_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_x_holo_light" android:contentDescription="@string/close" style="?android:borderlessButtonStyle" />
+    </LinearLayout>
+    <View android:background="@drawable/alert_message_severity_strip_bg" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignTop="@id/message_bar" />
+</com.ebay.android.widget.MessageBar>

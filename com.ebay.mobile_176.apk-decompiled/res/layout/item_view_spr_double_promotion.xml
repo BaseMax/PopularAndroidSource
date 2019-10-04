@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/StyleGuideViewItemStatValue"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ebayTextSizeMedium" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:text="@string/or" />
+    <View style="@style/ItemViewSeparatorStyle.Vertical" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMarginHalf" />
+        <View style="@style/ItemViewSeparatorStyle" />
+        <TextView android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ebayMarginHalf" />
+    </LinearLayout>
+</LinearLayout>

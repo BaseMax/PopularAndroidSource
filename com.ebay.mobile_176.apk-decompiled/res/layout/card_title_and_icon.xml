@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/ebayPadding2x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2" android:ellipsize="end" android:id="@id/user_collection_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:paddingEnd="0.0dip" />
+    <TextView android:textAppearance="?textAppearanceBody1Secondary" android:ellipsize="end" android:id="@id/user_name_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:paddingEnd="0.0dip" />
+</LinearLayout>

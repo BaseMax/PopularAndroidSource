@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMarginHalf" app:contentPadding="@dimen/ebayPadding" style="@style/StyleGuideViewItemCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/button_skip_add_on" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/ebayMarginHalf" android:layout_weight="1.0" style="@style/EbayButton.SecondaryAlt" />
+        <Button android:id="@id/button_add_add_on" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMarginHalf" android:layout_weight="1.0" style="@style/EbayButton.Blue" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

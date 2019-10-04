@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/user_item_tile" android:tag="layout/user_profile_item_tile_0" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/image" android:tag="binding_1" android:layout_marginBottom="@dimen/ebayStaticMargin" android:src="@drawable/ic_missing_image" android:contentDescription="@null" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="?imageCarouselStyle" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/srp_tile_text_spacing" app:layout_constraintEnd_toEndOf="@id/image" app:layout_constraintStart_toStartOf="@id/image" app:layout_constraintTop_toBottomOf="@id/image">
+            <TextView android:ellipsize="end" android:id="@id/textview_header_0" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayStaticMarginHalf" style="?itemTitleStyle" />
+            <TextView android:id="@id/textview_item_price" android:tag="binding_3" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_below="@id/textview_header_0" style="?itemPriceStyle" />
+            <TextView android:id="@id/textview_item_see_price" android:tag="binding_4" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_below="@id/textview_header_0" style="?itemPriceStyle" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/strikethrough_text" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textview_item_price" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

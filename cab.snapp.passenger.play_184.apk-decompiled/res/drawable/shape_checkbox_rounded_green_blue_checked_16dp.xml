@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/checkbox_corner_radius_16dp" />
+            <solid android:color="@color/color_accent" />
+            <stroke android:width="@dimen/checkbox_stroke_width_16dp" android:color="@color/color_accent" />
+            <size android:height="@dimen/checkbox_height_16dp" android:width="@dimen/checkbox_width_16dp" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_ui_kit_done_tick_white_12dp" android:left="@dimen/checkbox_padding_medium_16dp" android:top="@dimen/checkbox_padding_medium_16dp" android:right="@dimen/checkbox_padding_medium_16dp" android:bottom="@dimen/checkbox_padding_medium_16dp" />
+</layer-list>

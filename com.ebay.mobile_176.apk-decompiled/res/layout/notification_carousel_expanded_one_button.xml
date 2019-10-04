@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/AppTheme.Notification.Carousel" android:orientation="vertical" android:id="@id/notification_carousel" android:paddingTop="@dimen/ebayMargin" android:paddingBottom="@dimen/ebayMargin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/notification_carousel_expanded_common" />
+    <ImageView android:id="@id/go_left_button_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:src="@drawable/ic_notification_left_scroll_arrow" android:layout_centerVertical="true" android:contentDescription="@string/accessibility_carousel_left_arrow" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/go_left_button" android:focusable="false" android:layout_width="48.0dip" android:layout_height="90.0dip" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/go_right_button_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:src="@drawable/ic_notification_right_scroll_arrow" android:layout_centerVertical="true" android:contentDescription="@string/accessibility_carousel_right_arrow" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/go_right_button" android:focusable="false" android:layout_width="48.0dip" android:layout_height="90.0dip" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true" />
+    <FrameLayout android:id="@id/carousel_buttons" android:layout_width="fill_parent" android:layout_height="@dimen/notification_action_height" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/ebayMargin" android:layout_marginEnd="@dimen/ebayMargin" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+        <Button android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/carousel_view_button" android:fadingEdge="horizontal" android:layout_width="304.0dip" android:layout_height="fill_parent" android:singleLine="true" style="@style/Notification.EbayButton.Primary" />
+    </FrameLayout>
+</RelativeLayout>

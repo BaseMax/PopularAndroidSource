@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/onboarding_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/main_content" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:importantForAccessibility="noHideDescendants">
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="bottom" android:id="@id/tabs" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/onboarding_tab_height" android:layout_marginTop="@dimen/baseline_unit_2x" app:tabGravity="fill" app:tabIndicatorHeight="0.0dip" app:tabMaxWidth="0.0dip" app:tabMode="scrollable" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/global_question_footer" android:layout_alignParentTop="true">
+            <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:paddingTop="@dimen/onboarding_tab_height_and_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:importantForAccessibility="no" />
+            <FrameLayout android:id="@id/view_pager_cover" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/global_question_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_alignParentBottom="true" android:animateLayoutChanges="true">
+            <TextView android:gravity="center" android:id="@id/count_circle" android:background="@drawable/onboarding_circle" android:visibility="gone" android:layout_width="@dimen/baseline_unit_4x" android:layout_height="@dimen/baseline_unit_4x" android:layout_marginLeft="@dimen/baseline_unit" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:elevation="@dimen/card_elevation" />
+            <com.google.android.material.tabs.TabLayout android:id="@id/dots" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:tabBackground="@drawable/onboarding_dot" app:tabGravity="fill" app:tabIndicatorHeight="0.0dip" app:tabPaddingEnd="@dimen/baseline_unit" app:tabPaddingStart="@dimen/baseline_unit" />
+            <TextView android:ellipsize="end" android:gravity="center|right" android:id="@id/cta_button" android:padding="@dimen/baseline_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toRightOf="@id/dots" android:layout_alignParentRight="true" style="@style/EbayButton.Flat" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/onboarding_confirmation_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/onboarding_progress_container" />
+</FrameLayout>

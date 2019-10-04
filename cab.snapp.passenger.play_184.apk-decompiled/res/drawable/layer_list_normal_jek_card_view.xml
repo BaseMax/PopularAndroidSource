@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="0.5dip" android:top="0.5dip" android:right="0.5dip" android:bottom="2.5dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/custom_card_view_outer_4th_layer_radius" />
+            <solid android:color="@color/black_1" />
+        </shape>
+    </item>
+    <item android:left="1.5dip" android:top="1.5dip" android:right="1.5dip" android:bottom="3.5dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/custom_card_view_outer_3th_layer_radius" />
+            <solid android:color="@color/black_3" />
+        </shape>
+    </item>
+    <item android:left="2.5dip" android:top="3.0dip" android:right="2.5dip" android:bottom="4.5dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/custom_card_view_outer_2nd_layer_radius" />
+            <solid android:color="@color/black_4" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="4.5dip" android:right="4.0dip" android:bottom="6.0dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/custom_card_view_outer_1st_layer_radius" />
+            <solid android:color="@color/black_5" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="8.0dip" android:right="20.0dip" android:bottom="2.5dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="6.0dip" />
+            <solid android:color="@color/black_2" />
+        </shape>
+    </item>
+    <item android:left="18.0dip" android:top="7.0dip" android:right="18.0dip" android:bottom="1.5dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="8.0dip" />
+            <solid android:color="@color/black_2" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="6.5dip" android:right="16.0dip" android:bottom="0.5dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="10.0dip" />
+            <solid android:color="@color/black_2" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="2.0dip" android:right="4.0dip" android:bottom="6.0dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/custom_card_view_inner_layer_radius" />
+            <solid android:color="@color/white" />
+            <stroke android:width="0.5dip" android:color="#ffe3e4e6" />
+        </shape>
+    </item>
+</layer-list>

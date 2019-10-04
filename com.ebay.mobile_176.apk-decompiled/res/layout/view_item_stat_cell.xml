@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/stat_layout" android:focusable="true" style="@style/StyleGuideViewItemStatCell"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/stat_key" android:text="Unset key" style="@style/StyleGuideViewItemStatKey" />
+    <TextView android:id="@id/stat_value" android:text="Unset value" style="@style/StyleGuideViewItemStatValue" />
+</LinearLayout>

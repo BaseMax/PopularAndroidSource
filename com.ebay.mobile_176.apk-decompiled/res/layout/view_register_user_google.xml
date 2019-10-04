@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?containerBackgroundColor" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/view_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/ebayContentSideMargin" android:animateLayoutChanges="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/tv_infoline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/native_registration_review_google" />
+            <RelativeLayout android:id="@id/view_consolidated" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x">
+                <ImageView android:id="@id/iv_chevron" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?spokeChevronDrawable" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/addresses_forward_arrow" />
+                <TextView android:textAppearance="?textAppearanceTitle2" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/tv_email_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_name" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/view_prefilled" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x">
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/view_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@id/et_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/native_register_email" android:maxLines="1" android:maxLength="@integer/max_input_length_for_sign_in_and_reg" android:inputType="textNoSuggestions" android:contentDescription="@string/native_register_email" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/view_first_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@id/et_first_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/native_register_first_name" android:maxLines="1" android:maxLength="@integer/max_input_length_for_sign_in_and_reg" android:inputType="textNoSuggestions" android:contentDescription="@string/native_register_first_name" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/view_last_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@id/et_last_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/native_register_last_name" android:maxLines="1" android:maxLength="@integer/max_input_length_for_sign_in_and_reg" android:inputType="textNoSuggestions" android:contentDescription="@string/native_register_last_name" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/bt_already_have_an_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin6x">
+                <TextView android:textAppearance="?textAppearanceCaption2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/native_registration_already_on_ebay" />
+                <TextView android:textAppearance="?textAppearanceCaption1" android:textColor="@color/style_guide_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/native_registration_link_an_existing_account" />
+            </LinearLayout>
+            <com.ebay.mobile.connection.idsignin.registration.view.password.RegistrationLegalView android:id="@id/view_eula" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" />
+            <Button android:id="@id/bt_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/native_register_create_facebook" style="@style/EbayButton" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/progress_loading" android:background="@color/registration_dimmed_black" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+    </RelativeLayout>
+</FrameLayout>

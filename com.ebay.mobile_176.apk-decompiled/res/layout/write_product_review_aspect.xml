@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/aspects_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?listContainerOutsideBackground" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/ebayMargin3x" android:layout_marginBottom="@dimen/ebayMargin" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/product_review_tablet_bumpers" android:paddingRight="@dimen/product_review_tablet_bumpers" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tell_us_more" android:layout_centerHorizontal="true" />
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:id="@id/aspect_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x">
+            <ImageButton android:id="@id/button_next_question" android:layout_width="60.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_chevron_right_black_48dp" android:tint="@color/style_guide_light_divider" android:layout_alignParentRight="true" android:contentDescription="@string/accessibility_next_question" style="?android:borderlessButtonStyle" />
+            <ImageButton android:id="@id/button_prev_question" android:layout_width="60.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_chevron_right_black_48dp" android:tint="@color/style_guide_light_divider" android:layout_alignParentLeft="true" android:contentDescription="@string/accessibility_previous_question" android:rotation="180.0" style="?android:borderlessButtonStyle" />
+            <TextView android:textSize="16.0sp" android:gravity="center_horizontal" android:id="@id/aspect_question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/button_next_question" android:layout_toRightOf="@id/button_prev_question" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x">
+            <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/button_yes" android:layout_width="94.0dip" android:layout_marginRight="@dimen/ebayMargin2x" android:text="@string/yes" style="@style/EbayButton.Secondary" />
+            <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/button_no" android:layout_width="94.0dip" android:text="@string/no" style="@style/EbayButton.Secondary" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

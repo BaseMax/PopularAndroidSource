@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/search_result_activity_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/refinement_layout" android:tag="binding_1" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" bind:elevation="0.0dip">
+        <include android:id="@id/refinement_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" bind:layout_scrollFlags="enterAlways|scroll" layout="@layout/search_refine_bar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/fragmentContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" bind:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

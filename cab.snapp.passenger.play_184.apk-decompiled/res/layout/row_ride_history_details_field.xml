@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="@dimen/ride_history_details_field_height" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:id="@id/row_ride_history_details_field_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Light.Small" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:id="@id/row_ride_history_details_field_description_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Light.Small" />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/review_offer_internal_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="start|center|top" android:orientation="horizontal" android:paddingTop="@dimen/ebayPadding3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/review_offer_price_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/heading_your_offer" android:layout_weight="1.0" />
+        <Space android:layout_width="@dimen/ebayMargin2x" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <TextView android:textAppearance="?textAppearanceSubhead" android:gravity="start" android:id="@id/review_offer_price" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="start" android:id="@id/review_offer_converted_price" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="start|center|top" android:orientation="horizontal" android:id="@id/review_offer_quantity_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:weightSum="3.0">
+        <TextView android:textAppearance="?textAppearanceSubheadSecondary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/offer_quantity_label" android:layout_weight="1.0" />
+        <Space android:layout_width="@dimen/ebayMargin2x" android:layout_height="1.0dip" />
+        <TextView android:textAppearance="?textAppearanceSubhead" android:gravity="start" android:id="@id/review_offer_quantity" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="start|center|top" android:orientation="horizontal" android:id="@id/review_offer_total_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:weightSum="3.0">
+        <TextView android:textAppearance="?textAppearanceSubhead" android:textStyle="bold" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/total_cost" android:layout_weight="1.0" />
+        <Space android:layout_width="@dimen/ebayMargin2x" android:layout_height="1.0dip" />
+        <TextView android:textAppearance="?textAppearanceSubhead" android:textStyle="bold" android:gravity="start" android:id="@id/review_offer_total" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    </LinearLayout>
+    <View android:id="@id/review_offer_buyer_only_costs_separator" android:background="@color/style_guide_light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" />
+    <LinearLayout android:orientation="vertical" android:id="@id/review_offer_buyer_only_costs" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="start|center|top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/view_item_review_shipping" android:layout_weight="1.0" />
+            <Space android:layout_width="@dimen/ebayMargin2x" android:layout_height="1.0dip" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:gravity="start" android:id="@id/review_offer_shipping" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="start|center|top" android:orientation="horizontal" android:id="@id/review_offer_tax_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:weightSum="3.0">
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/item_view_sales_tax" android:layout_weight="1.0" />
+            <Space android:layout_width="@dimen/ebayMargin2x" android:layout_height="1.0dip" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:gravity="start" android:id="@id/review_offer_taxes" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="start|center|top" android:orientation="horizontal" android:id="@id/review_offer_import_charges_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:weightSum="3.0">
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/view_item_review_import_charges" android:layout_weight="1.0" />
+            <Space android:layout_width="@dimen/ebayMargin2x" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+                <TextView android:textAppearance="?textAppearanceBody1" android:gravity="start" android:id="@id/review_offer_import_charges" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?textAppearanceBody1" android:gravity="start" android:id="@id/review_offer_import_gst" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/review_offer_gst" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="start|center|top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:weightSum="3.0">
+            <TextView android:textAppearance="?textAppearanceBody1Secondary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/view_item_review_estimated_total" android:layout_weight="1.0" />
+            <Space android:layout_width="@dimen/ebayMargin2x" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+                <TextView android:textAppearance="?textAppearanceBody1" android:gravity="start" android:id="@id/review_offer_estimated_total" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="start" android:id="@id/review_offer_estimated_total_converted" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/review_offer_message_layout" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/review_offer_message_padding_for_seller" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ebayMargin2x" />
+        <View android:background="@color/style_guide_light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/ebayMargin2x" />
+        <TextView android:textAppearance="?textAppearanceBody1Secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/seller_offer_message_title" />
+        <TextView android:textAppearance="?textAppearanceBody1" android:id="@id/review_offer_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/review_offer_warning_container" android:paddingTop="@dimen/ebayPadding2x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/view_item_info_image_size" android:layout_height="@dimen/view_item_info_image_size" android:src="@drawable/icon_alert_info" android:contentDescription="@null" />
+        <TextView android:textAppearance="?textAppearanceBody2" android:id="@id/review_offer_warning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" />
+    </LinearLayout>
+</LinearLayout>

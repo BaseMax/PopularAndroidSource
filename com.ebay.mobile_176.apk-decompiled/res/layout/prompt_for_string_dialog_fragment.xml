@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/location_options" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight">
+        <TextView android:id="@id/value_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Refine.Text.Title.Bold" />
+        <EditText android:id="@id/value_field" android:layout_height="wrap_content" android:layout_toRightOf="@id/value_label" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:imeOptions="actionDone" style="@style/Refine.TextView.ValueField" />
+    </RelativeLayout>
+    <TextView android:id="@id/prompt_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" style="@style/Refine.Text.Title.Small" />
+</LinearLayout>

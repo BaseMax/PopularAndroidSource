@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/ux_comp_icon_message_0" android:background="?colorAccent" android:paddingLeft="@dimen/ebayContentSideMargin" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayContentSideMargin" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin2x" android:tint="?android:textColorPrimaryInverse" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayTextAppearance.Inverse" />
+        <TextView android:textAppearance="?textAppearanceBody2" android:textColor="?android:textColorPrimaryInverse" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/icon_arrowslideright_light" android:drawablePadding="@dimen/ebayPadding" />
+    </LinearLayout>
+</LinearLayout>

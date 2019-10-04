@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_primary_address" android:title="@string/xo_address_menu_make_primary" />
+    <item android:id="@id/menu_edit_address" android:title="@string/xo_address_menu_edit" />
+</menu>

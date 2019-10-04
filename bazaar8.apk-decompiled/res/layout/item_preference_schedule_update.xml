@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:paddingStart="@dimen/default_margin_double" android:paddingEnd="@dimen/default_margin_double"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_half_quarter" android:layout_marginBottom="@dimen/default_margin_half_quarter" android:layout_weight="1.0" android:layout_marginEnd="@dimen/default_margin_half_quarter">
+            <TextView android:textAppearance="?android:textAppearanceListItem" android:ellipsize="marquee" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/widgetFrame" android:layout_width="@dimen/preference_widget_width" android:layout_height="fill_parent">
+            <CheckBox android:layout_gravity="center" android:id="@id/checkbox" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/timeSelectionParent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.farsitel.bazaar.widget.AutosizingTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_time" android:textAlignment="viewStart" />
+        <androidx.appcompat.widget.AppCompatButton android:id="@id/startTime" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/schedule_update_default_start_time" android:layout_weight="0.5" />
+        <com.farsitel.bazaar.widget.AutosizingTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/end_time" android:textAlignment="viewStart" />
+        <androidx.appcompat.widget.AppCompatButton android:id="@id/endTime" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/schedule_update_default_stop_time" android:layout_weight="0.5" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorSecondary" android:id="@id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="10" android:textAlignment="viewStart" android:layout_marginEnd="@dimen/default_margin_double" />
+</LinearLayout>

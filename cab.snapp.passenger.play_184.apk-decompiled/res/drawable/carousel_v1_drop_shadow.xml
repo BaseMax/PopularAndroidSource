@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="3.0dip" android:right="3.0dip">
+        <shape>
+            <solid android:color="#0fe5e5e5" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:right="4.0dip">
+        <shape>
+            <solid android:color="#1ae0e0e0" />
+        </shape>
+    </item>
+    <item android:left="5.0dip" android:right="5.0dip">
+        <shape>
+            <solid android:color="#1fd5d5d5" />
+        </shape>
+    </item>
+    <item android:left="6.0dip" android:right="6.0dip">
+        <shape>
+            <solid android:color="#2ad0d0d0" />
+        </shape>
+    </item>
+    <item android:left="7.0dip" android:right="7.0dip">
+        <shape>
+            <solid android:color="#2fc5c5c5" />
+        </shape>
+    </item>
+    <item android:left="7.5dip" android:right="7.5dip">
+        <shape>
+            <solid android:color="#3ac0c0c0" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:right="8.0dip">
+        <shape>
+            <solid android:color="#3fb5b5b5" />
+        </shape>
+    </item>
+    <item android:left="8.5dip" android:right="8.5dip">
+        <shape>
+            <solid android:color="#4fb0b0b0" />
+        </shape>
+    </item>
+    <item android:left="9.0dip" android:right="9.0dip">
+        <shape>
+            <solid android:color="#5fa0a0a0" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#00ffffff" />
+            <padding android:left="10.0dip" android:right="10.0dip" />
+        </shape>
+    </item>
+</layer-list>

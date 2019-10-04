@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ebay.mobile.common.SelectableContainerLayout android:background="?selectableItemBackgroundBase" android:layout_width="fill_parent" android:layout_height="wrap_content" res_auto:selectionBackground="?listItemSelectedBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ebay="http://schemas.android.com/apk/res-auto" xmlns:res_auto="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:padding="@dimen/ebayScalingPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" res_auto:foreground="?android:selectableItemBackground">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/browse_node_image" android:layout_width="@dimen/following_browse_image_size" android:layout_height="@dimen/following_browse_image_size" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null" res_auto:circularImage="true" />
+        <TextView android:textAppearance="?textAppearanceSubhead" android:id="@id/browse_node_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_toRightOf="@id/browse_node_image" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.ebay.mobile.common.SelectableContainerLayout>

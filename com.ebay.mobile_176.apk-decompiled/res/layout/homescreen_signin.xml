@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/button_sign_in" android:layout_width="@dimen/homescreen_signin_buttonwidth" android:layout_height="wrap_content" android:text="@string/sign_in" android:layout_centerInParent="true" style="@style/EbayButton.Blue" />
+    <Button android:enabled="false" android:id="@id/button_register" android:layout_width="@dimen/homescreen_signin_buttonwidth" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/register" android:layout_below="@id/button_sign_in" android:layout_centerHorizontal="true" style="@style/EbayButton.Blue" />
+    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin4x" android:text="@string/sign_in_encouragement" android:layout_above="@id/button_sign_in" android:layout_centerHorizontal="true" style="@style/EbayTextAppearanceStrong.Title1" />
+</RelativeLayout>

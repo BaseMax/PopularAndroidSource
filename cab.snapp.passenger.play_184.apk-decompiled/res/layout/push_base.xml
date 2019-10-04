@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/push_base_container" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/custom_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/custom_small_head_container" android:paddingLeft="@dimen/push_content_margin" android:paddingTop="@dimen/push_content_margin" android:paddingRight="@dimen/push_content_margin" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/small_icon" android:layout_width="@dimen/small_icon_size" android:layout_height="@dimen/small_icon_size" android:layout_marginRight="@dimen/push_intercontent_margin" android:layout_marginEnd="@dimen/push_intercontent_margin" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:id="@id/app_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Production" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/custom_head_container" android:paddingLeft="@dimen/push_content_margin" android:paddingRight="@dimen/push_content_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/push_intercontent_margin"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/custom_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Title" android:maxLines="1" android:layout_toLeftOf="@id/custom_icon" android:layout_alignParentTop="true" android:layout_toStartOf="@id/custom_icon" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/custom_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Message" android:maxLines="1" android:layout_below="@id/custom_title" android:layout_alignLeft="@id/custom_title" android:layout_alignRight="@id/custom_title" android:lineSpacingMultiplier="1.2" android:layout_alignStart="@id/custom_title" android:layout_alignEnd="@id/custom_title" />
+            <ImageView android:layout_gravity="end|center|top" android:id="@id/custom_icon" android:layout_width="@dimen/large_icon_size" android:layout_height="@dimen/large_icon_size" android:layout_marginLeft="12.0dip" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_marginStart="12.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <FrameLayout android:orientation="vertical" android:id="@id/custom_base_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/push_base_margin_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/push_content_margin" />
+    </LinearLayout>
+</FrameLayout>

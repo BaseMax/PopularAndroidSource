@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_marginBottom="0.0dip" android:text="@string/psl_declared_value" style="@style/Sell.Spoke.Title.Top" />
+    <TextView android:id="@id/insurance_message" style="@style/Sell.Spoke.Subtitle" />
+    <androidx.cardview.widget.CardView style="@style/Sell.Layout.CardView">
+        <com.ebay.android.widget.ContainerLayout style="@style/Sell.Layout.Container">
+            <RelativeLayout android:id="@id/shipping_declared_value_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+                <TextView android:id="@id/shipping_declared_value_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psl_declare_a_value" android:layout_alignBaseline="@id/shipping_declare_value_check" />
+                <CheckBox android:id="@id/shipping_declare_value_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                <com.ebay.mobile.widget.PriceView android:textSize="@dimen/ebayTextSizeMediumSmall" android:id="@id/shipping_package_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/shipping_declared_value_title" android:inputType="number" />
+            </RelativeLayout>
+        </com.ebay.android.widget.ContainerLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/error_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/checkoutLargeMargin" android:layout_marginRight="@dimen/checkoutLargeMargin" android:layout_marginBottom="@dimen/checkoutMediumMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="?android:textColorPrimary" android:id="@id/error_code_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/checkoutSmallMargin" android:text="@string/error_code_colon" />
+    <TextView android:textColor="?android:textColorPrimary" android:id="@id/error_code_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/listing_form_details_payment_methods_fragment_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="?containerBackgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sell.Card">
+        <CheckBox android:id="@id/ebay_managed_payments_checkbox" android:tag="binding_1" android:visibility="gone" android:text="@string/sell_preferences_payment_method_managed_by_ebay" style="@style/Sell.Layout.Row.Checkbox" />
+        <CheckBox android:id="@id/paypal_checkbox" android:tag="binding_2" android:visibility="gone" android:text="@string/sell_preferences_payment_method_paypal" style="@style/Sell.Layout.Row.Checkbox" />
+        <View android:id="@id/paypal_address_divider" android:tag="binding_3" android:visibility="gone" style="@style/Sell.Divider.LeftMargin" />
+        <TextView android:id="@id/paypal_address" android:tag="binding_4" android:visibility="gone" android:text="@string/add_paypal" android:freezesText="true" style="@style/Sell.FormValue.Detail.AutoSize.LeftMargin" />
+        <CheckBox android:id="@id/credit_card_checkbox" android:tag="binding_5" android:visibility="gone" android:text="@string/sell_preferences_payment_method_credit_card" style="@style/Sell.Layout.Row.Checkbox" />
+        <CheckBox android:id="@id/visa_mc_checkbox" android:tag="binding_6" android:visibility="gone" android:text="@string/sell_preferences_payment_method_visa_mc" style="@style/Sell.Layout.Row.Checkbox" />
+        <CheckBox android:id="@id/discover_checkbox" android:tag="binding_7" android:visibility="gone" android:text="@string/sell_preferences_payment_method_discover" style="@style/Sell.Layout.Row.Checkbox" />
+        <CheckBox android:id="@id/amex_checkbox" android:tag="binding_8" android:visibility="gone" android:text="@string/sell_preferences_payment_method_amex" style="@style/Sell.Layout.Row.Checkbox" />
+        <CheckBox android:id="@id/bank_transfer_checkbox" android:tag="binding_9" android:visibility="gone" android:text="@string/sell_preferences_bank_transfer" style="@style/Sell.Layout.Row.Checkbox" />
+        <View android:id="@id/bank_details_divider" android:visibility="gone" style="@style/Sell.Divider.LeftMargin" />
+        <com.ebay.mobile.listingform.helper.CustomStyleTextView android:id="@id/bank_account_details" android:tag="binding_10" android:visibility="gone" android:text="@string/alert_eft_details_yes" style="@style/Sell.FormValue.Detail.AutoSize.LeftMargin" />
+        <CheckBox android:id="@id/pay_on_pickup_checkbox" android:tag="binding_11" android:visibility="gone" android:text="@string/sell_preferences_pay_on_pickup" style="@style/Sell.Layout.Row.Checkbox" />
+        <CheckBox android:id="@id/cash_on_delivery_checkbox" android:tag="binding_12" android:visibility="gone" android:text="@string/sell_preferences_cash_on_delivery" style="@style/Sell.Layout.Row.Checkbox" />
+        <CheckBox android:id="@id/mocc_checkbox" android:tag="binding_13" android:visibility="gone" android:text="@string/sell_preferences_payment_method_mocc" style="@style/Sell.Layout.Row.Checkbox" />
+        <CheckBox android:id="@id/personal_check_checkbox" android:tag="binding_14" android:visibility="gone" android:text="@string/sell_preferences_payment_method_personal_check" style="@style/Sell.Layout.Row.Checkbox" />
+    </LinearLayout>
+</ScrollView>

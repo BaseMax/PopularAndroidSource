@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?containerBackgroundColor" android:paddingBottom="@dimen/ebayPadding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/guidance_module_background_listing_form" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/read_only_description_lock_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:src="@drawable/ic_lock_closed_black_24dp" android:tint="?iconTintColor" android:layout_centerVertical="true" />
+        <TextView android:id="@id/read_only_description_tool_tip" android:paddingLeft="@dimen/ebayPadding" android:text="@string/read_only_description_tool_tip" android:layout_toRightOf="@id/read_only_description_lock_icon" android:layout_alignBaseline="@id/read_only_description_lock_icon" android:layout_centerVertical="true" style="@style/ListingFormDetailGuidanceModuleTextStyle" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/read_only_description" android:paddingBottom="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginTop="@dimen/ebayStaticMargin" android:layout_marginRight="@dimen/ebayContentSideMargin" />
+    </ScrollView>
+</LinearLayout>

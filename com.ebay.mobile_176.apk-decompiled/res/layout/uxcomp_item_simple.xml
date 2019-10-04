@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/uxcomp_item_simple_0" android:background="@drawable/pill_background" android:clickable="true" android:layout_width="@dimen/pill_width" android:layout_height="@dimen/pill_height" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/label" android:tag="binding_1" android:padding="@dimen/baseline_unit" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:background="@color/pill_background_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

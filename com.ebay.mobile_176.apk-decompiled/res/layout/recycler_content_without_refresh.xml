@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/recycler_view" />
+    <ViewStub android:id="@id/container_empty" android:layout="@layout/common_load_content_error" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/container_error" android:layout="@layout/common_load_content_error" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/progress_container" />
+</FrameLayout>

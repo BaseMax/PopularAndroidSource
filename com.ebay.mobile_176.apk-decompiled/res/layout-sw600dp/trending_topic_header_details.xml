@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout-sw600dp/trending_topic_header_details_0" android:paddingTop="@dimen/ebayPadding5x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:layout_gravity="center" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <TextView android:gravity="center" android:tag="binding_2" android:paddingLeft="@dimen/ebayScalingPadding2x" android:paddingRight="@dimen/ebayScalingPadding2x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" />
+    <include layout="@layout/homescreen_card_vertical_divider" />
+    <TextView android:gravity="center" android:tag="binding_3" android:paddingLeft="@dimen/ebayScalingPadding2x" android:paddingRight="@dimen/ebayScalingPadding2x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" />
+</LinearLayout>

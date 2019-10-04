@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:listChoiceBackgroundIndicator" android:paddingBottom="@dimen/ebayPadding15" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" android:divider="?dividerVertical" android:showDividers="beginning"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2Accent" android:gravity="center|right" android:id="@id/vhr_footer_text" android:paddingTop="@dimen/ebayPadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:gravity="center|right" android:id="@id/vhr_footer_caption" android:paddingTop="@dimen/ebayPaddingHalf" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

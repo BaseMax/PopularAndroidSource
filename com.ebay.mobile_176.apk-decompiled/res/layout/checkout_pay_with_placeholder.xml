@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/payment_link_placeholder" android:paddingTop="@dimen/xoMarginMedium" android:paddingBottom="@dimen/xoMarginMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Xo.Row">
+        <View android:id="@id/payment_image_container_placeholder" android:background="?cardStyleShadowStartColor" android:layout_width="@dimen/xoPayPalImageWidth" android:layout_height="@dimen/xoPaymentDetailsImageHeight" />
+        <View android:id="@id/payment_info_container_placeholder" android:background="?cardStyleShadowStartColor" android:layout_width="0.0dip" android:layout_height="@dimen/xoPaymentDetailsImageHeight" android:layout_marginLeft="@dimen/xoMarginMedium" android:layout_weight="1.0" />
+    </LinearLayout>
+</merge>

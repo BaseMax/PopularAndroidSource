@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/thumbnailBorderWidth" android:color="@color/style_guide_g203_grey_ds6" android:dashWidth="@dimen/dotted_frame_line_dash_width" android:dashGap="@dimen/dotted_frame_line_dash_gap" />
+</shape>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/drag_and_drop_container" android:tag="layout/verticals_drag_and_drop_search_0" android:background="@color/drag_and_drop_search_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/drag_and_drop_area" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="binding_2" android:background="@drawable/vertical_image_search_drop_area" android:paddingLeft="@dimen/ebayPadding8x" android:paddingTop="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding8x" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/drag_and_drop_drop_height">
+            <ImageView android:id="@id/drag_and_drop_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_magnifying_glass_24dp" android:tint="?colorAccent" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:textAppearance="?textAppearanceTitle2" android:textColor="?colorAccent" android:gravity="center_horizontal" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/visually_similar_drop_title" android:layout_below="@id/drag_and_drop_icon" android:layout_alignParentLeft="true" />
+            <TextView android:textAppearance="?textAppearanceTitle2" android:textColor="?colorAccent" android:gravity="center_horizontal" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/visually_similar_drag_title" android:layout_below="@id/drag_and_drop_icon" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

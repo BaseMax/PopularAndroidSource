@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search-engine>
+    <noindex uriprefix="https://pages.ebay.com/link/?nav=user." />
+    <noindex uriprefix="https://pages.ebay.com/link?nav=user." />
+    <noindex uriprefix="ebay://link/?nav=user." />
+    <noindex uriprefix="ebay://link?nav=user." />
+</search-engine>

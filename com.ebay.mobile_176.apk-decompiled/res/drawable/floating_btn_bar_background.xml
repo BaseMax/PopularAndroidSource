@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/floating_btn_bar_border_inverse" android:right="@dimen/floating_btn_bar_border_inverse" android:bottom="@dimen/floating_btn_bar_border_inverse">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/floating_btn_bar_border_size" android:color="@color/style_guide_light_gray" />
+            <solid android:color="@color/style_guide_button_bar_background" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/button_layout" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/user_detail_activity_heart_save_ds6_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/user_information" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/RichUserProfile.WithSidePadding">
+                <com.ebay.mobile.widget.UserThumbnail android:id="@id/seller_image_imageview" android:layout_width="@dimen/UserDetailAvatarSize" android:layout_height="@dimen/UserDetailAvatarSize" android:layout_marginTop="@dimen/ebayMargin2x" android:scaleType="fitCenter" android:layout_centerVertical="true" app:borderColor="@color/image_border_color" app:userThumbnailBorderWidth="@dimen/thumbnailBorderWidth" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayMargin" android:layout_toRightOf="@id/seller_image_imageview" android:layout_centerVertical="true">
+                    <TextView android:textAppearance="?textAppearanceSubhead" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/seller_name_textview" android:paddingBottom="@dimen/user_profile_text_view_padding_ds6" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                    <TextView android:textAppearance="?textAppearanceCaption2" android:id="@id/top_rated_seller" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/top_rated_seller" android:layout_below="@id/seller_name_textview" android:textIsSelectable="false" />
+                    <TextView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/feedback_count_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawableRight="@drawable/ratingpurpleshootingstar" android:drawablePadding="@dimen/ebayPaddingHalf" android:layout_below="@id/top_rated_seller" android:textAlignment="center" />
+                    <TextView android:ellipsize="end" android:id="@id/seller_feedback_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:maxLines="1" android:layout_toRightOf="@id/feedback_count_textview" android:layout_below="@id/top_rated_seller" android:layout_alignBaseline="@id/feedback_count_textview" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/user_information_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/seller_feedback_percent">
+                        <TextView android:id="@id/member_since_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMarginHalf" />
+                        <TextView android:id="@id/user_location_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMarginHalf" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <Button android:id="@id/contact_button_call" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayPadding2x" android:text="@string/contact_call" style="@style/EbayButton.Secondary" />
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/user_detail_cards_ds6" />
+            <View android:id="@id/scrollview_spacer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/button_layout" android:background="@drawable/bottom_action_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/baseline_unit_2x" android:layout_marginRight="@dimen/baseline_unit_2x" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="-4.0dip" android:layout_weight="1.0">
+            <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/add_seller_to_favorites_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/saved_seller_add_heart_save" style="@style/EbayButton" />
+            <com.ebay.mobile.sell.widget.TextImageButton android:id="@id/remove_seller_from_favorites_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/saved_seller_remove_heart_save" style="@style/EbayButton" />
+        </FrameLayout>
+        <Button android:id="@id/contact_button" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="-4.0dip" android:text="@string/contact" android:layout_weight="1.0" style="@style/EbayButton.Secondary" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/common_translucent_progress" />
+</RelativeLayout>

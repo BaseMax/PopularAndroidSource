@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?containerBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/search_refine_header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/common_toolbar_height">
+        <ImageButton android:id="@id/button_back_all_filters" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/filter_header_alignment" android:src="@drawable/ic_arrow_back_white_24dp" android:tint="@color/black_54pct" android:contentDescription="@string/search_refinement_accessibility_back" style="@style/EbayButton.Flat" />
+        <TextView android:textAppearance="?textAppearanceTitle2" android:ellipsize="end" android:id="@id/textview_filter_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/filters" android:maxLines="2" android:layout_weight="1.0" />
+        <Button android:id="@id/button_done" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/filter_header_alignment" android:text="@string/done" style="@style/EbayButton.Flat.Refine" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

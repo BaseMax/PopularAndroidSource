@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/shopping_cart_empty_item" android:background="@color/listContainerLightInsideBackground" android:paddingTop="@dimen/shopExEmptyCartItemTopPadding" android:paddingBottom="@dimen/shopExEmptyCartItemBottomPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ShopEx.EmptyCart"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/shopex_cart_empty" />
+</LinearLayout>

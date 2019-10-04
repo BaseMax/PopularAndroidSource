@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ebay.android.widget.SingleLineTextView android:textColor="?android:textColorPrimary" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/EbayTextAppearanceViewItem" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="?android:textColorPrimary" android:id="@id/current_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/EbayTextAppearanceViewItem" />
+        <TextView android:textColor="?android:textColorPrimary" android:id="@id/current_price_converted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" style="@style/EbayTextAppearanceViewItem" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="?android:textColorPrimary" android:id="@id/bid_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/EbayTextAppearanceViewItem" />
+        <include layout="@layout/view_item_place_bid_info_separator" />
+        <TextView android:textColor="?android:textColorPrimary" android:id="@id/time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/EbayTextAppearanceViewItem" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/reserve_not_met_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <include layout="@layout/view_item_place_bid_info_separator" />
+            <TextView android:textColor="?android:textColorPrimary" android:id="@id/reserve_not_met" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reserve_not_met" style="@style/EbayTextAppearanceViewItem" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

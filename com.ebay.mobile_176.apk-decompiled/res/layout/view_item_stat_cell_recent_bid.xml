@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/stat_layout" style="@style/StyleGuideViewItemStatCell"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" style="@style/StyleGuideViewItemStatKey">
+        <TextView android:id="@id/stat_key" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Unset key" />
+        <TextView android:textColor="?android:textColorSecondary" android:id="@id/stat_sub_key" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Unset sub key" />
+    </LinearLayout>
+    <TextView android:id="@id/stat_value" android:layout_marginBottom="@dimen/ebayMargin2x" android:text="Unset value" style="@style/StyleGuideViewItemStatValue" />
+</LinearLayout>

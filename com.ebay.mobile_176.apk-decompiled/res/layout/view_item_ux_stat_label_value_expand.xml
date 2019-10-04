@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/stat_layout" android:tag="layout/view_item_ux_stat_label_value_expand_0" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/stat_key" android:tag="binding_1" style="@style/StyleGuideViewItemStatKey" />
+    <com.ebay.nautilus.shell.widget.ExpandableLayout android:tag="binding_2" style="@style/StyleGuideViewItemStatValue">
+        <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:id="@id/expandable_view" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <FrameLayout android:id="@id/expand_layout" android:tag="binding_4" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/min_touch_target_unit" android:layout_below="@id/expandable_view" android:layout_alignParentBottom="true">
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="@dimen/min_touch_target_unit">
+                <TextView android:id="@id/expand_button" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="?textAppearanceBody2Accent" />
+                <ImageView android:id="@id/expand_arrow" android:tag="binding_6" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/baseline_unit_half" android:scaleType="fitXY" android:adjustViewBounds="true" android:tint="?colorAccent" android:layout_toRightOf="@id/expand_button" android:layout_centerVertical="true" android:contentDescription="@null" />
+            </RelativeLayout>
+        </FrameLayout>
+    </com.ebay.nautilus.shell.widget.ExpandableLayout>
+</LinearLayout>

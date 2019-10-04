@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/screen_share_fragment_mvvm_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ebayContentSideMargin" android:layout_marginRight="@dimen/ebayContentSideMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/screen_share_session_id_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:text="@string/screen_share_header_message" />
+    <TextView android:textAppearance="?textAppearanceTitle2" android:layout_gravity="center_horizontal" android:id="@id/screen_share_session_id_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" />
+    <TextView android:id="@id/screen_share_session_id_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" />
+    <Button android:gravity="center" android:id="@id/screen_share_dismiss" android:padding="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin3x" android:minHeight="@dimen/clickableButtonDimen" android:text="@string/screen_share_dismiss" style="@style/EbayButton.Blue" />
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/please_wait_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayStaticMargin2x" />
+    <TextView android:textAppearance="?textAppearanceTitle2" android:layout_gravity="center_horizontal" android:id="@id/screen_share_please_wait" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayStaticMargin6x" android:layout_marginBottom="@dimen/ebayStaticMargin2x" android:text="@string/please_wait" />
+</LinearLayout>

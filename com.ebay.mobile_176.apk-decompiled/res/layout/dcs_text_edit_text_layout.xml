@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/baseline_unit_2x" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@android:id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.AppCompatEditText android:id="@android:id/edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="As configured" android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textNoSuggestions" />
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/suggestion_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baseline_unit" />
+    <androidx.appcompat.widget.AppCompatSpinner android:id="@id/suggestion_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spinnerMode="dropdown" />
+</LinearLayout>

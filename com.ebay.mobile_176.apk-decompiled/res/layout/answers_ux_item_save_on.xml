@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/answers_ux_item_save_on_0" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ebay.android.widget.RemoteImageView android:id="@id/image" android:tag="binding_1" android:src="@drawable/ic_missing_image" android:contentDescription="@null" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="?imageCarouselStyle" />
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayStaticMargin" app:layout_constraintEnd_toEndOf="@id/image" app:layout_constraintLeft_toLeftOf="@id/image" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/image">
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_eek_rating" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:ellipsize="end" android:id="@id/textview_item_title" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayStaticMarginHalf" android:maxLines="2" />
+            <TextView android:id="@id/textview_item_price" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?itemPriceStyle" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/unit_text" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/details_label" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:ellipsize="end" android:gravity="center" android:id="@id/shipping_text" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/ebayPadding" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_trending_at_price" android:tag="binding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/text_view_strike_through_price" android:tag="binding_9" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/textview_hotness" android:tag="binding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceTitle2" android:id="@id/groupTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayStaticMargin2x" android:text="@string/selling_card_we_sell_you_get_paid" style="@style/Sell.CardTitle" />
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin" android:layout_below="@id/groupTitle" style="@style/Sell.Card">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin2x">
+            <include android:id="@id/inspiration_step1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/homescreen_card_inspiration_step_padding" layout="@layout/homescreen_card_ebay_inspiration_step" />
+            <include android:id="@id/inspiration_step2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/homescreen_card_inspiration_step_padding" layout="@layout/homescreen_card_ebay_inspiration_step" />
+            <include android:id="@id/inspiration_step3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" layout="@layout/homescreen_card_ebay_inspiration_step" />
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/ebayMargin2x" android:layout_marginRight="@dimen/ebayMargin2x" layout="@layout/list_divider" />
+            <Button android:layout_gravity="right" android:id="@id/learn_more_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ebayMargin" android:text="@string/learn_more" android:contentDescription="@string/inspiration_learn_more_accessibility" style="@style/EbayButton.Flat" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/top_layout" android:background="?listContainerOutsideBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/banner_layout" android:layout_marginBottom="@dimen/ebayMargin" style="@style/CommonDivider.Thick" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding" android:paddingRight="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMargin2x">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" />
+                    <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/sub_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:layout_marginRight="@dimen/ebayMargin" />
+                </LinearLayout>
+                <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/order_info_layout" android:visibility="gone" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="@dimen/ebayMargin2x" ebay:dividerColor="@android:color/transparent" style="@style/StyleGuideViewItemStatContainer" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?textColorSecondaryAlt" android:id="@id/pickup_location_title" android:paddingBottom="@dimen/checkoutTinyMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:text="@string/pickup_location" />
+                <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/pickup_location_layout" android:visibility="gone" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="@dimen/ebayMargin2x" ebay:dividerColor="@android:color/transparent" style="@style/StyleGuideViewItemStatContainer" xmlns:ebay="http://schemas.android.com/apk/res-auto" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?textColorSecondaryAlt" android:id="@id/order_contents_title" android:paddingBottom="@dimen/checkoutTinyMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin" android:text="@string/ebn_order_details_order_contents_header" />
+                <com.ebay.android.widget.ContainerLayout android:orientation="vertical" android:id="@id/order_contents_layout" android:visibility="gone" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="@dimen/ebayMargin2x" style="@style/StyleGuideViewItemStatContainer" />
+                <LinearLayout android:id="@id/out_of_stock_layout" android:visibility="gone" android:layout_marginTop="@dimen/checkoutMediumMargin" style="@style/ItemView">
+                    <TextView android:textSize="@dimen/ebayTextSizeLarge" android:textStyle="bold" android:gravity="center" android:id="@id/sorry_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sorry" />
+                    <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bopis_item_out_of_stock_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/common_progress" />
+    <include layout="@layout/common_error" />
+    <include layout="@layout/common_translucent_progress" />
+</merge>

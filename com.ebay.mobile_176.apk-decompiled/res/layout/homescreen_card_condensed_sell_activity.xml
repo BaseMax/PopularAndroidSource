@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical" android:id="@id/selling_activity_notifications_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayStaticMargin2x" android:layout_marginBottom="@dimen/ebayMargin2x" style="@style/Sell.Card.SellingOverview"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ebayPadding2x" android:paddingRight="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?listDividerHorizontal" android:showDividers="middle">
+        <FrameLayout android:id="@id/selling_overview_gmv_total" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/ebayPadding2x" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/ebayPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?textAppearanceDisplay2" android:id="@id/selling_overview_number_totalsold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:gravity="center_horizontal" android:id="@id/selling_overview_number_totalmetric" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" android:layout_marginBottom="@dimen/ebayMargin" android:baselineAligned="false">
+            <FrameLayout android:id="@id/selling_overview_cell_active" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@id/selling_overview_number_active" style="@style/Sell.CondensedCardSubtitle" />
+                        <ImageView android:layout_gravity="center" android:id="@id/selling_overview_number_active_error" android:visibility="gone" android:layout_width="@dimen/homescreen_card_error_chevron_size" android:layout_height="@dimen/homescreen_card_error_chevron_size" android:src="@drawable/icn_error_chevron" android:contentDescription="@null" />
+                    </FrameLayout>
+                    <TextView android:textAppearance="?textAppearanceBody2Accent" android:gravity="center" android:id="@id/selling_overview_text_active" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </FrameLayout>
+            <View android:background="?listDividerVertical" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayPadding2x" android:layout_marginBottom="@dimen/ebayPadding2x" />
+            <FrameLayout android:id="@id/selling_overview_cell_sold" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@id/selling_overview_number_sold" style="@style/Sell.CondensedCardSubtitle" />
+                        <ImageView android:layout_gravity="center" android:id="@id/selling_overview_number_sold_error" android:visibility="gone" android:layout_width="@dimen/homescreen_card_error_chevron_size" android:layout_height="@dimen/homescreen_card_error_chevron_size" android:src="@drawable/icn_error_chevron" android:contentDescription="@null" />
+                    </FrameLayout>
+                    <TextView android:textAppearance="?textAppearanceBody2Accent" android:gravity="center" android:id="@id/selling_overview_text_sold" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </FrameLayout>
+            <View android:background="?listDividerVertical" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ebayPadding2x" android:layout_marginBottom="@dimen/ebayPadding2x" />
+            <FrameLayout android:id="@id/selling_overview_cell_unsold" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@id/selling_overview_number_unsold" style="@style/Sell.CondensedCardSubtitle" />
+                        <ImageView android:layout_gravity="center" android:id="@id/selling_overview_number_unsold_error" android:visibility="gone" android:layout_width="@dimen/homescreen_card_error_chevron_size" android:layout_height="@dimen/homescreen_card_error_chevron_size" android:src="@drawable/icn_error_chevron" android:contentDescription="@null" />
+                    </FrameLayout>
+                    <TextView android:textAppearance="?textAppearanceBody2Accent" android:gravity="center" android:id="@id/selling_overview_text_unsold" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/selling_overview_cell_row0" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/homescreen_card_titleheight">
+            <LinearLayout android:gravity="center_vertical" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/selling_overview_cell_row0_badge" android:background="@drawable/gray_circle" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="@dimen/ebayMargin2x" android:lines="1" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/selling_overview_cell_row0_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/selling_overview_cell_row1" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/homescreen_card_titleheight">
+            <LinearLayout android:gravity="center_vertical" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/selling_overview_cell_row1_badge" android:background="@drawable/gray_circle" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="@dimen/ebayMargin2x" android:lines="1" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/selling_overview_cell_row1_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/selling_overview_cell_row2" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/homescreen_card_titleheight">
+            <LinearLayout android:gravity="center_vertical" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/selling_overview_cell_row2_badge" android:background="@drawable/gray_circle" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="@dimen/ebayMargin2x" android:lines="1" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/selling_overview_cell_row2_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/selling_overview_cell_row3" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/homescreen_card_titleheight" android:minHeight="@dimen/homescreen_card_titleheight">
+            <LinearLayout android:gravity="center_vertical" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/selling_overview_cell_row3_badge" android:background="@drawable/gray_circle" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="@dimen/ebayMargin2x" android:lines="1" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/selling_overview_cell_row3_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/selling_overview_cell_row4" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/homescreen_card_titleheight">
+            <LinearLayout android:gravity="center_vertical" android:padding="@dimen/ebayPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/selling_overview_cell_row4_badge" android:background="@drawable/gray_circle" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="@dimen/ebayMargin2x" android:lines="1" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/selling_overview_cell_row4_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

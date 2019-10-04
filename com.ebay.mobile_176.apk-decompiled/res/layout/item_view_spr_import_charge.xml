@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/gsp_verbiage_layout" android:paddingTop="@dimen/ebayPadding" style="@style/StyleGuideViewItemStatCell"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/gsp_blurb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ebayMarginHalf" android:text="@string/LEGAL_gsp_shipped_through_gsp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/LEGAL_gsp_import_charges" style="@style/StyleGuideViewItemStatKey" />
+        <LinearLayout android:orientation="vertical" style="@style/StyleGuideViewItemStatValue">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/shipping_import_charges_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textColor="?textColorSecondaryAlt" android:id="@id/converted_shipping_import_charges_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView android:id="@id/gsp_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMarginHalf" android:src="@drawable/ic_viewitem_info" android:layout_alignParentRight="true" android:contentDescription="@string/terms_and_conditions" />
+            </RelativeLayout>
+            <TextView android:id="@id/gsp_estimate_plus_no_additional" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_marginTop="@dimen/ebayStaticMargin2x" style="@style/HomeScreenCardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="@dimen/ebayScalingPadding2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ebayMargin3x" android:layout_marginRight="@dimen/ebayMargin3x" android:layout_weight="0.1">
+                <TextView android:textAppearance="?textAppearanceHeadline" android:layout_gravity="center_vertical" android:id="@id/ebay_promo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:textAllCaps="true" />
+                <TextView android:textAppearance="?textAppearanceBody1Secondary" android:ellipsize="end" android:id="@id/ebay_promo_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:maxLines="1" />
+                <TextView android:textAppearance="?textAppearanceBody2Accent" android:id="@id/ebay_promo_button_text" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMarginHalf" android:maxLines="1" android:textAllCaps="true" />
+            </LinearLayout>
+            <com.ebay.android.widget.RemoteImageView android:id="@id/ebay_promo_image" android:layout_width="@dimen/homescreen_card_promo_imagesize" android:layout_height="@dimen/homescreen_card_imagesize" android:layout_marginRight="@dimen/ebayMargin3x" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="@null" app:averageBackgroundColor="true" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

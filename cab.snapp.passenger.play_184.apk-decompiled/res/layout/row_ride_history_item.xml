@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ride_history_card_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/ride_history_top_row_panel" android:background="?colorAccent" android:paddingLeft="@dimen/padding_medium" android:paddingTop="@dimen/padding_very_small" android:paddingBottom="@dimen/padding_very_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/alabaster" android:gravity="end|center" android:id="@id/ride_history_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Default.Small" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="@drawable/shape_rectangle_alabaster_border_alto" android:padding="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/ride_history_map_image_view" android:layout_width="fill_parent" android:layout_height="@dimen/ride_history_map_preview_height" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/shape_rectangle_alabaster_border_alto" android:padding="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/true_blue" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/origin_label" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Default.Small" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ride_history_origin_text_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/margin_very_small" android:lines="1" android:layout_marginStart="@dimen/margin_very_small" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Light.Small" />
+            </LinearLayout>
+            <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/true_blue" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/destination_label" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Default.Small" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ride_history_destination_text_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/margin_very_small" android:lines="1" android:layout_marginStart="@dimen/margin_very_small" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Light.Small" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:background="@drawable/shape_rectangle_alabaster_border_alto" android:padding="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/colorPrimary" android:gravity="start|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/reserve_ride_price_label" android:lines="1" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Light.Small" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="?colorAccent" android:gravity="start|center" android:id="@id/ride_history_ride_price_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_very_small" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Light.Small" />
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/brown_grey" android:gravity="start|center" android:id="@id/ride_history_ride_price_rial_text_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/rial" android:lines="1" android:layout_marginStart="@dimen/margin_very_small" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Light.Small" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                    <androidx.appcompat.widget.AppCompatTextView android:textColor="?colorAccent" android:gravity="end|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/ride_details" android:lines="1" app:fontFamily="@font/iran_sans_mobile_bold" style="@style/TextView.Light.Small" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

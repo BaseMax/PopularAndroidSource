@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textAppearance="?textAppearanceCaption1" android:id="@id/cb_marketing_opt_in" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/LEGAL_native_registration_receive_exclusive_offers_and_promotions" />
+    <TextView android:textAppearance="?textAppearanceCaption1" android:id="@id/tv_legal_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/bt_one" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" style="@style/EbayButton.Flat" />
+    <Button android:id="@id/bt_two" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" style="@style/EbayButton.Flat" />
+    <Button android:id="@id/bt_three" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" style="@style/EbayButton.Flat" />
+    <Button android:id="@id/bt_four" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebayMargin" style="@style/EbayButton.Flat" />
+</LinearLayout>
